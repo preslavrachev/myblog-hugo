@@ -1,3 +1,9 @@
 [submodule "themes/attila"]
 	path = themes/attila
 	url = https://github.com/preslavrachev/attila
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/my-ananke"]
+	path = themes/my-ananke
+	url = https://github.com/preslavrachev/gohugo-theme-ananke

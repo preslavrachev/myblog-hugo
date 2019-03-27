@@ -1,3 +1,9 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Preslav Rachev"
+theme = "my-ananke"
+
+[params]
+    description = "I am a software engineer fighting data science, a marathon-wannabe, a hobby musician, a voracious reader, and photographer. I mostly write about building a strong developer culture."
+    featured_image = "/images/header.jpeg"
+    recent_posts_number = 10
