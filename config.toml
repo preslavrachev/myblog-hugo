@@ -1,9 +1,28 @@
-baseURL = "http://example.org/"
+baseURL = "http://blog.preslav.me/"
 languageCode = "en-us"
 title = "Preslav Rachev"
 theme = "my-ananke"
 
+[Author]
+  name = "Preslav Rachev"
+  description = "I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+
+  [[menu.main]]
+    identifier = "microblog"
+    name = "Microblog"
+    url = "/microblog/"
+
 [params]
     description = "I am a software engineer fighting data science, a marathon-wannabe, a hobby musician, a voracious reader, and photographer. I mostly write about building a strong developer culture."
-    featured_image = "/images/header.jpeg"
+    featured_image = "https://images.unsplash.com/photo-1553640627-57a6de3bf0ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1280&q=80"
     recent_posts_number = 10
+    custom_css = ["css/styles.css"]
+    mainSections = ["post", "microblog"]
+    show_reading_time = true
