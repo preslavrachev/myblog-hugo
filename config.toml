@@ -2,6 +2,7 @@ baseURL = "http://blog.preslav.me/"
 languageCode = "en-us"
 title = "Preslav Rachev"
 theme = "my-ananke"
+pygmentsCodeFences=true
 
 [Author]
   name = "Preslav Rachev"
