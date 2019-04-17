@@ -30,3 +30,4 @@ pygmentsCodeFences=true
     custom_css = ["css/styles.css"]
     mainSections = ["post", "microblog"]
     show_reading_time = true
+    show_related = true
