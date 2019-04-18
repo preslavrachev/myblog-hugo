@@ -32,3 +32,6 @@ disqusShortname = "preslav"
     mainSections = ["post", "microblog"]
     show_reading_time = true
     show_related = true
+    twitter = "https://twitter.com/preslavrachev"
+    github = "https://github.com/preslavrachev"
+
