@@ -4,6 +4,7 @@ title = "Preslav Rachev"
 theme = "my-ananke"
 pygmentsCodeFences=true
 disqusShortname = "preslav"
+googleAnalytics = "UA-131031623-1"
 
 [Author]
   name = "Preslav Rachev"
@@ -41,4 +42,6 @@ disqusShortname = "preslav"
     show_related = true
     twitter = "https://twitter.com/preslavrachev"
     github = "https://github.com/preslavrachev"
+    clicky_analytics = "101131786"
+    
 
