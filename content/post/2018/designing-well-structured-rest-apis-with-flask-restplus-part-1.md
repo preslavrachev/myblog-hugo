@@ -4,7 +4,7 @@ categories = ["Programming", "Python"]
 date = 2018-12-02T15:46:47Z
 description = ""
 draft = false
-image = "https://images.unsplash.com/photo-1531083894382-04a4f09c998f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=774784f0805880a8b64693a15540c1ef"
+featured_image = "https://images.unsplash.com/photo-1531083894382-04a4f09c998f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ&s=774784f0805880a8b64693a15540c1ef"
 slug = "designing-well-structured-rest-apis-with-flask-restplus-part-1"
 tags = ["Programming", "Python"]
 title = "Designing Well-Structured REST APIs with Flask-RestPlus: Part 1"
