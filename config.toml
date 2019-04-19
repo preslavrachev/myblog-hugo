@@ -1,4 +1,4 @@
-baseURL = "http://blog.preslav.me/"
+baseURL = "https://preslav.me/"
 languageCode = "en-us"
 title = "Preslav Rachev"
 theme = "my-ananke"
@@ -43,5 +43,5 @@ googleAnalytics = "UA-131031623-1"
     twitter = "https://twitter.com/preslavrachev"
     github = "https://github.com/preslavrachev"
     clicky_analytics = "101131786"
-    
+
 
