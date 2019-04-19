@@ -23,7 +23,7 @@
       <dc:creator>{{ $.Site.Author.name }}</dc:creator>
       <content:encoded>{{ .Content | html }}></content:encoded>
       {{ with .Params.featured_image }}
-      <media:content url="{{.}}" medium="image"/>
+      <media:content url="{{. | absURL}}" medium="image"/>
       {{end}}
     </item>
     {{ end }}
