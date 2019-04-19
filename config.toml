@@ -35,7 +35,7 @@ disqusShortname = "preslav"
     description = "I am a software engineer fighting data science, a marathon-wannabe, a hobby musician, a voracious reader, and photographer. I mostly write about building a strong developer culture."
     featured_image = "https://images.unsplash.com/photo-1553640627-57a6de3bf0ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1280&q=80"
     recent_posts_number = 10
-    custom_css = ["css/styles.css"]
+    custom_css = ["css/styles.css", "css/cookieconsent.min.css"]
     mainSections = ["post", "microblog"]
     show_reading_time = true
     show_related = true
