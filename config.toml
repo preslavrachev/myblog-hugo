@@ -13,6 +13,9 @@ googleAnalytics = "UA-131031623-1"
 [permalinks]
   post = "/:year/:month/:day/:filename/"
 
+[outputs]
+  page = ["HTML", "AMP"]
+
 [menu]
   [[menu.main]]
     identifier = "about"
