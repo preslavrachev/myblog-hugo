@@ -5,6 +5,7 @@ theme = "my-ananke"
 pygmentsCodeFences=true
 disqusShortname = "preslav"
 googleAnalytics = "UA-131031623-1"
+enableRobotsTXT = true
 
 [Author]
   name = "Preslav Rachev"
