@@ -10,7 +10,7 @@ title = "Deploying a Native Go Binary on Heroku"
 
 +++
 
-My company, KI labs recently held its first hackathon in our Munich office. My team and I  went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app's backend part, written in Go.
+My company, [KI labs](https://www.ki-labs.com/) recently held its first hackathon in our Munich office. My team and I  went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app's backend part, written in Go.
 
 The challenges with using the Go language aside, one unanticipated hurdle was actually getting the backend to run in Heroku. I know, I could have gone for a different solution, but my usual workflow is to deploy to Heroku, until the requirements push for an alternative approach. And Heroku already supports deploying Go applications. Or at least, that's what the [documentation](https://www.heroku.com/go) says. And indeed, after the stress of the hackathon, I figured it out, but at the time, getting Heroku to build a Go application that uses modules seemed like it needed more time than we actually had. 
 
