@@ -8,7 +8,8 @@ fields:
   default: '201904261824'
 - name: tags
   type: tag_list
-  default: []
+  default:
+  - micropost
   label: Tags
 pages:
 - content/microblog/201904261827.md
