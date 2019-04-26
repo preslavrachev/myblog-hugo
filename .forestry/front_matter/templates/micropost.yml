@@ -12,4 +12,5 @@ fields:
   - micropost
   label: Tags
 pages:
+- content/microblog/201904261848.md
 - content/microblog/201904261827.md
