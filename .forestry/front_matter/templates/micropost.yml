@@ -6,3 +6,5 @@ fields:
   name: slug
   label: Slug
   default: '201904261824'
+pages:
+- content/microblog/201904261827.md
