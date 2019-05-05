@@ -6,11 +6,25 @@ fields:
   name: slug
   label: Slug
   default: '201904261824'
+  config:
+    required: true
 - name: tags
   type: tag_list
   default:
   - micropost
   label: Tags
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: 
+  default: now
 pages:
+- content/microblog/201903051009.md
+- content/microblog/201905051824.md
 - content/microblog/201904261848.md
 - content/microblog/201904261827.md
