@@ -6,6 +6,8 @@ fields:
   name: slug
   label: Slug
   default: '201904261824'
+  config:
+    required: true
 - name: tags
   type: tag_list
   default:
