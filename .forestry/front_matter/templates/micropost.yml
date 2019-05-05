@@ -11,6 +11,15 @@ fields:
   default:
   - micropost
   label: Tags
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: 
 pages:
 - content/microblog/201905051824.md
 - content/microblog/201904261848.md
