@@ -5,7 +5,7 @@ date = "2019-05-05T22:00:00+00:00"
 description = ""
 draft = true
 slug = ""
-tags = []
+tags = ["Tools", "Tips", "Docs"]
 title = "Developer Tool Tip: DevDocs"
 
 +++
