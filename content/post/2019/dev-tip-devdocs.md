@@ -21,4 +21,4 @@ image source: [electronjs.org](https://electronjs.org/apps/devdocs-app)
 
 It is the same idea, but running on the Web (supports offline as well) and accessible from everywhere. It has been my primary go-to docs site for much of my non-library-specific stuff (programming language syntax, standard libraries, popular frameworks). The default selection of docsets is pretty satisfactory and there are many coming all the time. The real magic here is the search:
 
-<img src="/images/2019/05/2019-05-06 15-01-27.2019-05-06 15_02_" style="width: 320px !important"_>
+<img src="/images/2019/05/2019-05-06 15-01-27.2019-05-06 15_02_36.gif" style="width: 320px !important" />
