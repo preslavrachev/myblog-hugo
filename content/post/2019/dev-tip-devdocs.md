@@ -6,7 +6,7 @@ description = ""
 draft = true
 slug = ""
 tags = []
-title = ""
+title = "Developer Tool Tip: DevDocs"
 
 +++
 One handy developer tool tip for today: [DevDocs](https://devdocs.io/)
