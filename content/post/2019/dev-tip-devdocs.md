@@ -17,7 +17,7 @@ A couple of years ago, I discovered [DevDocs](https://devdocs.io/).
 
 ![](https://user-images.githubusercontent.com/8784712/27121730-11676ba8-511b-11e7-8c01-00444ee8501a.png)
 
-###### image source: [electronjs.org](https://electronjs.org/apps/devdocs-app)
+image source: [electronjs.org](https://electronjs.org/apps/devdocs-app)
 
 It is the same idea, but running on the Web (supports offline as well) and accessible from everywhere. It has been my primary go-to docs site for much of my non-library-specific stuff (programming language syntax, standard libraries, popular frameworks). The default selection of docsets is pretty satisfactory and there are many coming all the time. The real magic here is the search:
 
