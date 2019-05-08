@@ -15,7 +15,9 @@ I hate listicles, and I am highly hoping that this doesn’t become one of them.
 
 The first time I saw a relatively simple Go program, my internal reaction was “Why all the torture?”. Somehow, things I used to solve with a Python or even a Java one-liner, look ginormously over-bloated in Go. At least, on the surface. Searching for an answer, I found this talk by Rob Pike, which helped put things in some order:
 
-{{ youtube "rFejpH_tAHM" }}
+{{< youtube rFejpH_tAHM >}}
+
+[dotGo 2015 - Rob Pike - Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM)
 
 The thing is, unlike other languages, Go has been left out of many “niceties” of modern programming, and this was an intentional decision. More features add a level of cognitive burden. Of course, they also add more productivity, but at the cost of a higher comprehension barrier. I remember the days before Java 8, and how excited I was to see lambdas and streams make it into the language. A lot of previously lengthy boilerplate code was about to get replaced by a more elegant and fluent approach. Suddenly, every problem I ran into, I tried to solve using those two alone. So much so, that I often ended up spending hours screwing the logic of my code, because suddenly, no other approach seemed elegant enough. And I was not alone in this - the rest of my team was doing it too. Not long after, some pieces of the code turned into crystal figures - beautiful at first sight, but very brittle and difficult to move around.
 
@@ -47,7 +49,7 @@ To see where Go stands on this, I rebuilt a not-so-smallish Spring Boot app of m
 
 For comparison, the Go app ran instantaneously (let's be fair, there was literally no component scanning and reflection involved). Even at the height of handling requests, the CPU barely reached 1% (mostly sitting around 0.1%). With all libraries and assets included, the final binary ended up being around 20MB. The RAM usage, however, I found to be a metric that changed everything. In an age where a typical messaging application might eat up to a couple of GBs, this app was sitting there minding its business, rocking a 20MB?!? footprint. 20MB? Even if following a very naive logic, this is close to fitting 20 of these apps together, for the cost of running one Spring Boot app!
 
-Before the expert readers start criticizing, yes, none of this is really a fair comparison. The fact that an app is built in Go does not guarantee a blazing fast performance if there is a lot of runtime loading and checks. Also, experts can tweak a JVM app in various ways, significantly reducing the footprint of the app. It takes time and effort, but it is certainly doable. And of course, there is always the argument about cheap hardware and premature optimization. 
+Before the expert readers start criticizing, yes, none of this is really a fair comparison. The fact that an app is built in Go does not guarantee a blazing fast performance if there is a lot of runtime loading and checks. Also, experts can tweak a JVM app in various ways, significantly reducing the footprint of the app. It takes time and effort, but it is certainly doable. And of course, there is always the argument about cheap hardware and premature optimization.
 
 I am not saying that this should necessarily resonate with you, but it certainly does with me. I strive to be a minimalist. Exactly because the hardware is so cheap these days, I believe that people and companies spend way more on it than they probably should. There are various articles out there speculating about the millions and hundreds of millions of dollars that big software companies pay for server costs every year. All of it to pay for servers that get powered by electricity generated from burning fossil fuels.
 
