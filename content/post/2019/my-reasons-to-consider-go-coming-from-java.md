@@ -32,3 +32,31 @@ Despite being called an 80s language living in the 21st century, Go’s ecosyste
 Besides that, the Go standard library is one of the most complete Stdlibs I‘ve worked with so far, and understandably so. Go came out relatively recently, so a lot of the standards and practices in software had a chance to make it in the library right from the beginning, rather than get added years after. As a result, the Go standard library feels like something that a developer can actually use in their daily work, rather than something that always needs to get wrapped inside a third-party library.
 
 That said, I don’t share the opinion of Go purists to use standard library only. There should be a balance, and although I am not a fan of _“npm install”_-ing everything, standard libraries are created to be building blocks, so don’t feel ashamed if you have to pull in some libraries to ease your work. There are some pretty [good ones](https://github.com/avelino/awesome-go) out there.
+
+# Go apps are fast and small
+
+We have all heard that, but the actual outcome blew my mind away!
+
+I have spent the bulk of the past decade working with Spring, and it has gradually become my go-to solution for all things Web. Despite working with Flask on my current projects, Spring (Boot) will always remain near and dear to my heart.
+
+Yet, Spring is a beast. You might not notice it, because the hardware has gotten quite cheap these days, but a lot of otherwise useful resources get locked up when running a hefty JVM app.
+
+To see where Go stands on this, I rebuilt a not-so-smallish Spring Boot app of mine using Go. I did not even take the purist approach but was quite liberal in my choice of libraries. The results blew all of my previous expectations by a factor of ten. The Spring app took nearly half a GB right away, keeping around 5-10% of my MacBook Pro's CPU busy at all time (spiking when requests came in). For deploying a single artifact, I had built a fat JAR, which is quite a standard procedure for developing Java apps these days. It took a couple of hundred of MBs as well. Due to the JVM warmup and Spring's loading all dependencies, it took almost a minute until the app was ready.
+
+For comparison, the Go app ran instantaneously (let's be fair, there was literally no component scanning and reflection involved). Even at the height of handling requests, the CPU barely reached 1% (mostly sitting around 0.1%). With all libraries and assets included, the final binary ended up being around 20MB. The RAM usage, however, I found to be a metric that changed everything. In an age where a typical messaging application might eat up to a couple of GBs, this app was sitting there minding its business, rocking a 20MB?!? footprint. 20MB? Even if following a very naive logic, this is close to fitting 20 of these apps together, for the cost of running one Spring Boot app!
+
+Before the expert readers start criticizing, yes, none of this is really a fair comparison. The fact that an app is built in Go does not guarantee a blazing fast performance if there is a lot of runtime loading and checks. Also, experts can tweak a JVM app in various ways, significantly reducing the footprint of the app. It takes time and effort, but it is certainly doable. And of course, there is always the argument about cheap hardware and premature optimization. 
+
+I am not saying that this should necessarily resonate with you, but it certainly does with me. I strive to be a minimalist. Exactly because the hardware is so cheap these days, I believe that people and companies spend way more on it than they probably should. There are various articles out there speculating about the millions and hundreds of millions of dollars that big software companies pay for server costs every year. All of it to pay for servers that get powered by electricity generated from burning fossil fuels.
+
+# The community
+
+The Go community is welcoming and very helpful. Part of the helpfulness factor comes from the fact that many gophers have already spent years programming in a different domain. What makes these people stick around and help each other, is the experience of the past, having taught them that complexity does not equal productivity.
+
+# Instead of conclusion
+
+As people say in stock trading, “always do your own research”. I don’t want to convince you to switch and use Go full-time, because I haven’t convinced myself yet. As with everything else, programming languages are just tools, and there will always be a different tool which is better for the particular circumstances. What I hope to have managed to convince you, is to try to understand where the need for the language came from and what it tries to solve
+
+As always, happy coding!
+
+P.S. if you have an interesting project that you are considering using Go for, feel free to reach out to me. I’d love to help.
