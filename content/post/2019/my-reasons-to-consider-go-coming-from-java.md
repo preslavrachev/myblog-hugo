@@ -5,7 +5,7 @@ date = "2019-05-07T22:00:00+00:00"
 description = ""
 draft = true
 slug = ""
-tags = ["Java", "Golang"]
+tags = ["Spring Boot", "Java", "Golang"]
 title = "My Reasons to Consider Go Coming from Java"
 
 +++
