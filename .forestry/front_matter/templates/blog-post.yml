@@ -24,5 +24,6 @@ fields:
   name: title
   label: title
 pages:
+- content/post/2019/my-baby-steps-with-go.md
 - content/post/2019/my-reasons-to-consider-go-coming-from-java.md
 - content/post/2019/dev-tip-devdocs.md
