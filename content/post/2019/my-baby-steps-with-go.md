@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = ["Programming"]
 date = "2019-02-20T05:27:00+00:00"
 description = ""
-draft = true
 slug = "my-baby-steps-with-go"
 tags = ["Golang"]
 title = "My Baby Steps with Go"
