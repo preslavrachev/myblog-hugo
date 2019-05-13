@@ -19,4 +19,6 @@ Pointers are also not the pain I expected them to be. In fact, they help things 
 
 Where Go really shines for me at the moment is the native performance and the build process. Five years ago, I would have screamed at the mere thought of this: statically compiling a binary and directly throwing it onto a remote machine where it just ... works. But it does, and compared to the complexity of modern containerized systems and dependency hell, this is just a breeze of fresh air.
 
-I am leaving you with the video that made me open up my eyes for Go:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/cQ7STILAS0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+I am leaving you with the video that made me open up my eyes for Go:
+
+{{<youtube "cQ7STILAS0M">}}
