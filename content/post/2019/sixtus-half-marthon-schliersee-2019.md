@@ -5,7 +5,7 @@ date = "2019-05-17T22:00:00+00:00"
 description = ""
 draft = true
 slug = "sixtus-half-marathon-schliersee-2019"
-tags = ["Half-Marathon", "Germany", "Bavaria"]
+tags = ["Running", "Half-Marathon", "Germany", "Bavaria"]
 title = "Sixtus Half-Marthon (Schliersee) 2019"
 
 +++
