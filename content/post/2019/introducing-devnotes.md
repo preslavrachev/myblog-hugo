@@ -3,7 +3,6 @@ author = "Preslav Racehv"
 categories = ["Projects"]
 date = "2019-03-09T23:00:00+00:00"
 description = ""
-draft = true
 slug = "introducing-devnotes"
 tags = ["Blog"]
 title = "Introducing DevNotes"
