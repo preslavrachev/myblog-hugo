@@ -3,12 +3,13 @@ author = "Preslav Rachev"
 categories = ["Running"]
 date = "2019-05-17T22:00:00+00:00"
 description = ""
+draft = true
 slug = "sixtus-half-marathon-schliersee-2019"
 tags = ["Running", "Half-Marathon", "Germany", "Bavaria"]
-title = "Sixtus Half-Marthon (Schliersee) 2019"
+title = "Sixtus Half-Marathon (Schliersee) 2019"
 
 +++
-Today, I took part in the [Sixtus Half-Marthon](https://www.schliersee-lauf.de/) near lake Schliersee for the third time in a row. Unlike last year, this time I started with a completely different strategy - keep it cool and let everyone else pass by me during the first third of the race. Seeing everyone else's backs can be demotivating and requires a lot of patience and training.
+Today, I took part in the [Sixtus Half-Marathon](https://www.schliersee-lauf.de/) near lake Schliersee for the third time in a row. Unlike last year, this time I started with a completely different strategy - keep it cool and let everyone else pass by me during the first third of the race. Seeing everyone else's backs can be demotivating and requires a lot of patience and training.
 
 <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/2377361336/embed/d4e9d70791307ab432f548dc622a1186e7793c3d'></iframe>
 
