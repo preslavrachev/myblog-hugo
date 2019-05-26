@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = ["2 Cents"]
 date = "2018-08-18T22:00:00+00:00"
 description = ""
-draft = true
 featured_image = "/images/2019/05/mastodon-wallpaper.png"
 slug = "i-made-a-mastodon-account-and-i-like-it"
 tags = ["Mastodon", "Twitter", "Social Media"]
