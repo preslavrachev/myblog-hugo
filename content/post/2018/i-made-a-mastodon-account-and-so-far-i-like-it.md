@@ -24,7 +24,7 @@ Just like with email, the real advantage of having multiple identities on Mastod
 
 The last 24 hours of being on Mastodon feel very much like the early days of Twitter. When I joined Twitter in 2008, it was still a very turbulent time for both the service and the team. There have been way too many occasions when the fail whale appeared on my screen, something which I have not really witnessed during the past couple of years.
 
-![](/assets/img/2018/august/fail-whale.jpg)
+![](/images/2019/05/fail-whale.jpg)
 
 With the frequent downtimes and shakes inside the team, something else slowly started going away - the community spirit of the early days. Don't get me wrong, I still use Twitter on a daily basis, though somewhat automatically. The community is still there, it is just that the bond and the friendly chatter of the early days is gone. It got replaced by incessant advertising (which I fervently mute on every occasion) and a stream of posts clearly optimised to target eyeballs and clicks. And of course, the clear statement to third-party app developers. I still remember the early days, when budding app or Web developers would use the developer-friendly Twitter API and boast with the client they developed. In no small terms, it was the developers who helped Twitter reach mainstream fame, and it is just sad that things had to reach their current state. Looks like my thoughts are being shared by the community as well:
 
