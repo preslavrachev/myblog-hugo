@@ -4,7 +4,8 @@ hide_body: false
 fields:
 - type: text
   name: author
-  label: author
+  label: Author
+  default: Preslav Rachev
 - type: list
   name: categories
   label: categories
@@ -23,6 +24,11 @@ fields:
 - type: text
   name: title
   label: title
+- name: featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Image
 pages:
 - content/post/2019/sixtus-half-marthon-schliersee-2019.md
 - content/post/2019/introducing-devnotes.md
