@@ -30,9 +30,9 @@ fields:
     maxSize: 250
   label: Featured Image
 pages:
-- content/post/2018/i-made-a-mastodon-account-and-so-far-i-like-it.md
-- content/post/2019/sixtus-half-marthon-schliersee-2019.md
-- content/post/2019/introducing-devnotes.md
 - content/post/2019/my-baby-steps-with-go.md
-- content/post/2019/my-reasons-to-consider-go-coming-from-java.md
+- content/post/2019/sixtus-half-marthon-schliersee-2019.md
+- content/post/2018/i-made-a-mastodon-account-and-so-far-i-like-it.md
+- content/post/2019/introducing-devnotes.md
 - content/post/2019/dev-tip-devdocs.md
+- content/post/2019/my-reasons-to-consider-go-coming-from-java.md
