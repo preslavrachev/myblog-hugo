@@ -12,11 +12,11 @@ title = "I Made a Mastodon Account and so Far I like It"
 +++
 So, you might have heard about [Mastodon](https://joinmastodon.org/). A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IPSbNdBmWKE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{<youtube IPSbNdBmWKE>}}
 
 Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy...on paper. Many of the instance maintainers gladly accept donations through [Patreon](https://www.patreon.com/ashfurrow) or other means, and of course, adding your own instance to the network is relatively easy. Whether this is actually going to work in the long run, is a different question. There has been a list of alleged P2P Facebook/Twitter killers, which for one reason or another, have failed to the critical mass needed for mass adoption. I am willing to bet on a hopeful "YES".
 
-Being an early adopter of all things digital, and annoyed by the direction that Twitter is taking, I signed up for an account yesterday: [@preslavrachev@mastodon.technology](https://mastodon.technology/@preslavrachev). I gladly encourage everyone to join and follow me. In case you ask yourselves what [@mastodon.technology](https://mastodon.technology/about) has to do with my username, this is the name of the instance where I registered my account. 
+Being an early adopter of all things digital, and annoyed by the direction that Twitter is taking, I signed up for an account yesterday: [@preslavrachev@mastodon.technology](https://mastodon.technology/@preslavrachev). I gladly encourage everyone to join and follow me. In case you ask yourselves what [@mastodon.technology](https://mastodon.technology/about) has to do with my username, this is the name of the instance where I registered my account.
 
 Instance names are somewhat like email domains. Being on a particular instance ensures that one will get the entire flow of communication inside the given instance. Just like email however, cross-instance communication is an essential part of what makes Mastodon work. In fact, a large percentage of the people I follow now are not on the same instance as I am but communicate flawlessly with each other.
 
@@ -29,10 +29,8 @@ The last 24 hours of being on Mastodon feel very much like the early days of Twi
 With the frequent downtimes and shakes inside the team, something else slowly started going away - the community spirit of the early days. Don't get me wrong, I still use Twitter on a daily basis, though somewhat automatically. The community is still there, it is just that the bond and the friendly chatter of the early days is gone. It got replaced by incessant advertising (which I fervently mute on every occasion) and a stream of posts clearly optimised to target eyeballs and clicks. And of course, the clear statement to third-party app developers. I still remember the early days, when budding app or Web developers would use the developer-friendly Twitter API and boast with the client they developed. In no small terms, it was the developers who helped Twitter reach mainstream fame, and it is just sad that things had to reach their current state. Looks like my thoughts are being shared by the community as well:
 
 <figure>
-    <iframe src="https://mastodon.social/@bastianallgeier/100577435213222907/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
+<iframe src="https://mastodon.social/@bastianallgeier/100577435213222907/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
 </figure>
-
-
 
 Back to Mastodon, during my first 24 hours, I spent an hour browsing among the many available alternative clients for both iOS and macOS. I spent another couple of hours waiting for the instance to go back up after a maintenance downtime that took longer than expected. Everyone else in my place would have backed off and left, but this just raised my level of excitement. It showed me that there is some actual work needed, and that the community is working hard to put things where they should be. I can but clap in respect to the efforts that the maintainers of my instance put yesterday, in order to ensure its stability in the upcoming days and weeks. During the hours when the instance was online, I managed to set up a few friendships and engaged in some interesting discussions. It seems like a bunch fo the early spirit is back. People reply more often, and others join in to the chat. I have the feeling that conversations flow more easily.
 
