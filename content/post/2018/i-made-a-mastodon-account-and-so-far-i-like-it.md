@@ -1,7 +1,7 @@
 +++
 author = "Preslav Rachev"
 categories = ["2 Cents"]
-date = "2018-08-18T22:00:00+00:00"
+date = "2018-08-19T17:00:00+00:00"
 description = ""
 featured_image = "/images/2019/05/mastodon-wallpaper.png"
 slug = "i-made-a-mastodon-account-and-i-like-it"
