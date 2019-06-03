@@ -3,10 +3,9 @@ author = "Preslav Rachev"
 categories = ["Programming"]
 date = "2019-06-03T05:00:00+00:00"
 description = ""
-draft = true
 featured_image = ""
 slug = "busting-the-myth-around-multithreading-in-python"
-tags = ["Python"]
+tags = ["Python", "Concurrency"]
 title = "Busting the Myth Around Multithreading in Python"
 
 +++
