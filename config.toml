@@ -53,5 +53,7 @@ enableRobotsTXT = true
       "Psst, you might wanna check out the <a href=\"/microblog/\">\"Microblog\"</a> section I've created recently. <a href=\"/contact/\">Let me know</a> what you think"
     ]
 
-
-
+[caches]
+  [caches.getjson]
+  dir = ":resourceDir/_gen"
+  maxAge = -1

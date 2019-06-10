@@ -1,0 +1,35 @@
+{{ $url := .Get 0 }}
+{{ $dataJ := printf "https://noembed.preslav.me/embed?url=%s" $url | getJSON }}
+{{ $defaultThumb := "https://source.unsplash.com/200x200/?nature,water" }}
+
+{{ if $dataJ.html }}
+<article class="center mw6">
+  {{ $dataJ.html | safeHTML }}
+</article>
+{{ else }}
+
+<article class="bg-white center mw6 ba b--black-10 mv4">
+  <div class="pv2 ph3 bb b--black-10">
+    <a href="{{ $url }}">
+      <h1 class="f6 ttu tracked">{{ $dataJ.title }}</h1>
+    </a>
+  </div>
+
+  <div class="flex flex-column flex-row-m flex-row-l">
+    <div
+      class="ma2 w-100-l w-100-m"
+      style="background: url('{{ $dataJ.thumbnail_url | default $defaultThumb }}'); background-position:center; background-size: cover; min-height: 100px"
+    ></div>
+    <div class="pa2">
+      <p>{{ $dataJ.description }}</p>
+      <small class="gray db pv2"
+        >Source: -
+        <a
+          href="{{ $url }}"
+          >{{ $dataJ.provider_name | default $dataJ.provider_url }}</a
+        ></small
+      >
+    </div>
+  </div>
+</article>
+{{ end }}
