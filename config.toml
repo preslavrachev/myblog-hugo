@@ -17,6 +17,10 @@ enableRobotsTXT = true
 [outputs]
   page = ["HTML", "AMP"]
 
+[outputFormats]
+ [outputFormats.AMP]
+    permalinkable = false
+
 [menu]
   [[menu.main]]
     identifier = "about"
