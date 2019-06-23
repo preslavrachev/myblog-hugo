@@ -1,0 +1,37 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "title"}}
+    {{ if (not (isset .Params "Title")) }}
+        Preslav' Microblog: {{- .Date.Format " 2 Jan, 2006" -}}
+    {{ else }}
+        {{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}
+    {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $section := .Site.GetPage "section" .Section }}
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f5 b helvetica tracked">
+        {{ humanize .Section | upper  }} | {{ .Title | default (.Date.Format " 2 Jan, 2006") | upper }}
+      </p>
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      {{- .Content -}}
+      {{- partial "tags.html" . -}}
+      <div class="mt6">
+        {{ template "_internal/disqus.html" . }}
+      </div>
+    </section>
+
+    <aside class="w-30-l">
+      {{- partial "menu-contextual.html" . -}}
+    </aside>
+
+  </article>
+{{ end }}
