@@ -30,7 +30,7 @@
 {{ end }}
 
 {{- if .Param "show_related" -}}
-  {{ $related := .Site.RegularPages.Related . | first 15 }}
+  {{ $related := .Site.RegularPages.Related . | first 5 }}
   {{ with $related }}
     <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
       <p class="f5 b mb3">{{ i18n "related" }}</p>
@@ -38,7 +38,11 @@
       {{ range . }}
         <li  class="mb2">
             <a href="{{ .RelPermalink }}">
-              {{- .Title -}}
+              {{if .Title}}
+                {{- .Title -}}
+              {{ else }}
+                {{- .Date.Format " 2 Jan, 2006" -}}
+              {{ end }}
             </a>
           </li>
         {{ end }}
