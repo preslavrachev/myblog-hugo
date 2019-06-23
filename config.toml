@@ -61,3 +61,14 @@ enableRobotsTXT = true
   [caches.getjson]
   dir = ":resourceDir/_gen"
   maxAge = -1
+
+[related]
+threshold = 80
+includeNewer = true
+toLower = true
+[[related.indices]]
+    name = "tags"
+    weight = 100
+[[related.indices]]
+    name = "categories"
+    weight = 10
