@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = ["Photo Stories"]
 date = "2019-06-23T21:00:00+00:00"
 description = ""
-draft = true
 slug = "sofias-trams"
 tags = ["Trams", "Bulgaria", "Sofia", "Photo Stories,"]
 title = "Sofia's Trams"
