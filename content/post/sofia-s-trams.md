@@ -23,4 +23,8 @@ For those who have never been in Sofia, trams are a major form of transportation
 
 ![](/images/2019/06/Sofia Tram 6.jpeg)
 
+***
+
+Read more about the history of tram transportation in Sofia:
+
 {{<oembed "https://en.wikipedia.org/wiki/Trams_in_Sofia">}}
