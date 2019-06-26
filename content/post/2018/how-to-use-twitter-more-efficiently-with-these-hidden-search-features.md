@@ -47,11 +47,13 @@ Two tiny things before I move on:
 
 1. As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:
 
+   ```
    my search query min_retweets:5 OR min:faves:5
+   ```
 
-will return results that match either of the engagement thresholds, or both.
+	will return results that match either of the engagement thresholds, or both.
 
-1. The results are limited back in time to the most recent 10 days.
+2. The results are limited back in time to the most recent 10 days.
 
 ## Search in Lists
 
