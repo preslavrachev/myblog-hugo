@@ -24,6 +24,7 @@ fields:
     display_utc: 
   default: now
 pages:
+- content/microblog/201906281812.md
 - content/microblog/201906251911.md
 - content/post/sofia-s-trams.md
 - content/microblog/201906231845.md
