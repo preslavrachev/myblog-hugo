@@ -24,7 +24,7 @@ enableRobotsTXT = true
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "About Me"
     url = "/about/"
     weight = 10
 
@@ -33,12 +33,18 @@ enableRobotsTXT = true
     name = "Microblog"
     url = "/microblog/"
     weight = 20
+
+  [[menu.main]]
+    identifier = "photo-stories"
+    name = "Photo Stories"
+    url = "/tags/photo-stories"
+    weight = 30
   
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 30
+    weight = 40
 
 [params]
     description = "I am a software engineer fighting data science, a marathon-wannabe, a hobby musician, a voracious reader, and photographer. I mostly write about building a strong developer culture."
