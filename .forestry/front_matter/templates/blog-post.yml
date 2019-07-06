@@ -30,8 +30,8 @@ fields:
     maxSize: 250
   label: Featured Image
 pages:
-- content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
 - content/post/2019/give-me-back-my-monolith.md
+- content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
 - content/post/2019/busting-the-myth-around-multithreading-in-python.md
 - content/post/2018/i-made-a-mastodon-account-and-i-like-it.md
 - content/post/2019/sixtus-half-marthon-schliersee-2019.md
