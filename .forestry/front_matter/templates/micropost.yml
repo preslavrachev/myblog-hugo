@@ -24,6 +24,7 @@ fields:
     display_utc: 
   default: now
 pages:
+- content/microblog/201907041930.md
 - content/microblog/201907022242.md
 - content/microblog/201906281812.md
 - content/microblog/201906251911.md
