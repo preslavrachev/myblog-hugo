@@ -6,7 +6,7 @@ description = ""
 draft = true
 featured_image = ""
 slug = "functional-style-builder-in-golang"
-tags = ["Golang"]
+tags = ["Functional Programming", "Golang"]
 title = "Implementing a Functional-Style Builder in Go"
 
 +++
