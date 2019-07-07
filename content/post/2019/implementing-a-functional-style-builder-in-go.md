@@ -106,7 +106,7 @@ Please, recall that since the chain of `Decorator` functions gets unwrapped in a
 
 Finally, let's see how we can use our `Builder`:
 
-```golang
+```go
 instance := NewMyType().
 		WithA(42).
 		WithB(123).
