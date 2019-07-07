@@ -53,9 +53,9 @@ type Decorator func(m *MyStruct) *MyStruct
 
 What do we have here? One of the revelations for every new Go programmer is that everything in Go can be a type, including functions. In our case, we specify a type called `Decorator`, to which we pass an instance of `MyStruct`, it performs some modifications on it, and returns the modified instance.
 
---
-Side note: the use of a pointer makes the example simpler. It is also safe-enough, since the `MyStruct` instance will not be accessible until the final build step. Still, if you prefer [pure functions](https://en.wikipedia.org/wiki/Pure_function), the example should be equally easy to implement using value-copying.
---
+
+<small>*Side note:* the use of a pointer makes the example simpler. It is also safe-enough, since the `MyStruct` instance will not be accessible until the final build step. Still, if you prefer [pure functions](https://en.wikipedia.org/wiki/Pure_function), the example should be equally easy to implement using value-copying.</small>
+
 
 The really ingenious thing of thinking about a function as a type, is that we can reuse the type, and what's even more grounbreaking, add functionality to it. Check this out:
 
