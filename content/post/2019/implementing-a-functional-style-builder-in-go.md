@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = ["Programming"]
 date = "2019-07-07T10:17:00+00:00"
 description = ""
-draft = true
 featured_image = "/images/2019/07/photo-1527199768775-bdabf8b32f61.jpg"
 slug = "functional-style-builder-in-golang"
 tags = ["Functional Programming", "Golang"]
