@@ -30,6 +30,7 @@ fields:
     maxSize: 250
   label: Featured Image
 pages:
+- content/post/2019/adding-version-information-to-go-binaries.md
 - content/post/2019/implementing-a-functional-style-builder-in-go.md
 - content/post/2019/give-me-back-my-monolith.md
 - content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
