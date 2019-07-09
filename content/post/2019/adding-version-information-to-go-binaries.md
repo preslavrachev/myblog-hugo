@@ -52,7 +52,7 @@ func main() {
 	flag.Parse()
 
 	switch {
-	case versionFlag != nil:
+	case *versionFlag:
 		printVersion()
 		return
 	}
@@ -60,7 +60,8 @@ func main() {
 }
 ```
 
---- 
+***
+
 Related reading:
 
 {{<oembed "https://en.wikipedia.org/wiki/Make_(software)">}}
