@@ -1,7 +1,7 @@
 +++
 author = "Preslav Rachev"
 categories = ["Programming"]
-date = "2019-07-09T05:00:00+00:00"
+date = "2019-07-09T04:00:00+00:00"
 description = ""
 featured_image = ""
 slug = "adding-version-info-to-golang-binaries"
