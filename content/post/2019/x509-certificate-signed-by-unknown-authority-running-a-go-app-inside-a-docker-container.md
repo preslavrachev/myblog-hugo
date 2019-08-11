@@ -3,11 +3,10 @@ author = "Preslav Rachev"
 categories = []
 date = "2019-08-11T07:00:00+00:00"
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = ["Docker", "Tips", "Golang"]
-title = "x509: certificate signed by unknown authority (Running a Go app inside a Docker container)"
+title = "X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)"
 
 +++
 If you ever get the following message:
