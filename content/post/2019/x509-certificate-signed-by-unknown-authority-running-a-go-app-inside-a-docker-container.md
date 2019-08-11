@@ -34,4 +34,6 @@ ADD ca-certificates.crt /etc/ssl/certs/
 
 ## Further Reading
 
-{{oembed "https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by"}}
+{{<oembed "https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">}}
+
+{{<oembed "https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">}}
