@@ -29,26 +29,20 @@ enableRobotsTXT = true
     weight = 10
 
   [[menu.main]]
-    identifier = "microblog"
-    name = "Microblog"
-    url = "/microblog/"
-    weight = 20
-
-  [[menu.main]]
     identifier = "photo-stories"
     name = "Photo Stories"
     url = "/tags/photo-stories"
-    weight = 30
+    weight = 20
   
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 40
+    weight = 30
 
 [params]
-    description = "I am a software engineer fighting data science, a marathon-wannabe, a hobby musician, a voracious reader, and photographer. I mostly write about building a strong developer culture."
-    featured_image = "https://images.unsplash.com/photo-1553640627-57a6de3bf0ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1280&q=80"
+    description = "I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say \"Hi\" 👋🏼"
+    featured_image = "/images/header-august-2019.jpg"
     recent_posts_number = 10
     custom_css = ["css/styles.css", "css/cookieconsent.min.css"]
     mainSections = ["post", "microblog"]
