@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = ["2 Cents"]
 date = "2019-08-23T22:00:00+00:00"
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = []
