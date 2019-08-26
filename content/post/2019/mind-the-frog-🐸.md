@@ -7,7 +7,7 @@ draft = true
 featured_image = ""
 slug = ""
 tags = []
-title = "Mind the Frog 🐸"
+title = "Mind the Frog"
 
 +++
 > If you put a frog in a frying pan, it will quickly jump out. Yet, if you put the frog in cold water and slowly heat, the frog will enjoy the warmth until it's too late to escape.
