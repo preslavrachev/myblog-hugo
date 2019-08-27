@@ -16,7 +16,7 @@ TIL that in Go, struct size depends on how underlying types were defined.
 
 ```go
 struct { 
-		a bool 
+	a bool 
     b int32 
     c string 
     d string 
@@ -27,7 +27,7 @@ The size of the struct above is is different from the one down below
 
 ```go
 struct {
-		b int32
+	b int32
     c string
     d string
     a bool 
