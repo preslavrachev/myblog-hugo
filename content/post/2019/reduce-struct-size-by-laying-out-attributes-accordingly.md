@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = ["Programming"]
 date = "2019-08-27T15:00:00+00:00"
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = ["Optimization", "Tips", "Struct", "Golang"]
