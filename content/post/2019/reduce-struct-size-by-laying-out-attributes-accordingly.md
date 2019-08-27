@@ -10,7 +10,7 @@ tags = ["Optimization", "Tips", "Struct", "Golang"]
 title = "Reduce Struct Size by Laying out Attributes Accordingly"
 
 +++
-##### Many thanks to [@themaour](https://twitter.com/themaour) for sharing this tip on Twitter
+##### Many thanks to [@themaour](https://twitter.com/themaour/status/1165555578019692544) for sharing this tip on Twitter
 
 TIL that in Go, struct size depends on how underlying types were defined.
 
