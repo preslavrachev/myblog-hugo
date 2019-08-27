@@ -49,3 +49,4 @@ Think of this the next time you get to process a slice of 1 mln instances of a g
 # Resources
 
 {{<oembed "http://golang-sizeof.tips">}}
+{{<oembed "http://www.catb.org/esr/structure-packing/">}}
