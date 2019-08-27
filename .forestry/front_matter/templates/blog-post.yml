@@ -30,6 +30,7 @@ fields:
     maxSize: 250
   label: Featured Image
 pages:
+- content/post/2019/reduce-struct-size-by-laying-out-attributes-accordingly.md
 - "content/post/2019/mind-the-frog-\U0001F438.md"
 - content/post/2019/mixtape-retrospective-time-to-split-the-monolith.md
 - content/post/2019/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container.md
