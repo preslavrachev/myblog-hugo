@@ -23,7 +23,10 @@ jobs:
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
       - run:
-          name: test our generated HTML files
+          name: Generate a ZIP artifact
           command: |
-            htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
-            --empty-alt-ignore --disable-external
+            zip -r myblog.zip $HUGO_BUILD_DIR
+
+      - store_artifacts:
+          path: ./myblog.zip
+          destination: myblog.zip
