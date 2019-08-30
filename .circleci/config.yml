@@ -19,6 +19,8 @@ jobs:
       # install git submodules for managing third-party dependencies
       - run: git submodule sync && git submodule update --init
 
+      - run: git submodule add -b master https://github.com/preslavrachev/hugoblog.github.io.git $HUGO_BUILD_DIR
+
       # build with Hugo
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
@@ -26,6 +28,12 @@ jobs:
           name: Generate a ZIP artifact
           command: |
             zip -r myblog.zip $HUGO_BUILD_DIR
+
+      - run:
+          name: Deploy
+          command: |
+            cd $HUGO_BUILD_DIR
+            git push -f
 
       - store_artifacts:
           path: ./myblog.zip
