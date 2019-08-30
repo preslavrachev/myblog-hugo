@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.57.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -36,9 +36,8 @@
 <meta property="og:description" content="I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/" />
-<meta property="article:published_time" content="2019-08-03T22:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-08-03T22:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2019-08-03T22:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-03T22:00:00+00:00" />
 <meta itemprop="name" content="Mixtape Retrospective: Time to Split the Monolith?">
 <meta itemprop="description" content="I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.">
 
@@ -49,7 +48,7 @@
 
 
 
-<meta itemprop="keywords" content="podcasting,mixtape,go,golang,project," />
+<meta itemprop="keywords" content="Podcasting,Mixtape,Go,Golang,Project," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mixtape Retrospective: Time to Split the Monolith?"/>
 <meta name="twitter:description" content="I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio."/>
@@ -234,7 +233,7 @@ if (!doNotTrack) {
 
 <div class="flex items-center justify-center pa4 bg-lightest-blue navy">
   
-  <span class="lh-title ml3">Having issues with your Web application? <a href="/contact/">Let's talk</a> about Go!</span>
+  <span class="lh-title ml3">Dear reader, this website is undergoing active migration. Apologies for the temporary inconvenience.</span>
 </div>
 
 
@@ -254,7 +253,7 @@ if (!doNotTrack) {
       
       
         <span class="f6 mv4 dib tracked"> - 4 minutes read</span>
-        <span class="f6 mv4 dib tracked"> - <a href="#disqus_thread">Comments</a></span>
+        <span class="f6 mv4 dib tracked"> - 665 words</span>
       
     </header>
 
@@ -265,14 +264,13 @@ if (!doNotTrack) {
 <p>In the few months running to the initial release, I learned a lot and was confronted by a couple of challenges that other fellow programmers have also been raving about:</p>
 
 <ul>
-<li>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</li>
-</ul>
+<li><p>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">doSomething</span>()
 <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-    <span style="color:#75715e">// do something with the error, and potentially return or throw a Panic
-</span><span style="color:#75715e"></span>}</code></pre></div>
-<ul>
-<li>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</li>
+<span style="color:#75715e">// do something with the error, and potentially return or throw a Panic
+</span><span style="color:#75715e"></span>}</code></pre></div></li>
+
+<li><p>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</p></li>
 </ul>
 
 <h1 id="build-deploy-take-a-step-back">Build, deploy, take a step back</h1>
