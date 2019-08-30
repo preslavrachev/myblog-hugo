@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grunt on Preslav Rachev</title>
+    <link>https://preslav.me/tags/grunt/</link>
+    <description>Recent content in Grunt on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Jan 2015 06:29:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/grunt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gulp vs Grunt. Why one? Why the Other?</title>
+      <link>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</link>
+      <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</guid>
+      <description>So you&amp;rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&amp;rsquo;t really hard. I&amp;rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

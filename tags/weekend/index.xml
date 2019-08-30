@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weekend on Preslav Rachev</title>
+    <link>https://preslav.me/tags/weekend/</link>
+    <description>Recent content in Weekend on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Jul 2019 16:24:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/weekend/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201907131824/</link>
+      <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201907131824/</guid>
+      <description>My new favorite coffee mug - a special &amp;ldquo;You Are Here&amp;rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</description>
+    </item>
+    
+  </channel>
+</rss>

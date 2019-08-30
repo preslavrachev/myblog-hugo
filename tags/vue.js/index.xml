@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue.js on Preslav Rachev</title>
+    <link>https://preslav.me/tags/vue.js/</link>
+    <description>Recent content in Vue.js on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 16:24:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201908171824/</link>
+      <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201908171824/</guid>
+      <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
+module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
+    </item>
+    
+  </channel>
+</rss>

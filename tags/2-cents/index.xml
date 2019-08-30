@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 Cents on Preslav Rachev</title>
+    <link>https://preslav.me/tags/2-cents/</link>
+    <description>Recent content in 2 Cents on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 08:07:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/2-cents/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201905121007/</link>
+      <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201905121007/</guid>
+      <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
+Customers: Go Home, Google, you’re drunk.
+Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
+Customers: it’s the best Take my money!
+Google: Tricked ya!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201905110736/</link>
+      <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201905110736/</guid>
+      <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
+The series starts with:
+Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
+    </item>
+    
+    <item>
+      <title>Give Me Back My Monolith</title>
+      <link>https://preslav.me/2019/03/23/give-me-back-my-monolith/</link>
+      <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
+      <description>Give me back my monolith    It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog …
+Source: - http://www.craigkerstiens.com   Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time. It is thus good to see other people standing on the same side of the bridge:</description>
+    </item>
+    
+    <item>
+      <title>What I learned in 2018</title>
+      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
+      <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
+      <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
+In 2018, I:
+ Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
+    </item>
+    
+    <item>
+      <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
+      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
+      <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
+      <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
+My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Preslav Rachev</title>
+    <link>https://preslav.me/categories/projects/</link>
+    <description>Recent content in Projects on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Mar 2019 23:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing DevNotes</title>
+      <link>https://preslav.me/2019/03/09/introducing-devnotes/</link>
+      <pubDate>Sat, 09 Mar 2019 23:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/03/09/introducing-devnotes/</guid>
+      <description>With a few short micro-post exceptions, my blog has been relatively quiet over the past month. The reason for this is simple. I have devoted much of my writing resources of the past weeks into a new site. A wiki called DevNotes.
+That is right, I have started a separate writing project, parallel to my blog. Yet, before you start thinking that this is the end of the blog, don&#39;t worry.</description>
+    </item>
+    
+  </channel>
+</rss>

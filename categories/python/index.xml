@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Preslav Rachev</title>
+    <link>https://preslav.me/categories/python/</link>
+    <description>Recent content in Python on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Mar 2019 06:30:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Ephemeral Docker Containers as CLI Applications</title>
+      <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
+      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
+      <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
+When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.</description>
+    </item>
+    
+    <item>
+      <title>Use Dotenv Files When Developing Your Python Apps</title>
+      <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
+      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
+      <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
+    </item>
+    
+    <item>
+      <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
+      <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
+      <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
+      <description>Dependency Injection (DI) in Python? Seriously? 🤔
+At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? Spoiler: I am going to mention Spring only once in this post, I promise.
+NOTE: If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to the example at the end.</description>
+    </item>
+    
+    <item>
+      <title>Designing Well-Structured REST APIs with Flask-RestPlus: Part 1</title>
+      <link>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</link>
+      <pubDate>Sun, 02 Dec 2018 15:46:47 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</guid>
+      <description>This is the first part of a two-part series. In this post, I will introduce Flask-RestPlus and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.
+A seasoned Spring developer, I felt a bit uneasy when designing and future-proofing a Flask-based API for the first time. I have recently started using Python way beyond my original intention to just play with data, and found Flask to be a super-easy micro-service alternative to Spring Boot or Ktor.</description>
+    </item>
+    
+    <item>
+      <title>Data Science on Your iPad</title>
+      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+      <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
+    </item>
+    
+    <item>
+      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
+    </item>
+    
+  </channel>
+</rss>

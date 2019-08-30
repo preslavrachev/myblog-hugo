@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Preslav Rachev</title>
+    <link>https://preslav.me/categories/productivity/</link>
+    <description>Recent content in Productivity on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Feb 2019 06:58:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(Untitled)</title>
+      <link>https://preslav.me/microblog/4c0cda7e-6f05-4cca-95eb-a69f3dd22cbe/</link>
+      <pubDate>Mon, 25 Feb 2019 06:58:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/4c0cda7e-6f05-4cca-95eb-a69f3dd22cbe/</guid>
+      <description>Last week, I finally bought the full license for Alfred. I have been looking at Alfred for several years now, never really coming to the impulsive decision to actually buy the license. I have been relatively happy with what Launchbar offers, event in the free version, but Alfred Workflows are a whole different game. These are definitely the most well-invested 25 EUR I have put on a piece of software for a while.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 Cents on Preslav Rachev</title>
+    <link>https://preslav.me/categories/2-cents/</link>
+    <description>Recent content in 2 Cents on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Aug 2019 22:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/2-cents/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mind the Frog</title>
+      <link>https://preslav.me/2019/08/23/mind-the-frog/</link>
+      <pubDate>Fri, 23 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/08/23/mind-the-frog/</guid>
+      <description>If you put a frog in a frying pan, it will quickly jump out. Yet, if you put the frog in cold water and slowly heat, the frog will enjoy the warmth until it&amp;rsquo;s too late to escape.
+ We have all heard that story, but how many of us can admit that we play the frog on a daily basis? Especially at work, people tend to put a lot more focus on what they are working on and rather, avoid having a say on how the rest of the organization moves forward.</description>
+    </item>
+    
+    <item>
+      <title>What I learned in 2018</title>
+      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
+      <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
+      <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
+In 2018, I:
+ Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
+    </item>
+    
+    <item>
+      <title>I Made a Mastodon Account and so Far I like It</title>
+      <link>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
+      <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
+      <description>So, you might have heard about Mastodon. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
+  Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy&amp;hellip;on paper.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev Culture on Preslav Rachev</title>
+    <link>https://preslav.me/tags/dev-culture/</link>
+    <description>Recent content in Dev Culture on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Mar 2019 05:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/dev-culture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Give Me Back My Monolith</title>
+      <link>https://preslav.me/2019/03/23/give-me-back-my-monolith/</link>
+      <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
+      <description>Give me back my monolith    It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog …
+Source: - http://www.craigkerstiens.com   Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time. It is thus good to see other people standing on the same side of the bridge:</description>
+    </item>
+    
+  </channel>
+</rss>

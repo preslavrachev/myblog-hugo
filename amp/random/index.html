@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        var x = new XMLHttpRequest();
+        x.open("GET", "/sitemap.xml", true);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4 && x.status == 200) {
+                const doc = x.responseXML;
+                const locs = doc.getElementsByTagName("loc");
+                const links = []
+                for (idx in locs) {
+                    links.push(locs[idx].textContent);
+                }
+
+                const randomLink = links[Math.round(Math.random() * links.length)]
+                document.location.href = randomLink;
+            }
+        };
+        x.send(null);
+    </script>
+</head>
+
+<body>
+    Randomness ensues ...
+</body>
+
+</html>

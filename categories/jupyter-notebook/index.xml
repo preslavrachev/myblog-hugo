@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jupyter Notebook on Preslav Rachev</title>
+    <link>https://preslav.me/categories/jupyter-notebook/</link>
+    <description>Recent content in Jupyter Notebook on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Apr 2018 04:14:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/jupyter-notebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
+    </item>
+    
+  </channel>
+</rss>

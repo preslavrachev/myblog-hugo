@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Preslav Rachev</title>
+    <link>https://preslav.me/categories/blog/</link>
+    <description>Recent content in Blog on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Feb 2019 08:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogroll intro</title>
+      <link>https://preslav.me/microblog/5d924197-f52f-4aa2-b84e-1e80be7fed7b/</link>
+      <pubDate>Sun, 10 Feb 2019 08:55:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/5d924197-f52f-4aa2-b84e-1e80be7fed7b/</guid>
+      <description>I have started disrupting the &amp;ldquo;Medium effect&amp;rdquo; by building a &amp;ldquo;blogroll&amp;rdquo; the good old way - simply linking to blogs of friends that I follow. The first ones to get on board are George Ho, Nikita Tonsky, and John Sundell. I will be adding more and more as time goes by.
+With time, I am planning to add some more automation and clever aggregation of great content. I have a few surprises in the hat, but first things first, let&amp;rsquo;s build a network of connected blogs.</description>
+    </item>
+    
+    <item>
+      <title>First micro-post</title>
+      <link>https://preslav.me/microblog/725fca76-9dbb-46a3-867a-1863aa4880e7/</link>
+      <pubDate>Sun, 10 Feb 2019 06:49:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/725fca76-9dbb-46a3-867a-1863aa4880e7/</guid>
+      <description>This weekend, I moved this blog in what seems a small design step, but a serious milestone forward. I added the possibility to write micro-posts, or just about anything that is simply a passing thought, perhaps a sentence requiring no sentence whatsoever.
+Not every post can, or even needs to be a few pages long, with a bunch of the research and heavy on media. Sometimes, the most ingenious messages hide in the simple, unfinished sentence.</description>
+    </item>
+    
+  </channel>
+</rss>

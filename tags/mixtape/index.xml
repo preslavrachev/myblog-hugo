@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mixtape on Preslav Rachev</title>
+    <link>https://preslav.me/tags/mixtape/</link>
+    <description>Recent content in Mixtape on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Aug 2019 22:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/mixtape/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mixtape Retrospective: Time to Split the Monolith?</title>
+      <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
+      <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
+      <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
+    </item>
+    
+  </channel>
+</rss>

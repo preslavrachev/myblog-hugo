@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Preslav Rachev</title>
+    <link>https://preslav.me/categories/data-science/</link>
+    <description>Recent content in Data Science on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Feb 2019 14:29:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kotlin ❤️ Data Science? (Part 1)</title>
+      <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
+      <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
+      <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
+   Mathematical Modeling with Kotlin | Thomas Nield</description>
+    </item>
+    
+    <item>
+      <title>Data Science on Your iPad</title>
+      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+      <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
+    </item>
+    
+    <item>
+      <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
+      <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
+      <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
+      <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal[&amp;#39;TotalPayBenefits&amp;#39;] == sal[&amp;#39;TotalPayBenefits&amp;#39;].max()][&amp;#39;EmployeeName&amp;#39;] which is absolutely valid, but is it the only option?</description>
+    </item>
+    
+  </channel>
+</rss>

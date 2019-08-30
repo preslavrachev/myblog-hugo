@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcasts on Preslav Rachev</title>
+    <link>https://preslav.me/tags/podcasts/</link>
+    <description>Recent content in Podcasts on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 15:08:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/podcasts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(Untitled)</title>
+      <link>https://preslav.me/microblog/1c6e082d-f7f2-4c84-98bf-3387c0ed0a29/</link>
+      <pubDate>Wed, 20 Feb 2019 15:08:18 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/1c6e082d-f7f2-4c84-98bf-3387c0ed0a29/</guid>
+      <description>There are certain podcasts, which I’ve mostly listened to while running. The thing is, every time I listen to any of them while not running, my mind immediately shifts back to the trail. I guess, this makes me a slightly more developed version of Pavlov’s Dog 😂</description>
+    </item>
+    
+  </channel>
+</rss>

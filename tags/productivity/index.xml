@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Preslav Rachev</title>
+    <link>https://preslav.me/tags/productivity/</link>
+    <description>Recent content in Productivity on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 May 2019 07:28:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201905120928/</link>
+      <pubDate>Sun, 12 May 2019 07:28:07 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201905120928/</guid>
+      <description>Back to Wunderlist After what seems like an eternity (close to 3 years), I decided to install and try Wunderlist again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be Microsoft To-Do - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</description>
+    </item>
+    
+    <item>
+      <title>(Untitled)</title>
+      <link>https://preslav.me/microblog/4c0cda7e-6f05-4cca-95eb-a69f3dd22cbe/</link>
+      <pubDate>Mon, 25 Feb 2019 06:58:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/4c0cda7e-6f05-4cca-95eb-a69f3dd22cbe/</guid>
+      <description>Last week, I finally bought the full license for Alfred. I have been looking at Alfred for several years now, never really coming to the impulsive decision to actually buy the license. I have been relatively happy with what Launchbar offers, event in the free version, but Alfred Workflows are a whole different game. These are definitely the most well-invested 25 EUR I have put on a piece of software for a while.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concurrency on Preslav Rachev</title>
+    <link>https://preslav.me/tags/concurrency/</link>
+    <description>Recent content in Concurrency on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2019 05:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Busting the Myth Around Multithreading in Python</title>
+      <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
+      <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</guid>
+      <description>One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
+When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause.</description>
+    </item>
+    
+  </channel>
+</rss>

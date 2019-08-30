@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Struct on Preslav Rachev</title>
+    <link>https://preslav.me/tags/struct/</link>
+    <description>Recent content in Struct on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Aug 2019 15:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/struct/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
+      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+      <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+      <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
+struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
+struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
+    </item>
+    
+  </channel>
+</rss>

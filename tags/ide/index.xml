@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ide on Preslav Rachev</title>
+    <link>https://preslav.me/tags/ide/</link>
+    <description>Recent content in Ide on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2019 22:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bought a Year-Long License for Goland</title>
+      <link>https://preslav.me/2019/08/29/goland-license/</link>
+      <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
+      <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
+    </item>
+    
+  </channel>
+</rss>

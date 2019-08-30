@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sofia on Preslav Rachev</title>
+    <link>https://preslav.me/tags/sofia/</link>
+    <description>Recent content in Sofia on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jun 2019 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/sofia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sofia&#39;s Trams</title>
+      <link>https://preslav.me/2019/06/23/sofia-s-trams/</link>
+      <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/06/23/sofia-s-trams/</guid>
+      <description>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.
+This time was different. My wife and I flew for the wedding of one of our best friends, and since we had a whole day to spare, we decided to take a walk through the centre of the City of Trams.</description>
+    </item>
+    
+  </channel>
+</rss>

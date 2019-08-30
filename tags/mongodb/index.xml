@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on Preslav Rachev</title>
+    <link>https://preslav.me/tags/mongodb/</link>
+    <description>Recent content in Mongodb on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Dec 2018 16:45:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connecting to a MongoDB Instance Using KMongo</title>
+      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
+      <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
+      <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
+Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
+val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
+    </item>
+    
+  </channel>
+</rss>

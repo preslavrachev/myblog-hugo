@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heroku on Preslav Rachev</title>
+    <link>https://preslav.me/tags/heroku/</link>
+    <description>Recent content in Heroku on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Apr 2019 07:30:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploying a Native Go Binary on Heroku</title>
+      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
+      <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
+      <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
+    </item>
+    
+  </channel>
+</rss>

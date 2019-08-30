@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wwdc on Preslav Rachev</title>
+    <link>https://preslav.me/tags/wwdc/</link>
+    <description>Recent content in Wwdc on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jun 2019 12:56:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/wwdc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201906081458/</link>
+      <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201906081458/</guid>
+      <description> Q: Aesthetically, what do you think about the design of the new grater?
+A: It has been optimized for softer cheeses 😂
+   329: Mac Pro Day — Accidental Tech Podcast — Overcast    Our live show from WWDC 2019!
+Source: - Overcast   </description>
+    </item>
+    
+  </channel>
+</rss>

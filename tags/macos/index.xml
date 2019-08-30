@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macos on Preslav Rachev</title>
+    <link>https://preslav.me/tags/macos/</link>
+    <description>Recent content in Macos on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jul 2019 09:29:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/201907241129/</link>
+      <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/201907241129/</guid>
+      <description>Apple is becoming a macOS gatekeeper too.
+ For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
+    </item>
+    
+  </channel>
+</rss>

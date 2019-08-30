@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scala on Preslav Rachev</title>
+    <link>https://preslav.me/tags/scala/</link>
+    <description>Recent content in Scala on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Dec 2018 07:10:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
+      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
+      <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
+      <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
+My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
+    </item>
+    
+  </channel>
+</rss>

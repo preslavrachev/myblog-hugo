@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Preslav Rachev</title>
+    <link>https://preslav.me/categories/tips/</link>
+    <description>Recent content in Tips on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Jan 2019 06:28:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use Dotenv Files When Developing Your Python Apps</title>
+      <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
+      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
+      <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
+    </item>
+    
+    <item>
+      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
+    </item>
+    
+    <item>
+      <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
+      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+      <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
+XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
+chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
+    </item>
+    
+    <item>
+      <title>What’s with the 50/72 rule?</title>
+      <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
+      <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
+      <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+They don&amp;rsquo;t tell much do they?</description>
+    </item>
+    
+  </channel>
+</rss>
