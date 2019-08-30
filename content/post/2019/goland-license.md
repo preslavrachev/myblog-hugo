@@ -6,7 +6,7 @@ description = ""
 featured_image = ""
 slug = ""
 tags = ["Golang", "IntelliJ", "IDE", "JetBrains", "Tools"]
-title = "Bought a Year-Long License for Goland"
+title = "Bought a Year-Long License for GoLand"
 
 +++
 
