@@ -16,12 +16,14 @@ jobs:
       # checkout the repository
       - checkout
 
+      - run: git config user.email "rachev.preslav@gmail.com"
+      - run: git config user.name "Preslav Rachev"
+
       # install git submodules for managing third-party dependencies
       - run: git submodule sync && git submodule update --init
 
-      - run: git submodule add -b master https://github.com/preslavrachev/hugoblog.github.io.git $HUGO_BUILD_DIR
-
       # build with Hugo
+      - run: git worktree add -B gh-pages $HUGO_BUILD_DIR origin/gh-pages
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
 
       - run:
@@ -33,7 +35,10 @@ jobs:
           name: Deploy
           command: |
             cd $HUGO_BUILD_DIR
-            git push -f
+            git add .
+            git commit -m "Publishing to gh-pages"
+            cd ..
+            git push origin gh-pages
 
       - store_artifacts:
           path: ./myblog.zip
