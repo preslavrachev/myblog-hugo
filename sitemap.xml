@@ -128,6 +128,21 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/microblog/201830111824/</loc>
+    <lastmod>2019-08-16T21:13:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/japan/</loc>
+    <lastmod>2019-08-16T21:13:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/quote/</loc>
+    <lastmod>2019-08-16T21:13:21+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/docker/</loc>
     <lastmod>2019-08-11T07:00:00+00:00</lastmod>
   </url>
@@ -324,11 +339,6 @@
   
   <url>
     <loc>https://preslav.me/tags/politics/</loc>
-    <lastmod>2019-06-25T16:11:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/quote/</loc>
     <lastmod>2019-06-25T16:11:13+00:00</lastmod>
   </url>
   
@@ -603,12 +613,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/augsburg/</loc>
+    <loc>https://preslav.me/tags/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/augsburg/</loc>
+    <loc>https://preslav.me/categories/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
   </url>
   
@@ -643,12 +653,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/beer/</loc>
+    <loc>https://preslav.me/tags/beer/</loc>
     <lastmod>2019-03-22T14:01:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/beer/</loc>
+    <loc>https://preslav.me/categories/beer/</loc>
     <lastmod>2019-03-22T14:01:47+00:00</lastmod>
   </url>
   
@@ -918,12 +928,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/gulp/</loc>
+    <loc>https://preslav.me/tags/gulp/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/gulp/</loc>
+    <loc>https://preslav.me/categories/gulp/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
   </url>
   
