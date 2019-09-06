@@ -88,17 +88,32 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/microblog/201908181824/</loc>
-    <lastmod>2019-08-18T16:24:45+00:00</lastmod>
+    <loc>https://preslav.me/microblog/201908211824/</loc>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/book/</loc>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/microblog/</loc>
-    <lastmod>2019-08-18T16:24:45+00:00</lastmod>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/micropost/</loc>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/quote/</loc>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/microblog/201908181824/</loc>
     <lastmod>2019-08-18T16:24:45+00:00</lastmod>
   </url>
   
@@ -134,11 +149,6 @@
   
   <url>
     <loc>https://preslav.me/tags/japan/</loc>
-    <lastmod>2019-08-16T21:13:21+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/quote/</loc>
     <lastmod>2019-08-16T21:13:21+00:00</lastmod>
   </url>
   
@@ -313,12 +323,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/vacation/</loc>
+    <loc>https://preslav.me/tags/wedding/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/wedding/</loc>
+    <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
@@ -329,11 +339,6 @@
   
   <url>
     <loc>https://preslav.me/microblog/201906251911/</loc>
-    <lastmod>2019-06-25T16:11:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/book/</loc>
     <lastmod>2019-06-25T16:11:13+00:00</lastmod>
   </url>
   
@@ -808,12 +813,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/ios/</loc>
+    <loc>https://preslav.me/tags/ios/</loc>
     <lastmod>2018-08-12T05:29:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/ios/</loc>
+    <loc>https://preslav.me/categories/ios/</loc>
     <lastmod>2018-08-12T05:29:00+00:00</lastmod>
   </url>
   
@@ -903,12 +908,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/git/</loc>
+    <loc>https://preslav.me/categories/git/</loc>
     <lastmod>2015-02-21T06:59:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/git/</loc>
+    <loc>https://preslav.me/tags/git/</loc>
     <lastmod>2015-02-21T06:59:00+00:00</lastmod>
   </url>
   
