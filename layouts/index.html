@@ -1,19 +1,19 @@
-{{ define "main" }}
-<article
-  class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-  {{ .Content }}
-</article>
-<div class="pa3 pa4-ns w-100 w-60-l center">
-  {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
 
-  <section class="w-100 mw8">
-    {{ $paginator := .Paginate (where .Pages "Type" "in" "[post, microblog]") }}
-    {{ range $paginator.Pages }}
-    <div class="relative w-100 mb4">
-      {{ partial "summary-with-image.html" . }}
-    </div>
-    {{ end }}
-  </section>
+<div class="main-content active">
+	{{ if .Site.Data.skills }}{{ partial "skills.html" . }}{{ end }}
+	{{ if .Site.Data.experience }}{{ partial "experience.html" . }}{{ end }}
+	{{ if .Site.Data.services }}{{ partial "services.html" . }}{{ end }}
 </div>
-{{ template "_internal/pagination.html" . }}
-{{ end }}
+
+<div style="z-index: 4; position: relative;">
+	{{ if gt (len (where .Data.Pages "Type" "post")) 0 }}{{ partial "blog.html" . }}{{ end }}
+	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}{{ partial "work.html" . }}{{ end }}
+</div>
+
+<div class="main-content">
+	{{ partial "contact.html" . }}
+</div>
+
+{{ partial "footer-scripts.html" . }}

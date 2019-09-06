@@ -1,0 +1,44 @@
+<section id="blog" class="skin">
+    <h2 class="heading">
+        Blog
+    </h2>
+
+    <div class="row bs">
+
+        {{ range first 2 (where .Pages "Type" "in" "[post, microblog]") }}
+        <div class="col-lg-6 mb-3 bs">
+            <div class="card p-4 bs" style="min-height: 320px">
+                {{ if .Title}}
+                <small
+                    class="text-muted">{{- .Date.Format "Jan 2, 2006" -}}</small>
+                {{ else }}
+                <h5>🗒&nbsp{{- .Date.Format "Jan 2, 2006" -}}</h5>
+                {{ end }}
+
+                <h3 class="h4 font-weight-bold text-dark">{{.Title}}</h3>
+                <div class="bs">
+                    {{ range .Params.Tags }}
+                    <span class="badge badge-light bs">{{.}}</span>
+                    {{end}}
+                </div>
+                <div class="mt-2">
+                    {{ if ne true (in .Params.tags "micropost")}}
+                    {{ .Summary }}
+                    {{ else }}
+                    {{ .Content }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{end}}
+
+        <div
+            class="col-lg-2 col-12 align-items-end d-flex align-items-center bs">
+            <a href="/"
+                class="btn btn-dark-faded rounded-circle p-4 text-center bs">
+                <img src="https://demo.uicard.io/hugo-uilite-portfolio-demo//images/next.svg"
+                    alt="" class="bs" width="40px">
+            </a>
+        </div>
+    </div>
+</section>

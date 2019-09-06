@@ -1,0 +1,21 @@
+{
+  "title": "Experience",
+  "experience": [
+    {
+      "timeperiod": "2018-present",
+      "company": "Speaker and Consultant",
+      "description": "Helping clients and fellow software engineers make a leap forward. Have a project idea or an upcoming event in mind? Let's get <a href='#contact'>in touch</a>."
+    },
+    {
+      "timeperiod": "2010-present",
+      "company": "Professional Software Engineer",
+      "description": "Developing data-intensive software systems."
+    },
+    {
+      "timeperiod": "2004-present",
+      "company": "Blogger",
+      "description": "Writing has always been my passion. So is sharing my knowledge.",
+      "website": "https://preslav.me"
+    }
+  ]
+}

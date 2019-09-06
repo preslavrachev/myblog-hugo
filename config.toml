@@ -1,7 +1,7 @@
 baseURL = "https://preslav.me/"
 languageCode = "en-us"
 title = "Preslav Rachev"
-theme = "my-ananke"
+theme = "hugo-uilite"
 pygmentsCodeFences=true
 disqusShortname = "preslav"
 googleAnalytics = "UA-131031623-1"

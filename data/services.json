@@ -1,0 +1,17 @@
+{
+  "title": "Services",
+  "services": [
+    {
+      "title": "Optimizing Existing Projects",
+      "description": "Finding resource and performance bottlenecks in a project, and designing a way around them."
+    },
+    {
+      "title": "Analyzing Code Base Quality",
+      "description": "Using a set of heurirstics and scientific methods to look at the evolution of a code base."
+    },
+    {
+      "title": "Proof-of-Concept Development",
+      "description": "Reaching an MVP in no time."
+    }
+  ]
+}
