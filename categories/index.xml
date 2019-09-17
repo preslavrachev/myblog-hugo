@@ -6,19 +6,10 @@
     <description>Recent content in Categories on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 22:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Programming</title>
-      <link>https://preslav.me/categories/programming/</link>
-      <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/programming/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>2 Cents</title>
@@ -26,33 +17,6 @@
       <pubDate>Fri, 23 Aug 2019 22:00:00 +0000</pubDate>
       
       <guid>https://preslav.me/categories/2-cents/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Photo Stories</title>
-      <link>https://preslav.me/categories/photo-stories/</link>
-      <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/photo-stories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Running</title>
-      <link>https://preslav.me/categories/running/</link>
-      <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/running/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>micropost</title>
-      <link>https://preslav.me/categories/micropost/</link>
-      <pubDate>Fri, 03 May 2019 05:45:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/micropost/</guid>
       <description></description>
     </item>
     
@@ -66,56 +30,11 @@
     </item>
     
     <item>
-      <title>Germany</title>
-      <link>https://preslav.me/categories/germany/</link>
-      <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/germany/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Beer</title>
       <link>https://preslav.me/categories/beer/</link>
       <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
       
       <guid>https://preslav.me/categories/beer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Munich</title>
-      <link>https://preslav.me/categories/munich/</link>
-      <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/munich/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://preslav.me/categories/docker/</link>
-      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://preslav.me/categories/python/</link>
-      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://preslav.me/categories/projects/</link>
-      <pubDate>Sat, 09 Mar 2019 23:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/projects/</guid>
       <description></description>
     </item>
     
@@ -129,56 +48,20 @@
     </item>
     
     <item>
-      <title>Tips</title>
-      <link>https://preslav.me/categories/tips/</link>
-      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+      <title>Docker</title>
+      <link>https://preslav.me/categories/docker/</link>
+      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
       
-      <guid>https://preslav.me/categories/tips/</guid>
+      <guid>https://preslav.me/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>iOS</title>
-      <link>https://preslav.me/categories/ios/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+      <title>Germany</title>
+      <link>https://preslav.me/categories/germany/</link>
+      <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/categories/ios/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jupyter Notebook</title>
-      <link>https://preslav.me/categories/jupyter-notebook/</link>
-      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/jupyter-notebook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Life Hacking</title>
-      <link>https://preslav.me/categories/life-hacking/</link>
-      <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/life-hacking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://preslav.me/categories/javascript/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>React Native</title>
-      <link>https://preslav.me/categories/react-native/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/react-native/</guid>
+      <guid>https://preslav.me/categories/germany/</guid>
       <description></description>
     </item>
     
@@ -206,6 +89,123 @@
       <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
       
       <guid>https://preslav.me/categories/gulp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ios</title>
+      <link>https://preslav.me/categories/ios/</link>
+      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://preslav.me/categories/javascript/</link>
+      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebook</title>
+      <link>https://preslav.me/categories/jupyter-notebook/</link>
+      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/jupyter-notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life Hacking</title>
+      <link>https://preslav.me/categories/life-hacking/</link>
+      <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/life-hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micropost</title>
+      <link>https://preslav.me/categories/micropost/</link>
+      <pubDate>Fri, 03 May 2019 05:45:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/micropost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Munich</title>
+      <link>https://preslav.me/categories/munich/</link>
+      <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/munich/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photo Stories</title>
+      <link>https://preslav.me/categories/photo-stories/</link>
+      <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/photo-stories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://preslav.me/categories/programming/</link>
+      <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://preslav.me/categories/projects/</link>
+      <pubDate>Sat, 09 Mar 2019 23:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://preslav.me/categories/python/</link>
+      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React Native</title>
+      <link>https://preslav.me/categories/react-native/</link>
+      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/react-native/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Running</title>
+      <link>https://preslav.me/categories/running/</link>
+      <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/running/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>https://preslav.me/categories/tips/</link>
+      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/tips/</guid>
       <description></description>
     </item>
     

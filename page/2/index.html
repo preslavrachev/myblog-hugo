@@ -9,7 +9,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.54.0" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -40,7 +40,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/" />
 
-<meta property="og:updated_time" content="2019-08-29T22:00:00+00:00" />
+<meta property="og:updated_time" content="2019-08-02T22:00:00&#43;00:00"/>
+
 <meta itemprop="name" content="Preslav Rachev">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
 
@@ -245,6 +246,43 @@ if (!doNotTrack) {
 
   <section class="w-100 mw8">
     
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/microblog/201908031736/" class="color-inherit dim link">
+            
+          </a>
+        </h1>
+        
+        <span class="mb3 f3">
+          <a href="/microblog/201908031736/" class="color-inherit dim link">
+            🗒 2 Aug, 2019</a>
+        </span>
+        
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+          <p>My first attempt to try out compiling a <a href="https://guides.micronaut.io/micronaut-creating-first-graal-app/guide/index.html">Micronaut</a> app to a native <a href="https://www.graalvm.org/">GraalVM</a> image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-03 17-45-05.png" alt="" /></p>
+
+<p>I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way. Yet, as of this moment this option just seems too impractical, compared to Go&rsquo;s compilation time of mere seconds.</p>
+
+<p>That said, the startup time and memory footprint of the same Micronaut app running on the JVM are quite good, when compared to Spring Boot.</p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
     
     <div class="relative w-100 mb4">
       
@@ -600,39 +638,6 @@ In this post, I want to demonstrate the use of functional constructs for impleme
 </article>
     </div>
     
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/microblog/201907011324/" class="color-inherit dim link">
-            
-          </a>
-        </h1>
-        
-        <span class="mb3 f3">
-          <a href="/microblog/201907011324/" class="color-inherit dim link">
-            🗒 1 Jul, 2019</a>
-        </span>
-        
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
-          <p>On the road again&hellip;</p>
-
-<p><img src="/images/2019/07/TulqGYv.jpg" alt="" /></p>
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
   </section>
 </div>
 
@@ -646,7 +651,6 @@ In this post, I want to demonstrate the use of functional constructs for impleme
     <li class="page-item">
     <a href="/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
     </li>
-    
     
     
     
@@ -740,7 +744,6 @@ In this post, I want to demonstrate the use of functional constructs for impleme
     </li>
     
 </ul>
-
 
 
     </main>

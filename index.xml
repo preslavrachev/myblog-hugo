@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Preslav Rachev</title>
@@ -5,7 +6,7 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2019 16:24:45 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -280,13 +281,14 @@ On Alpine, this can be done using the default package installer:</description>
 &lt;p&gt;In the few months running to the initial release, I learned a lot and was confronted by a couple of challenges that other fellow programmers have also been raving about:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:&lt;/p&gt;
+&lt;li&gt;Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;result&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doSomething&lt;/span&gt;()
 &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;err&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;nil&lt;/span&gt; {
-&lt;span style=&#34;color:#75715e&#34;&gt;// do something with the error, and potentially return or throw a Panic
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.&lt;/p&gt;&lt;/li&gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;// do something with the error, and potentially return or throw a Panic
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;build-deploy-take-a-step-back&#34;&gt;Build, deploy, take a step back&lt;/h1&gt;
@@ -1985,14 +1987,17 @@ imp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;reload(some_module)&l
 &lt;p&gt;Two tiny things before I move on:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:&lt;/p&gt;
+&lt;li&gt;As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;my search query min_retweets:5 OR min:faves:5
+&lt;pre&gt;&lt;code&gt;   my search query min_retweets:5 OR min:faves:5
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;will return results that match either of the engagement thresholds, or both.&lt;/p&gt;&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;will return results that match either of the engagement thresholds, or both.
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;The results are limited back in time to the most recent 10 days.&lt;/p&gt;&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;The results are limited back in time to the most recent 10 days.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;search-in-lists&#34;&gt;Search in Lists&lt;/h2&gt;
@@ -2284,13 +2289,13 @@ How many times have you had to do the same thing over and over again:</descripti
 &lt;p&gt;Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.&lt;/p&gt;
 
 &lt;p&gt;How many times have you had to do the same thing over and over again:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;A&lt;/span&gt; updateA(A &lt;span style=&#34;color:#a6e22e&#34;&gt;objA&lt;/span&gt;, B &lt;span style=&#34;color:#a6e22e&#34;&gt;objB&lt;/span&gt;) {
-    objA.&lt;span style=&#34;color:#a6e22e&#34;&gt;setC&lt;/span&gt;(objB.&lt;span style=&#34;color:#a6e22e&#34;&gt;getC&lt;/span&gt;());
-    objA.&lt;span style=&#34;color:#a6e22e&#34;&gt;setD&lt;/span&gt;(objB.&lt;span style=&#34;color:#a6e22e&#34;&gt;getD&lt;/span&gt;());
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; objA;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; A &lt;span style=&#34;color:#a6e22e&#34;&gt;updateA&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;A objA&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; B objB&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    objA&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setC&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;objB&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getC&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt;
+    objA&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setD&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;objB&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getD&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; objA&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Having an object, you want to modify some of its properties and simply return the same object. In Java, you can&amp;rsquo;t do this in a single chained fashion. In Kotlin, you can squeeze the above method to the following single line of code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;fun &lt;span style=&#34;color:#a6e22e&#34;&gt;updateA&lt;/span&gt;(objA&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; A, objB&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; B)&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; A &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; objA.&lt;span style=&#34;color:#a6e22e&#34;&gt;apply&lt;/span&gt; { c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; objB.&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;; d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; objB.&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt; }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;fun &lt;span style=&#34;color:#a6e22e&#34;&gt;updateA&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;objA: A&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; objB: B&lt;span style=&#34;color:#f92672&#34;&gt;):&lt;/span&gt; A &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; objA&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; objB&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; objB&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id=&#34;apply&#34;&gt;apply()&lt;/h3&gt;
 
 &lt;p&gt;By definition, &lt;a href=&#34;https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/apply.html&#34;&gt;&lt;code&gt;apply&lt;/code&gt;&lt;/a&gt; accepts a function, and sets its scope to that of the object on which apply has been invoked. This means that no explicit reference to the object is needed. &lt;code&gt;Apply()&lt;/code&gt; can do much more than simply setting properties of course. It is a transformation function, capable of evaluating complex logic before returning. At the end, the function simply returns the same object (with the added changes), so one can keep using it on the same line of code.&lt;/p&gt;
@@ -2302,14 +2307,14 @@ How many times have you had to do the same thing over and over again:</descripti
 &lt;p&gt;Please, remember that using apply on an object is NOT a thread-safe operation, and mutates the state of the object. If you want to retain the original object and return an immutable copy of it, you can use the function &lt;a href=&#34;https://kotlinlang.org/docs/reference/data-classes.html#copying&#34;&gt;&lt;code&gt;copy()&lt;/code&gt;&lt;/a&gt;, provided in all instances of data classes.&lt;/p&gt;
 
 &lt;p&gt;Assuming that your class contains only data (usually a good practice to separate logic from data), you can turn it into a &lt;a href=&#34;https://kotlinlang.org/docs/reference/data-classes.html&#34;&gt;data class&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;data &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt; User(val &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; String, val &lt;span style=&#34;color:#a6e22e&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Int)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;data &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;val name: String&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; val age: Int&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Data classes have a few advantages, and one of them is definitely the &lt;a href=&#34;https://kotlinlang.org/docs/reference/data-classes.html#copying&#34;&gt;&lt;code&gt;copy()&lt;/code&gt;&lt;/a&gt; function, provided to each and every instance. It not only provides a copy of the original object, leaving its state intact, but also allows setting new values to some of its properties at copy-time:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;val &lt;span style=&#34;color:#a6e22e&#34;&gt;user1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; User(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Smith&amp;#34;&lt;/span&gt;, 24)
-val &lt;span style=&#34;color:#a6e22e&#34;&gt;user2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; user1.&lt;span style=&#34;color:#a6e22e&#34;&gt;copy&lt;/span&gt;(age &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 31)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;val user1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; User&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Smith&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 24&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+val user2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; user1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;copy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;age &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 31&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Kotlin supports &lt;a href=&#34;http://blog.preslav.me/2016/05/29/kotlin-tips-named-parameters-default-arguments/&#34;&gt;named parameters&lt;/a&gt;, known from other languages, such as Python and Scala. In this case, they make life much easier, as all you need to do, is specify the name of the particular property (or properties) you want to modify by copying.&lt;/p&gt;
 
 &lt;p&gt;At the end you can combine the power and succinctness of both &lt;code&gt;apply()&lt;/code&gt; and &lt;code&gt;copy()&lt;/code&gt; by calling apply after copying:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;val &lt;span style=&#34;color:#a6e22e&#34;&gt;user2&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; user1.&lt;span style=&#34;color:#a6e22e&#34;&gt;copy&lt;/span&gt;(age &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 31).&lt;span style=&#34;color:#a6e22e&#34;&gt;apply&lt;/span&gt; { &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; execute &lt;span style=&#34;color:#a6e22e&#34;&gt;some&lt;/span&gt; logic &lt;span style=&#34;color:#a6e22e&#34;&gt;here&lt;/span&gt; }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;></content:encoded>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;val user2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; user1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;copy&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;age &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 31&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; execute some logic here &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;></content:encoded>
       
     </item>
     
