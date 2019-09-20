@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://preslav.me/microblog/201909021700/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/2019/08/29/goland-license/</loc>
     <lastmod>2019-08-29T22:00:00+00:00</lastmod>
   </url>
@@ -443,7 +438,7 @@
   
   <url>
     <loc>https://preslav.me/tags/book/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -747,13 +742,13 @@
   
   <url>
     <loc>https://preslav.me/microblog/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/micropost/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -843,7 +838,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-08-29T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -891,7 +886,7 @@
   
   <url>
     <loc>https://preslav.me/tags/quote/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-08-21T16:24:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
