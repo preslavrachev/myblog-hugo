@@ -6,10 +6,34 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Sep 2019 16:24:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Good Code is Boring</title>
+      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
+      <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
+      <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
+{{ twitter &amp;ldquo;865159346149314560&amp;rdquo;}}
+I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.
+All programming languages have baggage - obscure features that made it in the spec but were later deemed as hacks that should be avoided.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>&lt;p&gt;You have seen them many times. Small snippets of code and the question &lt;strong&gt;&lt;em&gt;&amp;ldquo;What would the the following piece of code print&lt;/em&gt;&lt;/strong&gt;&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.&lt;/p&gt;
+
+&lt;p&gt;{{ twitter &amp;ldquo;865159346149314560&amp;rdquo;}}&lt;/p&gt;
+
+&lt;p&gt;I find those kinds of questions utterly pointless. They not only teach you &lt;strong&gt;nothing&lt;/strong&gt; about real-world programming, but might also lead many newcomers to long-term frustration with programming.&lt;/p&gt;
+
+&lt;p&gt;All programming languages have baggage - obscure features that made it in the spec but were later deemed as &lt;strong&gt;hacks&lt;/strong&gt; that should be avoided. There is a certain sense of pride that junior programmers feel when they find such hacks and use them to demonstrate problem-solving skills. I am all in favor of encouraging developers to be proactive and think out of the box. Yet, I often try to point out that using questions like the above as a way of judging one&amp;rsquo;s skills is the wrong way to do it. The mere fact that an opportunity for such questions exists in the first place, should make one take a skeptical look at the language itself.&lt;/p&gt;
+
+&lt;p&gt;Contrary to what your teacher taught you, real-world programming is all but proving yourself at solving complex riddles. Much of the well-written production code I have seen is pretty trivial and boring-looking like. This makes it easy to follow and maintain years down the road, once its original creator no longer works on it.&lt;/p&gt;
+></content:encoded>
+      
+    </item>
     
     <item>
       <title>Bought a Year-Long License for GoLand</title>
