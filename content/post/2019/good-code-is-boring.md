@@ -12,7 +12,7 @@ title = "Good Code is Boring"
 
 You have seen them many times. Small snippets of code and the question ***"What would the the following piece of code print***" beneath. You might have tried taking a guess, and perhaps, even failed.
 
-{{<tweet 865159346149314560 >}}
+{{< tweet 865159346149314560 >}}
 
 I find those kinds of questions utterly pointless. They not only teach you **nothing** about real-world programming, but might also lead many newcomers to long-term frustration with programming. 
 
