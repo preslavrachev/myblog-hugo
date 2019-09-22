@@ -18,13 +18,13 @@
       
       <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
-{{ twitter &amp;ldquo;865159346149314560&amp;rdquo;}}
+{{ tweet &amp;ldquo;865159346149314560&amp;rdquo;}}
 I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.
 All programming languages have baggage - obscure features that made it in the spec but were later deemed as hacks that should be avoided.</description>
       <dc:creator>Preslav Rachev</dc:creator>
       <content:encoded>&lt;p&gt;You have seen them many times. Small snippets of code and the question &lt;strong&gt;&lt;em&gt;&amp;ldquo;What would the the following piece of code print&lt;/em&gt;&lt;/strong&gt;&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.&lt;/p&gt;
 
-&lt;p&gt;{{ twitter &amp;ldquo;865159346149314560&amp;rdquo;}}&lt;/p&gt;
+&lt;p&gt;{{ tweet &amp;ldquo;865159346149314560&amp;rdquo;}}&lt;/p&gt;
 
 &lt;p&gt;I find those kinds of questions utterly pointless. They not only teach you &lt;strong&gt;nothing&lt;/strong&gt; about real-world programming, but might also lead many newcomers to long-term frustration with programming.&lt;/p&gt;
 
