@@ -18,9 +18,8 @@
       
       <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
-{{ tweet &amp;ldquo;865159346149314560&amp;rdquo;}}
-I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.
-All programming languages have baggage - obscure features that made it in the spec but were later deemed as hacks that should be avoided.</description>
+#golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
+&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
     </item>
     
     <item>

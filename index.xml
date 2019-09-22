@@ -18,13 +18,14 @@
       
       <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
-{{ tweet &amp;ldquo;865159346149314560&amp;rdquo;}}
-I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.
-All programming languages have baggage - obscure features that made it in the spec but were later deemed as hacks that should be avoided.</description>
+#golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
+&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
       <dc:creator>Preslav Rachev</dc:creator>
       <content:encoded>&lt;p&gt;You have seen them many times. Small snippets of code and the question &lt;strong&gt;&lt;em&gt;&amp;ldquo;What would the the following piece of code print&lt;/em&gt;&lt;/strong&gt;&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.&lt;/p&gt;
 
-&lt;p&gt;{{ tweet &amp;ldquo;865159346149314560&amp;rdquo;}}&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; pop quiz: what will this print? &lt;a href=&#34;https://t.co/99xR8wybpp&#34;&gt;https://t.co/99xR8wybpp&lt;/a&gt; &lt;a href=&#34;https://t.co/Q7YpJbYr8c&#34;&gt;pic.twitter.com/Q7YpJbYr8c&lt;/a&gt;&lt;/p&gt;&amp;mdash; ✕✕✕✕✕ (@peterbourgon) &lt;a href=&#34;https://twitter.com/peterbourgon/status/865159346149314560?ref_src=twsrc%5Etfw&#34;&gt;May 18, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
 
 &lt;p&gt;I find those kinds of questions utterly pointless. They not only teach you &lt;strong&gt;nothing&lt;/strong&gt; about real-world programming, but might also lead many newcomers to long-term frustration with programming.&lt;/p&gt;
 
