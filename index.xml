@@ -6,10 +6,57 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What&#39;s in a Mixtape?</title>
+      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
+      <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
+      <description>Mixtape
+ A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>
+
+&lt;p&gt;&lt;em&gt;Mixtape&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; &lt;a href=&#34;https://www.urbandictionary.com/define.php?term=Mixtapes&#34;&gt;Urban Dictionary&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;A budding &lt;a href=&#34;https://mixtape.preslav.me/&#34;&gt;search and discovery engine for podcasts&lt;/a&gt; built by yours truly.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The 20th century marked a giant leap forward in music production and distribution. It started with the vinyl record which made music available in everyone&amp;rsquo;s home. Then, at the turn of the century, the digital cassette recorder came to shake the game, by allowing everyone to create mixes of their own liking.&lt;/p&gt;
+
+&lt;p&gt;See, vinyl records are great, but they could only play the same thing over and over again. Assuming you bought one album per record, you quickly ended up holding a pile of records from your favourite bands. We all know that artists back then were great and almost all songs in an album became hits, but what if, hypothetically, one liked only a couple of songs and skipped the rest? One still needed to buy and keep the entire record.&lt;/p&gt;
+
+&lt;p&gt;Digital cassette recorders changed all that. Not only were cassettes smaller in size; one could record on top, multiple times over. This gave the birth of the &lt;strong&gt;mixtape&lt;/strong&gt;. Decades before the playlists of today, mixtapes let everyone create and share thematic mixes of songs from different artists, and often, from completely different genres.&lt;/p&gt;
+
+&lt;h1 id=&#34;from-cassettes-to-podcasting&#34;&gt;From cassettes to podcasting&lt;/h1&gt;
+
+&lt;p&gt;In a funny, but similar way, podcast distribution still works like buying vinyls from a record store. Whether you subscribe manually, or via one of the myriads of mobile apps out there, podcasts still get distributed primarily as RSS feeds that you either follow entirely, or not at all. The good side of this is that just like with records, if you like the podcast host, over the years you build up a certain sense of loyalty and bonding. I have been listening to podcasts since 2004, and there are are many that have been following for more than a decade.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, just like music, podcasts nowadays are in the millions, and while I still follow my favourites, there are many more, from which I occasionally grab an interesting episode and skip the rest. Kind of like your Twitter timeline. Of the hundreds (or thousands) of people of people you follow, perhaps, you really only interact with a couple. The rest are somewhat matching your taste, but you probably only added them because you like one of their tweets, and now you are stuck with them forever, hoping for them to strike gold again.&lt;/p&gt;
+
+&lt;p&gt;This is one of the reasons why I started working on &lt;a href=&#34;https://mixtape.preslav.me/&#34;&gt;Mixtape&lt;/a&gt;. From a rough first glance, &lt;a href=&#34;https://mixtape.preslav.me/&#34;&gt;Mixtape&lt;/a&gt; looks like a search engine. This is totally true - the search engine is what powers the foundation of &lt;a href=&#34;https://mixtape.preslav.me/&#34;&gt;Mixtape&lt;/a&gt;. Unlike what you would get in your podcast player, the search engine goes beyond the podcast itself, and focuses on what makes each of its episodes unique. That&amp;rsquo;s why, you would get episodes from various podcasts when searching for a given topic:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mixtape.preslav.me/?search=sleep%20science&#34;&gt;&lt;em&gt;Why is sleep so important&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mixtape.preslav.me/?search=space%20exploration&amp;amp;category=science&#34;&gt;&lt;em&gt;What&amp;rsquo;s the up with space exploration?&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mixtape.preslav.me/?search=future%20of%20work&amp;amp;category=business&#34;&gt;&lt;em&gt;Are we ready for the future of work?&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Yet, the search is only the beginning. The &lt;strong&gt;mixtape&lt;/strong&gt; part in &lt;a href=&#34;https://mixtape.preslav.me/&#34;&gt;Mixtape&lt;/a&gt; comes from the fact that each search is essentialy a new podcast you can subscribe to. A whole new podcast, made up of episodes from various shows, and centred around the topic that interested you.&lt;/p&gt;
+
+&lt;p&gt;And here comes the discovery part. By providing the full credits to the original podcast creator (incl. links, podcast covers, etc), I am hoping that having caught up on a new podcast via a mixtape feed, a listener would eventually go and subscribe for the podcast itself. The difference with subscribing up-front, is that the listener would have gained enough confidence that the podcast is really up to their liking.&lt;/p&gt;
+></content:encoded>
+      
+      <media:content url="https://images.unsplash.com/photo-1560847581-59ee8139cb8d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80" medium="image"/>
+      
+    </item>
     
     <item>
       <title>Good Code is Boring</title>
