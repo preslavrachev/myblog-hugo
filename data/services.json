@@ -1,17 +1,21 @@
 {
-  "title": "Services",
+  "title": "Things that make me wake up",
   "services": [
     {
-      "title": "Optimizing Existing Projects",
-      "description": "Finding resource and performance bottlenecks in a project, and designing a way around them."
+      "title": "Friends and family",
+      "description": "Most important. Period. Whoever says otherwise, lies to you."
     },
     {
-      "title": "Analyzing Code Base Quality",
-      "description": "Using a set of heurirstics and scientific methods to look at the evolution of a code base."
+      "title": "Tinkering With Stuff",
+      "description": "Whether through code, or with a 🛠 in the hand. The drive to always figure out what things are made of, and make them better"
     },
     {
-      "title": "Proof-of-Concept Development",
-      "description": "Reaching an MVP in no time."
+      "title": "Distance Running",
+      "description": "Is more a challenge for the mind than for the body"
+    },
+    {
+      "title": "Reading and writing",
+      "description": "My voracious appetite to devour knowledge and share it further"
     }
   ]
 }
