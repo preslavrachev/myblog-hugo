@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Youtube on Preslav Rachev</title>
+    <link>https://preslav.me/tags/youtube/</link>
+    <description>Recent content in Youtube on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Sep 2019 10:20:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/260920191020/</link>
+      <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/260920191020/</guid>
+      <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
+Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
+    </item>
+    
+  </channel>
+</rss>

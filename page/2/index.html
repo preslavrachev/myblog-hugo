@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/" />
 
-<meta property="og:updated_time" content="2019-08-11T07:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-08-18T16:24:45&#43;00:00"/>
 
 <meta itemprop="name" content="Preslav Rachev">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -246,6 +246,243 @@ if (!doNotTrack) {
 
   <section class="w-100 mw8">
     
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/microblog/201908181824/" class="color-inherit dim link">
+            
+          </a>
+        </h1>
+        
+        <span class="mb3 f3">
+          <a href="/microblog/201908181824/" class="color-inherit dim link">
+            🗒 18 Aug, 2019</a>
+        </span>
+        
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+          
+
+<p>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with <a href="https://en.wikipedia.org/wiki/Tobias_L%C3%BCtke">Tobias Lütke</a>, co-founder and CEO of <a href="https://www.shopify.com/">Shopify</a>. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</p>
+
+<p>Out of his passion for snowboarding, Tobias has managed to build a market leader in online sales software. Yet, I was amazed at how humble his whole attitude is. This is one trait I can directly trace to his German roots.</p>
+
+<p>Fun fact: Tobias was one of the early adopters of Ruby on Rails, and as a result, Shopify is one of the largest sites using it nowadays, and a major flagship showcase, together with <a href="https://basecamp.com/">Basecamp</a>.</p>
+
+<p>Listen to the whole show:</p>
+
+
+
+
+
+
+
+<article class="bg-white center mw6 ba b--black-10 mv4">
+  <div class="pv2 ph3 bb b--black-10">
+    <a href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke">
+      <h1 class="f6 ttu tracked">NPR Choice page</h1>
+    </a>
+  </div>
+
+  <div class="flex flex-column flex-row-m flex-row-l">
+    <div
+      class="ma2 w-100-l w-100-m"
+      style="background: url('https://source.unsplash.com/200x200/?nature,water'); background-position:center; background-size: cover; min-height: 100px"
+    ></div>
+    <div class="pa2">
+      <p>By choosing “I agree” below, you agree that NPR’s sites use cookies, similar tracking and storage technologies, and information about the device you use to access our sites to enhance your viewing, listening and user experience, personalize content, personalize messages from NPR’s sponsors, provide social media features, and analyze NPR’s traffic. This information is shared with social media services, sponsorship, analytics and other third-party service providers.
+            See details.</p>
+      <small class="gray db pv2"
+        >Source: -
+        <a
+          href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke"
+          >https://www.npr.org</a
+        ></small
+      >
+    </div>
+  </div>
+</article>
+
+
+
+<hr />
+
+<h5 id="i-managed-to-find-amazing-podcast-episode-through-mixtape-https-mixtape-preslav-me-the-search-and-discovery-engine-for-podcasts-i-built-check-it-out-and-help-me-keep-working-on-it-by-buying-me-a-coffee-https-www-buymeacoffee-com-0b7zhlq2i">I managed to find amazing podcast episode through <a href="https://mixtape.preslav.me/">Mixtape</a>, the search and discovery engine for podcasts I built. Check it out and help me keep working on it, by <a href="https://www.buymeacoffee.com/0B7zhlQ2I">buying me a coffee</a>.</h5>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/microblog/201908171824/" class="color-inherit dim link">
+            
+          </a>
+        </h1>
+        
+        <span class="mb3 f3">
+          <a href="/microblog/201908171824/" class="color-inherit dim link">
+            🗒 17 Aug, 2019</a>
+        </span>
+        
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+          <p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a <code>vue.config.js</code> file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">devServer</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">proxy</span><span style="color:#f92672">:</span> {
+      <span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://remote-server.com&#34;</span>,
+        <span style="color:#a6e22e">changeOrigin</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+      }
+    }
+  }
+};
+</code></pre></div>
+<p>When calling <code>yarn serve</code>, I get the following message flashing in the developer console:</p>
+
+<pre><code>The connection to ws://remote-server.com was interrupted while the page was loading.
+</code></pre>
+
+<p>The app seems running and proxying to the remote API works just fine, but this annoying message obliterates everything else in the developer console. Thankfully, there is an easy way to get rid of it. Simply, add a <code>ws: false</code> to the configuration:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">devServer</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">proxy</span><span style="color:#f92672">:</span> {
+      <span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://remote-server.com&#34;</span>,
+        <span style="color:#a6e22e">changeOrigin</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+        <span style="color:#a6e22e">ws</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+      }
+    }
+  }
+};
+</code></pre></div>
+<hr />
+
+
+
+
+
+
+
+<article class="bg-white center mw6 ba b--black-10 mv4">
+  <div class="pv2 ph3 bb b--black-10">
+    <a href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">
+      <h1 class="f6 ttu tracked">Errors in browser console when proxying &#39;/&#39; · Issue #2662 · vuejs/vue-cli</h1>
+    </a>
+  </div>
+
+  <div class="flex flex-column flex-row-m flex-row-l">
+    <div
+      class="ma2 w-100-l w-100-m"
+      style="background: url('https://avatars1.githubusercontent.com/u/6128107?s=400&amp;v=4'); background-position:center; background-size: cover; min-height: 100px"
+    ></div>
+    <div class="pa2">
+      <p>Version 3.0.4 Reproduction link https://github.com/CK159/vue-proxy-issue Node and OS info node 8.12.0 npm 6.4.1 Steps to reproduce Create project vue create my-app Add vue.config.js with this conte...</p>
+      <small class="gray db pv2"
+        >Source: -
+        <a
+          href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044"
+          >GitHub</a
+        ></small
+      >
+    </div>
+  </div>
+</article>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/microblog/201830111824/" class="color-inherit dim link">
+            
+          </a>
+        </h1>
+        
+        <span class="mb3 f3">
+          <a href="/microblog/201830111824/" class="color-inherit dim link">
+            🗒 16 Aug, 2019</a>
+        </span>
+        
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+          <blockquote>
+<p>Japanese websites don&rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.</p>
+</blockquote>
+
+
+
+
+
+
+
+<article class="bg-white center mw6 ba b--black-10 mv4">
+  <div class="pv2 ph3 bb b--black-10">
+    <a href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware">
+      <h1 class="f6 ttu tracked">Why doesn’t Japan excel in software as they did in hardware?</h1>
+    </a>
+  </div>
+
+  <div class="flex flex-column flex-row-m flex-row-l">
+    <div
+      class="ma2 w-100-l w-100-m"
+      style="background: url('https://source.unsplash.com/200x200/?nature,water'); background-position:center; background-size: cover; min-height: 100px"
+    ></div>
+    <div class="pa2">
+      <p>Ah… Finally. My time has come.Where to begin?In Japan software development is not held to the same standard as other engineering positions.Japan has always had a custom where every year, new university graduates in their thousands march through giant career fairs searching for a job. This is something I call the March of the Penguins - every one of them is adorned with a new black suit with a pristine white shirt.There the companies will take their resumes, interview them and perhaps extend an invitation to the next interview. None of these companies care about what you studied or what your passions are. They might perk up if they hear that you are from one of the top flight schools (Todai, Keio, Waseda, Tokyo Tech et al).The whole idea here is that everything you need to know about doing your job will be taught to you.Now I know people working at somewhat (emphasis on somewhat) internationalized companies like Mercari or Rakuten (the Japanese eBay and Amazon respectively) will tell you that this is not how tech companies hire.The sad truth is that they do. While there are enough foreigners who will stand up to being told to hire and train clueless graduates and mold them into proper software developers in more international companies - the huge majority of software development firms don&#39;t operate like that.Naturally, many Japanese software development firms have engineering teams of pitiful quality.Software development is looked at as any other skill that can be picked up in a few months to a year: accounting, secretarial work, project management, business analysis etc.They don&#39;t speak EnglishNaturally when you cannot read or speak English, the tools you use to develop software as well as the methods you use to develop them will be those that have managed to percolate downwards from English sources due to the magnanimity of people willing to volunteer their time to translate documentation and articles.At any given time, the cutting edge of software development in Japan is 6 months to 7 years behind the rest of the world.Software development is a reversed pyramid schemeMost technology consulting firms who are awarded contracts do not actually have developers - or have only a handful at hand. They will sub-contract their work to firms down the totem pole who will in turn sub-sub-contract their work to a lesser firm.The actual developer working on your product could be a sub-contract 5 contract levels removed from you.Good luck managing changes in business requirements.All this works because the people who award the contracts are as technologically illiterate as the ones proposing them. If there ever was an apropos time to use the word circlejerk this would be it.Consumers have extremely conservative tastesAnyone asking this question by now will have seen the absolutely antediluvian website designs that are still being employed by Japanese firms. (Behold the largest online travel agency site in Japan: www.jalan.net).We have actually done user testing and A/B testing with non-trivial sample sizes.Japanese websites don&#39;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.So you can either create modern designs that will bring in international attention, but alienate domestic users, or serve your existing customers as you have been doing for decades.That&#39;s an easy choice for many companies.</p>
+      <small class="gray db pv2"
+        >Source: -
+        <a
+          href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware"
+          >https://www.quora.com</a
+        ></small
+      >
+    </div>
+  </div>
+</article>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
     
     <div class="relative w-100 mb4">
       
@@ -475,118 +712,6 @@ On Alpine, this can be done using the default package installer:
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           
           One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/microblog/201907081824/" class="color-inherit dim link">
-            
-          </a>
-        </h1>
-        
-        <span class="mb3 f3">
-          <a href="/microblog/201907081824/" class="color-inherit dim link">
-            🗒 8 Jul, 2019</a>
-        </span>
-        
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
-          
-
-<h1 id="scooter-craze">Scooter Craze</h1>
-
-<p>The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.</p>
-
-<p>In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians. I just hope they don&rsquo;t follow the fate of <a href="https://www.instagram.com/obikesofmunich/">OBike&rsquo;s rentable bikes</a>, some of which ended up in the local river. An electric scooter&rsquo;s battery is a mini lab of toxic stuff, so if this is in your mind, please, think twice.</p>
-
-<p><img src="/images/2019/07/yUkF0kO.jpg" alt="" /></p>
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      
-      
-      <div class="pr3-ns mb4 mb0-ns w-100 w-30-ns">
-        <a href="/2019/07/07/implementing-a-functional-style-builder-in-go/" class="db grow">
-          <img src="https://preslav.me/images/2019/07/photo-1527199768775-bdabf8b32f61.jpg" class="img"
-            alt="image from Implementing a Functional-Style Builder in Go">
-        </a>
-      </div>
-      
-      <div
-        class="blah w-100 w-70-ns pl3-ns">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/07/07/implementing-a-functional-style-builder-in-go/" class="color-inherit dim link">
-            
-            Implementing a Functional-Style Builder in Go
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 f6-l">
-          Preslav Rachev in functional programming, golang | 7 Jul, 2019</span>
-        
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
-          Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
-In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&rsquo;t claim that mine is certainly the best.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/microblog/201907041930/" class="color-inherit dim link">
-            
-          </a>
-        </h1>
-        
-        <span class="mb3 f3">
-          <a href="/microblog/201907041930/" class="color-inherit dim link">
-            🗒 4 Jul, 2019</a>
-        </span>
-        
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
-          <p>Chillin&rsquo;</p>
-
-<p><img src="/images/2019/07/D7F6E34A-8C10-4A48-AC8D-1DD43D8C44DA-1.jpg" alt="" /></p>
-
           
         </div>
       </div>

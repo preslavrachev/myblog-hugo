@@ -6,10 +6,41 @@
     <description>Recent content in Quote on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Sep 2019 16:24:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2019 11:20:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/quote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/260920191021/</link>
+      <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/260920191021/</guid>
+      <description>Chiefly, Go sacrifices expressiveness for uniformity.
+The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
+Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/260920191020/</link>
+      <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/260920191020/</guid>
+      <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
+Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/220920191020/</link>
+      <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/220920191020/</guid>
+      <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
+Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</description>
+    </item>
     
     <item>
       <title></title>

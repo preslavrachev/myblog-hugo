@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/microblog/260920191021/</loc>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/microblog/260920191020/</loc>
+    <lastmod>2019-09-26T10:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</loc>
     <lastmod>2019-09-25T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/microblog/220920191020/</loc>
+    <lastmod>2019-09-22T10:20:00+00:00</lastmod>
   </url>
   
   <url>
@@ -589,13 +604,13 @@
   
   <url>
     <loc>https://preslav.me/tags/go/</loc>
-    <lastmod>2019-08-03T22:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/golang/</loc>
-    <lastmod>2019-08-29T22:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -763,13 +778,13 @@
   
   <url>
     <loc>https://preslav.me/microblog/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/micropost/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -841,7 +856,13 @@
   
   <url>
     <loc>https://preslav.me/tags/podcasting/</loc>
-    <lastmod>2019-09-25T22:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T10:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/categories/podcasting/</loc>
+    <lastmod>2019-09-26T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -859,7 +880,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-09-25T22:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -877,7 +898,7 @@
   
   <url>
     <loc>https://preslav.me/categories/programming/</loc>
-    <lastmod>2019-09-21T22:00:00+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -913,7 +934,7 @@
   
   <url>
     <loc>https://preslav.me/tags/quote/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2019-09-26T11:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -978,6 +999,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/silicon-valley/</loc>
+    <lastmod>2019-09-22T10:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/social-media/</loc>
     <lastmod>2018-08-19T17:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1009,7 +1036,13 @@
   
   <url>
     <loc>https://preslav.me/tags/startups/</loc>
-    <lastmod>2019-05-11T05:36:25+00:00</lastmod>
+    <lastmod>2019-09-22T10:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/categories/startups/</loc>
+    <lastmod>2019-09-22T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1068,6 +1101,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/uber/</loc>
+    <lastmod>2019-09-22T10:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
     <priority>0</priority>
@@ -1098,8 +1137,20 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/wework/</loc>
+    <lastmod>2019-09-22T10:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/wwdc/</loc>
     <lastmod>2019-06-08T12:56:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/youtube/</loc>
+    <lastmod>2019-09-26T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
