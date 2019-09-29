@@ -4,7 +4,13 @@
 {{ end }}
 
 {{ define "title"}}
-    {{ if (not (isset .Params "Title")) }}
+    {{ if in .Params.Tags "quote"}}
+        {{ if in .Params.Tags "book"}}
+          Add this book to your reading list
+        {{else}}
+          An interesting article I stumbled upon
+        {{end}}
+    {{ else if (not (isset .Params "Title")) }}
         Preslav's Microblog: {{- .Date.Format " 2 Jan, 2006" -}}
     {{ else }}
         {{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}
