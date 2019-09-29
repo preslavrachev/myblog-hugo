@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Preslav Rachev  | Busting the Myth Around Multithreading in Python</title>
+    <title>
+    
+        Preslav's Microblog: 28 Sep, 2019
+</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -32,30 +35,27 @@
 
     
 
-    <meta property="og:title" content="Busting the Myth Around Multithreading in Python" />
-<meta property="og:description" content="One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
-When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause." />
+    <meta property="og:title" content="" />
+<meta property="og:description" content="Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/" />
-<meta property="article:published_time" content="2019-06-03T05:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-06-03T05:00:00&#43;00:00"/>
+<meta property="og:url" content="https://preslav.me/microblog/280920191021/" />
+<meta property="article:published_time" content="2019-09-28T11:20:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-09-28T11:20:00&#43;00:00"/>
 
-<meta itemprop="name" content="Busting the Myth Around Multithreading in Python">
-<meta itemprop="description" content="One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
-When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause.">
-
-
-<meta itemprop="datePublished" content="2019-06-03T05:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-06-03T05:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="940">
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.">
 
 
+<meta itemprop="datePublished" content="2019-09-28T11:20:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-09-28T11:20:00&#43;00:00" />
+<meta itemprop="wordCount" content="155">
 
-<meta itemprop="keywords" content="python,concurrency," />
+
+
+<meta itemprop="keywords" content="micropost,Quote,Kickstarter," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Busting the Myth Around Multithreading in Python"/>
-<meta name="twitter:description" content="One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
-When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause."/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support."/>
 
       
 <script type="application/javascript">
@@ -94,7 +94,7 @@ if (!doNotTrack) {
 </script>
 
 <link rel="amphtml" type="text/html"
-    href="https://preslav.me/amp/2019/06/03/busting-the-myth-around-multithreading-in-python/">
+    href="https://preslav.me/amp/microblog/280920191021/">
 <style>
     #carbonads {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -161,14 +161,11 @@ if (!doNotTrack) {
   <body class="ma0 avenir bg-white production">
 
     
+   
+  
 
-
-
-
-
-<header class="cover bg-top"
-  style="background-image: url('https://preslav.me/images/2019/06/photo-1516259680870-b878830674f9.jpg'); background-position: center">
-  <div class="pb3-m pb6-l bg-black-60">
+<header>
+  <div class="bg-black">
     <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://preslav.me/" class="f4 fw2 hover-white no-underline white-90 dib">
@@ -234,150 +231,79 @@ if (!doNotTrack) {
   </div>
 </nav>
 
-    <div class="tc-l pv3 ph3 ph4-ns">
-      
-      <h1 class="f3 f1-l fw2 white-90 mb0 lh-title">
-        Busting the Myth Around Multithreading in Python</h1>
-      
-      
-    </div>
   </div>
 </header>
 
 
 <div class="flex items-center justify-center pa4 bg-lightest-blue navy">
   
-  <span class="lh-title ml3">Have an improvement request? Drop me a <a href="#disqus_thread">comment down below</a>, or <a href="/contact/">contact me.</a></span>
+  <span class="lh-title ml3">Psst, you might wanna check out the <a href="/microblog/">"Microblog"</a> section I've created recently. <a href="/contact/">Let me know</a> what you think</span>
 </div>
 
     <main class="pb7" role="main">
       
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
 
-<article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <p class="f5 b helvetica tracked">
+        MICROBLOG |  28 SEP, 2019
+      </p>
+    </header>
 
-  <header class="mt4 w-100">
-    <p class="f6 b helvetica tracked">
-      
-      POSTS
-    </p>
-    <h1 class="f1 athelas mb1">Busting the Myth Around Multithreading in Python</h1>
-    <div class="flex-l flex-wrap w-100 justify-between w-two-thirds-l">
-      <div>
-        
-        <time class="f6 mv2 dib tracked"
-          datetime="2019-06-03T05:00:00Z">June 3, 2019</time>
-        
-        
-        <span class="f6 dib tracked"> - 5 min</span>
-        
-      </div>
-      <div>
-<a class="resp-sharing-button__link"
-    href="https://facebook.com/sharer/sharer.php?u=https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/"
-    target="_blank" rel="noopener" aria-label="">
+    <section class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><blockquote>
+<p>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support. The company is taking its workers and users for granted. If they get away with it, other companies will feel even more empowered to crush their own organizing efforts. It is critically important that Kickstarter be loudly opposed.</p>
+</blockquote>
+
+
+
+
+
+
+
+<article class="bg-white center mw6 ba b--black-10 mv4">
+  <div class="pv2 ph3 bb b--black-10">
+    <a href="https://www.currentaffairs.org/2019/09/kickstarter-to-workers-and-project-creators-drop-dead">
+      <h1 class="f6 ttu tracked">Kickstarter To Workers and Project Creators: Drop Dead | Current Affairs</h1>
+    </a>
+  </div>
+
+  <div class="flex flex-column flex-row-m flex-row-l">
     <div
-        class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
-        <div aria-hidden="true"
-            class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z" />
-            </svg>
-        </div>
+      class="ma2 w-100-l w-100-m"
+      style="background: url('https://images.currentaffairs.org/2019/09/Screen-Shot-2019-09-27-at-11.58.52-PM-1024x646.jpg'); background-position:center; background-size: cover; min-height: 100px"
+    ></div>
+    <div class="pa2">
+      <p>&lt;p&gt;The company doubles down on its anti-union stance and says it plans to fight its workers to the bitter end… &lt;/p&gt;</p>
+      <small class="gray db pv2"
+        >Source: -
+        <a
+          href="https://www.currentaffairs.org/2019/09/kickstarter-to-workers-and-project-creators-drop-dead"
+          >https://www.currentaffairs.org</a
+        ></small
+      >
     </div>
-</a>
+  </div>
+</article>
 
 
-<a class="resp-sharing-button__link"
-    href="https://twitter.com/intent/tweet/?text=Busting&#43;the&#43;Myth&#43;Around&#43;Multithreading&#43;in&#43;Python&amp;url=https%3A%2F%2Fpreslav.me%2F2019%2F06%2F03%2Fbusting-the-myth-around-multithreading-in-python%2F"
-    target="_blank" rel="noopener" aria-label="">
-    <div
-        class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
-        <div aria-hidden="true"
-            class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z" />
-            </svg>
-        </div>
-    </div>
-</a>
-
-
-<a class="resp-sharing-button__link"
-    href="mailto:?subject=Busting%20the%20Myth%20Around%20Multithreading%20in%20Python&body=https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/"
-    target="_self" rel="noopener" aria-label="">
-    <div
-        class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
-        <div aria-hidden="true"
-            class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm8 16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v8z" />
-                <path
-                    d="M17.9 8.18c-.2-.2-.5-.24-.72-.07L12 12.38 6.82 8.1c-.22-.16-.53-.13-.7.08s-.15.53.06.7l3.62 2.97-3.57 2.23c-.23.14-.3.45-.15.7.1.14.25.22.42.22.1 0 .18-.02.27-.08l3.85-2.4 1.06.87c.1.04.2.1.32.1s.23-.06.32-.1l1.06-.9 3.86 2.4c.08.06.17.1.26.1.17 0 .33-.1.42-.25.15-.24.08-.55-.15-.7l-3.57-2.22 3.62-2.96c.2-.2.24-.5.07-.72z" />
-            </svg>
-        </div>
-    </div>
-</a>
-
-</div>
-    </div>
-  </header>
-
-  <section
-    class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<p>One of the things I often hear from other developers, along with the usual <em>“Python is slow”</em>, is that <em>“multithreading in Python sucks”</em>. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.</p>
-
-<p>When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause. <em>The GIL</em>, they say, <em>prevents you from running more than one thread a time</em>.</p>
-
-<h1 id="tl-dr">TL;DR</h1>
-
-<p>Threads in python are perfect for issuing long-running I/O operations, such as database or remote API calls, file operations, etc. Where they show pretty miserable performance is heavy CPU operations (e.g. nested loops, recursion, etc)</p>
-
-<p>If there is one thing you should remember from this whole article, it is that <strong>multithreading is perfectly fine in Python</strong>, as it is all other languages that make use of it. Yes, there are <strong>some caveats</strong> that you need to keep an eye on, but you should not be afraid to use just because someone told you so. Depending on the implementation of Python you are using, there <strong>might be no GIL in place</strong>, so you might be using your development life harder by not using threads.</p>
-
-<p>OK? Good. Let me start with:</p>
-
-<h1 id="what-is-the-gil-anyway">What is the GIL anyway?</h1>
-
-<p>The Global Interpreter Lock (GIL) is a feature (yes, actually a feature) of CPython (the default Python implementation) which is highly related to how CPython manages memory. There are two popular ways for garbage collection in software applications: tracing garbage collection (also known simply as garbage collection) and reference counting. CPython uses reference counting, which is a simple and deterministic way of managing memory. Every time one acquires a reference to a variable, a reference counter gets automatically incremented. Every time a variable gets out of scope, the reference counter gets automatically decremented. When the reference counter reaches 0, the referred to memory gets disposed.</p>
-
-<h1 id="gil-and-multithreading">GIL and multithreading</h1>
-
-<p>Sounds nice and easy, and it is for the most part. Which is, until multithreading comes in place. See, if two threads access the same reference at the same time, a few things might happen. Decrement in and incrementing the reference count take some technological time. It&rsquo;s not much, but it also doesn&rsquo;t happen instantaneously. Imagine that one thread finishes execution and the decrement process has just begun. Another thread enters right in the middle of this and tries to obtain a reference to the same portion of memory. If the dereferencing finishes first, but the time the second thread obtains a reference, the associated memory might have been disposed of, which will result in SEGFAULT.</p>
-
-<p>It might also be the case that two or more threads try to increment the reference counter in parallel. This opens up a possibility for overwriting the counter with the lower value, unaware that it has already been incremented. The referenced memory will never be disposed of, which is a classical memory leak.</p>
-
-<h1 id="here-comes-the-gil-again">Here comes the GIL again</h1>
-
-<p>And this is why we have the GIL. Locking on every reference counter operation is too cumbersome, and certainly, introduce performance drawbacks. Therefore, the GIL is a single, globally-shared instance that can be obtained by one <strong>RUNNING</strong> thread at a time, and released afterward.</p>
-
-<h1 id="so-one-running-thread-at-a-time">So, one RUNNING thread at a time</h1>
-
-<p>Keep in mind the word RUNNING. I am writing it in capitals, in order to distinguish between a thread’s RUNNING and WAITING states. When a thread issues a long-running I/O operation, such as a database call, it switches from a RUNNING to a WAITING state and drops the lock on the GIL. Since no further operations will be executed in that thread during the WAITING state, none of the scenarios mentioned above can happen, so another thread can grab the GIL and continue. When a thread gets out of the WAITING state back to RUNNING, it obtains a lock on the GIL again and performs a quick refresh on the reference counters of its claimed state.</p>
-
-<p>Ideally, if the code executed in thread consists of only a blocking call (DB, remote API, disk, etc), it is a perfect candidate for concurrent execution. When the code starts getting more complex, and CPU-heavy operations get computed, performance starts dropping to the rate of serial execution, or even worse (due to the GIL lock overhead). This is where <strong>multiprocessing</strong> comes to the rescue. Though processes are limited by the number of available CPU cores, they share no memory, and consequently, there is no need for a GIL. If a heavy operation involves polling multiple I/O sources for data, before assembling a formatted result together, you’d rather do the I/O operations in separate threads, and if needed, the final transformations in separate processes.</p>
-
-<h1 id="not-all-python-implementations-need-a-gil">Not all Python implementations need a GIL</h1>
-
-<p>When we speak about the GIL, it is important to make certain that it is present in CPython, but not all Python implementations have it or need it. Since the vast majority of Python developers use CPython, the GIL is a relevant topic, but one should not forget there are other language implementations that don’t use it.</p>
-
-<p>Note: Unlike popular belief, <a href="https://www.pypy.org/">PyPy</a> (the Python JIT-compiler) **<a href="http://doc.pypy.org/en/latest/faq.html#does-pypy-have-a-gil-why">actually** <strong>has a GIL</strong></a>, although it uses tracing garbage collection, instead of reference counting. This has been more of a design decision to stick to the original design of the language, rather than an actual technological need, There are other implementations, however, such as <a href="https://www.jython.org/jythonbook/en/1.0/Concurrency.html#no-global-interpreter-lock">Jython</a>, and <a href="https://wiki.python.org/moin/IronPython">IronPython</a> which lack the GIL altogether.</p>
 <ul class="pa0">
   
    <li class="list">
-     <a href="/tags/python" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">python</a>
+     <a href="/tags/micropost" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">micropost</a>
    </li>
   
    <li class="list">
-     <a href="/tags/concurrency" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">concurrency</a>
+     <a href="/tags/quote" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Quote</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/kickstarter" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Kickstarter</a>
    </li>
   
 </ul>
 <div class="mt6">
-      <div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -397,10 +323,10 @@ if (!doNotTrack) {
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <aside class="w-30-l">
+    <aside class="w-30-l">
 
 
 
@@ -473,32 +399,32 @@ if (!doNotTrack) {
       <ul class="pa0 list f6">
       
         <li  class="mb2">
-            <a href="/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/">
-              Using Ephemeral Docker Containers as CLI Applications
+            <a href="/microblog/260920191021/">
+               26 Sep, 2019
             </a>
           </li>
         
         <li  class="mb2">
-            <a href="/2019/01/09/dotenv-files-python/">
-              Use Dotenv Files When Developing Your Python Apps
+            <a href="/microblog/260920191020/">
+               26 Sep, 2019
             </a>
           </li>
         
         <li  class="mb2">
-            <a href="/2018/12/20/dependency-injection-in-python/">
-              Dependency Injection in Python: The Java Guy&#39;s Perspective
+            <a href="/microblog/220920191020/">
+               22 Sep, 2019
             </a>
           </li>
         
         <li  class="mb2">
-            <a href="/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/">
-              Designing Well-Structured REST APIs with Flask-RestPlus: Part 1
+            <a href="/microblog/201909021700/">
+               2 Sep, 2019
             </a>
           </li>
         
         <li  class="mb2">
-            <a href="/2018/08/12/data-science-on-your-ipad/">
-              Data Science on Your iPad
+            <a href="/microblog/201908211824/">
+               21 Aug, 2019
             </a>
           </li>
         
@@ -506,7 +432,7 @@ if (!doNotTrack) {
   </div>
   </aside>
 
-</article>
+  </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
