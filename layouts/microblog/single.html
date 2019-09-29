@@ -5,7 +5,7 @@
 
 {{ define "title"}}
     {{ if (not (isset .Params "Title")) }}
-        Preslav' Microblog: {{- .Date.Format " 2 Jan, 2006" -}}
+        Preslav's Microblog: {{- .Date.Format " 2 Jan, 2006" -}}
     {{ else }}
         {{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}
     {{ end }}
