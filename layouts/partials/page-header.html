@@ -26,8 +26,3 @@
   </div>
 </header>
 {{ end }}
-
-<div class="flex items-center justify-center pa4 bg-lightest-blue navy">
-  {{ $msg := index (shuffle ($.Param "header_ctas")) 0 }}
-  <span class="lh-title ml3">{{ $msg | safeHTML }}</span>
-</div>
