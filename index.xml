@@ -692,6 +692,95 @@ This time was different. My wife and I flew for the wedding of one of our best f
     </item>
     
     <item>
+      <title>Introducing NoEmbed</title>
+      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
+      <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
+      <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.    NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share
+Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://noembed.preslav.me&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=500&amp;amp;q=80&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://noembed.preslav.me&#34;
+          &gt;NoEmbed&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+&lt;hr /&gt;
+
+&lt;p&gt;A picture is worth a thousand words. Everyone knows that. How about, &lt;em&gt;a preview is worth a thousand links&lt;/em&gt;, however? If you have ever written a &lt;a href=&#34;https://medium.com/&#34;&gt;Medium&lt;/a&gt; article, more than certainly, you have tried adding links to videos or other Web pages. One of the cool features that distinguished Medium early on, were its really nice link previews. Simply, dropping a link will turn it into a block of information containing a title, an image, and an informative description:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://preslav.me/images/2019/06/noembed.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In fact, if you keep looking around, you will find quite a few other apps adopting the same idea. &lt;a href=&#34;https://slack.com&#34;&gt;Slack&lt;/a&gt; and &lt;a href=&#34;https://www.notion.so/&#34;&gt;Notion&lt;/a&gt; are good examples that come to mind. Such previews are great, because unlike plain links, they deliver much more context, and therefore, help increase visitor engagement.&lt;/p&gt;
+
+&lt;p&gt;I wanted to provide similar link previews to my personal website, but what I found right away was how poorly adopted &lt;a href=&#34;https://oembed.com/&#34;&gt;oEmbed&lt;/a&gt; is out in the world. I will discuss &lt;a href=&#34;https://oembed.com/&#34;&gt;oEmbed&lt;/a&gt; in detail in a further post, but basically, it is a Web format allowing website owners to expose structured information for every particular link in that website. A good example is YouTube. If you check out the &lt;a href=&#34;http://www.youtube.com/oembed?url=http%3A//youtube.com/watch%3Fv%3DM3r2XDceM6A&amp;amp;format=json&#34;&gt;following link&lt;/a&gt;, you will get a JSON object will all the information about the video in the URL parameter. This info is ready to be rendered as a preview in a site or an app that consumes it.&lt;/p&gt;
+
+&lt;p&gt;The problems with oEmbed are apparent right away. In order for you to use it, the order side must have adopted it, and exposed an API endpoint for you to obtain metadata. Even if you built a proxy service that wrapped all the known oEmbed providers on the Web, you are essentially limited to the number of those providers. What about the rest of the Web?&lt;/p&gt;
+
+&lt;p&gt;Those were the thoughts that made me start working on what I called &lt;a href=&#34;https://noembed.preslav.me/&#34;&gt;NoEmbed&lt;/a&gt;. It solves the problem with the limited number of oEmbed providers by employing smart content extraction characteristics where needed. By using an officially provided list of well-known oEmbed providers, the service proxies to them when possible. Most of the time, however, &lt;a href=&#34;https://noembed.preslav.me/&#34;&gt;NoEmbed&lt;/a&gt; grabs the content of the requested URL, extracts valuable information out of it (title, excerpt, main image, etc) and returns an oEmbed-compatible response, so it can be integrated by any other services that already use oEmbed in some form or fashion.&lt;/p&gt;
+
+&lt;p&gt;I built &lt;a href=&#34;https://noembed.preslav.me/&#34;&gt;NoEmbed&lt;/a&gt; in my spare time writing 100% Go code. It is still crude and unfinished, but already working, and with your help and feedback, I might be able to turn it into a real service.&lt;/p&gt;
+
+&lt;h1 id=&#34;faq&#34;&gt;FAQ&lt;/h1&gt;
+
+&lt;h2 id=&#34;aren-t-there-other-services-doing-this-already&#34;&gt;Aren&amp;rsquo;t there other services doing this already?&lt;/h2&gt;
+
+&lt;p&gt;Of course, there are. &lt;a href=&#34;https://embed.ly/&#34;&gt;Embed.ly&lt;/a&gt; is a great example (used by Medium). Other notable examples are &lt;a href=&#34;https://iframely.com/&#34;&gt;Iframely&lt;/a&gt;, &lt;a href=&#34;https://microlink.io/&#34;&gt;microlink.io&lt;/a&gt;, and &lt;a href=&#34;https://embed.rocks/try&#34;&gt;Embed.rocks&lt;/a&gt;. All of them are great services, of course, but I wanted to one first and foremost for myself; one that is lean and fast and also respects the privacy of its users.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-s-with-the-name&#34;&gt;What&amp;rsquo;s with the name?&lt;/h2&gt;
+
+&lt;p&gt;This is just a temporary name. NoEmbed is actually the name of a &lt;a href=&#34;https://noembed.com/&#34;&gt;famous oEmbed proxy&lt;/a&gt;, which I wanted to use in the very begging. Yet, the small number of available oEmbed provides was a crucial factor that led me not to.&lt;/p&gt;
+
+&lt;p&gt;That said, the name will most probably change, and I am open to hear your suggestions.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-the-tech-stack&#34;&gt;What is the tech stack?&lt;/h2&gt;
+
+&lt;p&gt;Pretty boring, actually. Nothing super fancy. At the moment, we are talking about a single tailor-made Web/API service written in pure Go, sitting behind nginx (doing the load-balancing and some heavy caching).&lt;/p&gt;
+
+&lt;h2 id=&#34;who-is-using-it&#34;&gt;Who is using it?&lt;/h2&gt;
+
+&lt;p&gt;At the moment, the primary integrator of NoEmbed is the site you are reading at the moment. The embed that you saw at the beginning of this page, was generated with it.&lt;/p&gt;
+
+&lt;h2 id=&#34;are-you-planning-on-turning-this-into-an-actual-product&#34;&gt;Are you planning on turning this into an actual product?&lt;/h2&gt;
+
+&lt;p&gt;If you think you are ready to pay me for it, absolutely! If you already have a matching use case, do let me know, or sign up right away. I am planning to release a future update, which will allow consumers to use the API using secure tokens and authentication.&lt;/p&gt;
+></content:encoded>
+      
+      <media:content url="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80" medium="image"/>
+      
+    </item>
+    
+    <item>
       <title>Busting the Myth Around Multithreading in Python</title>
       <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
       <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>

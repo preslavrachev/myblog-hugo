@@ -112,6 +112,16 @@ This time was different. My wife and I flew for the wedding of one of our best f
     </item>
     
     <item>
+      <title>Introducing NoEmbed</title>
+      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
+      <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
+      <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.    NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share
+Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
+    </item>
+    
+    <item>
       <title>Busting the Myth Around Multithreading in Python</title>
       <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
       <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>

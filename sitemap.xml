@@ -163,6 +163,11 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/2019/06/20/introducing-noembed/</loc>
+    <lastmod>2019-06-20T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/microblog/201906111300/</loc>
     <lastmod>2019-06-11T11:00:50+00:00</lastmod>
   </url>
@@ -426,6 +431,12 @@
   <url>
     <loc>https://preslav.me/tags/android/</loc>
     <lastmod>2019-06-08T05:24:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/api/</loc>
+    <lastmod>2019-06-20T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -782,6 +793,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/medium/</loc>
+    <lastmod>2019-06-20T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/meetup/</loc>
     <lastmod>2019-02-03T14:29:06+00:00</lastmod>
     <priority>0</priority>
@@ -1132,6 +1149,12 @@
   <url>
     <loc>https://preslav.me/tags/vue.js/</loc>
     <lastmod>2019-08-17T16:24:45+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/web/</loc>
+    <lastmod>2019-06-20T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
