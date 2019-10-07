@@ -46,7 +46,7 @@ type Loader struct {
 }
 
 func NewLoader() *Loader {
-	&Loader{
+	return &Loader{
 		pageSize:10, // default
 	}
 }
