@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/tags/tips/" />
 
-<meta property="og:updated_time" content="2019-08-27T15:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-10-06T07:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Tips">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -248,6 +248,27 @@ if (!doNotTrack) {
         
 
         
+        <a class="db pv4 ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/">
+            <div class="flex flex-column">
+                <div class="w-100 pl3-ns">
+                    <h1 class="f3 fw1 athelas mt0 lh-title">Simple Immutable Builders in Go, Using Value Receivers</h1>
+                    <div class="f6 f5-l lh-copy nested-copy-line-height">
+                        Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
+l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        
+        
+        
+        
+        
+
+        
+
+        
         
         <a class="db ma2-l ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/">
             <div class="flex flex-column">
@@ -442,27 +463,6 @@ As developers, we spend a large portion of our time, searching for the &ldquo;na
                         Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
 Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
 val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-        
-        
-        
-        
-        
-
-        
-
-        
-        <a class="db pv4 ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2018/04/22/live-reloading-of-python-modules/">
-            <div class="flex flex-column">
-                <div class="w-100 pl3-ns">
-                    <h1 class="f3 fw1 athelas mt0 lh-title">Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</h1>
-                    <div class="f6 f5-l lh-copy nested-copy-line-height">
-                        Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
-With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.
                     </div>
                 </div>
             </div>

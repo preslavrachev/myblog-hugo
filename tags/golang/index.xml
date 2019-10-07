@@ -6,10 +6,20 @@
     <description>Recent content in Golang on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Sep 2019 11:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2019 07:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simple Immutable Builders in Go, Using Value Receivers</title>
+      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+      <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+      <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
+l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
+    </item>
     
     <item>
       <title></title>

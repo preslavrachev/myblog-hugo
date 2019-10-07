@@ -31,22 +31,21 @@
     
 
     
-      <link href="https://preslav.me/tags/go/index.xml" rel="alternate" type="application/rss+xml" title="Preslav Rachev" />
-      <link href="https://preslav.me/tags/go/index.xml" rel="feed" type="application/rss+xml" title="Preslav Rachev" />
+      <link href="https://preslav.me/index.xml" rel="alternate" type="application/rss+xml" title="Preslav Rachev" />
+      <link href="https://preslav.me/index.xml" rel="feed" type="application/rss+xml" title="Preslav Rachev" />
     
 
-    <meta property="og:title" content="Go" />
+    <meta property="og:title" content="Preslav Rachev" />
 <meta property="og:description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://preslav.me/tags/go/" />
+<meta property="og:url" content="https://preslav.me/" />
 
-<meta property="og:updated_time" content="2019-10-06T07:00:00&#43;00:00"/>
 
-<meta itemprop="name" content="Go">
+<meta itemprop="name" content="Preslav Rachev">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Go"/>
+<meta name="twitter:title" content="Preslav Rachev"/>
 <meta name="twitter:description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼"/>
 
       
@@ -86,7 +85,7 @@ if (!doNotTrack) {
 </script>
 
 <link rel="alternate" type="application/rss&#43;xml"
-    href="https://preslav.me/tags/go/index.xml">
+    href="https://preslav.me/index.xml">
 <style>
     #carbonads {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -224,7 +223,7 @@ if (!doNotTrack) {
 
     <div class="tc-l pv1 pv2-l ph3 ph4-ns">
       <h1 class="f2 f1-l white-90 tl">
-        Go
+        Preslav Rachev
       </h1>
       
         <h2 class="fw3 fw3-l f5 f3-l white measure-wide-l mt3 mb4 tl">
@@ -237,81 +236,165 @@ if (!doNotTrack) {
 
     <main class="pb7" role="main">
       
-<article class="pa3 pa4-ns nested-copy-line-height nested-img">
-    <aside class="flex-ns flex-wrap justify-start">
-        
-        
-        
-        
-        
-
-        
-
-        
-        <a class="db pv4 ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/">
-            <div class="flex flex-column">
-                <div class="w-100 pl3-ns">
-                    <h1 class="f3 fw1 athelas mt0 lh-title">Simple Immutable Builders in Go, Using Value Receivers</h1>
-                    <div class="f6 f5-l lh-copy nested-copy-line-height">
-                        Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
-l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-        
-        
-        
-        
-        
-
-        
-
-        
-        
-        <a class="db ma2-l ph3 ph0-l w-30-l no-underline dark-gray dim" href="/microblog/260920191021/">
-            <div class="flex flex-column">
-                <div class="pr3-ns mb4 mb0-ns w-100"
-                    style="height: 150px; background: url(https://ocwww.wpengine.com/wp-content/uploads/2016/10/Visualization_of_two_dimensions_of_a_NK_fitness_landscape-400x292.png); background-size: cover; background-position: center;">
-                </div>
-                <div class="w-100 pl3-ns">
-                    <h1 class="f3 fw1 athelas mt0 lh-title"> 26 Sep, 2019</h1>
-                    <div class="f6 f5-l lh-copy nested-copy-line-height">
-                        Chiefly, Go sacrifices expressiveness for uniformity.
-The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
-Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-        
-        
-        
-        
-        
-        
-
-        
-
-        
-        <a class="db pv4 ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/">
-            <div class="flex flex-column">
-                <div class="w-100 pl3-ns">
-                    <h1 class="f3 fw1 athelas mt0 lh-title">Mixtape Retrospective: Time to Split the Monolith?</h1>
-                    <div class="f6 f5-l lh-copy nested-copy-line-height">
-                        I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-        
-    </aside>
-    
-
+<article
+  class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+  
 </article>
+<div class="pa3 pa4-ns w-100 w-60-l center">
+  
+
+  <section class="w-100 mw8">
+    
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/microblog/201905051824/" class="color-inherit dim link">
+            
+          </a>
+        </h1>
+        
+        <span class="mb3 f3">
+          <a href="/microblog/201905051824/" class="color-inherit dim link">
+            🗒 1 Jan, 0001</a>
+        </span>
+        
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+          <p>Test post. Let&rsquo;s see if this deploys to the website.</p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
+    
+  </section>
+</div>
+
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/page/8/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/8/">8</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/page/9/">9</a></li>
+    
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/page/9/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
