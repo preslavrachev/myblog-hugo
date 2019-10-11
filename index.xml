@@ -6,10 +6,72 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What&#39;s New in Mixtape</title>
+      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+      <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+      <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>
+
+&lt;h2 id=&#34;give-me-more-like-these&#34;&gt;Give me more like these&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.&lt;/p&gt;
+
+&lt;p&gt;With the most recent update on &lt;a href=&#34;https://mixtape.preslav.me/&#34;&gt;Mixtape&lt;/a&gt;, I have added the ability to use Mixtape as a way to discover new podcast episodes, by simply providing the IDs of ones that might be of interest to you. Those who have worked with search engines before, probably know that this is something that this type of applications are fairly well-suited, but not often used for. In particular, ElasticSearch (the brain behind the whole search operation) has a particular type of search query, which allows for just that.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;More like this query | Elasticsearch Reference [7.4]&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://www.elastic.co/static/images/elastic-logo-200.png&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;The More Like This Query finds documents that are &amp;#34;like&amp;#34; a given
+set of documents. In order to do so, MLT selects a set of representative terms
+of these input documents, forms a query using these terms, executes the query
+and returns the results. The user controls the input documents, how the terms
+should be selected and how the query is formed.&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html&#34;
+          &gt;https://www.elastic.co&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+
+&lt;p&gt;Currently, this is still an API-only feature, but it will open up the door for applications of various sorts. One particular thing I am working on, is in the form of a chat bot application, which one will be able to send podcast episode links to (e.g. from &lt;a href=&#34;https://overcast.fm/&#34;&gt;Overcast&lt;/a&gt;, &lt;a href=&#34;https://www.pocketcasts.com/&#34;&gt;Pocket Casts&lt;/a&gt;, &lt;a href=&#34;https://www.apple.com/itunes/&#34;&gt;Apple Podcasts&lt;/a&gt;, etc) and get related podcast episodes to keep listening to.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned!&lt;/p&gt;
+></content:encoded>
+      
+    </item>
     
     <item>
       <title>Simple Immutable Builders in Go, Using Value Receivers</title>

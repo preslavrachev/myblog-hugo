@@ -6,10 +6,19 @@
     <description>Recent content in Podcast on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Sep 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What&#39;s New in Mixtape</title>
+      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+      <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+      <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
+    </item>
     
     <item>
       <title>What&#39;s in a Mixtape?</title>
