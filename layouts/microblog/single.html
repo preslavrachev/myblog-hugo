@@ -11,7 +11,8 @@
           An interesting article I stumbled upon
         {{end}}
     {{ else if (not (isset .Params "Title")) }}
-        Preslav's Microblog: {{- .Date.Format " 2 Jan, 2006" -}}
+        {{/*  Preslav's Microblog: {{- .Date.Format " 2 Jan, 2006" -}}  */}}
+        Random Bits of Wisdom
     {{ else }}
         {{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}
     {{ end }}
