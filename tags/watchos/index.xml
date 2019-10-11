@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Watchos on Preslav Rachev</title>
+    <link>https://preslav.me/tags/watchos/</link>
+    <description>Recent content in Watchos on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/watchos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/2019101011035/</link>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/2019101011035/</guid>
+      <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
+    </item>
+    
+  </channel>
+</rss>

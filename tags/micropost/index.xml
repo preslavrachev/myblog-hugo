@@ -6,10 +6,19 @@
     <description>Recent content in Micropost on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Sep 2019 11:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/micropost/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/2019101011035/</link>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/2019101011035/</guid>
+      <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
+    </item>
     
     <item>
       <title></title>

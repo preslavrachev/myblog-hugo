@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>2 Cents</title>
       <link>https://preslav.me/tags/2-cents/</link>
-      <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/2-cents/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Apple</title>
       <link>https://preslav.me/tags/apple/</link>
-      <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/apple/</guid>
       <description></description>
@@ -347,7 +347,7 @@
     <item>
       <title>Ios</title>
       <link>https://preslav.me/tags/ios/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/ios/</guid>
       <description></description>
@@ -473,7 +473,7 @@
     <item>
       <title>Micropost</title>
       <link>https://preslav.me/tags/micropost/</link>
-      <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/micropost/</guid>
       <description></description>
@@ -845,6 +845,15 @@
       <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
       
       <guid>https://preslav.me/tags/vue.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Watchos</title>
+      <link>https://preslav.me/tags/watchos/</link>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/tags/watchos/</guid>
       <description></description>
     </item>
     
