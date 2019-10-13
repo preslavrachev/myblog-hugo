@@ -11,7 +11,7 @@ featured_image = "https://images.unsplash.com/photo-1502904550040-7534597429ae?i
 
 This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
 
-{{<youtube "https://youtu.be/km3NxpOq3NU">}}
+{{<youtube "km3NxpOq3NU">}}
 
 This is the beginning of a new era of running. I am certain that Kipchoge's achievement will inspire others, if not to try a and beat it, to at least get out and be active.
 
