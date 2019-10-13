@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2019/10/12/this-is-how-we-write-history/</loc>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</loc>
     <lastmod>2019-10-10T22:00:00+00:00</lastmod>
   </url>
@@ -917,13 +922,13 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1006,6 +1011,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/record/</loc>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/retrospection/</loc>
     <lastmod>2018-12-31T16:51:09+00:00</lastmod>
     <priority>0</priority>
@@ -1013,13 +1024,13 @@
   
   <url>
     <loc>https://preslav.me/tags/running/</loc>
-    <lastmod>2019-07-04T05:54:08+00:00</lastmod>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/running/</loc>
-    <lastmod>2019-05-17T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1146,6 +1157,12 @@
   <url>
     <loc>https://preslav.me/tags/uber/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/ultra-humans/</loc>
+    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
