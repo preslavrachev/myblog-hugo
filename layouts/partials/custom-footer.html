@@ -50,21 +50,21 @@
         {"title": document.title}
     );
       
-      (function() {
-      scroll_count = 0;
-      function handler() {
-          if (scroll_count === 200) {
+      (function () {
+          scroll_count = 0;
+          function handler() {
+            if (scroll_count === 200) {
               document.removeEventListener('scroll', handler);
               mixpanel.track(
-                  "Scrolls through page",
-                  {"title": document.title}
+                "Scrolls through page",
+                { "title": document.title }
               );
-          } else {
+            } else {
               scroll_count += 1;
+            }
           }
-      }
-  
-      document.addEventListener('scroll', handler)
-  })();
+
+          document.addEventListener('scroll', handler);
+        })();
   </script>
   
