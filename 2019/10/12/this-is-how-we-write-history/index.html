@@ -381,15 +381,15 @@ if (!doNotTrack) {
 <ul class="pa0">
   
    <li class="list">
-     <a href="/tags/running" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Running</a>
+     <a href="/tags/running" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">running</a>
    </li>
   
    <li class="list">
-     <a href="/tags/record" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Record</a>
+     <a href="/tags/record" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">record</a>
    </li>
   
    <li class="list">
-     <a href="/tags/ultra-humans" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Ultra-humans</a>
+     <a href="/tags/ultra-humans" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">ultra-humans</a>
    </li>
   
 </ul>
@@ -610,22 +610,31 @@ if (!doNotTrack) {
         {"title": document.title}
     );
       
-      (function() {
-      scroll_count = 0;
-      function handler() {
-          if (scroll_count === 200) {
+      (function () {
+          scroll_count = 0;
+          function handler() {
+            if (scroll_count === 200) {
               document.removeEventListener('scroll', handler);
               mixpanel.track(
-                  "Scrolls through page",
-                  {"title": document.title}
+                "Scrolls through page",
+                { "title": document.title }
               );
-          } else {
+            } else {
               scroll_count += 1;
+            }
           }
+
+          document.addEventListener('scroll', handler);
+
+    setTimeout(function () {
+      if (document.querySelectorAll(".carbon-text").length > 0 && mixpanel !== undefined) {
+        mixpanel.track(
+          "Ad displayed",
+          { "title": document.querySelectorAll(".carbon-text")[0].text }
+        );
       }
-  
-      document.addEventListener('scroll', handler)
-  })();
+    }, 5000);
+        })();
   </script>
   
 

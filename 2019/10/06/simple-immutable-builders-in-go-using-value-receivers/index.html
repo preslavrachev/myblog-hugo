@@ -362,19 +362,19 @@ if (!doNotTrack) {
 <ul class="pa0">
   
    <li class="list">
-     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">programming</a>
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Programming</a>
    </li>
   
    <li class="list">
-     <a href="/tags/go" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">go</a>
+     <a href="/tags/go" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Go</a>
    </li>
   
    <li class="list">
-     <a href="/tags/golang" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">golang</a>
+     <a href="/tags/golang" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Golang</a>
    </li>
   
    <li class="list">
-     <a href="/tags/tips" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tips</a>
+     <a href="/tags/tips" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Tips</a>
    </li>
   
 </ul>
@@ -607,22 +607,31 @@ if (!doNotTrack) {
         {"title": document.title}
     );
       
-      (function() {
-      scroll_count = 0;
-      function handler() {
-          if (scroll_count === 200) {
+      (function () {
+          scroll_count = 0;
+          function handler() {
+            if (scroll_count === 200) {
               document.removeEventListener('scroll', handler);
               mixpanel.track(
-                  "Scrolls through page",
-                  {"title": document.title}
+                "Scrolls through page",
+                { "title": document.title }
               );
-          } else {
+            } else {
               scroll_count += 1;
+            }
           }
+
+          document.addEventListener('scroll', handler);
+
+    setTimeout(function () {
+      if (document.querySelectorAll(".carbon-text").length > 0 && mixpanel !== undefined) {
+        mixpanel.track(
+          "Ad displayed",
+          { "title": document.querySelectorAll(".carbon-text")[0].text }
+        );
       }
-  
-      document.addEventListener('scroll', handler)
-  })();
+    }, 5000);
+        })();
   </script>
   
 
