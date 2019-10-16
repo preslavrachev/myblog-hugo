@@ -21,7 +21,9 @@
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        // TODO: Send an analytics event
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {
