@@ -359,7 +359,9 @@ Two weeks ago, I bought this phone from eBay with the hope that it will make me 
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

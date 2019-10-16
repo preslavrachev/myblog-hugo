@@ -531,7 +531,9 @@ This time was different. My wife and I flew for the wedding of one of our best f
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

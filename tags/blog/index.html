@@ -334,7 +334,9 @@ That is right, I have started a separate writing project, parallel to my blog. Y
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

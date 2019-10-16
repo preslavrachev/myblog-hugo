@@ -578,7 +578,9 @@ should be selected and how the query is formed.</p>
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

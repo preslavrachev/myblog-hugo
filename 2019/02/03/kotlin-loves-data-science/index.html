@@ -611,7 +611,9 @@ Nope, not quite. Bringing data science into the production workflow of establish
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

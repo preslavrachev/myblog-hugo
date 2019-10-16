@@ -406,7 +406,9 @@ Have no illusions however. All this power comes at a cost. An what a cost! I wen
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

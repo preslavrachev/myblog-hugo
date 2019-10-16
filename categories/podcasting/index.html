@@ -339,7 +339,9 @@ Some of the top podcasts on YouTube are pulling in millions of views every few d
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

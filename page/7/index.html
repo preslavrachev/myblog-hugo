@@ -780,7 +780,9 @@ My experience with the JVM dates back from around 2010. Java in those days was a
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

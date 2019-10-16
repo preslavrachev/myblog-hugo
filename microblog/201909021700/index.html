@@ -514,7 +514,9 @@ They say you shouldn&#39;t ask your mom wh...</p>
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

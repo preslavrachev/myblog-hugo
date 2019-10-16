@@ -543,7 +543,9 @@ val user2 <span style="color:#f92672">=</span> user1<span style="color:#f92672">
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

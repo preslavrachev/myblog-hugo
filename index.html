@@ -952,7 +952,9 @@ l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

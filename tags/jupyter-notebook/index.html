@@ -334,7 +334,9 @@ With time, I have developed this practice of opening up a Python REPL (though I 
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

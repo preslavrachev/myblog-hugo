@@ -476,7 +476,9 @@ Nikola Tesla    If you want to learn about one of history’s most fascinating m
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

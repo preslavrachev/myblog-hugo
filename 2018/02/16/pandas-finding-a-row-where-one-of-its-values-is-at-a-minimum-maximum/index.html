@@ -537,7 +537,9 @@ sal<span style="color:#f92672">.</span>loc[sal[<span style="color:#e6db74">&#39;
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

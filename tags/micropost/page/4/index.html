@@ -606,7 +606,9 @@ Tech monopolies tend not to fall like Rome. They fall like Venice. They’re sti
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

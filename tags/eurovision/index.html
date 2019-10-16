@@ -335,7 +335,9 @@ Since 2000, the majority of Eurovision winners have been written in a minor key.
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

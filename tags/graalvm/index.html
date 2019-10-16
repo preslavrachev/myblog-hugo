@@ -339,7 +339,9 @@ I am fully aware that the hoops that the GraalVM compile has to go through are s
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

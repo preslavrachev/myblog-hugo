@@ -334,7 +334,9 @@ module.exports = { devServer: { proxy: { &#34;/&#34;: { target: &#34;https://rem
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

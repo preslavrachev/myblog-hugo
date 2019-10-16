@@ -384,7 +384,9 @@ As developers, we spend a large portion of our time, searching for the &ldquo;na
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

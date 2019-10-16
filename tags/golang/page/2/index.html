@@ -468,7 +468,9 @@ Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. Ho
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

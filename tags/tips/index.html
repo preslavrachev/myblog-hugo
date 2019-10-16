@@ -585,7 +585,9 @@ val client = KMongo.createClient() //get com.mongodb.MongoClient new instance va
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

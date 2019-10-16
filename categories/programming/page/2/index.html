@@ -586,7 +586,9 @@ A seasoned Spring developer, I felt a bit uneasy when designing and future-proof
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

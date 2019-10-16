@@ -334,7 +334,9 @@ When I said services, I bet that the first thing you thought about was HTTP serv
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

@@ -340,7 +340,9 @@ struct { b int32 c string d string a bool } Why is that? Well, think of memory a
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {

@@ -511,7 +511,9 @@ the Internet. Except for, here and there, you find a small but steadily increasi
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {
