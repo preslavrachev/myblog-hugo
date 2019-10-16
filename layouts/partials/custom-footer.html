@@ -65,6 +65,15 @@
           }
 
           document.addEventListener('scroll', handler);
+
+    setTimeout(function () {
+      if (document.querySelectorAll(".carbon-text").length > 0 && mixpanel !== undefined) {
+        mixpanel.track(
+          "Ad displayed",
+          { "title": document.querySelectorAll(".carbon-text")[0].text }
+        );
+      }
+    }, 5000);
         })();
   </script>
   
