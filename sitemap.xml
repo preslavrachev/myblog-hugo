@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2019/10/18/go-is-good-enough/</loc>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2019/10/12/this-is-how-we-write-history/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
@@ -640,13 +645,13 @@
   
   <url>
     <loc>https://preslav.me/tags/go/</loc>
-    <lastmod>2019-10-06T07:00:00+00:00</lastmod>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/golang/</loc>
-    <lastmod>2019-10-06T07:00:00+00:00</lastmod>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -922,13 +927,13 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-10-12T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -940,13 +945,13 @@
   
   <url>
     <loc>https://preslav.me/categories/programming/</loc>
-    <lastmod>2019-10-06T07:00:00+00:00</lastmod>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2019-10-06T07:00:00+00:00</lastmod>
+    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

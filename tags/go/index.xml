@@ -6,10 +6,19 @@
     <description>Recent content in Go on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Oct 2019 07:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 22:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go is Good Enough</title>
+      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
+      <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
+      <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
+    </item>
     
     <item>
       <title>Simple Immutable Builders in Go, Using Value Receivers</title>

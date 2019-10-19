@@ -6,10 +6,29 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Oct 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go is Good Enough</title>
+      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
+      <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
+      <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>&lt;p&gt;Have you heard about the &lt;a href=&#34;https://en.wikipedia.org/wiki/Pareto_principle&#34;&gt;Pareto Principle&lt;/a&gt;? Also known as the &lt;sup&gt;80&lt;/sup&gt;&amp;frasl;&lt;sub&gt;20&lt;/sub&gt; Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent. It is the ones pragmatic enough to achieve the 80% with 20% of the effort and energy spent.&lt;/p&gt;
+
+&lt;p&gt;The slight deviation aside, the same very much applies to the Go programming language. It is just good enough. Go won&amp;rsquo;t win the category of language design, neither is it the fastest one on the market. Nor is it the safest member of the bunch. The truth is, what Go offers on the table might seem pretty boring at first. It is a compiled, statically typed language with an extremely reduced syntax, a somewhat simplified concurrency model, and a bit of memory safety. Nothing near close to the speed of C, the beauty of Ruby or the dogmatic memory management of Rust.&lt;/p&gt;
+
+&lt;p&gt;And this is what makes Go succeed. It does not have any of those things, but it is simple and fast enough to get you going on a new project without having to second-guess your approach every second. The lack of features helps reduce the cognitive burden on both the programmer and the compiler. The speed, file-size and memory consumption of the final applications is more optimal than those of 80% of applications built using other technologies.&lt;/p&gt;
+
+&lt;p&gt;Will Go ever be the best in any single programming language category? Probably no. Is it good enough to sustain 80% of your programming efforts? Absolutely!&lt;/p&gt;
+></content:encoded>
+      
+    </item>
     
     <item>
       <title>This Is How We Write History</title>
