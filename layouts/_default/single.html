@@ -15,7 +15,7 @@
           */}}
       {{with .CurrentSection.Title }}{{. | upper }}{{end}}
     </p>
-    <h1 class="f1 athelas mb1">
+    <h1 class="f1 helvetica mb1">
       {{- .Title -}}
     </h1>
     <div class="flex-l flex-wrap w-100 justify-between w-two-thirds-l">
@@ -40,7 +40,7 @@
   </header>
 
   <section
-    class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+    class="nested-copy-line-height lh-copy f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
     {{- .Content -}}
     {{- partial "tags.html" . -}}
     <div class="mt6">
