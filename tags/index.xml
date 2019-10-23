@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>2 Cents</title>
       <link>https://preslav.me/tags/2-cents/</link>
-      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/2-cents/</guid>
       <description></description>
@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>Bookmark</title>
+      <link>https://preslav.me/tags/bookmark/</link>
+      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/tags/bookmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bulgaria</title>
       <link>https://preslav.me/tags/bulgaria/</link>
       <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
@@ -170,6 +179,15 @@
       <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
       
       <guid>https://preslav.me/tags/dev-culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devculture</title>
+      <link>https://preslav.me/tags/devculture/</link>
+      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/tags/devculture/</guid>
       <description></description>
     </item>
     
@@ -473,7 +491,7 @@
     <item>
       <title>Micropost</title>
       <link>https://preslav.me/tags/micropost/</link>
-      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/micropost/</guid>
       <description></description>
@@ -608,7 +626,7 @@
     <item>
       <title>Quote</title>
       <link>https://preslav.me/tags/quote/</link>
-      <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
+      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
       <guid>https://preslav.me/tags/quote/</guid>
       <description></description>

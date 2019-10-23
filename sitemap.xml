@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/microblog/2019102111035/</loc>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2019/10/18/go-is-good-enough/</loc>
     <lastmod>2019-10-18T22:00:00+00:00</lastmod>
   </url>
@@ -437,7 +442,7 @@
   
   <url>
     <loc>https://preslav.me/tags/2-cents/</loc>
-    <lastmod>2019-10-10T08:35:04+00:00</lastmod>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -520,6 +525,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/bookmark/</loc>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/bulgaria/</loc>
     <lastmod>2019-07-13T16:24:31+00:00</lastmod>
     <priority>0</priority>
@@ -574,6 +585,12 @@
   <url>
     <loc>https://preslav.me/tags/dev-culture/</loc>
     <lastmod>2019-09-21T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/devculture/</loc>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -831,13 +848,13 @@
   
   <url>
     <loc>https://preslav.me/microblog/</loc>
-    <lastmod>2019-10-10T08:35:04+00:00</lastmod>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/micropost/</loc>
-    <lastmod>2019-10-10T08:35:04+00:00</lastmod>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -933,7 +950,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -987,7 +1004,7 @@
   
   <url>
     <loc>https://preslav.me/tags/quote/</loc>
-    <lastmod>2019-09-28T11:20:00+00:00</lastmod>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1119,7 +1136,7 @@
   
   <url>
     <loc>https://preslav.me/tags/</loc>
-    <lastmod>2019-10-10T08:35:04+00:00</lastmod>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   

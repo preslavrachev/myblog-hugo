@@ -6,10 +6,20 @@
     <description>Recent content in Micropost on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/micropost/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://preslav.me/microblog/2019102111035/</link>
+      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/microblog/2019102111035/</guid>
+      <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
+ Dear Startup: You have no idea how much that costs.    The problem</description>
+    </item>
     
     <item>
       <title></title>
