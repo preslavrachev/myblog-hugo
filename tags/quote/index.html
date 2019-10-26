@@ -648,12 +648,13 @@ Source: - https://www.goodreads.com
       (function () {
           scroll_count = 0;
           function handler() {
-            if (scroll_count === 200) {
+            if (scroll_count == 100) {
               document.removeEventListener('scroll', handler);
               mixpanel.track(
                 "Scrolls through page",
                 { "title": document.title }
               );
+              document.getElementById("cta").classList.remove("dn")
             } else {
               scroll_count += 1;
             }
