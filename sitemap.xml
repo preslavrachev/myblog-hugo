@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</loc>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/microblog/2019102111035/</loc>
     <lastmod>2019-10-21T08:35:04+00:00</lastmod>
   </url>
@@ -507,6 +512,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/best-practices/</loc>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/bitcoin/</loc>
     <lastmod>2019-05-09T11:49:20+00:00</lastmod>
     <priority>0</priority>
@@ -944,13 +955,13 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -968,7 +979,7 @@
   
   <url>
     <loc>https://preslav.me/categories/programming/</loc>
-    <lastmod>2019-10-18T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -992,7 +1003,7 @@
   
   <url>
     <loc>https://preslav.me/tags/python/</loc>
-    <lastmod>2019-07-10T16:24:12+00:00</lastmod>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1160,7 +1171,7 @@
   
   <url>
     <loc>https://preslav.me/tags/tools/</loc>
-    <lastmod>2019-08-29T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

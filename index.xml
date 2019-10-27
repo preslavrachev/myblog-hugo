@@ -6,10 +6,294 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Any Code Style You like as Long It&#39;s Black</title>
+      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
+psf/black    The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>
+
+&lt;p&gt;The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of &lt;strong&gt;any&lt;/strong&gt; formatting.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://github.com/psf/black&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;psf/black&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://repository-images.githubusercontent.com/125266328/48aef880-6cce-11e9-9e3c-3ca0dd3ac138&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://github.com/psf/black&#34;
+          &gt;GitHub&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+&lt;p&gt;The first thing I do when I start a new project nowadays, is to set up an automatic code formatter. My personal favorite for Python is &lt;a href=&#34;https://github.com/psf/black&#34;&gt;Black&lt;/a&gt;. It is an opinionated formatter made by &lt;a href=&#34;https://github.com/ambv&#34;&gt;Łukasz Langa&lt;/a&gt; - a Python Core developer. Black leaves little choice when it comes to configuration. You can think of it as the &lt;a href=&#34;https://golang.org/cmd/gofmt/&#34;&gt;gofmt&lt;/a&gt; or &lt;a href=&#34;https://prettier.io/&#34;&gt;Prettier&lt;/a&gt; of Python. Integrate it with your editor of choice, or use the CLI over your code base and Black will do the rest:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; seven_dwwarfs &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;37&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;c&amp;#39;&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;927&lt;/span&gt;}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; very_long_variable_name &lt;span style=&#34;color:#f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; None &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; \
+ very_long_variable_name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;field &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; \
+ very_long_variable_name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;is_debug:
+ z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;world&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+ world &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;world&amp;#39;&lt;/span&gt;
+ a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello {}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(world)
+ f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rf&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello {world}&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (this
+&lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; that): y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;will transform into this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; seven_dwwarfs &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; (
+    Grumpy,
+    Happy,
+    Sleepy,
+    Bashful,
+    Sneezy,
+    Dopey,
+    Doc,
+)
+
+x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;37&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;b&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;c&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;927&lt;/span&gt;}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (
+    very_long_variable_name &lt;span style=&#34;color:#f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; None
+    &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; very_long_variable_name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;field &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;or&lt;/span&gt; very_long_variable_name&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;is_debug
+):
+    z &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;world&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+    world &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;world&amp;#34;&lt;/span&gt;
+    a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello {}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(world)
+    f &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; rf&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello {world}&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; this &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; that:
+    y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://black.now.sh&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;Black Playground&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://black.now.sh/static/screenshot.png&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;Playground for Black, the uncompromising Python code formatter.&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://black.now.sh&#34;
+          &gt;https://black.now.sh&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+&lt;h1 id=&#34;isn-t-pep8-enough&#34;&gt;Isn&amp;rsquo;t PEP8 enough?&lt;/h1&gt;
+
+&lt;p&gt;When it comes to code style, most Python developers point out &lt;a href=&#34;https://www.python.org/dev/peps/pep-0008&#34;&gt;PEP8&lt;/a&gt;. &lt;a href=&#34;https://www.python.org/dev/peps/pep-0008&#34;&gt;PEP8&lt;/a&gt; is a good style guide, but definitely not a set of strict formatting rules. The same piece of code might be written in different ways, and still be compliant with PEP8. This is by design, as much of the Python philosophy is to leave the freedom and the final decision to the programmer. For comparison, Go follows a different mentality, where most of the extra energy aspects of programming are taken over by the compiler and the available tooling.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, even PEP8-compliant code still leads to arguments when it comes to keeping a unified code base. I don&amp;rsquo;t know about you, but I have reached a level of pragmatism, where I don&amp;rsquo;t care much about style and formatting, as long as it has been standardized everywhere. This is where Black enters the stage.&lt;/p&gt;
+
+&lt;h1 id=&#34;black-is-relentless&#34;&gt;Black is relentless&lt;/h1&gt;
+
+&lt;p&gt;Black has one guiding philosophy - produce diffs as small as possible. If one expression can fit on a single line (88 chars), regardless of how complex it is, it will be kept on a single line.&lt;/p&gt;
+
+&lt;p&gt;In most programming languages, nested expressions (multiple levels of indentation, as well as opening and closing brackets) are what makes code complex. Python list and dict comprehensions can be particularly nasty to comprehend, once they go over a certain length.&lt;/p&gt;
+
+&lt;p&gt;Black splits long expressions into multiple lines, where the outermost brackets get separated from the inner content. If the inner content is longer than the line limit, the same operation gets repeated recursively on and on.&lt;/p&gt;
+
+&lt;p&gt;The result is code, which, although taking more vertical space than writing a few one-liners, is much easier to read and reason about. The fact that Black will always format your code the same way makes even more sense when working with other people. Lines diffs are the way source control systems indicate changes. Therefore, uniformly splitting complex code into multiple lines makes code reviews easier and takes away almost discussions around style.&lt;/p&gt;
+
+&lt;h1 id=&#34;black-is-stubborn&#34;&gt;Black is stubborn&lt;/h1&gt;
+
+&lt;p&gt;Borrowing ideas from &lt;a href=&#34;https://golang.org/cmd/gofmt/&#34;&gt;gofmt&lt;/a&gt;, Black has close to zero configuration options, especially, when it comes to variations of formatting style. I welcome such initiatives, because formatting is not something I would like to personally spend time dealing with. If this is not to your taste, however, you might try out the notable alternatives, such as &lt;a href=&#34;https://github.com/google/yapf&#34;&gt;yapf&lt;/a&gt; and &lt;a href=&#34;https://github.com/hhatto/autopep8&#34;&gt;autopep8&lt;/a&gt;. &lt;a href=&#34;https://github.com/google/yapf&#34;&gt;yapf&lt;/a&gt;, in particular, has multiple code style options, e.g. from Google, Facebook, which you can try and see if any fits your taste. You can always create your own, and share it across all fo your projects.&lt;/p&gt;
+
+&lt;h1 id=&#34;know-when-to-be-inconsistent&#34;&gt;Know when to be inconsistent&lt;/h1&gt;
+
+&lt;p&gt;Contrary to everything I have said so far, there might be times when blindlyy following a consistent standard is just inapplicable. As PEP8 says it: &lt;em&gt;&amp;ldquo;When in doubt, use your best judgment. Look at other examples and decide what looks best. And don&amp;rsquo;t hesitate to ask!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/esZLCuWs_2Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://www.python.org/dev/peps/pep-0008&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;PEP 8 -- Style Guide for Python Code&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://www.python.org/static/opengraph-icon-200x200.png&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;The official home of the Python Programming Language&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://www.python.org/dev/peps/pep-0008&#34;
+          &gt;Python.org&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://www.kevinpeters.net/auto-formatters-for-python&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;The 3 best auto formatters for Python&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://kevinpeters.net/thumbnails/auto-formatters-for-python-opengraph.png&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;🔥Save time by using the best auto formatters for python - a comparison to find the best. The auto formatters in this blog article can be used online or in editors like vscode and feature Python 2 and Python 3.&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://www.kevinpeters.net/auto-formatters-for-python&#34;
+          &gt;https://www.kevinpeters.net&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://github.com/google/yapf&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;google/yapf&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://avatars0.githubusercontent.com/u/1342004?s=400&amp;amp;v=4&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;A formatter for Python files. Contribute to google/yapf development by creating an account on GitHub.&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://github.com/google/yapf&#34;
+          &gt;GitHub&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://github.com/hhatto/autopep8&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;hhatto/autopep8&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://avatars1.githubusercontent.com/u/150309?s=400&amp;amp;v=4&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;A tool that automatically formats Python code to conform to the PEP 8 style guide. - hhatto/autopep8&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://github.com/hhatto/autopep8&#34;
+          &gt;GitHub&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+&lt;/p&gt;
+></content:encoded>
+      
+      <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Ford_Model_T_1924-1925.jpg/1280px-Ford_Model_T_1924-1925.jpg" medium="image"/>
+      
+    </item>
     
     <item>
       <title>Go is Good Enough</title>

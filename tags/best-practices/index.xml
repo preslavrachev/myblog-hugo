@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Best Practices on Preslav Rachev</title>
+    <link>https://preslav.me/tags/best-practices/</link>
+    <description>Recent content in Best Practices on Preslav Rachev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Any Code Style You like as Long It&#39;s Black</title>
+      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
+psf/black    The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</description>
+    </item>
+    
+  </channel>
+</rss>
