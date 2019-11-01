@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/" />
 
-<meta property="og:updated_time" content="2019-08-16T21:13:21&#43;00:00"/>
+<meta property="og:updated_time" content="2019-08-17T16:24:45&#43;00:00"/>
 
 <meta itemprop="name" content="Preslav Rachev">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -246,6 +246,100 @@ if (!doNotTrack) {
 
   <section class="w-100 mw8">
     
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/microblog/201908171824/" class="color-inherit dim link">
+            
+          </a>
+        </h1>
+        
+        <span class="mb3 f3">
+          <a href="/microblog/201908171824/" class="color-inherit dim link">
+            🗒 17 Aug, 2019</a>
+        </span>
+        
+        <div class="lh-copy nested-copy-line-height nested-links">
+          
+          <p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a <code>vue.config.js</code> file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">devServer</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">proxy</span><span style="color:#f92672">:</span> {
+      <span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://remote-server.com&#34;</span>,
+        <span style="color:#a6e22e">changeOrigin</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+      }
+    }
+  }
+};
+</code></pre></div>
+<p>When calling <code>yarn serve</code>, I get the following message flashing in the developer console:</p>
+
+<pre><code>The connection to ws://remote-server.com was interrupted while the page was loading.
+</code></pre>
+
+<p>The app seems running and proxying to the remote API works just fine, but this annoying message obliterates everything else in the developer console. Thankfully, there is an easy way to get rid of it. Simply, add a <code>ws: false</code> to the configuration:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">devServer</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">proxy</span><span style="color:#f92672">:</span> {
+      <span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">target</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;https://remote-server.com&#34;</span>,
+        <span style="color:#a6e22e">changeOrigin</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+        <span style="color:#a6e22e">ws</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+      }
+    }
+  }
+};
+</code></pre></div>
+<hr />
+
+
+
+
+
+
+
+<article class="bg-white center mw6 ba b--black-10 mv4">
+  <div class="pv2 ph3 bb b--black-10">
+    <a href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">
+      <h1 class="f6 ttu tracked">Errors in browser console when proxying &#39;/&#39; · Issue #2662 · vuejs/vue-cli</h1>
+    </a>
+  </div>
+
+  <div class="flex flex-column flex-row-m flex-row-l">
+    <div
+      class="ma2 w-100-l w-100-m"
+      style="background: url('https://avatars1.githubusercontent.com/u/6128107?s=400&amp;v=4'); background-position:center; background-size: cover; min-height: 100px"
+    ></div>
+    <div class="pa2">
+      <p>Version 3.0.4 Reproduction link https://github.com/CK159/vue-proxy-issue Node and OS info node 8.12.0 npm 6.4.1 Steps to reproduce Create project vue create my-app Add vue.config.js with this conte...</p>
+      <small class="gray db pv2"
+        >Source: -
+        <a
+          href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044"
+          >GitHub</a
+        ></small
+      >
+    </div>
+  </div>
+</article>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
     
     <div class="relative w-100 mb4">
       
@@ -580,51 +674,6 @@ On Alpine, this can be done using the default package installer:
 
 <p><img src="/images/2019/07/yUkF0kO.jpg" alt="" /></p>
 
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      
-      
-      <div class="mb3 w-100">
-        <a href="/2019/07/07/implementing-a-functional-style-builder-in-go/" class="db">
-          <div 
-            style="
-              background-image: url(https://preslav.me/images/2019/07/photo-1527199768775-bdabf8b32f61.jpg);
-              background-size:cover;
-              background-position: center;
-              height: 200px">
-          </div>
-        </a>
-      </div>
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/07/07/implementing-a-functional-style-builder-in-go/" class="color-inherit dim link">
-            
-            Implementing a Functional-Style Builder in Go
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in functional programming, golang | 7 Jul, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
-In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&rsquo;t claim that mine is certainly the best.
           
         </div>
       </div>

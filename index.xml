@@ -6,10 +6,32 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
+      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
+      <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
+      <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
+It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called &lt;a href=&#34;https://en.wikipedia.org/wiki/Automatic_Reference_Counting&#34;&gt;Automatic Reference Counting (ARC)&lt;/a&gt;. Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.&lt;/p&gt;
+
+&lt;p&gt;Android on the other hand, uses a mark-and-sweep garbage collector, known from the &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_virtual_machine?wprov=sfti1&#34;&gt;Java virtual machine (JVM)&lt;/a&gt;. It won’t clean up memory right away, but will occasionally free big chunks of it in one big pass (also known as stop-the-world). This approach assumes that there is a lot of memory available on the device so that these stop-the-world cleanups occur less frequently.&lt;/p&gt;
+
+&lt;p&gt;Both approaches have their advantages and disadvantages.&lt;/p&gt;
+></content:encoded>
+      
+    </item>
     
     <item>
       <title>Any Code Style You like as Long It&#39;s Black</title>

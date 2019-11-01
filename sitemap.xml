@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2019/10/31/iphone-less-memory-android/</loc>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</loc>
     <lastmod>2019-10-26T22:00:00+00:00</lastmod>
   </url>
@@ -465,7 +470,7 @@
   
   <url>
     <loc>https://preslav.me/tags/android/</loc>
-    <lastmod>2019-06-08T05:24:36+00:00</lastmod>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -477,7 +482,7 @@
   
   <url>
     <loc>https://preslav.me/tags/apple/</loc>
-    <lastmod>2019-10-10T08:35:04+00:00</lastmod>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -763,7 +768,7 @@
   
   <url>
     <loc>https://preslav.me/tags/iphone/</loc>
-    <lastmod>2019-05-03T05:45:00+00:00</lastmod>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -955,13 +960,13 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1010,6 +1015,18 @@
   <url>
     <loc>https://preslav.me/categories/python/</loc>
     <lastmod>2019-03-18T06:30:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/qa/</loc>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/categories/qa/</loc>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

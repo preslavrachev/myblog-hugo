@@ -6,10 +6,20 @@
     <description>Recent content in Android on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2019 05:24:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 22:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
+      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
+      <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
+      <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
+It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
+    </item>
     
     <item>
       <title></title>
