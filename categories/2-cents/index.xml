@@ -6,10 +6,19 @@
     <description>Recent content in 2 Cents on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/categories/2-cents/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Few Broken Windows</title>
+      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+      <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
+    </item>
     
     <item>
       <title>Mind the Frog</title>

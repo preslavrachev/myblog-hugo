@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/post/" />
 
-<meta property="og:updated_time" content="2019-08-23T22:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-08-27T15:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -249,6 +249,28 @@ if (!doNotTrack) {
             <div class="mb3 pa4 mid-gray overflow-hidden">
     
       <div class="f6">
+        August 27, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/" class="link black dim">
+        Reduce Struct Size by Laying out Attributes Accordingly
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
+struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
+struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
         August 23, 2019
       </div>
     
@@ -427,26 +449,6 @@ When I ask the same guys about why they think that multithreading in Python suck
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Today, I took part in the Sixtus Half-Marathon near lake Schliersee for the third time in a row. Unlike last year, this time I started with a completely different strategy - keep it cool and let everyone else pass by me during the first third of the race. Seeing everyone else&rsquo;s backs can be demotivating and requires a lot of patience and training.
    After the first 5-6K, having realized that I was really the last of the HM group, I started slowly picking up the pace.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        May 7, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/2019/05/07/my-reasons-to-consider-go-coming-from-java/" class="link black dim">
-        My Reasons to Consider Go Coming from Java
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.
     </div>
   </div>
 
