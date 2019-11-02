@@ -38,8 +38,15 @@
       <div>{{ partial "social-sharing.html" . }}</div>
     </div>
 
+    {{$choice := index (shuffle (slice "twitter" "related_page")) 0 }}
     <div id="cta" class="w-100 pa3 bg-blue white mt3 w-two-thirds-l dn">
+      {{$choice := index (shuffle (slice "twitter" "related_page")) 0 }}
+      {{ if eq $choice "twitter" }}
       <a href="https://twitter.com/preslavrachev" target="_blank" class="center white f5 fw9">Thanks for stopping by! Follow me on Twitter!</a>
+      {{ else if eq $choice "related_page"}}
+        {{ $related := index (.Site.RegularPages.Related .) 0 }}
+        <a href="{{$related.RelPermalink}}" class="center white f5 fw9">Did you like this post? Here's another one!</a>
+      {{ end }}
     </div>
   </header>
 
