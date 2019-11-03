@@ -29,9 +29,9 @@ enableRobotsTXT = true
     weight = 10
 
   [[menu.main]]
-    identifier = "photo-stories"
-    name = "Photo Stories"
-    url = "/tags/photo-stories"
+    identifier = "projects"
+    name = "My Projects"
+    url = "/projects/"
     weight = 20
   
   [[menu.main]]
