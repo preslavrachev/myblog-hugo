@@ -383,6 +383,11 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/projects/</loc>
+    <lastmod>2018-12-06T06:29:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</loc>
     <lastmod>2018-12-02T15:46:47+00:00</lastmod>
   </url>
