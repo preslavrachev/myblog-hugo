@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/categories/productivity/" />
 
-<meta property="og:updated_time" content="2019-02-25T06:58:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-11-06T22:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Productivity">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -150,7 +150,7 @@ if (!doNotTrack) {
 </style>
   </head>
 
-  <body class="ma0 avenir bg-white production">
+  <body class="ma0 helvetica bg-white production">
 
     
 
@@ -175,8 +175,8 @@ if (!doNotTrack) {
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/tags/photo-stories" title="Photo Stories page">
-              Photo Stories
+            <a class="hover-white no-underline white-90" href="/projects/" title="My Projects page">
+              My Projects
             </a>
           </li>
           
@@ -248,16 +248,22 @@ if (!doNotTrack) {
         
 
         
-        <a class="db pv4 ph3 ph0-l w-30-l no-underline dark-gray dim" href="/microblog/4c0cda7e-6f05-4cca-95eb-a69f3dd22cbe/">
+        
+        <a class="db ma2-l ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2019/11/06/how-i-stay-connected-on-twitter/">
             <div class="flex flex-column">
+                <div class="pr3-ns mb4 mb0-ns w-100"
+                    style="height: 150px; background: url(https://images.unsplash.com/photo-1543185377-aa2f876d1760?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80); background-size: cover; background-position: center;">
+                </div>
                 <div class="w-100 pl3-ns">
-                    <h1 class="f3 fw1 athelas mt0 lh-title">(Untitled)</h1>
+                    <h1 class="f3 fw1 athelas mt0 lh-title">How I Stay Focused on Twitter Despite All the Buzz</h1>
                     <div class="f6 f5-l lh-copy nested-copy-line-height">
-                        Last week, I finally bought the full license for Alfred. I have been looking at Alfred for several years now, never really coming to the impulsive decision to actually buy the license. I have been relatively happy with what Launchbar offers, event in the free version, but Alfred Workflows are a whole different game. These are definitely the most well-invested 25 EUR I have put on a piece of software for a while.
+                        With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
+From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.
                     </div>
                 </div>
             </div>
         </a>
+        
         
         
     </aside>
@@ -333,7 +339,9 @@ if (!doNotTrack) {
     revokable: false,
     onStatusChange: function(status) {
       if (this.hasConsented()) {
-        
+        if (mixpanel !== undefined) {
+          mixpanel.track("Accepts cookie consent");
+        }
       }
     },
     law: {
@@ -347,6 +355,47 @@ if (!doNotTrack) {
     position: "bottom-right"
   });
 </script>
+
+<script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+  mixpanel.init("b62cf4a483dda84f95d937ba95ebc1d3");</script>
+  
+  <script>
+      mixpanel.track(
+        "Open page",
+        {"title": document.title}
+    );
+      
+      (function () {
+          scroll_count = 0;
+          function handler() {
+            if (scroll_count == 100) {
+              document.removeEventListener('scroll', handler);
+              mixpanel.track(
+                "Scrolls through page",
+                { "title": document.title }
+              );
+              document.getElementById("cta").classList.remove("dn")
+            } else {
+              scroll_count += 1;
+            }
+          }
+
+          document.addEventListener('scroll', handler);
+
+    setTimeout(function () {
+      if (document.querySelectorAll(".carbon-text").length > 0 && mixpanel !== undefined) {
+        mixpanel.track(
+          "Ad displayed",
+          { "title": document.querySelectorAll(".carbon-text")[0].text }
+        );
+      }
+    }, 5000);
+        })();
+  </script>
+  
 
   </body>
 </html>

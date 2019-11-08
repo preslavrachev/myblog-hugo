@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</loc>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2019/10/31/iphone-less-memory-android/</loc>
     <lastmod>2019-10-31T22:00:00+00:00</lastmod>
   </url>
@@ -965,19 +970,25 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/productivity/</loc>
-    <lastmod>2019-05-12T07:28:07+00:00</lastmod>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/categories/productivity/</loc>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1181,7 +1192,7 @@
   
   <url>
     <loc>https://preslav.me/tags/tips/</loc>
-    <lastmod>2019-10-06T07:00:00+00:00</lastmod>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1205,7 +1216,7 @@
   
   <url>
     <loc>https://preslav.me/tags/twitter/</loc>
-    <lastmod>2019-05-11T05:36:25+00:00</lastmod>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

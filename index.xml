@@ -6,10 +6,92 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Oct 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I Stay Focused on Twitter Despite All the Buzz</title>
+      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
+From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>
+
+&lt;p&gt;With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.&lt;/p&gt;
+
+&lt;h1 id=&#34;from-people-to-topics&#34;&gt;From people to topics&lt;/h1&gt;
+
+&lt;p&gt;Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter. I achieve this with by organizing accounts into thematic lists, combined with clever searching.&lt;/p&gt;
+
+&lt;p&gt;If you have never created a single list on Twitter, you’re missing half the fun. At the moment of this writing, I actively curate &lt;a href=&#34;https://twitter.com/preslavrachev/lists&#34;&gt;around 50 lists&lt;/a&gt;. The majority of those revolve around a certain topic I’m interested about, say &lt;a href=&#34;https://twitter.com/preslavrachev/lists/go-developers&#34;&gt;Go&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/preslavrachev/lists/python-developers&#34;&gt;Python&lt;/a&gt; programming. Others are location based (Bremen, Munich, Bulgaria). In short, the fact that I don’t follow people on Twitter into a single timeline does not mean that that I don’t follow them at all. It’s actually the opposite - I follow many more people into many more thematically organized timelines.&lt;/p&gt;
+
+&lt;p&gt;This won’t solve the original problem, will it? In fact, many timelines must be making it a hell of a time to stay on top of each one. Well, yes, and this is where the power of clever searching comes to the stage.&lt;/p&gt;
+
+&lt;p&gt;In a &lt;a href=&#34;https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/&#34;&gt;previous article&lt;/a&gt;, I wrote at length about some of the hidden powers of Twitter searching. One of the many examples I presented in my article was using a Twitter list as the base filter for your search. Put simply, the following search:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list:username/list “climate change”
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will only return results that match the query &lt;code&gt;climate change&lt;/code&gt;, but only within the scope of the given list. Search for the right topics within the right lists, and you automatically get a significant noise reduction. As lists will inevitably get bigger, you can further reduce the noise, by leaving out only tweets with certain popularity or number of responses to.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list:username/list “climate change” min_retweets:3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list:username/list “climate change” min_replies:3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have saved many such searches, which I then keep open on my favourite Twitter client. I like using &lt;a href=&#34;https://tapbots.com/tweetbot/mac/&#34;&gt;TweetBot&lt;/a&gt; for iOS and macOS, but one could easily &lt;a href=&#34;https://tweetdeck.twitter.com/&#34;&gt;TweetDeck’s&lt;/a&gt; tabs for the same purpose.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/4ml6zVF.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;P.S. I hear that Twitter is also going to release some support for topic subscriptions as soon as this week. Let’s wait and see the final outcome. Until then, I keep using the method, I described above.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;Twitter is rolling out Topics, a way to follow subjects automatically in the timeline&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://cdn.vox-cdn.com/thumbor/XHLt3wEMJOsEC2eUPaLuGXUQqBw=/0x492:1080x1057/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19352076/CB_14444_Topics_2.png&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;It’s starting with more than 300 subjects across sports, gaming, and entertainment.&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test&#34;
+          &gt;The Verge&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+></content:encoded>
+      
+      <media:content url="https://images.unsplash.com/photo-1543185377-aa2f876d1760?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80" medium="image"/>
+      
+    </item>
     
     <item>
       <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
