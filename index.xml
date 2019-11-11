@@ -6,10 +6,60 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 07:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why I Still Find the Minimap Useful</title>
+      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
+My enemy the Minimap    The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…
+Source: - Erica Sadun   Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line.</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>&lt;p&gt;This is an answer, I wrote in response to a recent blog post by &lt;a href=&#34;https://ericasadun.com&#34;&gt;Erica Sadun&lt;/a&gt;:&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;https://ericasadun.com/2019/11/08/my-enemy-the-minimap/&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;My enemy the Minimap&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://ericasadun.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-08-at-8.07.45-AM.png&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;https://ericasadun.com/2019/11/08/my-enemy-the-minimap/&#34;
+          &gt;Erica Sadun&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+
+&lt;p&gt;Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line. In most languages, complexity increases with the level of nesting of code. This is usually difficult to estimate when reading the code itself, since the brain is focused on what the code does, rather than how nested it is. By obscuring the text, and leaving only a bird&amp;rsquo;s-eye view of the layout, the minimap might help pinpoint parts of the code, needing improvement. It can be very helpful when working with someone else code, or with a code base, which you haven&amp;rsquo;t touched in a while.&lt;/p&gt;
+></content:encoded>
+      
+    </item>
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>

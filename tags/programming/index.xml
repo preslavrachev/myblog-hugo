@@ -6,10 +6,21 @@
     <description>Recent content in Programming on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 07:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why I Still Find the Minimap Useful</title>
+      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
+My enemy the Minimap    The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…
+Source: - Erica Sadun   Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line.</description>
+    </item>
     
     <item>
       <title>Go is Good Enough</title>
