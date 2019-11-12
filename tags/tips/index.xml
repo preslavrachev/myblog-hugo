@@ -6,10 +6,21 @@
     <description>Recent content in Tips on Preslav Rachev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
+      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
+sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
+Related Resources select - Managing Multiple Versions Of Xcode    It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</description>
+    </item>
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>

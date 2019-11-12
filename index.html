@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/" />
 
-<meta property="og:updated_time" content="2019-11-10T07:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-11-11T07:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Preslav Rachev">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -246,6 +246,38 @@ if (!doNotTrack) {
 
   <section class="w-100 mw8">
     
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/2019/11/11/get-flutter-to-work-with-beta-xcode/" class="color-inherit dim link">
+            
+            If You Can’t Get Flutter to Work with Your Beta Version of Xcode
+            
+          </a>
+        </h1>
+        
+        <span class="db mb3 mt1 f6">
+          Preslav Rachev in programming, tips, flutter, xcode, ios | 11 Nov, 2019</span>
+        
+        <div class="lh-copy nested-copy-line-height nested-links">
+          
+          You need to explicitly set the beta version of Xcode as your default one via the command line:
+sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
+Related Resources select - Managing Multiple Versions Of Xcode    It&#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
     
     <div class="relative w-100 mb4">
       
@@ -601,37 +633,6 @@ psf/black    The uncompromising Python code formatter. Contribute to psf/black d
 </article>
     </div>
     
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/" class="color-inherit dim link">
-            
-            Simple Immutable Builders in Go, Using Value Receivers
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in programming, go, golang, tips | 6 Oct, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
-l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
   </section>
 </div>
 
@@ -735,7 +736,16 @@ l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that
         
     
     
-    <li class="page-item"><a class="page-link" href="/page/9/">9</a></li>
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/10/">10</a></li>
     
     
     <li class="page-item">
@@ -743,7 +753,7 @@ l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that
     </li>
     
     <li class="page-item">
-        <a href="/page/9/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/page/10/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>

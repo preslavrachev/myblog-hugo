@@ -6,10 +6,64 @@
     <description>I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 07:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
+      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
+sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
+Related Resources select - Managing Multiple Versions Of Xcode    It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</description>
+      <dc:creator>Preslav Rachev</dc:creator>
+      <content:encoded>
+
+&lt;p&gt;You need to explicitly set the beta version of Xcode as your default one via the command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Afterwards, getting your app  to run via &lt;code&gt;flutter run&lt;/code&gt; should work as it used to before.&lt;/p&gt;
+
+&lt;h2 id=&#34;related-resources&#34;&gt;Related Resources&lt;/h2&gt;
+
+
+
+
+
+
+
+&lt;article class=&#34;bg-white center mw6 ba b--black-10 mv4&#34;&gt;
+  &lt;div class=&#34;pv2 ph3 bb b--black-10&#34;&gt;
+    &lt;a href=&#34;http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html&#34;&gt;
+      &lt;h1 class=&#34;f6 ttu tracked&#34;&gt;select - Managing Multiple Versions Of Xcode&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;flex flex-column flex-row-m flex-row-l&#34;&gt;
+    &lt;div
+      class=&#34;ma2 w-100-l w-100-m&#34;
+      style=&#34;background: url(&#39;https://source.unsplash.com/200x200/?nature,water&#39;); background-position:center; background-size: cover; min-height: 100px&#34;
+    &gt;&lt;/div&gt;
+    &lt;div class=&#34;pa2&#34;&gt;
+      &lt;p&gt;It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current&lt;/p&gt;
+      &lt;small class=&#34;gray db pv2&#34;
+        &gt;Source: -
+        &lt;a
+          href=&#34;http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html&#34;
+          &gt;http://iosdevelopertips.com&lt;/a
+        &gt;&lt;/small
+      &gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+
+
+></content:encoded>
+      
+    </item>
     
     <item>
       <title>Why I Still Find the Minimap Useful</title>
