@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/" />
 
-<meta property="og:updated_time" content="2019-10-06T07:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-10-10T08:35:04&#43;00:00"/>
 
 <meta itemprop="name" content="Preslav Rachev">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -246,6 +246,36 @@ if (!doNotTrack) {
 
   <section class="w-100 mw8">
     
+    
+    <div class="relative w-100 mb4">
+      
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column">
+      
+      <div
+        class="blah w-100">
+        <h1 class="f2 mt0 mb0 lh-title">
+          <a href="/2019/10/10/a-few-broken-windows-apple-ios13/" class="color-inherit dim link">
+            
+            A Few Broken Windows
+            
+          </a>
+        </h1>
+        
+        <span class="db mb3 mt1 f6">
+          Preslav Rachev in apple, ios, watchos, 2 cents | 10 Oct, 2019</span>
+        
+        <div class="lh-copy nested-copy-line-height nested-links">
+          
+          I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+    </div>
     
     <div class="relative w-100 mb4">
       
@@ -719,38 +749,6 @@ They say you shouldn&#39;t ask your mom wh...</p>
         <div class="lh-copy nested-copy-line-height nested-links">
           
           NOTE: This is not a paid product endorsement. I&rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/" class="color-inherit dim link">
-            
-            Reduce Struct Size by Laying out Attributes Accordingly
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in optimization, tips, struct, golang | 27 Aug, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
-struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
-struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.
           
         </div>
       </div>

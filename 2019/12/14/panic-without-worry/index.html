@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Preslav Rachev  | Connecting to a MongoDB Instance Using KMongo</title>
+    <title>Preslav Rachev  | Panic Without Worry</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -32,33 +32,27 @@
 
     
 
-    <meta property="og:title" content="Connecting to a MongoDB Instance Using KMongo" />
-<meta property="og:description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:" />
+    <meta property="og:title" content="Panic Without Worry" />
+<meta property="og:description" content="In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/" />
-<meta property="article:published_time" content="2018-12-28T16:45:41&#43;00:00"/>
-<meta property="article:modified_time" content="2018-12-28T16:45:41&#43;00:00"/>
+<meta property="og:url" content="https://preslav.me/2019/12/14/panic-without-worry/" />
+<meta property="article:published_time" content="2019-12-14T22:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-12-14T22:00:00&#43;00:00"/>
 
-<meta itemprop="name" content="Connecting to a MongoDB Instance Using KMongo">
-<meta itemprop="description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:">
+<meta itemprop="name" content="Panic Without Worry">
+<meta itemprop="description" content="In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.">
 
 
-<meta itemprop="datePublished" content="2018-12-28T16:45:41&#43;00:00" />
-<meta itemprop="dateModified" content="2018-12-28T16:45:41&#43;00:00" />
-<meta itemprop="wordCount" content="194">
+<meta itemprop="datePublished" content="2019-12-14T22:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-14T22:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="81">
 
 
 
-<meta itemprop="keywords" content="kotlin,tips,mongodb,java," />
+<meta itemprop="keywords" content="Programming,Golang,Go," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Connecting to a MongoDB Instance Using KMongo"/>
-<meta name="twitter:description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:"/>
+<meta name="twitter:title" content="Panic Without Worry"/>
+<meta name="twitter:description" content="In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds."/>
 
       
 <script type="application/javascript">
@@ -97,7 +91,7 @@ if (!doNotTrack) {
 </script>
 
 <link rel="amphtml" type="text/html"
-    href="https://preslav.me/amp/2018/12/28/mongodb-kmongo-connection-string/">
+    href="https://preslav.me/amp/2019/12/14/panic-without-worry/">
 <style>
     #carbonads {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -252,12 +246,12 @@ if (!doNotTrack) {
       
       POSTS
     </p>
-    <h1 class="f1 helvetica mb1">Connecting to a MongoDB Instance Using KMongo</h1>
+    <h1 class="f1 helvetica mb1">Panic Without Worry</h1>
     <div class="flex-l flex-wrap w-100 justify-between w-two-thirds-l">
       <div>
         
         <time class="f6 mv2 dib tracked"
-          datetime="2018-12-28T16:45:41Z">December 28, 2018</time>
+          datetime="2019-12-14T22:00:00Z">December 14, 2019</time>
         
         
         <span class="f6 dib tracked"> - 1 min</span>
@@ -265,7 +259,7 @@ if (!doNotTrack) {
       </div>
       <div>
 <a class="resp-sharing-button__link"
-    href="https://facebook.com/sharer/sharer.php?u=https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/"
+    href="https://facebook.com/sharer/sharer.php?u=https://preslav.me/2019/12/14/panic-without-worry/"
     target="_blank" rel="noopener" aria-label="">
     <div
         class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
@@ -281,7 +275,7 @@ if (!doNotTrack) {
 
 
 <a class="resp-sharing-button__link"
-    href="https://twitter.com/intent/tweet/?text=Connecting&#43;to&#43;a&#43;MongoDB&#43;Instance&#43;Using&#43;KMongo&amp;url=https%3A%2F%2Fpreslav.me%2F2018%2F12%2F28%2Fmongodb-kmongo-connection-string%2F"
+    href="https://twitter.com/intent/tweet/?text=Panic&#43;Without&#43;Worry&amp;url=https%3A%2F%2Fpreslav.me%2F2019%2F12%2F14%2Fpanic-without-worry%2F"
     target="_blank" rel="noopener" aria-label="">
     <div
         class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
@@ -297,7 +291,7 @@ if (!doNotTrack) {
 
 
 <a class="resp-sharing-button__link"
-    href="mailto:?subject=Connecting%20to%20a%20MongoDB%20Instance%20Using%20KMongo&body=https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/"
+    href="mailto:?subject=Panic%20Without%20Worry&body=https://preslav.me/2019/12/14/panic-without-worry/"
     target="_self" rel="noopener" aria-label="">
     <div
         class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
@@ -326,48 +320,21 @@ if (!doNotTrack) {
   </header>
 
   <section
-    class="nested-copy-line-height lh-copy f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+    class="nested-copy-line-height lh-copy f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</p>
 
-<p>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using <a href="https://litote.org/kmongo/quick-start/">KMongo</a>.</p>
-
-<p>Basically, if you have checked out the KMongo <a href="https://litote.org/kmongo/quick-start/">quick start</a>, setting up a client and fetching some data should be extremely easy:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> client = KMongo.createClient() <span style="color:#75715e">//get com.mongodb.MongoClient new instance
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> database = client.getDatabase(<span style="color:#e6db74">&#34;test&#34;</span>) <span style="color:#75715e">//normal java driver usage
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> col = database.getCollection&lt;Jedi&gt;() <span style="color:#75715e">//KMongo extension method</span></code></pre></div>
-<p>The quick start tutorial assumes that your DB resides on <code>mongodb://localhost:27017</code>, but in reality, your MongoDB connection string looks more like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">mongodb://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE&gt;</code></pre></div>
-<p>and in proper production environments, it is unknown until runtime. Let&rsquo;s assume that it was passed to the running application as an environment variable, e.g. <code>MONGODB</code>. Simply passing this string to <code>KMongo.createClient()</code>won&rsquo;t do it. The problem is that KMongo assumes that this string is simply the <code>&lt;HOST&gt;</code> part and creates a <code>ServerAddress</code>out of it. This results in an error when connecting.</p>
-
-<p>The solution is to use a class called <code>MongoClientURI</code>instead. <code>MongoClientURI</code> parses the string argument and splits it into its corresponding parts.</p>
-
-<p>So, the solution to my problem:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> uri = MongoClientURI(System.getenv(<span style="color:#e6db74">&#34;MONGODB&#34;</span>))
-<span style="color:#66d9ef">val</span> collection = KMongo.createClient(uri = uri)
-        .getDatabase(uri.database)
-        .getCollection&lt;Jedi&gt;()</code></pre></div>
-<hr />
-
-<h1 id="related">Related</h1>
-
-<ul>
-<li><a href="https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i">https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i</a></li>
-</ul>
+<p>When necessary, panic without worry.</p>
 <ul class="pa0">
   
    <li class="list">
-     <a href="/tags/kotlin" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">kotlin</a>
+     <a href="/tags/programming" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">programming</a>
    </li>
   
    <li class="list">
-     <a href="/tags/tips" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tips</a>
+     <a href="/tags/golang" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">golang</a>
    </li>
   
    <li class="list">
-     <a href="/tags/mongodb" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">mongodb</a>
-   </li>
-  
-   <li class="list">
-     <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>
+     <a href="/tags/go" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">go</a>
    </li>
   
 </ul>
@@ -468,20 +435,8 @@ if (!doNotTrack) {
       <ul class="pa0 list f6">
       
         <li  class="mb2">
-            <a href="/2018/12/28/the-kotlin-way/">
-              How Much of &#34;The Kotlin Way&#34; Is the Right Way?
-            </a>
-          </li>
-        
-        <li  class="mb2">
-            <a href="/microblog/201908031736/">
-               2 Aug, 2019
-            </a>
-          </li>
-        
-        <li  class="mb2">
-            <a href="/2019/11/11/get-flutter-to-work-with-beta-xcode/">
-              If You Can’t Get Flutter to Work with Your Beta Version of Xcode
+            <a href="/2019/10/18/go-is-good-enough/">
+              Go is Good Enough
             </a>
           </li>
         
@@ -492,8 +447,20 @@ if (!doNotTrack) {
           </li>
         
         <li  class="mb2">
-            <a href="/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/">
-              Reduce Struct Size by Laying out Attributes Accordingly
+            <a href="/microblog/260920191021/">
+               26 Sep, 2019
+            </a>
+          </li>
+        
+        <li  class="mb2">
+            <a href="/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/">
+              Mixtape Retrospective: Time to Split the Monolith?
+            </a>
+          </li>
+        
+        <li  class="mb2">
+            <a href="/microblog/201907022242/">
+               2 Jul, 2019
             </a>
           </li>
         

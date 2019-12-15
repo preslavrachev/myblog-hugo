@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Preslav Rachev  | Connecting to a MongoDB Instance Using KMongo</title>
+    <title>Preslav Rachev </title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -31,34 +31,23 @@
     
 
     
+      <link href="https://preslav.me/categories/programming/index.xml" rel="alternate" type="application/rss+xml" title="Preslav Rachev" />
+      <link href="https://preslav.me/categories/programming/index.xml" rel="feed" type="application/rss+xml" title="Preslav Rachev" />
+    
 
-    <meta property="og:title" content="Connecting to a MongoDB Instance Using KMongo" />
-<meta property="og:description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/" />
-<meta property="article:published_time" content="2018-12-28T16:45:41&#43;00:00"/>
-<meta property="article:modified_time" content="2018-12-28T16:45:41&#43;00:00"/>
+    <meta property="og:title" content="Programming" />
+<meta property="og:description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://preslav.me/categories/programming/" />
 
-<meta itemprop="name" content="Connecting to a MongoDB Instance Using KMongo">
-<meta itemprop="description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:">
+<meta property="og:updated_time" content="2015-01-06T06:29:00&#43;00:00"/>
 
+<meta itemprop="name" content="Programming">
+<meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
 
-<meta itemprop="datePublished" content="2018-12-28T16:45:41&#43;00:00" />
-<meta itemprop="dateModified" content="2018-12-28T16:45:41&#43;00:00" />
-<meta itemprop="wordCount" content="194">
-
-
-
-<meta itemprop="keywords" content="kotlin,tips,mongodb,java," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Connecting to a MongoDB Instance Using KMongo"/>
-<meta name="twitter:description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&#34;test&#34;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:"/>
+<meta name="twitter:title" content="Programming"/>
+<meta name="twitter:description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼"/>
 
       
 <script type="application/javascript">
@@ -96,8 +85,8 @@ if (!doNotTrack) {
 }
 </script>
 
-<link rel="amphtml" type="text/html"
-    href="https://preslav.me/amp/2018/12/28/mongodb-kmongo-connection-string/">
+<link rel="alternate" type="application/rss&#43;xml"
+    href="https://preslav.me/categories/programming/index.xml">
 <style>
     #carbonads {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -166,9 +155,8 @@ if (!doNotTrack) {
     
 
 
-
-<header>
-  <div class="bg-black">
+<header class="cover bg-top" style="background-image: url('https://preslav.me/images/header-august-2019.jpg'); background-position: center">
+  <div class="bg-black-50">
     <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://preslav.me/" class="f4 fw2 hover-white no-underline white-90 dib">
@@ -234,272 +222,116 @@ if (!doNotTrack) {
   </div>
 </nav>
 
+    <div class="tc-l pv1 pv2-l ph3 ph4-ns">
+      <h1 class="f2 f1-l white-90 tl">
+        Programming
+      </h1>
+      
+        <h2 class="fw3 fw3-l f5 f3-l white measure-wide-l mt3 mb4 tl">
+          I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼
+        </h2>
+      
+    </div>
   </div>
 </header>
 
-
-<div class="flex items-center justify-center pa4 bg-light-green navy">
-  <span class="lh-title ml3 f3"><b>Announcement:</b> This site is <a href="https://p5v.me/2019/11/new-site-same-old-me/">moving on</a>! 🎉</span>
-</div>
-
     <main class="pb7" role="main">
       
-
-<article class="flex-l flex-wrap justify-between mw8 center ph3">
-
-  <header class="mt4 w-100">
-    <p class="f6 b helvetica tracked">
-      
-      POSTS
-    </p>
-    <h1 class="f1 helvetica mb1">Connecting to a MongoDB Instance Using KMongo</h1>
-    <div class="flex-l flex-wrap w-100 justify-between w-two-thirds-l">
-      <div>
-        
-        <time class="f6 mv2 dib tracked"
-          datetime="2018-12-28T16:45:41Z">December 28, 2018</time>
+<article class="pa3 pa4-ns nested-copy-line-height nested-img">
+    <aside class="flex-ns flex-wrap justify-start">
         
         
-        <span class="f6 dib tracked"> - 1 min</span>
         
-      </div>
-      <div>
-<a class="resp-sharing-button__link"
-    href="https://facebook.com/sharer/sharer.php?u=https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/"
-    target="_blank" rel="noopener" aria-label="">
-    <div
-        class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
-        <div aria-hidden="true"
-            class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z" />
-            </svg>
-        </div>
-    </div>
-</a>
+        
+        
 
+        
 
-<a class="resp-sharing-button__link"
-    href="https://twitter.com/intent/tweet/?text=Connecting&#43;to&#43;a&#43;MongoDB&#43;Instance&#43;Using&#43;KMongo&amp;url=https%3A%2F%2Fpreslav.me%2F2018%2F12%2F28%2Fmongodb-kmongo-connection-string%2F"
-    target="_blank" rel="noopener" aria-label="">
-    <div
-        class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
-        <div aria-hidden="true"
-            class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z" />
-            </svg>
-        </div>
-    </div>
-</a>
-
-
-<a class="resp-sharing-button__link"
-    href="mailto:?subject=Connecting%20to%20a%20MongoDB%20Instance%20Using%20KMongo&body=https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/"
-    target="_self" rel="noopener" aria-label="">
-    <div
-        class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
-        <div aria-hidden="true"
-            class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm8 16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v8z" />
-                <path
-                    d="M17.9 8.18c-.2-.2-.5-.24-.72-.07L12 12.38 6.82 8.1c-.22-.16-.53-.13-.7.08s-.15.53.06.7l3.62 2.97-3.57 2.23c-.23.14-.3.45-.15.7.1.14.25.22.42.22.1 0 .18-.02.27-.08l3.85-2.4 1.06.87c.1.04.2.1.32.1s.23-.06.32-.1l1.06-.9 3.86 2.4c.08.06.17.1.26.1.17 0 .33-.1.42-.25.15-.24.08-.55-.15-.7l-3.57-2.22 3.62-2.96c.2-.2.24-.5.07-.72z" />
-            </svg>
-        </div>
-    </div>
-</a>
-
-</div>
-    </div>
-
+        
+        
+        <a class="db ma2-l ph3 ph0-l w-30-l no-underline dark-gray dim" href="/2015/01/06/gulp-vs-grunt-why-one-why-the-other/">
+            <div class="flex flex-column">
+                <div class="pr3-ns mb4 mb0-ns w-100"
+                    style="height: 150px; background: url(/images/2015/january/gulp-vs-grunt-header.jpeg); background-size: cover; background-position: center;">
+                </div>
+                <div class="w-100 pl3-ns">
+                    <h1 class="f3 fw1 athelas mt0 lh-title">Gulp vs Grunt. Why one? Why the Other?</h1>
+                    <div class="f6 f5-l lh-copy nested-copy-line-height">
+                        So you&rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&rsquo;t really hard. I&rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc.
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        
+        
+    </aside>
     
-    <div id="cta" class="w-100 pa3 bg-blue white mt3 w-two-thirds-l dn">
-      
-      
-      <a href="https://twitter.com/preslavrachev" target="_blank" class="center white f5 fw9">Thanks for stopping by! Follow me on Twitter!</a>
-      
-    </div>
-  </header>
 
-  <section
-    class="nested-copy-line-height lh-copy f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<p>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using <a href="https://litote.org/kmongo/quick-start/">KMongo</a>.</p>
-
-<p>Basically, if you have checked out the KMongo <a href="https://litote.org/kmongo/quick-start/">quick start</a>, setting up a client and fetching some data should be extremely easy:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> client = KMongo.createClient() <span style="color:#75715e">//get com.mongodb.MongoClient new instance
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> database = client.getDatabase(<span style="color:#e6db74">&#34;test&#34;</span>) <span style="color:#75715e">//normal java driver usage
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> col = database.getCollection&lt;Jedi&gt;() <span style="color:#75715e">//KMongo extension method</span></code></pre></div>
-<p>The quick start tutorial assumes that your DB resides on <code>mongodb://localhost:27017</code>, but in reality, your MongoDB connection string looks more like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">mongodb://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE&gt;</code></pre></div>
-<p>and in proper production environments, it is unknown until runtime. Let&rsquo;s assume that it was passed to the running application as an environment variable, e.g. <code>MONGODB</code>. Simply passing this string to <code>KMongo.createClient()</code>won&rsquo;t do it. The problem is that KMongo assumes that this string is simply the <code>&lt;HOST&gt;</code> part and creates a <code>ServerAddress</code>out of it. This results in an error when connecting.</p>
-
-<p>The solution is to use a class called <code>MongoClientURI</code>instead. <code>MongoClientURI</code> parses the string argument and splits it into its corresponding parts.</p>
-
-<p>So, the solution to my problem:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">val</span> uri = MongoClientURI(System.getenv(<span style="color:#e6db74">&#34;MONGODB&#34;</span>))
-<span style="color:#66d9ef">val</span> collection = KMongo.createClient(uri = uri)
-        .getDatabase(uri.database)
-        .getCollection&lt;Jedi&gt;()</code></pre></div>
-<hr />
-
-<h1 id="related">Related</h1>
-
-<ul>
-<li><a href="https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i">https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i</a></li>
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/categories/programming/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/categories/programming/page/3/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/categories/programming/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/categories/programming/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/categories/programming/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/categories/programming/page/4/">4</a></li>
+    
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/categories/programming/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
 </ul>
-<ul class="pa0">
-  
-   <li class="list">
-     <a href="/tags/kotlin" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">kotlin</a>
-   </li>
-  
-   <li class="list">
-     <a href="/tags/tips" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tips</a>
-   </li>
-  
-   <li class="list">
-     <a href="/tags/mongodb" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">mongodb</a>
-   </li>
-  
-   <li class="list">
-     <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>
-   </li>
-  
-</ul>
-<div class="mt6">
-      <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "preslav" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-  </section>
-
-  <aside class="w-30-l">
-
-
-
-
-<article class="center bg-white br3 pa2 pa3-ns mv3">
-  <div class="tc">
-    <img src="/images/avatar.jpg" class="br-100 h3 w3 dib" title="Photo of a kitty staring at you">
-    <h1 class="f4">Preslav Rachev</h1>
-    <hr class="mw4 b--black-10">
-  </div>
-  <p class="lh-copy measure center f6 black-70">I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music.</p>
-  <style>
-    .bmc-button img {
-        width: 27px !important;
-        margin-bottom: 1px !important;
-        box-shadow: none !important;
-        border: none !important;
-        vertical-align: middle !important;
-    }
-
-    .bmc-button {
-        line-height: 36px !important;
-        height: 37px !important;
-        text-decoration: none !important;
-        display: inline-flex !important;
-        color: #FFFFFF !important;
-        background-color: #FF813F !important;
-        border-radius: 3px !important;
-        border: 1px solid transparent !important;
-        padding: 1px 9px !important;
-        font-size: 22px !important;
-        letter-spacing: 1px !important;
-        box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
-        -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
-        margin: 0, auto !important;
-        font-family: 'Cookie', cursive !important;
-        -webkit-box-sizing: border-box !important;
-        box-sizing: border-box !important;
-        -o-transition: 0.3s all linear !important;
-        -webkit-transition: 0.3s all linear !important;
-        -moz-transition: 0.3s all linear !important;
-        -ms-transition: 0.3s all linear !important;
-        transition: 0.3s all linear !important;
-    }
-
-    .bmc-button:hover,
-    .bmc-button:active,
-    .bmc-button:focus {
-        -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
-        text-decoration: none !important;
-        box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
-        opacity: 0.85 !important;
-        color: #FFFFFF !important;
-    }
-</style>
-<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank"
-    href="https://www.buymeacoffee.com/0B7zhlQ2I"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
-        alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span>
-</a>
-
-</article>
-
-
-<div class="mb3 pa3">
-    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D453E&placement=preslavme" id="_carbonads_js"></script>
-</div>
-  
-    <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
-      <p class="f5 b mb3">Related</p>
-      <ul class="pa0 list f6">
-      
-        <li  class="mb2">
-            <a href="/2018/12/28/the-kotlin-way/">
-              How Much of &#34;The Kotlin Way&#34; Is the Right Way?
-            </a>
-          </li>
-        
-        <li  class="mb2">
-            <a href="/microblog/201908031736/">
-               2 Aug, 2019
-            </a>
-          </li>
-        
-        <li  class="mb2">
-            <a href="/2019/11/11/get-flutter-to-work-with-beta-xcode/">
-              If You Can’t Get Flutter to Work with Your Beta Version of Xcode
-            </a>
-          </li>
-        
-        <li  class="mb2">
-            <a href="/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/">
-              Simple Immutable Builders in Go, Using Value Receivers
-            </a>
-          </li>
-        
-        <li  class="mb2">
-            <a href="/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/">
-              Reduce Struct Size by Laying out Attributes Accordingly
-            </a>
-          </li>
-        
-      </ul>
-  </div>
-  </aside>
 
 </article>
 

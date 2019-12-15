@@ -40,7 +40,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://preslav.me/post/" />
 
-<meta property="og:updated_time" content="2019-11-11T07:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-12-14T22:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
@@ -249,6 +249,26 @@ if (!doNotTrack) {
             <div class="mb3 pa4 mid-gray overflow-hidden">
     
       <div class="f6">
+        December 14, 2019
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/2019/12/14/panic-without-worry/" class="link black dim">
+        Panic Without Worry
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
         November 11, 2019
       </div>
     
@@ -427,27 +447,6 @@ psf/black    The uncompromising Python code formatter. Contribute to psf/black d
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        October 6, 2019
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/" class="link black dim">
-        Simple Immutable Builders in Go, Using Value Receivers
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
-l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?
     </div>
   </div>
 
