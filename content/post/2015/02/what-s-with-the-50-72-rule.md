@@ -8,7 +8,7 @@ featured_image = "/images/2015/february/1_756pH2sfB-0227AkUe1VXA.png"
 slug = "what-s-with-the-50-72-rule"
 tags = ["Programming", "Git", "Tips"]
 title = "What’s with the 50/72 rule?"
-
+remote_redirect = "https://p5v.me/2015/02/what-s-with-the-50-72-rule/"
 +++
 
 It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I've seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
@@ -45,5 +45,3 @@ You can use the data and plot it on a real histogram, using [matplotlib][4]. Man
 [4]: http://stackoverflow.com/a/5328669/1107412
 [5]: http://stackoverflow.com/users/209050/mgalgs
 [6]: http://stackoverflow.com/a/11993051/1107412
-
-  
