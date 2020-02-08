@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Functional Programming on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/functional-programming/</link>
+    <link>https://preslav.me/tags/functional-programming/</link>
     <description>Recent content in Functional Programming on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 07 Jul 2019 10:17:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Implementing a Functional-Style Builder in Go</title>
-      <link>https://example.com/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
+      <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
       <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
+      <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
       <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
 In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&amp;rsquo;t claim that mine is certainly the best.</description>
     </item>

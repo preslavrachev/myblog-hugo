@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Productivity on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/productivity/</link>
+    <link>https://preslav.me/tags/productivity/</link>
     <description>Recent content in Productivity on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
       <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201905120928/</link>
+      <link>https://preslav.me/microblog/201905120928/</link>
       <pubDate>Sun, 12 May 2019 07:28:07 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201905120928/</guid>
+      <guid>https://preslav.me/microblog/201905120928/</guid>
       <description>Back to Wunderlist After what seems like an eternity (close to 3 years), I decided to install and try Wunderlist again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be Microsoft To-Do - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</description>
     </item>
     

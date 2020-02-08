@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graalvm on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/graalvm/</link>
+    <link>https://preslav.me/tags/graalvm/</link>
     <description>Recent content in Graalvm on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 02 Aug 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/graalvm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/graalvm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201908031736/</link>
+      <link>https://preslav.me/microblog/201908031736/</link>
       <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201908031736/</guid>
+      <guid>https://preslav.me/microblog/201908031736/</guid>
       <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
 I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
     </item>

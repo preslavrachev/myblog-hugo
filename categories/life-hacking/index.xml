@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life Hacking on Random Bits of Wisdom</title>
-    <link>https://example.com/categories/life-hacking/</link>
+    <link>https://preslav.me/categories/life-hacking/</link>
     <description>Recent content in Life Hacking on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 02 Apr 2018 04:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/life-hacking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/categories/life-hacking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
-      <link>https://example.com/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
+      <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
       <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
+      <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
       <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
     </item>
     

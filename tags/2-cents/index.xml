@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 Cents on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/2-cents/</link>
+    <link>https://preslav.me/tags/2-cents/</link>
     <description>Recent content in 2 Cents on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 10 Nov 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/2-cents/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/2-cents/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why I Still Find the Minimap Useful</title>
-      <link>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
       <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/2019102111035/</link>
+      <link>https://preslav.me/microblog/2019102111035/</link>
       <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://example.com/microblog/2019102111035/</guid>
+      <guid>https://preslav.me/microblog/2019102111035/</guid>
       <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
     </item>
     
     <item>
       <title>A Few Broken Windows</title>
-      <link>https://example.com/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
       <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
       <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
     </item>
     
     <item>
       <title>Good Code is Boring</title>
-      <link>https://example.com/2019/09/21/good-code-is-boring/</link>
+      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
       <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/09/21/good-code-is-boring/</guid>
+      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
 &amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
@@ -53,10 +53,10 @@
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201905121007/</link>
+      <link>https://preslav.me/microblog/201905121007/</link>
       <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201905121007/</guid>
+      <guid>https://preslav.me/microblog/201905121007/</guid>
       <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
 Customers: Go Home, Google, you’re drunk.
 Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
@@ -66,10 +66,10 @@ Google: Tricked ya!</description>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201905110736/</link>
+      <link>https://preslav.me/microblog/201905110736/</link>
       <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201905110736/</guid>
+      <guid>https://preslav.me/microblog/201905110736/</guid>
       <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
 The series starts with:
 Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
@@ -77,19 +77,19 @@ Tech monopolies tend not to fall like Rome. They fall like Venice. They’re sti
     
     <item>
       <title>Give Me Back My Monolith</title>
-      <link>https://example.com/2019/03/23/give-me-back-my-monolith/</link>
+      <link>https://preslav.me/2019/03/23/give-me-back-my-monolith/</link>
       <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/03/23/give-me-back-my-monolith/</guid>
+      <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
       <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</description>
     </item>
     
     <item>
       <title>What I learned in 2018</title>
-      <link>https://example.com/2018/12/31/what-i-learned-in-2018/</link>
+      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
       <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
       
-      <guid>https://example.com/2018/12/31/what-i-learned-in-2018/</guid>
+      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
       <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
 In 2018, I:
  Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
@@ -97,10 +97,10 @@ In 2018, I:
     
     <item>
       <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
-      <link>https://example.com/2018/12/28/the-kotlin-way/</link>
+      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
       <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
       
-      <guid>https://example.com/2018/12/28/the-kotlin-way/</guid>
+      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
       <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
 My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
     </item>

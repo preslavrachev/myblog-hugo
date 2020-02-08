@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/tools/</link>
+    <link>https://preslav.me/tags/tools/</link>
     <description>Recent content in Tools on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 10 Nov 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why I Still Find the Minimap Useful</title>
-      <link>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
       <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
     </item>
     
     <item>
       <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
       <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
       <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
     </item>
     
     <item>
       <title>Bought a Year-Long License for GoLand</title>
-      <link>https://example.com/2019/08/29/goland-license/</link>
+      <link>https://preslav.me/2019/08/29/goland-license/</link>
       <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/08/29/goland-license/</guid>
+      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
       <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201905120928/</link>
+      <link>https://preslav.me/microblog/201905120928/</link>
       <pubDate>Sun, 12 May 2019 07:28:07 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201905120928/</guid>
+      <guid>https://preslav.me/microblog/201905120928/</guid>
       <description>Back to Wunderlist After what seems like an eternity (close to 3 years), I decided to install and try Wunderlist again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be Microsoft To-Do - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</description>
     </item>
     
     <item>
       <title>Developer Tool Tip: DevDocs</title>
-      <link>https://example.com/2019/05/03/dev-tip-devdocs/</link>
+      <link>https://preslav.me/2019/05/03/dev-tip-devdocs/</link>
       <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/05/03/dev-tip-devdocs/</guid>
+      <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
       <description>Here is a handy developer tool tip for today: DevDocs
 As developers, we spend a large portion of our time, searching for the &amp;ldquo;name of the function abc that did thing xyz&amp;rdquo;. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called Dash.</description>
     </item>

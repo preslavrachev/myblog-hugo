@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Struct on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/struct/</link>
+    <link>https://preslav.me/tags/struct/</link>
     <description>Recent content in Struct on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 27 Aug 2019 15:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/struct/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/struct/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
       <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
       <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>

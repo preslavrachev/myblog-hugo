@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Best Practices on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/best-practices/</link>
+    <link>https://preslav.me/tags/best-practices/</link>
     <description>Recent content in Best Practices on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
       <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
       <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advice on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/advice/</link>
+    <link>https://preslav.me/tags/advice/</link>
     <description>Recent content in Advice on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/advice/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/advice/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Good Code is Boring</title>
-      <link>https://example.com/2019/09/21/good-code-is-boring/</link>
+      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
       <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/09/21/good-code-is-boring/</guid>
+      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
 &amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>

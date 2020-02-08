@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React Native on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/react-native/</link>
+    <link>https://preslav.me/tags/react-native/</link>
     <description>Recent content in React Native on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 26 Mar 2017 05:25:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
-      <link>https://example.com/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
       <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
       
-      <guid>https://example.com/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
       <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
 XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
 chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>

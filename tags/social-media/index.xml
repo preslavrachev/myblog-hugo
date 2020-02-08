@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social Media on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/social-media/</link>
+    <link>https://preslav.me/tags/social-media/</link>
     <description>Recent content in Social Media on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 19 Aug 2018 17:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/social-media/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I Made a Mastodon Account and so Far I like It</title>
-      <link>https://example.com/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
+      <link>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
       <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
+      <guid>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
       <description>So, you might have heard about Mastodon. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
   Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy&amp;hellip;on paper.</description>
     </item>
     
     <item>
       <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
-      <link>https://example.com/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
+      <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
       <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
+      <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
       <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
     </item>
     

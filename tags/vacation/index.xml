@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vacation on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/vacation/</link>
+    <link>https://preslav.me/tags/vacation/</link>
     <description>Recent content in Vacation on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 01 Jul 2019 11:24:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/vacation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/vacation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201907011324/</link>
+      <link>https://preslav.me/microblog/201907011324/</link>
       <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201907011324/</guid>
+      <guid>https://preslav.me/microblog/201907011324/</guid>
       <description>On the road again&amp;hellip;</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201906281812/</link>
+      <link>https://preslav.me/microblog/201906281812/</link>
       <pubDate>Fri, 28 Jun 2019 15:12:38 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201906281812/</guid>
+      <guid>https://preslav.me/microblog/201906281812/</guid>
       <description>A sneak peek at the wedding location.</description>
     </item>
     

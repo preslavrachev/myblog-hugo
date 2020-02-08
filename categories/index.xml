@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Random Bits of Wisdom</title>
-    <link>https://example.com/categories/</link>
+    <link>https://preslav.me/categories/</link>
     <description>Recent content in Categories on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2 Cents</title>
-      <link>https://example.com/categories/2-cents/</link>
+      <link>https://preslav.me/categories/2-cents/</link>
       <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://example.com/categories/2-cents/</guid>
+      <guid>https://preslav.me/categories/2-cents/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Augsburg</title>
-      <link>https://example.com/categories/augsburg/</link>
+      <link>https://preslav.me/categories/augsburg/</link>
       <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/augsburg/</guid>
+      <guid>https://preslav.me/categories/augsburg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beer</title>
-      <link>https://example.com/categories/beer/</link>
+      <link>https://preslav.me/categories/beer/</link>
       <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
       
-      <guid>https://example.com/categories/beer/</guid>
+      <guid>https://preslav.me/categories/beer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Science</title>
-      <link>https://example.com/categories/data-science/</link>
+      <link>https://preslav.me/categories/data-science/</link>
       <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
       
-      <guid>https://example.com/categories/data-science/</guid>
+      <guid>https://preslav.me/categories/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://example.com/categories/docker/</link>
+      <link>https://preslav.me/categories/docker/</link>
       <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
       
-      <guid>https://example.com/categories/docker/</guid>
+      <guid>https://preslav.me/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Germany</title>
-      <link>https://example.com/categories/germany/</link>
+      <link>https://preslav.me/categories/germany/</link>
       <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/germany/</guid>
+      <guid>https://preslav.me/categories/germany/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://example.com/categories/git/</link>
+      <link>https://preslav.me/categories/git/</link>
       <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/git/</guid>
+      <guid>https://preslav.me/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grunt</title>
-      <link>https://example.com/categories/grunt/</link>
+      <link>https://preslav.me/categories/grunt/</link>
       <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/grunt/</guid>
+      <guid>https://preslav.me/categories/grunt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gulp</title>
-      <link>https://example.com/categories/gulp/</link>
+      <link>https://preslav.me/categories/gulp/</link>
       <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/gulp/</guid>
+      <guid>https://preslav.me/categories/gulp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ios</title>
-      <link>https://example.com/categories/ios/</link>
+      <link>https://preslav.me/categories/ios/</link>
       <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/ios/</guid>
+      <guid>https://preslav.me/categories/ios/</guid>
       <description></description>
     </item>
     

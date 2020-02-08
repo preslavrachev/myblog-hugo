@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/</link>
+    <link>https://preslav.me/tags/</link>
     <description>Recent content in Tags on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 10 Nov 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2 Cents</title>
-      <link>https://example.com/tags/2-cents/</link>
+      <link>https://preslav.me/tags/2-cents/</link>
       <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/2-cents/</guid>
+      <guid>https://preslav.me/tags/2-cents/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Advice</title>
-      <link>https://example.com/tags/advice/</link>
+      <link>https://preslav.me/tags/advice/</link>
       <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/advice/</guid>
+      <guid>https://preslav.me/tags/advice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>https://example.com/tags/android/</link>
+      <link>https://preslav.me/tags/android/</link>
       <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/android/</guid>
+      <guid>https://preslav.me/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Api</title>
-      <link>https://example.com/tags/api/</link>
+      <link>https://preslav.me/tags/api/</link>
       <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/api/</guid>
+      <guid>https://preslav.me/tags/api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apple</title>
-      <link>https://example.com/tags/apple/</link>
+      <link>https://preslav.me/tags/apple/</link>
       <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/apple/</guid>
+      <guid>https://preslav.me/tags/apple/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Augsburg</title>
-      <link>https://example.com/tags/augsburg/</link>
+      <link>https://preslav.me/tags/augsburg/</link>
       <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/augsburg/</guid>
+      <guid>https://preslav.me/tags/augsburg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bavaria</title>
-      <link>https://example.com/tags/bavaria/</link>
+      <link>https://preslav.me/tags/bavaria/</link>
       <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/bavaria/</guid>
+      <guid>https://preslav.me/tags/bavaria/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beer</title>
-      <link>https://example.com/tags/beer/</link>
+      <link>https://preslav.me/tags/beer/</link>
       <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
       
-      <guid>https://example.com/tags/beer/</guid>
+      <guid>https://preslav.me/tags/beer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Best Practices</title>
-      <link>https://example.com/tags/best-practices/</link>
+      <link>https://preslav.me/tags/best-practices/</link>
       <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/best-practices/</guid>
+      <guid>https://preslav.me/tags/best-practices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin</title>
-      <link>https://example.com/tags/bitcoin/</link>
+      <link>https://preslav.me/tags/bitcoin/</link>
       <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
       
-      <guid>https://example.com/tags/bitcoin/</guid>
+      <guid>https://preslav.me/tags/bitcoin/</guid>
       <description></description>
     </item>
     

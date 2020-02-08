@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Retrospection on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/retrospection/</link>
+    <link>https://preslav.me/tags/retrospection/</link>
     <description>Recent content in Retrospection on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 31 Dec 2018 16:51:09 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/retrospection/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/retrospection/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What I learned in 2018</title>
-      <link>https://example.com/2018/12/31/what-i-learned-in-2018/</link>
+      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
       <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
       
-      <guid>https://example.com/2018/12/31/what-i-learned-in-2018/</guid>
+      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
       <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
 In 2018, I:
  Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>

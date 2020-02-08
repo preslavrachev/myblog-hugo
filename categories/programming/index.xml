@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Random Bits of Wisdom</title>
-    <link>https://example.com/categories/programming/</link>
+    <link>https://preslav.me/categories/programming/</link>
     <description>Recent content in Programming on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 14 Dec 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Panic Without Worry</title>
-      <link>https://example.com/2019/12/14/panic-without-worry/</link>
+      <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/12/14/panic-without-worry/</guid>
+      <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
       <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
     </item>
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
@@ -33,49 +33,49 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
     
     <item>
       <title>Why I Still Find the Minimap Useful</title>
-      <link>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
       <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
     </item>
     
     <item>
       <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
       <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
       <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
     </item>
     
     <item>
       <title>Go is Good Enough</title>
-      <link>https://example.com/2019/10/18/go-is-good-enough/</link>
+      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
       <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/18/go-is-good-enough/</guid>
+      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
       <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
     </item>
     
     <item>
       <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
       <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
       <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
 l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/260920191021/</link>
+      <link>https://preslav.me/microblog/260920191021/</link>
       <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
       
-      <guid>https://example.com/microblog/260920191021/</guid>
+      <guid>https://preslav.me/microblog/260920191021/</guid>
       <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
@@ -83,10 +83,10 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
     
     <item>
       <title>Good Code is Boring</title>
-      <link>https://example.com/2019/09/21/good-code-is-boring/</link>
+      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
       <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/09/21/good-code-is-boring/</guid>
+      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
 &amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
@@ -94,19 +94,19 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
     
     <item>
       <title>Bought a Year-Long License for GoLand</title>
-      <link>https://example.com/2019/08/29/goland-license/</link>
+      <link>https://preslav.me/2019/08/29/goland-license/</link>
       <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/08/29/goland-license/</guid>
+      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
       <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
     </item>
     
     <item>
       <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
       <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
       <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>

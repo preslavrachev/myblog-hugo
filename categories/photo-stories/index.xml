@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photo Stories on Random Bits of Wisdom</title>
-    <link>https://example.com/categories/photo-stories/</link>
+    <link>https://preslav.me/categories/photo-stories/</link>
     <description>Recent content in Photo Stories on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 23 Jun 2019 21:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/photo-stories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/categories/photo-stories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sofia&#39;s Trams</title>
-      <link>https://example.com/2019/06/23/sofia-s-trams/</link>
+      <link>https://preslav.me/2019/06/23/sofia-s-trams/</link>
       <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/06/23/sofia-s-trams/</guid>
+      <guid>https://preslav.me/2019/06/23/sofia-s-trams/</guid>
       <description>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.
 This time was different. My wife and I flew for the wedding of one of our best friends, and since we had a whole day to spare, we decided to take a walk through the centre of the City of Trams.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/220420191020/</link>
+      <link>https://preslav.me/microblog/220420191020/</link>
       <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://example.com/microblog/220420191020/</guid>
+      <guid>https://preslav.me/microblog/220420191020/</guid>
       <description>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
+      <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
       <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
       
-      <guid>https://example.com/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
+      <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
       <description>Meanwhile in Munich&amp;hellip;</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/06482203-14be-4333-a9c1-398461d66c7c/</link>
+      <link>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</link>
       <pubDate>Wed, 23 Jan 2019 06:57:00 +0000</pubDate>
       
-      <guid>https://example.com/microblog/06482203-14be-4333-a9c1-398461d66c7c/</guid>
+      <guid>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</guid>
       <description>A view to live for! 😍
 Sendlinger Tor | Munich</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tips on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/tips/</link>
+    <link>https://preslav.me/tags/tips/</link>
     <description>Recent content in Tips on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
@@ -24,30 +24,30 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
       <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>
     
     <item>
       <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
       <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
       <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
 l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
     </item>
     
     <item>
       <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
       <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
       <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
@@ -55,20 +55,20 @@ struct { b int32 c string d string a bool } Why is that? Well, think of memory a
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201908171824/</link>
+      <link>https://preslav.me/microblog/201908171824/</link>
       <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201908171824/</guid>
+      <guid>https://preslav.me/microblog/201908171824/</guid>
       <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
 module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
     </item>
     
     <item>
       <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
       <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
       <description>If you ever get the following message:
 x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
@@ -76,10 +76,10 @@ On Alpine, this can be done using the default package installer:</description>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201907101824/</link>
+      <link>https://preslav.me/microblog/201907101824/</link>
       <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201907101824/</guid>
+      <guid>https://preslav.me/microblog/201907101824/</guid>
       <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
 This is quite neat and might save me one or two print statements 😉
 Thanks to @FlorimondManca for this discovery!</description>
@@ -87,29 +87,29 @@ Thanks to @FlorimondManca for this discovery!</description>
     
     <item>
       <title>Adding Version Information to Go Binaries</title>
-      <link>https://example.com/2019/07/09/adding-version-information-to-go-binaries/</link>
+      <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
       <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/07/09/adding-version-information-to-go-binaries/</guid>
+      <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
       <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
     </item>
     
     <item>
       <title>Developer Tool Tip: DevDocs</title>
-      <link>https://example.com/2019/05/03/dev-tip-devdocs/</link>
+      <link>https://preslav.me/2019/05/03/dev-tip-devdocs/</link>
       <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/05/03/dev-tip-devdocs/</guid>
+      <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
       <description>Here is a handy developer tool tip for today: DevDocs
 As developers, we spend a large portion of our time, searching for the &amp;ldquo;name of the function abc that did thing xyz&amp;rdquo;. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called Dash.</description>
     </item>
     
     <item>
       <title>Deploying a Native Go Binary on Heroku</title>
-      <link>https://example.com/2019/04/20/deploying-native-go-binary-on-heroku/</link>
+      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
       <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
       
-      <guid>https://example.com/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
+      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
       <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
     </item>
     

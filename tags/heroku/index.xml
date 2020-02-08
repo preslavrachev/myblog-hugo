@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Heroku on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/heroku/</link>
+    <link>https://preslav.me/tags/heroku/</link>
     <description>Recent content in Heroku on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 20 Apr 2019 07:30:04 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deploying a Native Go Binary on Heroku</title>
-      <link>https://example.com/2019/04/20/deploying-native-go-binary-on-heroku/</link>
+      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
       <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
       
-      <guid>https://example.com/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
+      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
       <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
     </item>
     

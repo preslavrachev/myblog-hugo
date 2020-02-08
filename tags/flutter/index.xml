@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flutter on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/flutter/</link>
+    <link>https://preslav.me/tags/flutter/</link>
     <description>Recent content in Flutter on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>

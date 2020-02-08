@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Podcast on Random Bits of Wisdom</title>
-    <link>https://example.com/tags/podcast/</link>
+    <link>https://preslav.me/tags/podcast/</link>
     <description>Recent content in Podcast on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What&#39;s New in Mixtape</title>
-      <link>https://example.com/2019/10/10/what-is-new-in-mixtape/</link>
+      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
       <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/10/what-is-new-in-mixtape/</guid>
+      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
       <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
     </item>
     
     <item>
       <title>What&#39;s in a Mixtape?</title>
-      <link>https://example.com/2019/09/25/what-is-in-a-mixtape/</link>
+      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
       <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/09/25/what-is-in-a-mixtape/</guid>
+      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
       <description>Mixtape
  A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201908181824/</link>
+      <link>https://preslav.me/microblog/201908181824/</link>
       <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201908181824/</guid>
+      <guid>https://preslav.me/microblog/201908181824/</guid>
       <description>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201906081458/</link>
+      <link>https://preslav.me/microblog/201906081458/</link>
       <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201906081458/</guid>
+      <guid>https://preslav.me/microblog/201906081458/</guid>
       <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
@@ -52,10 +52,10 @@ A: It has been optimized for softer cheeses 😂
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/201904261848/</link>
+      <link>https://preslav.me/microblog/201904261848/</link>
       <pubDate>Fri, 26 Apr 2019 16:48:32 +0000</pubDate>
       
-      <guid>https://example.com/microblog/201904261848/</guid>
+      <guid>https://preslav.me/microblog/201904261848/</guid>
       <description> Ask the reader: This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.
   (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id=&#34;typef_orm&#34;, b=&#34;https://embed.typeform.com/&#34;; if(!gi.call(d,id)) { js=ce.call(d,&#34;script&#34;); js.id=id; js.src=b+&#34;embed.js&#34;; q=gt.call(d,&#34;script&#34;)[0]; q.parentNode.insertBefore(js,q) } })()  powered by Typeform  </description>
     </item>

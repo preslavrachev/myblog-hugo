@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Random Bits of Wisdom</title>
-    <link>https://example.com/</link>
+    <link>https://preslav.me/</link>
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 14 Dec 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Panic Without Worry</title>
-      <link>https://example.com/2019/12/14/panic-without-worry/</link>
+      <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/12/14/panic-without-worry/</guid>
+      <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
       <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
     </item>
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
@@ -33,79 +33,79 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
     
     <item>
       <title>Why I Still Find the Minimap Useful</title>
-      <link>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
       <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
     </item>
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
       <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>
     
     <item>
       <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
-      <link>https://example.com/2019/10/31/iphone-less-memory-android/</link>
+      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
       <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/31/iphone-less-memory-android/</guid>
+      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
       <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
 It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
     </item>
     
     <item>
       <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
       <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
       <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/microblog/2019102111035/</link>
+      <link>https://preslav.me/microblog/2019102111035/</link>
       <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://example.com/microblog/2019102111035/</guid>
+      <guid>https://preslav.me/microblog/2019102111035/</guid>
       <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
     </item>
     
     <item>
       <title>Go is Good Enough</title>
-      <link>https://example.com/2019/10/18/go-is-good-enough/</link>
+      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
       <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/18/go-is-good-enough/</guid>
+      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
       <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
     </item>
     
     <item>
       <title>This Is How We Write History</title>
-      <link>https://example.com/2019/10/12/this-is-how-we-write-history/</link>
+      <link>https://preslav.me/2019/10/12/this-is-how-we-write-history/</link>
       <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/12/this-is-how-we-write-history/</guid>
+      <guid>https://preslav.me/2019/10/12/this-is-how-we-write-history/</guid>
       <description>This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
   This is the beginning of a new era of running. I am certain that Kipchoge&amp;rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.</description>
     </item>
     
     <item>
       <title>What&#39;s New in Mixtape</title>
-      <link>https://example.com/2019/10/10/what-is-new-in-mixtape/</link>
+      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
       <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2019/10/10/what-is-new-in-mixtape/</guid>
+      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
       <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
     </item>
     
