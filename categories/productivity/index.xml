@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Productivity on Preslav Rachev</title>
-    <link>https://preslav.me/categories/productivity/</link>
-    <description>Recent content in Productivity on Preslav Rachev</description>
+    <title>Productivity on Random Bits of Wisdom</title>
+    <link>https://example.com/categories/productivity/</link>
+    <description>Recent content in Productivity on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <link>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</link>
       <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <guid>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>

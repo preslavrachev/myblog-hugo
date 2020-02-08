@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iphone on Preslav Rachev</title>
-    <link>https://preslav.me/tags/iphone/</link>
-    <description>Recent content in Iphone on Preslav Rachev</description>
+    <title>Iphone on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/iphone/</link>
+    <description>Recent content in Iphone on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 31 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
-      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
+      <link>https://example.com/2019/10/31/iphone-less-memory-android/</link>
       <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
+      <guid>https://example.com/2019/10/31/iphone-less-memory-android/</guid>
       <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
 It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/220503190745/</link>
+      <link>https://example.com/microblog/220503190745/</link>
       <pubDate>Fri, 03 May 2019 05:45:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/220503190745/</guid>
+      <guid>https://example.com/microblog/220503190745/</guid>
       <description>I caught myself using my old Android phone more and more these days. A 5-year-old Nexus 5, that is. I dug it out a few weeks ago. After the fresh reset all the service updates, it works as if it hasn’t been two years since I last used it for real. Trinkering with Android like in the good old days felt exciting. In comparison, my experience with iOS has always been like living a comfortable, but relatively boring life.</description>
     </item>
     

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sci Fi on Preslav Rachev</title>
-    <link>https://preslav.me/tags/sci-fi/</link>
-    <description>Recent content in Sci Fi on Preslav Rachev</description>
+    <title>Sci Fi on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/sci-fi/</link>
+    <description>Recent content in Sci Fi on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 23 Jun 2019 15:45:35 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/sci-fi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/sci-fi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201906231845/</link>
+      <link>https://example.com/microblog/201906231845/</link>
       <pubDate>Sun, 23 Jun 2019 15:45:35 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201906231845/</guid>
+      <guid>https://example.com/microblog/201906231845/</guid>
       <description>A quote from &amp;ldquo;The Three-Body Problem&amp;rdquo;:
  &amp;ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&amp;rdquo;
- The Three-Body Problem (Remembrance of Earth’s Past #1)    The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Three-Body Problem (Remembrance of Earth’s Past #1)  The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
     </item>
     
   </channel>

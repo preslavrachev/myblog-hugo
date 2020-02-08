@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Trams on Preslav Rachev</title>
-    <link>https://preslav.me/tags/trams/</link>
-    <description>Recent content in Trams on Preslav Rachev</description>
+    <title>Trams on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/trams/</link>
+    <description>Recent content in Trams on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 23 Jun 2019 21:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/trams/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/trams/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sofia&#39;s Trams</title>
-      <link>https://preslav.me/2019/06/23/sofia-s-trams/</link>
+      <link>https://example.com/2019/06/23/sofia-s-trams/</link>
       <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/06/23/sofia-s-trams/</guid>
+      <guid>https://example.com/2019/06/23/sofia-s-trams/</guid>
       <description>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.
 This time was different. My wife and I flew for the wedding of one of our best friends, and since we had a whole day to spare, we decided to take a walk through the centre of the City of Trams.</description>
     </item>

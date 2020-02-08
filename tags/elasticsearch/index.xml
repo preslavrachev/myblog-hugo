@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elasticsearch on Preslav Rachev</title>
-    <link>https://preslav.me/tags/elasticsearch/</link>
-    <description>Recent content in Elasticsearch on Preslav Rachev</description>
+    <title>Elasticsearch on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/elasticsearch/</link>
+    <description>Recent content in Elasticsearch on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What&#39;s New in Mixtape</title>
-      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+      <link>https://example.com/2019/10/10/what-is-new-in-mixtape/</link>
       <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+      <guid>https://example.com/2019/10/10/what-is-new-in-mixtape/</guid>
       <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
     </item>
     
     <item>
       <title>Securing your ElasticSearch instances</title>
-      <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
+      <link>https://example.com/2017/02/03/securing-your-elasticsearch-instances/</link>
       <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
+      <guid>https://example.com/2017/02/03/securing-your-elasticsearch-instances/</guid>
       <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
 Unfortunately, one thing comes for another, and as we have recently seen, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday.</description>
     </item>

@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Micropost on Preslav Rachev</title>
-    <link>https://preslav.me/tags/micropost/</link>
-    <description>Recent content in Micropost on Preslav Rachev</description>
+    <title>Micropost on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/micropost/</link>
+    <description>Recent content in Micropost on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/micropost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/micropost/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/2019102111035/</link>
+      <link>https://example.com/microblog/2019102111035/</link>
       <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/2019102111035/</guid>
+      <guid>https://example.com/microblog/2019102111035/</guid>
       <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
- Dear Startup: You have no idea how much that costs.    The problem</description>
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/280920191021/</link>
+      <link>https://example.com/microblog/280920191021/</link>
       <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/280920191021/</guid>
+      <guid>https://example.com/microblog/280920191021/</guid>
       <description>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/260920191021/</link>
+      <link>https://example.com/microblog/260920191021/</link>
       <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/260920191021/</guid>
+      <guid>https://example.com/microblog/260920191021/</guid>
       <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
@@ -43,418 +43,72 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/260920191020/</link>
+      <link>https://example.com/microblog/260920191020/</link>
       <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/260920191020/</guid>
+      <guid>https://example.com/microblog/260920191020/</guid>
       <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
 Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/220920191020/</link>
+      <link>https://example.com/microblog/220920191020/</link>
       <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/220920191020/</guid>
+      <guid>https://example.com/microblog/220920191020/</guid>
       <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
 Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201909021700/</link>
+      <link>https://example.com/microblog/201909021700/</link>
       <pubDate>Mon, 02 Sep 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201909021700/</guid>
+      <guid>https://example.com/microblog/201909021700/</guid>
       <description>A quote from &amp;ldquo;The Mom Test&amp;rdquo; by Rob Fitzpatrick
  It’s not anyone else’s responsibility to show us the truth. It’s our responsibility to find it.
- The Mom Test    The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&amp;#39;t ask your mom wh...
-Source: - https://www.goodreads.com   </description>
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Mom Test  The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&amp;#39;t ask your mom wh... https://www.goodreads.com |  Created with NoEmbed    </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201908211824/</link>
+      <link>https://example.com/microblog/201908211824/</link>
       <pubDate>Wed, 21 Aug 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201908211824/</guid>
+      <guid>https://example.com/microblog/201908211824/</guid>
       <description>A quote from &amp;ldquo;Without their Permission&amp;rdquo; by Alexis Ohanian
  We like to think that real talent always has a way of getting noticed. Harrison Ford was a self-taught professional carpenter when he as hired to build cabinets in the home of George Lucas, who cast him in American Graffiti and set him on a course that led to Indiana Jones. If Ford hadn’t picked up the right hammer or taken another job, Solo would’ve ended up saying “I love you, too”, instead of “I know.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201908181824/</link>
+      <link>https://example.com/microblog/201908181824/</link>
       <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201908181824/</guid>
+      <guid>https://example.com/microblog/201908181824/</guid>
       <description>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201908171824/</link>
+      <link>https://example.com/microblog/201908171824/</link>
       <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201908171824/</guid>
+      <guid>https://example.com/microblog/201908171824/</guid>
       <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
 module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201830111824/</link>
+      <link>https://example.com/microblog/201830111824/</link>
       <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201830111824/</guid>
+      <guid>https://example.com/microblog/201830111824/</guid>
       <description>Japanese websites don&amp;rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
- Why doesn’t Japan excel in software as they did in hardware?    Ah… Finally.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908031736/</link>
-      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908031736/</guid>
-      <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
-I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907241129/</link>
-      <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907241129/</guid>
-      <description>Apple is becoming a macOS gatekeeper too.
- For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907131824/</link>
-      <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907131824/</guid>
-      <description>My new favorite coffee mug - a special &amp;ldquo;You Are Here&amp;rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907101824/</link>
-      <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907101824/</guid>
-      <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
-This is quite neat and might save me one or two print statements 😉
-Thanks to @FlorimondManca for this discovery!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907081824/</link>
-      <pubDate>Mon, 08 Jul 2019 16:24:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907081824/</guid>
-      <description>Scooter Craze The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.
-In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907041930/</link>
-      <pubDate>Thu, 04 Jul 2019 18:30:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907041930/</guid>
-      <description>Chillin&amp;rsquo;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907040754/</link>
-      <pubDate>Thu, 04 Jul 2019 05:54:08 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907040754/</guid>
-      <description>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:
-Those are called Adidas Terrex Two Boa. They feature a very stiff, but sturdy underfoot part (because they are made for trail running), and an innovative lacing system called Boa. It was a bit of a love at first sight, but I amnot really sure, if I am going to get used to those shoes.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907022242/</link>
-      <pubDate>Tue, 02 Jul 2019 19:42:07 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907022242/</guid>
-      <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
- An Open Letter To The Go Team About Try    “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907011324/</link>
-      <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907011324/</guid>
-      <description>On the road again&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906281812/</link>
-      <pubDate>Fri, 28 Jun 2019 15:12:38 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906281812/</guid>
-      <description>A sneak peek at the wedding location.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906251911/</link>
-      <pubDate>Tue, 25 Jun 2019 16:11:13 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906251911/</guid>
-      <description>A quote from &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
- That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
- Adults in the Room    What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the ...
-Source: - https://www.goodreads.com   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906231845/</link>
-      <pubDate>Sun, 23 Jun 2019 15:45:35 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906231845/</guid>
-      <description>A quote from &amp;ldquo;The Three-Body Problem&amp;rdquo;:
- &amp;ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&amp;rdquo;
- The Three-Body Problem (Remembrance of Earth’s Past #1)    The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906211000/</link>
-      <pubDate>Fri, 21 Jun 2019 08:00:18 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906211000/</guid>
-      <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
- ongoing by Tim Bray · Go Creeping In    I’ve seen the inside of the Google and Amazon tech stacks.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906111300/</link>
-      <pubDate>Tue, 11 Jun 2019 11:00:50 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906111300/</guid>
-      <description>A quote from &amp;ldquo;Without Their Permission&amp;rdquo; by Alexis Ohanian:
- “Building an audience doesn’t require a large advertising budget, certainly not at the beginning. Making something people want—something that people love, that solves a real problem they have in an elegant way—is the most effective thing one can do to generate buzz. There’s no secret to “going viral,” despite what plenty of self-appointed “social media gurus” may tell you (hint: if they call themselves that, run in the opposite direction).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906101457/</link>
-      <pubDate>Mon, 10 Jun 2019 12:56:03 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906101457/</guid>
-      <description>The moment you realize that even a PhD in Mathematical Combinatorics won’t help you, is when you start organizing the seating order for your wedding 🤦‍♂️👰</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906081458/</link>
-      <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906081458/</guid>
-      <description> Q: Aesthetically, what do you think about the design of the new grater?
-A: It has been optimized for softer cheeses 😂
-   329: Mac Pro Day — Accidental Tech Podcast — Overcast    Our live show from WWDC 2019!
-Source: - Overcast   </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906080735/</link>
-      <pubDate>Sat, 08 Jun 2019 05:24:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906080735/</guid>
-      <description>Who wants to buy an almost new Google Pixel 3 XL at a great price?
-Two weeks ago, I bought this phone from eBay with the hope that it will make me go back to Android, but it turns out that I am more connected to iOS than I thought. I will lay out my exact reasons in a separate post, but they have to do more with Google than this phone&amp;rsquo;s hardware in particular.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905240633/</link>
-      <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905240633/</guid>
-      <description>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&amp;rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&amp;rsquo;s a beast with an incredible performance:
-
-Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905210746/</link>
-      <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905210746/</guid>
-      <description>Some interesting observations on the Eurovision Song Contest winners since the year 2000. Not surprisingly, the majority of the winners are in a minor key. Like, this years’ winner from The Netherlands (A minor).
-Songs written in a major key seem to be showing a directly oppising trend, often hotting the hard rock bottom.
-Since 2000, the majority of Eurovision winners have been written in a minor key. Not only have minor keys won 15 of the last 20 contests (major keys have only won five), major keys have placed rock bottom nearly twice as often as minor ones.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905121007/</link>
-      <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905121007/</guid>
-      <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
-Customers: Go Home, Google, you’re drunk.
-Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
-Customers: it’s the best Take my money!
-Google: Tricked ya!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905120928/</link>
-      <pubDate>Sun, 12 May 2019 07:28:07 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905120928/</guid>
-      <description>Back to Wunderlist After what seems like an eternity (close to 3 years), I decided to install and try Wunderlist again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be Microsoft To-Do - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/2019051111035/</link>
-      <pubDate>Sat, 11 May 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/2019051111035/</guid>
-      <description>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.
-One thing I learned during the 3 years of active running:
- Distance running is 20% physical and 80% mental fitness.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905110736/</link>
-      <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905110736/</guid>
-      <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
-The series starts with:
-Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905100746/</link>
-      <pubDate>Fri, 10 May 2019 05:46:31 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905100746/</guid>
-      <description>Google will soon introduce searching for podcast episodes as part of its search results. This much was said during the keynote of this year&amp;rsquo;s Google I/O. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905091358/</link>
-      <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905091358/</guid>
-      <description>Today, I woke up to this!
-As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the sixth largest exchange hack in crypto history. More here:
-Hackers Stole $40 Million From Binance Cryptocurrency Exchange</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201903051009/</link>
-      <pubDate>Fri, 03 May 2019 08:09:56 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201903051009/</guid>
-      <description>Quotes, highlighted from recently read articles:
- Convenience is the powerful marketing tool deployed by utopian evangelists to describe a world of total ease and seamless interactions that deliberately masks a frantic race to monopolize a near-bottomless well of behavioral and biometric data. It is the device used to reduce our personal agency, strip us of personal choice, and ultimately render us helpless to the terms and conditions to which we have unwittingly clicked “I agree.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/220503190745/</link>
-      <pubDate>Fri, 03 May 2019 05:45:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/220503190745/</guid>
-      <description>I caught myself using my old Android phone more and more these days. A 5-year-old Nexus 5, that is. I dug it out a few weeks ago. After the fresh reset all the service updates, it works as if it hasn’t been two years since I last used it for real. Trinkering with Android like in the good old days felt exciting. In comparison, my experience with iOS has always been like living a comfortable, but relatively boring life.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905011824/</link>
-      <pubDate>Wed, 01 May 2019 16:24:56 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905011824/</guid>
-      <description>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
- My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium    For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201904261848/</link>
-      <pubDate>Fri, 26 Apr 2019 16:48:32 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201904261848/</guid>
-      <description> Ask the reader: This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.
-  (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id=&#34;typef_orm&#34;, b=&#34;https://embed.typeform.com/&#34;; if(!gi.call(d,id)) { js=ce.call(d,&#34;script&#34;); js.id=id; js.src=b+&#34;embed.js&#34;; q=gt.call(d,&#34;script&#34;)[0]; q.parentNode.insertBefore(js,q) } })()  powered by Typeform  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/220420191020/</link>
-      <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/220420191020/</guid>
-      <description>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
-      <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
-      <description>Meanwhile in Munich&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</link>
-      <pubDate>Wed, 23 Jan 2019 06:57:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</guid>
-      <description>A view to live for! 😍
-Sendlinger Tor | Munich</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201830111824/</link>
-      <pubDate>Fri, 30 Nov 2018 21:13:21 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201830111824/</guid>
-      <description>Opportunities are whispers, not foghorns.
-If we can&amp;rsquo;t hear their soft rhythms - if we are to busy rushing about, waiting for thunderclaps of revelation, inspiration, and certainty - or if we can spot them but can&amp;rsquo;t nurture them into real advantages, then we might as well be blind to them.
- From the book &amp;ldquo;Nikola Tesla: Imagination and the Man That Invented the 20th Century&amp;rdquo;
-Nikola Tesla    If you want to learn about one of history’s most fascinating minds and uncover some of his secrets of imagination—secrets that enabled hi.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905051824/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905051824/</guid>
-      <description>Test post. Let&amp;rsquo;s see if this deploys to the website.</description>
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Why doesn’t Japan excel in software as they did in hardware?</description>
     </item>
     
   </channel>

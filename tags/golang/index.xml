@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on Preslav Rachev</title>
-    <link>https://preslav.me/tags/golang/</link>
-    <description>Recent content in Golang on Preslav Rachev</description>
+    <title>Golang on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/golang/</link>
+    <description>Recent content in Golang on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 14 Dec 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Panic Without Worry</title>
-      <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
+      <link>https://example.com/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
+      <guid>https://example.com/2019/12/14/panic-without-worry/</guid>
       <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
     </item>
     
     <item>
       <title>Go is Good Enough</title>
-      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
+      <link>https://example.com/2019/10/18/go-is-good-enough/</link>
       <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
+      <guid>https://example.com/2019/10/18/go-is-good-enough/</guid>
       <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
     </item>
     
     <item>
       <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+      <link>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
       <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+      <guid>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
       <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
 l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/260920191021/</link>
+      <link>https://example.com/microblog/260920191021/</link>
       <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/260920191021/</guid>
+      <guid>https://example.com/microblog/260920191021/</guid>
       <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
@@ -52,19 +52,19 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
     
     <item>
       <title>Bought a Year-Long License for GoLand</title>
-      <link>https://preslav.me/2019/08/29/goland-license/</link>
+      <link>https://example.com/2019/08/29/goland-license/</link>
       <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
+      <guid>https://example.com/2019/08/29/goland-license/</guid>
       <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
     </item>
     
     <item>
       <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+      <link>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
       <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+      <guid>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
       <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
@@ -72,10 +72,10 @@ struct { b int32 c string d string a bool } Why is that? Well, think of memory a
     
     <item>
       <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+      <link>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
       <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+      <guid>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
       <description>If you ever get the following message:
 x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
@@ -83,97 +83,30 @@ On Alpine, this can be done using the default package installer:</description>
     
     <item>
       <title>Mixtape Retrospective: Time to Split the Monolith?</title>
-      <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
+      <link>https://example.com/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
       <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
+      <guid>https://example.com/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
       <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
     </item>
     
     <item>
       <title>Adding Version Information to Go Binaries</title>
-      <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
+      <link>https://example.com/2019/07/09/adding-version-information-to-go-binaries/</link>
       <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
+      <guid>https://example.com/2019/07/09/adding-version-information-to-go-binaries/</guid>
       <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
     </item>
     
     <item>
       <title>Implementing a Functional-Style Builder in Go</title>
-      <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
+      <link>https://example.com/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
       <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
+      <guid>https://example.com/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
       <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
 In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&amp;rsquo;t claim that mine is certainly the best.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907022242/</link>
-      <pubDate>Tue, 02 Jul 2019 19:42:07 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907022242/</guid>
-      <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
- An Open Letter To The Go Team About Try    “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906211000/</link>
-      <pubDate>Fri, 21 Jun 2019 08:00:18 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906211000/</guid>
-      <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
- ongoing by Tim Bray · Go Creeping In    I’ve seen the inside of the Google and Amazon tech stacks.</description>
-    </item>
-    
-    <item>
-      <title>Introducing NoEmbed</title>
-      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
-      <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-      <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.    NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share
-Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
-    </item>
-    
-    <item>
-      <title>My Reasons to Consider Go Coming from Java</title>
-      <link>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
-      <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
-      <description>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905011824/</link>
-      <pubDate>Wed, 01 May 2019 16:24:56 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905011824/</guid>
-      <description>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
- My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium    For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a</description>
-    </item>
-    
-    <item>
-      <title>Deploying a Native Go Binary on Heroku</title>
-      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
-      <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
-      <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
-    </item>
-    
-    <item>
-      <title>My Baby Steps with Go</title>
-      <link>https://preslav.me/2019/02/20/my-baby-steps-with-go/</link>
-      <pubDate>Wed, 20 Feb 2019 05:27:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/02/20/my-baby-steps-with-go/</guid>
-      <description>Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first.</description>
     </item>
     
   </channel>

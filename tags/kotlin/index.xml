@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kotlin on Preslav Rachev</title>
-    <link>https://preslav.me/tags/kotlin/</link>
-    <description>Recent content in Kotlin on Preslav Rachev</description>
+    <title>Kotlin on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/kotlin/</link>
+    <description>Recent content in Kotlin on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 02 Aug 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201908031736/</link>
+      <link>https://example.com/microblog/201908031736/</link>
       <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201908031736/</guid>
+      <guid>https://example.com/microblog/201908031736/</guid>
       <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
 I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
     </item>
     
     <item>
       <title>Kotlin ❤️ Data Science? (Part 1)</title>
-      <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
+      <link>https://example.com/2019/02/03/kotlin-loves-data-science/</link>
       <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
+      <guid>https://example.com/2019/02/03/kotlin-loves-data-science/</guid>
       <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
    Mathematical Modeling with Kotlin | Thomas Nield</description>
     </item>
     
     <item>
       <title>Connecting to a MongoDB Instance Using KMongo</title>
-      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
+      <link>https://example.com/2018/12/28/mongodb-kmongo-connection-string/</link>
       <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
       
-      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
+      <guid>https://example.com/2018/12/28/mongodb-kmongo-connection-string/</guid>
       <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
 Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
 val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
@@ -44,20 +44,20 @@ val client = KMongo.createClient() //get com.mongodb.MongoClient new instance va
     
     <item>
       <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
-      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
+      <link>https://example.com/2018/12/28/the-kotlin-way/</link>
       <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
+      <guid>https://example.com/2018/12/28/the-kotlin-way/</guid>
       <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
 My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
     </item>
     
     <item>
       <title>Kotlin Basics: apply() and copy()</title>
-      <link>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</link>
+      <link>https://example.com/2016/06/26/kotlin-basics-apply-and-copy/</link>
       <pubDate>Sun, 26 Jun 2016 12:56:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</guid>
+      <guid>https://example.com/2016/06/26/kotlin-basics-apply-and-copy/</guid>
       <description>Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
 How many times have you had to do the same thing over and over again:</description>
     </item>

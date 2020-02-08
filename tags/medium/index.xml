@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Medium on Preslav Rachev</title>
-    <link>https://preslav.me/tags/medium/</link>
-    <description>Recent content in Medium on Preslav Rachev</description>
+    <title>Medium on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/medium/</link>
+    <description>Recent content in Medium on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 20 Jun 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introducing NoEmbed</title>
-      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
+      <link>https://example.com/2019/06/20/introducing-noembed/</link>
       <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-      <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.    NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share
-Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
+      <guid>https://example.com/2019/06/20/introducing-noembed/</guid>
+      <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</description>
     </item>
     
   </channel>

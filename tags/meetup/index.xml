@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Meetup on Preslav Rachev</title>
-    <link>https://preslav.me/tags/meetup/</link>
-    <description>Recent content in Meetup on Preslav Rachev</description>
+    <title>Meetup on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/meetup/</link>
+    <description>Recent content in Meetup on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 03 Feb 2019 14:29:06 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/meetup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kotlin ❤️ Data Science? (Part 1)</title>
-      <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
+      <link>https://example.com/2019/02/03/kotlin-loves-data-science/</link>
       <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
+      <guid>https://example.com/2019/02/03/kotlin-loves-data-science/</guid>
       <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
    Mathematical Modeling with Kotlin | Thomas Nield</description>
     </item>

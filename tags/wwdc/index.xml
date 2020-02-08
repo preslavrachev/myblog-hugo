@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wwdc on Preslav Rachev</title>
-    <link>https://preslav.me/tags/wwdc/</link>
-    <description>Recent content in Wwdc on Preslav Rachev</description>
+    <title>Wwdc on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/wwdc/</link>
+    <description>Recent content in Wwdc on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 08 Jun 2019 12:56:03 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/wwdc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/wwdc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201906081458/</link>
+      <link>https://example.com/microblog/201906081458/</link>
       <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201906081458/</guid>
+      <guid>https://example.com/microblog/201906081458/</guid>
       <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
-   329: Mac Pro Day — Accidental Tech Podcast — Overcast    Our live show from WWDC 2019!
-Source: - Overcast   </description>
+   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
     </item>
     
   </channel>

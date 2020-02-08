@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Running on Preslav Rachev</title>
-    <link>https://preslav.me/categories/running/</link>
-    <description>Recent content in Running on Preslav Rachev</description>
+    <title>Running on Random Bits of Wisdom</title>
+    <link>https://example.com/categories/running/</link>
+    <description>Recent content in Running on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 12 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/categories/running/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/categories/running/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>This Is How We Write History</title>
-      <link>https://preslav.me/2019/10/12/this-is-how-we-write-history/</link>
+      <link>https://example.com/2019/10/12/this-is-how-we-write-history/</link>
       <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/12/this-is-how-we-write-history/</guid>
+      <guid>https://example.com/2019/10/12/this-is-how-we-write-history/</guid>
       <description>This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
   This is the beginning of a new era of running. I am certain that Kipchoge&amp;rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.</description>
     </item>
     
     <item>
       <title>Sixtus Half-Marathon (Schliersee) 2019</title>
-      <link>https://preslav.me/2019/05/17/sixtus-half-marthon-schliersee-2019/</link>
+      <link>https://example.com/2019/05/17/sixtus-half-marthon-schliersee-2019/</link>
       <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/05/17/sixtus-half-marthon-schliersee-2019/</guid>
+      <guid>https://example.com/2019/05/17/sixtus-half-marthon-schliersee-2019/</guid>
       <description>Today, I took part in the Sixtus Half-Marathon near lake Schliersee for the third time in a row. Unlike last year, this time I started with a completely different strategy - keep it cool and let everyone else pass by me during the first third of the race. Seeing everyone else&amp;rsquo;s backs can be demotivating and requires a lot of patience and training.
    After the first 5-6K, having realized that I was really the last of the HM group, I started slowly picking up the pace.</description>
     </item>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Preslav Rachev</title>
-    <link>https://preslav.me/tags/docker/</link>
-    <description>Recent content in Docker on Preslav Rachev</description>
+    <title>Docker on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/docker/</link>
+    <description>Recent content in Docker on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 11 Aug 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+      <link>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
       <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+      <guid>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
       <description>If you ever get the following message:
 x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
@@ -24,20 +24,20 @@ On Alpine, this can be done using the default package installer:</description>
     
     <item>
       <title>Using Ephemeral Docker Containers as CLI Applications</title>
-      <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
+      <link>https://example.com/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
       <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
+      <guid>https://example.com/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
       <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
 When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.</description>
     </item>
     
     <item>
       <title>Securing your ElasticSearch instances</title>
-      <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
+      <link>https://example.com/2017/02/03/securing-your-elasticsearch-instances/</link>
       <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
+      <guid>https://example.com/2017/02/03/securing-your-elasticsearch-instances/</guid>
       <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
 Unfortunately, one thing comes for another, and as we have recently seen, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday.</description>
     </item>

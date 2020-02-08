@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Podcasting on Preslav Rachev</title>
-    <link>https://preslav.me/tags/podcasting/</link>
-    <description>Recent content in Podcasting on Preslav Rachev</description>
+    <title>Podcasting on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/podcasting/</link>
+    <description>Recent content in Podcasting on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/podcasting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/podcasting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What&#39;s New in Mixtape</title>
-      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+      <link>https://example.com/2019/10/10/what-is-new-in-mixtape/</link>
       <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+      <guid>https://example.com/2019/10/10/what-is-new-in-mixtape/</guid>
       <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/260920191020/</link>
+      <link>https://example.com/microblog/260920191020/</link>
       <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/260920191020/</guid>
+      <guid>https://example.com/microblog/260920191020/</guid>
       <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
 Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
     </item>
     
     <item>
       <title>What&#39;s in a Mixtape?</title>
-      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
+      <link>https://example.com/2019/09/25/what-is-in-a-mixtape/</link>
       <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
+      <guid>https://example.com/2019/09/25/what-is-in-a-mixtape/</guid>
       <description>Mixtape
  A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
     </item>
     
     <item>
       <title>Mixtape Retrospective: Time to Split the Monolith?</title>
-      <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
+      <link>https://example.com/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
       <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
+      <guid>https://example.com/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
       <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201905100746/</link>
+      <link>https://example.com/microblog/201905100746/</link>
       <pubDate>Fri, 10 May 2019 05:46:31 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201905100746/</guid>
+      <guid>https://example.com/microblog/201905100746/</guid>
       <description>Google will soon introduce searching for podcast episodes as part of its search results. This much was said during the keynote of this year&amp;rsquo;s Google I/O. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</description>
     </item>
     

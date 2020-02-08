@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jetbrains on Preslav Rachev</title>
-    <link>https://preslav.me/tags/jetbrains/</link>
-    <description>Recent content in Jetbrains on Preslav Rachev</description>
+    <title>Jetbrains on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/jetbrains/</link>
+    <description>Recent content in Jetbrains on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 29 Aug 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bought a Year-Long License for GoLand</title>
-      <link>https://preslav.me/2019/08/29/goland-license/</link>
+      <link>https://example.com/2019/08/29/goland-license/</link>
       <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
+      <guid>https://example.com/2019/08/29/goland-license/</guid>
       <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
     </item>
     

@@ -1,891 +1,163 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Preslav Rachev </title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    
-
-    
-    
-      <link href="/dist/css/app.955516233bcafa4d2a1c13cea63c7b50.css" rel="stylesheet">
-    
-
-    
-      <link rel="stylesheet" href="/css/styles.css">
-    
-      <link rel="stylesheet" href="/css/cookieconsent.min.css">
-    
-
-    
-      
-    
-
-    
-      <link href="https://preslav.me/index.xml" rel="alternate" type="application/rss+xml" title="Preslav Rachev" />
-      <link href="https://preslav.me/index.xml" rel="feed" type="application/rss+xml" title="Preslav Rachev" />
-    
-
-    <meta property="og:title" content="Preslav Rachev" />
-<meta property="og:description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://preslav.me/" />
-
-<meta property="og:updated_time" content="2019-12-14T22:00:00&#43;00:00"/>
-
-<meta itemprop="name" content="Preslav Rachev">
-<meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼">
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Preslav Rachev"/>
-<meta name="twitter:description" content="I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼"/>
-
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-131031623-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-    
-
-    <link href="https://micro.blog/preslavrachev" rel="me" />
-<link href="https://github.com/preslavrachev" rel="me" />
-
-<link rel="micropub" href="https://untitled-ijfrpfomttsw.runkit.sh/micropub" />
-<link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
-<link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+<html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Preslav Rachev ">
+<meta name="description" content="I am a software engineer building his own stuff. This is my home on the Internet." />
+<meta name="keywords" content="programming, golang, python" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://example.com/" />
 
 
-<meta name="yandex-verification" content="89a95028305dc3e3" />
-<meta name="msvalidate.01" content="4BA490C33C6642493B5231888C5C1044" />
+    <title>
+        
+            Random Bits of Wisdom  — Hello Friend NG Theme 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://example.com/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
 
 
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "url": "https://www.preslav.me",
-  "name": "Preslav Rachev",
-  "jobTitle": "A software engineer specializing in building data-driven applications in Go, Python, and for the JVM"
-}
-</script>
-
-<link rel="alternate" type="application/rss&#43;xml"
-    href="https://preslav.me/index.xml">
-<style>
-    #carbonads {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-            Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    #carbonads {
-        display: flex;
-        max-width: 330px;
-        background-color: hsl(0, 0%, 98%);
-        box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, .1);
-    }
-
-    #carbonads a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    #carbonads a:hover {
-        color: inherit;
-    }
-
-    #carbonads span {
-        position: relative;
-        display: block;
-        overflow: hidden;
-    }
-
-    #carbonads .carbon-wrap {
-        display: flex;
-    }
-
-    .carbon-img {
-        display: block;
-        margin: 0;
-        line-height: 1;
-    }
-
-    .carbon-img img {
-        display: block;
-    }
-
-    .carbon-text {
-        font-size: 13px;
-        padding: 10px;
-        line-height: 1.5;
-        text-align: left;
-    }
-
-    .carbon-poweredby {
-        display: block;
-        padding: 8px 10px;
-        background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: .5px;
-        font-weight: 600;
-        font-size: 9px;
-        line-height: 1;
-    }
-</style>
-  </head>
-
-  <body class="ma0 helvetica bg-white production">
-
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://example.com/favicon-16x16.png">
+    <link rel="manifest" href="https://example.com/site.webmanifest">
+    <link rel="mask-icon" href="https://example.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://example.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
 
 
-<header class="cover bg-top" style="background-image: url('https://preslav.me/images/header-august-2019.jpg'); background-position: center">
-  <div class="bg-black-50">
-    <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="https://preslav.me/" class="f4 fw2 hover-white no-underline white-90 dib">
-      Home
-    </a>
-    <div class="flex-l items-center">
-      
+<meta itemprop="name" content="Random Bits of Wisdom">
+<meta itemprop="description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music.">
 
-      
-        <ul class="pl0 mr3">
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
-              About Me
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/projects/" title="My Projects page">
-              My Projects
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/contact/" title="Contact page">
-              Contact
-            </a>
-          </li>
-          
-        </ul>
-      
-      
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com"/>
 
-
-
-<a href="https://twitter.com/preslavrachev" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
+<meta name="twitter:title" content="Random Bits of Wisdom"/>
+<meta name="twitter:description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."/>
 
 
 
 
 
-<a href="https://github.com/preslavrachev" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
-</svg>
 
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
+
+<link rel="alternate" type="application/rss+xml" href="https://example.com/index.xml" title="Random Bits of Wisdom" />
 
 
 
 
 
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://example.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/preslav.me</span>
+            <span class="logo__cursor" style=""></span>
+        
     </div>
-  </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://example.com/about/">About</a></li><li><a href="https://example.com/post/">Blog</a></li>
+    </ul>
 </nav>
 
-    <div class="tc-l pv1 pv2-l ph3 ph4-ns">
-      <h1 class="f2 f1-l white-90 tl">
-        Preslav Rachev
-      </h1>
-      
-        <h2 class="fw3 fw3-l f5 f3-l white measure-wide-l mt3 mb4 tl">
-          I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say &#34;Hi&#34; 👋🏼
-        </h2>
-      
-    </div>
-  </div>
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
 </header>
 
-    <main class="pb7" role="main">
-      
-<article
-  class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-  
-</article>
-<div class="pa3 pa4-ns w-100 w-60-l center">
-  
 
-  <section class="w-100 mw8">
-    
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/12/14/panic-without-worry/" class="color-inherit dim link">
-            
-            Panic Without Worry
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in programming, golang, go | 14 Dec, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.
-          
+            <div class="content">
+                
+    <main aria-role="main">
+        <div>
+            <h1>Random Bits of Wisdom</h1>
+                <p>I am a software engineer building his own stuff. This is my home on the Internet.</p>
+                <div>
+                    &nbsp; <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a> &nbsp;&nbsp; <a href="mailto:nobody@example.com" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;&nbsp; <a href="https://github.com/" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;&nbsp; <a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a> &nbsp;&nbsp; <a href="https://www.stackoverflow.com/" target="_blank" rel="noopener" title="Stackoverflow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z"/></svg></a> &nbsp;
+                </div>
         </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/11/11/get-flutter-to-work-with-beta-xcode/" class="color-inherit dim link">
-            
-            If You Can’t Get Flutter to Work with Your Beta Version of Xcode
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in programming, tips, flutter, xcode, ios | 11 Nov, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          You need to explicitly set the beta version of Xcode as your default one via the command line:
-sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
-Related Resources select - Managing Multiple Versions Of Xcode    It&#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/11/10/why-i-still-find-the-minimap-useful/" class="color-inherit dim link">
-            
-            Why I Still Find the Minimap Useful
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in programming, tools, 2 cents | 10 Nov, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          This is an answer, I wrote in response to a recent blog post by Erica Sadun:
-My enemy the Minimap    The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…
-Source: - Erica Sadun   Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      
-      
-      <div class="mb3 w-100">
-        <a href="/2019/11/06/how-i-stay-connected-on-twitter/" class="db">
-          <div 
-            style="
-              background-image: url(https://images.unsplash.com/photo-1543185377-aa2f876d1760?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80);
-              background-size:cover;
-              background-position: center;
-              height: 200px">
-          </div>
-        </a>
-      </div>
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/11/06/how-i-stay-connected-on-twitter/" class="color-inherit dim link">
-            
-            How I Stay Focused on Twitter Despite All the Buzz
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in twitter, tips, productivity | 6 Nov, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
-From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/10/31/iphone-less-memory-android/" class="color-inherit dim link">
-            
-            Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in q&a, apple, iphone, android | 31 Oct, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
-It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      
-      
-      <div class="mb3 w-100">
-        <a href="/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/" class="db">
-          <div 
-            style="
-              background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Ford_Model_T_1924-1925.jpg/1280px-Ford_Model_T_1924-1925.jpg);
-              background-size:cover;
-              background-position: center;
-              height: 200px">
-          </div>
-        </a>
-      </div>
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/" class="color-inherit dim link">
-            
-            Any Code Style You like as Long It&#39;s Black
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in python, tools, best practices | 26 Oct, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
-psf/black    The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/microblog/2019102111035/" class="color-inherit dim link">
-            
-          </a>
-        </h1>
-        
-        <span class="mb3 f3">
-          <a href="/microblog/2019102111035/" class="color-inherit dim link">
-            🗒 21 Oct, 2019</a>
-        </span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          <blockquote>
-<p>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.</p>
-</blockquote>
-
-
-
-
-
-
-
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="http://kyleprifogle.com/dear-startup/">
-      <h1 class="f6 ttu tracked">Dear Startup: You have no idea how much that costs.</h1>
-    </a>
-  </div>
-
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('http://kyleprifogle.com/images/kyle-small.png'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>The problem</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="http://kyleprifogle.com/dear-startup/"
-          >Kyle Prifogle</a
-        ></small
-      >
-    </div>
-  </div>
-</article>
-
-
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/10/18/go-is-good-enough/" class="color-inherit dim link">
-            
-            Go is Good Enough
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in programming, golang, go | 18 Oct, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          Have you heard about the Pareto Principle? Also known as the 80&frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      
-      
-      <div class="mb3 w-100">
-        <a href="/2019/10/12/this-is-how-we-write-history/" class="db">
-          <div 
-            style="
-              background-image: url(https://images.unsplash.com/photo-1502904550040-7534597429ae?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80);
-              background-size:cover;
-              background-position: center;
-              height: 200px">
-          </div>
-        </a>
-      </div>
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/10/12/this-is-how-we-write-history/" class="color-inherit dim link">
-            
-            This Is How We Write History
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in running, record, ultra-humans | 12 Oct, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
-  This is the beginning of a new era of running. I am certain that Kipchoge&rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-    <div class="relative w-100 mb4">
-      
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column">
-      
-      <div
-        class="blah w-100">
-        <h1 class="f2 mt0 mb0 lh-title">
-          <a href="/2019/10/10/what-is-new-in-mixtape/" class="color-inherit dim link">
-            
-            What&#39;s New in Mixtape
-            
-          </a>
-        </h1>
-        
-        <span class="db mb3 mt1 f6">
-          Preslav Rachev in podcast, podcasting, project, elasticsearch | 10 Oct, 2019</span>
-        
-        <div class="lh-copy nested-copy-line-height nested-links">
-          
-          Give me more like these&hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-    </div>
-    
-  </section>
-</div>
-
-
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item disabled">
-    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/page/10/">10</a></li>
-    
-    
-    <li class="page-item">
-    <a href="/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/page/10/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
-
     </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://preslav.me/" >
-    &copy; 2020 Preslav Rachev
-  </a>
-    <div>
 
+            </div>
 
-
-<a href="https://twitter.com/preslavrachev" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
-  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
-
-
-
-
-<a href="https://github.com/preslavrachev" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
-
-
-
-</div>
-  </div>
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://example.com">Preslav Rachev</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="https://example.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
 </footer>
 
-    
+            
+        </div>
 
-  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
-
-
-
-    
-
-
-<script>
-  var clicky_site_ids = clicky_site_ids || [];
-  clicky_site_ids.push("101131786");
-</script>
-<script async src="//static.getclicky.com/js"></script>
+        
 
 
 
 
-<script src="/js/cookieconsent.min.js" type="text/javascript"></script>
-<script>
-  window.cookieconsent.initialise({
-    container: document.getElementById("content"),
-    palette: {
-      popup: { background: "#fff" },
-      button: { background: "#26a8ed", text: "#fff" }
-    },
-    revokable: false,
-    onStatusChange: function(status) {
-      if (this.hasConsented()) {
-        if (mixpanel !== undefined) {
-          mixpanel.track("Accepts cookie consent");
-        }
-      }
-    },
-    law: {
-      regionalLaw: true
-    },
-    location: true,
-    content: {
-      message:
-        "This blog uses cookies and collects limited analytics, to ensure you get the best reading experience."
-    },
-    position: "bottom-right"
-  });
-</script>
+<script type="text/javascript" src="https://example.com/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-131031623-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-<script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
-  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-  mixpanel.init("b62cf4a483dda84f95d937ba95ebc1d3");</script>
-  
-  <script>
-      mixpanel.track(
-        "Open page",
-        {"title": document.title}
-    );
-      
-      (function () {
-          scroll_count = 0;
-          function handler() {
-            if (scroll_count == 100) {
-              document.removeEventListener('scroll', handler);
-              mixpanel.track(
-                "Scrolls through page",
-                { "title": document.title }
-              );
-              document.getElementById("cta").classList.remove("dn")
-            } else {
-              scroll_count += 1;
-            }
-          }
 
-          document.addEventListener('scroll', handler);
 
-    setTimeout(function () {
-      if (document.querySelectorAll(".carbon-text").length > 0 && mixpanel !== undefined) {
-        mixpanel.track(
-          "Ad displayed",
-          { "title": document.querySelectorAll(".carbon-text")[0].text }
-        );
-      }
-    }, 5000);
-        })();
-  </script>
-  
-
-  </body>
+    </body>
 </html>

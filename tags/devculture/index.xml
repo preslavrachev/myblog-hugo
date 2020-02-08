@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devculture on Preslav Rachev</title>
-    <link>https://preslav.me/tags/devculture/</link>
-    <description>Recent content in Devculture on Preslav Rachev</description>
+    <title>Devculture on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/devculture/</link>
+    <description>Recent content in Devculture on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/devculture/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/devculture/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/2019102111035/</link>
+      <link>https://example.com/microblog/2019102111035/</link>
       <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/2019102111035/</guid>
+      <guid>https://example.com/microblog/2019102111035/</guid>
       <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
- Dear Startup: You have no idea how much that costs.    The problem</description>
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
     </item>
     
   </channel>

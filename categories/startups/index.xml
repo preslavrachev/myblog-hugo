@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Startups on Preslav Rachev</title>
-    <link>https://preslav.me/categories/startups/</link>
-    <description>Recent content in Startups on Preslav Rachev</description>
+    <title>Startups on Random Bits of Wisdom</title>
+    <link>https://example.com/categories/startups/</link>
+    <description>Recent content in Startups on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 22 Sep 2019 10:20:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/categories/startups/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/categories/startups/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/220920191020/</link>
+      <link>https://example.com/microblog/220920191020/</link>
       <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/220920191020/</guid>
+      <guid>https://example.com/microblog/220920191020/</guid>
       <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
 Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</description>
     </item>

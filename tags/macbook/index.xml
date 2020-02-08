@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Macbook on Preslav Rachev</title>
-    <link>https://preslav.me/tags/macbook/</link>
-    <description>Recent content in Macbook on Preslav Rachev</description>
+    <title>Macbook on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/macbook/</link>
+    <description>Recent content in Macbook on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Fri, 24 May 2019 04:33:12 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/macbook/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/macbook/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201905240633/</link>
+      <link>https://example.com/microblog/201905240633/</link>
       <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201905240633/</guid>
+      <guid>https://example.com/microblog/201905240633/</guid>
       <description>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&amp;rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&amp;rsquo;s a beast with an incredible performance:
 
 Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max.</description>

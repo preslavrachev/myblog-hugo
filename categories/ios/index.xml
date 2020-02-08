@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ios on Preslav Rachev</title>
-    <link>https://preslav.me/categories/ios/</link>
-    <description>Recent content in Ios on Preslav Rachev</description>
+    <title>Ios on Random Bits of Wisdom</title>
+    <link>https://example.com/categories/ios/</link>
+    <description>Recent content in Ios on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 12 Aug 2018 05:29:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/categories/ios/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/categories/ios/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science on Your iPad</title>
-      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+      <link>https://example.com/2018/08/12/data-science-on-your-ipad/</link>
       <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+      <guid>https://example.com/2018/08/12/data-science-on-your-ipad/</guid>
       <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
     </item>
     

@@ -1,63 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Apple on Preslav Rachev</title>
-    <link>https://preslav.me/tags/apple/</link>
-    <description>Recent content in Apple on Preslav Rachev</description>
+    <title>Apple on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/apple/</link>
+    <description>Recent content in Apple on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 31 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/apple/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
-      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
+      <link>https://example.com/2019/10/31/iphone-less-memory-android/</link>
       <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
+      <guid>https://example.com/2019/10/31/iphone-less-memory-android/</guid>
       <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
 It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
     </item>
     
     <item>
       <title>A Few Broken Windows</title>
-      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+      <link>https://example.com/2019/10/10/a-few-broken-windows-apple-ios13/</link>
       <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+      <guid>https://example.com/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
       <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201907241129/</link>
+      <link>https://example.com/microblog/201907241129/</link>
       <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201907241129/</guid>
+      <guid>https://example.com/microblog/201907241129/</guid>
       <description>Apple is becoming a macOS gatekeeper too.
  For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201906081458/</link>
+      <link>https://example.com/microblog/201906081458/</link>
       <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201906081458/</guid>
+      <guid>https://example.com/microblog/201906081458/</guid>
       <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
-   329: Mac Pro Day — Accidental Tech Podcast — Overcast    Our live show from WWDC 2019!
-Source: - Overcast   </description>
+   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201905240633/</link>
+      <link>https://example.com/microblog/201905240633/</link>
       <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201905240633/</guid>
+      <guid>https://example.com/microblog/201905240633/</guid>
       <description>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&amp;rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&amp;rsquo;s a beast with an incredible performance:
 
 Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max.</description>

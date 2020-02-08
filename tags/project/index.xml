@@ -1,52 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project on Preslav Rachev</title>
-    <link>https://preslav.me/tags/project/</link>
-    <description>Recent content in Project on Preslav Rachev</description>
+    <title>Project on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/project/</link>
+    <description>Recent content in Project on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What&#39;s New in Mixtape</title>
-      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+      <link>https://example.com/2019/10/10/what-is-new-in-mixtape/</link>
       <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+      <guid>https://example.com/2019/10/10/what-is-new-in-mixtape/</guid>
       <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
     </item>
     
     <item>
       <title>What&#39;s in a Mixtape?</title>
-      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
+      <link>https://example.com/2019/09/25/what-is-in-a-mixtape/</link>
       <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
+      <guid>https://example.com/2019/09/25/what-is-in-a-mixtape/</guid>
       <description>Mixtape
  A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
     </item>
     
     <item>
       <title>Mixtape Retrospective: Time to Split the Monolith?</title>
-      <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
+      <link>https://example.com/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
       <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
+      <guid>https://example.com/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
       <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
     </item>
     
     <item>
       <title>Introducing NoEmbed</title>
-      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
+      <link>https://example.com/2019/06/20/introducing-noembed/</link>
       <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-      <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.    NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share
-Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
+      <guid>https://example.com/2019/06/20/introducing-noembed/</guid>
+      <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</description>
     </item>
     
   </channel>

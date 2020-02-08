@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cryptocurrency on Preslav Rachev</title>
-    <link>https://preslav.me/tags/cryptocurrency/</link>
-    <description>Recent content in Cryptocurrency on Preslav Rachev</description>
+    <title>Cryptocurrency on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/cryptocurrency/</link>
+    <description>Recent content in Cryptocurrency on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 09 May 2019 11:49:20 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201905091358/</link>
+      <link>https://example.com/microblog/201905091358/</link>
       <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201905091358/</guid>
+      <guid>https://example.com/microblog/201905091358/</guid>
       <description>Today, I woke up to this!
 As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the sixth largest exchange hack in crypto history. More here:
 Hackers Stole $40 Million From Binance Cryptocurrency Exchange</description>

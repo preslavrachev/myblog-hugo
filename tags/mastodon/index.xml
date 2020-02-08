@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mastodon on Preslav Rachev</title>
-    <link>https://preslav.me/tags/mastodon/</link>
-    <description>Recent content in Mastodon on Preslav Rachev</description>
+    <title>Mastodon on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/mastodon/</link>
+    <description>Recent content in Mastodon on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 19 Aug 2018 17:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I Made a Mastodon Account and so Far I like It</title>
-      <link>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
+      <link>https://example.com/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
       <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
+      <guid>https://example.com/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
       <description>So, you might have heard about Mastodon. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
   Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy&amp;hellip;on paper.</description>
     </item>

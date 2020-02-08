@@ -1,489 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Preslav Rachev</title>
-    <link>https://preslav.me/post/</link>
-    <description>Recent content in Posts on Preslav Rachev</description>
+    <title>Posts on Random Bits of Wisdom</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 14 Dec 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Panic Without Worry</title>
-      <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
+      <link>https://example.com/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
+      <guid>https://example.com/2019/12/14/panic-without-worry/</guid>
       <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
     </item>
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <link>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <guid>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
-Related Resources select - Managing Multiple Versions Of Xcode    It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</description>
+Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
     </item>
     
     <item>
       <title>Why I Still Find the Minimap Useful</title>
-      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+      <link>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</link>
       <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+      <guid>https://example.com/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
-My enemy the Minimap    The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…
-Source: - Erica Sadun   Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line.</description>
+@media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
     </item>
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <link>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</link>
       <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <guid>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>
     
     <item>
       <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
-      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
+      <link>https://example.com/2019/10/31/iphone-less-memory-android/</link>
       <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
+      <guid>https://example.com/2019/10/31/iphone-less-memory-android/</guid>
       <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
 It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
     </item>
     
     <item>
       <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+      <link>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
       <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+      <guid>https://example.com/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
       <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
-psf/black    The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</description>
+@media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
     </item>
     
     <item>
       <title>Go is Good Enough</title>
-      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
+      <link>https://example.com/2019/10/18/go-is-good-enough/</link>
       <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
+      <guid>https://example.com/2019/10/18/go-is-good-enough/</guid>
       <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
     </item>
     
     <item>
       <title>This Is How We Write History</title>
-      <link>https://preslav.me/2019/10/12/this-is-how-we-write-history/</link>
+      <link>https://example.com/2019/10/12/this-is-how-we-write-history/</link>
       <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/12/this-is-how-we-write-history/</guid>
+      <guid>https://example.com/2019/10/12/this-is-how-we-write-history/</guid>
       <description>This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
   This is the beginning of a new era of running. I am certain that Kipchoge&amp;rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.</description>
     </item>
     
     <item>
       <title>What&#39;s New in Mixtape</title>
-      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+      <link>https://example.com/2019/10/10/what-is-new-in-mixtape/</link>
       <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+      <guid>https://example.com/2019/10/10/what-is-new-in-mixtape/</guid>
       <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
     </item>
     
     <item>
       <title>A Few Broken Windows</title>
-      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+      <link>https://example.com/2019/10/10/a-few-broken-windows-apple-ios13/</link>
       <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+      <guid>https://example.com/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
       <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
-    </item>
-    
-    <item>
-      <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
-      <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
-      <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
-l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s in a Mixtape?</title>
-      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
-      <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
-      <description>Mixtape
- A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
-    </item>
-    
-    <item>
-      <title>Good Code is Boring</title>
-      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
-      <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
-      <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
-#golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
-&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
-    </item>
-    
-    <item>
-      <title>Bought a Year-Long License for GoLand</title>
-      <link>https://preslav.me/2019/08/29/goland-license/</link>
-      <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
-      <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
-    </item>
-    
-    <item>
-      <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
-      <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
-      <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
-struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
-struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
-    </item>
-    
-    <item>
-      <title>Mind the Frog</title>
-      <link>https://preslav.me/2019/08/23/mind-the-frog/</link>
-      <pubDate>Fri, 23 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/23/mind-the-frog/</guid>
-      <description>If you put a frog in a frying pan, it will quickly jump out. Yet, if you put the frog in cold water and slowly heat, the frog will enjoy the warmth until it&amp;rsquo;s too late to escape.
- We have all heard that story, but how many of us can admit that we play the frog on a daily basis? Especially at work, people tend to put a lot more focus on what they are working on and rather, avoid having a say on how the rest of the organization moves forward.</description>
-    </item>
-    
-    <item>
-      <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
-      <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
-      <description>If you ever get the following message:
-x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
-On Alpine, this can be done using the default package installer:</description>
-    </item>
-    
-    <item>
-      <title>Mixtape Retrospective: Time to Split the Monolith?</title>
-      <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
-      <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
-      <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
-    </item>
-    
-    <item>
-      <title>Adding Version Information to Go Binaries</title>
-      <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
-      <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
-      <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
-    </item>
-    
-    <item>
-      <title>Implementing a Functional-Style Builder in Go</title>
-      <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
-      <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
-      <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
-In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&amp;rsquo;t claim that mine is certainly the best.</description>
-    </item>
-    
-    <item>
-      <title>Sofia&#39;s Trams</title>
-      <link>https://preslav.me/2019/06/23/sofia-s-trams/</link>
-      <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/23/sofia-s-trams/</guid>
-      <description>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.
-This time was different. My wife and I flew for the wedding of one of our best friends, and since we had a whole day to spare, we decided to take a walk through the centre of the City of Trams.</description>
-    </item>
-    
-    <item>
-      <title>Introducing NoEmbed</title>
-      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
-      <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-      <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.    NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share
-Source: - NoEmbed   A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
-    </item>
-    
-    <item>
-      <title>Busting the Myth Around Multithreading in Python</title>
-      <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
-      <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</guid>
-      <description>One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
-When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause.</description>
-    </item>
-    
-    <item>
-      <title>Sixtus Half-Marathon (Schliersee) 2019</title>
-      <link>https://preslav.me/2019/05/17/sixtus-half-marthon-schliersee-2019/</link>
-      <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/05/17/sixtus-half-marthon-schliersee-2019/</guid>
-      <description>Today, I took part in the Sixtus Half-Marathon near lake Schliersee for the third time in a row. Unlike last year, this time I started with a completely different strategy - keep it cool and let everyone else pass by me during the first third of the race. Seeing everyone else&amp;rsquo;s backs can be demotivating and requires a lot of patience and training.
-   After the first 5-6K, having realized that I was really the last of the HM group, I started slowly picking up the pace.</description>
-    </item>
-    
-    <item>
-      <title>My Reasons to Consider Go Coming from Java</title>
-      <link>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
-      <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
-      <description>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</description>
-    </item>
-    
-    <item>
-      <title>Developer Tool Tip: DevDocs</title>
-      <link>https://preslav.me/2019/05/03/dev-tip-devdocs/</link>
-      <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
-      <description>Here is a handy developer tool tip for today: DevDocs
-As developers, we spend a large portion of our time, searching for the &amp;ldquo;name of the function abc that did thing xyz&amp;rdquo;. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called Dash.</description>
-    </item>
-    
-    <item>
-      <title>Deploying a Native Go Binary on Heroku</title>
-      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
-      <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
-      <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
-    </item>
-    
-    <item>
-      <title>Give Me Back My Monolith</title>
-      <link>https://preslav.me/2019/03/23/give-me-back-my-monolith/</link>
-      <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
-      <description>Give me back my monolith    It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog …
-Source: - http://www.craigkerstiens.com   Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time. It is thus good to see other people standing on the same side of the bridge:</description>
-    </item>
-    
-    <item>
-      <title>Using Ephemeral Docker Containers as CLI Applications</title>
-      <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
-      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
-      <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
-When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.</description>
-    </item>
-    
-    <item>
-      <title>Introducing DevNotes</title>
-      <link>https://preslav.me/2019/03/09/introducing-devnotes/</link>
-      <pubDate>Sat, 09 Mar 2019 23:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/03/09/introducing-devnotes/</guid>
-      <description>With a few short micro-post exceptions, my blog has been relatively quiet over the past month. The reason for this is simple. I have devoted much of my writing resources of the past weeks into a new site. A wiki called DevNotes.
-That is right, I have started a separate writing project, parallel to my blog. Yet, before you start thinking that this is the end of the blog, don&#39;t worry.</description>
-    </item>
-    
-    <item>
-      <title>My Baby Steps with Go</title>
-      <link>https://preslav.me/2019/02/20/my-baby-steps-with-go/</link>
-      <pubDate>Wed, 20 Feb 2019 05:27:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/02/20/my-baby-steps-with-go/</guid>
-      <description>Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin ❤️ Data Science? (Part 1)</title>
-      <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
-      <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
-      <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
-   Mathematical Modeling with Kotlin | Thomas Nield</description>
-    </item>
-    
-    <item>
-      <title>Use Dotenv Files When Developing Your Python Apps</title>
-      <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
-      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
-      <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
-    </item>
-    
-    <item>
-      <title>What I learned in 2018</title>
-      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
-      <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
-      <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
-In 2018, I:
- Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
-    </item>
-    
-    <item>
-      <title>Connecting to a MongoDB Instance Using KMongo</title>
-      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
-      <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
-      <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
-    </item>
-    
-    <item>
-      <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
-      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
-      <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
-      <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
-My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
-    </item>
-    
-    <item>
-      <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
-      <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
-      <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
-      <description>Dependency Injection (DI) in Python? Seriously? 🤔
-At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? Spoiler: I am going to mention Spring only once in this post, I promise.
-NOTE: If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to the example at the end.</description>
-    </item>
-    
-    <item>
-      <title>Designing Well-Structured REST APIs with Flask-RestPlus: Part 1</title>
-      <link>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</link>
-      <pubDate>Sun, 02 Dec 2018 15:46:47 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</guid>
-      <description>This is the first part of a two-part series. In this post, I will introduce Flask-RestPlus and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.
-A seasoned Spring developer, I felt a bit uneasy when designing and future-proofing a Flask-based API for the first time. I have recently started using Python way beyond my original intention to just play with data, and found Flask to be a super-easy micro-service alternative to Spring Boot or Ktor.</description>
-    </item>
-    
-    <item>
-      <title>I Made a Mastodon Account and so Far I like It</title>
-      <link>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
-      <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
-      <description>So, you might have heard about Mastodon. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
-  Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy&amp;hellip;on paper.</description>
-    </item>
-    
-    <item>
-      <title>Data Science on Your iPad</title>
-      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
-      <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
-    </item>
-    
-    <item>
-      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
-      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
-      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
-      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
-With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
-    </item>
-    
-    <item>
-      <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
-      <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
-      <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
-      <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
-    </item>
-    
-    <item>
-      <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
-      <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
-      <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
-      <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&amp;#39;TotalPayBenefits&amp;#39;] == sal[&amp;#39;TotalPayBenefits&amp;#39;].max()][&amp;#39;EmployeeName&amp;#39;] which is absolutely valid, but is it the only option?</description>
-    </item>
-    
-    <item>
-      <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
-      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
-      <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
-XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
-chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
-    </item>
-    
-    <item>
-      <title>Securing your ElasticSearch instances</title>
-      <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
-      <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
-      <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
-Unfortunately, one thing comes for another, and as we have recently seen, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin Basics: apply() and copy()</title>
-      <link>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</link>
-      <pubDate>Sun, 26 Jun 2016 12:56:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</guid>
-      <description>Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
-How many times have you had to do the same thing over and over again:</description>
-    </item>
-    
-    <item>
-      <title>What’s with the 50/72 rule?</title>
-      <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
-      <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
-      <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
-They don&amp;rsquo;t tell much do they?</description>
-    </item>
-    
-    <item>
-      <title>Gulp vs Grunt. Why one? Why the Other?</title>
-      <link>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</link>
-      <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</guid>
-      <description>So you&amp;rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&amp;rsquo;t really hard. I&amp;rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc.</description>
     </item>
     
   </channel>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spring Boot on Preslav Rachev</title>
-    <link>https://preslav.me/tags/spring-boot/</link>
-    <description>Recent content in Spring Boot on Preslav Rachev</description>
+    <title>Spring Boot on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/spring-boot/</link>
+    <description>Recent content in Spring Boot on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 07 May 2019 22:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My Reasons to Consider Go Coming from Java</title>
-      <link>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
+      <link>https://example.com/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
       <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
+      <guid>https://example.com/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
       <description>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</description>
     </item>
     

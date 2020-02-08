@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tips on Preslav Rachev</title>
-    <link>https://preslav.me/tags/tips/</link>
-    <description>Recent content in Tips on Preslav Rachev</description>
+    <title>Tips on Random Bits of Wisdom</title>
+    <link>https://example.com/tags/tips/</link>
+    <description>Recent content in Tips on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+      <link>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
       <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+      <guid>https://example.com/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
-Related Resources select - Managing Multiple Versions Of Xcode    It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</description>
+Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
     </item>
     
     <item>
       <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+      <link>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</link>
       <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+      <guid>https://example.com/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>
     
     <item>
       <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+      <link>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
       <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+      <guid>https://example.com/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
       <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
 l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
     </item>
     
     <item>
       <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+      <link>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
       <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+      <guid>https://example.com/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
       <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
@@ -55,20 +55,20 @@ struct { b int32 c string d string a bool } Why is that? Well, think of memory a
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201908171824/</link>
+      <link>https://example.com/microblog/201908171824/</link>
       <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201908171824/</guid>
+      <guid>https://example.com/microblog/201908171824/</guid>
       <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
 module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
     </item>
     
     <item>
       <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+      <link>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
       <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+      <guid>https://example.com/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
       <description>If you ever get the following message:
 x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
@@ -76,10 +76,10 @@ On Alpine, this can be done using the default package installer:</description>
     
     <item>
       <title></title>
-      <link>https://preslav.me/microblog/201907101824/</link>
+      <link>https://example.com/microblog/201907101824/</link>
       <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
       
-      <guid>https://preslav.me/microblog/201907101824/</guid>
+      <guid>https://example.com/microblog/201907101824/</guid>
       <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
 This is quite neat and might save me one or two print statements 😉
 Thanks to @FlorimondManca for this discovery!</description>
@@ -87,90 +87,30 @@ Thanks to @FlorimondManca for this discovery!</description>
     
     <item>
       <title>Adding Version Information to Go Binaries</title>
-      <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
+      <link>https://example.com/2019/07/09/adding-version-information-to-go-binaries/</link>
       <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
+      <guid>https://example.com/2019/07/09/adding-version-information-to-go-binaries/</guid>
       <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
     </item>
     
     <item>
       <title>Developer Tool Tip: DevDocs</title>
-      <link>https://preslav.me/2019/05/03/dev-tip-devdocs/</link>
+      <link>https://example.com/2019/05/03/dev-tip-devdocs/</link>
       <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
+      <guid>https://example.com/2019/05/03/dev-tip-devdocs/</guid>
       <description>Here is a handy developer tool tip for today: DevDocs
 As developers, we spend a large portion of our time, searching for the &amp;ldquo;name of the function abc that did thing xyz&amp;rdquo;. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called Dash.</description>
     </item>
     
     <item>
       <title>Deploying a Native Go Binary on Heroku</title>
-      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
+      <link>https://example.com/2019/04/20/deploying-native-go-binary-on-heroku/</link>
       <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
       
-      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
+      <guid>https://example.com/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
       <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
-    </item>
-    
-    <item>
-      <title>Use Dotenv Files When Developing Your Python Apps</title>
-      <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
-      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
-      <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
-    </item>
-    
-    <item>
-      <title>Connecting to a MongoDB Instance Using KMongo</title>
-      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
-      <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
-      <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
-Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
-    </item>
-    
-    <item>
-      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
-      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
-      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
-      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
-With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
-    </item>
-    
-    <item>
-      <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
-      <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
-      <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
-      <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
-    </item>
-    
-    <item>
-      <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
-      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
-      <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
-XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
-chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
-    </item>
-    
-    <item>
-      <title>What’s with the 50/72 rule?</title>
-      <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
-      <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
-      <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
-They don&amp;rsquo;t tell much do they?</description>
     </item>
     
   </channel>
