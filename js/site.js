@@ -7,9 +7,7 @@ window.cookieconsent.initialise({
   revokable: false,
   onStatusChange: function(status) {
     if (this.hasConsented()) {
-      if (mixpanel !== undefined) {
-        mixpanel.track("Accepts cookie consent");
-      }
+      // consented;
     }
   },
   law: {
