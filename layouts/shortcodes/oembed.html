@@ -2,34 +2,42 @@
 {{ $dataJ := printf "https://noembed.preslav.me/embed?url=%s" $url | getJSON }}
 {{ $defaultThumb := "https://source.unsplash.com/200x200/?nature,water" }}
 
-{{ if $dataJ.html }}
-<article class="center mw6">
-  {{ $dataJ.html | safeHTML }}
-</article>
-{{ else }}
 
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="{{ $url }}">
-      <h1 class="f6 ttu tracked">{{ $dataJ.title }}</h1>
-    </a>
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+
+  {{ if $dataJ.thumbnail_url}}
+  <div class="embed-image"
+    style="flex:1; background: url({{ $dataJ.thumbnail_url }}); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  {{ else }}
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
   </div>
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('{{ $dataJ.thumbnail_url | default $defaultThumb }}'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>{{ $dataJ.description }}</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="{{ $url }}"
-          >{{ $dataJ.provider_name | default $dataJ.provider_url }}</a
-        ></small
-      >
+  {{end}}
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://gohugo.io/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        {{ $dataJ.title }}</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      {{ $dataJ.description }}</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="{{ $url }}">{{ $dataJ.provider_url }} | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
-{{ end }}
+</div>
