@@ -8,17 +8,16 @@ slug = ""
 tags = ["Optimization", "Tips", "Struct", "Golang"]
 title = "Reduce Struct Size by Laying out Attributes Accordingly"
 
-+++
-##### Many thanks to [@themaour](https://twitter.com/themaour/status/1165555578019692544) for sharing this tip on Twitter
++++##### Many thanks to [@themaour](https://twitter.com/themaour/status/1165555578019692544) for sharing this tip on Twitter
 
 TIL that in Go, struct size depends on how underlying types were defined.
 
 ```go
-struct { 
-	a bool 
-    b int32 
-    c string 
-    d string 
+struct {
+	a bool
+    b int32
+    c string
+    d string
 }
 ```
 
@@ -29,7 +28,7 @@ struct {
 	b int32
     c string
     d string
-    a bool 
+    a bool
 }
 ```
 
@@ -47,5 +46,4 @@ Think of this the next time you get to process a slice of 1 mln instances of a g
 
 # Resources
 
-{{<oembed "http://golang-sizeof.tips">}}
 {{<oembed "http://www.catb.org/esr/structure-packing/">}}
