@@ -1,0 +1,43 @@
+{{ $.Scratch.Add "labelClasses" "f6 b db mb1 mt3 sans-serif mid-gray" }}
+{{ $.Scratch.Add "inputClasses" "w-100 f5 pv3 ph3 bg-light-gray bn" }}
+
+<style scoped>
+  :root {
+    --spacing-none: 0;
+    --spacing-extra-small: .25rem;
+    --spacing-small: .5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --spacing-extra-large: 4rem;
+    --spacing-extra-extra-large: 8rem;
+    --spacing-extra-extra-extra-large: 16rem;
+  }
+
+  .input-field {
+    width: 100%;
+    padding-left:var(--spacing-medium);
+    padding-right:var(--spacing-medium);
+    padding-top:var(--spacing-medium);
+    padding-bottom:var(--spacing-medium);
+    border-style:none;
+    border-width:0;
+  }
+</style>
+
+<form class="black-80 sans-serif" accept-charset="UTF-8" action="{{ .Get "action" }}" method="POST" role="form">
+
+    <label class="{{ $.Scratch.Get "labelClasses" }}"  for="name">Your Name</label>
+    <input type="text" id="name" name="name" class="input-field"  required placeholder=" "  aria-labelledby="name"/>
+
+    <label class="{{ $.Scratch.Get "labelClasses" }}" for="email">Email Address</label>
+    <input type="email" id="email" name="email" class="input-field"  required placeholder=" "  aria-labelledby="email"/>
+    <div class="requirements f6 gray glow i ph3 overflow-hidden">
+      An email address is required.
+    </div>
+
+    <label class="{{ $.Scratch.Get "labelClasses" }}" for="message">Message</label>
+    <textarea id="message" name="message" class="input-field" style="min-height: 8rem;" aria-labelledby="message"></textarea>
+
+    <input class="db w-100 mv2 white pa3 bn hover-shadow hover-bg-blck bg-animate bg-black" type="submit" value="Send" />
+
+</form>
