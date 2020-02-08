@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on Random Bits of Wisdom</title>
+    <link>https://preslav.me/tags/ruby/</link>
+    <description>Recent content in Ruby on Random Bits of Wisdom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Crystal in Go’s World</title>
+      <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
+      <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
+      <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
+    </item>
+    
+  </channel>
+</rss>

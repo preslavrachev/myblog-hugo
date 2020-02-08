@@ -6,10 +6,21 @@
     <description>Recent content in Golang on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 14 Dec 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Crystal in Go’s World</title>
+      <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
+      <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
+      <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
+    </item>
     
     <item>
       <title>Panic Without Worry</title>
@@ -97,16 +108,6 @@ On Alpine, this can be done using the default package installer:</description>
       
       <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
       <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
-    </item>
-    
-    <item>
-      <title>Implementing a Functional-Style Builder in Go</title>
-      <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
-      <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
-      <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
-In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&amp;rsquo;t claim that mine is certainly the best.</description>
     </item>
     
   </channel>

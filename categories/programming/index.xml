@@ -6,10 +6,21 @@
     <description>Recent content in Programming on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 14 Dec 2019 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Crystal in Go’s World</title>
+      <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
+      <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
+      <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
+    </item>
     
     <item>
       <title>Panic Without Worry</title>
@@ -99,17 +110,6 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
       
       <guid>https://preslav.me/2019/08/29/goland-license/</guid>
       <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
-    </item>
-    
-    <item>
-      <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
-      <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
-      <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
-struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
-struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
     </item>
     
   </channel>

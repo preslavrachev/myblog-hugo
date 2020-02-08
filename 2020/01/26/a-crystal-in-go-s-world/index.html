@@ -4,17 +4,19 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev">
-<meta name="description" content="In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds." />
-<meta name="keywords" content="programming, golang, python, Programming, Golang, Go" />
+<meta name="author" content="Preslav Rachev ">
+<meta name="description" content="Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a." />
+<meta name="keywords" content="programming, golang, python, Programming, Crystal, Ruby, Golang, Go" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2019/12/14/panic-without-worry/" />
+<link rel="canonical" href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/" />
 
 
     <title>
         
-            Panic Without Worry :: Random Bits of Wisdom 
+            A Crystal in Go’s World :: Random Bits of Wisdom 
         
     </title>
 
@@ -44,22 +46,26 @@
     <meta name="theme-color" content="#252627">
 
 
-<meta itemprop="name" content="Panic Without Worry">
-<meta itemprop="description" content="In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.">
+<meta itemprop="name" content="A Crystal in Go’s World">
+<meta itemprop="description" content="Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.">
 
 
-<meta itemprop="datePublished" content="2019-12-14T22:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-12-14T22:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="81">
+<meta itemprop="datePublished" content="2020-01-26T08:35:04&#43;00:00" />
+<meta itemprop="dateModified" content="2020-01-26T08:35:04&#43;00:00" />
+<meta itemprop="wordCount" content="754">
 
 
 
-<meta itemprop="keywords" content="Programming,Golang,Go," />
+<meta itemprop="keywords" content="Programming,Crystal,Ruby,Golang,Go," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://preslav.me"/>
 
-<meta name="twitter:title" content="Panic Without Worry"/>
-<meta name="twitter:description" content="In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds."/>
+<meta name="twitter:title" content="A Crystal in Go’s World"/>
+<meta name="twitter:description" content="Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a."/>
 
 
 
@@ -67,7 +73,7 @@
 
 
 
-    <meta property="article:published_time" content="2019-12-14 22:00:00 &#43;0000 UTC" />
+    <meta property="article:published_time" content="2020-01-26 08:35:04 &#43;0000 UTC" />
 
 
 
@@ -130,7 +136,7 @@
                 class="feather feather-clock">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>One minute
+            </svg>4 minutes
 
             
 
@@ -139,15 +145,61 @@
 
     <article>
         <h1 class="post-title">
-            <a href="https://preslav.me/2019/12/14/panic-without-worry/">Panic Without Worry</a>
+            <a href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/">A Crystal in Go’s World</a>
         </h1>
 
         
 
         <div class="post-content">
-            <p>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</p>
+            
 
-<p>When necessary, panic without worry.</p>
+<p>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.</p>
+
+<p>Meet <a href="https://crystal-lang.org/" target="_blank">Crystal</a>!</p>
+
+
+    <img src="https://preslav.me/images/2020/image-crystal.png"  alt="Crystal home page"  class="center"  style="border-radius: 8px;"  />
+
+
+
+<p>Crystal is all of the above, plus it has types, <a href="https://crystal-lang.org/reference/overview/" target="_blank">outstanding documentation</a>, and a strong community, delivering a steady stream of new libraries (a.k.a “shards”). Don’t get fooled by the current version number (0.32.1). Crystal has been around for quite a few years (since 2012) and has a mature set of language features and an ecosystem of good libraries.</p>
+
+<h2 id="where-does-the-speed-come-from">Where does the speed come from?</h2>
+
+<p>Crystal produces fast and lightweight native applications using the LLVM infrastructure. When I say fast, I mean, <a href="https://github.com/kostya/benchmarks" target="_blank">really fast</a>. Take the fastest Go code you can find and chances are, the same code in Crystal will perform at least on par with it, and often quite a bit faster. Measuring Crystal’s performance against that of Ruby makes no sense.</p>
+
+<p>There are no runtime frameworks or virtual machines necessary. One can just grab the compiled binary and deploy it. When compared with deploying and running a Ruby application, this feels like a whole different league.</p>
+
+<p>Note that there are some caveats, which I am going to discuss in a future blog post. For now, let’s just say that building and distribution are equally as easy, as those in Rust. As of yet, nothing can beat the Go compiler speed-wise, but my experience with the Crystal tooling has been more than pleasant so far.</p>
+
+<h2 id="csp-style-concurrency">CSP-style concurrency</h2>
+
+<p>One of the things that make Go so interesting is its concurrency model. The idea about goroutines that communicate via channels is based on an approach dating back to the late 1970s, called <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes" target="_blank">Communicating Sequential Processes (CSP)</a>. Crystal uses an analogous approach. Programs run in what is known as <a href="https://crystal-lang.org/reference/guides/concurrency.html" target="_blank">“fibers”</a>. The main fiber can spawn any number of concurrent fibers that send and receive data via blocking channels.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-crystal" data-lang="crystal">channel <span style="color:#f92672">=</span> Channel(Nil)<span style="color:#f92672">.</span>new 
+spawn <span style="color:#66d9ef">do</span>    
+	puts <span style="color:#e6db74">&#34;Before send&#34;</span>    
+	channel<span style="color:#f92672">.</span>send(<span style="color:#66d9ef">nil</span>)    
+	puts <span style="color:#e6db74">&#34;After send&#34;</span> 
+<span style="color:#66d9ef">end</span>  
+
+puts <span style="color:#e6db74">&#34;Before receive&#34;</span> 
+channel<span style="color:#f92672">.</span>receive 
+puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></div>
+<h2 id="why-re-invent-ruby-in-2020">Why re-invent Ruby in 2020?</h2>
+
+<p>The creators of Crystal obviously didn’t intend on changing the world of programming by creating a new language. They just <a href="https://web.archive.org/web/20181126095302/https://manas.tech/blog/2016/04/01/the-story-behind-crystal.html" target="_blank">loved Ruby</a> and felt it sad to leave it for a more performant and type-safe alternative. Due to a series of trade-offs at the implementation level, Ruby is still slower and more memory-hungry than its competitors. Despite perfectly serving the needs of a large segment of Web users through Rails, its performance puts it at the back of the pack, when it comes to other use cases.</p>
+
+<p>The point is fair and valid. As a language, Ruby has a concise and elegant syntax for writing. Once beyond the basic idioms, writing Ruby evokes pure joy. Crystal brings that joy to an even higher level through type-safety, native speed, and extremely simple concurrency model.</p>
+
+<p>Don’t get me wrong, I like Go too, precisely because of its verbosity and lack of idioms. When working with others on a big project, I’d prefer more ceremony and hoops, in the name of transparency and equal code comprehension. Different languages exist to serve different purposes and be used by different groups of people. The trick is knowing when to use and when the other.</p>
+
+<h2 id="so-is-crystal-worth-having-a-look">So, is Crystal worth having a look?</h2>
+
+<p>Absolutely! If only to know that it exists and keep an eye on it, I’d go check it out and write a few applications with it. Whether Crystal will take off in the future is a bit more difficult to say, however. As mentioned, the 99% resemblance to Ruby is nice, and so is the blazing-fast performance. Yet, I am missing the Crystal community’s drive towards more prominence. There has been a long-awaited move towards a 1.0 release, which is a crucial milestone and would surely bring in many newcomers. To my understanding, the language and its tooling are stable enough for a 1.0 release.</p>
+
+<p>I understand that Crystal does not have the backing of either Google or Mozilla. Neither does it have multi-billion-dollar use-cases to put on its home page. I understand that fighting for the same space with Go, C/C++, and Rust is an unfair battle. Yet, I also believe that we’re long past the days when choosing one technology over another was a zero-sum game. All it needs is a little push.</p>
+
+<p>I am hoping for the best!</p>
 
         </div>
     </article>
@@ -166,6 +218,8 @@
                 <line x1="7" y1="7" x2="7" y2="7"></line>
             </svg><span class="tag"><a
                     href="https://preslav.me/tags/programming">Programming</a></span><span class="tag"><a
+                    href="https://preslav.me/tags/crystal">Crystal</a></span><span class="tag"><a
+                    href="https://preslav.me/tags/ruby">Ruby</a></span><span class="tag"><a
                     href="https://preslav.me/tags/golang">Golang</a></span><span class="tag"><a
                     href="https://preslav.me/tags/go">Go</a></span>
         </p>
@@ -181,7 +235,7 @@
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
                 <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>81 Words</p>
+            </svg>754 Words</p>
 
         <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -191,7 +245,7 @@
                 <line x1="16" y1="2" x2="16" y2="6"></line>
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2019-12-14 22:00 &#43;0000
+            </svg>2020-01-26 08:35 &#43;0000
         </p>
     </div>
 
@@ -205,18 +259,11 @@
 
         <div class="pagination__buttons">
             
-            <span class="button previous">
-                <a href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">A Crystal in Go’s World</span>
-                </a>
-            </span>
-            
 
             
             <span class="button next">
-                <a href="https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/">
-                    <span class="button__text">If You Can’t Get Flutter to Work with Your Beta Version of Xcode</span>
+                <a href="https://preslav.me/2019/12/14/panic-without-worry/">
+                    <span class="button__text">Panic Without Worry</span>
                     <span class="button__icon">→</span>
                 </a>
             </span>
