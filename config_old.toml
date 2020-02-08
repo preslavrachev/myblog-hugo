@@ -1,0 +1,69 @@
+baseURL = "https://preslav.me/"
+languageCode = "en-us"
+title = "Preslav Rachev"
+theme = "my-ananke"
+pygmentsCodeFences=true
+disqusShortname = "preslav"
+googleAnalytics = "UA-131031623-1"
+enableRobotsTXT = true
+
+[Author]
+  name = "Preslav Rachev"
+  description = "I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
+
+[outputs]
+  page = ["HTML", "AMP"]
+
+[outputFormats]
+ [outputFormats.AMP]
+    permalinkable = false
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About Me"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "My Projects"
+    url = "/projects/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 30
+
+[params]
+    description = "I am a software engineer building his own stuff. This is my home on the Internet. Enjoy your stay, and come say \"Hi\" 👋🏼"
+    featured_image = "/images/header-august-2019.jpg"
+    recent_posts_number = 10
+    custom_css = ["css/styles.css", "css/cookieconsent.min.css"]
+    mainSections = ["post", "microblog"]
+    show_reading_time = true
+    show_related = true
+    twitter = "https://twitter.com/preslavrachev"
+    github = "https://github.com/preslavrachev"
+    clicky_analytics = "101131786"
+
+[caches]
+  [caches.getjson]
+  dir = ":resourceDir/_gen"
+  maxAge = -1
+
+[related]
+threshold = 80
+includeNewer = true
+toLower = true
+[[related.indices]]
+    name = "tags"
+    weight = 100
+[[related.indices]]
+    name = "categories"
+    weight = 10

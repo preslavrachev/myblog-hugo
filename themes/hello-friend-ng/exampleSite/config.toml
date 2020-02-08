@@ -1,5 +1,5 @@
 baseURL = "https://example.com"
-title   = "Random Bits of Wisdom"
+title   = "Hello Friend NG"
 
 DefaultContentLanguage = "en"
 
@@ -11,8 +11,8 @@ PygmentsStyle = "monokai"
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-googleAnalytics = "UA-131031623-1"
-disqusShortname = "preslav"
+# googleAnalytics = ""
+# disqusShortname = ""
 
 archetypeDir = "archetypes"
 contentDir   = "content"
@@ -35,10 +35,10 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-  post = "/:year/:month/:day/:filename/"
+  posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Preslav Rachev"
+  name = "Jane Doe"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -54,11 +54,11 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."
-  keywords = "programming, golang, python"
+  description = "Nice theme for homepages and blogs"
+  keywords = ""
   images = [""]
 
-  homeSubtitle = "I am a software engineer building his own stuff. This is my home on the Internet."
+  homeSubtitle = "Hello Friend NG"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = ""
@@ -75,7 +75,7 @@ disableHugoGeneratorInject = false
   justifyContent = false  # Set "text-align: justify" to .content.
 
   # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
+  contentTypeName = "posts"
 
   # Default theme "light" or "dark"
   defaultTheme = "dark"
@@ -88,7 +88,7 @@ disableHugoGeneratorInject = false
     theme = "#252627"
 
   [params.logo]
-    logoText     = "$ cd /home/preslav.me"
+    logoText     = "$ cd /home/"
     logoHomeLink = "/"
     # Set to a valid CSS color to change the cursor in the logo.
     # logoColor    = "#67a2c9"
@@ -96,7 +96,7 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/preslavrachev"
+    url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
@@ -131,11 +131,6 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "post/"
-
-[caches]
-  [caches.getjson]
-  dir = ":resourceDir/_gen"
-  maxAge = -1
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
