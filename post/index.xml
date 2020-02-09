@@ -71,6 +71,74 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
         </item>
         
         <item>
+            <title>Reflecting on My Experience With Go, One Year After</title>
+            <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+            <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
+            <content type="html"><![CDATA[
+
+<p>In my little more than a year day-to-day developer experience with Go, I have so far <strong>learned three things</strong>:</p>
+
+<ol>
+<li>I can change my entire view of how programming works, even after 12+ years of doing it in one form or another.</li>
+<li>People are blaming Java for all the wrong reasons</li>
+<li>People are praising Go for all the wrong reasons</li>
+</ol>
+
+<p>Let me explain. This post is not about saying that “language A is better than language B”, or vice versa. It is about asking ourselves the question why things work the way they do, and whether doing them differently is a bad, or potentially, good thing.</p>
+
+<p>Before joining the Go camp, I had worked quite a few years as a Java developer, with all the stereotypes that this role could evoke in one’s head. I co-developed data-processing systems for various industries. Yet, much of the code I wrote was just boilerplate: passing data from one format to the other, or devising complex abstractions behind what should have really just been calling a function and obtaining its result. Yes, the code was difficult to comprehend, but I was proud of it for this exact reason. The more hoops I created, the more secure I felt that:</p>
+
+<ol>
+<li>I was doing what I thought was right</li>
+<li>If people didn’t understand the code, they’d have to come to me for an advice, further boosting my ego.</li>
+</ol>
+
+<h2 id="the-language-is-not-to-blame-for-this">The language is not to blame for this</h2>
+
+<p>The fact that much of the existing Java code is full of bureaucracy has nothing to do with the language itself, or with its platform. Our developer community should bear the sole responsibility. I can assure anyone that perfectly functioning Java applications can be written without 90% of the ceremony. They will be smaller and run faster. Most probably, easier to comprehend, too. And yet, they won’t get you hired in any well-respected company. They just won’t pass the <em>developer prejudice</em> test. I know. I’ve seen many elegant solutions and rejected them for not being /idiomatic/ enough.</p>
+
+<h2 id="go-isn-t-a-silver-bullet-either">Go isn’t a silver bullet either</h2>
+
+<p>For much of the same reasoning, jumping ship towards Go, just because “it is not Java”, won’t bring anyone far. Even before I started writing Go, I had heard and read many stories, about how simple and fast it made everything, how little ceremony it had, compared to Java, how it would eventually kill all other languages, etc. All blah, blah. Despite all of the above being true, you have to discover the truth in each for yourselves. If you approach the language out of desperation with your current way of working, you’re going to be set for a rough path.</p>
+
+<p>See, if you all you wanted was to get a faster running (name language of choice), you could certainly do it. Yet, holding on to the mental baggage of your previous experience will be hard and messy. My first Go project started out as a rewrite of a Spring Boot app I’d started earlier, so I thought I’d just organize it the same way. To keep the story short, let’s just say it was a spectacular disaster. Only after I started from scratch, did it really start taking off.</p>
+
+<h2 id="go-is-a-language-without-with-less-idioms">Go is a language without (with less) idioms</h2>
+
+<p>Let’s do a naive math experiment. Imagine that you could create valid programming expressions combining any 3 keywords, from a programming language’s vocabulary. Thus, if a language only has 10 keywords, the maximum number of possible expressions is 10 * 9 * 8 = 720. In contrast, a language, with, say, 20 keywords would end up having 20 * 19 * 18 = 6840 expressions. Twice as many keywords would result in almost 10 times as many expressions!</p>
+
+<p>Languages tend to encourage the creation and use of idioms. With that many possible expressions, it’s a normal behaviour for an individual, or a group of people to start associating and using expressions for certain things. The problems usually occur when another group comes with its own way of expressing the same thing. Both are perfectly valid, but each group would have issues understanding the other.</p>
+
+<p>This is not to say that Go having a very strict and concise nature, is totally devoid of idioms. That would be impossible. It is in our nature to try to associate and abstract certain concepts. Yet, when a language has a deliberately smaller vocabulary, the chances for different groups accidentally finding multiple ways of doing the same thing are smaller. This helps the communication between people a great deal, but comes with a very obvious downside. Code (or any written expression, for that matter) without idioms is very, very verbose.</p>
+
+<p>So, whoever told you that Go is not a verbose language, probably either lied to you on purpose, or had’n really seen any other programming languages up until that point. But hey, we agreed that verbosity in the name of communication and common understanding is a actually a good thing, right?s</p>
+
+<h2 id="go-is-a-test-for-senior-engineers">Go is a test for senior engineers</h2>
+
+<p>A lot has been said about the initial concept about Go, and how the idea was to design a language for juniors fresh out of college, and with little programming experience. I think that understanding the beauty of going back to the roots of programming, can be a cathartic experience for many seasoned programmers.</p>
+
+<p>See, junior programmers start with little baggage and preconceptions, so in their view, anything that can be done with code is fair and justified. Including, burning a CPU, or erasing a disk due to an arithmetic error.</p>
+
+<p>Somewhere along the middle of the career path, a bunch of principles start to pile up. All of them out of the desire to step on what’s already been learned, and to make sure that things are smoothly and safely without immediate supervision. Learning and applying the principles is great, because it ensures a gradual path forward. But for many, it becomes a dogma which they blindly stick to, without asking whether a simpler alternative could be better.</p>
+
+<p>The problem with principles is that they only work well around 80% of the time. It is the remaining 20% that can be disastrous for a project, or for one’s career. It is the understanding where to apply a principle, and where to deliberately throw it away in the name of pragmatism, which turns a software engineer into a senior software engineer.</p>
+
+<p>To really appreciate Go, one needs to learn how to discern what makes it and its community stand out from the rest. One needs to go through a phase of utter disgust with the language, for it “lacking” certain feature. Moving on despite the urge to go back to a familiar ground, would result in one of two things:</p>
+
+<ol>
+<li>Make one realise that indeed, the Go language is not what they need or want</li>
+<li>Learn to appreciate going back to the roots, as well as when to favour pragmatism over principles</li>
+</ol>
+
+<p>In any case, it would be an interesting experience.</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Panic Without Worry</title>
             <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
             <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -735,71 +803,6 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
     </div>
   </div>
 </div>
-]]></content>
-        </item>
-        
-        <item>
-            <title>What&#39;s New in Mixtape</title>
-            <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
-            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
-            <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
-            <content type="html"><![CDATA[
-
-<h2 id="give-me-more-like-these">Give me more like these&hellip;</h2>
-
-<p>Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</p>
-
-<p>With the most recent update on <a href="https://mixtape.preslav.me/" target="_blank">Mixtape</a>, I have added the ability to use Mixtape as a way to discover new podcast episodes, by simply providing the IDs of ones that might be of interest to you. Those who have worked with search engines before, probably know that this is something that this type of applications are fairly well-suited, but not often used for. In particular, ElasticSearch (the brain behind the whole search operation) has a particular type of search query, which allows for just that.</p>
-
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://www.elastic.co/static/images/elastic-logo-200.png); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        More like this query | Elasticsearch Reference [7.4]</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      The More Like This Query finds documents that are &#34;like&#34; a given
-set of documents. In order to do so, MLT selects a set of representative terms
-of these input documents, forms a query using these terms, executes the query
-and returns the results. The user controls the input documents, how the terms
-should be selected and how the query is formed.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">https://www.elastic.co | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-
-<h2 id="next-steps">Next steps</h2>
-
-<p>Currently, this is still an API-only feature, but it will open up the door for applications of various sorts. One particular thing I am working on, is in the form of a chat bot application, which one will be able to send podcast episode links to (e.g. from <a href="https://overcast.fm/" target="_blank">Overcast</a>, <a href="https://www.pocketcasts.com/" target="_blank">Pocket Casts</a>, <a href="https://www.apple.com/itunes/" target="_blank">Apple Podcasts</a>, etc) and get related podcast episodes to keep listening to.</p>
-
-<p>Stay tuned!</p>
 ]]></content>
         </item>
         

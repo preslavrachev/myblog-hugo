@@ -23,6 +23,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>Reflecting on My Experience With Go, One Year After</title>
+      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
+    </item>
+    
+    <item>
       <title>Panic Without Worry</title>
       <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -101,15 +111,6 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
 &amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
-    </item>
-    
-    <item>
-      <title>Bought a Year-Long License for GoLand</title>
-      <link>https://preslav.me/2019/08/29/goland-license/</link>
-      <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
-      <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
     </item>
     
   </channel>

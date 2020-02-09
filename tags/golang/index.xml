@@ -23,6 +23,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>Reflecting on My Experience With Go, One Year After</title>
+      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
+    </item>
+    
+    <item>
       <title>Panic Without Worry</title>
       <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -99,15 +109,6 @@ On Alpine, this can be done using the default package installer:</description>
       
       <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
       <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
-    </item>
-    
-    <item>
-      <title>Adding Version Information to Go Binaries</title>
-      <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
-      <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
-      <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
     </item>
     
   </channel>

@@ -23,6 +23,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>Reflecting on My Experience With Go, One Year After</title>
+      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
+    </item>
+    
+    <item>
       <title>Panic Without Worry</title>
       <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>

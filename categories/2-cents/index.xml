@@ -6,10 +6,20 @@
     <description>Recent content in 2 Cents on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/categories/2-cents/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reflecting on My Experience With Go, One Year After</title>
+      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
+    </item>
     
     <item>
       <title>A Few Broken Windows</title>

@@ -23,6 +23,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>Reflecting on My Experience With Go, One Year After</title>
+      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
+    </item>
+    
+    <item>
       <title>Panic Without Worry</title>
       <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -99,16 +109,6 @@ It mainly boils down to how memory garbage gets collected on each platform. iOS 
       
       <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
       <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
-    </item>
-    
-    <item>
-      <title>This Is How We Write History</title>
-      <link>https://preslav.me/2019/10/12/this-is-how-we-write-history/</link>
-      <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/12/this-is-how-we-write-history/</guid>
-      <description>This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
-  This is the beginning of a new era of running. I am certain that Kipchoge&amp;rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.</description>
     </item>
     
   </channel>
