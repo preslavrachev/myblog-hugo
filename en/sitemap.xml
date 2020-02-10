@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</loc>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</loc>
     <lastmod>2020-01-26T08:35:04+00:00</lastmod>
   </url>
@@ -581,7 +586,7 @@
   
   <url>
     <loc>https://preslav.me/tags/book/</loc>
-    <lastmod>2019-09-02T16:24:45+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -698,6 +703,12 @@
   <url>
     <loc>https://preslav.me/tags/elasticsearch/</loc>
     <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/elixir/</loc>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -990,6 +1001,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/phoenix/</loc>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/photo-stories/</loc>
     <lastmod>2019-07-13T16:24:31+00:00</lastmod>
     <priority>0</priority>
@@ -1033,7 +1050,7 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-01-26T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1051,13 +1068,13 @@
   
   <url>
     <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2020-01-26T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/programming/</loc>
-    <lastmod>2020-01-26T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1105,13 +1122,13 @@
   
   <url>
     <loc>https://preslav.me/tags/quote/</loc>
-    <lastmod>2020-01-18T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/quote/</loc>
-    <lastmod>2020-01-18T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1123,7 +1140,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-01-26T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

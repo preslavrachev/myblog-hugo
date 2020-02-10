@@ -6,10 +6,22 @@
     <description>Recent content in Book on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Sep 2019 16:24:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 19:07:54 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Quote] You Can Think of Any Web Server as a Function</title>
+      <link>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</link>
+      <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</guid>
+      <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
+ Excerpt From Programming Phoenix by Chris McCord
+Buy on Amazon
+@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
+    </item>
     
     <item>
       <title></title>
