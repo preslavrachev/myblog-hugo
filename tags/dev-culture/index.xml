@@ -6,10 +6,20 @@
     <description>Recent content in Dev Culture on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 17 Jan 2020 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2020 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/dev-culture/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Quote] Manual Work is a Bug</title>
+      <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
+      <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
+      <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
+ The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start.</description>
+    </item>
     
     <item>
       <title>Reflecting on My Experience With Go, One Year After</title>

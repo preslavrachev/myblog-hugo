@@ -71,6 +71,72 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
         </item>
         
         <item>
+            <title>[Quote] Manual Work is a Bug</title>
+            <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
+            <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
+            <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
+ The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start.</description>
+            <content type="html"><![CDATA[<p>Here are a few lines from <em><a href="https://queue.acm.org/detail.cfm?id=3197520" target="_blank">Manual Work is a Bug</a></em> that I firmly stand by:</p>
+
+<blockquote>
+<p>The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start. Heck, they have a dedicated second monitor just for their editing app!</p>
+
+<p>[…]</p>
+
+<p>The successful engineer realizes that the earlier he starts collaborating, the sooner others can contribute. Together they can create a culture of documentation that spreads throughout the team. Thus, every project is collaborative and has a “stone soup” feeling, as all are invited to bring their skills and insights. The more people who embody this culture, the more success it has.</p>
+
+<p>[…]</p>
+
+<p>By creating a culture of continuous improvement, constantly taking baby steps along the four phases, the work becomes less stressful and easier to manage. While the other reasons listed here are quite logical, what motivates me to maintain this discipline is more emotional: I want to reduce stress and have more time for creativity and joy.</p>
+</blockquote>
+
+<p>/Thomas A. Limoncelli/</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://gohugo.io/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Manual Work is a Bug</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      </div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://queue.acm.org/detail.cfm?id=3197520">https://queue.acm.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
             <title>Reflecting on My Experience With Go, One Year After</title>
             <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
             <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
@@ -726,78 +792,6 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
     <div class="embed-meta" style="font-size:60%">
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-]]></content>
-        </item>
-        
-        <item>
-            <title>This Is How We Write History</title>
-            <link>https://preslav.me/2019/10/12/this-is-how-we-write-history/</link>
-            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/2019/10/12/this-is-how-we-write-history/</guid>
-            <description>This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:
-  This is the beginning of a new era of running. I am certain that Kipchoge&amp;rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.</description>
-            <content type="html"><![CDATA[<p>This morning, a humble distance runner from Kenya once again proved that the impossible is only a state of mind. A performance, more resembling a concert symphony than an endurance race. Eliud Kipchoge broke the 2-hour marathon barrier today - something that for years was deemed unthinkable for any human being:</p>
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/km3NxpOq3NU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<p>This is the beginning of a new era of running. I am certain that Kipchoge&rsquo;s achievement will inspire others, if not to try a and beat it, to at least get out and be active.</p>
-
-<p>No human is limited!</p>
-
-<p>To the critics: Yes, it was not an official race, yes, Kipchoge did wear special cushioned shoes, and drank electrolyte gels. Yes, it was an incredibly well engineering feat. One, where everyone, from the shoe designer and the single factory worker, through the pacers, crewmen, and spectators, to Kipchoge himself, played an equally important part.</p>
-
-<p>And so it should be. As a species, we have been destined to move forward and achieve great things only when doing things together. There is nothing wrong with that. In fact, this victory comes right time, when we badly need the good example of a group of individuals achieving the impossible by going beyond the limitations of body, mind, and spirit.</p>
-
-<blockquote>
-<p>&ldquo;We have made history together, and together we can make this world a beautiful world.&rdquo; -</p>
-
-<p>Eliud Kipchoge</p>
-</blockquote>
-
-<p>Cheers!</p>
-
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://img.olympicchannel.com/images/image/private/t_social_share_thumb/primary/hddlcbqmdekn5lbrkin5); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Eliud Kipchoge runs first ever sub-two hour marathon</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      Kenya&#39;s marathon Olympic champion and world record holder Kipchoge clocked 1:59:40 on a historic morning in Vienna</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://www.olympicchannel.com/en/stories/news/detail/eliud-kipchoge-first-sub-two-hour-marathon/">https://www.olympicchannel.com | </a></div>
       <div style="float: right">Created with <a
           href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>

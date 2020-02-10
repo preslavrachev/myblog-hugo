@@ -6,10 +6,20 @@
     <description>Recent content in Quote on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2020 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/quote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Quote] Manual Work is a Bug</title>
+      <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
+      <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
+      <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
+ The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start.</description>
+    </item>
     
     <item>
       <title></title>
@@ -101,17 +111,6 @@ Too many consumer-tech companies nearing their public offerings are selling magi
       <description>A quote from &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
  That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906231845/</link>
-      <pubDate>Sun, 23 Jun 2019 15:45:35 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906231845/</guid>
-      <description>A quote from &amp;ldquo;The Three-Body Problem&amp;rdquo;:
- &amp;ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&amp;rdquo;
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Three-Body Problem (Remembrance of Earth’s Past #1)  The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
     </item>
     
   </channel>

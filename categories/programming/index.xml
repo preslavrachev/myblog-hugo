@@ -23,6 +23,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>[Quote] Manual Work is a Bug</title>
+      <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
+      <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
+      <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
+ The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start.</description>
+    </item>
+    
+    <item>
       <title>Reflecting on My Experience With Go, One Year After</title>
       <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
       <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
@@ -100,17 +110,6 @@ l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that
       <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
-    </item>
-    
-    <item>
-      <title>Good Code is Boring</title>
-      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
-      <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
-      <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
-#golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
-&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
     </item>
     
   </channel>
