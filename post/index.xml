@@ -265,6 +265,38 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
         </item>
         
         <item>
+            <title>How to Request an App Refund on the Apple App Store</title>
+            <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
+            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
+            <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way.</description>
+            <content type="html"><![CDATA[<p>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way. In the case of the App Store, I don’t think you can really do it from the app itself. You have to go to a special site instead:</p>
+
+<p><a href="reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></p>
+
+<p>After signing in, you will see all the apps you have downloaded for free or purchased. Find the one you want to refund (assuming, you are within 14 days of the purchase). Click on “Report a Problem” (I know, you are actually exercising your rights, but just keep playing the game). Be careful to select the right option from the menu:</p>
+
+
+    <figure class="left" >
+        <img src="/images/2019/12/appstore1.png"   />
+
+        
+            <figcaption class="center" >The right option is down below</figcaption>
+        
+    </figure>
+
+
+
+<p>See how far below the right option is? Anyway, once you choose it, there are no further obstructions. Just hit “Cancel Purchase” and you are good to go!</p>
+
+<p><img src="/images/2019/12/appstore2.png" alt="" /></p>
+
+<p><img src="/images/2019/12/appstore3.png" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Panic Without Worry</title>
             <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
             <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -488,316 +520,6 @@ It mainly boils down to how memory garbage gets collected on each platform. iOS 
 <p>Android on the other hand, uses a mark-and-sweep garbage collector, known from the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine?wprov=sfti1" target="_blank">Java virtual machine (JVM)</a>. It won’t clean up memory right away, but will occasionally free big chunks of it in one big pass (also known as stop-the-world). This approach assumes that there is a lot of memory available on the device so that these stop-the-world cleanups occur less frequently.</p>
 
 <p>Both approaches have their advantages and disadvantages.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Any Code Style You like as Long It&#39;s Black</title>
-            <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
-            <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
-            <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
-            <content type="html"><![CDATA[
-
-<p>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of <strong>any</strong> formatting.</p>
-
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://repository-images.githubusercontent.com/125266328/48aef880-6cce-11e9-9e3c-3ca0dd3ac138); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        psf/black</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://github.com/psf/black">https://github.com | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-
-<p>The first thing I do when I start a new project nowadays, is to set up an automatic code formatter. My personal favorite for Python is <a href="https://github.com/psf/black" target="_blank">Black</a>. It is an opinionated formatter made by <a href="https://github.com/ambv" target="_blank">Łukasz Langa</a> - a Python Core developer. Black leaves little choice when it comes to configuration. You can think of it as the <a href="https://golang.org/cmd/gofmt/" target="_blank">gofmt</a> or <a href="https://prettier.io/" target="_blank">Prettier</a> of Python. Integrate it with your editor of choice, or use the CLI over your code base and Black will do the rest:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> seven_dwwarfs <span style="color:#f92672">import</span> Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
-x <span style="color:#f92672">=</span> {  <span style="color:#e6db74">&#39;a&#39;</span>:<span style="color:#ae81ff">37</span>,<span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#39;c&#39;</span>:<span style="color:#ae81ff">927</span>}
-
-<span style="color:#66d9ef">if</span> very_long_variable_name <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None <span style="color:#f92672">and</span> \
- very_long_variable_name<span style="color:#f92672">.</span>field <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> \
- very_long_variable_name<span style="color:#f92672">.</span>is_debug:
- z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello &#39;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;world&#39;</span>
-<span style="color:#66d9ef">else</span>:
- world <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;world&#39;</span>
- a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello {}&#39;</span><span style="color:#f92672">.</span>format(world)
- f <span style="color:#f92672">=</span> rf<span style="color:#e6db74">&#39;hello {world}&#39;</span>
-<span style="color:#66d9ef">if</span> (this
-<span style="color:#f92672">and</span> that): y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello world&#39;</span></code></pre></div>
-<p>will transform into this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> seven_dwwarfs <span style="color:#f92672">import</span> (
-    Grumpy,
-    Happy,
-    Sleepy,
-    Bashful,
-    Sneezy,
-    Dopey,
-    Doc,
-)
-
-x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">37</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">927</span>}
-
-<span style="color:#66d9ef">if</span> (
-    very_long_variable_name <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None
-    <span style="color:#f92672">and</span> very_long_variable_name<span style="color:#f92672">.</span>field <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#f92672">or</span> very_long_variable_name<span style="color:#f92672">.</span>is_debug
-):
-    z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;world&#34;</span>
-<span style="color:#66d9ef">else</span>:
-    world <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>
-    a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello {}&#34;</span><span style="color:#f92672">.</span>format(world)
-    f <span style="color:#f92672">=</span> rf<span style="color:#e6db74">&#34;hello {world}&#34;</span>
-<span style="color:#66d9ef">if</span> this <span style="color:#f92672">and</span> that:
-    y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span></code></pre></div>
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://black.now.sh/static/screenshot.png); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Black Playground</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      Playground for Black, the uncompromising Python code formatter.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://black.now.sh">https://black.now.sh | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-
-<h1 id="isn-t-pep8-enough">Isn&rsquo;t PEP8 enough?</h1>
-
-<p>When it comes to code style, most Python developers point out <a href="https://www.python.org/dev/peps/pep-0008" target="_blank">PEP8</a>. <a href="https://www.python.org/dev/peps/pep-0008" target="_blank">PEP8</a> is a good style guide, but definitely not a set of strict formatting rules. The same piece of code might be written in different ways, and still be compliant with PEP8. This is by design, as much of the Python philosophy is to leave the freedom and the final decision to the programmer. For comparison, Go follows a different mentality, where most of the extra energy aspects of programming are taken over by the compiler and the available tooling.</p>
-
-<p>Unfortunately, even PEP8-compliant code still leads to arguments when it comes to keeping a unified code base. I don&rsquo;t know about you, but I have reached a level of pragmatism, where I don&rsquo;t care much about style and formatting, as long as it has been standardized everywhere. This is where Black enters the stage.</p>
-
-<h1 id="black-is-relentless">Black is relentless</h1>
-
-<p>Black has one guiding philosophy - produce diffs as small as possible. If one expression can fit on a single line (88 chars), regardless of how complex it is, it will be kept on a single line.</p>
-
-<p>In most programming languages, nested expressions (multiple levels of indentation, as well as opening and closing brackets) are what makes code complex. Python list and dict comprehensions can be particularly nasty to comprehend, once they go over a certain length.</p>
-
-<p>Black splits long expressions into multiple lines, where the outermost brackets get separated from the inner content. If the inner content is longer than the line limit, the same operation gets repeated recursively on and on.</p>
-
-<p>The result is code, which, although taking more vertical space than writing a few one-liners, is much easier to read and reason about. The fact that Black will always format your code the same way makes even more sense when working with other people. Lines diffs are the way source control systems indicate changes. Therefore, uniformly splitting complex code into multiple lines makes code reviews easier and takes away almost discussions around style.</p>
-
-<h1 id="black-is-stubborn">Black is stubborn</h1>
-
-<p>Borrowing ideas from <a href="https://golang.org/cmd/gofmt/" target="_blank">gofmt</a>, Black has close to zero configuration options, especially, when it comes to variations of formatting style. I welcome such initiatives, because formatting is not something I would like to personally spend time dealing with. If this is not to your taste, however, you might try out the notable alternatives, such as <a href="https://github.com/google/yapf" target="_blank">yapf</a> and <a href="https://github.com/hhatto/autopep8" target="_blank">autopep8</a>. <a href="https://github.com/google/yapf" target="_blank">yapf</a>, in particular, has multiple code style options, e.g. from Google, Facebook, which you can try and see if any fits your taste. You can always create your own, and share it across all fo your projects.</p>
-
-<h1 id="know-when-to-be-inconsistent">Know when to be inconsistent</h1>
-
-<p>Contrary to everything I have said so far, there might be times when blindlyy following a consistent standard is just inapplicable. As PEP8 says it: <em>&ldquo;When in doubt, use your best judgment. Look at other examples and decide what looks best. And don&rsquo;t hesitate to ask!&rdquo;</em></p>
-
-<hr />
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/esZLCuWs_2Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<p>
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://www.python.org/static/opengraph-icon-200x200.png); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        PEP 8 -- Style Guide for Python Code</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      The official home of the Python Programming Language</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://www.python.org/dev/peps/pep-0008">https://www.python.org | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://kevinpeters.net/thumbnails/auto-formatters-for-python-opengraph.png); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        The 3 best auto formatters for Python</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      🔥Save time by using the best auto formatters for python - a comparison to find the best. The auto formatters in this blog article can be used online or in editors like vscode and feature Python 2 and Python 3.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://www.kevinpeters.net/auto-formatters-for-python">https://www.kevinpeters.net | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://avatars0.githubusercontent.com/u/1342004?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        google/yapf</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      A formatter for Python files. Contribute to google/yapf development by creating an account on GitHub.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://github.com/google/yapf">https://github.com | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://avatars1.githubusercontent.com/u/150309?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        hhatto/autopep8</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      A tool that automatically formats Python code to conform to the PEP 8 style guide. - hhatto/autopep8</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://github.com/hhatto/autopep8">https://github.com | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div></p>
 ]]></content>
         </item>
         

@@ -6,10 +6,19 @@
     <description>Recent content in Tips on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 09 Jan 2019 06:28:16 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2019 08:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/categories/tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Request an App Refund on the Apple App Store</title>
+      <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
+      <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+      
+      <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
+      <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way.</description>
+    </item>
     
     <item>
       <title>Use Dotenv Files When Developing Your Python Apps</title>
