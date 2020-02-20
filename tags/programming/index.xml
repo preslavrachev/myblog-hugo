@@ -6,10 +6,20 @@
     <description>Recent content in Programming on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 19:07:54 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 07:49:10 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elixir Month</title>
+      <link>https://preslav.me/2020/02/11/elixir-month/</link>
+      <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
+      <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
+But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.</description>
+    </item>
     
     <item>
       <title>[Quote] You Can Think of Any Web Server as a Function</title>
@@ -101,16 +111,6 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
       <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
 l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908031736/</link>
-      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908031736/</guid>
-      <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
-I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
     </item>
     
   </channel>

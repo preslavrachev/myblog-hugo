@@ -6,10 +6,20 @@
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 10 Feb 2020 19:07:54 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 07:49:10 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elixir Month</title>
+      <link>https://preslav.me/2020/02/11/elixir-month/</link>
+      <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
+      <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
+But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.</description>
+    </item>
     
     <item>
       <title>[Quote] You Can Think of Any Web Server as a Function</title>
@@ -101,16 +111,6 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
       <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
-    </item>
-    
-    <item>
-      <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
-      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
-      <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
-      <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
-It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
     </item>
     
   </channel>

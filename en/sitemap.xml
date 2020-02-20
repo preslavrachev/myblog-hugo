@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2020/02/11/elixir-month/</loc>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</loc>
     <lastmod>2020-02-10T19:07:54+01:00</lastmod>
   </url>
@@ -719,7 +724,7 @@
   
   <url>
     <loc>https://preslav.me/tags/elixir/</loc>
-    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1067,7 +1072,7 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1085,13 +1090,13 @@
   
   <url>
     <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/programming/</loc>
-    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1157,7 +1162,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1209,7 +1214,7 @@
   
   <url>
     <loc>https://preslav.me/tags/ruby/</loc>
-    <lastmod>2020-01-26T08:35:04+00:00</lastmod>
+    <lastmod>2020-02-11T07:49:10+01:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,20 @@
     <description>Recent content in Ruby on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 07:49:10 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elixir Month</title>
+      <link>https://preslav.me/2020/02/11/elixir-month/</link>
+      <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
+      <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
+But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.</description>
+    </item>
     
     <item>
       <title>A Crystal in Go’s World</title>
