@@ -363,6 +363,84 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
         </item>
         
         <item>
+            <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
+            <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
+            <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
+            <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
+One big disadvantage of modules is that one can’t really edit them.</description>
+            <content type="html"><![CDATA[<p>I started programming Go right at the time when the topic of <em>modularization</em> heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.</p>
+
+<p>One big disadvantage of modules is that one can’t really edit them. For a good reason, of course. You want them to be clean and reproducible, but occasionally, one needs to just insert a <code>log.Printf</code> or a tiny inspection function somewhere. One option is to call <code>mod vendor</code>, but this would copy all the dependencies to the vendor folder. Clearly, a lot more overhead than what one would need.</p>
+
+<p>This is where <a href="https://github.com/rogpeppe/gohack" target="_blank">gohack</a> comes in really handy. It uses a clever feature of the Go modules, called /replace/. It allows the user to manually override the path to a given dependency. Instead of doing all of this manually, however, gohack will do it all for you.</p>
+
+<p>After installing go-installing gohack, go to your module-bound Go project and use it instead of <code>go get</code> for a given dependency:</p>
+
+<pre><code>gohack get example.com/foo/bar
+</code></pre>
+
+<p>gohack will fetch the code and store it in a special place inside your <code>$HOME</code> directory. It will also do the go.mod replacements for you:</p>
+
+<pre><code>replace example.com/foo/bar =&gt; /home/me/gohack/example.com/foo/bar
+</code></pre>
+
+<p>All the edits you now do to the dependency that was added to your <code>$HOME</code> folder, will now affect the project that uses it.</p>
+
+<p>Once you have done checking, and want to revert to using the original dependency, you can simply use the undo functionality:</p>
+
+<pre><code>gohack undo example.com/foo/bar
+</code></pre>
+
+<p>or to revert all changes to all “hacked” dependencies:</p>
+
+<pre><code>gohack undo
+</code></pre>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars0.githubusercontent.com/u/66491?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://gohugo.io/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        rogpeppe/gohack</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Make temporary edits to your Go module dependencies - rogpeppe/gohack</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/rogpeppe/gohack">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
             <title>How to Request an App Refund on the Apple App Store</title>
             <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
             <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
@@ -515,89 +593,6 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
 </div>
 
 <p>Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line. In most languages, complexity increases with the level of nesting of code. This is usually difficult to estimate when reading the code itself, since the brain is focused on what the code does, rather than how nested it is. By obscuring the text, and leaving only a bird&rsquo;s-eye view of the layout, the minimap might help pinpoint parts of the code, needing improvement. It can be very helpful when working with someone else code, or with a code base, which you haven&rsquo;t touched in a while.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-            <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
-            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
-            <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
-From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
-            <content type="html"><![CDATA[
-
-<p>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.</p>
-
-<h1 id="from-people-to-topics">From people to topics</h1>
-
-<p>Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter. I achieve this with by organizing accounts into thematic lists, combined with clever searching.</p>
-
-<p>If you have never created a single list on Twitter, you’re missing half the fun. At the moment of this writing, I actively curate <a href="https://twitter.com/preslavrachev/lists" target="_blank">around 50 lists</a>. The majority of those revolve around a certain topic I’m interested about, say <a href="https://twitter.com/preslavrachev/lists/go-developers" target="_blank">Go</a> or <a href="https://twitter.com/preslavrachev/lists/python-developers" target="_blank">Python</a> programming. Others are location based (Bremen, Munich, Bulgaria). In short, the fact that I don’t follow people on Twitter into a single timeline does not mean that that I don’t follow them at all. It’s actually the opposite - I follow many more people into many more thematically organized timelines.</p>
-
-<p>This won’t solve the original problem, will it? In fact, many timelines must be making it a hell of a time to stay on top of each one. Well, yes, and this is where the power of clever searching comes to the stage.</p>
-
-<p>In a <a href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/" target="_blank">previous article</a>, I wrote at length about some of the hidden powers of Twitter searching. One of the many examples I presented in my article was using a Twitter list as the base filter for your search. Put simply, the following search:</p>
-
-<pre><code>list:username/list “climate change”
-</code></pre>
-
-<p>Will only return results that match the query <code>climate change</code>, but only within the scope of the given list. Search for the right topics within the right lists, and you automatically get a significant noise reduction. As lists will inevitably get bigger, you can further reduce the noise, by leaving out only tweets with certain popularity or number of responses to.</p>
-
-<pre><code>list:username/list “climate change” min_retweets:3
-</code></pre>
-
-<p>or</p>
-
-<pre><code>list:username/list “climate change” min_replies:3
-</code></pre>
-
-<p>I have saved many such searches, which I then keep open on my favourite Twitter client. I like using <a href="https://tapbots.com/tweetbot/mac/" target="_blank">TweetBot</a> for iOS and macOS, but one could easily <a href="https://tweetdeck.twitter.com/" target="_blank">TweetDeck’s</a> tabs for the same purpose.</p>
-
-<p><img src="https://i.imgur.com/4ml6zVF.jpg" alt="" /></p>
-
-<hr />
-
-<p>P.S. I hear that Twitter is also going to release some support for topic subscriptions as soon as this week. Let’s wait and see the final outcome. Until then, I keep using the method, I described above.</p>
-
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/XHLt3wEMJOsEC2eUPaLuGXUQqBw=/0x492:1080x1057/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19352076/CB_14444_Topics_2.png); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Twitter is rolling out Topics, a way to follow subjects automatically in the timeline</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      It’s starting with more than 300 subjects across sports, gaming, and entertainment.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">https://www.theverge.com | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
 ]]></content>
         </item>
         

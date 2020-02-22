@@ -65,6 +65,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
+      <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
+      <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
+      <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
+One big disadvantage of modules is that one can’t really edit them.</description>
+    </item>
+    
+    <item>
       <title>How to Request an App Refund on the Apple App Store</title>
       <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
       <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
@@ -101,16 +111,6 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
-    </item>
-    
-    <item>
-      <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
-      <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
-      <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
-From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
     </item>
     
   </channel>

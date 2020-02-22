@@ -33,6 +33,16 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
     </item>
     
     <item>
+      <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
+      <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
+      <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
+      <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
+One big disadvantage of modules is that one can’t really edit them.</description>
+    </item>
+    
+    <item>
       <title>Panic Without Worry</title>
       <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
       <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -100,15 +110,6 @@ struct { b int32 c string d string a bool } Why is that? Well, think of memory a
       <description>If you ever get the following message:
 x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
-    </item>
-    
-    <item>
-      <title>Mixtape Retrospective: Time to Split the Monolith?</title>
-      <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
-      <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
-      <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
     </item>
     
   </channel>
