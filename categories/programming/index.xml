@@ -6,10 +6,19 @@
     <description>Recent content in Programming on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 07:49:10 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 07:45:20 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iEx Is Dope!</title>
+      <link>https://preslav.me/2020/02/24/iex-is-dope/</link>
+      <pubDate>Mon, 24 Feb 2020 07:45:20 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
+      <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
+    </item>
     
     <item>
       <title>Elixir Month</title>
@@ -102,16 +111,6 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
       <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
-    </item>
-    
-    <item>
-      <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
-      <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
-      <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
     </item>
     
   </channel>

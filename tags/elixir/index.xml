@@ -6,10 +6,19 @@
     <description>Recent content in Elixir on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 07:49:10 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 07:45:20 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iEx Is Dope!</title>
+      <link>https://preslav.me/2020/02/24/iex-is-dope/</link>
+      <pubDate>Mon, 24 Feb 2020 07:45:20 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
+      <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
+    </item>
     
     <item>
       <title>Elixir Month</title>

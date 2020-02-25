@@ -5,17 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Preslav Rachev ">
-<meta name="description" content="Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
-But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects." />
-<meta name="keywords" content="programming, golang, python, Elixir, Programming, Ruby" />
+<meta name="description" content="iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run." />
+<meta name="keywords" content="programming, golang, python, Programming, Elixir" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2020/02/11/elixir-month/" />
+<link rel="canonical" href="https://preslav.me/2020/02/24/iex-is-dope/" />
 
 
     <title>
         
-            Elixir Month :: Random Bits of Wisdom 
+            iEx Is Dope! :: Random Bits of Wisdom 
         
     </title>
 
@@ -45,24 +44,22 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
     <meta name="theme-color" content="#252627">
 
 
-<meta itemprop="name" content="Elixir Month">
-<meta itemprop="description" content="Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
-But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.">
+<meta itemprop="name" content="iEx Is Dope!">
+<meta itemprop="description" content="iEx (Elixir&rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &ldquo;let&rsquo;s play and see what happens&rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&rsquo;d try to keep one module called Demo, or Scratch, etc, where I&rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.">
 
 
-<meta itemprop="datePublished" content="2020-02-11T07:49:10&#43;01:00" />
-<meta itemprop="dateModified" content="2020-02-11T07:49:10&#43;01:00" />
-<meta itemprop="wordCount" content="665">
+<meta itemprop="datePublished" content="2020-02-24T07:45:20&#43;01:00" />
+<meta itemprop="dateModified" content="2020-02-24T07:45:20&#43;01:00" />
+<meta itemprop="wordCount" content="221">
 
 
 
-<meta itemprop="keywords" content="Elixir,Programming,Ruby," />
+<meta itemprop="keywords" content="Programming,Elixir," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://preslav.me"/>
 
-<meta name="twitter:title" content="Elixir Month"/>
-<meta name="twitter:description" content="Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
-But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects."/>
+<meta name="twitter:title" content="iEx Is Dope!"/>
+<meta name="twitter:description" content="iEx (Elixir&rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &ldquo;let&rsquo;s play and see what happens&rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&rsquo;d try to keep one module called Demo, or Scratch, etc, where I&rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run."/>
 
 
 
@@ -70,7 +67,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
 
 
 
-    <meta property="article:published_time" content="2020-02-11 07:49:10 &#43;0100 &#43;0100" />
+    <meta property="article:published_time" content="2020-02-24 07:45:20 &#43;0100 &#43;0100" />
 
 
 
@@ -133,7 +130,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
                 class="feather feather-clock">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>4 minutes
+            </svg>2 minutes
 
             
 
@@ -145,46 +142,16 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
 
     <article>
         <h1 class="post-title">
-            <a href="https://preslav.me/2020/02/11/elixir-month/">Elixir Month</a>
+            <a href="https://preslav.me/2020/02/24/iex-is-dope/">iEx Is Dope!</a>
         </h1>
 
         
 
         <div class="post-content">
-            
+            <p><a href="https://hexdocs.pm/iex/IEx.html" target="_blank">iEx (Elixir&rsquo;s interactive shell)</a> is pure dope! It helped bring my development efforts back to the &ldquo;let&rsquo;s play and see what happens&rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling <code>r MyModule</code> inside iEx.
+During development, I&rsquo;d try to keep one module called <code>Demo</code>, or <code>Scratch</code>, etc, where I&rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called <code>demo</code> or <code>run</code>. This is what I call in iex. The rest I do in the respective modules, which I reload after every change.</p>
 
-<p>Yes, the <a href="https://elixir-lang.org/" target="_blank">Elixir</a>. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.</p>
-
-<h2 id="but-why-elixir-and-why-just-now">But why Elixir and why just now?</h2>
-
-<p>There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects. My colleague is a big Elixir fan and has mentioned many times the advantages of Erlang and the BEAM VM. More than anything else, one thing struck me the most. All of the challenges that the cloud community of today is trying to tackle, such as:</p>
-
-<ul>
-<li>resilience</li>
-<li>scalabiltiy</li>
-<li>distribution</li>
-<li>deployment</li>
-</ul>
-
-<p>etc, have already been thought about, and solved by a research group at Ericsson around three decades ago (albeit, at a smaller scale). Sure, Erlang is not an easy language to work with, but thanks to <a href="https://twitter.com/josevalim" target="_blank">José Valim</a> and his work on Elixir, it wouldn’t even be necessary. So, about a year back, I took my first plunge.</p>
-
-<h2 id="that-s-not-for-me">That’s not for me</h2>
-
-<p>I got out of the water just as quickly as I got in there. Sure, Elixir is not nearly as obscure as Erlang, but it can be a bit overwhelming for the newcomer. Especially, if one is trying to swallow the whole OTP bit at the same time. At the time, I had discovered the simplistic philosophy of Golang, and despite all the alleged advantages, Elixir seemed way too much overhead. I (in)famously dismissed the language, as one where “the amount of punctuation might give you a headache”. Let alone the fact that similar to Java applications, Elixir ones also need the entire kitchen sink to be in place for an application to run. Compare this to a statically-bound Go app that you just throw onto a machine and you are good to go.</p>
-
-<h2 id="crystal-enters-the-stage">Crystal enters the stage</h2>
-
-<p>As a side note, I have to mention that part of why I dropped my initial foray into Elixir was because of a bias. I felt that it was too, Ruby-esque, whatever that must have meant to me at the time. I have somehow missed the early Ruby and Rails train around 15 years ago. My programming career set me on a different path. I have always been aware of Ruby’s community spirit, but only during the past year, did I come to appreciate the language and its writing aesthetic. Ironically, not through a Ruby itself, but via a wonderful derivative language, named <a href="https://crystal-lang.org/" target="_blank">Crystal</a>. I already went into more detail about Crystal <a href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/" target="_blank">in a previous post</a>.</p>
-
-<p>The more I started dabbling into Crystal, the more I started looking at its inspiration - Ruby. Ruby is certainly not a language without flaws, and the community is trying to work on those. Partially, via addressing those issues at the core - Ruby 3.0 is expected to arrive <a href="https://bugs.ruby-lang.org/versions/5" target="_blank">at the end of this year</a>. Yet, others are taking what the language is best known for, and applying it to other paradigms - such as Elixir’s functional approach to programming.</p>
-
-<h2 id="second-attempt-elixir-month">Second attempt: Elixir Month</h2>
-
-<p>My second attempt to tackle Elixir seems to go much more smoothly than the first one. One day, I had the feeling that the constructs in the language just clicked for me- even the nasty OTP ones. I set out out a goal for myself to use Elixir for a month during February, and see how far I can go with it.</p>
-
-<hr />
-
-<h2 id="some-starting-reources">Some starting reources</h2>
+<p>At work, I get to work with Python a lot and one of the things I love there is <a href="https://ipython.org/" target="_blank">iPython</a>. It&rsquo;s such a strong REPL that I would often try and get my hands dirty there, before formalizing into code/test. In Python <a href="https://preslav.me/2018/04/22/live-reloading-of-python-modules/" target="_blank">module reloads are not always trivial</a>, however. This is where Elixir&rsquo;s functional, &ldquo;share-nothing&rdquo; nature steps up the game. It&rsquo;s easy to reload modules that have essentially no state.</p>
 
 
 
@@ -203,7 +170,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
 
   
   <div class="embed-image"
-    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*DKLIm-vne8pO-G58yjaRwA.jpeg); background-size:cover; background-position:center; min-height: 120px">
   </div>
   
 
@@ -211,33 +178,18 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
       href="https://gohugo.io/">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Elixir in Action</div>
+        Tips and Tricks for IEx</div>
     </a>
     <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      The Elixir language blends the battle-tested power and stability of the Erlang virtual machine with an approachable and expressive syntax...</div>
+      When I first started learning Elixir, one of the first things I learned is how to get into the command line interface via IEx. Here are the…</div>
     <div class="embed-meta" style="font-size:60%">
       <div style="float:left; max-width:80%"><a
-          href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
+          href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">https://blog.echobind.com | </a></div>
       <div style="float: right">Created with <a
           href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
 </div>
-
-<p>Really, one of the best books on starting with Elixir. If you enjoy it, please help me support this site by <a href="https://amzn.to/2HFjtSR" target="_blank">buying it on Amazon</a>.</p>
-
-<p>Let Saša Jurić himself convince you:
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/JvBT4XBdoUE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-</p>
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/gom6nEvtl3U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
 
         </div>
     </article>
@@ -255,9 +207,8 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
                 </path>
                 <line x1="7" y1="7" x2="7" y2="7"></line>
             </svg><span class="tag"><a
-                    href="https://preslav.me/tags/elixir">Elixir</a></span><span class="tag"><a
                     href="https://preslav.me/tags/programming">Programming</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/ruby">Ruby</a></span>
+                    href="https://preslav.me/tags/elixir">Elixir</a></span>
         </p>
 
         <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -271,7 +222,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
                 <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>665 Words</p>
+            </svg>221 Words</p>
 
         <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -281,7 +232,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
                 <line x1="16" y1="2" x2="16" y2="6"></line>
                 <line x1="8" y1="2" x2="8" y2="6"></line>
                 <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2020-02-11 06:49 &#43;0000
+            </svg>2020-02-24 06:45 &#43;0000
         </p>
     </div>
 
@@ -295,18 +246,11 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
 
         <div class="pagination__buttons">
             
-            <span class="button previous">
-                <a href="https://preslav.me/2020/02/24/iex-is-dope/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">iEx Is Dope!</span>
-                </a>
-            </span>
-            
 
             
             <span class="button next">
-                <a href="https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/">
-                    <span class="button__text">[Quote] You Can Think of Any Web Server as a Function</span>
+                <a href="https://preslav.me/2020/02/11/elixir-month/">
+                    <span class="button__text">Elixir Month</span>
                     <span class="button__icon">→</span>
                 </a>
             </span>
