@@ -525,6 +525,41 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
         </item>
         
         <item>
+            <title>Why Is Bulgaria So Poor?</title>
+            <link>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</link>
+            <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</guid>
+            <description>Note: What follows is my answer to question on Quora. I thought it might be worth sharing with my readers too.
+This is perhaps an unpopular opinion, but for whatever it is worth, I am going to let my mind speak. I would like to emphasize on the fact that I am, and will always be a Bulgarian, despite my conscious choice to live and have business somewhere else.
+The reason why Bulgaria is so poor has nothing to do with its nature and geographic location.</description>
+            <content type="html"><![CDATA[<p><strong>Note:</strong> What follows is my answer to <a href="https://www.quora.com/Why-is-Bulgaria-so-poor/answer/Preslav-Rachev" target="_blank">question on Quora</a>. I thought it might be worth sharing with my readers too.</p>
+
+<hr />
+
+<p>This is perhaps an unpopular opinion, but for whatever it is worth, I am going to let my mind speak. I would like to emphasize on the fact that I am, and will always be a Bulgarian, despite my conscious choice to live and have business somewhere else.</p>
+
+<p>The reason why Bulgaria is so poor has nothing to do with its nature and geographic location. Neither, is it a lack of smart brains, creative artists, or strong athletes. It also isn’t (shocking to some) a lack of money and material possessions. Nope, it is none of those.</p>
+
+<p>What makes Bulgaria so poor is <strong>the lack of a strong society and civic spirit</strong>. We might be smart as individuals, but as a society, we are below mediocre.</p>
+
+<p>It is this lack of strong social norms, which has led our tiny nation from one bad choice to the next, living a sub-standard level of life for decades in a row. This lack of a strong society causes distrust and apathy. Those in turn, have managed to estrange people even further from one another, ultimately leading to the disintegration of our tiny nation. It is a vicious cycle.</p>
+
+<p>It is easy to blame it on the politicians and the mafia, but remember, neither came to power alone. Our distrust and apathy let them be where they are today.</p>
+
+<p>It is easy to blame it on the others, but when the time comes to pay our dues, invest in our common future, or take action to discourage grey economy, we are the first to hide back in the rat hole.</p>
+
+<p>By not showing civic courage, the Bulgarian people (myself included) have been putting a nail after nail in the coffin holding our society, but it’s not too late to act. I see hope in many places, and this makes me look at opportunities to help.</p>
+
+<p>So, yes, my friends, Bulgarians are poor. They can’t see how rich they could have been, had they given each other a hand, instead of sneaking behind the front door, looking through the peephole.</p>
+
+<p>—</p>
+
+<p>P.S. I fully realize that people like me are a big part of the problem. Yet, I also believe that in order to see the problem, one needs to have gotten out, only to return with fresh solutions. Sitting in the warm broth and complaining about daily life won’t help.</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Panic Without Worry</title>
             <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
             <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
@@ -534,65 +569,6 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
             <content type="html"><![CDATA[<p>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</p>
 
 <p>When necessary, panic without worry.</p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-            <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
-            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
-            <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
-sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
-Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
-            <content type="html"><![CDATA[
-
-<p>You need to explicitly set the beta version of Xcode as your default one via the command line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/</code></pre></div>
-<p>Afterwards, getting your app  to run via <code>flutter run</code> should work as it used to before.</p>
-
-<h2 id="related-resources">Related Resources</h2>
-
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
-
-  
-
-  <div class="embed-image"
-    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
-  </div>
-
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        select - Managing Multiple Versions Of Xcode</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      It&#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">http://iosdevelopertips.com | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
 ]]></content>
         </item>
         
