@@ -6,10 +6,20 @@
     <description>Recent content in Programming on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 24 Feb 2020 07:45:20 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use the Git History to Identify Pain Points in Any Project</title>
+      <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
+      <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
+      <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+Much of the tooling we use to mitigate tech debt is preventive.</description>
+    </item>
     
     <item>
       <title>iEx Is Dope!</title>
@@ -101,16 +111,6 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
-    </item>
-    
-    <item>
-      <title>Why I Still Find the Minimap Useful</title>
-      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
-      <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
-      <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
     </item>
     
   </channel>

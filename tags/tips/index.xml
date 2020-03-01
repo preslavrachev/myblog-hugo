@@ -6,10 +6,20 @@
     <description>Recent content in Tips on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use the Git History to Identify Pain Points in Any Project</title>
+      <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
+      <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
+      <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+Much of the tooling we use to mitigate tech debt is preventive.</description>
+    </item>
     
     <item>
       <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
@@ -102,15 +112,6 @@ Thanks to @FlorimondManca for this discovery!</description>
       <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
       <description>Here is a handy developer tool tip for today: DevDocs
 As developers, we spend a large portion of our time, searching for the &amp;ldquo;name of the function abc that did thing xyz&amp;rdquo;. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called Dash.</description>
-    </item>
-    
-    <item>
-      <title>Deploying a Native Go Binary on Heroku</title>
-      <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
-      <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
-      <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
     </item>
     
   </channel>
