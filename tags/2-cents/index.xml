@@ -73,6 +73,16 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
     </item>
     
     <item>
+      <title>[Quote] Ten Years of Erlang</title>
+      <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
+      <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
+      
+      <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
+      <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+ @media (max-width: 640px) { .</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://preslav.me/microblog/201905121007/</link>
       <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
@@ -103,17 +113,6 @@ Tech monopolies tend not to fall like Rome. They fall like Venice. They’re sti
       
       <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
       <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</description>
-    </item>
-    
-    <item>
-      <title>What I learned in 2018</title>
-      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
-      <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
-      <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
-In 2018, I:
- Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
     </item>
     
   </channel>

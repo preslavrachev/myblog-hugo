@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erlang on Random Bits of Wisdom</title>
+    <link>https://preslav.me/tags/erlang/</link>
+    <description>Recent content in Erlang on Random Bits of Wisdom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 10 Jul 2019 10:28:44 +0100</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Quote] Ten Years of Erlang</title>
+      <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
+      <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
+      
+      <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
+      <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+ @media (max-width: 640px) { .</description>
+    </item>
+    
+  </channel>
+</rss>

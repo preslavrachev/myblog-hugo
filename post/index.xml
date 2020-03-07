@@ -68,7 +68,7 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
   <div class="embed-image"
@@ -77,7 +77,7 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         Your Code As a Crime Scene</div>
@@ -105,7 +105,7 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
   <div class="embed-image"
@@ -114,7 +114,7 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         Software Design X-Rays</div>
@@ -157,7 +157,7 @@ During development, I&rsquo;d try to keep one module called <code>Demo</code>, o
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
   <div class="embed-image"
@@ -166,7 +166,7 @@ During development, I&rsquo;d try to keep one module called <code>Demo</code>, o
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         Tips and Tricks for IEx</div>
@@ -240,7 +240,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
   <div class="embed-image"
@@ -249,7 +249,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://www.goodreads.com/book/show/38732242-elixir-in-action">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         Elixir in Action</div>
@@ -315,7 +315,7 @@ Buy on Amazon
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
   <div class="embed-image"
@@ -324,7 +324,7 @@ Buy on Amazon
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://www.goodreads.com/book/show/26871792-programming-phoenix">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         Programming Phoenix</div>
@@ -440,7 +440,7 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
 
@@ -451,7 +451,7 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://queue.acm.org/detail.cfm?id=3197520">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         Manual Work is a Bug</div>
@@ -588,7 +588,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
   }
 </style>
 <div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%">
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
   <div class="embed-image"
@@ -597,7 +597,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://gohugo.io/">
+      href="https://github.com/rogpeppe/gohack">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
         rogpeppe/gohack</div>

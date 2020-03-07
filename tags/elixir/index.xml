@@ -42,5 +42,15 @@ Buy on Amazon
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
     </item>
     
+    <item>
+      <title>[Quote] Ten Years of Erlang</title>
+      <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
+      <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
+      
+      <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
+      <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+ @media (max-width: 640px) { .</description>
+    </item>
+    
   </channel>
 </rss>
