@@ -2,8 +2,8 @@
 title: "Elixir-Style Actors in Go"
 date: 2020-03-07T17:04:29+01:00
 draft: false
-categories: []
-tags: []
+categories: ["Programming"]
+tags: ["Programming", "Golang", "Elixir", "Erlang"]
 ---
 
 My foray into [Elixir](https://elixir-lang.org/) brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with `sync.Mutex` slapped on it, you’d be (almost) right. Yet, it’s worth exploring different ways of thinking.
