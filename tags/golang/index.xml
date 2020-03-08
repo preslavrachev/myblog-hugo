@@ -6,10 +6,19 @@
     <description>Recent content in Golang on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elixir-Style Actors in Go</title>
+      <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
+      <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
+      <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
+    </item>
     
     <item>
       <title>A Crystal in Go’s World</title>
@@ -99,17 +108,6 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
       <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
-    </item>
-    
-    <item>
-      <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
-      <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
-      <description>If you ever get the following message:
-x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
-On Alpine, this can be done using the default package installer:</description>
     </item>
     
   </channel>

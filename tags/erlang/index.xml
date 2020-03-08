@@ -6,10 +6,19 @@
     <description>Recent content in Erlang on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 10 Jul 2019 10:28:44 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elixir-Style Actors in Go</title>
+      <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
+      <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
+      <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
+    </item>
     
     <item>
       <title>[Quote] Ten Years of Erlang</title>
