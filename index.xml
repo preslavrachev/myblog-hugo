@@ -6,10 +6,19 @@
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elixir-Style Actors in Go</title>
+      <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
+      <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
+      <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
+    </item>
     
     <item>
       <title>Use the Git History to Identify Pain Points in Any Project</title>
@@ -100,17 +109,6 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       
       <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
       <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way.</description>
-    </item>
-    
-    <item>
-      <title>Why Is Bulgaria So Poor?</title>
-      <link>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</link>
-      <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
-      
-      <guid>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</guid>
-      <description>Note: What follows is my answer to question on Quora. I thought it might be worth sharing with my readers too.
-This is perhaps an unpopular opinion, but for whatever it is worth, I am going to let my mind speak. I would like to emphasize on the fact that I am, and will always be a Bulgarian, despite my conscious choice to live and have business somewhere else.
-The reason why Bulgaria is so poor has nothing to do with its nature and geographic location.</description>
     </item>
     
   </channel>
