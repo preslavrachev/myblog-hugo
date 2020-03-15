@@ -35,7 +35,7 @@ My second attempt to tackle Elixir seems to go much more smoothly than the first
 
 ---
 
-## Some starting reources
+## Some starting resources
 
 {{<oembed "https://www.goodreads.com/book/show/38732242-elixir-in-action">}}
 
