@@ -6,10 +6,19 @@
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 17:36:59 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Step Outside the Comfort Zone</title>
+      <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
+      <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
+      <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
+    </item>
     
     <item>
       <title>Elixir-Style Actors in Go</title>
@@ -100,15 +109,6 @@ Crystal is all of the above, plus it has types, outstanding documentation, and a
       <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
       <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
 One big disadvantage of modules is that one can’t really edit them.</description>
-    </item>
-    
-    <item>
-      <title>How to Request an App Refund on the Apple App Store</title>
-      <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
-      <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
-      <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way.</description>
     </item>
     
   </channel>

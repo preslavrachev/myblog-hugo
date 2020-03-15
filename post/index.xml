@@ -6,8 +6,35 @@
         <description>Recent content in Posts on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
+        <lastBuildDate>Sat, 14 Mar 2020 17:36:59 +0100</lastBuildDate>
         <atom:link href="https://preslav.me/post/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>A Step Outside the Comfort Zone</title>
+            <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
+            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
+            <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
+            <content type="html"><![CDATA[<p>Yes, the current situation sucks. Big time. It&rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come. Also, the ability to adapt to a constantly changing environment.</p>
+
+<p>I keep seeing people I follow, express disappointment with the current situation in social media. Not so much because of fear. More, because the measures to curb the outbreak, push people to step away from the comfort zone. As individuals, we have grown to protect what&rsquo;s perceive as ours so much, that the mere act of doing something for the common good can cause a backlash.</p>
+
+<p>Let me tell you a secret. This isn&rsquo;t the first, and won&rsquo;t be the last time that society faces a test of this kind. In markets, such phenomena are known as &ldquo;corrections&rdquo;. A very long upward run ends up with a shard downward move, only to start going up again. So is life. It has ups and downs. The general rule for living life is this: enjoy it while you&rsquo;re up, but keep in mind that there will be a day when you&rsquo;ll be down again. Also, don&rsquo;t give up hope when you&rsquo;re down. You&rsquo;ll be up again soon enough.</p>
+
+<p>The best we can do now (besides personal hygiene) is to swallow any pride and <a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/" target="_blank">distance one another from social gatherings</a> for some time. Whoever can study or work remotely, <strong>must absolutely do so</strong>. This isn&rsquo;t a time to show heroism at school, or at work, because frankly, none of this actually matters. What matters is that the lives of others are above petty profits. Plus, social distancing is not about locking oneself down completely. Regular walking, and doing sports in the open are more than welcome. I personally keep my distance running routing. Only, not in places with lots of other people.</p>
+
+<p>Moments like now are good for a reassessment of priorities, and for questioning the Status Quo. They confront the Old with the New, and put to the test much of what society takes for granted. As a technologist, I can&rsquo;t help but ask myself a few questions. For instance, whether information technology really stands up to the promise of making our lives better. Whether solutions &ldquo;powered by AI&rdquo; can help us solve the difficult problems in life, or just drive up product sales. Whether &ldquo;solutions&rdquo; is what they really are, or simply, an individual&rsquo;s pipe dream. Whether &ldquo;remote work&rdquo; was ever going to be the future, or just an employee perk for a privileged class of the workforce. Whether media omnipresence does us any good, or helps dig the trap deeper.  The list goes on and on.</p>
+
+<p>Not many have found a positive answer by now.</p>
+
+<p>Keep being strong and healthy!</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sicily has figured out this whole self-isolation thing.<a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/CoronavirusPandemic?src=hash&amp;ref_src=twsrc%5Etfw">#CoronavirusPandemic</a> <a href="https://t.co/93whPVtQcR">pic.twitter.com/93whPVtQcR</a></p>&mdash; John Nichols (@NicholsUprising) <a href="https://twitter.com/NicholsUprising/status/1238545438476730369?ref_src=twsrc%5Etfw">March 13, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+]]></content>
+        </item>
         
         <item>
             <title>Elixir-Style Actors in Go</title>
@@ -450,7 +477,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
 
 <hr />
 
-<h2 id="some-starting-reources">Some starting reources</h2>
+<h2 id="some-starting-resources">Some starting resources</h2>
 
 
 
@@ -837,38 +864,6 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
     </div>
   </div>
 </div>
-]]></content>
-        </item>
-        
-        <item>
-            <title>How to Request an App Refund on the Apple App Store</title>
-            <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
-            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
-            <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way.</description>
-            <content type="html"><![CDATA[<p>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers ty to put a few stones on the way. In the case of the App Store, I don’t think you can really do it from the app itself. You have to go to a special site instead:</p>
-
-<p><a href="reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></p>
-
-<p>After signing in, you will see all the apps you have downloaded for free or purchased. Find the one you want to refund (assuming, you are within 14 days of the purchase). Click on “Report a Problem” (I know, you are actually exercising your rights, but just keep playing the game). Be careful to select the right option from the menu:</p>
-
-
-    <figure class="left" >
-        <img src="/images/2019/12/appstore1.png"   />
-
-        
-            <figcaption class="center" >The right option is down below</figcaption>
-        
-    </figure>
-
-
-
-<p>See how far below the right option is? Anyway, once you choose it, there are no further obstructions. Just hit “Cancel Purchase” and you are good to go!</p>
-
-<p><img src="/images/2019/12/appstore2.png" alt="" /></p>
-
-<p><img src="/images/2019/12/appstore3.png" alt="" /></p>
 ]]></content>
         </item>
         

@@ -6,10 +6,19 @@
     <description>Recent content in 2 Cents on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 17 Jan 2020 08:35:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 17:36:59 +0100</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/2-cents/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Step Outside the Comfort Zone</title>
+      <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
+      <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+      
+      <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
+      <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
+    </item>
     
     <item>
       <title>Reflecting on My Experience With Go, One Year After</title>
@@ -104,15 +113,6 @@ Google: Tricked ya!</description>
       <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
 The series starts with:
 Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
-    </item>
-    
-    <item>
-      <title>Give Me Back My Monolith</title>
-      <link>https://preslav.me/2019/03/23/give-me-back-my-monolith/</link>
-      <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
-      <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</description>
     </item>
     
   </channel>
