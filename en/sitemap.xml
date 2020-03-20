@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2020/03/20/stay-the-f-home-germany/</loc>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</loc>
     <lastmod>2020-03-14T17:36:59+01:00</lastmod>
   </url>
@@ -552,13 +557,13 @@
   
   <url>
     <loc>https://preslav.me/tags/2-cents/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/2-cents/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -660,7 +665,7 @@
   
   <url>
     <loc>https://preslav.me/categories/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -692,13 +697,13 @@
   
   <url>
     <loc>https://preslav.me/tags/coronavirus/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/covid-19/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -722,7 +727,7 @@
   
   <url>
     <loc>https://preslav.me/tags/data-science/</loc>
-    <lastmod>2019-02-03T14:29:06+00:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1136,7 +1141,7 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1226,7 +1231,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1373,6 +1378,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/statistics/</loc>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/struct/</loc>
     <lastmod>2019-08-27T15:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1386,7 +1397,7 @@
   
   <url>
     <loc>https://preslav.me/tags/</loc>
-    <lastmod>2020-03-14T17:36:59+01:00</lastmod>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
