@@ -15,9 +15,14 @@
             <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
             
             <guid>https://preslav.me/2020/03/20/stay-the-f-home-germany/</guid>
-            <description>Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:
- they all live in complete denial of the situation they already gave up they fully trust that no matter what happens, the German healthcare system would fix them in no time. it’s sunny outside, so who cares  I’ve said it before, and I will say it once again.</description>
+            <description>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.
+Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:
+ they all live in complete denial of the situation they already gave up they fully trust that no matter what happens, the German healthcare system would fix them in no time.</description>
             <content type="html"><![CDATA[
+
+<p><strong>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.</strong></p>
+
+<hr />
 
 <p>Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:</p>
 
@@ -34,7 +39,7 @@
 
 <p>What one is clearly underestimating, is the number of German people who will potentially get infected in the coming days.</p>
 
-<p>One does not need a PhD in data science or some fancy AI tool to set up a simple prediction scenario of how the infection would roll out in the coming days. I used data from <a href="https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/" target="_blank">Berliner Morgenpost</a> and only Google Sheets for that. As we all know, viruses spread in an exponential fashion, by one person potentially infecting several other individuals. Based on the data, I calculated and plotted the daily percentage multiplier for Germany, Italy, and Europe:</p>
+<p>One does not need a Ph.D. in Data Science or some fancy AI tool to set up a simple prediction scenario of how the infection would roll out in the coming days. I used data from <a href="https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/" target="_blank">Berliner Morgenpost</a> and only Google Sheets for that. As we all know, viruses spread in an exponential fashion, by one person potentially infecting several other individuals. Based on the data, I calculated and plotted the daily percentage multiplier for Germany, Italy, and Europe:</p>
 
 
     <figure class="left" >
@@ -47,7 +52,7 @@
 
 
 
-<p>Germany has the highest  for now (~1.35), meaning, that on a single day, the total number of infected people becomes 1.35 times larger than the day before. Of course, assuming that:</p>
+<p>Germany has the highest for now (~1.35), meaning, that on a single day, the total number of infected people becomes 1.35 times larger than the day before. Of course, assuming that:</p>
 
 <ul>
 <li>everyone ultimately gets infected, develops immunity, and breaks the cycle</li>
@@ -104,7 +109,7 @@
 
 <p>This is a dire scenario, and one that I am crossing fingers, my naive prediction model won’t even get close to. It assumes that no further measures are taken, and the social responsibility of the population remains at the same low level. At that level of reach, even with the lower death rate in Germany would result in thousands of deaths (950.000 * 0.003 results in 2850 people dead by the end of April alone).</p>
 
-<p>Even if none of us or our families get affected by the Coronavirus (which I sincerely hope for), we bear a social responsibility for the people we encounter.  As passive transmitters, we might be causing the death of somebody, Of many.  We can prevent many of those deaths from happening by just staying home.</p>
+<p>Even if none of us or our families get affected by the Coronavirus (which I sincerely hope for), we bear a social responsibility for the people we encounter. As passive transmitters, we might be causing the death of somebody, Of many. We can prevent many of those deaths from happening by just staying home.</p>
 
 <hr />
 

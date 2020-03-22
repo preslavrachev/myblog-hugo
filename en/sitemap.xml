@@ -556,13 +556,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/2-cents/</loc>
+    <loc>https://preslav.me/categories/2-cents/</loc>
     <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/2-cents/</loc>
+    <loc>https://preslav.me/tags/2-cents/</loc>
     <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -598,13 +598,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/augsburg/</loc>
+    <loc>https://preslav.me/categories/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/augsburg/</loc>
+    <loc>https://preslav.me/tags/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -616,13 +616,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/beer/</loc>
+    <loc>https://preslav.me/categories/beer/</loc>
     <lastmod>2019-03-22T14:01:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/beer/</loc>
+    <loc>https://preslav.me/tags/beer/</loc>
     <lastmod>2019-03-22T14:01:47+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -726,14 +726,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/data-science/</loc>
-    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
+    <loc>https://preslav.me/categories/data-science/</loc>
+    <lastmod>2019-02-03T14:29:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/data-science/</loc>
-    <lastmod>2019-02-03T14:29:06+00:00</lastmod>
+    <loc>https://preslav.me/tags/data-science/</loc>
+    <lastmod>2020-03-20T11:28:11+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -756,14 +756,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/docker/</loc>
-    <lastmod>2019-08-11T07:00:00+00:00</lastmod>
+    <loc>https://preslav.me/categories/docker/</loc>
+    <lastmod>2019-03-18T06:30:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/docker/</loc>
-    <lastmod>2019-03-18T06:30:04+00:00</lastmod>
+    <loc>https://preslav.me/tags/docker/</loc>
+    <lastmod>2019-08-11T07:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -816,26 +816,26 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/germany/</loc>
-    <lastmod>2019-07-08T16:24:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/categories/germany/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/git/</loc>
-    <lastmod>2020-03-01T17:50:14+01:00</lastmod>
+    <loc>https://preslav.me/tags/germany/</loc>
+    <lastmod>2019-07-08T16:24:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/git/</loc>
     <lastmod>2015-02-21T06:59:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/git/</loc>
+    <lastmod>2020-03-01T17:50:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -864,25 +864,25 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/grunt/</loc>
-    <lastmod>2015-01-06T06:29:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/categories/grunt/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/gulp/</loc>
+    <loc>https://preslav.me/tags/grunt/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/gulp/</loc>
+    <lastmod>2015-01-06T06:29:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/gulp/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -918,14 +918,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/ios/</loc>
-    <lastmod>2019-11-11T07:00:00+00:00</lastmod>
+    <loc>https://preslav.me/categories/ios/</loc>
+    <lastmod>2018-08-12T05:29:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/ios/</loc>
-    <lastmod>2018-08-12T05:29:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/ios/</loc>
+    <lastmod>2019-11-11T07:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -948,14 +948,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/javascript/</loc>
-    <lastmod>2019-08-17T16:24:45+00:00</lastmod>
+    <loc>https://preslav.me/categories/javascript/</loc>
+    <lastmod>2017-03-26T05:25:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/javascript/</loc>
-    <lastmod>2017-03-26T05:25:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/javascript/</loc>
+    <lastmod>2019-08-17T16:24:45+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -966,13 +966,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/jupyter-notebook/</loc>
+    <loc>https://preslav.me/categories/jupyter-notebook/</loc>
     <lastmod>2018-04-22T04:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/jupyter-notebook/</loc>
+    <loc>https://preslav.me/tags/jupyter-notebook/</loc>
     <lastmod>2018-04-22T04:14:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1032,14 +1032,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/micropost/</loc>
-    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
+    <loc>https://preslav.me/categories/micropost/</loc>
+    <lastmod>2019-05-03T05:45:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/micropost/</loc>
-    <lastmod>2019-05-03T05:45:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/micropost/</loc>
+    <lastmod>2019-10-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1056,14 +1056,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/munich/</loc>
-    <lastmod>2019-07-13T16:24:31+00:00</lastmod>
+    <loc>https://preslav.me/categories/munich/</loc>
+    <lastmod>2019-03-22T14:01:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/munich/</loc>
-    <lastmod>2019-03-22T14:01:47+00:00</lastmod>
+    <loc>https://preslav.me/tags/munich/</loc>
+    <lastmod>2019-07-13T16:24:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1098,14 +1098,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/photo-stories/</loc>
-    <lastmod>2019-07-13T16:24:31+00:00</lastmod>
+    <loc>https://preslav.me/categories/photo-stories/</loc>
+    <lastmod>2019-06-23T21:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/photo-stories/</loc>
-    <lastmod>2019-06-23T21:00:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/photo-stories/</loc>
+    <lastmod>2019-07-13T16:24:31+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1122,14 +1122,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/podcasting/</loc>
-    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <loc>https://preslav.me/categories/podcasting/</loc>
+    <lastmod>2019-09-26T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/podcasting/</loc>
-    <lastmod>2019-09-26T10:20:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/podcasting/</loc>
+    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1146,20 +1146,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/productivity/</loc>
-    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/categories/productivity/</loc>
     <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2020-03-07T17:04:29+01:00</lastmod>
+    <loc>https://preslav.me/tags/productivity/</loc>
+    <lastmod>2019-11-06T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1170,13 +1164,19 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/project/</loc>
-    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/programming/</loc>
+    <lastmod>2020-03-07T17:04:29+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/project/</loc>
+    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/project/</loc>
     <lastmod>2019-10-10T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1188,20 +1188,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/python/</loc>
-    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/categories/python/</loc>
     <lastmod>2019-03-18T06:30:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/qa/</loc>
-    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
+    <loc>https://preslav.me/tags/python/</loc>
+    <lastmod>2019-10-26T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1212,13 +1206,19 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/quote/</loc>
-    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <loc>https://preslav.me/tags/qa/</loc>
+    <lastmod>2019-10-31T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://preslav.me/categories/quote/</loc>
+    <lastmod>2020-02-10T19:07:54+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/quote/</loc>
     <lastmod>2020-02-10T19:07:54+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1246,13 +1246,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/react-native/</loc>
+    <loc>https://preslav.me/categories/react-native/</loc>
     <lastmod>2017-03-26T05:25:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/react-native/</loc>
+    <loc>https://preslav.me/tags/react-native/</loc>
     <lastmod>2017-03-26T05:25:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1288,13 +1288,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/running/</loc>
+    <loc>https://preslav.me/categories/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/running/</loc>
+    <loc>https://preslav.me/tags/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1366,13 +1366,13 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/startups/</loc>
+    <loc>https://preslav.me/categories/startups/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/startups/</loc>
+    <loc>https://preslav.me/tags/startups/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1424,14 +1424,14 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/tips/</loc>
-    <lastmod>2020-03-01T17:50:14+01:00</lastmod>
+    <loc>https://preslav.me/categories/tips/</loc>
+    <lastmod>2019-12-21T08:35:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/tips/</loc>
-    <lastmod>2019-12-21T08:35:04+00:00</lastmod>
+    <loc>https://preslav.me/tags/tips/</loc>
+    <lastmod>2020-03-01T17:50:14+01:00</lastmod>
     <priority>0</priority>
   </url>
   
