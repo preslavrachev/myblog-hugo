@@ -8,7 +8,7 @@
 <meta name="description" content="Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
 struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
 struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment." />
-<meta name="keywords" content="programming, golang, python, Optimization, Tips, Struct, Golang" />
+<meta name="keywords" content="programming, golang, python, elixir, Optimization, Tips, Struct, Golang" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/" />
@@ -60,7 +60,7 @@ struct { b int32 c string d string a bool } Why is that? Well, think of memory a
 
 <meta itemprop="keywords" content="Optimization,Tips,Struct,Golang," />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://preslav.me"/>
+<meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
 
 <meta name="twitter:title" content="Reduce Struct Size by Laying out Attributes Accordingly"/>
 <meta name="twitter:description" content="Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.

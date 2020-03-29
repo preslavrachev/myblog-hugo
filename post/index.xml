@@ -6,8 +6,49 @@
         <description>Recent content in Posts on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 20 Mar 2020 11:28:11 +0100</lastBuildDate>
+        <lastBuildDate>Sun, 29 Mar 2020 21:36:52 +0200</lastBuildDate>
         <atom:link href="https://preslav.me/post/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>This Week in Social Distancing</title>
+            <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
+            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
+            <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
+Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying.</description>
+            <content type="html"><![CDATA[
+
+<p>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.</p>
+
+<p>Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying. Many of them among the classes of society, which would normally be spared the inconvenience of feeling the pain and misery of the masses. The Coronavirus is an equaliser. It spares no age, money, nor class of society.</p>
+
+<p>For everyone else, things are moving along, albeit slowly, and under the dark forecast of an impeding economic depression. People in my circles have been fighting to keep their jobs for the first time in more than a decade. Many of them, up until a month ago still drank the cool-aid called having an impact on the world. The sincere belief that they actually help <em>make the world a better place</em>. That everything can be solved with technology. That there&rsquo;s more capital in the world than ever before. Until, the ship started sinking.</p>
+
+<p>What surprised me is how many businesses went belly up in just a couple of months. I perfectly understand that the rules of the game have been tweaked to favour investing and chasing growth. But honestly, two months of salaries and rent and that&rsquo;s it? It&rsquo;s called high risk - high reward, I know. Yet, it still cracks me up when I think about it.</p>
+
+<h2 id="what-doesn-t-kill-me-makes-me-stronger">What doesn&rsquo;t kill me, makes me stronger</h2>
+
+<p>I like to believe in that maxim. If we survive this crisis, we will be stronger than ever. Actually, for some people, this situation is the perfect opportunity to start something new, hopefully having learned some mistakes from the past.</p>
+
+<p>I, in particular, started using some of the time to go back to my personal projects. In only a couple of weeks, I have essentially managed to re-write a substantial part of <a href="https://mixtape.preslav.me/" target="_blank">Mixtape</a>&rsquo;s original code in Elixir. On top of that, there are now many new features that make the experience complete, albeit, still quite ugly. My motivation is higher than ever, but I am trying to just make things right, without overdoing them, or focusing on the useless things, such as growth.</p>
+
+<p>Will <a href="https://mixtape.preslav.me/" target="_blank">Mixtape</a> become the YouTube of podcasting? Probably not, and I don&rsquo;t really care. It makes me happy, it serves my needs, and if it serves those of others, even better. I&rsquo;d much rather focus on making something that a small niche of customers would use and gladly support its development.</p>
+
+<p>If it doesn&rsquo;t, so be it. Besides the time spent working on Mixtape, (which I consider valuable learning) keeping the app alive costs me nothing. The actual infrastructure costs at the moment sum up to around $7/m. Yes, you heard it right. A podcasting search engine, serving close to 3 million podcast episodes for just $7/m. And, I am not talking about some buzz-worthy cloud crap, but a tiny old-school VM that hosts Mixtape among a couple of other experiments. You can&rsquo;t beat that! <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<p>Enough boasting. This is not the idea of the post, but to hopefully reach out to others out there, lost in their own thoughts. Yes, it&rsquo;s a tough time, but usually being down at the bottom gives you a chance to change your life. Pick up your old ideas and dreams, and start slowly, step by step.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">I am planning a separate post that focuses entirely on the recent development around Mixtape.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+]]></content>
+        </item>
         
         <item>
             <title>Stay the F*** Home, Germany!</title>
@@ -902,74 +943,6 @@ puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></di
     </div>
   </div>
 </div>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Reflecting on My Experience With Go, One Year After</title>
-            <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
-            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
-            <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
- I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
-            <content type="html"><![CDATA[
-
-<p>In my little more than a year day-to-day developer experience with Go, I have so far <strong>learned three things</strong>:</p>
-
-<ol>
-<li>I can change my entire view of how programming works, even after 12+ years of doing it in one form or another.</li>
-<li>People are blaming Java for all the wrong reasons</li>
-<li>People are praising Go for all the wrong reasons</li>
-</ol>
-
-<p>Let me explain. This post is not about saying that “language A is better than language B”, or vice versa. It is about asking ourselves the question why things work the way they do, and whether doing them differently is a bad, or potentially, good thing.</p>
-
-<p>Before joining the Go camp, I had worked quite a few years as a Java developer, with all the stereotypes that this role could evoke in one’s head. I co-developed data-processing systems for various industries. Yet, much of the code I wrote was just boilerplate: passing data from one format to the other, or devising complex abstractions behind what should have really just been calling a function and obtaining its result. Yes, the code was difficult to comprehend, but I was proud of it for this exact reason. The more hoops I created, the more secure I felt that:</p>
-
-<ol>
-<li>I was doing what I thought was right</li>
-<li>If people didn’t understand the code, they’d have to come to me for an advice, further boosting my ego.</li>
-</ol>
-
-<h2 id="the-language-is-not-to-blame-for-this">The language is not to blame for this</h2>
-
-<p>The fact that much of the existing Java code is full of bureaucracy has nothing to do with the language itself, or with its platform. Our developer community should bear the sole responsibility. I can assure anyone that perfectly functioning Java applications can be written without 90% of the ceremony. They will be smaller and run faster. Most probably, easier to comprehend, too. And yet, they won’t get you hired in any well-respected company. They just won’t pass the <em>developer prejudice</em> test. I know. I’ve seen many elegant solutions and rejected them for not being /idiomatic/ enough.</p>
-
-<h2 id="go-isn-t-a-silver-bullet-either">Go isn’t a silver bullet either</h2>
-
-<p>For much of the same reasoning, jumping ship towards Go, just because “it is not Java”, won’t bring anyone far. Even before I started writing Go, I had heard and read many stories, about how simple and fast it made everything, how little ceremony it had, compared to Java, how it would eventually kill all other languages, etc. All blah, blah. Despite all of the above being true, you have to discover the truth in each for yourselves. If you approach the language out of desperation with your current way of working, you’re going to be set for a rough path.</p>
-
-<p>See, if you all you wanted was to get a faster running (name language of choice), you could certainly do it. Yet, holding on to the mental baggage of your previous experience will be hard and messy. My first Go project started out as a rewrite of a Spring Boot app I’d started earlier, so I thought I’d just organize it the same way. To keep the story short, let’s just say it was a spectacular disaster. Only after I started from scratch, did it really start taking off.</p>
-
-<h2 id="go-is-a-language-without-with-less-idioms">Go is a language without (with less) idioms</h2>
-
-<p>Let’s do a naive math experiment. Imagine that you could create valid programming expressions combining any 3 keywords, from a programming language’s vocabulary. Thus, if a language only has 10 keywords, the maximum number of possible expressions is 10 * 9 * 8 = 720. In contrast, a language, with, say, 20 keywords would end up having 20 * 19 * 18 = 6840 expressions. Twice as many keywords would result in almost 10 times as many expressions!</p>
-
-<p>Languages tend to encourage the creation and use of idioms. With that many possible expressions, it’s a normal behaviour for an individual, or a group of people to start associating and using expressions for certain things. The problems usually occur when another group comes with its own way of expressing the same thing. Both are perfectly valid, but each group would have issues understanding the other.</p>
-
-<p>This is not to say that Go having a very strict and concise nature, is totally devoid of idioms. That would be impossible. It is in our nature to try to associate and abstract certain concepts. Yet, when a language has a deliberately smaller vocabulary, the chances for different groups accidentally finding multiple ways of doing the same thing are smaller. This helps the communication between people a great deal, but comes with a very obvious downside. Code (or any written expression, for that matter) without idioms is very, very verbose.</p>
-
-<p>So, whoever told you that Go is not a verbose language, probably either lied to you on purpose, or had’n really seen any other programming languages up until that point. But hey, we agreed that verbosity in the name of communication and common understanding is a actually a good thing, right?s</p>
-
-<h2 id="go-is-a-test-for-senior-engineers">Go is a test for senior engineers</h2>
-
-<p>A lot has been said about the initial concept about Go, and how the idea was to design a language for juniors fresh out of college, and with little programming experience. I think that understanding the beauty of going back to the roots of programming, can be a cathartic experience for many seasoned programmers.</p>
-
-<p>See, junior programmers start with little baggage and preconceptions, so in their view, anything that can be done with code is fair and justified. Including, burning a CPU, or erasing a disk due to an arithmetic error.</p>
-
-<p>Somewhere along the middle of the career path, a bunch of principles start to pile up. All of them out of the desire to step on what’s already been learned, and to make sure that things are smoothly and safely without immediate supervision. Learning and applying the principles is great, because it ensures a gradual path forward. But for many, it becomes a dogma which they blindly stick to, without asking whether a simpler alternative could be better.</p>
-
-<p>The problem with principles is that they only work well around 80% of the time. It is the remaining 20% that can be disastrous for a project, or for one’s career. It is the understanding where to apply a principle, and where to deliberately throw it away in the name of pragmatism, which turns a software engineer into a senior software engineer.</p>
-
-<p>To really appreciate Go, one needs to learn how to discern what makes it and its community stand out from the rest. One needs to go through a phase of utter disgust with the language, for it “lacking” certain feature. Moving on despite the urge to go back to a familiar ground, would result in one of two things:</p>
-
-<ol>
-<li>Make one realise that indeed, the Go language is not what they need or want</li>
-<li>Learn to appreciate going back to the roots, as well as when to favour pragmatism over principles</li>
-</ol>
-
-<p>In any case, it would be an interesting experience.</p>
 ]]></content>
         </item>
         

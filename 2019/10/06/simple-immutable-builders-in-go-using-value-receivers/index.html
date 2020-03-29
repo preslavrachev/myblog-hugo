@@ -7,7 +7,7 @@
 <meta name="author" content="Preslav Rachev">
 <meta name="description" content="Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
 l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?" />
-<meta name="keywords" content="programming, golang, python, Programming, Go, Golang, Tips" />
+<meta name="keywords" content="programming, golang, python, elixir, Programming, Go, Golang, Tips" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/" />
@@ -58,7 +58,7 @@ l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that
 
 <meta itemprop="keywords" content="Programming,Go,Golang,Tips," />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://preslav.me"/>
+<meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
 
 <meta name="twitter:title" content="Simple Immutable Builders in Go, Using Value Receivers"/>
 <meta name="twitter:description" content="Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
