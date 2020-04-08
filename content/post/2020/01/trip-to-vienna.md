@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = []
 date = 2020-01-05T23:00:00Z
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = []
