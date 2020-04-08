@@ -15,6 +15,12 @@ My wife and I spent the last two days in beautiful Vienna. This trip changed qui
 
 ![](/images/2020/04/IMG_0421-scaled.jpg)
 
+![](/images/2020/04/IMG_0395-scaled.jpg)
+
+![](/images/2020/04/IMG_0433-scaled.jpg)
+
+![](/images/2020/04/IMG_0406-scaled.jpg)
+
 There is no doubt that Vienna is a world city, both historically, geographically, and culturally. For years in a row, the city has been named the world’s best place to live in, and as much as Munich is trying to steal the title, it’s not come close yet.
 
 Yet, I’ve always put such statistics aside, after having read the stories of tens of expats who had chosen Austria as a place to start a new life. Especially in the 90s and 00s, people claimed, living as an expat in Austria was hard. Being judged by everyone, and having to fight prejudice everywhere, made the lives of many first and second generation expats quite a traumatic experience.
