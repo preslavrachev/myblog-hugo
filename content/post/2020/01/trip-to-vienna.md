@@ -1,11 +1,11 @@
 +++
 author = "Preslav Rachev"
-categories = []
+categories = ["Travel", "Photo Stories"]
 date = 2020-01-05T23:00:00Z
-description = ""
+description = "My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital."
 featured_image = ""
 slug = ""
-tags = []
+tags = ["Vienna", "Austia", "2 Cents"]
 title = "Trip to Vienna"
 
 +++
