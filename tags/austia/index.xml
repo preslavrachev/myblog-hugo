@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Austia on Random Bits of Wisdom</title>
+    <link>https://preslav.me/tags/austia/</link>
+    <description>Recent content in Austia on Random Bits of Wisdom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 23:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/austia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Trip to Vienna</title>
+      <link>https://preslav.me/2020/01/05/trip-to-vienna/</link>
+      <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/05/trip-to-vienna/</guid>
+      <description>My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital.
+There is no doubt that Vienna is a world city, both historically, geographically, and culturally. For years in a row, the city has been named the world’s best place to live in, and as much as Munich is trying to steal the title, it’s not come close yet.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -52,6 +52,16 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
     </item>
     
     <item>
+      <title>Trip to Vienna</title>
+      <link>https://preslav.me/2020/01/05/trip-to-vienna/</link>
+      <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/01/05/trip-to-vienna/</guid>
+      <description>My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital.
+There is no doubt that Vienna is a world city, both historically, geographically, and culturally. For years in a row, the city has been named the world’s best place to live in, and as much as Munich is trying to steal the title, it’s not come close yet.</description>
+    </item>
+    
+    <item>
       <title>Why Is Bulgaria So Poor?</title>
       <link>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</link>
       <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
@@ -100,16 +110,6 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
       <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
 &amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] Ten Years of Erlang</title>
-      <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
-      <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
-      
-      <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
-      <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
- @media (max-width: 640px) { .</description>
     </item>
     
   </channel>
