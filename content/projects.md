@@ -1,7 +1,12 @@
 +++
 author = "Preslav Rachev"
+categories = []
+cover = ""
 date = 2018-12-06T06:29:15Z
+description = ""
+featured_image = ""
 slug = "projects"
+tags = []
 title = "Projects"
 type = "page"
 
