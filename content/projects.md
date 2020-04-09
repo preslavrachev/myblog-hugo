@@ -14,7 +14,6 @@ type = "page"
 +++
 <style scoped>
   .grid {
-  	display: flex;
     column-count: 3;
   } 
 </style>  
