@@ -35,6 +35,9 @@ fields:
     required: false
   label: Cover
   hidden: false
+- name: toc
+  type: boolean
+  label: Table of Contents
 pages:
 - content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
 - content/post/2018/i-made-a-mastodon-account-and-i-like-it.md
