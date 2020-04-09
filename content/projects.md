@@ -8,6 +8,7 @@ featured_image = ""
 slug = "projects"
 tags = []
 title = "Projects"
+toc = true
 type = "page"
 
 +++
