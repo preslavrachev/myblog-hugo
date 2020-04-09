@@ -12,7 +12,26 @@ toc = false
 type = "page"
 
 +++
+<style scoped>
+  .grid {
+  	display: flex;
+    column-count: 3;
+  } 
+</style>  
+
 What follows is a small showcase of applications, I have worked on over the past years and I am really proud sharing.
+
+<div class="grid">
+  <div class="card">
+    A
+  </div>
+  <div class="card">
+    B
+  </div>
+  <div class="card">
+    C
+  </div>
+</div>  
 
 ## Mixtape
 
