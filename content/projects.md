@@ -1,25 +1,25 @@
 +++
 author = "Preslav Rachev"
 date = 2018-12-06T06:29:15Z
-draft = false
 slug = "projects"
-# featured_image = "/images/banner.jpg"
 title = "My Work and Projects"
 type = "page"
-+++
 
-_**Note:** This section is currently in development. Apologies for the temporary inconvenience._
++++
+**_Note:_** _This section is currently in development. Apologies for the temporary inconvenience._
 
 ## Work
-I am currently working as a senior engineer and technical lead at [KI labs GmbH](https://www.ki-labs.com/).
+
+I am currently working as a senior engineer and project technical lead at [KI labs GmbH](https://www.ki-labs.com/).
 
 <div style="font-size: 0.8rem">
 {{<oembed "https://www.ki-labs.com/services/">}}
 </div>
 
-Before that, I spent years builiding systems for the [real-estate financing sector](https://www.check24.de/baufinanzierung/), as well as [ones](https://tellitapp.com/) aggregating large amounts of data from various sources. 
+Before that, I spent years builiding systems for the [real-estate financing sector](https://www.check24.de/baufinanzierung/), as well as [ones](https://tellitapp.com/) aggregating large amounts of data from various sources.
 
 ## Personal Projects
+
 Besides my work obligations, I have set time aside for personal endeavours.
 
 ### NoEmbed
