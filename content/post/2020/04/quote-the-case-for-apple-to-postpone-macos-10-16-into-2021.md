@@ -2,7 +2,7 @@
 author = "Preslav Rachev"
 categories = ["Quote"]
 cover = ""
-date = ""
+date = 2020-04-01T22:00:00Z
 description = ""
 featured_image = ""
 slug = ""
