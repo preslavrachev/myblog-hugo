@@ -4,7 +4,6 @@ categories = []
 cover = ""
 date = ""
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = []
