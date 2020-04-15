@@ -16,7 +16,7 @@ I spent some portion of the Easter weekend working on a demo of a WebRTC video c
 
 The server side was quite easy. Though, I hadn't had a lot of experience with either Phoenix Channels or Presence, I managed to set up a real-time server in no time. It exclusively relies on sockets for the critical communication between Web clients.
 
-For the most part, wiring the sockets 
+For the most part, developing the frontend was easy as well. Wiring up the sockets for the Phoenix Channels and Presence has its quirks, but I easily managed to get past that stage.
 
 ## Links
 
