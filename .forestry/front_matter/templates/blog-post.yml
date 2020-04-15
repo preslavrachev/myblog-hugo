@@ -29,6 +29,15 @@ fields:
   config:
     maxSize: 250
   label: Featured Image
+- name: cover
+  type: text
+  config:
+    required: false
+  label: Cover
+  hidden: false
+- name: toc
+  type: boolean
+  label: Table of Contents
 pages:
 - content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
 - content/post/2018/i-made-a-mastodon-account-and-i-like-it.md
@@ -46,3 +55,6 @@ pages:
 - content/post/2019/sixtus-half-marthon-schliersee-2019.md
 - content/post/2019/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container.md
 - content/post/2020/01/trip-to-vienna.md
+- content/post/2020/04/My Short Deep Dive into WebRTC.md
+- content/post/2020/04/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021.md
+- content/projects.md
