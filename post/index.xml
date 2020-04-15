@@ -6,8 +6,67 @@
         <description>Recent content in Posts on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 30 Mar 2020 10:38:05 +0200</lastBuildDate>
+        <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/post/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
+            <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
+            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
+            <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
+            <content type="html"><![CDATA[<p>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&rsquo;s Apple we&rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid. Who knows.</p>
+
+<p>via <a href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021/" target="_blank">The Case for Apple to Postpone macOS 10.16 into 2021</a></p>
+
+<blockquote>
+<p>We’re all struggling to stay safe and secure in macOS 10.15 Catalina or even 10.14 Mojave. And since new apps are being pressed into service for working at home, the last thing we need is a new version of macOS with its traditional teething pains—especially in post WWDC betas. We don’t need any rugs pulled out from under our collaboration apps. Let’s focus on stability and security until the pandemic has completely dissipated.</p>
+
+<p>[…]</p>
+
+<p>Our developer heroes have been complaining for years that they just can’t keep up with the fast-evolving structural and security changes in macOS every 12 months. A six month delay in 10.16 would provide critical time to iron out the kinks in their apps due to changes in Catalina. Not to mention relaxing stress on the developers due to concern for their family’s health.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.macobserver.com/wp-content/uploads/2019/03/Apple-iMac-2019-1200w.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Case for Apple to Postpone macOS 10.16 into 2021 - The Mac Observer</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Apple previews the next version of macOS at WWDC, then releases it late September. Now there&#39;s a case to be made to postpone macOS into 2021.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">https://www.macobserver.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
         
         <item>
             <title>[Quote]: The President Is Trapped</title>
@@ -870,67 +929,6 @@ Buy on Amazon
     </div>
   </div>
 </div>
-]]></content>
-        </item>
-        
-        <item>
-            <title>A Crystal in Go’s World</title>
-            <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
-            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
-            <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
-Meet Crystal!
-Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
-            <content type="html"><![CDATA[
-
-<p>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.</p>
-
-<p>Meet <a href="https://crystal-lang.org/" target="_blank">Crystal</a>!</p>
-
-
-    <img src="/images/2020/image-crystal.png"  alt="Crystal home page"  class="center"  style="border-radius: 8px;"  />
-
-
-
-<p>Crystal is all of the above, plus it has types, <a href="https://crystal-lang.org/reference/overview/" target="_blank">outstanding documentation</a>, and a strong community, delivering a steady stream of new libraries (a.k.a “shards”). Don’t get fooled by the current version number (0.32.1). Crystal has been around for quite a few years (since 2012) and has a mature set of language features and an ecosystem of good libraries.</p>
-
-<h2 id="where-does-the-speed-come-from">Where does the speed come from?</h2>
-
-<p>Crystal produces fast and lightweight native applications using the LLVM infrastructure. When I say fast, I mean, <a href="https://github.com/kostya/benchmarks" target="_blank">really fast</a>. Take the fastest Go code you can find and chances are, the same code in Crystal will perform at least on par with it, and often quite a bit faster. Measuring Crystal’s performance against that of Ruby makes no sense.</p>
-
-<p>There are no runtime frameworks or virtual machines necessary. One can just grab the compiled binary and deploy it. When compared with deploying and running a Ruby application, this feels like a whole different league.</p>
-
-<p>Note that there are some caveats, which I am going to discuss in a future blog post. For now, let’s just say that building and distribution are equally as easy, as those in Rust. As of yet, nothing can beat the Go compiler speed-wise, but my experience with the Crystal tooling has been more than pleasant so far.</p>
-
-<h2 id="csp-style-concurrency">CSP-style concurrency</h2>
-
-<p>One of the things that make Go so interesting is its concurrency model. The idea about goroutines that communicate via channels is based on an approach dating back to the late 1970s, called <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes" target="_blank">Communicating Sequential Processes (CSP)</a>. Crystal uses an analogous approach. Programs run in what is known as <a href="https://crystal-lang.org/reference/guides/concurrency.html" target="_blank">“fibers”</a>. The main fiber can spawn any number of concurrent fibers that send and receive data via blocking channels.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-crystal" data-lang="crystal">channel <span style="color:#f92672">=</span> Channel(Nil)<span style="color:#f92672">.</span>new 
-spawn <span style="color:#66d9ef">do</span>    
-	puts <span style="color:#e6db74">&#34;Before send&#34;</span>    
-	channel<span style="color:#f92672">.</span>send(<span style="color:#66d9ef">nil</span>)    
-	puts <span style="color:#e6db74">&#34;After send&#34;</span> 
-<span style="color:#66d9ef">end</span>  
-
-puts <span style="color:#e6db74">&#34;Before receive&#34;</span> 
-channel<span style="color:#f92672">.</span>receive 
-puts <span style="color:#e6db74">&#34;After receive&#34;</span></code></pre></div>
-<h2 id="why-re-invent-ruby-in-2020">Why re-invent Ruby in 2020?</h2>
-
-<p>The creators of Crystal obviously didn’t intend on changing the world of programming by creating a new language. They just <a href="https://web.archive.org/web/20181126095302/https://manas.tech/blog/2016/04/01/the-story-behind-crystal.html" target="_blank">loved Ruby</a> and felt it sad to leave it for a more performant and type-safe alternative. Due to a series of trade-offs at the implementation level, Ruby is still slower and more memory-hungry than its competitors. Despite perfectly serving the needs of a large segment of Web users through Rails, its performance puts it at the back of the pack, when it comes to other use cases.</p>
-
-<p>The point is fair and valid. As a language, Ruby has a concise and elegant syntax for writing. Once beyond the basic idioms, writing Ruby evokes pure joy. Crystal brings that joy to an even higher level through type-safety, native speed, and extremely simple concurrency model.</p>
-
-<p>Don’t get me wrong, I like Go too, precisely because of its verbosity and lack of idioms. When working with others on a big project, I’d prefer more ceremony and hoops, in the name of transparency and equal code comprehension. Different languages exist to serve different purposes and be used by different groups of people. The trick is knowing when to use and when the other.</p>
-
-<h2 id="so-is-crystal-worth-having-a-look">So, is Crystal worth having a look?</h2>
-
-<p>Absolutely! If only to know that it exists and keep an eye on it, I’d go check it out and write a few applications with it. Whether Crystal will take off in the future is a bit more difficult to say, however. As mentioned, the 99% resemblance to Ruby is nice, and so is the blazing-fast performance. Yet, I am missing the Crystal community’s drive towards more prominence. There has been a long-awaited move towards a 1.0 release, which is a crucial milestone and would surely bring in many newcomers. To my understanding, the language and its tooling are stable enough for a 1.0 release.</p>
-
-<p>I understand that Crystal does not have the backing of either Google or Mozilla. Neither does it have multi-billion-dollar use-cases to put on its home page. I understand that fighting for the same space with Go, C/C++, and Rust is an unfair battle. Yet, I also believe that we’re long past the days when choosing one technology over another was a zero-sum game. All it needs is a little push.</p>
-
-<p>I am hoping for the best!</p>
 ]]></content>
         </item>
         
