@@ -4,7 +4,6 @@ categories = ["Book", "Quote"]
 cover = ""
 date = ""
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = ["Entrepreneurship", "Dev Culture", "Book", "Quote"]
