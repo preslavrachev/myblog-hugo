@@ -6,10 +6,21 @@
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Quote]: Developer Hegemony: The Future of Labor</title>
+      <link>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</link>
+      <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</guid>
+      <description>A quote from the amazing book &amp;ldquo;Developer Hegemony&amp;rdquo; (Buy on Amazon) by Erik Dietrich:
+ You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other.
+ How many of you, dear readers think this way?</description>
+    </item>
     
     <item>
       <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
@@ -96,18 +107,6 @@ Much of the tooling we use to mitigate tech debt is preventive.</description>
       <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
       <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
 But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] You Can Think of Any Web Server as a Function</title>
-      <link>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</link>
-      <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</guid>
-      <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
- Excerpt From Programming Phoenix by Chris McCord
-Buy on Amazon
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
     </item>
     
   </channel>

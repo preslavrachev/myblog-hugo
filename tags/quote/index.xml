@@ -6,10 +6,21 @@
     <description>Recent content in Quote on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 16:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/quote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Quote]: Developer Hegemony: The Future of Labor</title>
+      <link>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</link>
+      <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</guid>
+      <description>A quote from the amazing book &amp;ldquo;Developer Hegemony&amp;rdquo; (Buy on Amazon) by Erik Dietrich:
+ You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other.
+ How many of you, dear readers think this way?</description>
+    </item>
     
     <item>
       <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
@@ -100,17 +111,6 @@ Some of the top podcasts on YouTube are pulling in millions of views every few d
       <guid>https://preslav.me/microblog/220920191020/</guid>
       <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
 Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201909021700/</link>
-      <pubDate>Mon, 02 Sep 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201909021700/</guid>
-      <description>A quote from &amp;ldquo;The Mom Test&amp;rdquo; by Rob Fitzpatrick
- It’s not anyone else’s responsibility to show us the truth. It’s our responsibility to find it.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Mom Test  The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&amp;#39;t ask your mom wh... https://www.goodreads.com |  Created with NoEmbed    </description>
     </item>
     
   </channel>

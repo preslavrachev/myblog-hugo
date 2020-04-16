@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on Random Bits of Wisdom</title>
+    <link>https://preslav.me/categories/book/</link>
+    <description>Recent content in Book on Random Bits of Wisdom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 15 Apr 2020 16:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/categories/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Quote]: Developer Hegemony: The Future of Labor</title>
+      <link>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</link>
+      <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</guid>
+      <description>A quote from the amazing book &amp;ldquo;Developer Hegemony&amp;rdquo; (Buy on Amazon) by Erik Dietrich:
+ You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other.
+ How many of you, dear readers think this way?</description>
+    </item>
+    
+  </channel>
+</rss>

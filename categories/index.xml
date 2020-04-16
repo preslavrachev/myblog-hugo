@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Book</title>
+      <link>https://preslav.me/categories/book/</link>
+      <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/categories/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Science</title>
       <link>https://preslav.me/categories/data-science/</link>
       <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
@@ -89,15 +98,6 @@
       <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
       
       <guid>https://preslav.me/categories/gulp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ios</title>
-      <link>https://preslav.me/categories/ios/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/categories/ios/</guid>
       <description></description>
     </item>
     
