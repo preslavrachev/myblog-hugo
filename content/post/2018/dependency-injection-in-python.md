@@ -1,7 +1,7 @@
 +++
 author = "Preslav Rachev"
 categories = ["Programming", "Python"]
-cover = ""
+cover = "/images/2020/04/photo-1467733238130-bb6846885316.jpg"
 date = 2018-12-20T13:34:36Z
 description = "In this post, I will lay out my arguments why you might want to think about dependency injection for your next Python project. I am not trying to preach a certain style of \"best-practice\" programming, but simply, to share my perspective from the eyes of a seasoned Java developer."
 featured_image = ""
