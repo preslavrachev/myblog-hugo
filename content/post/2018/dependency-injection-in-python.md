@@ -7,7 +7,7 @@ description = "In this post, I will lay out my arguments why you might want to t
 featured_image = ""
 image = "https://images.unsplash.com/photo-1467733238130-bb6846885316?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 slug = "dependency-injection-in-python"
-tags = ["Programming", "Python"]
+tags = ["Dependency Injection", "Programming", "Python"]
 title = "Dependency Injection in Python: The Java Guy's Perspective"
 toc = false
 
