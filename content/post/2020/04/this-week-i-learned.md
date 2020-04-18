@@ -2,9 +2,8 @@
 author = "Preslav Rachev"
 categories = ["TWIL"]
 cover = ""
-date = ""
+date = 2020-04-17T22:00:00Z
 description = ""
-draft = true
 featured_image = ""
 slug = "this-week-I-learned"
 tags = []
