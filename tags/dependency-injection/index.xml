@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dependency Injection on Random Bits of Wisdom</title>
+    <link>https://preslav.me/tags/dependency-injection/</link>
+    <description>Recent content in Dependency Injection on Random Bits of Wisdom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 20 Dec 2018 13:34:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://preslav.me/tags/dependency-injection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
+      <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
+      <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
+      
+      <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
+      <description>Dependency Injection (DI) in Python? Seriously? 🤔
+At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? Spoiler: I am going to mention Spring only once in this post, I promise.
+NOTE: If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to the example at the end.</description>
+    </item>
+    
+  </channel>
+</rss>
