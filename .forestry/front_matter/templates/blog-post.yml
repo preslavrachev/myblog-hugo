@@ -30,15 +30,16 @@ fields:
     maxSize: 250
   label: Featured Image
 - name: cover
-  type: text
+  type: file
   config:
-    required: false
+    maxSize: 250
   label: Cover
-  hidden: false
 - name: toc
   type: boolean
   label: Table of Contents
 pages:
+- content/microblog/201906251911.md
+- content/post/2018/dependency-injection-in-python.md
 - content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
 - content/post/2018/i-made-a-mastodon-account-and-i-like-it.md
 - content/post/2019/adding-version-information-to-go-binaries.md

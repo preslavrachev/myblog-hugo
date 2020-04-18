@@ -1,16 +1,17 @@
 +++
 author = "Preslav Rachev"
 categories = ["Programming", "Python"]
+cover = "/images/2020/04/photo-1467733238130-bb6846885316.jpg"
 date = 2018-12-20T13:34:36Z
 description = "In this post, I will lay out my arguments why you might want to think about dependency injection for your next Python project. I am not trying to preach a certain style of \"best-practice\" programming, but simply, to share my perspective from the eyes of a seasoned Java developer."
-draft = false
+featured_image = ""
 image = "https://images.unsplash.com/photo-1467733238130-bb6846885316?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
 slug = "dependency-injection-in-python"
-tags = ["Programming", "Python"]
+tags = ["Dependency Injection", "Programming", "Python"]
 title = "Dependency Injection in Python: The Java Guy's Perspective"
+toc = false
 
 +++
-
 Dependency Injection (DI) in Python? Seriously? 🤔
 
 At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? _Spoiler:_ I am going to mention Spring only once in this post, I promise.
@@ -214,4 +215,3 @@ I will stop here. I hope, if not really having managed to convince you, to have 
 [8]: https://github.com/google/guice
 [9]: https://www.python.org/dev/peps/pep-0484/
 [10]: https://github.com/alecthomas/flask_injector
-
