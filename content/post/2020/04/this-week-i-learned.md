@@ -7,7 +7,7 @@ description = ""
 featured_image = ""
 slug = "this-week-I-learned"
 tags = []
-title = ""
+title = "This Week I Learned"
 toc = false
 
 +++
