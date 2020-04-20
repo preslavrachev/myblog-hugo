@@ -35,3 +35,7 @@ Check this out:
 {{<twitter "1177559150563344384">}}
 
 As it turns out, setting `document.designMode="on"` in the browser's console, will start a special mode on your browser, which allows you to edit any visible portion of any page. I have checked its existence on Chrome, Firefox, Brave (Chromium), and Safari. More of a visual gimmick than a really useful feature, if you ask me, but still, some people might find this useful.
+
+## Misc
+
+{{<oembed "https://atoms.com/products/atoms-everyday-mask">}}
