@@ -2,13 +2,13 @@
 author = "Preslav Rachev"
 categories = ["TWIL"]
 cover = ""
-date = 2020-04-16T22:00:00Z
-description = ""
+date = 2020-04-18T22:00:00Z
+description = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week."
 featured_image = ""
 slug = "this-week-I-learned"
 tags = ["Firefox", "Chrome", "PlayStation", "Nintendo", "Sony", "Golang", "Podcast"]
 title = "This Week I Learned"
-toc = false
+toc = true
 
 +++
 This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
@@ -40,4 +40,6 @@ As it turns out, setting `document.designMode="on"` in the browser's console, wi
 ## Misc
 
 [Atoms Everyday Mask](https://atoms.com/products/atoms-everyday-mask)
+
+
 Comfortable non-medical face mask made from a blend of Polyester, Nylon, and PU with copper fused thread. They are hand washable up to 30 times, after which they behave like a regular cloth mask, just the copper will have worn down. Each mask comes with a lanyard and a pouch for safe storage.
