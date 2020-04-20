@@ -6,7 +6,7 @@ date = 2020-04-16T22:00:00Z
 description = ""
 featured_image = ""
 slug = "this-week-I-learned"
-tags = ["Golang", "Podcast"]
+tags = ["Firefox", "Chrome", "PlayStation", "Nintendo", "Sony", "Golang", "Podcast"]
 title = "This Week I Learned"
 toc = false
 
