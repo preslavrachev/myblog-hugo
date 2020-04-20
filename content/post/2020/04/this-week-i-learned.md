@@ -8,7 +8,7 @@ featured_image = ""
 slug = "this-week-I-learned"
 tags = ["Firefox", "Chrome", "PlayStation", "Nintendo", "Sony", "Golang", "Podcast"]
 title = "This Week I Learned"
-toc = true
+toc = false
 
 +++
 This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
