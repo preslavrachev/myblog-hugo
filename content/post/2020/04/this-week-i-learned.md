@@ -31,6 +31,7 @@ I am a child of the 90s. Technically, I was born in 1987, but I spent much of my
 ## Tips and Tricks
 
 ### Browser Design Mode
+
 Check this out:
 {{<twitter "1177559150563344384">}}
 
@@ -38,4 +39,5 @@ As it turns out, setting `document.designMode="on"` in the browser's console, wi
 
 ## Misc
 
-{{<oembed "https://atoms.com/products/atoms-everyday-mask">}}
+[Atoms Everyday Mask](https://atoms.com/products/atoms-everyday-mask)
+Comfortable non-medical face mask made from a blend of Polyester, Nylon, and PU with copper fused thread. They are hand washable up to 30 times, after which they behave like a regular cloth mask, just the copper will have worn down. Each mask comes with a lanyard and a pouch for safe storage.
