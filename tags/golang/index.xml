@@ -6,10 +6,20 @@
     <description>Recent content in Golang on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This Week I Learned</title>
+      <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
+      <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
+      <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
+Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</description>
+    </item>
     
     <item>
       <title>Elixir-Style Actors in Go</title>
@@ -97,17 +107,6 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
       
       <guid>https://preslav.me/2019/08/29/goland-license/</guid>
       <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
-    </item>
-    
-    <item>
-      <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
-      <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
-      <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
-struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
-struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
     </item>
     
   </channel>

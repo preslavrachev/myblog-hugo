@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2020/04/18/this-week-i-learned/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</loc>
     <lastmod>2020-04-15T16:00:00+00:00</lastmod>
   </url>
@@ -717,6 +722,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/chrome/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/coffee/</loc>
     <lastmod>2019-07-13T16:24:31+00:00</lastmod>
     <priority>0</priority>
@@ -853,6 +864,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/firefox/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/flutter/</loc>
     <lastmod>2019-11-11T07:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -896,7 +913,7 @@
   
   <url>
     <loc>https://preslav.me/tags/golang/</loc>
-    <lastmod>2020-03-07T17:04:29+01:00</lastmod>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1135,6 +1152,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/nintendo/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/optimization/</loc>
     <lastmod>2019-08-27T15:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1177,8 +1200,14 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/playstation/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/podcast/</loc>
-    <lastmod>2019-10-10T22:00:00+00:00</lastmod>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1202,7 +1231,7 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-04-15T16:00:00+00:00</lastmod>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1304,7 +1333,7 @@
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-04-15T16:00:00+00:00</lastmod>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1411,6 +1440,12 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/sony/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/spring-boot/</loc>
     <lastmod>2019-05-07T22:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1509,6 +1544,12 @@
   <url>
     <loc>https://preslav.me/tags/trump/</loc>
     <lastmod>2020-03-30T10:38:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/categories/twil/</loc>
+    <lastmod>2020-04-18T22:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

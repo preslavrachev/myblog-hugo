@@ -6,10 +6,20 @@
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 15 Apr 2020 16:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This Week I Learned</title>
+      <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
+      <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
+      <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
+Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</description>
+    </item>
     
     <item>
       <title>[Quote]: Developer Hegemony: The Future of Labor</title>
@@ -97,16 +107,6 @@ Much of the tooling we use to mitigate tech debt is preventive.</description>
       
       <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
       <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
-    </item>
-    
-    <item>
-      <title>Elixir Month</title>
-      <link>https://preslav.me/2020/02/11/elixir-month/</link>
-      <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
-      <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
-But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.</description>
     </item>
     
   </channel>
