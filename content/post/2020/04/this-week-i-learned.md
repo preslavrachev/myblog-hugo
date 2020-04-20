@@ -33,4 +33,4 @@ I am a child of the 90s. Technically, I was born in 1987, but I spent much of my
 Check this out:
 {{<twitter "1177559150563344384">}}
 
-As it turns out, setting `document.designMode="on"` will start a special mode on your browser, which allows you to edit any visible portion of any page. I have checked its existence on Chrome, Firefox, Brave (Chromium), and Safari. More of a visual gimmick than a really useful feature, if you ask me, but still, some people might find this useful.
+As it turns out, setting `document.designMode="on"` in the browser's console, will start a special mode on your browser, which allows you to edit any visible portion of any page. I have checked its existence on Chrome, Firefox, Brave (Chromium), and Safari. More of a visual gimmick than a really useful feature, if you ask me, but still, some people might find this useful.
