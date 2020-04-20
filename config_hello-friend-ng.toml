@@ -1,0 +1,152 @@
+baseURL = "https://preslav.me"
+title   = "Random Bits of Wisdom"
+
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+googleAnalytics = "UA-131031623-1"
+# disqusShortname = "preslav"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
+
+[author]
+  name = "Preslav Rachev"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+  comments = true
+
+  # Metadata mostly used in document's head
+  description = "I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."
+  keywords = "programming, golang, python, elixir"
+  images = ["/images/avatar.jpg"]
+
+  homeSubtitle = "I am a software engineer building his own stuff. This is my home on the Internet."
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = ["/css/styles.css", "/css/cookieconsent.min.css"]
+  customJS  = ["/js/cookieconsent.min.js", "/js/site.js"]
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#252627"
+
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/preslav.me"
+    logoHomeLink = "/"
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoColor    = "#67a2c9"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/preslavrachev"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:preslavslinkedininbox@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/preslavrachev"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/preslavrachev"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/users/1107412"
+
+[languages]
+  [languages.en]
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+ # [languages.fr]
+ #   weight    = 2
+ #   copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "post/"
+    weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "projects/"
+    weight = 20
+  [[menu.main]]
+    identifier = "contact"
+    name       = "Contact"
+    url        = "contact/"
+    weight = 30
+
+[caches]
+  [caches.getjson]
+  dir = ":resourceDir/_gen"
+  maxAge = -1
