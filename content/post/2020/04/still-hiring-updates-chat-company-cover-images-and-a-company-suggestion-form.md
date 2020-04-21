@@ -4,7 +4,6 @@ categories = []
 cover = ""
 date = 2020-04-21T06:00:00Z
 description = ""
-draft = true
 featured_image = ""
 slug = ""
 tags = ["Project"]
