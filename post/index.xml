@@ -6,8 +6,33 @@
         <description>Recent content in Posts on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 21 Apr 2020 06:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/post/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Still Hiring Updates: Chat, Company Cover Images, and a Company Suggestion Form</title>
+            <link>https://preslav.me/2020/04/21/still-hiring-updates-chat-company-cover-images-and-a-company-suggestion-form/</link>
+            <pubDate>Tue, 21 Apr 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/21/still-hiring-updates-chat-company-cover-images-and-a-company-suggestion-form/</guid>
+            <description>Word seems to be spreading around for my tiny side project. With more people who have taken interest in Still Hiring, it was only a matter of finding time to add some updates. I have pushed a few changes, which should be available to anyone who has signed up:
+A chat section, which you can use to keep in touch with me and the other users.
+Opening the same side menu, one can now suggest a company to be added to Still Hiring:</description>
+            <content type="html"><![CDATA[<p>Word seems to be spreading around for my tiny side project. With more people who have taken interest in <a href="ddglk.glideapp.io" target="_blank">Still Hiring</a>, it was only a matter of finding time to add some updates. I have pushed a few changes, which should be available to anyone who has signed up:</p>
+
+<p>A chat section, which you can use to keep in touch with me and the other users.</p>
+
+<p><img src="/images/2020/04/stillhiring-1.png" alt="" /></p>
+
+<p>Opening the same side menu, one can now suggest a company to be added to <a href="ddglk.glideapp.io" target="_blank">Still Hiring</a>:</p>
+
+<p><img src="/images/2020/04/stillhiring-2.png" alt="" /></p>
+
+<p>Last but not least, (some) companies now have beautiful cover images that come directly from their “careers” pages. Lazy as I am, I did not download those manually for the 200+ companies. A few people know that the &ldquo;database&rdquo; behind Still Hiring is a single Google Spreadsheet. Instead of manually going and scraping each and every single image, I used the opportunity to write a script directly inside the spreadsheet (yes, it is possible). That, and another side project of mine (<a href="https://noembed.preslav.me/" target="_blank">NoEmbed</a>) did the job just fine. It is quite a cool approach, and I will probably write about it in an upcoming blog post. Until then, stay tuned, and hopefully, <a href="ddglk.glideapp.io" target="_blank">Still Hiring</a> helps you find the job you’re looking for.</p>
+
+<p><img src="/images/2020/04/stillhiring-3.png" alt="" /></p>
+]]></content>
+        </item>
         
         <item>
             <title>This Week I Learned</title>
@@ -934,58 +959,6 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
     </div>
   </div>
 </div></p>
-]]></content>
-        </item>
-        
-        <item>
-            <title>iEx Is Dope!</title>
-            <link>https://preslav.me/2020/02/24/iex-is-dope/</link>
-            <pubDate>Mon, 24 Feb 2020 07:45:20 +0100</pubDate>
-            
-            <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
-            <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
-            <content type="html"><![CDATA[<p><a href="https://hexdocs.pm/iex/IEx.html" target="_blank">iEx (Elixir&rsquo;s interactive shell)</a> is pure dope! It helped bring my development efforts back to the &ldquo;let&rsquo;s play and see what happens&rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling <code>r MyModule</code> inside iEx.
-During development, I&rsquo;d try to keep one module called <code>Demo</code>, or <code>Scratch</code>, etc, where I&rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called <code>demo</code> or <code>run</code>. This is what I call in iex. The rest I do in the respective modules, which I reload after every change.</p>
-
-<p>At work, I get to work with Python a lot and one of the things I love there is <a href="https://ipython.org/" target="_blank">iPython</a>. It&rsquo;s such a strong REPL that I would often try and get my hands dirty there, before formalizing into code/test. In Python <a href="https://preslav.me/2018/04/22/live-reloading-of-python-modules/" target="_blank">module reloads are not always trivial</a>, however. This is where Elixir&rsquo;s functional, &ldquo;share-nothing&rdquo; nature steps up the game. It&rsquo;s easy to reload modules that have essentially no state.</p>
-
-
-
-
-
-
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://miro.medium.com/max/1200/1*DKLIm-vne8pO-G58yjaRwA.jpeg); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Tips and Tricks for IEx</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      When I first started learning Elixir, one of the first things I learned is how to get into the command line interface via IEx. Here are the…</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">https://blog.echobind.com | </a></div>
-      <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
-    </div>
-  </div>
-</div>
 ]]></content>
         </item>
         

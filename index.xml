@@ -6,10 +6,21 @@
     <description>Recent content on Random Bits of Wisdom</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 06:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Still Hiring Updates: Chat, Company Cover Images, and a Company Suggestion Form</title>
+      <link>https://preslav.me/2020/04/21/still-hiring-updates-chat-company-cover-images-and-a-company-suggestion-form/</link>
+      <pubDate>Tue, 21 Apr 2020 06:00:00 +0000</pubDate>
+      
+      <guid>https://preslav.me/2020/04/21/still-hiring-updates-chat-company-cover-images-and-a-company-suggestion-form/</guid>
+      <description>Word seems to be spreading around for my tiny side project. With more people who have taken interest in Still Hiring, it was only a matter of finding time to add some updates. I have pushed a few changes, which should be available to anyone who has signed up:
+A chat section, which you can use to keep in touch with me and the other users.
+Opening the same side menu, one can now suggest a company to be added to Still Hiring:</description>
+    </item>
     
     <item>
       <title>This Week I Learned</title>
@@ -98,15 +109,6 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
       <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive.</description>
-    </item>
-    
-    <item>
-      <title>iEx Is Dope!</title>
-      <link>https://preslav.me/2020/02/24/iex-is-dope/</link>
-      <pubDate>Mon, 24 Feb 2020 07:45:20 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
-      <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
     </item>
     
   </channel>
