@@ -7,7 +7,7 @@ description = ""
 draft = true
 featured_image = ""
 slug = ""
-tags = []
+tags = ["TWIL", "Podcast"]
 title = "This Week I Learned"
 toc = false
 
