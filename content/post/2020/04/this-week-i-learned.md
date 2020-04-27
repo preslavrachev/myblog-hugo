@@ -1,12 +1,13 @@
 +++
 author = "Preslav Rachev"
-categories = ["TWIL"]
+categories = []
 cover = ""
 date = 2020-04-18T22:00:00Z
 description = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week."
 featured_image = ""
 slug = "this-week-I-learned"
-tags = ["Firefox", "Chrome", "PlayStation", "Nintendo", "Sony", "Golang", "Podcast"]
+summary = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week."
+tags = ["TWIL", "Firefox", "Chrome", "PlayStation", "Nintendo", "Sony", "Golang", "Podcast"]
 title = "This Week I Learned"
 toc = false
 
