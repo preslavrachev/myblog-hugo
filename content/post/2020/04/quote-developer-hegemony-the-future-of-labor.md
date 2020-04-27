@@ -6,10 +6,10 @@ date = 2020-04-15T16:00:00Z
 description = ""
 feature_image = ""
 slug = ""
-tags = ["Entrepreneurship", "Dev Culture", "Book", "Quote"]
-title = "[Quote]: Developer Hegemony: The Future of Labor"
-toc = false
 summary = "You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other."
+tags = ["Entrepreneurship", "Dev Culture", "Book", "Quote"]
+title = "Developer Hegemony: The Future of Labor"
+toc = false
 
 +++
 A quote from the amazing book ["Developer Hegemony" (Buy on Amazon)](https://amzn.to/2Va55tn) by Erik Dietrich:
