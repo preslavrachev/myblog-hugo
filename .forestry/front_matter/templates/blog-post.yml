@@ -6,6 +6,18 @@ fields:
   name: author
   label: Author
   default: Preslav Rachev
+- type: text
+  name: title
+  label: Title
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Summary
 - type: list
   name: categories
   label: categories
@@ -21,9 +33,6 @@ fields:
 - type: list
   name: tags
   label: tags
-- type: text
-  name: title
-  label: title
 - name: featured_image
   type: file
   config:
