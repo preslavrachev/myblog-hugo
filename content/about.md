@@ -1,23 +1,21 @@
 +++
-author = "Preslav Rachev"
 date = 2018-12-06T06:29:15Z
 draft = false
 slug = "about"
 featured_image = "/images/banner.jpg"
-title = "Hi there 👋🏼 My name is Preslav"
+title = "Hi there 👋🏼"
 type = "page"
 aliases = ["/about-me"]
 +++
 
 <div
-    style="display: flex; justify-content:space-between; align-items:center; margin-bottom: 1rem">
+    style="display: flex; justify-content:space-between; align-items:center; margin-bottom: 1rem; width: 100%; font-family: sans-serif;">
     <div style="display: flex; align-items:center">
         <img src="/images/avatar.jpg"
             class="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"
             style="width: 8rem; border-radius: 100%" />
-        <div style="display:flex; flex-direction:column; margin-left: 1rem">
-            <div style="font-size: 1.2rem;"><b>Preslav Rachev</b></div>
-            <div>@preslavrachev</div>
+        <div style="display:flex; flex-direction:column; margin-left: 1rem;">
+            <div style="font-weight: bold">Preslav Rachev</div>
         </div>
     </div>
     <div style="vertical-align:middle">
