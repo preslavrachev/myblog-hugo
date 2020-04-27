@@ -8,7 +8,7 @@ feature_image = ""
 featured_image = ""
 slug = ""
 summary = "You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other."
-tags = ["TWIL", "Entrepreneurship", "Dev Culture", "Book", "Quote"]
+tags = ["Quote", "Book", "Entrepreneurship", "Dev Culture"]
 title = "Developer Hegemony: The Future of Labor"
 toc = false
 
