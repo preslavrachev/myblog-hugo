@@ -150,3 +150,4 @@ disableHugoGeneratorInject = false
   [caches.getjson]
   dir = ":resourceDir/_gen"
   maxAge = -1
+  

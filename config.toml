@@ -1,7 +1,7 @@
 baseURL = "https://preslav.me"
 title = "Random Bits of Wisdom"
 author = "Preslav Rachev"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+# copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -9,34 +9,43 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
 theme = "casper3"
+googleAnalytics = "UA-131031623-1"
 
 [params]
-  facebook = "https://facebook.com"
+  #facebook = "https://facebook.com"
   twitter = "https://twitter.com/preslavrachev"
-  github = "https://github.com/jonathanjanssens"
+  github = "https://github.com/preslavrachev"
   description = "I am a software engineer building his own stuff. This is my home on the Internet."
   mainSections = ["post"]
+
+  # Metadata mostly used in document's head
+  #description = "I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."
+  keywords = "programming, golang, python, elixir"
+  images = ["/images/avatar.jpg"]
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
 
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+    name       = "About Me"
+    url        = "/about/"
+    weight = 1
   [[menu.main]]
-    identifier = "image-credit"
-    name = "Image Credit"
-    url = "/image-credit/"
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/projects/"
     weight = 20
   [[menu.main]]
-    identifier = "github-repo-theme"
-    name = "Get Theme on Github"
-    url = "https://github.com/jonathanjanssens/hugo-casper3"
+    identifier = "privacy"
+    name       = "Privacy"
+    url        = "/privacy/"
     weight = 30
   [[menu.main]]
-    identifier = "author"
-    name = "Author Homepage"
-    url = "https://jonathanjanssens.com"
+    identifier = "contact"
+    name       = "Contact"
+    url        = "/contact/"
     weight = 40
 
 [taxonomies]
@@ -71,3 +80,13 @@ series = "series"
   [services.twitter]
     disableInlineCSS = true
 
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+[caches]
+  [caches.getjson]
+  dir = ":resourceDir/_gen"
+  maxAge = -1
