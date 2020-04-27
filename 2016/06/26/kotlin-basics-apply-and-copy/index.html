@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev ">
-<meta name="description" content="Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="">
+    <meta name="description" content="Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
 How many times have you had to do the same thing over and over again:" />
-<meta name="keywords" content="programming, golang, python, elixir, kotlin" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/" />
-
-
-    <title>
-        
-            Kotlin Basics: apply() and copy() :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="keywords" content="programming, golang, python, elixir, kotlin" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Kotlin Basics: apply() and copy() · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Kotlin Basics: apply() and copy()">
 <meta itemprop="description" content="Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
 How many times have you had to do the same thing over and over again:">
@@ -68,233 +46,298 @@ How many times have you had to do the same thing over and over again:">
 <meta name="twitter:description" content="Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
 How many times have you had to do the same thing over and over again:"/>
 
-
-
-
-
-    <meta property="article:published_time" content="2016-06-26 12:56:00 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post  no-image ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/kotlin">kotlin</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>3 minutes
+                <h1 class="post-full-title">Kotlin Basics: apply() and copy()</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        
+
+                        <section class="post-full-byline-meta">
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2016-126-06">26 June 2016</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 3 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
-
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/">Kotlin Basics: apply() and copy()</a>
-        </h1>
-
-        
-
-        <div class="post-content">
-            
+            <section class="post-full-content">
+                <div class="post-content">
+                    
 
 <p>Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.</p>
 
 <p>How many times have you had to do the same thing over and over again:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> A <span style="color:#a6e22e">updateA</span><span style="color:#f92672">(</span>A objA<span style="color:#f92672">,</span> B objB<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    objA<span style="color:#f92672">.</span><span style="color:#a6e22e">setC</span><span style="color:#f92672">(</span>objB<span style="color:#f92672">.</span><span style="color:#a6e22e">getC</span><span style="color:#f92672">());</span>
-    objA<span style="color:#f92672">.</span><span style="color:#a6e22e">setD</span><span style="color:#f92672">(</span>objB<span style="color:#f92672">.</span><span style="color:#a6e22e">getD</span><span style="color:#f92672">());</span>
-    <span style="color:#66d9ef">return</span> objA<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div>
+
+<pre><code class="language-java">private A updateA(A objA, B objB) {
+    objA.setC(objB.getC());
+    objA.setD(objB.getD());
+    return objA;
+}
+</code></pre>
+
 <p>Having an object, you want to modify some of its properties and simply return the same object. In Java, you can&rsquo;t do this in a single chained fashion. In Kotlin, you can squeeze the above method to the following single line of code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">fun <span style="color:#a6e22e">updateA</span><span style="color:#f92672">(</span>objA: A<span style="color:#f92672">,</span> objB: B<span style="color:#f92672">):</span> A <span style="color:#f92672">=</span> objA<span style="color:#f92672">.</span><span style="color:#a6e22e">apply</span> <span style="color:#f92672">{</span> c <span style="color:#f92672">=</span> objB<span style="color:#f92672">.</span><span style="color:#a6e22e">c</span><span style="color:#f92672">;</span> d <span style="color:#f92672">=</span> objB<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span> <span style="color:#f92672">}</span></code></pre></div>
+
+<pre><code class="language-java">fun updateA(objA: A, objB: B): A = objA.apply { c = objB.c; d = objB.d }
+</code></pre>
+
 <h3 id="apply">apply()</h3>
 
-<p>By definition, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/apply.html" target="_blank"><code>apply</code></a> accepts a function, and sets its scope to that of the object on which apply has been invoked. This means that no explicit reference to the object is needed. <code>Apply()</code> can do much more than simply setting properties of course. It is a transformation function, capable of evaluating complex logic before returning. At the end, the function simply returns the same object (with the added changes), so one can keep using it on the same line of code.</p>
+<p>By definition, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/apply.html"><code>apply</code></a> accepts a function, and sets its scope to that of the object on which apply has been invoked. This means that no explicit reference to the object is needed. <code>Apply()</code> can do much more than simply setting properties of course. It is a transformation function, capable of evaluating complex logic before returning. At the end, the function simply returns the same object (with the added changes), so one can keep using it on the same line of code.</p>
 
 <p><strong>Note:</strong> Please, note as well the direct use of properties instead of explicitly calling getters and setters. This is not a bad practice, since Kotlin implicitly invokes provided getters and setters of a property, when working with the property (similar to C#).</p>
 
 <h3 id="copy">copy()</h3>
 
-<p>Please, remember that using apply on an object is NOT a thread-safe operation, and mutates the state of the object. If you want to retain the original object and return an immutable copy of it, you can use the function <a href="https://kotlinlang.org/docs/reference/data-classes.html#copying" target="_blank"><code>copy()</code></a>, provided in all instances of data classes.</p>
+<p>Please, remember that using apply on an object is NOT a thread-safe operation, and mutates the state of the object. If you want to retain the original object and return an immutable copy of it, you can use the function <a href="https://kotlinlang.org/docs/reference/data-classes.html#copying"><code>copy()</code></a>, provided in all instances of data classes.</p>
 
-<p>Assuming that your class contains only data (usually a good practice to separate logic from data), you can turn it into a <a href="https://kotlinlang.org/docs/reference/data-classes.html" target="_blank">data class</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">data <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span><span style="color:#f92672">(</span>val name: String<span style="color:#f92672">,</span> val age: Int<span style="color:#f92672">)</span></code></pre></div>
-<p>Data classes have a few advantages, and one of them is definitely the <a href="https://kotlinlang.org/docs/reference/data-classes.html#copying" target="_blank"><code>copy()</code></a> function, provided to each and every instance. It not only provides a copy of the original object, leaving its state intact, but also allows setting new values to some of its properties at copy-time:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">val user1 <span style="color:#f92672">=</span> User<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;John Smith&#34;</span><span style="color:#f92672">,</span> 24<span style="color:#f92672">)</span>
-val user2 <span style="color:#f92672">=</span> user1<span style="color:#f92672">.</span><span style="color:#a6e22e">copy</span><span style="color:#f92672">(</span>age <span style="color:#f92672">=</span> 31<span style="color:#f92672">)</span></code></pre></div>
-<p>Kotlin supports <a href="http://blog.preslav.me/2016/05/29/kotlin-tips-named-parameters-default-arguments/" target="_blank">named parameters</a>, known from other languages, such as Python and Scala. In this case, they make life much easier, as all you need to do, is specify the name of the particular property (or properties) you want to modify by copying.</p>
+<p>Assuming that your class contains only data (usually a good practice to separate logic from data), you can turn it into a <a href="https://kotlinlang.org/docs/reference/data-classes.html">data class</a>:</p>
+
+<pre><code class="language-java">data class User(val name: String, val age: Int)
+</code></pre>
+
+<p>Data classes have a few advantages, and one of them is definitely the <a href="https://kotlinlang.org/docs/reference/data-classes.html#copying"><code>copy()</code></a> function, provided to each and every instance. It not only provides a copy of the original object, leaving its state intact, but also allows setting new values to some of its properties at copy-time:</p>
+
+<pre><code class="language-java">val user1 = User(&quot;John Smith&quot;, 24)
+val user2 = user1.copy(age = 31)
+</code></pre>
+
+<p>Kotlin supports <a href="http://blog.preslav.me/2016/05/29/kotlin-tips-named-parameters-default-arguments/">named parameters</a>, known from other languages, such as Python and Scala. In this case, they make life much easier, as all you need to do, is specify the name of the particular property (or properties) you want to modify by copying.</p>
 
 <p>At the end you can combine the power and succinctness of both <code>apply()</code> and <code>copy()</code> by calling apply after copying:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">val user2 <span style="color:#f92672">=</span> user1<span style="color:#f92672">.</span><span style="color:#a6e22e">copy</span><span style="color:#f92672">(</span>age <span style="color:#f92672">=</span> 31<span style="color:#f92672">).</span><span style="color:#a6e22e">apply</span> <span style="color:#f92672">{</span> <span style="color:#f92672">//</span> execute some logic here <span style="color:#f92672">}</span></code></pre></div>
+
+<pre><code class="language-java">val user2 = user1.copy(age = 31).apply { // execute some logic here }
+</code></pre>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/kotlin">kotlin</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+                <li>
+                    <h4><a href="https://preslav.me/2019/02/03/kotlin-loves-data-science/">Kotlin ❤️ Data Science? (Part 1)</a></h4>
+                    <div class="read-next-card-meta">
+                            <p><time datetime="2019-22-02">02 Feb 2019</time> 
+                                
+                            </p>
+                    </div>
+                </li>
+                
+                <li>
+                    <h4><a href="https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/">Connecting to a MongoDB Instance Using KMongo</a></h4>
+                    <div class="read-next-card-meta">
+                            <p><time datetime="2018-412-12">12 Dec 2018</time> 
+                                
+                            </p>
+                    </div>
+                </li>
+                
+                <li>
+                    <h4><a href="https://preslav.me/2018/12/28/the-kotlin-way/">How Much of &#34;The Kotlin Way&#34; Is the Right Way?</a></h4>
+                    <div class="read-next-card-meta">
+                            <p><time datetime="2018-712-12">12 Dec 2018</time> 
+                                
+                            </p>
+                    </div>
+                </li>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/kotlin">kotlin</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>485 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2016-06-26 12:56 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">Securing your ElasticSearch instances</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/">
-                    <span class="button__text">What’s with the 50/72 rule?</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
-
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
-
-            
-        </div>
+<article class="post-card post
+ no-image
+ ">
 
         
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">What’s with the 50/72 rule?</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+They don&rsquo;t tell much do they?</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2015-62-02">21 February 2015</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">DevOps</div>
+                    
+
+                    <h2 class="post-card-title">Securing your ElasticSearch instances</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&rsquo;re ready to start sending queries.
+Unfortunately, one thing comes for another, and as we have recently seen, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2017-52-02">3 February 2017</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2016</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -305,14 +348,6 @@ val user2 <span style="color:#f92672">=</span> user1<span style="color:#f92672">
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

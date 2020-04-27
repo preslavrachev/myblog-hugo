@@ -1,53 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev">
-<meta name="description" content="Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first." />
-<meta name="keywords" content="programming, golang, python, elixir, Golang" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2019/02/20/my-baby-steps-with-go/" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-
-    <title>
-        
-            My Baby Steps with Go :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="author" content="Preslav Rachev">
+    <meta name="description" content="Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first." />
+    <meta name="keywords" content="programming, golang, python, elixir, Golang" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2019/02/20/my-baby-steps-with-go/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>My Baby Steps with Go · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="My Baby Steps with Go">
 <meta itemprop="description" content="Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first.">
 
@@ -65,98 +43,109 @@
 <meta name="twitter:title" content="My Baby Steps with Go"/>
 <meta name="twitter:description" content="Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first."/>
 
-
-
-    <meta property="article:section" content="Programming" />
-
-
-
-    <meta property="article:published_time" content="2019-02-20 05:27:00 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post  no-image ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/golang">Golang</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>3 minutes
+                <h1 class="post-full-title">My Baby Steps with Go</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>Preslav Rachev</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">Preslav Rachev</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2019-52-02">20 February 2019</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 3 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
-
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2019/02/20/my-baby-steps-with-go/">My Baby Steps with Go</a>
-        </h1>
-
-        
-
-        <div class="post-content">
-            <p>Last week, I made my first tentative foray into Go programming. <a href="https://www.ki-labs.com/" target="_blank">My company</a> uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first. The mere mentioning of C makes me shiver when I think about the crazy stuff I wrote in early high school  (circa. <sup>2000</sup>&frasl;<sub>02</sub>). After school, I never gave C a chance anymore, but instead, moved on to languages, which at the time made my life easier.</p>
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>Last week, I made my first tentative foray into Go programming. <a href="https://www.ki-labs.com/">My company</a> uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first. The mere mentioning of C makes me shiver when I think about the crazy stuff I wrote in early high school  (circa. <sup>2000</sup>&frasl;<sub>02</sub>). After school, I never gave C a chance anymore, but instead, moved on to languages, which at the time made my life easier.</p>
 
 <p>In reality, programming with Go is not as harsh as I expected. Okay, it does look a lot like C, there are no classes, and pointers are everywhere, but you quickly get used to these, when you see the full picture. Unlike C, Go has a garbage collector, which means that a whole class of problems I had with memory management will simply not be present.</p>
 
-<p>As for OOP, objects are still there, but their construction is slightly different. Go has eradicated inheritance and fosters composition instead. Go  The lack of a <code>class</code> construct has been more than sufficiently replaced by structs and <a href="https://gobyexample.com/interfaces" target="_blank">interfaces</a>. If all you need is a bag of properties (also referred to as &ldquo;data class&rdquo; in other languages), a <code>struct</code> should be perfectly sufficient. If you want to add functionality to your objects, Go&rsquo;s system of <a href="https://gobyexample.com/interfaces" target="_blank">attachable method receivers</a> makes it fairly easy to do so. In fact, after an hour of hour of work, I got pretty confident with it.</p>
+<p>As for OOP, objects are still there, but their construction is slightly different. Go has eradicated inheritance and fosters composition instead. Go  The lack of a <code>class</code> construct has been more than sufficiently replaced by structs and <a href="https://gobyexample.com/interfaces">interfaces</a>. If all you need is a bag of properties (also referred to as &ldquo;data class&rdquo; in other languages), a <code>struct</code> should be perfectly sufficient. If you want to add functionality to your objects, Go&rsquo;s system of <a href="https://gobyexample.com/interfaces">attachable method receivers</a> makes it fairly easy to do so. In fact, after an hour of hour of work, I got pretty confident with it.</p>
 
 <p>Pointers are also not the pain I expected them to be. In fact, they help things more transparent and explicit. Since in Go (almost) everything is passed by value (with the exception of <code>map</code> and <code>slice</code>) pointers actually help distinguish when the function you are passing the object will potentially want to mutate it or not.</p>
 
@@ -166,121 +155,145 @@
 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/cQ7STILAS0M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="//www.youtube-nocookie.com/embed/cQ7STILAS0M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/golang">Golang</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/golang">Golang</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>437 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2019-02-20 05:27 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2019/03/09/introducing-devnotes/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">Introducing DevNotes</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2019/02/03/kotlin-loves-data-science/">
-                    <span class="button__text">Kotlin ❤️ Data Science? (Part 1)</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
-
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
-
-            
-        </div>
+<article class="post-card post
+ no-image
+ ">
 
         
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/02/03/kotlin-loves-data-science/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Data Science</div>
+                    
+
+                    <h2 class="post-card-title">Kotlin ❤️ Data Science? (Part 1)</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
+   Mathematical Modeling with Kotlin | Thomas Nield</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-22-02">3 February 2019</time>
+                            <span class="bull">&bull;</span> 5 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/03/09/introducing-devnotes/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Blog</div>
+                    
+
+                    <h2 class="post-card-title">Introducing DevNotes</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>With a few short micro-post exceptions, my blog has been relatively quiet over the past month. The reason for this is simple. I have devoted much of my writing resources of the past weeks into a new site. A wiki called DevNotes.
+That is right, I have started a separate writing project, parallel to my blog. Yet, before you start thinking that this is the end of the blog, don't worry.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-113-03">9 March 2019</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2019</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -291,14 +304,6 @@
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

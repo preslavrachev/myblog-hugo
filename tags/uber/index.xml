@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Uber on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/uber/</link>
-    <description>Recent content in Uber on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 22 Sep 2019 10:20:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/uber/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/220920191020/</link>
-      <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/220920191020/</guid>
-      <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
+    <channel>
+        <title>Uber on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/uber/</link>
+        <description>Recent content in Uber on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 22 Sep 2019 10:20:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/uber/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/220920191020/</link>
+            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/220920191020/</guid>
+            <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
 Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<blockquote>
+<p>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.</p>
+
+<p>Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair. The unicorns aren’t doomed, even if their old valuations are. But they have to change their stories, and their businesses. Magic made them. Only math will save them.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.theatlantic.com/assets/media/img/mt/2019/09/RTS2P5XP/facebook.jpg?1568926150); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theatlantic.com/ideas/archive/2019/09/unicorn-delusion/598465/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        WeWork and the Great Unicorn Delusion</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Why the consumer-tech revolution can’t seem to survive public scrutiny</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theatlantic.com/ideas/archive/2019/09/unicorn-delusion/598465/">https://www.theatlantic.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

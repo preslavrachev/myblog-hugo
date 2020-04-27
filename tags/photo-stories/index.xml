@@ -1,109 +1,208 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Photo Stories on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/photo-stories/</link>
-    <description>Recent content in Photo Stories on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 13 Jul 2019 16:24:31 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/photo-stories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907131824/</link>
-      <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907131824/</guid>
-      <description>My new favorite coffee mug - a special &amp;ldquo;You Are Here&amp;rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907081824/</link>
-      <pubDate>Mon, 08 Jul 2019 16:24:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907081824/</guid>
-      <description>Scooter Craze The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.
+    <channel>
+        <title>Photo Stories on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/photo-stories/</link>
+        <description>Recent content in Photo Stories on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 13 Jul 2019 16:24:31 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/photo-stories/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907131824/</link>
+            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907131824/</guid>
+            <description>My new favorite coffee mug - a special &amp;ldquo;You Are Here&amp;rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</description>
+            <content type="html"><![CDATA[<p>My new favorite coffee mug - a special &ldquo;You Are Here&rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</p>
+
+<p><img src="/images/2019/07/1SkDWiS.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907081824/</link>
+            <pubDate>Mon, 08 Jul 2019 16:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907081824/</guid>
+            <description>Scooter Craze The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.
 In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907041930/</link>
-      <pubDate>Thu, 04 Jul 2019 18:30:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907041930/</guid>
-      <description>Chillin&amp;rsquo;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907040754/</link>
-      <pubDate>Thu, 04 Jul 2019 05:54:08 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907040754/</guid>
-      <description>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:
+            <content type="html"><![CDATA[
+
+<h1 id="scooter-craze">Scooter Craze</h1>
+
+<p>The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.</p>
+
+<p>In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians. I just hope they don&rsquo;t follow the fate of <a href="https://www.instagram.com/obikesofmunich/">OBike&rsquo;s rentable bikes</a>, some of which ended up in the local river. An electric scooter&rsquo;s battery is a mini lab of toxic stuff, so if this is in your mind, please, think twice.</p>
+
+<p><img src="/images/2019/07/yUkF0kO.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907041930/</link>
+            <pubDate>Thu, 04 Jul 2019 18:30:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907041930/</guid>
+            <description>Chillin&amp;rsquo;</description>
+            <content type="html"><![CDATA[<p>Chillin&rsquo;</p>
+
+<p><img src="/images/2019/07/D7F6E34A-8C10-4A48-AC8D-1DD43D8C44DA-1.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907040754/</link>
+            <pubDate>Thu, 04 Jul 2019 05:54:08 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907040754/</guid>
+            <description>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:
 Those are called Adidas Terrex Two Boa. They feature a very stiff, but sturdy underfoot part (because they are made for trail running), and an innovative lacing system called Boa. It was a bit of a love at first sight, but I amnot really sure, if I am going to get used to those shoes.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907011324/</link>
-      <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907011324/</guid>
-      <description>On the road again&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906281812/</link>
-      <pubDate>Fri, 28 Jun 2019 15:12:38 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906281812/</guid>
-      <description>A sneak peek at the wedding location.</description>
-    </item>
-    
-    <item>
-      <title>Sofia&#39;s Trams</title>
-      <link>https://preslav.me/2019/06/23/sofia-s-trams/</link>
-      <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/23/sofia-s-trams/</guid>
-      <description>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.
+            <content type="html"><![CDATA[<p>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:</p>
+
+<p><img src="/images/2019/07/vDYwFM3.jpg" alt="" /></p>
+
+<p>Those are called <a href="https://amzn.to/2XwXRm2">Adidas Terrex Two Boa</a>. They feature a very stiff, but sturdy underfoot part (because they are made for trail running), and an innovative lacing system called <a href="https://www.boafit.com/en-us">Boa</a>. It was a bit of a love at first sight, but I amnot really sure, if I am going to get used to those shoes. In particular, the lacing system seems fancy, but once it gets damaged, do I have to throw the shoes away? Who knows.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907011324/</link>
+            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907011324/</guid>
+            <description>On the road again&amp;hellip;</description>
+            <content type="html"><![CDATA[<p>On the road again&hellip;</p>
+
+<p><img src="/images/2019/07/TulqGYv.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906281812/</link>
+            <pubDate>Fri, 28 Jun 2019 15:12:38 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906281812/</guid>
+            <description>A sneak peek at the wedding location.</description>
+            <content type="html"><![CDATA[<p>A sneak peek at the <a href="https://www.booking.com/hotel/bg/vilarte.html?aid=356980">wedding location</a>.</p>
+
+<p><img src="/images/2019/07/074E179E-4AC2-4E86-810D-E1306CF889D9.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Sofia&#39;s Trams</title>
+            <link>https://preslav.me/2019/06/23/sofia-s-trams/</link>
+            <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/06/23/sofia-s-trams/</guid>
+            <description>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.
 This time was different. My wife and I flew for the wedding of one of our best friends, and since we had a whole day to spare, we decided to take a walk through the centre of the City of Trams.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/220420191020/</link>
-      <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/220420191020/</guid>
-      <description>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
-      <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
-      <description>Meanwhile in Munich&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</link>
-      <pubDate>Wed, 23 Jan 2019 06:57:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</guid>
-      <description>A view to live for! 😍
+            <content type="html"><![CDATA[<p>It has been almost a decade, since I last set foot in the city center of Bulgaria’s capital, Sofia. Although I fly home regularly, Sofia’s Airport is just an intermediary stop on my ultimate route to my hometown.</p>
+
+<p>This time was different. My wife and I flew for the wedding of one of our best friends, and since we had a whole day to spare, we decided to take a walk through the centre of the <em>City of Trams</em>.</p>
+
+<p><img src="/images/2019/06/Sofia Tram 1.jpeg" alt="" /></p>
+
+<p>For those who have never been in Sofia, trams are a major form of transportation here, the first line having been established back in 1901. Although Sofia citizens enjoy a modern (and surprisingly clean) subway, trams have long been one of the things that people usually associate the city&rsquo;s center with.</p>
+
+<p><img src="/images/2019/06/Sofia Tram 2.jpeg" alt="" /></p>
+
+<p><img src="/images/2019/06/Sofia Tram 3.jpeg" alt="" /></p>
+
+<p><img src="/images/2019/06/Sofia Tram 6.jpeg" alt="" /></p>
+
+<hr />
+
+<p>Read more about the history of tram transportation in Sofia:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://upload.wikimedia.org/wikipedia/commons/e/ee/Tatra_T6A5_Sofia.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Trams_in_Sofia">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Trams in Sofia - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Tram Tatra T6A5 on line 22</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Trams_in_Sofia">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/220420191020/</link>
+            <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/220420191020/</guid>
+            <description>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</description>
+            <content type="html"><![CDATA[<p>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</p>
+
+<p><img src="/images/2019/april/augsburg.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
+            <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
+            <description>Meanwhile in Munich&amp;hellip;</description>
+            <content type="html"><![CDATA[<p>Meanwhile in Munich&hellip;</p>
+
+<p><img src="/images/2019/march/IMG_6811.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</link>
+            <pubDate>Wed, 23 Jan 2019 06:57:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</guid>
+            <description>A view to live for! 😍
 Sendlinger Tor | Munich</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>A view to live for! 😍</p>
+
+<p><img src="https://images.unsplash.com/photo-1549954489-d19021417c77?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2768&amp;q=80" alt="" />
+<a href="https://unsplash.com/photos/4Xdl1bzWT4I">Sendlinger Tor | Munich</a></p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

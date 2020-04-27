@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Concurrency on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/concurrency/</link>
-    <description>Recent content in Concurrency on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 03 Jun 2019 05:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Busting the Myth Around Multithreading in Python</title>
-      <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
-      <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</guid>
-      <description>One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
+    <channel>
+        <title>Concurrency on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/concurrency/</link>
+        <description>Recent content in Concurrency on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 03 Jun 2019 05:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Busting the Myth Around Multithreading in Python</title>
+            <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
+            <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</guid>
+            <description>One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
 When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>One of the things I often hear from other developers, along with the usual <em>“Python is slow”</em>, is that <em>“multithreading in Python sucks”</em>. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.</p>
+
+<p>When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause. <em>The GIL</em>, they say, <em>prevents you from running more than one thread a time</em>.</p>
+
+<h1 id="tl-dr">TL;DR</h1>
+
+<p>Threads in python are perfect for issuing long-running I/O operations, such as database or remote API calls, file operations, etc. Where they show pretty miserable performance is heavy CPU operations (e.g. nested loops, recursion, etc)</p>
+
+<p>If there is one thing you should remember from this whole article, it is that <strong>multithreading is perfectly fine in Python</strong>, as it is all other languages that make use of it. Yes, there are <strong>some caveats</strong> that you need to keep an eye on, but you should not be afraid to use just because someone told you so. Depending on the implementation of Python you are using, there <strong>might be no GIL in place</strong>, so you might be using your development life harder by not using threads.</p>
+
+<p>OK? Good. Let me start with:</p>
+
+<h1 id="what-is-the-gil-anyway">What is the GIL anyway?</h1>
+
+<p>The Global Interpreter Lock (GIL) is a feature (yes, actually a feature) of CPython (the default Python implementation) which is highly related to how CPython manages memory. There are two popular ways for garbage collection in software applications: tracing garbage collection (also known simply as garbage collection) and reference counting. CPython uses reference counting, which is a simple and deterministic way of managing memory. Every time one acquires a reference to a variable, a reference counter gets automatically incremented. Every time a variable gets out of scope, the reference counter gets automatically decremented. When the reference counter reaches 0, the referred to memory gets disposed.</p>
+
+<h1 id="gil-and-multithreading">GIL and multithreading</h1>
+
+<p>Sounds nice and easy, and it is for the most part. Which is, until multithreading comes in place. See, if two threads access the same reference at the same time, a few things might happen. Decrement in and incrementing the reference count take some technological time. It&rsquo;s not much, but it also doesn&rsquo;t happen instantaneously. Imagine that one thread finishes execution and the decrement process has just begun. Another thread enters right in the middle of this and tries to obtain a reference to the same portion of memory. If the dereferencing finishes first, but the time the second thread obtains a reference, the associated memory might have been disposed of, which will result in SEGFAULT.</p>
+
+<p>It might also be the case that two or more threads try to increment the reference counter in parallel. This opens up a possibility for overwriting the counter with the lower value, unaware that it has already been incremented. The referenced memory will never be disposed of, which is a classical memory leak.</p>
+
+<h1 id="here-comes-the-gil-again">Here comes the GIL again</h1>
+
+<p>And this is why we have the GIL. Locking on every reference counter operation is too cumbersome, and certainly, introduce performance drawbacks. Therefore, the GIL is a single, globally-shared instance that can be obtained by one <strong>RUNNING</strong> thread at a time, and released afterward.</p>
+
+<h1 id="so-one-running-thread-at-a-time">So, one RUNNING thread at a time</h1>
+
+<p>Keep in mind the word RUNNING. I am writing it in capitals, in order to distinguish between a thread’s RUNNING and WAITING states. When a thread issues a long-running I/O operation, such as a database call, it switches from a RUNNING to a WAITING state and drops the lock on the GIL. Since no further operations will be executed in that thread during the WAITING state, none of the scenarios mentioned above can happen, so another thread can grab the GIL and continue. When a thread gets out of the WAITING state back to RUNNING, it obtains a lock on the GIL again and performs a quick refresh on the reference counters of its claimed state.</p>
+
+<p>Ideally, if the code executed in thread consists of only a blocking call (DB, remote API, disk, etc), it is a perfect candidate for concurrent execution. When the code starts getting more complex, and CPU-heavy operations get computed, performance starts dropping to the rate of serial execution, or even worse (due to the GIL lock overhead). This is where <strong>multiprocessing</strong> comes to the rescue. Though processes are limited by the number of available CPU cores, they share no memory, and consequently, there is no need for a GIL. If a heavy operation involves polling multiple I/O sources for data, before assembling a formatted result together, you’d rather do the I/O operations in separate threads, and if needed, the final transformations in separate processes.</p>
+
+<h1 id="not-all-python-implementations-need-a-gil">Not all Python implementations need a GIL</h1>
+
+<p>When we speak about the GIL, it is important to make certain that it is present in CPython, but not all Python implementations have it or need it. Since the vast majority of Python developers use CPython, the GIL is a relevant topic, but one should not forget there are other language implementations that don’t use it.</p>
+
+<p>Note: Unlike popular belief, <a href="https://www.pypy.org/">PyPy</a> (the Python JIT-compiler) **<a href="http://doc.pypy.org/en/latest/faq.html#does-pypy-have-a-gil-why">actually** <strong>has a GIL</strong></a>, although it uses tracing garbage collection, instead of reference counting. This has been more of a design decision to stick to the original design of the language, rather than an actual technological need, There are other implementations, however, such as <a href="https://www.jython.org/jythonbook/en/1.0/Concurrency.html#no-global-interpreter-lock">Jython</a>, and <a href="https://wiki.python.org/moin/IronPython">IronPython</a> which lack the GIL altogether.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

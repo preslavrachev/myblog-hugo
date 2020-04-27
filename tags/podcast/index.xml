@@ -1,74 +1,419 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Podcast on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/podcast/</link>
-    <description>Recent content in Podcast on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>This Week I Learned</title>
-      <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
-      <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
-      <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
+    <channel>
+        <title>Podcast on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/podcast/</link>
+        <description>Recent content in Podcast on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>This Week I Learned</title>
+            <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
+            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
+            <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
 Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s New in Mixtape</title>
-      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
-      <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
-      <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s in a Mixtape?</title>
-      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
-      <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
-      <description>Mixtape
+            <content type="html"><![CDATA[
+
+<p>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.</p>
+
+<hr />
+
+<h2 id="apps-and-tools">Apps and Tools</h2>
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars3.githubusercontent.com/u/36013798?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/goulinkh/podcast-cli">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        goulinkh/podcast-cli</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/goulinkh/podcast-cli">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/df/ba/bc/dfbabc29-78fd-4b11-94d5-67fc6a98dea7/AppIcon-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://apps.apple.com/app/data-jar/id1453273600">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ‎Data Jar</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      ‎Data Jar is a data store designed to be used with Shortcuts. The data store lets you persist key-value pairs.
+
+If you have used dictionaries and lists in Shortcuts, then you’ll find that the data format used by Data Jar is very similar.
+
+- Extensive support for Shortcuts, enabling you to read and up…</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://apps.apple.com/app/data-jar/id1453273600">https://apps.apple.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+
+<h2 id="media">Media</h2>
+
+<h3 id="podcasts">Podcasts</h3>
+
+<p>I am a child of the 90s. Technically, I was born in 1987, but I spent much of my childhood and early teenage years during the 90s. As every kid of that era, I was mesmerized by early-age 3D games. During my growing up, there was no better example of what the digital future held for us, than Sony&rsquo;s PlayStation. As a kid, I only wanted to play great games, and console makers seemed like the good guys making sure we get to play them. I never even realized how rivalry, fierce competition, and trickery tactics there were between Sony, Nintendo, and SEGA at the time. This mini podcast series pulls the curtain of the story behind the stage.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://is4-ssl.mzstatic.com/image/thumb/Podcasts113/v4/37/f9/c4/37f9c4c9-c628-bb4f-37b1-1b6fef8f18a7/mza_7296818625298515281.jpeg/1200x630wp.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ‎Business Wars: Encore: Nintendo vs Sony - Stabbed in the Back | 1 auf Apple Podcasts</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      ‎Sendung Business Wars, Folge Encore: Nintendo vs Sony - Stabbed in the Back | 1 – 05.02.2020</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">https://podcasts.apple.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="tips-and-tricks">Tips and Tricks</h2>
+
+<h3 id="browser-design-mode">Browser Design Mode</h3>
+
+<p>Check this out:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">That feeling when you first discovered `document.designMode` <a href="https://t.co/bxA1otzCjN">pic.twitter.com/bxA1otzCjN</a></p>&mdash; Tomek Sułkowski (@sulco) <a href="https://twitter.com/sulco/status/1177559150563344384?ref_src=twsrc%5Etfw">September 27, 2019</a></blockquote>
+</p>
+
+<p>As it turns out, setting <code>document.designMode=&quot;on&quot;</code> in the browser&rsquo;s console, will start a special mode on your browser, which allows you to edit any visible portion of any page. I have checked its existence on Chrome, Firefox, Brave (Chromium), and Safari. More of a visual gimmick than a really useful feature, if you ask me, but still, some people might find this useful.</p>
+
+<h2 id="misc">Misc</h2>
+
+<p><a href="https://atoms.com/products/atoms-everyday-mask">Atoms Everyday Mask</a></p>
+
+<p>Comfortable non-medical face mask made from a blend of Polyester, Nylon, and PU with copper fused thread. They are hand washable up to 30 times, after which they behave like a regular cloth mask, just the copper will have worn down. Each mask comes with a lanyard and a pouch for safe storage.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What&#39;s New in Mixtape</title>
+            <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+            <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="give-me-more-like-these">Give me more like these&hellip;</h2>
+
+<p>Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</p>
+
+<p>With the most recent update on <a href="https://mixtape.preslav.me/">Mixtape</a>, I have added the ability to use Mixtape as a way to discover new podcast episodes, by simply providing the IDs of ones that might be of interest to you. Those who have worked with search engines before, probably know that this is something that this type of applications are fairly well-suited, but not often used for. In particular, ElasticSearch (the brain behind the whole search operation) has a particular type of search query, which allows for just that.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.elastic.co/static/images/elastic-logo-200.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        More like this query | Elasticsearch Reference [7.4]</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The More Like This Query finds documents that are &#34;like&#34; a given
+set of documents. In order to do so, MLT selects a set of representative terms
+of these input documents, forms a query using these terms, executes the query
+and returns the results. The user controls the input documents, how the terms
+should be selected and how the query is formed.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">https://www.elastic.co | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>Currently, this is still an API-only feature, but it will open up the door for applications of various sorts. One particular thing I am working on, is in the form of a chat bot application, which one will be able to send podcast episode links to (e.g. from <a href="https://overcast.fm/">Overcast</a>, <a href="https://www.pocketcasts.com/">Pocket Casts</a>, <a href="https://www.apple.com/itunes/">Apple Podcasts</a>, etc) and get related podcast episodes to keep listening to.</p>
+
+<p>Stay tuned!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What&#39;s in a Mixtape?</title>
+            <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
+            <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
+            <description>Mixtape
  A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908181824/</link>
-      <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908181824/</guid>
-      <description>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906081458/</link>
-      <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906081458/</guid>
-      <description> Q: Aesthetically, what do you think about the design of the new grater?
+            <content type="html"><![CDATA[
+
+<p><em>Mixtape</em></p>
+
+<ol>
+<li><em>A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &ndash; <a href="https://www.urbandictionary.com/define.php?term=Mixtapes">Urban Dictionary</a></em></li>
+<li><em>A budding <a href="https://mixtape.preslav.me/">search and discovery engine for podcasts</a> built by yours truly.</em></li>
+</ol>
+
+<p>The 20th century marked a giant leap forward in music production and distribution. It started with the vinyl record which made music available in everyone&rsquo;s home. Then, at the turn of the century, the digital cassette recorder came to shake the game, by allowing everyone to create mixes of their own liking.</p>
+
+<p>See, vinyl records are great, but they could only play the same thing over and over again. Assuming you bought one album per record, you quickly ended up holding a pile of records from your favourite bands. We all know that artists back then were great and almost all songs in an album became hits, but what if, hypothetically, one liked only a couple of songs and skipped the rest? One still needed to buy and keep the entire record.</p>
+
+<p>Digital cassette recorders changed all that. Not only were cassettes smaller in size; one could record on top, multiple times over. This gave the birth of the <strong>mixtape</strong>. Decades before the playlists of today, mixtapes let everyone create and share thematic mixes of songs from different artists, and often, from completely different genres.</p>
+
+<h1 id="from-cassettes-to-podcasting">From cassettes to podcasting</h1>
+
+<p>In a funny, but similar way, podcast distribution still works like buying vinyls from a record store. You can subscribe manually, or via any of the myriads of mobile apps out there. Yet, podcasts still get distributed primarily as RSS feeds that you either follow entirely or not at all. Just like with records, if you like the podcast host, over the years you build up a certain sense of loyalty and bonding. I have been listening to podcasts since 2004, and there are are many that I have been following for more than a decade.</p>
+
+<p>Unfortunately, just like music, podcasts nowadays are in the millions. While I still follow my favorites, there are many more, from which I occasionally grab an interesting episode and skip the rest. Kind of like your Twitter timeline. Of the hundreds (or thousands) of people you follow, perhaps, you only interact with a couple. The rest are somewhat matching your taste, but you probably only added them because you like one of their tweets. Now you are stuck with them forever, hoping for them to strike gold again.</p>
+
+<p>This is one of the reasons why I started working on <a href="https://mixtape.preslav.me/">Mixtape</a>. From a rough first glance, <a href="https://mixtape.preslav.me/">Mixtape</a> looks like a search engine. This is totally true - the search engine is what powers the foundation of <a href="https://mixtape.preslav.me/">Mixtape</a>. Unlike what you would get in your podcast player, the search engine goes beyond the podcast itself, and focuses on what makes each of its episodes unique. That&rsquo;s why, you would get episodes from various podcasts when searching for a given topic:</p>
+
+<ul>
+<li><a href="https://mixtape.preslav.me/?search=sleep%20science"><em>Why is sleep so important</em></a></li>
+<li><a href="https://mixtape.preslav.me/?search=space%20exploration&amp;category=science"><em>What&rsquo;s the up with space exploration?</em></a></li>
+<li><a href="https://mixtape.preslav.me/?search=future%20of%20work&amp;category=business"><em>Are we ready for the future of work?</em></a></li>
+</ul>
+
+<p>Yet, the search is only the beginning. The <strong>mixtape</strong> part in <a href="https://mixtape.preslav.me/">Mixtape</a> comes from the fact that each search is essentialy a new podcast you can subscribe to. A whole new podcast, made up of episodes from various shows, and centred around the topic that interested you.</p>
+
+<p>And here comes the discovery part. By providing the full credits to the original podcast creator (incl. links, podcast covers, etc), I am hoping that having caught up on a new podcast via a mixtape feed, a listener would eventually go and subscribe for the podcast itself. The difference with subscribing up-front, is that the listener would have gained enough confidence that the podcast is really up to their liking.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908181824/</link>
+            <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908181824/</guid>
+            <description>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</description>
+            <content type="html"><![CDATA[
+
+<p>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with <a href="https://en.wikipedia.org/wiki/Tobias_L%C3%BCtke">Tobias Lütke</a>, co-founder and CEO of <a href="https://www.shopify.com/">Shopify</a>. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</p>
+
+<p>Out of his passion for snowboarding, Tobias has managed to build a market leader in online sales software. Yet, I was amazed at how humble his whole attitude is. This is one trait I can directly trace to his German roots.</p>
+
+<p>Fun fact: Tobias was one of the early adopters of Ruby on Rails, and as a result, Shopify is one of the largest sites using it nowadays, and a major flagship showcase, together with <a href="https://basecamp.com/">Basecamp</a>.</p>
+
+<p>Listen to the whole show:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        NPR Choice page</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      By choosing “I agree” below, you agree that NPR’s sites use cookies, similar tracking and storage technologies, and information about the device you use to access our sites to enhance your viewing, listening and user experience, personalize content, personalize messages from NPR’s sponsors, provide social media features, and analyze NPR’s traffic. This information is shared with social media services, sponsorship, analytics and other third-party service providers.
+            See details.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke">https://choice.npr.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h5 id="i-managed-to-find-amazing-podcast-episode-through-mixtape-https-mixtape-preslav-me-the-search-and-discovery-engine-for-podcasts-i-built-check-it-out-and-help-me-keep-working-on-it-by-buying-me-a-coffee-https-www-buymeacoffee-com-0b7zhlq2i">I managed to find amazing podcast episode through <a href="https://mixtape.preslav.me/">Mixtape</a>, the search and discovery engine for podcasts I built. Check it out and help me keep working on it, by <a href="https://www.buymeacoffee.com/0B7zhlQ2I">buying me a coffee</a>.</h5>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906081458/</link>
+            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906081458/</guid>
+            <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201904261848/</link>
-      <pubDate>Fri, 26 Apr 2019 16:48:32 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201904261848/</guid>
-      <description> Ask the reader: This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.
+            <content type="html"><![CDATA[<blockquote>
+<p>Q: Aesthetically, what do you think about the design of the new grater?</p>
+
+<p>A: It has been optimized for softer cheeses 😂</p>
+</blockquote>
+
+<article class="center">
+    <iframe width="100%" height="100%" frameborder="0" src="https://overcast.fm/podcasts/episode_card/1261197307846866?t=699"></iframe>
+</article>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://overcast.fm/art?s=3fba7cd33ee1b897707efaf08b335c6425ec5907e491ca2eb07ecd32a51590dd&amp;w=840&amp;u=http%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F513abd71e4b0fe58c655c105%2Ft%2F52c45a37e4b0a77a5034aa84%2F1388599866232%2F1500w%2FArtwork.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://overcast.fm/&#43;R7DWGGoNI/11:39">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        329: Mac Pro Day — Accidental Tech Podcast — Overcast</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Our live show from WWDC 2019!</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201904261848/</link>
+            <pubDate>Fri, 26 Apr 2019 16:48:32 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201904261848/</guid>
+            <description> Ask the reader: This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.
   (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id=&#34;typef_orm&#34;, b=&#34;https://embed.typeform.com/&#34;; if(!gi.call(d,id)) { js=ce.call(d,&#34;script&#34;); js.id=id; js.src=b+&#34;embed.js&#34;; q=gt.call(d,&#34;script&#34;)[0]; q.parentNode.insertBefore(js,q) } })()  powered by Typeform  </description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<h2 id="ask-the-reader">Ask the reader:</h2>
+
+<p>This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.</p>
+
+<div class="typeform-widget" data-url="https://preslavrachev.typeform.com/to/b6hzTP" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=b6hzTP&utm_source=typeform.com-260811-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

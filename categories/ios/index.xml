@@ -1,24 +1,174 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ios on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/ios/</link>
-    <description>Recent content in Ios on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 12 Aug 2018 05:29:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/ios/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Data Science on Your iPad</title>
-      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
-      <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Ios on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/ios/</link>
+        <description>Recent content in Ios on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 12 Aug 2018 05:29:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/ios/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Data Science on Your iPad</title>
+            <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+            <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+            <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
+            <content type="html"><![CDATA[
+
+<p>This article is a follow-up transcription to a talk I recently gave at a local <a href="https://www.meetup.com/Hacking-Machine-Learning">Munich machine learning meetup</a>. Unlike <a href="https://preslav.me/2018/05/25/my-first-machine-learning-talk/">my previous talk</a>, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea. Being an iOS developer, who has once built a 3rd-party App Store search engine, I know first-hand how difficult it is to find anything inside the App Store, more so, when carefully specifying what one is looking for. Therefore, I believe that if nothing else, even having this one collection of links should be a valuable starting point for further exploration.</p>
+
+<p>Before I get to the apps, let me start with some background:</p>
+
+<h2 id="why-a-tablet">Why a Tablet?</h2>
+
+<p>Although it might no longer get the media&rsquo;s attention as the tech sector&rsquo;s latest sexy gadget, the tablet has replaced the laptop/desktop in a number of activities, where one previously needed a &ldquo;real machine&rdquo;. What is more, the tablet is slowly getting out of people&rsquo;s notion as being handy coffee table device for content consumption. It is rather becoming the preferred content creation choice of many, particularly, creative professions, such as writers, musicians, and visual artists. This has caught the eye of companies like Apple, who have decided to double-down on the iPad&rsquo;s Pro model, targeted primarily at professionals.</p>
+
+<p>If there is one thing that could describe our generation best, this would be our constant state of movement. We spend so much time commuting, or in some form of passive travel. We might as well try to start reclaiming some of this time and use it for creative and productive activities. This is where a tablet fits in for me.</p>
+
+<p>Even at the bulkiest of sizes, an iPad is more convenient to carry around than a laptop. It is &ldquo;always on&rdquo;, can be used while sitting, lying or standing, with or without a keyboard, and requires less interactions than a laptop. More than anything else, I find the level of multitasking exactly right for this type of medium. Indeed, one can do way less things at the same time on an iPad than one can do using a laptop. I tend to consider this a feature rather than a shortcoming: less multitasking =&gt; less distraction, i.e. more immersion.</p>
+
+<p>Although my daily work involves sitting behind a laptop and crafting complex systems, it is rarely behind the laptop where these ideas originate. I feel most creative when discussing things with people or when I drift away somewhere outside, my iPad in my hand.</p>
+
+<p>Now back to the main topic&hellip;</p>
+
+<h2 id="coding-on-an-ipad">Coding on an iPad?</h2>
+
+<p>It is certainly doable, and getting used to it takes way less time than one might expect. As an example, take developer Richard Morgan, who <a href="https://www.imore.com/starsceptre-ios-game-was-entirely-coded-ipad">developed an iOS game on his iPad</a>, entirely during his commute around London. Everything is possible when you have the right mindset and the right tools.</p>
+
+<p>As for the tools, there are quite a few good ones, hidden inside the App Store. In fact, code editors for iOS have existed even before the release of the original iPad. Among them, many in-app IDEs of sorts. Yet, it wasn&rsquo;t until last year, when I started seriously taking look at the possibility writing code and running it entirely on an iPad. In 2017, Apple <a href="https://www.macstories.net/linked/apples-app-store-guidelines-now-allow-executable-code-in-educational-apps-and-developer-tools/">permitted</a> the sharing and downloading of executable code on iOS devices, for teaching, learning and personal development purposes. A validation that writing code on iOS is here to stay.</p>
+
+<p>The apps below are in no particular order, besides the fact that I will be specifically looking at Pythonista later on. All apps are paid, which is something I firmly stand behind and support, yet this post is no product or service endorsement of any kind. I am just a happy customer:</p>
+
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Languages</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://omz-software.com/pythonista/">Pythonista 3</a></td>
+<td>Python 2 / 3</td>
+</tr>
+
+<tr>
+<td><a href="https://codea.io/">Codea</a></td>
+<td>Lua</td>
+</tr>
+
+<tr>
+<td><a href="http://continuous.codes/">Continuous</a></td>
+<td>C# / F# .NET</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/irstudio/id1173749340">iRstudio</a></td>
+<td> R</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a></td>
+<td>Python</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492">Playgrounds</a></td>
+<td>Swift</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="pythonista">Pythonista</h2>
+
+<p><a href="http://omz-software.com/pythonista/">Pythonista</a> is one the few apps, just like <a href="https://ia.net/writer">iA Writer</a> (which I am using right now to write this post), which IMHO, deserves to come on an iPad pre-installed. To those having tried the Swift Playgrounds app on an iPad, it is just mere peanuts in comparison with what Pythonista offers:</p>
+
+<ul>
+<li>Fully featured support for both Python 2 and Python 3</li>
+<li>Excellent documentation, keyboard extensions, and code completion</li>
+<li>Has an integrated debugger, a property inspector, and its own REPL-like console</li>
+<li>Provides extensions for writing GUIs and communication with other apps on your device</li>
+</ul>
+
+<p><img src="/images/2018/august/pythonista-1.jpg" alt="" /></p>
+
+<p><img src="/images/2018/august/pythonista-2.jpg" alt="" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UYIZlqQPusw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Pythonista comes pre-packed with a ton of libraries we love and use every day: NumPy, Matplotlib, Requests, BeatufulSoup, etc. Yet, lacks some of our favourites, due to Apple&rsquo;s restrictions: Pandas, SciPy, Scikit-Learn, and unfortunately, TensorFlow. There are other apps like
+<a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a> and the now defunct Computable, which feature many of those as part of the app bundle, which lets me remain optimistic that we will see many of those included in future releases of Pythonista too.</p>
+
+<p>Pythonista is great for quickly scrapping ideas, and doing exploratory data analysis. In fact, I am running most of my early-stage exploratory analysis on cryptocurrency pricing directly in the app. It is absolutely indispensable when learning new concepts, be those Python, or math / science-related. Last but not least, the integrated GUI and extension capabilities allow for creating entire iOS applications using Python. Think about it. An iOS app, built using Python, using only an iPad. It can&rsquo;t get better than this.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a7QcX4Ke3Hc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="what-about-jupyter">What about Jupyter?</h2>
+
+<p>Indeed, what about <a href="https://jupyter.org/">Jupyter</a>? Unless you have been living in a cave, and self-proclaimed yourself a data scientist, you should know that Jupyter  Notebook, and similar tools which mix code and narrative have taken the scientific world by storm. Moreover, Jupyter Notebook is entirely Web-based. Therefore, it shouldn&rsquo;t be a big deal to run your private Jupyter instance, or use of the many readily available instances from <a href="https://notebooks.azure.com/">Microsoft</a>, <a href="https://www.kaggle.com/kernels">Kaggle</a>, <a href="https://colab.research.google.com/">Google</a>, and many other providers. My answer to this is <strong>yes and no</strong>. Although Jupyter Notebook is Web-based and technically opens up in mobile Safari, the actual usability of the Web version on mobile is less than ideal. Browsing through and reading code somehow works. It is the editing of code, where things get really painful. Many of the beloved Jupyter shortcuts are not supported, due to the lack of corresponding keys on the iPad&rsquo;s keyboard. When trying to type inside a cell, the browser tries to compensate by zooming in in and out in a horrible fashion. A very, very unpleasant thing.</p>
+
+<p>So far, so good, but there must be an app that brings the best of Jupyter and the native iOS experience together, right? Indeed, but a bit later on that. First, a word about Computable.</p>
+
+<p><a href="http://computableapp.com/index_old.html">Computable</a> was an app that promised to be the best of Pythonista, with  even more DS libraries under the hood, and its own native Jupyter support. The ultimate bliss.</p>
+
+<p><img src="http://www.computableapp.com/img/keyboard@2x.png" alt="" /></p>
+
+<h6 id="computable-in-action-photo-source-http-www-computableapp-com-index-old-html">Computable in Action. <a href="http://www.computableapp.com/index_old.html">Photo Source</a></h6>
+
+<p>Sadly, the app is no longer available. It was pulled from the App Store in 2015 for various reasons, but the developer was kind enough to <a href="https://github.com/ktraunmueller/Computable">put the original code up on GitHub</a>, and make it open-source. In fact, as far as I know, I have been the first one to <a href="https://github.com/preslavrachev/Computable">fork</a> the repository, and I am keen on trying to at least trying to revive it. I am looking for other contributors as well, so anyone willing to help is more than welcome.</p>
+
+<p>Now, back to my dilemma. Indeed, there is a great app I discovered last year, which brings the best of both worlds. It is called
+<a href="https://juno.sh/">Juno</a> and it is a slick, brand new, native iOS client for working with Jupyter Notebook and JupyterLab instances.</p>
+
+<p><img src="https://navoshta.com/images/posts/juno/screenshot_h_01@2x.png" alt="" /></p>
+
+<h6 id="photo-source-https-navoshta-com"><a href="https://navoshta.com">Photo Source</a></h6>
+
+<p>Juno will easily connect to a self-hosted Jupyter server, or to a cloud-provided Jupyter VM (e.g. Azure, CoCalc, and many more coming soon). It also supports <a href="https://mybinder.org/">Binder</a>, for a series of pre-made tutorial notebooks, which is ideal for people to get on board without yet having an actual Jupyter instance running.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6QNFi4EIz6U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Indeed, the lack of working truly offline might be a show-stopper for some, but I am more than sure that the developers are working hard to address this in future versions. Understanding the difficulties of having all Python libraries locally under the hood, I can only wish for an easy way to browse through, and perhaps, locally caching pre-rendered Jupyter notebooks for later reference. This would be great, and one won&rsquo;t have to render those to PDF or something more obscure.</p>
+
+<h2 id="a-few-more-apps">A few more apps</h2>
+
+<p>Before closings have decided to reiterate on my original statement that  the App Store is full of hidden gems which unfortunately, often did not really get the credit they deserve. This is the reason why I decided to share a few complementary apps that professionals from all disciplines will surely be interested in trying out. As before, those are not in any particular order, and I am not endorsing any of them, just sharing my personal opinion.</p>
+
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Apps</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Taking Notes and Documenting</td>
+<td><a href="http://happenapps.com/#quiver">Quiver</a>, <a href="https://ia.net/writer">iAWriter</a>, <a href="http://www.bear-writer.com/">Bear</a>, <a href="https://fsnot.es/">FSNotes</a></td>
+</tr>
+
+<tr>
+<td>Source Control</td>
+<td><a href="https://workingcopyapp.com/">Working Copy</a></td>
+</tr>
+
+<tr>
+<td>SSH and Terminal Emulation</td>
+<td><a href="https://www.termius.com/">Termius</a>, <a href="https://panic.com/prompt/">Prompt</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p>Last but not least, here are <a href="https://speakerdeck.com/preslavrachev/data-science-on-your-ipad">my slides</a> from the talk. Until next time!</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

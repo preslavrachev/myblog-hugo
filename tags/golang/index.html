@@ -1,298 +1,1123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev ">
-<meta name="description" content="" />
-<meta name="keywords" content="programming, golang, python, elixir" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/tags/golang/" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-
-    <title>
-        
-            Golang :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="programming, golang, python, elixir" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/tags/golang/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Golang · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Golang">
-<meta itemprop="description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music.">
+<meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet.">
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
 
 <meta name="twitter:title" content="Golang"/>
-<meta name="twitter:description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."/>
+<meta name="twitter:description" content="I am a software engineer building his own stuff. This is my home on the Internet."/>
 
-
-
-
-
-
-
-<link rel="alternate" type="application/rss+xml" href="https://preslav.me/tags/golang/index.xml" title="Random Bits of Wisdom" />
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    <link rel="alternate" type="application/rss+xml" href="https://preslav.me/tags/golang/index.xml" title="Random Bits of Wisdom" />
+    
+    
+
+</head>
+<body class=" tag-template  ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div>
+    <div class="outer site-header-background no-image">
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
+<div class="inner site-header-content">
+            <h1 class="site-title">Golang</h1>
+            <h2 class="site-description">
+                
+                    I am a software engineer building his own stuff. This is my home on the Internet.
+                
+            </h2>
+        </div>
+    </div>
 </header>
 
-
-            <div class="content">
-                
-    <main class="posts">
-        <h1>Golang</h1>
-            <div class="posts-group">
-                <div class="post-year">2020</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/04/18/this-week-i-learned/">
-                                <span class="post-title">This Week I Learned</span>
-                                <span class="post-day">Apr 18</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">
-                                <span class="post-title">Elixir-Style Actors in Go</span>
-                                <span class="post-day">Mar 7</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/">
-                                <span class="post-title">A Crystal in Go’s World</span>
-                                <span class="post-day">Jan 26</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/">
-                                <span class="post-title">Reflecting on My Experience With Go, One Year After</span>
-                                <span class="post-day">Jan 17</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/">
-                                <span class="post-title">Using Gohack for Temporary Modifications to Go Module Dependencies</span>
-                                <span class="post-day">Jan 10</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-            <div class="posts-group">
-                <div class="post-year">2019</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/12/14/panic-without-worry/">
-                                <span class="post-title">Panic Without Worry</span>
-                                <span class="post-day">Dec 14</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/10/18/go-is-good-enough/">
-                                <span class="post-title">Go is Good Enough</span>
-                                <span class="post-day">Oct 18</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/">
-                                <span class="post-title">Simple Immutable Builders in Go, Using Value Receivers</span>
-                                <span class="post-day">Oct 6</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/260920191021/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Sep 26</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/08/29/goland-license/">
-                                <span class="post-title">Bought a Year-Long License for GoLand</span>
-                                <span class="post-day">Aug 29</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/">
-                                <span class="post-title">Reduce Struct Size by Laying out Attributes Accordingly</span>
-                                <span class="post-day">Aug 27</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/">
-                                <span class="post-title">X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</span>
-                                <span class="post-day">Aug 11</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/">
-                                <span class="post-title">Mixtape Retrospective: Time to Split the Monolith?</span>
-                                <span class="post-day">Aug 3</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/">
-                                <span class="post-title">Adding Version Information to Go Binaries</span>
-                                <span class="post-day">Jul 9</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/">
-                                <span class="post-title">Implementing a Functional-Style Builder in Go</span>
-                                <span class="post-day">Jul 7</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907022242/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 2</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906211000/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/06/20/introducing-noembed/">
-                                <span class="post-title">Introducing NoEmbed</span>
-                                <span class="post-day">Jun 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/">
-                                <span class="post-title">My Reasons to Consider Go Coming from Java</span>
-                                <span class="post-day">May 7</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905011824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 1</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/">
-                                <span class="post-title">Deploying a Native Go Binary on Heroku</span>
-                                <span class="post-day">Apr 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/02/20/my-baby-steps-with-go/">
-                                <span class="post-title">My Baby Steps with Go</span>
-                                <span class="post-day">Feb 20</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-    </main>
-
-            </div>
-
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
             
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
 
-            
-        </div>
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+ post-card-large 
+ ">
 
         
+            <a class="post-card-image-link" href="https://preslav.me/2020/04/18/this-week-i-learned/">
+                <img class="post-card-image"src="https://avatars3.githubusercontent.com/u/36013798" alt="This Week I Learned"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/04/18/this-week-i-learned/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Firefox</div>
+                    
+
+                    <h2 class="post-card-title">This Week I Learned</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
+Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-104-04">18 April 2020</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg" alt="Elixir-Style Actors in Go"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Elixir-Style Actors in Go</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-53-03">7 March 2020</time>
+                            <span class="bull">&bull;</span> 8 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">A Crystal in Go’s World</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+Meet Crystal!
+Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-81-01">26 January 2020</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Reflecting on My Experience With Go, One Year After</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-81-01">17 January 2020</time>
+                            <span class="bull">&bull;</span> 6 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/">
+                <img class="post-card-image"src="https://avatars0.githubusercontent.com/u/66491" alt="Using Gohack for Temporary Modifications to Go Module Dependencies"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Using Gohack for Temporary Modifications to Go Module Dependencies</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
+One big disadvantage of modules is that one can’t really edit them.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-71-01">10 January 2020</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/12/14/panic-without-worry/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Panic Without Worry</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-1012-12">14 December 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/10/18/go-is-good-enough/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Go is Good Enough</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Have you heard about the Pareto Principle? Also known as the 80&frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-1010-10">18 October 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Simple Immutable Builders in Go, Using Value Receivers</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
+l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes)  Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-710-10">6 October 2019</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/260920191021/">
+                <img class="post-card-image"src="https://ocwww.wpengine.com/wp-content/uploads/2016/10/Visualization_of_two_dimensions_of_a_NK_fitness_landscape-400x292.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/260920191021/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Chiefly, Go sacrifices expressiveness for uniformity.
+The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
+Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-119-09">26 September 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/08/29/goland-license/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Golang</div>
+                    
+
+                    <h2 class="post-card-title">Bought a Year-Long License for GoLand</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>NOTE: This is not a paid product endorsement. I&rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-108-08">29 August 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Optimization</div>
+                    
+
+                    <h2 class="post-card-title">Reduce Struct Size by Laying out Attributes Accordingly</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
+struct { a bool b int32 c string d string }  The size of the struct above is is different from the one down below
+struct { b int32 c string d string a bool }  Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-38-08">27 August 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/">
+                <img class="post-card-image"src="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon" alt="X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Docker</div>
+                    
+
+                    <h2 class="post-card-title">X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>If you ever get the following message:
+x509: certificate signed by unknown authority  While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
+On Alpine, this can be done using the default package installer:</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-78-08">11 August 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Podcasting</div>
+                    
+
+                    <h2 class="post-card-title">Mixtape Retrospective: Time to Split the Monolith?</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-108-08">3 August 2019</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/">
+                <img class="post-card-image"src="https://blog.alexellis.io/content/images/2017/08/pexels-photo-249580_crop.jpg" alt="Adding Version Information to Go Binaries"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Tips</div>
+                    
+
+                    <h2 class="post-card-title">Adding Version Information to Go Binaries</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-47-07">9 July 2019</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Functional Programming</div>
+                    
+
+                    <h2 class="post-card-title">Implementing a Functional-Style Builder in Go</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
+In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&rsquo;t claim that mine is certainly the best.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-107-07">7 July 2019</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907022242/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-77-07">2 July 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906211000/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
+ @media (max-width: 640px) { .</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-86-06">21 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2019/06/20/introducing-noembed/">
+                <img class="post-card-image"src="https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef" alt="Introducing NoEmbed"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/06/20/introducing-noembed/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Project</div>
+                    
+
+                    <h2 class="post-card-title">Introducing NoEmbed</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-106-06">20 June 2019</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Spring Boot</div>
+                    
+
+                    <h2 class="post-card-title">My Reasons to Consider Go Coming from Java</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-105-05">7 May 2019</time>
+                            <span class="bull">&bull;</span> 7 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201905011824/">
+                <img class="post-card-image"src="https://miro.medium.com/max/1200/1*x_OU1YRmBR8037eqsSAfYA.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905011824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium  For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a https://medium.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-45-05">1 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Golang</div>
+                    
+
+                    <h2 class="post-card-title">Deploying a Native Go Binary on Heroku</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&rsquo;s backend part, written in Go.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-74-04">20 April 2019</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/02/20/my-baby-steps-with-go/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Golang</div>
+                    
+
+                    <h2 class="post-card-title">My Baby Steps with Go</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-52-02">20 February 2019</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</main>
 
 
 
 
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+
+
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -303,14 +1128,6 @@
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

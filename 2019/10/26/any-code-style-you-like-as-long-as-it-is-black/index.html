@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev">
-<meta name="description" content="The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="Preslav Rachev">
+    <meta name="description" content="The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter." />
-<meta name="keywords" content="programming, golang, python, elixir, Python, Tools, Best Practices" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/" />
-
-
-    <title>
-        
-            Any Code Style You like as Long It&#39;s Black :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="keywords" content="programming, golang, python, elixir, Python, Tools, Best Practices" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Any Code Style You like as Long It&#39;s Black · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Any Code Style You like as Long It&#39;s Black">
 <meta itemprop="description" content="The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.">
@@ -68,94 +46,109 @@
 <meta name="twitter:description" content="The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter."/>
 
-
-
-    <meta property="article:section" content="Programming" />
-
-
-
-    <meta property="article:published_time" content="2019-10-26 22:00:00 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+            
+        
+    
+    
+    <meta name="twitter:image" content="https://repository-images.githubusercontent.com/125266328/48aef880-6cce-11e9-9e3c-3ca0dd3ac138">
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/python">Python</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>5 minutes
+                <h1 class="post-full-title">Any Code Style You like as Long It&#39;s Black</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>Preslav Rachev</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">Preslav Rachev</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2019-1010-10">26 October 2019</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 5 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
-
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/">Any Code Style You like as Long It&rsquo;s Black</a>
-        </h1>
-
-        
-
-        <div class="post-content">
-            
+            <section class="post-full-content">
+                <div class="post-content">
+                    
 
 <p>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of <strong>any</strong> formatting.</p>
 
@@ -197,22 +190,26 @@
   </div>
 </div>
 
-<p>The first thing I do when I start a new project nowadays, is to set up an automatic code formatter. My personal favorite for Python is <a href="https://github.com/psf/black" target="_blank">Black</a>. It is an opinionated formatter made by <a href="https://github.com/ambv" target="_blank">Łukasz Langa</a> - a Python Core developer. Black leaves little choice when it comes to configuration. You can think of it as the <a href="https://golang.org/cmd/gofmt/" target="_blank">gofmt</a> or <a href="https://prettier.io/" target="_blank">Prettier</a> of Python. Integrate it with your editor of choice, or use the CLI over your code base and Black will do the rest:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> seven_dwwarfs <span style="color:#f92672">import</span> Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
-x <span style="color:#f92672">=</span> {  <span style="color:#e6db74">&#39;a&#39;</span>:<span style="color:#ae81ff">37</span>,<span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#39;c&#39;</span>:<span style="color:#ae81ff">927</span>}
+<p>The first thing I do when I start a new project nowadays, is to set up an automatic code formatter. My personal favorite for Python is <a href="https://github.com/psf/black">Black</a>. It is an opinionated formatter made by <a href="https://github.com/ambv">Łukasz Langa</a> - a Python Core developer. Black leaves little choice when it comes to configuration. You can think of it as the <a href="https://golang.org/cmd/gofmt/">gofmt</a> or <a href="https://prettier.io/">Prettier</a> of Python. Integrate it with your editor of choice, or use the CLI over your code base and Black will do the rest:</p>
 
-<span style="color:#66d9ef">if</span> very_long_variable_name <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None <span style="color:#f92672">and</span> \
- very_long_variable_name<span style="color:#f92672">.</span>field <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> \
- very_long_variable_name<span style="color:#f92672">.</span>is_debug:
- z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello &#39;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;world&#39;</span>
-<span style="color:#66d9ef">else</span>:
- world <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;world&#39;</span>
- a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello {}&#39;</span><span style="color:#f92672">.</span>format(world)
- f <span style="color:#f92672">=</span> rf<span style="color:#e6db74">&#39;hello {world}&#39;</span>
-<span style="color:#66d9ef">if</span> (this
-<span style="color:#f92672">and</span> that): y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello world&#39;</span></code></pre></div>
+<pre><code class="language-python">from seven_dwwarfs import Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
+x = {  'a':37,'b':42, 'c':927}
+
+if very_long_variable_name is not None and \
+ very_long_variable_name.field &gt; 0 or \
+ very_long_variable_name.is_debug:
+ z = 'hello '+'world'
+else:
+ world = 'world'
+ a = 'hello {}'.format(world)
+ f = rf'hello {world}'
+if (this
+and that): y = 'hello world'
+</code></pre>
+
 <p>will transform into this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> seven_dwwarfs <span style="color:#f92672">import</span> (
+
+<pre><code class="language-python">from seven_dwwarfs import (
     Grumpy,
     Happy,
     Sleepy,
@@ -222,20 +219,22 @@ x <span style="color:#f92672">=</span> {  <span style="color:#e6db74">&#39;a&#39
     Doc,
 )
 
-x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">37</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">927</span>}
+x = {&quot;a&quot;: 37, &quot;b&quot;: 42, &quot;c&quot;: 927}
 
-<span style="color:#66d9ef">if</span> (
-    very_long_variable_name <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None
-    <span style="color:#f92672">and</span> very_long_variable_name<span style="color:#f92672">.</span>field <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#f92672">or</span> very_long_variable_name<span style="color:#f92672">.</span>is_debug
+if (
+    very_long_variable_name is not None
+    and very_long_variable_name.field &gt; 0
+    or very_long_variable_name.is_debug
 ):
-    z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;world&#34;</span>
-<span style="color:#66d9ef">else</span>:
-    world <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>
-    a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello {}&#34;</span><span style="color:#f92672">.</span>format(world)
-    f <span style="color:#f92672">=</span> rf<span style="color:#e6db74">&#34;hello {world}&#34;</span>
-<span style="color:#66d9ef">if</span> this <span style="color:#f92672">and</span> that:
-    y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span></code></pre></div>
+    z = &quot;hello &quot; + &quot;world&quot;
+else:
+    world = &quot;world&quot;
+    a = &quot;hello {}&quot;.format(world)
+    f = rf&quot;hello {world}&quot;
+if this and that:
+    y = &quot;hello world&quot;
+</code></pre>
+
 
 
 
@@ -276,7 +275,7 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
 
 <h1 id="isn-t-pep8-enough">Isn&rsquo;t PEP8 enough?</h1>
 
-<p>When it comes to code style, most Python developers point out <a href="https://www.python.org/dev/peps/pep-0008" target="_blank">PEP8</a>. <a href="https://www.python.org/dev/peps/pep-0008" target="_blank">PEP8</a> is a good style guide, but definitely not a set of strict formatting rules. The same piece of code might be written in different ways, and still be compliant with PEP8. This is by design, as much of the Python philosophy is to leave the freedom and the final decision to the programmer. For comparison, Go follows a different mentality, where most of the extra energy aspects of programming are taken over by the compiler and the available tooling.</p>
+<p>When it comes to code style, most Python developers point out <a href="https://www.python.org/dev/peps/pep-0008">PEP8</a>. <a href="https://www.python.org/dev/peps/pep-0008">PEP8</a> is a good style guide, but definitely not a set of strict formatting rules. The same piece of code might be written in different ways, and still be compliant with PEP8. This is by design, as much of the Python philosophy is to leave the freedom and the final decision to the programmer. For comparison, Go follows a different mentality, where most of the extra energy aspects of programming are taken over by the compiler and the available tooling.</p>
 
 <p>Unfortunately, even PEP8-compliant code still leads to arguments when it comes to keeping a unified code base. I don&rsquo;t know about you, but I have reached a level of pragmatism, where I don&rsquo;t care much about style and formatting, as long as it has been standardized everywhere. This is where Black enters the stage.</p>
 
@@ -292,7 +291,7 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
 
 <h1 id="black-is-stubborn">Black is stubborn</h1>
 
-<p>Borrowing ideas from <a href="https://golang.org/cmd/gofmt/" target="_blank">gofmt</a>, Black has close to zero configuration options, especially, when it comes to variations of formatting style. I welcome such initiatives, because formatting is not something I would like to personally spend time dealing with. If this is not to your taste, however, you might try out the notable alternatives, such as <a href="https://github.com/google/yapf" target="_blank">yapf</a> and <a href="https://github.com/hhatto/autopep8" target="_blank">autopep8</a>. <a href="https://github.com/google/yapf" target="_blank">yapf</a>, in particular, has multiple code style options, e.g. from Google, Facebook, which you can try and see if any fits your taste. You can always create your own, and share it across all fo your projects.</p>
+<p>Borrowing ideas from <a href="https://golang.org/cmd/gofmt/">gofmt</a>, Black has close to zero configuration options, especially, when it comes to variations of formatting style. I welcome such initiatives, because formatting is not something I would like to personally spend time dealing with. If this is not to your taste, however, you might try out the notable alternatives, such as <a href="https://github.com/google/yapf">yapf</a> and <a href="https://github.com/hhatto/autopep8">autopep8</a>. <a href="https://github.com/google/yapf">yapf</a>, in particular, has multiple code style options, e.g. from Google, Facebook, which you can try and see if any fits your taste. You can always create your own, and share it across all fo your projects.</p>
 
 <h1 id="know-when-to-be-inconsistent">Know when to be inconsistent</h1>
 
@@ -302,7 +301,7 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/esZLCuWs_2Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="//www.youtube-nocookie.com/embed/esZLCuWs_2Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -455,119 +454,140 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
   </div>
 </div></p>
 
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/python">Python</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/python">Python</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/tools">Tools</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/best-practices">Best Practices</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>958 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2019-10-26 22:00 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2019/10/31/iphone-less-memory-android/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2019/10/18/go-is-good-enough/">
-                    <span class="button__text">Go is Good Enough</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
-
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
-
-            
-        </div>
+<article class="post-card post
+ no-image
+ ">
 
         
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/10/18/go-is-good-enough/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Go is Good Enough</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Have you heard about the Pareto Principle? Also known as the 80&frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-1010-10">18 October 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/10/31/iphone-less-memory-android/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Q&amp;A</div>
+                    
+
+                    <h2 class="post-card-title">Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
+It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-1010-10">31 October 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2019</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -578,14 +598,6 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

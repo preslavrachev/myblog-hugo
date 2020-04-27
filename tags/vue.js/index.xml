@@ -1,25 +1,97 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Vue.js on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/vue.js/</link>
-    <description>Recent content in Vue.js on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 17 Aug 2019 16:24:45 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908171824/</link>
-      <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908171824/</guid>
-      <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
-module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Vue.js on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/vue.js/</link>
+        <description>Recent content in Vue.js on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 17 Aug 2019 16:24:45 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908171824/</link>
+            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908171824/</guid>
+            <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
+module.exports = { devServer: { proxy: { &amp;quot;/&amp;quot;: { target: &amp;quot;https://remote-server.com&amp;quot;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
+            <content type="html"><![CDATA[<p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a <code>vue.config.js</code> file:</p>
+
+<pre><code class="language-javascript">module.exports = {
+  devServer: {
+    proxy: {
+      &quot;/&quot;: {
+        target: &quot;https://remote-server.com&quot;,
+        changeOrigin: true
+      }
+    }
+  }
+};
+</code></pre>
+
+<p>When calling <code>yarn serve</code>, I get the following message flashing in the developer console:</p>
+
+<pre><code>The connection to ws://remote-server.com was interrupted while the page was loading.
+</code></pre>
+
+<p>The app seems running and proxying to the remote API works just fine, but this annoying message obliterates everything else in the developer console. Thankfully, there is an easy way to get rid of it. Simply, add a <code>ws: false</code> to the configuration:</p>
+
+<pre><code class="language-javascript">module.exports = {
+  devServer: {
+    proxy: {
+      &quot;/&quot;: {
+        target: &quot;https://remote-server.com&quot;,
+        changeOrigin: true,
+        ws: false
+      }
+    }
+  }
+};
+</code></pre>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars1.githubusercontent.com/u/6128107?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Errors in browser console when proxying &#39;/&#39; · Issue #2662 · vuejs/vue-cli</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Version 3.0.4 Reproduction link https://github.com/CK159/vue-proxy-issue Node and OS info node 8.12.0 npm 6.4.1 Steps to reproduce Create project vue create my-app Add vue.config.js with this conte...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

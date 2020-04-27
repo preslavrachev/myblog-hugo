@@ -1,113 +1,1795 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Golang on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/golang/</link>
-    <description>Recent content in Golang on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>This Week I Learned</title>
-      <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
-      <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
-      <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
+    <channel>
+        <title>Golang on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/golang/</link>
+        <description>Recent content in Golang on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>This Week I Learned</title>
+            <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
+            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
+            <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
 Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</description>
-    </item>
-    
-    <item>
-      <title>Elixir-Style Actors in Go</title>
-      <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
-      <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
-      <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
-    </item>
-    
-    <item>
-      <title>A Crystal in Go’s World</title>
-      <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
-      <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
-      <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+            <content type="html"><![CDATA[
+
+<p>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.</p>
+
+<hr />
+
+<h2 id="apps-and-tools">Apps and Tools</h2>
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars3.githubusercontent.com/u/36013798?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/goulinkh/podcast-cli">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        goulinkh/podcast-cli</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/goulinkh/podcast-cli">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/df/ba/bc/dfbabc29-78fd-4b11-94d5-67fc6a98dea7/AppIcon-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://apps.apple.com/app/data-jar/id1453273600">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ‎Data Jar</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      ‎Data Jar is a data store designed to be used with Shortcuts. The data store lets you persist key-value pairs.
+
+If you have used dictionaries and lists in Shortcuts, then you’ll find that the data format used by Data Jar is very similar.
+
+- Extensive support for Shortcuts, enabling you to read and up…</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://apps.apple.com/app/data-jar/id1453273600">https://apps.apple.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+
+<h2 id="media">Media</h2>
+
+<h3 id="podcasts">Podcasts</h3>
+
+<p>I am a child of the 90s. Technically, I was born in 1987, but I spent much of my childhood and early teenage years during the 90s. As every kid of that era, I was mesmerized by early-age 3D games. During my growing up, there was no better example of what the digital future held for us, than Sony&rsquo;s PlayStation. As a kid, I only wanted to play great games, and console makers seemed like the good guys making sure we get to play them. I never even realized how rivalry, fierce competition, and trickery tactics there were between Sony, Nintendo, and SEGA at the time. This mini podcast series pulls the curtain of the story behind the stage.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://is4-ssl.mzstatic.com/image/thumb/Podcasts113/v4/37/f9/c4/37f9c4c9-c628-bb4f-37b1-1b6fef8f18a7/mza_7296818625298515281.jpeg/1200x630wp.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ‎Business Wars: Encore: Nintendo vs Sony - Stabbed in the Back | 1 auf Apple Podcasts</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      ‎Sendung Business Wars, Folge Encore: Nintendo vs Sony - Stabbed in the Back | 1 – 05.02.2020</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">https://podcasts.apple.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="tips-and-tricks">Tips and Tricks</h2>
+
+<h3 id="browser-design-mode">Browser Design Mode</h3>
+
+<p>Check this out:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">That feeling when you first discovered `document.designMode` <a href="https://t.co/bxA1otzCjN">pic.twitter.com/bxA1otzCjN</a></p>&mdash; Tomek Sułkowski (@sulco) <a href="https://twitter.com/sulco/status/1177559150563344384?ref_src=twsrc%5Etfw">September 27, 2019</a></blockquote>
+</p>
+
+<p>As it turns out, setting <code>document.designMode=&quot;on&quot;</code> in the browser&rsquo;s console, will start a special mode on your browser, which allows you to edit any visible portion of any page. I have checked its existence on Chrome, Firefox, Brave (Chromium), and Safari. More of a visual gimmick than a really useful feature, if you ask me, but still, some people might find this useful.</p>
+
+<h2 id="misc">Misc</h2>
+
+<p><a href="https://atoms.com/products/atoms-everyday-mask">Atoms Everyday Mask</a></p>
+
+<p>Comfortable non-medical face mask made from a blend of Polyester, Nylon, and PU with copper fused thread. They are hand washable up to 30 times, after which they behave like a regular cloth mask, just the copper will have worn down. Each mask comes with a lanyard and a pouch for safe storage.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Elixir-Style Actors in Go</title>
+            <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
+            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
+            <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
+            <content type="html"><![CDATA[
+
+<p>My foray into <a href="https://elixir-lang.org/">Elixir</a> brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with <code>sync.Mutex</code> slapped on it, you’d be (almost) right. Yet, it’s worth exploring different ways of thinking.</p>
+
+<h1 id="a-10-000-foot-view-of-elixir">A 10.000-foot view of Elixir</h1>
+
+<p>For those not aware of it, Elixir is a functional language. Everything runs inside an immutable function scope, and no state remains on the table. A function can only work on what it has been fed with. Functions reside inside modules and are being executed inside Erlang processes.</p>
+
+<p>Technical differences aside, you can think of processes as the equivalent of Go’s goroutines. A function chain call runs inside a process/goroutine. When the outermost function returns, the process/goroutine ends. A process/goroutine can spawn other processes/goroutines to achieve concurrent execution of tasks. Go synchronizes over channels while Elixir over a message inbox that is built into every process. Using the built-in receive keyword, a function’s execution blocks inside a process, until a certain type of message gets received</p>
+
+<pre><code class="language-elixir">receive do
+    # Don't get too caught up on the Elixir syntax.
+    # For now, it is only important to know that :message_a is equivalent
+    # to a string with the value of &quot;message_a&quot;
+    # Those are called &quot;atoms&quot; and are quite often used in Ruby-like laguages
+    {:message_a, msg} -&gt;
+        do_something_with(msg)
+end
+</code></pre>
+
+<p>Fundamentally, this is the same as having a <a href="https://play.golang.org/p/rZkdET2ZhJl">goroutine block its execution waiting on a channel</a>:</p>
+
+<pre><code class="language-go">type message struct {
+    val string
+}
+
+msgStream := make(chan message)
+
+go func(out chan message) {
+    out &lt;- message{val: &quot;hello world&quot;}
+}(msgStream)
+
+msg := &lt;-msgStream
+fmt.Printf(&quot;%+v&quot;, msg)
+</code></pre>
+
+<p>Whether you are waiting on a message to arrive in your inbox, or explicitly set a blocking channel as a communication mechanism, to me, it describes the same paradigm.</p>
+
+<h1 id="turn-goroutines-into-stateful-actors">Turn goroutines into stateful actors</h1>
+
+<p>Clear until now? Alright. Let’s move on. I already mentioned that Elixir is a functional language. Everything that gets passed to a function is immutable, and the only way to change it, is to return a new version of it. This means that looping constructs are not possible, since it would imply modifying and keeping track of a counter variable. The way functional languages achieve the effect of looping is through recursion (or to be more precise tail recursion):</p>
+
+<pre><code class="language-elixir">def loop(5) do
+    # Elixir uses pattern-matching when choosing which function to call.
+    # In our case, as soon as its gets a count == 5, it will stop the loop
+    5
+end
+
+def loop(count) do
+    # Just print the count, but use pipes (|&gt;)
+    # instead of wrapping in a function call -&gt; IO.puts(count)
+    # Pipes totally save the day, when you have multiple call chains
+    count
+    |&gt; IO.puts()
+
+    loop(count + 1)
+end
+</code></pre>
+
+<h2 id="from-recursion-to-actors">From recursion to actors</h2>
+
+<p>What if we take this recursion example and think of it as a never-ending loop. The first call to the function sets the initial state, and the function keeps calling itself ad-infinitum.</p>
+
+<p>Now, this is where the purely functional paradigm breaks. We already learned that Erlang allows for other processes to communicate to us. This means that if our never ending recursive function receives a message from the outside, it can use its payload to call itself with a modified version of its initial state. Keeping in mind that receiving a message is a blocking operation, the process will simply linger around, not using any CPU resources, until our the right message arrives.</p>
+
+<p>We can use the same messaging paradigm to poke inside the state of our never-ending function. Since it runs inside a separate process, the only way to do that is to send an appropriate message to it, pass our current process’ ID (PID) and let it send us a message back.</p>
+
+<pre><code class="language-elixir">defmodule Calculator do
+    def start do
+    # creates a separate process with its own internal state
+    spawn(fn -&gt; loop(0) end)
+    end
+
+    defp loop(current_value) do
+    new_value =
+        receive do
+        # with this type of message, we can fetch the state of our calculator
+        {:get, caller_pid} -&gt;
+            send(caller_pid, {:response, current_value})
+            current_value
+
+        # with this type of message, we can modify the state of our calculator
+        {:add, value} -&gt;
+            current_value + value
+        end
+
+    loop(new_value)
+    end
+end
+</code></pre>
+
+<p>Let&rsquo;s test our calculator process:</p>
+
+<pre><code class="language-elixir">defmodule CalculatorTest do
+    def test_calculator do
+    calc_pid = Calculator.start()
+
+        # Like `receive`, `send` is built-in and take a PID, as well as a message
+        # self() returns the process id (PID) of the current process
+        # Like in Go, every piece of Elixir/Erlang code runs in a process
+    send(calc_pid, {:get, self()})
+
+        # `receive` will block, until we receive a message,
+        # that matches the expected pattern - {:response, value}
+    receive do
+        {:response, value} -&gt;
+        value |&gt; IO.puts()
+    end
+
+    send(calc_pid, {:add, 100})
+
+    send(calc_pid, {:get, self()})
+
+    receive do
+        {:response, value} -&gt;
+        value |&gt; IO.puts()
+    end
+    end
+end
+</code></pre>
+
+<p>In essence, our never-ending function becomes what Elixir calls a stateful server process, an implementation of the <a href="https://en.wikipedia.org/wiki/Actor_model">Actor model</a>. Actors are great for isolating critical state and allowing for concurrent communication to it, ensuring that only one change happens at a time.</p>
+
+<h2 id="from-elixir-to-go">From Elixir to Go</h2>
+
+<p>Ok now that we know how things work in Elixir land, achieving the same thing on Go is super straightforward.</p>
+
+<pre><code class="language-go">func main() {
+    in := make(chan message)
+    out := make(chan int)
+    go newCalculator(0, in, out)
+
+    in &lt;- message{operation: &quot;get&quot;}
+    state := &lt;-out
+    log.Printf(&quot;Current state: %d&quot;, state)
+
+    in &lt;- message{operation: &quot;add&quot;, value: 100}
+    in &lt;- message{operation: &quot;get&quot;}
+    state = &lt;-out
+    log.Printf(&quot;Current state: %d&quot;, state)
+}
+
+type message struct {
+    operation string
+    value     int
+}
+
+func newCalculator(initialState int, in chan message, out chan int) {
+    state := initialState
+    for {
+        p := &lt;-in
+        switch p.operation {
+        case &quot;add&quot;:
+            log.Printf(&quot;Adding %d to the current state&quot;, p.value)
+            state += p.value
+
+        case &quot;get&quot;:
+            out &lt;- state
+        }
+    }
+}
+</code></pre>
+
+<p>One thing to note is that since we can use an infinite-loop, we should just use that, especially, since based on my knowledge Go is not particularly optimized for long-cycle recursion. But the main premise remains the same. A function gets called with some initial state and returns a channel. The function starts an endless loop, blocking on the channel. If we push a value to that channel, the function will take it, update the state and block again.</p>
+
+<h1 id="what-are-actors-good-for">What are actors good for?</h1>
+
+<h2 id="private-state">Private state</h2>
+
+<p>So, now that we unveiled the mystery behind actors, it’s a good point to discuss what they might be useful for.</p>
+
+<p>One thing that immediately comes to mind, is achieving globally accessible, but truly private, synchronized state. This is currently achieved with the use of channels, <code>sync.Mutex</code>, or the new <code>sync.Map</code>.</p>
+
+<pre><code class="language-go">type SynchronizedMap struct {
+    sync.RWMutex
+    internal map[string]interface{}
+}
+
+func (rm *SynchronizedMap) Store(key string, value interface{}) {
+    rm.Lock()
+    rm.internal[key] = value
+    rm.Unlock()
+}
+</code></pre>
+
+<p>The fragility of this approach comes from the fact that there is no real private state in Go applications. The map we named <code>internal</code> in the above example is only protected from outside access. Any piece of code inside the same package as our <code>SynchronizedMap</code> can freely access and modify its internals, leading to unexpected consequences. While this shouldn&rsquo;t be a concern in most cases, it&rsquo;s definitely good to keep in mind for special cases.</p>
+
+<h2 id="stateful-autonomous-agents">Stateful autonomous agents</h2>
+
+<p>Where the Actor model shines is the orchestration of systems of Actor instances - autonomous agents. Each Actor instance is able to change its state, reacting to the messages sent to it. Actor instances can easily spawn other Actor instances, which only the creating actors (supervisors) have control over (private state, remember). Supervisors can also take over failures of the actors their are responsible for, potentially, killing some off, and restarting them with a clean state. Taking this example to extremes, groroutines being fairly cheap, one can easily imagine a swarm of thousands of Actor instances, in a deeply nested hierarchy, with multiple levels of supervising actors taking over their &ldquo;progeny&rdquo;. This is the unique selling proposition of Erlang, but as I hope to have demonstrated, could be replicated in Go too.</p>
+
+<p>As discussed in the beginning, I would leave the discussions about this approach&rsquo;s practicality, as well as its other applications to the reader. I would love to hear your thoughts. Do not hesitate to drop me a comment, or start a new discussion.</p>
+
+<hr />
+
+<h1 id="resources">Resources</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/38732242-elixir-in-action">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Elixir in Action</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Elixir language blends the battle-tested power and stability of the Erlang virtual machine with an approachable and expressive syntax...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p>One of the best books about learning Elixir, and certainly, the one that inspired me to write this post. Saša Jurić&rsquo;s explanations are clear and demonstrative, especially on complex topics such as this one. If you like this blog, and would love to support my passion for reading great books, you can <a href="https://amzn.to/39AXJ6T">buy it on Amazon using this special link</a>. Thanks!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>A Crystal in Go’s World</title>
+            <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
+            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
+            <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
 Meet Crystal!
 Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
-    </item>
-    
-    <item>
-      <title>Reflecting on My Experience With Go, One Year After</title>
-      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
-      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
-      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+            <content type="html"><![CDATA[
+
+<p>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.</p>
+
+<p>Meet <a href="https://crystal-lang.org/">Crystal</a>!</p>
+
+
+    <img src="/images/2020/image-crystal.png"  alt="Crystal home page"  class="center"  style="border-radius: 8px;"  />
+
+
+
+<p>Crystal is all of the above, plus it has types, <a href="https://crystal-lang.org/reference/overview/">outstanding documentation</a>, and a strong community, delivering a steady stream of new libraries (a.k.a “shards”). Don’t get fooled by the current version number (0.32.1). Crystal has been around for quite a few years (since 2012) and has a mature set of language features and an ecosystem of good libraries.</p>
+
+<h2 id="where-does-the-speed-come-from">Where does the speed come from?</h2>
+
+<p>Crystal produces fast and lightweight native applications using the LLVM infrastructure. When I say fast, I mean, <a href="https://github.com/kostya/benchmarks">really fast</a>. Take the fastest Go code you can find and chances are, the same code in Crystal will perform at least on par with it, and often quite a bit faster. Measuring Crystal’s performance against that of Ruby makes no sense.</p>
+
+<p>There are no runtime frameworks or virtual machines necessary. One can just grab the compiled binary and deploy it. When compared with deploying and running a Ruby application, this feels like a whole different league.</p>
+
+<p>Note that there are some caveats, which I am going to discuss in a future blog post. For now, let’s just say that building and distribution are equally as easy, as those in Rust. As of yet, nothing can beat the Go compiler speed-wise, but my experience with the Crystal tooling has been more than pleasant so far.</p>
+
+<h2 id="csp-style-concurrency">CSP-style concurrency</h2>
+
+<p>One of the things that make Go so interesting is its concurrency model. The idea about goroutines that communicate via channels is based on an approach dating back to the late 1970s, called <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating Sequential Processes (CSP)</a>. Crystal uses an analogous approach. Programs run in what is known as <a href="https://crystal-lang.org/reference/guides/concurrency.html">“fibers”</a>. The main fiber can spawn any number of concurrent fibers that send and receive data via blocking channels.</p>
+
+<pre><code class="language-crystal">channel = Channel(Nil).new 
+spawn do    
+	puts &quot;Before send&quot;    
+	channel.send(nil)    
+	puts &quot;After send&quot; 
+end  
+
+puts &quot;Before receive&quot; 
+channel.receive 
+puts &quot;After receive&quot;
+</code></pre>
+
+<h2 id="why-re-invent-ruby-in-2020">Why re-invent Ruby in 2020?</h2>
+
+<p>The creators of Crystal obviously didn’t intend on changing the world of programming by creating a new language. They just <a href="https://web.archive.org/web/20181126095302/https://manas.tech/blog/2016/04/01/the-story-behind-crystal.html">loved Ruby</a> and felt it sad to leave it for a more performant and type-safe alternative. Due to a series of trade-offs at the implementation level, Ruby is still slower and more memory-hungry than its competitors. Despite perfectly serving the needs of a large segment of Web users through Rails, its performance puts it at the back of the pack, when it comes to other use cases.</p>
+
+<p>The point is fair and valid. As a language, Ruby has a concise and elegant syntax for writing. Once beyond the basic idioms, writing Ruby evokes pure joy. Crystal brings that joy to an even higher level through type-safety, native speed, and extremely simple concurrency model.</p>
+
+<p>Don’t get me wrong, I like Go too, precisely because of its verbosity and lack of idioms. When working with others on a big project, I’d prefer more ceremony and hoops, in the name of transparency and equal code comprehension. Different languages exist to serve different purposes and be used by different groups of people. The trick is knowing when to use and when the other.</p>
+
+<h2 id="so-is-crystal-worth-having-a-look">So, is Crystal worth having a look?</h2>
+
+<p>Absolutely! If only to know that it exists and keep an eye on it, I’d go check it out and write a few applications with it. Whether Crystal will take off in the future is a bit more difficult to say, however. As mentioned, the 99% resemblance to Ruby is nice, and so is the blazing-fast performance. Yet, I am missing the Crystal community’s drive towards more prominence. There has been a long-awaited move towards a 1.0 release, which is a crucial milestone and would surely bring in many newcomers. To my understanding, the language and its tooling are stable enough for a 1.0 release.</p>
+
+<p>I understand that Crystal does not have the backing of either Google or Mozilla. Neither does it have multi-billion-dollar use-cases to put on its home page. I understand that fighting for the same space with Go, C/C++, and Rust is an unfair battle. Yet, I also believe that we’re long past the days when choosing one technology over another was a zero-sum game. All it needs is a little push.</p>
+
+<p>I am hoping for the best!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Reflecting on My Experience With Go, One Year After</title>
+            <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+            <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
  I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
-    </item>
-    
-    <item>
-      <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
-      <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
-      <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
-      <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
+            <content type="html"><![CDATA[
+
+<p>In my little more than a year day-to-day developer experience with Go, I have so far <strong>learned three things</strong>:</p>
+
+<ol>
+<li>I can change my entire view of how programming works, even after 12+ years of doing it in one form or another.</li>
+<li>People are blaming Java for all the wrong reasons</li>
+<li>People are praising Go for all the wrong reasons</li>
+</ol>
+
+<p>Let me explain. This post is not about saying that “language A is better than language B”, or vice versa. It is about asking ourselves the question why things work the way they do, and whether doing them differently is a bad, or potentially, good thing.</p>
+
+<p>Before joining the Go camp, I had worked quite a few years as a Java developer, with all the stereotypes that this role could evoke in one’s head. I co-developed data-processing systems for various industries. Yet, much of the code I wrote was just boilerplate: passing data from one format to the other, or devising complex abstractions behind what should have really just been calling a function and obtaining its result. Yes, the code was difficult to comprehend, but I was proud of it for this exact reason. The more hoops I created, the more secure I felt that:</p>
+
+<ol>
+<li>I was doing what I thought was right</li>
+<li>If people didn’t understand the code, they’d have to come to me for an advice, further boosting my ego.</li>
+</ol>
+
+<h2 id="the-language-is-not-to-blame-for-this">The language is not to blame for this</h2>
+
+<p>The fact that much of the existing Java code is full of bureaucracy has nothing to do with the language itself, or with its platform. Our developer community should bear the sole responsibility. I can assure anyone that perfectly functioning Java applications can be written without 90% of the ceremony. They will be smaller and run faster. Most probably, easier to comprehend, too. And yet, they won’t get you hired in any well-respected company. They just won’t pass the <em>developer prejudice</em> test. I know. I’ve seen many elegant solutions and rejected them for not being /idiomatic/ enough.</p>
+
+<h2 id="go-isn-t-a-silver-bullet-either">Go isn’t a silver bullet either</h2>
+
+<p>For much of the same reasoning, jumping ship towards Go, just because “it is not Java”, won’t bring anyone far. Even before I started writing Go, I had heard and read many stories, about how simple and fast it made everything, how little ceremony it had, compared to Java, how it would eventually kill all other languages, etc. All blah, blah. Despite all of the above being true, you have to discover the truth in each for yourselves. If you approach the language out of desperation with your current way of working, you’re going to be set for a rough path.</p>
+
+<p>See, if you all you wanted was to get a faster running (name language of choice), you could certainly do it. Yet, holding on to the mental baggage of your previous experience will be hard and messy. My first Go project started out as a rewrite of a Spring Boot app I’d started earlier, so I thought I’d just organize it the same way. To keep the story short, let’s just say it was a spectacular disaster. Only after I started from scratch, did it really start taking off.</p>
+
+<h2 id="go-is-a-language-without-with-less-idioms">Go is a language without (with less) idioms</h2>
+
+<p>Let’s do a naive math experiment. Imagine that you could create valid programming expressions combining any 3 keywords, from a programming language’s vocabulary. Thus, if a language only has 10 keywords, the maximum number of possible expressions is 10 * 9 * 8 = 720. In contrast, a language, with, say, 20 keywords would end up having 20 * 19 * 18 = 6840 expressions. Twice as many keywords would result in almost 10 times as many expressions!</p>
+
+<p>Languages tend to encourage the creation and use of idioms. With that many possible expressions, it’s a normal behaviour for an individual, or a group of people to start associating and using expressions for certain things. The problems usually occur when another group comes with its own way of expressing the same thing. Both are perfectly valid, but each group would have issues understanding the other.</p>
+
+<p>This is not to say that Go having a very strict and concise nature, is totally devoid of idioms. That would be impossible. It is in our nature to try to associate and abstract certain concepts. Yet, when a language has a deliberately smaller vocabulary, the chances for different groups accidentally finding multiple ways of doing the same thing are smaller. This helps the communication between people a great deal, but comes with a very obvious downside. Code (or any written expression, for that matter) without idioms is very, very verbose.</p>
+
+<p>So, whoever told you that Go is not a verbose language, probably either lied to you on purpose, or had’n really seen any other programming languages up until that point. But hey, we agreed that verbosity in the name of communication and common understanding is a actually a good thing, right?s</p>
+
+<h2 id="go-is-a-test-for-senior-engineers">Go is a test for senior engineers</h2>
+
+<p>A lot has been said about the initial concept about Go, and how the idea was to design a language for juniors fresh out of college, and with little programming experience. I think that understanding the beauty of going back to the roots of programming, can be a cathartic experience for many seasoned programmers.</p>
+
+<p>See, junior programmers start with little baggage and preconceptions, so in their view, anything that can be done with code is fair and justified. Including, burning a CPU, or erasing a disk due to an arithmetic error.</p>
+
+<p>Somewhere along the middle of the career path, a bunch of principles start to pile up. All of them out of the desire to step on what’s already been learned, and to make sure that things are smoothly and safely without immediate supervision. Learning and applying the principles is great, because it ensures a gradual path forward. But for many, it becomes a dogma which they blindly stick to, without asking whether a simpler alternative could be better.</p>
+
+<p>The problem with principles is that they only work well around 80% of the time. It is the remaining 20% that can be disastrous for a project, or for one’s career. It is the understanding where to apply a principle, and where to deliberately throw it away in the name of pragmatism, which turns a software engineer into a senior software engineer.</p>
+
+<p>To really appreciate Go, one needs to learn how to discern what makes it and its community stand out from the rest. One needs to go through a phase of utter disgust with the language, for it “lacking” certain feature. Moving on despite the urge to go back to a familiar ground, would result in one of two things:</p>
+
+<ol>
+<li>Make one realise that indeed, the Go language is not what they need or want</li>
+<li>Learn to appreciate going back to the roots, as well as when to favour pragmatism over principles</li>
+</ol>
+
+<p>In any case, it would be an interesting experience.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
+            <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
+            <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
+            <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
 One big disadvantage of modules is that one can’t really edit them.</description>
-    </item>
-    
-    <item>
-      <title>Panic Without Worry</title>
-      <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
-      <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
-      <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
-    </item>
-    
-    <item>
-      <title>Go is Good Enough</title>
-      <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
-      <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
-      <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
-    </item>
-    
-    <item>
-      <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
-      <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
-      <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
-l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/260920191021/</link>
-      <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/260920191021/</guid>
-      <description>Chiefly, Go sacrifices expressiveness for uniformity.
+            <content type="html"><![CDATA[<p>I started programming Go right at the time when the topic of <em>modularization</em> heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.</p>
+
+<p>One big disadvantage of modules is that one can’t really edit them. For a good reason, of course. You want them to be clean and reproducible, but occasionally, one needs to just insert a <code>log.Printf</code> or a tiny inspection function somewhere. One option is to call <code>mod vendor</code>, but this would copy all the dependencies to the vendor folder. Clearly, a lot more overhead than what one would need.</p>
+
+<p>This is where <a href="https://github.com/rogpeppe/gohack">gohack</a> comes in really handy. It uses a clever feature of the Go modules, called /replace/. It allows the user to manually override the path to a given dependency. Instead of doing all of this manually, however, gohack will do it all for you.</p>
+
+<p>After installing go-installing gohack, go to your module-bound Go project and use it instead of <code>go get</code> for a given dependency:</p>
+
+<pre><code>gohack get example.com/foo/bar
+</code></pre>
+
+<p>gohack will fetch the code and store it in a special place inside your <code>$HOME</code> directory. It will also do the go.mod replacements for you:</p>
+
+<pre><code>replace example.com/foo/bar =&gt; /home/me/gohack/example.com/foo/bar
+</code></pre>
+
+<p>All the edits you now do to the dependency that was added to your <code>$HOME</code> folder, will now affect the project that uses it.</p>
+
+<p>Once you have done checking, and want to revert to using the original dependency, you can simply use the undo functionality:</p>
+
+<pre><code>gohack undo example.com/foo/bar
+</code></pre>
+
+<p>or to revert all changes to all “hacked” dependencies:</p>
+
+<pre><code>gohack undo
+</code></pre>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars0.githubusercontent.com/u/66491?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/rogpeppe/gohack">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        rogpeppe/gohack</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Make temporary edits to your Go module dependencies - rogpeppe/gohack</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/rogpeppe/gohack">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Panic Without Worry</title>
+            <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
+            <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
+            <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
+            <content type="html"><![CDATA[<p>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</p>
+
+<p>When necessary, panic without worry.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Go is Good Enough</title>
+            <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
+            <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
+            <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
+            <content type="html"><![CDATA[<p>Have you heard about the <a href="https://en.wikipedia.org/wiki/Pareto_principle">Pareto Principle</a>? Also known as the <em><sup>80</sup>&frasl;<sub>20</sub> Rule</em>, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent. It is the ones pragmatic enough to achieve the 80% with 20% of the effort and energy spent.</p>
+
+<p>The slight deviation aside, the same very much applies to the Go programming language. It is just good enough. Go won&rsquo;t win the category of language design, neither is it the fastest one on the market. Nor is it the safest member of the bunch. The truth is, what Go offers on the table might seem pretty boring at first. It is a compiled, statically typed language with an extremely reduced syntax, a somewhat simplified concurrency model, and a bit of memory safety. Nothing near close to the speed of C, the beauty of Ruby or the dogmatic memory management of Rust.</p>
+
+<p>And this is what makes Go succeed. It does not have any of those things, but it is simple and fast enough to get you going on a new project without having to second-guess your approach every second. The lack of features helps reduce the cognitive burden on both the programmer and the compiler. The speed, file-size and memory consumption of the final applications is more optimal than those of 80% of applications built using other technologies.</p>
+
+<p>Will Go ever be the best in any single programming language category? Probably no. Is it good enough to sustain 80% of your programming efforts? Absolutely!</p>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Pareto_principle">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Pareto principle - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Pareto principle (also known as the 80/20 rule, the law of the vital few, or the principle of factor sparsity)[1][2] states that, for many events, roughly 80% of the effects come from 20% of the causes.[3] Management consultant Joseph M. Juran suggested the principle and named it after Italian economist Vilfredo Pareto, who noted the 80/20 connection while at the University of Lausanne in 1896, as published in his first work, Cours d&#39;économie politique. In it, Pareto showed that approximately 80% of the land in Italy was owned by 20% of the population.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Simple Immutable Builders in Go, Using Value Receivers</title>
+            <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+            <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+            <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
+l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes)  Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
+            <content type="html"><![CDATA[
+
+<p>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:</p>
+
+<pre><code class="language-go">l := content.NewLoader()
+l.PageCount = 5
+c := l.Load(bytes)
+</code></pre>
+
+<p>Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to <code>l</code>, interjects and sets <code>PageCount</code> to 1000? Or worse, updates the state of <code>l</code> such that a panic is inevitable?</p>
+
+<p>The simplest solution to this is to pack as much of the initial state configuration into the initialisation step. Constructors do not exist in Go, but unless we speak about a data-only struct (no logic), I would always recommend providing an initialiZer func <code>NewLoader(...)</code> and keeping as much of the state   of the struct unexported. This will transform the previous piece of code into:</p>
+
+<pre><code class="language-go">l := content.NewLoader(pageCount: 5)
+c := l.Load(bytes)
+</code></pre>
+
+<p>The problem there becomes apparent when you start having more than three arguments:</p>
+
+<pre><code class="language-go">l := content.NewLoader(pageCount: 5, offset: 3, protocol: &quot;HTTP&quot;, //... )
+c := l.Load(bytes)
+</code></pre>
+
+<p>How can we initialize <code>Loader</code> in a safe way, providing for some defaults, and without having to pack tens of parameters into the initializing func? There are various ways to achieve this. I have already written about <a href="https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/">one way</a> to approach this, another could be the functional options approach, suggested by <a href="https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis">Dave Cheney</a>.</p>
+
+<h1 id="value-receivers-as-builder-methods">Value receivers as builder methods</h1>
+
+<p>The simplest one I have found so far, takes advantage of an innate property of the Go language. Namely, the fact that everything is passed by value. One of the first questions many go beginners ask about, is the difference between <a href="https://tour.golang.org/methods/8">value and pointer receivers</a>. Pointer receivers are usually the preferred way to go, often, as an (premature) optimization, rather than because modifications are required. A bit underrated, value receivers have one big advantage, which is that they are safe for concurrent use. What a value receiver would get is a copy of the original value. This makes them perfect for implementing builder methods:</p>
+
+<pre><code class="language-go">type Loader struct {
+	pageSize int
+}
+
+func NewLoader() *Loader {
+	return &amp;Loader{
+		pageSize:10, // default
+	}
+}
+
+// check the use of a value receiver here
+func (l Loader) WithPageSize(ps int) *Loader {
+	l.pageSize = ps
+	return &amp;l
+}
+
+// The rest could be your usual pointer receivers
+func (l *Loader) Load(bytes []byte) string {
+	// ...
+}
+</code></pre>
+
+<p>The fact that we use a value receiver will cause the value of <code>l</code> to be copied, so technically, what we set <code>pageSize</code> to is a completely different place in memory. This is why we have to return a pointer to it and and reassign <code>l</code>:</p>
+
+<pre><code class="language-go">l := content.NewLoader().
+			withPageSize(5)
+
+c := l.Load(bytes)
+</code></pre>
+
+<p>This will cause some copying and a bit of work for the garbage collector, but in the grand scheme of things, it will be a negligible overhead. The safety that you gain is far more important.</p>
+
+<p>Let me know what you think.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/260920191021/</link>
+            <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/260920191021/</guid>
+            <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
-    </item>
-    
-    <item>
-      <title>Bought a Year-Long License for GoLand</title>
-      <link>https://preslav.me/2019/08/29/goland-license/</link>
-      <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/29/goland-license/</guid>
-      <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<blockquote>
+<p>Chiefly, Go sacrifices expressiveness for uniformity.</p>
+
+<p>The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.</p>
+
+<p>Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try <a href="http://www.idris-lang.org/">Idris</a>). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc). Sometimes it isn’t the innovative new features that distinguish a language, but its choice of restrictions.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ocwww.wpengine.com/wp-content/uploads/2016/10/Visualization_of_two_dimensions_of_a_NK_fitness_landscape-400x292.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://opencredo.com/blogs/java-go-back/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        From Java to Go, and Back Again - OpenCredo</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Introduction: fitness landscapes, Cassandra, and making things worse   In evolutionary biology, a fitness landscape is a way of visualising the relationship between genotypes and reproductive success. Each possible variation of a genotype is projected onto a position on a map, and the height of the terrain at that position represents the reproductive success associated …</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://opencredo.com/blogs/java-go-back/">https://opencredo.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Bought a Year-Long License for GoLand</title>
+            <link>https://preslav.me/2019/08/29/goland-license/</link>
+            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/29/goland-license/</guid>
+            <description>NOTE: This is not a paid product endorsement. I&amp;rsquo;m just a happy customer. I have recently bought a full license of GoLand for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&amp;rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine.</description>
+            <content type="html"><![CDATA[
+
+<h5 id="note-this-is-not-a-paid-product-endorsement-i-m-just-a-happy-customer">NOTE: This is not a paid product endorsement. I&rsquo;m just a happy customer.</h5>
+
+<p>I have recently bought a full license of <a href="https://www.jetbrains.com/go/">GoLand</a> for a year. The trial served me well for a few months, but the IDE shutting down automatically after every 30 minutes of work, became way too annoying. I know, I shouldn&rsquo;t rely on an IDE for writing Go, when VS Code or Vim would have worked just fine. It&rsquo;s just that the entire experience of writing, and more importantly, refactoring Go code in GoLand is so amazing.</p>
+
+<p>Picking up a JetBrains product when coming to Go was a natural move. As a Java developer, I have used IntelliJ Idea for years. I am used to much of the refactoring goodness, and know most of the available key shortcuts by heart, so switching literally took me a minute. This one is a big plus, and JetBrains deserves a big thanks for it. Knowing that developers often switch platforms, offering the same experience everywhere is nothing short of great. I know, I know, in reality, those &ldquo;IDE&rdquo;s are nothing other than platform-specific plugins that run in the same core. One gets a similar experience when installing various officially-supported plugins for say, Visual Studio Code.</p>
+
+<p>Almost. The official language support plugin for Go in VS Code uses much of the available open-source tooling for Go, developed by the community. While this is great, it also presents a temporary drawback. A large portion of the tooling still relies on projects using <code>GOPATH</code> and need to be updated in order to support Go modules. Since all of my projects have used Go modules from the start, I have experienced issues doing even basic refactoring in VS Code (e.g. renaming across the project)</p>
+
+<p>The transition is happening and will sooner or later be no longer a problem. Luckily, GoLand does not seem to suffer from much of this, because it uses a different mechanism of indexing and analyzing code. I think that I&rsquo;ll stick to it for a year while community tooling gets to a stage, where modules are fully supported.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
+            <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+            <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
+struct { a bool b int32 c string d string }  The size of the struct above is is different from the one down below
+struct { b int32 c string d string a bool }  Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
+            <content type="html"><![CDATA[
+
+<h5 id="many-thanks-to-themaour-https-twitter-com-themaour-status-1165555578019692544-for-sharing-this-tip-on-twitter">Many thanks to <a href="https://twitter.com/themaour/status/1165555578019692544">@themaour</a> for sharing this tip on Twitter</h5>
+
+<p>TIL that in Go, struct size depends on how underlying types were defined.</p>
+
+<pre><code class="language-go">struct {
+	a bool
+    b int32
+    c string
+    d string
+}
+</code></pre>
+
+<p>The size of the struct above is is different from the one down below</p>
+
+<pre><code class="language-go">struct {
+	b int32
+    c string
+    d string
+    a bool
+}
+</code></pre>
+
+<p>Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment. The remaining space (a.k.a, <em>padding</em>) remains unused, and every instance of your struct might have some portion of unused padding when initialised.</p>
+
+<p>There is a <a href="http://golang-sizeof.tips">great online resource</a> where you can see this by providing a sample struct definition. Let&rsquo;s see what it shows for struct #1:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-27 18-07-29.png" alt="" /></p>
+
+<p>and struct #2:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-27 18-03-26.png" alt="" /></p>
+
+<p>Think of this the next time you get to process a slice of 1 mln instances of a given struct.</p>
+
+<h1 id="resources">Resources</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://www.catb.org/esr/structure-packing/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Lost Art of Structure Packing</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      This page is about a technique for reducing the memory footprint of
+programs in compiled languages with C-like structures - manually
+repacking these declarations for reduced size. To read it, you will
+require basic knowledge of the C programming language.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://www.catb.org/esr/structure-packing/">http://www.catb.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
+            <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+            <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+            <description>If you ever get the following message:
+x509: certificate signed by unknown authority  While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
+On Alpine, this can be done using the default package installer:</description>
+            <content type="html"><![CDATA[
+
+<p>If you ever get the following message:</p>
+
+<pre><code class="language-bash">x509: certificate signed by unknown authority
+</code></pre>
+
+<p>While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on <a href="https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch">Scratch</a> or Alpine, you will have to add the certificates yourselves.</p>
+
+<p>On Alpine, this can be done using the default package installer:</p>
+
+<pre><code class="language-docker">RUN apk --no-cache add ca-certificates
+</code></pre>
+
+<p>Since Scratch is not based on a particular distribution you would have to download the certificates manually and add them as part of the build process:</p>
+
+<pre><code class="language-docker">ADD ca-certificates.crt /etc/ssl/certs/
+</code></pre>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Docker container running golang http.Client getting error `certificate signed by unknown authority`</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I created a docker container for talking to the google api using GoLang. I started off using a SCRATCH container and am getting the error certificate signed by unknown authority upon changing to ub...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">https://stackoverflow.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*-SxwIr4XV3YS0OSLrLNVqg.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Create the smallest and secured golang docker image based on scratch</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      When we are building a docker Image, the first idea is using the default official image.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Mixtape Retrospective: Time to Split the Monolith?</title>
+            <link>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</link>
+            <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/03/mixtape-retrospective-time-to-split-the-monolith/</guid>
+            <description>I have recently made my project Mixtape open to the world. Mixtape is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&amp;rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</description>
+            <content type="html"><![CDATA[
+
+<p>I have recently made my project <a href="https://mixtape.preslav.me/">Mixtape</a> open to the world. <a href="https://mixtape.preslav.me/">Mixtape</a> is a search and discovery platform for podcasts, built exclusively using Go. I decided to use Go primarily because of its compiler&rsquo;s ability to deliver small, self-contained executables with close-to-metal native performance and extremely low memory footprint. It was also a way to battle-test the stack and figure out where and how it will benefit future projects in my portfolio.</p>
+
+<p>In the few months running to the initial release, I learned a lot and was confronted by a couple of challenges that other fellow programmers have also been raving about:</p>
+
+<ul>
+<li>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</li>
+</ul>
+
+<pre><code class="language-go">result, err := doSomething()
+if err != nil {
+    // do something with the error, and potentially return or throw a Panic
+}
+</code></pre>
+
+<ul>
+<li>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</li>
+</ul>
+
+<h1 id="build-deploy-take-a-step-back">Build, deploy, take a step back</h1>
+
+<p>I had to build a whole app in Go, only to realize that what I initially considered shortcomings, were features in disguise, intentionally put by the design team as protection against bloat. They are a very good indicator of when the time has come to split an application into two or more smaller apps. Some call them micro-services. I tend to think of them as commands, in the UNIX sense of single-purpose apps that do one thing and one thing alone.</p>
+
+<p>When you start thinking this way, you realize that resilience and fault tolerance move away from the responsibilities of the single app/service/command and shift to the orchestration layer. That is not to say that you should not check for errors in your Go apps. On the contrary, check and cover what you can. However, not every error can be, or even, <strong>should be</strong> covered by your app. Some are even out of your control. Especially, when using 3rd-party code. Admit it, services fail and will fail, and that&rsquo;s their natural behavior.</p>
+
+<p>By having the components split from one another at the service level, you allow each one to fail separately, without these causing problems on the rest or bringing the entire system down. With infrastructure tech such as Docker and Kubernetes, restarting a faulty service, or load-balancing between a myriad of service copies has become rather easy.</p>
+
+<h1 id="no-s-t-sherlock">No s**t, Sherlock!</h1>
+
+<p>All of that should have seemed obvious, you say? After, all, Go has been pointed time and again as the programming language of the Cloud (which, TBH, is pure marketing BS, from the same people that called MongoDB &ldquo;web-scale&rdquo; back in the day). Why did I go for a monolith, then? Because, developing a monolith is the most natural way you can start a project, especially when working on it alone. I come from the world of Java, where, assuming you have enough CPU and RAM to sustain it, your app can practically run forever out of a single instance. You can have as many separate threads as your hardware allows for, and each of those may fail, without this necessarily bringing your entire app down. You might end up in deadlocks and resource starvation might cause the app to crash, but this won&rsquo;t happen as often as people imagine.</p>
+
+<p>So, it was our of practicality that I started building <a href="https://mixtape.preslav.me/">Mixtape</a> as a monolith. Now, I am at a crossroads. I have tried to stay away from messing up with infrastructure configuration for as long as I could. However, if I decide to continue with Go, I might have to eventually start splitting the app. Only time will tell.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Adding Version Information to Go Binaries</title>
+            <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
+            <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
+            <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
+            <content type="html"><![CDATA[<p>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</p>
+
+<p>In large projects, this is where CI/CD comes to save the day. For small prototypes, however, setting up CI might be an unnecessary overkill until a much later stage in the process.</p>
+
+<p>Luckily, there is an easy way to &ldquo;bake&rdquo; the information about the current commit hash right into the built executable.</p>
+
+<p>Go does not have a dedicated build system, but the standard practice across the community is to use <a href="https://en.wikipedia.org/wiki/Make_(software)">make</a>. Make is widely available across *nix operating systems (incl. macOS), so I would usually add a simple <code>Makefile</code> to most of my Go projects. In this case, my makefile would look like this:</p>
+
+<pre><code class="language-make">GOOS=linux
+GOARCH=386
+
+.PHONY: build
+
+GIT_COMMIT := $(shell git rev-list -1 HEAD)
+
+build:
+	GOOS=$(GOOS) GOARCH=$(GOARCH) go build -ldflags &quot;-X main.gitCommit=$(GIT_COMMIT)&quot; .
+</code></pre>
+
+<p>Two things to note here:</p>
+
+<ol>
+<li><code>GIT_COMMIT</code> will store of the value of the current commit hash that our code base is at.</li>
+<li><code>-ldflags &quot;-X main.gitCommit=$(GIT_COMMIT)&quot;</code> is Go&rsquo;s way of telling the linker to pass the commit hash to a variable in the code (<code>main.gitCommit</code>). Think of this as &ldquo;baking&rdquo; the information right into the compiled executable.</li>
+</ol>
+
+<p>All we need to make this happen, is use <code>make build</code> instead of <code>go build ...</code></p>
+
+<p>In our code, we can check for the presence of a flag (e.g. <code>-v</code>) and display the hash:</p>
+
+<pre><code class="language-go">package main
+
+var gitCommit string
+
+func printVersion() {
+	log.Printf(&quot;Current build version: %s&quot;, gitCommit)
+}
+
+func main() {
+	versionFlag := flag.Bool(&quot;v&quot;, false, &quot;Print the current version and exit&quot;)
+	flag.Parse()
+
+	switch {
+	case *versionFlag:
+		printVersion()
+		return
+	}
+	// continue with other stuff
+}
+</code></pre>
+
+<hr />
+
+<p>Related reading:</p>
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Make_%28software%29">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Make (software) - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      In software development, Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program. Though integrated development environments and language-specific compiler features can also be used to manage a build process, Make remains widely used, especially in Unix and Unix-like operating systems.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Make_%28software%29">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://blog.alexellis.io/content/images/2017/08/pexels-photo-249580_crop.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://blog.alexellis.io/inject-build-time-vars-golang/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Inject build-time variables with Golang</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      In this blog post I&#39;ll show you how to inject variables into your Golang executable at build-time such as a Git Commit digest, then automate it with Docker</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://blog.alexellis.io/inject-build-time-vars-golang/">https://blog.alexellis.io | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://goreleaser.com/card.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://goreleaser.com/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        GoReleaser</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Deliver Go binaries as fast and easily as possible</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://goreleaser.com/">https://goreleaser.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Implementing a Functional-Style Builder in Go</title>
+            <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
+            <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
+            <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
+In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&amp;rsquo;t claim that mine is certainly the best.</description>
+            <content type="html"><![CDATA[
+
+<p>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are <a href="https://golangbot.com/first-class-functions/">first-class citizens</a> in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.</p>
+
+<p>In this post, I want to demonstrate the use of functional constructs for implementing the well-known <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a> pattern. Please, note that there are many ways to implement a Builder, and I don&rsquo;t claim that mine is certainly the best. Think of it as a neat and simple exercise that would teach you some introductory functional concepts in the scope of Go.</p>
+
+<p>To begin with, what is a <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a>? Builders help separate the <em>construction</em> of an object from its <em>representation</em>. Often, when dealing with complex object configurations, we end up writing code like this:</p>
+
+<pre><code class="language-golang">instance := NewInstanceBuilder().
+	WithA(1).
+	WithB(2).
+	WithC(3).
+	Build()
+</code></pre>
+
+<p>using an intermediate Builder <code>struct</code>, or more directly:</p>
+
+<pre><code class="language-golang">instance := NewInstance().
+	WithA(1).
+	WithB(2).
+	WithC(3)
+</code></pre>
+
+<p>which is not safe, because the final instance is accessible at any point in time, and can be modified by any other goroutine running in parallel.</p>
+
+<h1 id="a-functional-approach-to-building">A Functional Approach to Building</h1>
+
+<p>Functional programming guarantees the safety of providing the instance only at the final step. At the same time, it can help minimise boilerplate. Using the functional approach, no additional structs should be necessary. Let&rsquo;s see how we can achieve this. Start with our core <code>struct</code>:</p>
+
+<pre><code class="language-golang">type MyStruct struct {
+	a int
+	b int
+}
+</code></pre>
+
+<p>Nothing special there. Now, pay attention to the next line of code:</p>
+
+<pre><code class="language-golang">type Decorator func(m *MyStruct) *MyStruct
+</code></pre>
+
+<p>What do we have here? One of the revelations for every new Go programmer is that everything in Go can be a type, including functions. In our case, we specify a type called <code>Decorator</code>, to which we pass an instance of <code>MyStruct</code>, it performs some modifications on it, and returns the modified instance.</p>
+
+<p><small><strong>Side note:</strong> the use of a pointer makes the example simpler. It is also safe-enough, since the <code>MyStruct</code> instance will not be accessible until the final build step. Still, if you prefer <a href="https://en.wikipedia.org/wiki/Pure_function">pure functions</a>, the example should be equally easy to implement using value-copying.</small></p>
+
+<p>The really ingenious thing of thinking about a function as a type, is that we can reuse the type, and what&rsquo;s even more grounbreaking, add functionality to it. Check this out:</p>
+
+<pre><code class="language-golang">func (f Decorator) WithA(a int) Decorator {
+	return func(m *MyStruct) *MyStruct {
+		f(m).a = a
+		return m
+	}
+}
+</code></pre>
+
+<p>What did we just do? We added more functionality to <code>Decorator</code> - a higher-order function, which unwraps the decorator it has been attached to by calling it, modifies the value, and wraps it in a new <code>Decorator</code>.</p>
+
+<p>The same way, we can add a function that sets the <code>b</code> property of our <code>MyStruct</code>:</p>
+
+<pre><code class="language-golang">func (f Decorator) WithB(b int) Decorator {
+	return func(m *MyStruct) *MyStruct {
+		f(m).b = b
+		return m
+	}
+}
+</code></pre>
+
+<p>By now you have probably started to guess that attaching decorators to each other will form a chain, which, when eventually executed, will unwrap itself in a reverse manner, each decorator applying its modifications to the passed <code>MyStruct</code> instance.</p>
+
+<p>We are almost done, but how do we actually get our <code>MyStruct</code> instance out? We need some sort of a Go-style <code>constructor</code> function, right? Indeed, we do, but our <code>constructor</code> is a little different when we apply the <code>Builder</code> pattern. Instead of returning the <code>MyStruct</code> instance, it would rather create a simple no-op <code>Decorator</code> function, so we can attach other decorators to it:</p>
+
+<pre><code class="language-golang">func NewMyStruct() Decorator {
+	return func(m *MyStruct) *MyStruct {
+		// This function really does nothing 
+		return m
+	}
+}
+</code></pre>
+
+<p>The last part of our construct is the actual <code>Build</code> method. Its role is to create an empty <code>MyStruct</code> instance and pass it onto the decorator that it gets attached to:</p>
+
+<pre><code class="language-golang">func (f Decorator) Build() *MyStruct {
+	return f(&amp;MyStruct{})
+}
+</code></pre>
+
+<p>Please, recall that since the chain of <code>Decorator</code> functions gets unwrapped in a reverse fashion, even though <code>Build</code> is the last method to be called, it is actually the one that starts the unwrapping of the chain.</p>
+
+<p>Finally, let&rsquo;s see how we can use our <code>Builder</code>:</p>
+
+<pre><code class="language-golang">instance := NewMyType().
+		WithA(42).
+		WithB(123).
+		Build()
+
+// at this point, `instance` is fully configured and ready for use
+</code></pre>
+
+<p>You can see the entire example in action <a href="https://play.golang.org/p/kmDh_oD-8qu">here</a></p>
+
+<p>I hope you liked my little take on Go-style functional programming, applied to the Builder pattern. Feel free to share your feedback.</p>
+
+<p>Happy coding!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907022242/</link>
+            <pubDate>Tue, 02 Jul 2019 19:42:07 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907022242/</guid>
+            <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p><em>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. -</em> <a href="https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9"><em>Mark Miller</em></a></p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        An Open Letter To The Go Team About Try</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent&amp;rdquo;. - Mark Miller The new try proposal is an addition to the language that introduces a second mechanic to handle errors. It is being introduced in response to data gathered from the 2018 Go Survey and a review of proposals that were submitted during the Go 2 proposal process.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">https://www.ardanlabs.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>This is a serious change and it feels like it’s being pushed through without a concerted effort to understand exactly what those 5% of Go developers meant when they said they wanted improved error handling. I plead to the Go team to re-evaluate the data sets being used before the <code>try</code> error handling experiment finds itself in any version of the language.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906211000/</link>
+            <pubDate>Fri, 21 Jun 2019 08:00:18 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906211000/</guid>
+            <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
+ @media (max-width: 640px) { .</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ongoing by Tim Bray · Go Creeping In</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I’ve seen the inside of the Google and Amazon tech stacks. There are common threads that run through them and also, I bet, through
+most BigTechCos.  Here and there down the stack is a lot of C&#43;&#43; and vestigial remnants from earlier days, Perl or PHP or whatever.
+Out in front of humans, of course, JS.  But in between, there are oceans and oceans of Java; to a remarkable degree, it runs
+the Internet. Except for, here and there, you find a small but steadily increasing proportion of Go.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">https://www.tbray.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Introducing NoEmbed</title>
+            <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
+            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
+            <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</description>
+            <content type="html"><![CDATA[
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://noembed.preslav.me">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        NoEmbed: Create rich URL embeds, even when sites don&#39;t support oEmbed.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://noembed.preslav.me">https://noembed.preslav.me | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p>A picture is worth a thousand words. Everyone knows that. How about, <em>a preview is worth a thousand links</em>, however? If you have ever written a <a href="https://medium.com/">Medium</a> article, more than certainly, you have tried adding links to videos or other Web pages. One of the cool features that distinguished Medium early on, were its really nice link previews. Simply, dropping a link will turn it into a block of information containing a title, an image, and an informative description:</p>
+
+<p><img src="/images/2019/06/noembed.gif" alt="" /></p>
+
+<p>In fact, if you keep looking around, you will find quite a few other apps adopting the same idea. <a href="https://slack.com">Slack</a> and <a href="https://www.notion.so/">Notion</a> are good examples that come to mind. Such previews are great, because unlike plain links, they deliver much more context, and therefore, help increase visitor engagement.</p>
+
+<p>I wanted to provide similar link previews to my personal website, but what I found right away was how poorly adopted <a href="https://oembed.com/">oEmbed</a> is out in the world. I will discuss <a href="https://oembed.com/">oEmbed</a> in detail in a further post, but basically, it is a Web format allowing website owners to expose structured information for every particular link in that website. A good example is YouTube. If you check out the <a href="http://www.youtube.com/oembed?url=http%3A//youtube.com/watch%3Fv%3DM3r2XDceM6A&amp;format=json">following link</a>, you will get a JSON object will all the information about the video in the URL parameter. This info is ready to be rendered as a preview in a site or an app that consumes it.</p>
+
+<p>The problems with oEmbed are apparent right away. In order for you to use it, the order side must have adopted it, and exposed an API endpoint for you to obtain metadata. Even if you built a proxy service that wrapped all the known oEmbed providers on the Web, you are essentially limited to the number of those providers. What about the rest of the Web?</p>
+
+<p>Those were the thoughts that made me start working on what I called <a href="https://noembed.preslav.me/">NoEmbed</a>. It solves the problem with the limited number of oEmbed providers by employing smart content extraction characteristics where needed. By using an officially provided list of well-known oEmbed providers, the service proxies to them when possible. Most of the time, however, <a href="https://noembed.preslav.me/">NoEmbed</a> grabs the content of the requested URL, extracts valuable information out of it (title, excerpt, main image, etc) and returns an oEmbed-compatible response, so it can be integrated by any other services that already use oEmbed in some form or fashion.</p>
+
+<p>I built <a href="https://noembed.preslav.me/">NoEmbed</a> in my spare time writing 100% Go code. It is still crude and unfinished, but already working, and with your help and feedback, I might be able to turn it into a real service.</p>
+
+<h1 id="faq">FAQ</h1>
+
+<h2 id="aren-t-there-other-services-doing-this-already">Aren&rsquo;t there other services doing this already?</h2>
+
+<p>Of course, there are. <a href="https://embed.ly/">Embed.ly</a> is a great example (used by Medium). Other notable examples are <a href="https://iframely.com/">Iframely</a>, <a href="https://microlink.io/">microlink.io</a>, and <a href="https://embed.rocks/try">Embed.rocks</a>. All of them are great services, of course, but I wanted to one first and foremost for myself; one that is lean and fast and also respects the privacy of its users.</p>
+
+<h2 id="what-s-with-the-name">What&rsquo;s with the name?</h2>
+
+<p>This is just a temporary name. NoEmbed is actually the name of a <a href="https://noembed.com/">famous oEmbed proxy</a>, which I wanted to use in the very begging. Yet, the small number of available oEmbed provides was a crucial factor that led me not to.</p>
+
+<p>That said, the name will most probably change, and I am open to hear your suggestions.</p>
+
+<h2 id="what-is-the-tech-stack">What is the tech stack?</h2>
+
+<p>Pretty boring, actually. Nothing super fancy. At the moment, we are talking about a single tailor-made Web/API service written in pure Go, sitting behind nginx (doing the load-balancing and some heavy caching).</p>
+
+<h2 id="who-is-using-it">Who is using it?</h2>
+
+<p>At the moment, the primary integrator of NoEmbed is the site you are reading at the moment. The embed that you saw at the beginning of this page, was generated with it.</p>
+
+<h2 id="are-you-planning-on-turning-this-into-an-actual-product">Are you planning on turning this into an actual product?</h2>
+
+<p>If you think you are ready to pay me for it, absolutely! If you already have a matching use case, do let me know, or sign up right away. I am planning to release a future update, which will allow consumers to use the API using secure tokens and authentication.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>My Reasons to Consider Go Coming from Java</title>
+            <link>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
+            <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
+            <description>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</description>
+            <content type="html"><![CDATA[
+
+<p>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features. For those, readers can find plenty of information online.</p>
+
+<h1 id="go-focuses-on-less-is-more">Go focuses on “less is more&rdquo;</h1>
+
+<p>The first time I saw a relatively simple Go program, my internal reaction was “Why all the torture?”. Somehow, things I used to solve with a Python or even a Java one-liner, look ginormously over-bloated in Go. At least, on the surface. Searching for an answer, I found this talk by Rob Pike, which helped put things in some order:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/rFejpH_tAHM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a></p>
+
+<p>The thing is, unlike other languages, Go has been left out of many “niceties” of modern programming, and this was an intentional decision. More features add a level of cognitive burden. Of course, they also add more productivity, but at the cost of a higher comprehension barrier. I remember the days before Java 8, and how excited I was to see lambdas and streams make it into the language. A lot of previously lengthy boilerplate code was about to get replaced by a more elegant and fluent approach. Suddenly, every problem I ran into, I tried to solve using those two alone. So much so, that I often ended up spending hours screwing the logic of my code, because suddenly, no other approach seemed elegant enough. And I was not alone in this - the rest of my team was doing it too. Not long after, some pieces of the code turned into crystal figures - beautiful at first sight, but very brittle and difficult to move around.</p>
+
+<p>Some programming languages focus on developer satisfaction when writing, but miss on the long-term maintainability of the piece of software. Others, like Go, sacrifice the expressiveness, in favor of readability and easy comprehension.  I tend to over-engineer things (I believe you too, fellow Java engineers), so for me writing Go code feels a bit like therapy. By offering less, it teaches me to focus on getting the right things done, instead of getting stuck in the design phase, trying to make things “right”.</p>
+
+<p>Don&rsquo;t trust much of what you read about Go online. It is a tough nut to crack. Be prepared for a change in how you write code, especially, if you switch from a more fluent language like Scala or Kotlin. If you are a fan of immutability as part of the language, you’re up for a change of thinking. As said before, nothing is impossible, it just takes time. Give it time and come back after a while. In my short history with Go, there have been some upsides, followed by a period of recapitulation, eventual comeback, and understanding why things are the way they are.</p>
+
+<p>Remember:</p>
+
+<blockquote>
+<p>Verbosity is a feature. Simplicity is complicated</p>
+</blockquote>
+
+<h1 id="the-tooling-and-the-standard-library-are-outstanding">The tooling and the standard library are outstanding</h1>
+
+<p>Despite being called an 80s language living in the 21st century, Go’s ecosystem has borrowed from many of the trends and best practices in software development nowadays. The setup process is nice and easy and brings in a myriad of tiny tools and utils that all fit in place right away. Formatting, package management, linting, module management (as of recent versions) are all things that one does not have to really think about. Those are really taken care of with the standard tooling.</p>
+
+<p>Besides that, the Go standard library is one of the most complete Stdlibs I‘ve worked with so far, and understandably so. Go came out relatively recently, so a lot of the standards and practices in software had a chance to make it in the library right from the beginning, rather than get added years after. As a result, the Go standard library feels like something that a developer can actually use in their daily work, rather than something that always needs to get wrapped inside a third-party library.</p>
+
+<p>That said, I don’t share the opinion of Go purists to use standard library only. There should be a balance, and although I am not a fan of <em>“npm install”</em>-ing everything, standard libraries are created to be building blocks, so don’t feel ashamed if you have to pull in some libraries to ease your work. There are some pretty <a href="https://github.com/avelino/awesome-go">good ones</a> out there.</p>
+
+<h1 id="go-apps-are-fast-and-small">Go apps are fast and small</h1>
+
+<p>We have all heard that, but the actual outcome blew my mind away!</p>
+
+<p>I have spent the bulk of the past decade working with Spring, and it has gradually become my go-to solution for all things Web. Despite working with Flask on my current projects, Spring (Boot) will always remain near and dear to my heart.</p>
+
+<p>Yet, Spring is a beast. You might not notice it, because the hardware has gotten quite cheap these days, but a lot of otherwise useful resources get locked up when running a hefty JVM app.</p>
+
+<p>To see where Go stands on this, I rebuilt a not-so-smallish Spring Boot app of mine using Go. I did not even take the purist approach but was quite liberal in my choice of libraries. The results blew all of my previous expectations by a factor of ten. The Spring app took nearly half a GB right away, keeping around 5-10% of my MacBook Pro&rsquo;s CPU busy at all time (spiking when requests came in). For deploying a single artifact, I had built a fat JAR, which is quite a standard procedure for developing Java apps these days. It took a couple of hundred of MBs as well. Due to the JVM warmup and Spring&rsquo;s loading all dependencies, it took almost a minute until the app was ready.</p>
+
+<p>For comparison, the Go app ran instantaneously (let&rsquo;s be fair, there was literally no component scanning and reflection involved). Even at the height of handling requests, the CPU barely reached 1% (mostly sitting around 0.1%). With all libraries and assets included, the final binary ended up being around 20MB. The RAM usage, however, I found to be a metric that changed everything. In an age where a typical messaging application might eat up to a couple of GBs, this app was sitting there minding its business, rocking a 20MB?!? footprint. 20MB? Even if following a very naive logic, this is close to fitting 20 of these apps together, for the cost of running one Spring Boot app!</p>
+
+<p>Before the expert readers start criticizing, yes, none of this is really a fair comparison. The fact that an app is built in Go does not guarantee a blazing fast performance if there is a lot of runtime loading and checks. Also, experts can tweak a JVM app in various ways, significantly reducing the footprint of the app. It takes time and effort, but it is certainly doable. And of course, there is always the argument about cheap hardware and premature optimization.</p>
+
+<p>I am not saying that this should necessarily resonate with you, but it certainly does with me. I strive to be a minimalist. Exactly because the hardware is so cheap these days, I believe that people and companies spend way more on it than they probably should. There are various articles out there speculating about the millions and hundreds of millions of dollars that big software companies pay for server costs every year. All of it to pay for servers that get powered by electricity generated from burning fossil fuels.</p>
+
+<h1 id="the-community">The community</h1>
+
+<p>The Go community is welcoming and very helpful. Part of the helpfulness factor comes from the fact that many gophers have already spent years programming in a different domain. What makes these people stick around and help each other, is the experience of the past, having taught them that complexity does not equal productivity.</p>
+
+<h1 id="instead-of-conclusion">Instead of conclusion</h1>
+
+<p>As people say in stock trading, “always do your own research”. I don’t want to convince you to switch and use Go full-time, because I haven’t convinced myself yet. As with everything else, programming languages are just tools, and there will always be a different tool which is better for the particular circumstances. What I hope to have managed to convince you, is to try to understand where the need for the language came from and what it tries to solve</p>
+
+<p>As always, happy coding!</p>
+
+<p>P.S. if you have an interesting project that you are considering using Go for, feel free to reach out to me. I’d love to help.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905011824/</link>
+            <pubDate>Wed, 01 May 2019 16:24:56 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905011824/</guid>
+            <description>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium  For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a https://medium.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*x_OU1YRmBR8037eqsSAfYA.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@jondot/my-key-learnings-after-30-000-loc-in-rust-a553e6403c19">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@jondot/my-key-learnings-after-30-000-loc-in-rust-a553e6403c19">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Deploying a Native Go Binary on Heroku</title>
+            <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
+            <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
+            <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
+            <content type="html"><![CDATA[
+
+<p>My company, <a href="https://www.ki-labs.com/">KI labs</a> recently held its first hackathon in our Munich office. My team and I  went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&rsquo;s backend part, written in Go.</p>
+
+<p>The challenges with using the Go language aside, one unanticipated hurdle was actually getting the backend to run in Heroku. I know, I could have gone for a different solution, but my usual workflow is to deploy to Heroku, until the requirements push for an alternative approach. And Heroku already supports deploying Go applications. Or at least, that&rsquo;s what the <a href="https://www.heroku.com/go">documentation</a> says. And indeed, after the stress of the hackathon, I figured it out, but at the time, getting Heroku to build a Go application that uses modules seemed like it needed more time than we actually had.</p>
+
+<p>Due to the limited time constraints, I decided to take a shortcut and use what has traditionally been one of the Go&rsquo;s strongest selling points - creating a static binary and running it natively inside a VM or a container. But Heroku can&rsquo;t run native apps directly, can it? Or at least, it won&rsquo;t allow you to run those directly.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>The trick is to make the installer think that it is going to use a certain <a href="https://devcenter.heroku.com/articles/buildpacks">Buildpack</a>, but actually in your Procfile you override the control and execute a native binary directly.</p>
+
+<p>Heroku uses certain triggers to initiate the start of an instance. For example, the presence of a <code>package.json</code> file (Node.js) or <code>pom.xml</code> / <code>build.gradle</code> (Java), <code>requirements.txt</code> / <code>setup.py</code> (Python), etc.</p>
+
+<pre><code class="language-bash">GOOS=linux go build server.go
+</code></pre>
+
+<p>For our needs, we might as well hijack the <a href="https://github.com/heroku/heroku-buildpack-nodejs">Node.js Buildpack</a>. This is relatively simple. In order to trick Heroku, all we need is a <code>package.json</code> file, which lists a few basic properties needed for the Buildpack initialization:</p>
+
+<pre><code class="language-json">{ &quot;name&quot;: &quot;appname&quot;, &quot;version&quot;: &quot;0.0.1&quot;, &quot;dependencies&quot;: {} }
+</code></pre>
+
+<p>With the <code>package.json</code> file in place, we need a simple <code>Procfile</code>, which will tell Heroku what to execute once the Buildpack initialization has finiehsed. In our case, this will be the already compiled Go executable:</p>
+
+<pre><code class="language-yaml">web: ./main $PORT
+</code></pre>
+
+<p>A minor disadvantage of this approach is that we need to check the compiled binary into our git repository. I would do this on a separate branch, which I would try not to merge back to master and delete as soon as no longer necessary. By default, Heroku would use the <code>master</code> branch when buiding an application, so we need to be assertive when pushing our special deployment branch:</p>
+
+<pre><code class="language-bash">git push heroku my-deployment-branch:master
+# tell Heroku to use my deployment branch as its `master`
+</code></pre>
+
+<p>That&rsquo;s it! If fyour application is built using a technology that Heroku might not be actively supporting, or you are in for an extra performance boost (e.g. using Swift, Rust, C, etc) this tip might help you.</p>
+
+<h1 id="related-resources">Related Resources</h1>
+
+<ul>
+<li><a href="http://blog.jan-ahrens.eu/2014/06/17/heroku-with-c.html">Heroku with C</a></li>
+<li><a href="https://github.com/heroku/heroku-buildpack-go">heroku/heroku-buildpack-go: Heroku Go Buildpack</a></li>
+<li><a href="https://github.com/heroku/go-getting-started">heroku/go-getting-started: Getting Started with Go on Heroku https://devcenter.heroku.com/articles/getting-started-with-go</a></li>
+<li><a href="https://devcenter.heroku.com/articles/go-support">Heroku Go Support | Heroku Dev Center</a></li>
+<li><a href="https://www.heroku.com/go">Deploy, manage, scale Go apps in the cloud | Heroku</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>My Baby Steps with Go</title>
+            <link>https://preslav.me/2019/02/20/my-baby-steps-with-go/</link>
+            <pubDate>Wed, 20 Feb 2019 05:27:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/02/20/my-baby-steps-with-go/</guid>
+            <description>Last week, I made my first tentative foray into Go programming. My company uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first.</description>
+            <content type="html"><![CDATA[<p>Last week, I made my first tentative foray into Go programming. <a href="https://www.ki-labs.com/">My company</a> uses Go in a couple of projects, but although I have heard many positive things about the language, so far I have tried to stay away from it. The mere thought that Go is a 21st Century version of C and has been explicitly designed from the start to not try to be much more than that, can make everyone coming from Kotlin and Swift pull a few hairs at first. The mere mentioning of C makes me shiver when I think about the crazy stuff I wrote in early high school  (circa. <sup>2000</sup>&frasl;<sub>02</sub>). After school, I never gave C a chance anymore, but instead, moved on to languages, which at the time made my life easier.</p>
+
+<p>In reality, programming with Go is not as harsh as I expected. Okay, it does look a lot like C, there are no classes, and pointers are everywhere, but you quickly get used to these, when you see the full picture. Unlike C, Go has a garbage collector, which means that a whole class of problems I had with memory management will simply not be present.</p>
+
+<p>As for OOP, objects are still there, but their construction is slightly different. Go has eradicated inheritance and fosters composition instead. Go  The lack of a <code>class</code> construct has been more than sufficiently replaced by structs and <a href="https://gobyexample.com/interfaces">interfaces</a>. If all you need is a bag of properties (also referred to as &ldquo;data class&rdquo; in other languages), a <code>struct</code> should be perfectly sufficient. If you want to add functionality to your objects, Go&rsquo;s system of <a href="https://gobyexample.com/interfaces">attachable method receivers</a> makes it fairly easy to do so. In fact, after an hour of hour of work, I got pretty confident with it.</p>
+
+<p>Pointers are also not the pain I expected them to be. In fact, they help things more transparent and explicit. Since in Go (almost) everything is passed by value (with the exception of <code>map</code> and <code>slice</code>) pointers actually help distinguish when the function you are passing the object will potentially want to mutate it or not.</p>
+
+<p>Where Go really shines for me at the moment is the native performance and the build process. Five years ago, I would have screamed at the mere thought of this: statically compiling a binary and directly throwing it onto a remote machine where it just &hellip; works. But it does, and compared to the complexity of modern containerized systems and dependency hell, this is just a breeze of fresh air.</p>
+
+<p>I am leaving you with the video that made me open up my eyes for Go:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/cQ7STILAS0M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,115 +1,1243 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Python on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/python/</link>
-    <description>Recent content in Python on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Any Code Style You like as Long It&#39;s Black</title>
-      <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
-      <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
-      <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
+    <channel>
+        <title>Python on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/python/</link>
+        <description>Recent content in Python on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Any Code Style You like as Long It&#39;s Black</title>
+            <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
+            <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</guid>
+            <description>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of any formatting.
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   psf/black  The uncompromising Python code formatter.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907101824/</link>
-      <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907101824/</guid>
-      <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
+            <content type="html"><![CDATA[
+
+<p>The other day, I had to go over some (not so) old Python code I wrote. The moment I started pulling my hair, came not when I figured out that I could no longer understand what it does. It was when I looked at how the code was formatted. To be precise - at its total lack of <strong>any</strong> formatting.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://repository-images.githubusercontent.com/125266328/48aef880-6cce-11e9-9e3c-3ca0dd3ac138); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/psf/black">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        psf/black</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/psf/black">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p>The first thing I do when I start a new project nowadays, is to set up an automatic code formatter. My personal favorite for Python is <a href="https://github.com/psf/black">Black</a>. It is an opinionated formatter made by <a href="https://github.com/ambv">Łukasz Langa</a> - a Python Core developer. Black leaves little choice when it comes to configuration. You can think of it as the <a href="https://golang.org/cmd/gofmt/">gofmt</a> or <a href="https://prettier.io/">Prettier</a> of Python. Integrate it with your editor of choice, or use the CLI over your code base and Black will do the rest:</p>
+
+<pre><code class="language-python">from seven_dwwarfs import Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
+x = {  'a':37,'b':42, 'c':927}
+
+if very_long_variable_name is not None and \
+ very_long_variable_name.field &gt; 0 or \
+ very_long_variable_name.is_debug:
+ z = 'hello '+'world'
+else:
+ world = 'world'
+ a = 'hello {}'.format(world)
+ f = rf'hello {world}'
+if (this
+and that): y = 'hello world'
+</code></pre>
+
+<p>will transform into this:</p>
+
+<pre><code class="language-python">from seven_dwwarfs import (
+    Grumpy,
+    Happy,
+    Sleepy,
+    Bashful,
+    Sneezy,
+    Dopey,
+    Doc,
+)
+
+x = {&quot;a&quot;: 37, &quot;b&quot;: 42, &quot;c&quot;: 927}
+
+if (
+    very_long_variable_name is not None
+    and very_long_variable_name.field &gt; 0
+    or very_long_variable_name.is_debug
+):
+    z = &quot;hello &quot; + &quot;world&quot;
+else:
+    world = &quot;world&quot;
+    a = &quot;hello {}&quot;.format(world)
+    f = rf&quot;hello {world}&quot;
+if this and that:
+    y = &quot;hello world&quot;
+</code></pre>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://black.now.sh/static/screenshot.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://black.now.sh">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Black Playground</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Playground for Black, the uncompromising Python code formatter.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://black.now.sh">https://black.now.sh | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h1 id="isn-t-pep8-enough">Isn&rsquo;t PEP8 enough?</h1>
+
+<p>When it comes to code style, most Python developers point out <a href="https://www.python.org/dev/peps/pep-0008">PEP8</a>. <a href="https://www.python.org/dev/peps/pep-0008">PEP8</a> is a good style guide, but definitely not a set of strict formatting rules. The same piece of code might be written in different ways, and still be compliant with PEP8. This is by design, as much of the Python philosophy is to leave the freedom and the final decision to the programmer. For comparison, Go follows a different mentality, where most of the extra energy aspects of programming are taken over by the compiler and the available tooling.</p>
+
+<p>Unfortunately, even PEP8-compliant code still leads to arguments when it comes to keeping a unified code base. I don&rsquo;t know about you, but I have reached a level of pragmatism, where I don&rsquo;t care much about style and formatting, as long as it has been standardized everywhere. This is where Black enters the stage.</p>
+
+<h1 id="black-is-relentless">Black is relentless</h1>
+
+<p>Black has one guiding philosophy - produce diffs as small as possible. If one expression can fit on a single line (88 chars), regardless of how complex it is, it will be kept on a single line.</p>
+
+<p>In most programming languages, nested expressions (multiple levels of indentation, as well as opening and closing brackets) are what makes code complex. Python list and dict comprehensions can be particularly nasty to comprehend, once they go over a certain length.</p>
+
+<p>Black splits long expressions into multiple lines, where the outermost brackets get separated from the inner content. If the inner content is longer than the line limit, the same operation gets repeated recursively on and on.</p>
+
+<p>The result is code, which, although taking more vertical space than writing a few one-liners, is much easier to read and reason about. The fact that Black will always format your code the same way makes even more sense when working with other people. Lines diffs are the way source control systems indicate changes. Therefore, uniformly splitting complex code into multiple lines makes code reviews easier and takes away almost discussions around style.</p>
+
+<h1 id="black-is-stubborn">Black is stubborn</h1>
+
+<p>Borrowing ideas from <a href="https://golang.org/cmd/gofmt/">gofmt</a>, Black has close to zero configuration options, especially, when it comes to variations of formatting style. I welcome such initiatives, because formatting is not something I would like to personally spend time dealing with. If this is not to your taste, however, you might try out the notable alternatives, such as <a href="https://github.com/google/yapf">yapf</a> and <a href="https://github.com/hhatto/autopep8">autopep8</a>. <a href="https://github.com/google/yapf">yapf</a>, in particular, has multiple code style options, e.g. from Google, Facebook, which you can try and see if any fits your taste. You can always create your own, and share it across all fo your projects.</p>
+
+<h1 id="know-when-to-be-inconsistent">Know when to be inconsistent</h1>
+
+<p>Contrary to everything I have said so far, there might be times when blindlyy following a consistent standard is just inapplicable. As PEP8 says it: <em>&ldquo;When in doubt, use your best judgment. Look at other examples and decide what looks best. And don&rsquo;t hesitate to ask!&rdquo;</em></p>
+
+<hr />
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/esZLCuWs_2Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.python.org/static/opengraph-icon-200x200.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.python.org/dev/peps/pep-0008">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        PEP 8 -- Style Guide for Python Code</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The official home of the Python Programming Language</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.python.org/dev/peps/pep-0008">https://www.python.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://kevinpeters.net/thumbnails/auto-formatters-for-python-opengraph.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.kevinpeters.net/auto-formatters-for-python">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The 3 best auto formatters for Python</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      🔥Save time by using the best auto formatters for python - a comparison to find the best. The auto formatters in this blog article can be used online or in editors like vscode and feature Python 2 and Python 3.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.kevinpeters.net/auto-formatters-for-python">https://www.kevinpeters.net | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars0.githubusercontent.com/u/1342004?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/google/yapf">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        google/yapf</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      A formatter for Python files. Contribute to google/yapf development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/google/yapf">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars1.githubusercontent.com/u/150309?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/hhatto/autopep8">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        hhatto/autopep8</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      A tool that automatically formats Python code to conform to the PEP 8 style guide. - hhatto/autopep8</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/hhatto/autopep8">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907101824/</link>
+            <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907101824/</guid>
+            <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
 This is quite neat and might save me one or two print statements 😉
 Thanks to @FlorimondManca for this discovery!</description>
-    </item>
-    
-    <item>
-      <title>Busting the Myth Around Multithreading in Python</title>
-      <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
-      <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</guid>
-      <description>One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
+            <content type="html"><![CDATA[<p>#TIL about the <code>breakpoint()</code> function in #Python 3.7 It starts a <code>pdb</code> session when the statement gets reached.</p>
+
+<p>This is quite neat and might save me one or two <code>print</code> statements 😉</p>
+
+<p><img src="/images/2019/07/PucNak1.jpg" alt="" /></p>
+
+<p>Thanks to <a href="https://twitter.com/FlorimondManca/status/1149023023153983488">@FlorimondManca</a> for this discovery!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Busting the Myth Around Multithreading in Python</title>
+            <link>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</link>
+            <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/06/03/busting-the-myth-around-multithreading-in-python/</guid>
+            <description>One of the things I often hear from other developers, along with the usual “Python is slow”, is that “multithreading in Python sucks”. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.
 When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause.</description>
-    </item>
-    
-    <item>
-      <title>Using Ephemeral Docker Containers as CLI Applications</title>
-      <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
-      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
-      <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
+            <content type="html"><![CDATA[
+
+<p>One of the things I often hear from other developers, along with the usual <em>“Python is slow”</em>, is that <em>“multithreading in Python sucks”</em>. The sad reality is that I hear those from Python developers too. While I will pretend I have not heard the former accusation (hoping you’ve already heard how well Python integrates with C), I will try to bring up some light on the latter.</p>
+
+<p>When I ask the same guys about why they think that multithreading in Python sucks, some of them mention the GIL (Global Interpreter Lock) as the root cause. <em>The GIL</em>, they say, <em>prevents you from running more than one thread a time</em>.</p>
+
+<h1 id="tl-dr">TL;DR</h1>
+
+<p>Threads in python are perfect for issuing long-running I/O operations, such as database or remote API calls, file operations, etc. Where they show pretty miserable performance is heavy CPU operations (e.g. nested loops, recursion, etc)</p>
+
+<p>If there is one thing you should remember from this whole article, it is that <strong>multithreading is perfectly fine in Python</strong>, as it is all other languages that make use of it. Yes, there are <strong>some caveats</strong> that you need to keep an eye on, but you should not be afraid to use just because someone told you so. Depending on the implementation of Python you are using, there <strong>might be no GIL in place</strong>, so you might be using your development life harder by not using threads.</p>
+
+<p>OK? Good. Let me start with:</p>
+
+<h1 id="what-is-the-gil-anyway">What is the GIL anyway?</h1>
+
+<p>The Global Interpreter Lock (GIL) is a feature (yes, actually a feature) of CPython (the default Python implementation) which is highly related to how CPython manages memory. There are two popular ways for garbage collection in software applications: tracing garbage collection (also known simply as garbage collection) and reference counting. CPython uses reference counting, which is a simple and deterministic way of managing memory. Every time one acquires a reference to a variable, a reference counter gets automatically incremented. Every time a variable gets out of scope, the reference counter gets automatically decremented. When the reference counter reaches 0, the referred to memory gets disposed.</p>
+
+<h1 id="gil-and-multithreading">GIL and multithreading</h1>
+
+<p>Sounds nice and easy, and it is for the most part. Which is, until multithreading comes in place. See, if two threads access the same reference at the same time, a few things might happen. Decrement in and incrementing the reference count take some technological time. It&rsquo;s not much, but it also doesn&rsquo;t happen instantaneously. Imagine that one thread finishes execution and the decrement process has just begun. Another thread enters right in the middle of this and tries to obtain a reference to the same portion of memory. If the dereferencing finishes first, but the time the second thread obtains a reference, the associated memory might have been disposed of, which will result in SEGFAULT.</p>
+
+<p>It might also be the case that two or more threads try to increment the reference counter in parallel. This opens up a possibility for overwriting the counter with the lower value, unaware that it has already been incremented. The referenced memory will never be disposed of, which is a classical memory leak.</p>
+
+<h1 id="here-comes-the-gil-again">Here comes the GIL again</h1>
+
+<p>And this is why we have the GIL. Locking on every reference counter operation is too cumbersome, and certainly, introduce performance drawbacks. Therefore, the GIL is a single, globally-shared instance that can be obtained by one <strong>RUNNING</strong> thread at a time, and released afterward.</p>
+
+<h1 id="so-one-running-thread-at-a-time">So, one RUNNING thread at a time</h1>
+
+<p>Keep in mind the word RUNNING. I am writing it in capitals, in order to distinguish between a thread’s RUNNING and WAITING states. When a thread issues a long-running I/O operation, such as a database call, it switches from a RUNNING to a WAITING state and drops the lock on the GIL. Since no further operations will be executed in that thread during the WAITING state, none of the scenarios mentioned above can happen, so another thread can grab the GIL and continue. When a thread gets out of the WAITING state back to RUNNING, it obtains a lock on the GIL again and performs a quick refresh on the reference counters of its claimed state.</p>
+
+<p>Ideally, if the code executed in thread consists of only a blocking call (DB, remote API, disk, etc), it is a perfect candidate for concurrent execution. When the code starts getting more complex, and CPU-heavy operations get computed, performance starts dropping to the rate of serial execution, or even worse (due to the GIL lock overhead). This is where <strong>multiprocessing</strong> comes to the rescue. Though processes are limited by the number of available CPU cores, they share no memory, and consequently, there is no need for a GIL. If a heavy operation involves polling multiple I/O sources for data, before assembling a formatted result together, you’d rather do the I/O operations in separate threads, and if needed, the final transformations in separate processes.</p>
+
+<h1 id="not-all-python-implementations-need-a-gil">Not all Python implementations need a GIL</h1>
+
+<p>When we speak about the GIL, it is important to make certain that it is present in CPython, but not all Python implementations have it or need it. Since the vast majority of Python developers use CPython, the GIL is a relevant topic, but one should not forget there are other language implementations that don’t use it.</p>
+
+<p>Note: Unlike popular belief, <a href="https://www.pypy.org/">PyPy</a> (the Python JIT-compiler) **<a href="http://doc.pypy.org/en/latest/faq.html#does-pypy-have-a-gil-why">actually** <strong>has a GIL</strong></a>, although it uses tracing garbage collection, instead of reference counting. This has been more of a design decision to stick to the original design of the language, rather than an actual technological need, There are other implementations, however, such as <a href="https://www.jython.org/jythonbook/en/1.0/Concurrency.html#no-global-interpreter-lock">Jython</a>, and <a href="https://wiki.python.org/moin/IronPython">IronPython</a> which lack the GIL altogether.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Using Ephemeral Docker Containers as CLI Applications</title>
+            <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
+            <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
+            <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
 When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.</description>
-    </item>
-    
-    <item>
-      <title>Use Dotenv Files When Developing Your Python Apps</title>
-      <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
-      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
-      <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
-    </item>
-    
-    <item>
-      <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
-      <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
-      <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
-      <description>Dependency Injection (DI) in Python? Seriously? 🤔
+            <content type="html"><![CDATA[
+
+<p>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a <code>Dockerfile</code> and you should be able to replicate the process on every host OS that has Docker support.</p>
+
+<p>When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services. While the majority of Docker use cases fit exactly into this scenario, the realm of possible applications it offers, far exceeds that.</p>
+
+<p>One such application is the use of Docker containers to sandbox the complex inner workings of a command-line (CLI) application. Most data projects involve the running of scheduled scripts which access remote services, do data processing and eventually, write the results either to disk, or to dedicated data storage. Such scripts have required dependencies, and often, the dependencies of one may collide with the ones required by another, which ends up in a big mess. This is the primary reason, why things like virtual environments in Python or Node.js&rsquo; notorious <code>node_modules</code> folder exist in the first place. Yet, we all know one or two about <code>node_modules</code>&hellip;</p>
+
+<p><a href="https://hackernoon.com/circleci-performance-difference-between-cache-and-workspace-5567679c3601"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*i5S2tUk0CQBh1Euc.&amp;f=1" alt="" /></a></p>
+
+<p>The ideal case for such applications would be statically-bound executable files containing everything needed, and running into their own dedicated processes. One such approach is championed by languages like Go, Swift, and Kotlin&rsquo;s Native option (and of course, good old C/C++). Others, like Java (fat Jars) and Python (wheels) offer a somewhat reasonable compromise by putting the code and every dependency into a single deployable artifact. I call this a compromise, because it still requires the presence of either JDK or a Python runtime on the host OS.</p>
+
+<p>The majority of the time however, we won&rsquo;t have the opportunity to deploy everything into a single executable. Much of the time, we also won&rsquo;t have the freedom to install different runtimes globally. In such cases, baking a CLI application together with all of its dependencies into a dedicated Docker image can be a good option. Let&rsquo;s try a simple example:</p>
+
+<h2 id="an-example">An Example</h2>
+
+<p>Here is a simple Python script, which will fetch the current price of Bitcoin, and convert it to a desired fiat currency of our choice (&ldquo;USD&rdquo;, &ldquo;EUR&rdquo;).</p>
+
+<pre><code class="language-python">import argparse
+import requests
+
+def fetch(currency):
+    price = requests.get(&quot;https://api.coindesk.com/v1/bpi/currentprice.json&quot;).json()[&quot;bpi&quot;][currency][&quot;rate_float&quot;]
+
+    print(price)
+
+parser = argparse.ArgumentParser(description=&quot;My Fancy CLI&quot;)
+parser.add_argument(
+    '--currency',
+    help='Choose currency to convert to',
+)
+args = parser.parse_args()
+
+if __name__ == &quot;__main__&quot;:
+    print(args)
+    if args.currency:
+        fetch(args.currency)
+    else:
+        parser.print_help()
+</code></pre>
+
+<p>There are two things to keep a note on, in this example. First, is the use of <code>requests</code>, a popular HTTP request/response library, but not a part of the Python standard library, so it has to be installed separately. Second, is the use of command-line arguments, namely <code>--currency</code>.</p>
+
+<p>Next, is the <code>Dockerfile</code>:</p>
+
+<pre><code class="language-Dockerfile">FROM python:3.7
+RUN pip install requests
+COPY script.py .
+ENTRYPOINT [&quot;python&quot;, &quot;script.py&quot;]
+</code></pre>
+
+<p>Again, very simple. In light of keeping the example simple, we will install <code>requests</code> right in the <code>Dockerfile</code> and using a <code>requirements.txt</code> file or some kind of a setup script, which are the common practice.</p>
+
+<p>Let&rsquo;s build the image, assuming that both files are in our current directory:</p>
+
+<pre><code class="language-bash">docker build -t my-command .
+</code></pre>
+
+<p>Great, now we can grab our newly baked image and run it:</p>
+
+<pre><code class="language-bash">docker run --rm -it my-command --currency USD
+</code></pre>
+
+<p>The <code>--rm</code> option will remove the container immediately after the command has been executed. If you have ever ran <code>docker ps -a</code>, you would know that inactive containers do not get deleted immediately, but are left for a possible later restart. Assuming that we would like to run our command multiple times per day, this will result in lots of wasted resources.</p>
+
+<p>The other interesting option is <code>-i</code>. This one, combined with the fact that we chose <code>ENTRYPOINT</code> instead of <code>CMD</code> for our starting point in the <code>Dockerfile</code> would allow us to pass the <code>--currency</code> argument at the very end. There are a few subtle differences between <code>ENTRYPOINT</code> and <code>CMD</code> but the very basic is the ability to adapt <code>ENTRYPOINT</code>, while <code>CMD</code> is more or less final.</p>
+
+<p>You can, of course, create an alias fo your command to make the execution easier:</p>
+
+<pre><code class="language-bash">alias my-cmd=&quot;docker run --rm -i my-command&quot;
+
+my-cmd --currency USD
+</code></pre>
+
+<p>That&rsquo;s it! Now you can ahead and run your application as a scheduled cron task and e.g. accrue data over time:</p>
+
+<pre><code class="language-bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv
+</code></pre>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Once again, the solution is far from the ease of a drag-and-drop that Go executables allow. Also, it assumes a working Docker setup (less and less of an issue nowadays), and quite a bit of space, because of the images. It also, for the most part, requires building the image locally, or at least, pulling the ingredients from an image registry. Docker allows for an option to save an image with all of its dependencies and load it on a remote host OS. Think of it as a sort of fat-Jar. I tried it just for the sake of demonstration, but it seems very impractical, as it resulted in an enormous zip file for that tiny Python script (of course, it bakes a whole Linux bistro inside):</p>
+
+<pre><code class="language-bash">docker save -o my-command.zip my-command
+</code></pre>
+
+<pre><code class="language-bash">rw------- 1 user user 920M Mar 17 08:47 my-command.zip
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Use Dotenv Files When Developing Your Python Apps</title>
+            <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
+            <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
+            <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
+            <content type="html"><![CDATA[
+
+<p>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing. The <a href="https://12factor.net/">Twelve-Factor-App</a> methodology calls this a <em>violation</em>, and has whole <a href="https://12factor.net/config">section</a> on why should be externalized and read from the environment at runtime.</p>
+
+<p>I used to avoid using environment variables, because they made it hard to set up a local environment for testing. I’d either pass all the assignments at the start, or use a cumbersome startup script to export them to the current shell.</p>
+
+<p>Luckily, it is easy to improve the quality of your code, and ease testing in different environments at the same time. It has become somewhat of a standard practice to use <code>.env</code> (a.k.a dotenv) files for configuring sensitive data while testing across environments. A <em>dotenv</em> file contains nothing more than text, where  it has one environment variable assignment per line:</p>
+
+<pre><code class="language-bash">ABC_KEY=1234xyz
+DEF_KEY=2349875
+DEBUG=True
+</code></pre>
+
+<p><strong>NOTE</strong>: <em>Dotenv</em> files <strong>must be ignored</strong> from version control for exactly the same reason mentioned at the beginning of this post: exposing sensitive information as part of the project is bad. These files are only used to quickly set up or change an environment when needed.</p>
+
+<h2 id="using-a-dotenv-file-in-our-app">Using a dotenv file in our app</h2>
+
+<p>How do we get our Python app to read a <code>.env</code> file? <a href="https://pypi.org/project/python-dotenv/">python-dotenv</a> is a great Python package that does exactly that. It will search for a <code>.env</code> as part of the project, and if it finds one, will expose the variables in it to the app. All you need to do, is <code>pip install python-dotenv</code> and add the following couple of lines at the start of your project:</p>
+
+<pre><code class="language-python">from dotenv import load_dotenv
+load_dotenv()
+</code></pre>
+
+<p>The starting point may vary, depending on whether your project is a command line script, a Flask, or a Django project. For instance, in a Django project, the above two lines need to be added at the top of the <code>settings.py</code> file.</p>
+
+<p>Having set <code>python-loadenv</code> up, the rest is easy. Create a <code>.env</code> file at the root of your app with all the environment variables needed to configure it, and make sure that you invoke them properly from your code (e.g. use something like <code>os.getenv('MY_API_KEY')</code>). Don’t forget to exclude the <code>.env</code> file from being checked into your source code repository!</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="https://pypi.org/project/python-dotenv/">python-dotenv · PyPI</a></li>
+<li><a href="http://12factor.net/">http://12factor.net/</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
+            <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
+            <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
+            <description>Dependency Injection (DI) in Python? Seriously? 🤔
 At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? Spoiler: I am going to mention Spring only once in this post, I promise.
 NOTE: If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to the example at the end.</description>
-    </item>
-    
-    <item>
-      <title>Designing Well-Structured REST APIs with Flask-RestPlus: Part 1</title>
-      <link>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</link>
-      <pubDate>Sun, 02 Dec 2018 15:46:47 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</guid>
-      <description>This is the first part of a two-part series. In this post, I will introduce Flask-RestPlus and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.
+            <content type="html"><![CDATA[
+
+<p>Dependency Injection (DI) in Python? Seriously? 🤔</p>
+
+<p>At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? <em>Spoiler:</em> I am going to mention Spring only once in this post, I promise.</p>
+
+<p><strong><em>NOTE:</em></strong> If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to <a href="#a-more-complex-example">the example</a> at the end. Otherwise, keep reading. As always, feel free to send me a <a href="https://twitter.com/intent/tweet?text=%40preslavrachev%20%5BADD%20YOUR%20COMMENT%20HERE%5D&amp;url=https://preslav.me/p/3c4daf3d-607c-49e4-8aa9-c87a61be1697/&amp;related=preslavrachev">✏️comment on Twitter</a>. Your feedback is more than appreciated.</p>
+
+<p>&hellip;</p>
+
+<h1 id="let-s-get-things-straight">Let&rsquo;s Get Things Straight</h1>
+
+<p>While I am definitely approaching Python software development from my close-to-a-decade  experience building Java software, I am not trying to preach to you a certain style of programming. Take this simply as a different perspective on things. The Python Universe is so immense that it will be a crime to pretend that DI is necessary for every Python project. While certain types of Python projects will definitely benefit from a bit more structure, for many others, DI might become the worst nightmare. I will try to write down my reasons, and leave the final decision to the reader.</p>
+
+<h1 id="a-quick-detour-on-dependency-injection">A Quick Detour on Dependency Injection</h1>
+
+<p>I will save you the lecture here. I am sure that many of you already know what DI is all about. Perhaps, some of you have already looked at, if not even read Martin Fowler&rsquo;s <a href="https://martinfowler.com/articles/injection.html">Dependency Injection essay</a>. Even if you haven&rsquo;t, don&rsquo;t panic. I will share you a secret, and that is, <strong>you already know DI, and have used it many times,</strong> even if you haven&rsquo;t used a particular name for it.</p>
+
+<p>There is one golden prerequisite for Dependency Injection and that is, Separation of Concerns. Put simply, group logic in separable units, and let these units work together, without any of them knowing much about the implementation details of the other. OOP calls such units <em>classes</em>, and FP, <em>functions</em>. The point is, <em>units isolate common logic</em>. Let&rsquo;s add to this the requirement that no unit explicitly instantiates the units it works with (dependencies). Instead, dependencies are passed upon the unit (injected), usually, during its instantiation.</p>
+
+<p>So, DI is a fancy term for instantiating classes in a top-level module, and passing them as initializer arguments to one another:</p>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
+
+
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
+
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+
+# ---
+
+if __name__ == '__main__':
+    api = Api()
+    logic = BusinessLogic(api=api)
+
+    # ...
+    print(logic.do_stuff())
+</code></pre>
+
+<p>There are of course, more Pythonic ways of implementing Dependency Injection. I realize that the one I provided above is very Java-like. I have tried to collect a list of Python-related resources you might want to consult. You will find it at the end of this post.</p>
+
+<h1 id="where-explicit-dependency-injection-might-help">Where Explicit Dependency Injection Might Help</h1>
+
+<p>I already tried to make it clear that DI is not a silver bullet, and due to Python&rsquo;s versatility of use, it might not fit to every project. In some, it might even hamper the development of the project.</p>
+
+<p>Python was created to give its developers the freedom to just do things, without sweating much about structure or ceremony, when those are not needed. This is why the Python ecosystem is perfect for scratching out ideas and prototyping, single-purpose CLI tools, or scripts with limited scope and lifetime.</p>
+
+<p>Yet, for many of these projects, there comes a time, when they grow, or are bound to grow from the onset, and with this growth comes a different set of challenges. Where I see DI fit best, are projects with established requirements, serving a large number of stakeholders. The challenge here is to scale and constantly improve the system, without compromising its stability.</p>
+
+<p><strong>Advantages</strong></p>
+
+<p>Adding DI to your project will potentially</p>
+
+<ul>
+<li>increase its testability and reusability, because by design, it allows for easily replacing one component with another (great for mocking, or replacing one concrete implementation with another)</li>
+<li>increase the readability. When applying DI your top-level model becomes sort of an orchestrator, instantiating your units and passing dependencies to them. Although this might add a bit of boilerplate, it helps ensure that all the LEGO-block wiring-up happens in one place, and this place will always be the starting point of your later investigations.</li>
+<li>adds a certain level of common understanding between programmers of different backgrounds. While I am sure that many of you would come up with some more elegant and more Pythonic ways for solving the dependency issue, some of them might be too obscure for non-Python gurus (hi there 👋🏼) and lead to misunderstanding, lost communication, and potentially, compromising the resilience of the end product.</li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<p>Well, the boilerplate and ceremony might be quite of an issue for some Python purists.</p>
+
+<h1 id="a-more-complex-example">A More Complex Example</h1>
+
+<p>I have already mentioned it a few times that doing all the instantiation and passing dependencies around by hand can be a bit tedious. It can also be complicated, because of the order of instantiation. The core dependencies must be instantiated first, the units that depend on them afterwards, and so on, until the top-level units, whose role is usually to coordinate the flow of data among their dependencies.</p>
+
+<p>There are many Python libraries, which already facilitate this process. Among those, I looked at <a href="https://github.com/ets-labs/python-dependency-injector">python-dependency-injector</a>, <a href="https://github.com/suned/serum">serum</a>, and <a href="https://github.com/alecthomas/injector">injector</a>. I found <a href="https://github.com/alecthomas/injector">injector</a> to be closest to what I have come to know and use on Java - <a href="https://spring.io/">Spring</a> and <a href="https://github.com/google/guice">Guice</a>. It is not the least verbose, but it gets the job done. Let&rsquo;s see how it works:</p>
+
+<pre><code class="language-bash">pip install injector
+</code></pre>
+
+<p>Let&rsquo;s take the two classes, I have created above:</p>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
+
+
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
+
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+</code></pre>
+
+<p>The only modification I made, was adding an explicit <a href="https://www.python.org/dev/peps/pep-0484/">type hint</a> to the <code>Api</code> dependency. This will be used by the library to determine the right object to pass at instantiation.</p>
+
+<p>Injector, similar to Guice and Spring, adds the concept of a dependency <code>Module</code>. This is a class that inherits from <code>injector.Module</code> and has a bunch of methods, each corresponding to the initialization of one dependency or the other:</p>
+
+<pre><code class="language-python">class AppModule(Module):
+
+    @singleton
+    @provider
+    def provide_business_logic(self, api: Api) -&gt; BusinessLogic:
+        return BusinessLogic(api=api)
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        # there is no complex logic in our case,
+        # but you can use this method to hide the complexity of initial 
+        configuration
+        # e.g. when instantiating a particular DB connector.
+        return Api()
+</code></pre>
+
+<p>Each of these methods is decorated with <code>@provider</code> (required) and <code>@singleton</code> (optional, only if you want to ensure that the object instance will always remain the same). Pay attention to the use of type hinting here too. One the one hand, it makes the dependency module code more readable, on the other, it is used by the injector library to determine the right objects to return.</p>
+
+<p>Let&rsquo;s see how to use our classes. We need to create an Injector and pass it an instance of our AppModule.</p>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    injector = Injector(AppModule())
+
+    logic = injector.get(BusinessLogic)
+    logic.do_stuff()
+</code></pre>
+
+<p>From now on, when you want to obtain an instance which is inside the dependency graph, from outside the graph, you would have to use the injector. Before you start grunting about the rising amount of boilerplate, let me point out that the actual places where you would need to do that, are either your app&rsquo;s main starting points, or API/Web endpoints in the context of a Web application. Actually, if you are building a Flask app, the creator of injector has got you covered. There is an extension for Flask, called <a href="https://github.com/alecthomas/flask_injector">flask-injector,</a> which hides the boilerplate of having to use the injector object directly.</p>
+
+<p>Back to our injector instance. The real benefit of having dependency modules, is when you have several of them, for running your app in different contexts. The simplest example is testing. Let&rsquo;s create a version of our Api class for testing purposes:</p>
+
+<pre><code class="language-python">class TestApi(Api):
+    def fetch_remote_data(self):
+        print('Demo Api called')
+        return 24
+</code></pre>
+
+<p>Assuming that there might be more classes we&rsquo;d like to mock, we create a separate dependency module for them:</p>
+
+<pre><code class="language-python">class TestAppModule(Module):
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        return TestApi()
+</code></pre>
+
+<p>The real magic happens when creating the injector. You can have as many injectors as you have, and each injector instance can be supplied with as many dependency module configurations as you wish:</p>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    real_injector = Injector(AppModule())
+    test_injector = Injector([AppModule(), TestAppModule()])
+
+    real_logic = real_injector.get(BusinessLogic)
+    real_logic.do_stuff()
+
+    test_logic = test_injector.get(BusinessLogic)
+    test_logic.do_stuff()
+</code></pre>
+
+<pre><code>Api called
+the api returned a result: 42
+Demo Api called
+the api returned a result: 24
+</code></pre>
+
+<h1 id="the-end">The End</h1>
+
+<p>I will stop here. I hope, if not really having managed to convince you, to have given you a slightly different perspective on things. Until next time!</p>
+
+<hr />
+
+<h1 id="related-resources">Related Resources</h1>
+
+<ul>
+<li><a href="https://martinfowler.com/articles/injection.html">Inversion of Control Containers and the Dependency Injection pattern</a></li>
+<li><a href="https://medium.com/@suneandreasdybrodebel/pythonic-dependency-injection-a-practical-guide-83a1b1299280">Pythonic Dependency Injection: A Practical Guide - Sune Andreas Dybro Debel - Medium</a></li>
+<li><a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html">Python 3 Patterns, Recipes and Idioms - Python 3 Patterns, Recipes and Idioms</a></li>
+<li><a href="http://python-dependency-injector.ets-labs.org/introduction/di_in_python.html">Dependency injection and inversion of control in Python - Dependency Injector 3.14.2 documentation</a></li>
+<li><a href="https://github.com/alecthomas/injector">alecthomas/injector</a></li>
+<li><a href="https://github.com/suned/serum">suned/serum</a></li>
+<li><a href="https://github.com/ets-labs/python-dependency-injector">ets-labs/python-dependency-injector</a></li>
+<li><a href="https://github.com/RobertoPrevato/rodi">RobertoPrevato/rodi</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Designing Well-Structured REST APIs with Flask-RestPlus: Part 1</title>
+            <link>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</link>
+            <pubDate>Sun, 02 Dec 2018 15:46:47 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</guid>
+            <description>This is the first part of a two-part series. In this post, I will introduce Flask-RestPlus and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.
 A seasoned Spring developer, I felt a bit uneasy when designing and future-proofing a Flask-based API for the first time. I have recently started using Python way beyond my original intention to just play with data, and found Flask to be a super-easy micro-service alternative to Spring Boot or Ktor.</description>
-    </item>
-    
-    <item>
-      <title>Data Science on Your iPad</title>
-      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
-      <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
-    </item>
-    
-    <item>
-      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
-      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
-      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
-      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+            <content type="html"><![CDATA[
+
+<p>This is the first part of a two-part series. In this post, I will introduce <a href="https://flask-restplus.readthedocs.io/en/stable/">Flask-RestPlus</a> and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.</p>
+
+<hr />
+
+<p>A seasoned Spring developer, I felt a bit uneasy when designing and future-proofing a <a href="http://flask.pocoo.org/">Flask</a>-based API for the first time. I have recently started using Python way beyond my original intention to just play with data, and found Flask to be a super-easy micro-service alternative to <a href="https://spring.io/projects/spring-boot">Spring Boot</a> or <a href="https://ktor.io/">Ktor</a>. The one thing I was really concerned about, was making sure that the API  request/response format was standardised (think, providing a Swagger schema), well-documented, and validated. While working with Java, much of this would come straight from the compiler itself, due to the static-type nature of the language. When you combine this with a couple of great libraries like <a href="https://github.com/FasterXML/jackson">Jackson</a> and <a href="http://springfox.github.io/springfox/">SpringFox</a>, the API communication gets documented and validated with minimal intrusion to the actual code. In Python, this would require tedious <code>if-else</code> checks all over the place &hellip; or so I thought.</p>
+
+<h2 id="flask-restplus-to-the-rescue">Flask-RestPlus to the Rescue</h2>
+
+<p>Unlike <a href="https://www.djangoproject.com/">Django</a>, Flask does not come with batteries included, but there is a whole ecosystem of open-source libraries and extensions contributed by the community. One of these is called <a href="https://flask-restplus.readthedocs.io/en/stable/">Flask-RestPlus</a> and it is the absolute dream-come-true for every Flask API designer. Flask-RestPlus is a <a href="http://flask.pocoo.org/docs/1.0/extensiondev/">Flask extension</a> library, and as the name suggests, it helps ease the building of structured RESTful APIs with minimal setup, and encourages best practices. Flask RestPlus follows certain conventions, but does not insist on them, the way Django does.  In a way, Flask-RestPlus tries to help organise a growing Flask project, but without it losing its minimal overhead, which is the greatest charm of Flask.</p>
+
+<p>The goal of this series is to start with a simple Flask app, and try to address the following points with a bit of Flask-RestPlus at a time:</p>
+
+<ol>
+<li>Structure and auto-document an API <strong>(Part 1)</strong></li>
+<li>Ensure request/response payload validation <strong>(Part 2)</strong></li>
+</ol>
+
+<h3 id="demo-app">Demo App</h3>
+
+<p>Let&rsquo;s start with a simple Flask-based API for a conference management application:</p>
+
+<pre><code class="language-python">from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route(&quot;/conferences/&quot;)
+def get_all__conferences():
+    &quot;&quot;&quot;
+    returns a list of conferences
+    &quot;&quot;&quot;
+
+
+@app.route(&quot;/conferences/&quot;, methods=['POST'])
+def add_conference():
+    &quot;&quot;&quot;
+    Adds a new conference to the list
+    &quot;&quot;&quot;
+
+
+@app.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def get_conference(id):
+    &quot;&quot;&quot;
+    Displays a conference's details
+    &quot;&quot;&quot;
+
+@app.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def edit_conference(id):
+    &quot;&quot;&quot;
+    Edits a selected conference
+    &quot;&quot;&quot;
+</code></pre>
+
+<p>Installing Flask-RestPlus is easy</p>
+
+<pre><code class="language-bash">pip install Flask-RestPlus
+</code></pre>
+
+<p>Let&rsquo;s simply introduce an Api object for now, try to wrap our app instance with it, replace the routing decorators, and see what happens:</p>
+
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api
+
+app = Flask(__name__)
+api = Api(app=app)
+
+
+@api.route(&quot;/conferences/&quot;)
+def get_all__conferences():
+    pass
+
+
+@api.route(&quot;/conferences/&quot;, methods=['POST'])
+def add_conference():
+    pass
+
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def get_conference(id):
+    &quot;&quot;&quot;
+    Displays a conference's details
+    &quot;&quot;&quot;
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def edit_conference(id):
+    &quot;&quot;&quot;
+    Edits a selected conference
+    &quot;&quot;&quot;
+</code></pre>
+
+<p>As soon as the app starts, we will get the following error:</p>
+
+<pre><code>AttributeError: 'function' object has no attribute 'as_view'
+</code></pre>
+
+<p>This is because if you want to use RestPlus for some of your Flask functions, you have to enclose them in a scoping class. Not only that, but inside the enclosing class, you should name your methods, corresponding to the HTTP methods that REST is based on: GET, POST, PUT, and DELETE:</p>
+
+<pre><code class="language-python">@api.route(&quot;/conferences/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+</code></pre>
+
+<p>Before anyone starts objecting, let me explain why this is helpful. Flask-RestPlus uses the Flask concept of &ldquo;Pluggable Views&rdquo; to introduce <code>Resource</code> (as in, REST resource).</p>
+
+<p>Let&rsquo;s be honest. While most Flask applications start simple, many of them outgrow the initial idea, and cramming several handler functions in the main module scope quickly becomes a mess. This is why <a href="http://exploreflask.com/en/latest/blueprints.html">Flask Blueprints</a> exist to help split common functionality into multiple modules.</p>
+
+<p>Flask-RestPlus makes great use of Blueprints too, as I will demonstrate later, but Resources go one level of granularity further. A Resource class can have multiple methods, but each one should be named after one of the accepted HTTP verbs. What if you need more than one <code>GET</code> or <code>POST</code> method for your API? Well, create multiple Resource classes and put each method in the corresponding resource class. It might look a little overwhelming at first, coming from the cut-the-boilerplate nature of Flask, but with a bit of playing around, it won&rsquo;t be a brainer at all, and it will pay off tremendously in the long run.</p>
+
+<p>Let&rsquo;s see how our tiny app will look after the transformations:</p>
+
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api, Resource
+
+app = Flask(__name__)
+api = Api(app=app)
+
+
+@api.route(&quot;/conferences/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+
+    def post(self):
+        &quot;&quot;&quot;
+        Adds a new conference to the list
+        &quot;&quot;&quot;
+
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+class Conference(Resource):
+    def get(self, id):
+        &quot;&quot;&quot;
+        Displays a conference's details
+        &quot;&quot;&quot;
+
+    def put(self, id):
+        &quot;&quot;&quot;
+        Edits a selected conference
+        &quot;&quot;&quot; 
+</code></pre>
+
+<p>With this tiny bit of overhead (if you even consider this any overhead at all), you get so much in return. Start the app and point to <a href="http://localhost:5000">http://localhost:5000</a>. You will see that the index page has turned into a Swagger UI, which shows the already defined API endpoints, neatly organised into categories (namespaces):</p>
+
+<p><img src="/images/2018/december/image.png" alt="" /></p>
+
+<p>This is great for documenting, playing with, and sharing you API schema around. Yet, this is by far not the only thing that Flask-RestPlus does for you. It goes beyond simply documenting the API, in ensuring that the API is compliant with the schema. Put simply, Flask-RestPlus makes sure that if certain request parameters are marked as mandatory, or if request/response models are supposed to have a certain structure, those are checked and validated at runtime. In my opinion, this is real advantage of Flask-RestPlus, sitting on top of a Flask application. The current example is too simple to demonstrate the real power of request/response marshalling and validation, but both will be throughly described in Part 2.</p>
+
+<h3 id="namespaces">Namespaces</h3>
+
+<p>Namespaces are optional, and add a bit of additional organisational touch to the API, mainly, from a documentation point of view. A namespace allows you to group related Resources under a common root, and is simple to create:</p>
+
+<pre><code class="language-python">ns_conf = api.namespace('conferences', description='Conference operations')
+</code></pre>
+
+<p>To bring certain Resources under a given namespace, all you need to do, is to replace <code>@api</code> with <code>@ns_conf</code>. Notice also that the name of the namespace replaces the name of the resource, so endpoints can simply to refer to <code>/</code>, instead of copying the name of the resource time and again:</p>
+
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api, Resource
+
+app = Flask(__name__)
+api = Api(app=app)
+ns_conf = api.namespace('conferences', description='Conference operations')
+
+
+@ns_conf.route(&quot;/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+
+    def post(self):
+        &quot;&quot;&quot;
+        Adds a new conference to the list
+        &quot;&quot;&quot;
+
+
+@ns_conf.route(&quot;/&lt;int:id&gt;&quot;)
+class Conference(Resource):
+    def get(self, id):
+        &quot;&quot;&quot;
+        Displays a conference's details
+        &quot;&quot;&quot;
+
+    def put(self, id):
+        &quot;&quot;&quot;
+        Edits a selected conference
+        &quot;&quot;&quot;
+</code></pre>
+
+<p>One will notice afterwards that the Swagger UI display has changed too, to reflect the namespacing:</p>
+
+<p><img src="/images/2018/december/image-1.png" alt="" /></p>
+
+<h3 id="blueprints">Blueprints</h3>
+
+<p><a href="http://flask.pocoo.org/docs/blueprints/#blueprints">Flask Blueprints</a> are a popular way of designing modular applications. The same applies to Flask-RestPlus. The production version of our application will certainly outgrow the four endpoints we started with. There might be other resources, or at the very least, you might want to move to move your API away from the root of your app. Both cases are a perfect candidate for a Blueprint.  Let&rsquo;s move all of our API endpoints under <code>/api/v1</code>, without touching the routes of even one of them. This example is coming straight from the Flask-RestPlus <a href="https://flask-restplus.readthedocs.io/en/stable/scaling.html#use-with-blueprints">documentation</a>, and is illustrative enough to help close this chapter of the journey:</p>
+
+<p>Create a Blueprint the usual way, and instead of wrapping our app instance with the RestPlus API,  we will wrap the Blueprint instead. This way, independent of our app, we are free to move our API part into a different module: (e.g. <code>blueprint/api.py</code>).</p>
+
+<pre><code class="language-python">from flask import Blueprint
+from flask_restplus import Api
+
+blueprint = Blueprint('api', __name__)
+api = Api(blueprint)
+
+# Bring in the rest of our API code here
+</code></pre>
+
+<p>This leaves only a tiny bit of bridging code to introduce the Blueprint to the main app, and set the URL prefix. The next time you start your app, the API endpoints will be accessible only under the specified URL prefix (<code>/api/v1</code>):</p>
+
+<pre><code class="language-python">from flask import Flask
+from apis import blueprint as api
+
+app = Flask(__name__)
+app.register_blueprint(api, url_prefix='/api/1')
+</code></pre>
+
+<p>Last but not least, it is always a good idea to move the Swagger UI documentation away from the root. As in everything else in RestPlus, this part is extremely ease, too. You can override the default location by passing an additional parameter to the initialiser:</p>
+
+<pre><code class="language-python">api = Api(app=app, doc='/docs')
+</code></pre>
+
+<hr />
+
+<p>This sums up the first part of my series. I hope that it was informative, and will help you structure your Flask-based REST APIs better in the future. Till next time!</p>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+<li><a href="https://medium.freecodecamp.org/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563">How to structure a Flask-RESTPlus web service for production builds</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Data Science on Your iPad</title>
+            <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+            <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+            <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
+            <content type="html"><![CDATA[
+
+<p>This article is a follow-up transcription to a talk I recently gave at a local <a href="https://www.meetup.com/Hacking-Machine-Learning">Munich machine learning meetup</a>. Unlike <a href="https://preslav.me/2018/05/25/my-first-machine-learning-talk/">my previous talk</a>, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea. Being an iOS developer, who has once built a 3rd-party App Store search engine, I know first-hand how difficult it is to find anything inside the App Store, more so, when carefully specifying what one is looking for. Therefore, I believe that if nothing else, even having this one collection of links should be a valuable starting point for further exploration.</p>
+
+<p>Before I get to the apps, let me start with some background:</p>
+
+<h2 id="why-a-tablet">Why a Tablet?</h2>
+
+<p>Although it might no longer get the media&rsquo;s attention as the tech sector&rsquo;s latest sexy gadget, the tablet has replaced the laptop/desktop in a number of activities, where one previously needed a &ldquo;real machine&rdquo;. What is more, the tablet is slowly getting out of people&rsquo;s notion as being handy coffee table device for content consumption. It is rather becoming the preferred content creation choice of many, particularly, creative professions, such as writers, musicians, and visual artists. This has caught the eye of companies like Apple, who have decided to double-down on the iPad&rsquo;s Pro model, targeted primarily at professionals.</p>
+
+<p>If there is one thing that could describe our generation best, this would be our constant state of movement. We spend so much time commuting, or in some form of passive travel. We might as well try to start reclaiming some of this time and use it for creative and productive activities. This is where a tablet fits in for me.</p>
+
+<p>Even at the bulkiest of sizes, an iPad is more convenient to carry around than a laptop. It is &ldquo;always on&rdquo;, can be used while sitting, lying or standing, with or without a keyboard, and requires less interactions than a laptop. More than anything else, I find the level of multitasking exactly right for this type of medium. Indeed, one can do way less things at the same time on an iPad than one can do using a laptop. I tend to consider this a feature rather than a shortcoming: less multitasking =&gt; less distraction, i.e. more immersion.</p>
+
+<p>Although my daily work involves sitting behind a laptop and crafting complex systems, it is rarely behind the laptop where these ideas originate. I feel most creative when discussing things with people or when I drift away somewhere outside, my iPad in my hand.</p>
+
+<p>Now back to the main topic&hellip;</p>
+
+<h2 id="coding-on-an-ipad">Coding on an iPad?</h2>
+
+<p>It is certainly doable, and getting used to it takes way less time than one might expect. As an example, take developer Richard Morgan, who <a href="https://www.imore.com/starsceptre-ios-game-was-entirely-coded-ipad">developed an iOS game on his iPad</a>, entirely during his commute around London. Everything is possible when you have the right mindset and the right tools.</p>
+
+<p>As for the tools, there are quite a few good ones, hidden inside the App Store. In fact, code editors for iOS have existed even before the release of the original iPad. Among them, many in-app IDEs of sorts. Yet, it wasn&rsquo;t until last year, when I started seriously taking look at the possibility writing code and running it entirely on an iPad. In 2017, Apple <a href="https://www.macstories.net/linked/apples-app-store-guidelines-now-allow-executable-code-in-educational-apps-and-developer-tools/">permitted</a> the sharing and downloading of executable code on iOS devices, for teaching, learning and personal development purposes. A validation that writing code on iOS is here to stay.</p>
+
+<p>The apps below are in no particular order, besides the fact that I will be specifically looking at Pythonista later on. All apps are paid, which is something I firmly stand behind and support, yet this post is no product or service endorsement of any kind. I am just a happy customer:</p>
+
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Languages</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://omz-software.com/pythonista/">Pythonista 3</a></td>
+<td>Python 2 / 3</td>
+</tr>
+
+<tr>
+<td><a href="https://codea.io/">Codea</a></td>
+<td>Lua</td>
+</tr>
+
+<tr>
+<td><a href="http://continuous.codes/">Continuous</a></td>
+<td>C# / F# .NET</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/irstudio/id1173749340">iRstudio</a></td>
+<td> R</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a></td>
+<td>Python</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492">Playgrounds</a></td>
+<td>Swift</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="pythonista">Pythonista</h2>
+
+<p><a href="http://omz-software.com/pythonista/">Pythonista</a> is one the few apps, just like <a href="https://ia.net/writer">iA Writer</a> (which I am using right now to write this post), which IMHO, deserves to come on an iPad pre-installed. To those having tried the Swift Playgrounds app on an iPad, it is just mere peanuts in comparison with what Pythonista offers:</p>
+
+<ul>
+<li>Fully featured support for both Python 2 and Python 3</li>
+<li>Excellent documentation, keyboard extensions, and code completion</li>
+<li>Has an integrated debugger, a property inspector, and its own REPL-like console</li>
+<li>Provides extensions for writing GUIs and communication with other apps on your device</li>
+</ul>
+
+<p><img src="/images/2018/august/pythonista-1.jpg" alt="" /></p>
+
+<p><img src="/images/2018/august/pythonista-2.jpg" alt="" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UYIZlqQPusw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Pythonista comes pre-packed with a ton of libraries we love and use every day: NumPy, Matplotlib, Requests, BeatufulSoup, etc. Yet, lacks some of our favourites, due to Apple&rsquo;s restrictions: Pandas, SciPy, Scikit-Learn, and unfortunately, TensorFlow. There are other apps like
+<a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a> and the now defunct Computable, which feature many of those as part of the app bundle, which lets me remain optimistic that we will see many of those included in future releases of Pythonista too.</p>
+
+<p>Pythonista is great for quickly scrapping ideas, and doing exploratory data analysis. In fact, I am running most of my early-stage exploratory analysis on cryptocurrency pricing directly in the app. It is absolutely indispensable when learning new concepts, be those Python, or math / science-related. Last but not least, the integrated GUI and extension capabilities allow for creating entire iOS applications using Python. Think about it. An iOS app, built using Python, using only an iPad. It can&rsquo;t get better than this.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a7QcX4Ke3Hc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="what-about-jupyter">What about Jupyter?</h2>
+
+<p>Indeed, what about <a href="https://jupyter.org/">Jupyter</a>? Unless you have been living in a cave, and self-proclaimed yourself a data scientist, you should know that Jupyter  Notebook, and similar tools which mix code and narrative have taken the scientific world by storm. Moreover, Jupyter Notebook is entirely Web-based. Therefore, it shouldn&rsquo;t be a big deal to run your private Jupyter instance, or use of the many readily available instances from <a href="https://notebooks.azure.com/">Microsoft</a>, <a href="https://www.kaggle.com/kernels">Kaggle</a>, <a href="https://colab.research.google.com/">Google</a>, and many other providers. My answer to this is <strong>yes and no</strong>. Although Jupyter Notebook is Web-based and technically opens up in mobile Safari, the actual usability of the Web version on mobile is less than ideal. Browsing through and reading code somehow works. It is the editing of code, where things get really painful. Many of the beloved Jupyter shortcuts are not supported, due to the lack of corresponding keys on the iPad&rsquo;s keyboard. When trying to type inside a cell, the browser tries to compensate by zooming in in and out in a horrible fashion. A very, very unpleasant thing.</p>
+
+<p>So far, so good, but there must be an app that brings the best of Jupyter and the native iOS experience together, right? Indeed, but a bit later on that. First, a word about Computable.</p>
+
+<p><a href="http://computableapp.com/index_old.html">Computable</a> was an app that promised to be the best of Pythonista, with  even more DS libraries under the hood, and its own native Jupyter support. The ultimate bliss.</p>
+
+<p><img src="http://www.computableapp.com/img/keyboard@2x.png" alt="" /></p>
+
+<h6 id="computable-in-action-photo-source-http-www-computableapp-com-index-old-html">Computable in Action. <a href="http://www.computableapp.com/index_old.html">Photo Source</a></h6>
+
+<p>Sadly, the app is no longer available. It was pulled from the App Store in 2015 for various reasons, but the developer was kind enough to <a href="https://github.com/ktraunmueller/Computable">put the original code up on GitHub</a>, and make it open-source. In fact, as far as I know, I have been the first one to <a href="https://github.com/preslavrachev/Computable">fork</a> the repository, and I am keen on trying to at least trying to revive it. I am looking for other contributors as well, so anyone willing to help is more than welcome.</p>
+
+<p>Now, back to my dilemma. Indeed, there is a great app I discovered last year, which brings the best of both worlds. It is called
+<a href="https://juno.sh/">Juno</a> and it is a slick, brand new, native iOS client for working with Jupyter Notebook and JupyterLab instances.</p>
+
+<p><img src="https://navoshta.com/images/posts/juno/screenshot_h_01@2x.png" alt="" /></p>
+
+<h6 id="photo-source-https-navoshta-com"><a href="https://navoshta.com">Photo Source</a></h6>
+
+<p>Juno will easily connect to a self-hosted Jupyter server, or to a cloud-provided Jupyter VM (e.g. Azure, CoCalc, and many more coming soon). It also supports <a href="https://mybinder.org/">Binder</a>, for a series of pre-made tutorial notebooks, which is ideal for people to get on board without yet having an actual Jupyter instance running.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6QNFi4EIz6U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Indeed, the lack of working truly offline might be a show-stopper for some, but I am more than sure that the developers are working hard to address this in future versions. Understanding the difficulties of having all Python libraries locally under the hood, I can only wish for an easy way to browse through, and perhaps, locally caching pre-rendered Jupyter notebooks for later reference. This would be great, and one won&rsquo;t have to render those to PDF or something more obscure.</p>
+
+<h2 id="a-few-more-apps">A few more apps</h2>
+
+<p>Before closings have decided to reiterate on my original statement that  the App Store is full of hidden gems which unfortunately, often did not really get the credit they deserve. This is the reason why I decided to share a few complementary apps that professionals from all disciplines will surely be interested in trying out. As before, those are not in any particular order, and I am not endorsing any of them, just sharing my personal opinion.</p>
+
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Apps</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Taking Notes and Documenting</td>
+<td><a href="http://happenapps.com/#quiver">Quiver</a>, <a href="https://ia.net/writer">iAWriter</a>, <a href="http://www.bear-writer.com/">Bear</a>, <a href="https://fsnot.es/">FSNotes</a></td>
+</tr>
+
+<tr>
+<td>Source Control</td>
+<td><a href="https://workingcopyapp.com/">Working Copy</a></td>
+</tr>
+
+<tr>
+<td>SSH and Terminal Emulation</td>
+<td><a href="https://www.termius.com/">Termius</a>, <a href="https://panic.com/prompt/">Prompt</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p>Last but not least, here are <a href="https://speakerdeck.com/preslavrachev/data-science-on-your-ipad">my slides</a> from the talk. Until next time!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+            <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+            <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+            <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
 With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
-    </item>
-    
-    <item>
-      <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
-      <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
-      <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
-      <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&amp;#39;TotalPayBenefits&amp;#39;] == sal[&amp;#39;TotalPayBenefits&amp;#39;].max()][&amp;#39;EmployeeName&amp;#39;] which is absolutely valid, but is it the only option?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.</p>
+
+<p>With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test. The problem is, when I do changes to the Python code (like, add a new function), they are not immediately usable, because neither the Python REPL, nor IPython / Jupyter would auto-reload them.</p>
+
+<h2 id="give-me-the-code">Give me the code</h2>
+
+<p>Yes, we are coming to that</p>
+
+<h3 id="general-way">General Way</h3>
+
+<p>Python 3 supports inline reloading of modules using a function called, well clever enough, <code>reload</code>. It used to be a built-in function in Python 2, but this is no longer the case. If you are using Python 3.2+, you should import it extra:</p>
+
+<p>For Python 3.2 and 3.3:</p>
+
+<pre><code class="language-python">import importlib
+importlib.reload(some_module)
+</code></pre>
+
+<p>For Python 3.4+:</p>
+
+<pre><code class="language-python">import imp
+imp.reload(some_module)
+</code></pre>
+
+<h3 id="ipython-jupyter-magic">IPython/Jupyter Magic</h3>
+
+<p>Jupyter comes with a set of extensions only applicable to the Jupyter/iPython sessions, called <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">magics</a>. One of these “magics” is the ability to load custom extensions, <a href="http://ipython.readthedocs.io/en/stable/config/extensions/index.html">one of which</a> allows auto-reloading of modules. To enable this, you should add the following two commands, before any imports:</p>
+
+<pre><code class="language-python">%load_ext autoreload
+%autoreload 2
+# you can check out the the documentation for the rest of the autoreaload modes
+# by apending a question mark to %autoreload, like this:
+# %autoreload?
+</code></pre>
+
+<p>This way, as soon as you hit <code>Save</code> in your code editor, you should be able to re-run a Jupyter cell or an iPython line again, and if it is calling your  module, it should automatically call the latest version.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><p><a href="https://support.enthought.com/hc/en-us/articles/204469240-Jupyter-IPython-After-editing-a-module-changes-are-not-effective-without-kernel-restart">Jupyter / IPython: After editing a module, changes are not effective without kernel restart – Enthought Knowledge Base</a></p></li>
+
+<li><p><a href="https://stackoverflow.com/questions/5364050/reloading-submodules-in-ipython#5399339">python - Reloading submodules in IPython - Stack Overflow</a></p></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
+            <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
+            <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
+            <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?</description>
+            <content type="html"><![CDATA[<p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
+
+<pre><code class="language-python">sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']
+</code></pre>
+
+<p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
+
+<pre><code class="language-python">sal.loc[sal['TotalPayBenefits'].idxmax()]['EmployeeName']
+
+sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
+</code></pre>
+
+<p>I did a quick performance check, and indeed, idmax/argmax turn out twice as fast:</p>
+
+<pre><code class="language-bash"># the original filter condition
+815 µs ± 11.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# idmax()
+402 µs ± 7.61 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# argmax
+404 µs ± 8.81 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+</code></pre>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

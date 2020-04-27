@@ -1,65 +1,247 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Java on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/java/</link>
-    <description>Recent content in Java on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 17 Jan 2020 08:35:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Reflecting on My Experience With Go, One Year After</title>
-      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
-      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
-      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+    <channel>
+        <title>Java on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/java/</link>
+        <description>Recent content in Java on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 17 Jan 2020 08:35:04 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/java/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Reflecting on My Experience With Go, One Year After</title>
+            <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+            <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
  I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908031736/</link>
-      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908031736/</guid>
-      <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
+            <content type="html"><![CDATA[
+
+<p>In my little more than a year day-to-day developer experience with Go, I have so far <strong>learned three things</strong>:</p>
+
+<ol>
+<li>I can change my entire view of how programming works, even after 12+ years of doing it in one form or another.</li>
+<li>People are blaming Java for all the wrong reasons</li>
+<li>People are praising Go for all the wrong reasons</li>
+</ol>
+
+<p>Let me explain. This post is not about saying that “language A is better than language B”, or vice versa. It is about asking ourselves the question why things work the way they do, and whether doing them differently is a bad, or potentially, good thing.</p>
+
+<p>Before joining the Go camp, I had worked quite a few years as a Java developer, with all the stereotypes that this role could evoke in one’s head. I co-developed data-processing systems for various industries. Yet, much of the code I wrote was just boilerplate: passing data from one format to the other, or devising complex abstractions behind what should have really just been calling a function and obtaining its result. Yes, the code was difficult to comprehend, but I was proud of it for this exact reason. The more hoops I created, the more secure I felt that:</p>
+
+<ol>
+<li>I was doing what I thought was right</li>
+<li>If people didn’t understand the code, they’d have to come to me for an advice, further boosting my ego.</li>
+</ol>
+
+<h2 id="the-language-is-not-to-blame-for-this">The language is not to blame for this</h2>
+
+<p>The fact that much of the existing Java code is full of bureaucracy has nothing to do with the language itself, or with its platform. Our developer community should bear the sole responsibility. I can assure anyone that perfectly functioning Java applications can be written without 90% of the ceremony. They will be smaller and run faster. Most probably, easier to comprehend, too. And yet, they won’t get you hired in any well-respected company. They just won’t pass the <em>developer prejudice</em> test. I know. I’ve seen many elegant solutions and rejected them for not being /idiomatic/ enough.</p>
+
+<h2 id="go-isn-t-a-silver-bullet-either">Go isn’t a silver bullet either</h2>
+
+<p>For much of the same reasoning, jumping ship towards Go, just because “it is not Java”, won’t bring anyone far. Even before I started writing Go, I had heard and read many stories, about how simple and fast it made everything, how little ceremony it had, compared to Java, how it would eventually kill all other languages, etc. All blah, blah. Despite all of the above being true, you have to discover the truth in each for yourselves. If you approach the language out of desperation with your current way of working, you’re going to be set for a rough path.</p>
+
+<p>See, if you all you wanted was to get a faster running (name language of choice), you could certainly do it. Yet, holding on to the mental baggage of your previous experience will be hard and messy. My first Go project started out as a rewrite of a Spring Boot app I’d started earlier, so I thought I’d just organize it the same way. To keep the story short, let’s just say it was a spectacular disaster. Only after I started from scratch, did it really start taking off.</p>
+
+<h2 id="go-is-a-language-without-with-less-idioms">Go is a language without (with less) idioms</h2>
+
+<p>Let’s do a naive math experiment. Imagine that you could create valid programming expressions combining any 3 keywords, from a programming language’s vocabulary. Thus, if a language only has 10 keywords, the maximum number of possible expressions is 10 * 9 * 8 = 720. In contrast, a language, with, say, 20 keywords would end up having 20 * 19 * 18 = 6840 expressions. Twice as many keywords would result in almost 10 times as many expressions!</p>
+
+<p>Languages tend to encourage the creation and use of idioms. With that many possible expressions, it’s a normal behaviour for an individual, or a group of people to start associating and using expressions for certain things. The problems usually occur when another group comes with its own way of expressing the same thing. Both are perfectly valid, but each group would have issues understanding the other.</p>
+
+<p>This is not to say that Go having a very strict and concise nature, is totally devoid of idioms. That would be impossible. It is in our nature to try to associate and abstract certain concepts. Yet, when a language has a deliberately smaller vocabulary, the chances for different groups accidentally finding multiple ways of doing the same thing are smaller. This helps the communication between people a great deal, but comes with a very obvious downside. Code (or any written expression, for that matter) without idioms is very, very verbose.</p>
+
+<p>So, whoever told you that Go is not a verbose language, probably either lied to you on purpose, or had’n really seen any other programming languages up until that point. But hey, we agreed that verbosity in the name of communication and common understanding is a actually a good thing, right?s</p>
+
+<h2 id="go-is-a-test-for-senior-engineers">Go is a test for senior engineers</h2>
+
+<p>A lot has been said about the initial concept about Go, and how the idea was to design a language for juniors fresh out of college, and with little programming experience. I think that understanding the beauty of going back to the roots of programming, can be a cathartic experience for many seasoned programmers.</p>
+
+<p>See, junior programmers start with little baggage and preconceptions, so in their view, anything that can be done with code is fair and justified. Including, burning a CPU, or erasing a disk due to an arithmetic error.</p>
+
+<p>Somewhere along the middle of the career path, a bunch of principles start to pile up. All of them out of the desire to step on what’s already been learned, and to make sure that things are smoothly and safely without immediate supervision. Learning and applying the principles is great, because it ensures a gradual path forward. But for many, it becomes a dogma which they blindly stick to, without asking whether a simpler alternative could be better.</p>
+
+<p>The problem with principles is that they only work well around 80% of the time. It is the remaining 20% that can be disastrous for a project, or for one’s career. It is the understanding where to apply a principle, and where to deliberately throw it away in the name of pragmatism, which turns a software engineer into a senior software engineer.</p>
+
+<p>To really appreciate Go, one needs to learn how to discern what makes it and its community stand out from the rest. One needs to go through a phase of utter disgust with the language, for it “lacking” certain feature. Moving on despite the urge to go back to a familiar ground, would result in one of two things:</p>
+
+<ol>
+<li>Make one realise that indeed, the Go language is not what they need or want</li>
+<li>Learn to appreciate going back to the roots, as well as when to favour pragmatism over principles</li>
+</ol>
+
+<p>In any case, it would be an interesting experience.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908031736/</link>
+            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908031736/</guid>
+            <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
 I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
-    </item>
-    
-    <item>
-      <title>My Reasons to Consider Go Coming from Java</title>
-      <link>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
-      <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
-      <description>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</description>
-    </item>
-    
-    <item>
-      <title>Connecting to a MongoDB Instance Using KMongo</title>
-      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
-      <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
-      <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
+            <content type="html"><![CDATA[<p>My first attempt to try out compiling a <a href="https://guides.micronaut.io/micronaut-creating-first-graal-app/guide/index.html">Micronaut</a> app to a native <a href="https://www.graalvm.org/">GraalVM</a> image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-03 17-45-05.png" alt="" /></p>
+
+<p>I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way. Yet, as of this moment this option just seems too impractical, compared to Go&rsquo;s compilation time of mere seconds.</p>
+
+<p>That said, the startup time and memory footprint of the same Micronaut app running on the JVM are quite good, when compared to Spring Boot.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>My Reasons to Consider Go Coming from Java</title>
+            <link>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</link>
+            <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/05/07/my-reasons-to-consider-go-coming-from-java/</guid>
+            <description>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features.</description>
+            <content type="html"><![CDATA[
+
+<p>I hate listicles, and I am highly hoping that this doesn’t become one of them. Yet, I somehow felt the need to write down the reasons why I am giving Go a second (or maybe, third 🤔) chance. To the Java developers out there, searching for a new weapon of choice, I am hoping that this will give you a bit of perspective. This is not a description of Go-specific features. For those, readers can find plenty of information online.</p>
+
+<h1 id="go-focuses-on-less-is-more">Go focuses on “less is more&rdquo;</h1>
+
+<p>The first time I saw a relatively simple Go program, my internal reaction was “Why all the torture?”. Somehow, things I used to solve with a Python or even a Java one-liner, look ginormously over-bloated in Go. At least, on the surface. Searching for an answer, I found this talk by Rob Pike, which helped put things in some order:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/rFejpH_tAHM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p><a href="https://www.youtube.com/watch?v=rFejpH_tAHM">dotGo 2015 - Rob Pike - Simplicity is Complicated</a></p>
+
+<p>The thing is, unlike other languages, Go has been left out of many “niceties” of modern programming, and this was an intentional decision. More features add a level of cognitive burden. Of course, they also add more productivity, but at the cost of a higher comprehension barrier. I remember the days before Java 8, and how excited I was to see lambdas and streams make it into the language. A lot of previously lengthy boilerplate code was about to get replaced by a more elegant and fluent approach. Suddenly, every problem I ran into, I tried to solve using those two alone. So much so, that I often ended up spending hours screwing the logic of my code, because suddenly, no other approach seemed elegant enough. And I was not alone in this - the rest of my team was doing it too. Not long after, some pieces of the code turned into crystal figures - beautiful at first sight, but very brittle and difficult to move around.</p>
+
+<p>Some programming languages focus on developer satisfaction when writing, but miss on the long-term maintainability of the piece of software. Others, like Go, sacrifice the expressiveness, in favor of readability and easy comprehension.  I tend to over-engineer things (I believe you too, fellow Java engineers), so for me writing Go code feels a bit like therapy. By offering less, it teaches me to focus on getting the right things done, instead of getting stuck in the design phase, trying to make things “right”.</p>
+
+<p>Don&rsquo;t trust much of what you read about Go online. It is a tough nut to crack. Be prepared for a change in how you write code, especially, if you switch from a more fluent language like Scala or Kotlin. If you are a fan of immutability as part of the language, you’re up for a change of thinking. As said before, nothing is impossible, it just takes time. Give it time and come back after a while. In my short history with Go, there have been some upsides, followed by a period of recapitulation, eventual comeback, and understanding why things are the way they are.</p>
+
+<p>Remember:</p>
+
+<blockquote>
+<p>Verbosity is a feature. Simplicity is complicated</p>
+</blockquote>
+
+<h1 id="the-tooling-and-the-standard-library-are-outstanding">The tooling and the standard library are outstanding</h1>
+
+<p>Despite being called an 80s language living in the 21st century, Go’s ecosystem has borrowed from many of the trends and best practices in software development nowadays. The setup process is nice and easy and brings in a myriad of tiny tools and utils that all fit in place right away. Formatting, package management, linting, module management (as of recent versions) are all things that one does not have to really think about. Those are really taken care of with the standard tooling.</p>
+
+<p>Besides that, the Go standard library is one of the most complete Stdlibs I‘ve worked with so far, and understandably so. Go came out relatively recently, so a lot of the standards and practices in software had a chance to make it in the library right from the beginning, rather than get added years after. As a result, the Go standard library feels like something that a developer can actually use in their daily work, rather than something that always needs to get wrapped inside a third-party library.</p>
+
+<p>That said, I don’t share the opinion of Go purists to use standard library only. There should be a balance, and although I am not a fan of <em>“npm install”</em>-ing everything, standard libraries are created to be building blocks, so don’t feel ashamed if you have to pull in some libraries to ease your work. There are some pretty <a href="https://github.com/avelino/awesome-go">good ones</a> out there.</p>
+
+<h1 id="go-apps-are-fast-and-small">Go apps are fast and small</h1>
+
+<p>We have all heard that, but the actual outcome blew my mind away!</p>
+
+<p>I have spent the bulk of the past decade working with Spring, and it has gradually become my go-to solution for all things Web. Despite working with Flask on my current projects, Spring (Boot) will always remain near and dear to my heart.</p>
+
+<p>Yet, Spring is a beast. You might not notice it, because the hardware has gotten quite cheap these days, but a lot of otherwise useful resources get locked up when running a hefty JVM app.</p>
+
+<p>To see where Go stands on this, I rebuilt a not-so-smallish Spring Boot app of mine using Go. I did not even take the purist approach but was quite liberal in my choice of libraries. The results blew all of my previous expectations by a factor of ten. The Spring app took nearly half a GB right away, keeping around 5-10% of my MacBook Pro&rsquo;s CPU busy at all time (spiking when requests came in). For deploying a single artifact, I had built a fat JAR, which is quite a standard procedure for developing Java apps these days. It took a couple of hundred of MBs as well. Due to the JVM warmup and Spring&rsquo;s loading all dependencies, it took almost a minute until the app was ready.</p>
+
+<p>For comparison, the Go app ran instantaneously (let&rsquo;s be fair, there was literally no component scanning and reflection involved). Even at the height of handling requests, the CPU barely reached 1% (mostly sitting around 0.1%). With all libraries and assets included, the final binary ended up being around 20MB. The RAM usage, however, I found to be a metric that changed everything. In an age where a typical messaging application might eat up to a couple of GBs, this app was sitting there minding its business, rocking a 20MB?!? footprint. 20MB? Even if following a very naive logic, this is close to fitting 20 of these apps together, for the cost of running one Spring Boot app!</p>
+
+<p>Before the expert readers start criticizing, yes, none of this is really a fair comparison. The fact that an app is built in Go does not guarantee a blazing fast performance if there is a lot of runtime loading and checks. Also, experts can tweak a JVM app in various ways, significantly reducing the footprint of the app. It takes time and effort, but it is certainly doable. And of course, there is always the argument about cheap hardware and premature optimization.</p>
+
+<p>I am not saying that this should necessarily resonate with you, but it certainly does with me. I strive to be a minimalist. Exactly because the hardware is so cheap these days, I believe that people and companies spend way more on it than they probably should. There are various articles out there speculating about the millions and hundreds of millions of dollars that big software companies pay for server costs every year. All of it to pay for servers that get powered by electricity generated from burning fossil fuels.</p>
+
+<h1 id="the-community">The community</h1>
+
+<p>The Go community is welcoming and very helpful. Part of the helpfulness factor comes from the fact that many gophers have already spent years programming in a different domain. What makes these people stick around and help each other, is the experience of the past, having taught them that complexity does not equal productivity.</p>
+
+<h1 id="instead-of-conclusion">Instead of conclusion</h1>
+
+<p>As people say in stock trading, “always do your own research”. I don’t want to convince you to switch and use Go full-time, because I haven’t convinced myself yet. As with everything else, programming languages are just tools, and there will always be a different tool which is better for the particular circumstances. What I hope to have managed to convince you, is to try to understand where the need for the language came from and what it tries to solve</p>
+
+<p>As always, happy coding!</p>
+
+<p>P.S. if you have an interesting project that you are considering using Go for, feel free to reach out to me. I’d love to help.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Connecting to a MongoDB Instance Using KMongo</title>
+            <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
+            <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
+            <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
 Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
-    </item>
-    
-    <item>
-      <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
-      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
-      <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
-      <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
+val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;quot;test&amp;quot;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method  The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
+            <content type="html"><![CDATA[
+
+<p>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using <a href="https://litote.org/kmongo/quick-start/">KMongo</a>.</p>
+
+<p>Basically, if you have checked out the KMongo <a href="https://litote.org/kmongo/quick-start/">quick start</a>, setting up a client and fetching some data should be extremely easy:</p>
+
+<pre><code class="language-kotlin">val client = KMongo.createClient() //get com.mongodb.MongoClient new instance
+val database = client.getDatabase(&quot;test&quot;) //normal java driver usage
+val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method
+</code></pre>
+
+<p>The quick start tutorial assumes that your DB resides on <code>mongodb://localhost:27017</code>, but in reality, your MongoDB connection string looks more like this:</p>
+
+<pre><code class="language-text">mongodb://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE&gt;
+</code></pre>
+
+<p>and in proper production environments, it is unknown until runtime. Let&rsquo;s assume that it was passed to the running application as an environment variable, e.g. <code>MONGODB</code>. Simply passing this string to <code>KMongo.createClient()</code>won&rsquo;t do it. The problem is that KMongo assumes that this string is simply the <code>&lt;HOST&gt;</code> part and creates a <code>ServerAddress</code>out of it. This results in an error when connecting.</p>
+
+<p>The solution is to use a class called <code>MongoClientURI</code>instead. <code>MongoClientURI</code> parses the string argument and splits it into its corresponding parts.</p>
+
+<p>So, the solution to my problem:</p>
+
+<pre><code class="language-kotlin">val uri = MongoClientURI(System.getenv(&quot;MONGODB&quot;))
+val collection = KMongo.createClient(uri = uri)
+        .getDatabase(uri.database)
+        .getCollection&lt;Jedi&gt;()
+</code></pre>
+
+<hr />
+
+<h1 id="related">Related</h1>
+
+<ul>
+<li><a href="https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i">https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
+            <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
+            <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
+            <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
 My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p><em>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on <a href="https://twitter.com/intent/tweet?text=%40preslavrachev%20%5BADD%20YOUR%20COMMENT%20HERE%5D&amp;url=https://preslav.me/p/72a4a26e-c120-428f-af5d-98f09f88e2db/&amp;related=preslavrachev">Twitter</a>, <a href="https://www.reddit.com/r/Kotlin/comments/aa9anw/q_how_much_of_the_kotlin_way_is_the_right_way/">Reddit</a>, or <a href="https://dev.to/preslavrachev/q-how-much-of-the-kotlin-way-is-the-right-way-3129">Dev.to</a>.</em></p>
+
+<hr />
+
+<p>My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5. Those were tough beasts. More verbose and tedious to write code in.</p>
+
+<p>At that time, we began searching for a way to release the burden of writing code, but keep relying on the vast adoption of the JVM. Groovy and Scala were the two alternatives offering more language expressiveness with less boilerplate and ceremony. And, while Groovy somehow never picked up the self-esteem to be seen as something more of a scripting language for build orchestration and runtime in-app plumbing, Scala looked like the bold and sexy future of the JVM.</p>
+
+<p>That is, until the language and its community ideologically drifted apart from Java. Although most of the existing Java libraries at the time were compatible and accessible from the Scala runtime, those were seen as archaic, tedious to work with, and simply not built <em>&ldquo;the Scala way&rdquo;</em>. This slogan was used to justify the building of a whole new ecosystem of tools, libraries, and frameworks, written from the ground up with Scala in mind. It is safe to say that nowadays for every Java library out there, one could find two or three Scala equivalents written <em>&ldquo;the Scala way&rdquo;</em>. I am not much of a Scala expert, but IMHO, this has led to a total separation between the two communities, each re-inventing the wheel its own way.</p>
+
+<p>Kotlin was supposed to help solve all of that. Having joined the game late enough, JetBrains put a bet on Kotlin&rsquo;s inter-operability with standard Java code. To achieve this, a language has to be perceived as a companion, and not as a true paradigm shift. For the three years I have worked with and followed Kotlin&rsquo;s development, there have been only a few minor occasions when the inter-operability did not work on 100%, and those were more or less edge cases. It seemed that had finally reached the golden mean, where multiple language paradigms can co-exist and their communities cooperate in order to achieve a common goal.</p>
+
+<p>Yet, this is not quite what is happening. I have seen the birth of a Kotlin-first community of developers, preaching things <em>&ldquo;the Kotlin way&rdquo;</em>. Soon enough, tools, libraries, and frameworks started appearing, having perfectly working equivalents in Java, but written in <em>&ldquo;idiomatic Kotlin&rdquo;</em>. I started wondering where I had seen this before 🤔.</p>
+
+<p>Don&rsquo;t get me wrong, I am 100% for challenging the Status Quo, but by stepping on what already works well, and not merely throwing it off-board, because it was not built <em>&ldquo;the XYZ way&rdquo;</em>.</p>
+
+<p>And what do you think?</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

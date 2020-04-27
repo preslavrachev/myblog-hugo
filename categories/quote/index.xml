@@ -1,120 +1,639 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Quote on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/quote/</link>
-    <description>Recent content in Quote on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 15 Apr 2020 16:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/quote/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[Quote]: Developer Hegemony: The Future of Labor</title>
-      <link>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</link>
-      <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</guid>
-      <description>A quote from the amazing book &amp;ldquo;Developer Hegemony&amp;rdquo; (Buy on Amazon) by Erik Dietrich:
+    <channel>
+        <title>Quote on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/quote/</link>
+        <description>Recent content in Quote on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 15 Apr 2020 16:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/quote/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[Quote]: Developer Hegemony: The Future of Labor</title>
+            <link>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</link>
+            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</guid>
+            <description>A quote from the amazing book &amp;ldquo;Developer Hegemony&amp;rdquo; (Buy on Amazon) by Erik Dietrich:
  You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other.
  How many of you, dear readers think this way?</description>
-    </item>
-    
-    <item>
-      <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
-      <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
-      <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
-      <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
-    </item>
-    
-    <item>
-      <title>[Quote]: The President Is Trapped</title>
-      <link>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</link>
-      <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-      
-      <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
-      <description>Here is a quote from:
+            <content type="html"><![CDATA[<p>A quote from the amazing book <a href="https://amzn.to/2Va55tn">&ldquo;Developer Hegemony&rdquo; (Buy on Amazon)</a> by Erik Dietrich:</p>
+
+<blockquote>
+<p>You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are <em>other.</em></p>
+</blockquote>
+
+<p>How many of you, dear readers think this way? Let me know in the comments below, or <a href="/contact">write me a message</a>.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1493740696i/35051753._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/35051753-developer-hegemony">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Developer Hegemony</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It’s been said that software is eating the planet. The modern economy—the world itself—relies on technology. Demand for the people who ca...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/35051753-developer-hegemony">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
+            <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
+            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
+            <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
+            <content type="html"><![CDATA[<p>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&rsquo;s Apple we&rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid. Who knows.</p>
+
+<p>via <a href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021/">The Case for Apple to Postpone macOS 10.16 into 2021</a></p>
+
+<blockquote>
+<p>We’re all struggling to stay safe and secure in macOS 10.15 Catalina or even 10.14 Mojave. And since new apps are being pressed into service for working at home, the last thing we need is a new version of macOS with its traditional teething pains—especially in post WWDC betas. We don’t need any rugs pulled out from under our collaboration apps. Let’s focus on stability and security until the pandemic has completely dissipated.</p>
+
+<p>[…]</p>
+
+<p>Our developer heroes have been complaining for years that they just can’t keep up with the fast-evolving structural and security changes in macOS every 12 months. A six month delay in 10.16 would provide critical time to iron out the kinks in their apps due to changes in Catalina. Not to mention relaxing stress on the developers due to concern for their family’s health.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.macobserver.com/wp-content/uploads/2019/03/Apple-iMac-2019-1200w.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Case for Apple to Postpone macOS 10.16 into 2021 - The Mac Observer</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Apple previews the next version of macOS at WWDC, then releases it late September. Now there&#39;s a case to be made to postpone macOS into 2021.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">https://www.macobserver.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote]: The President Is Trapped</title>
+            <link>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
+            <description>Here is a quote from:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with NoEmbed     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] You Can Think of Any Web Server as a Function</title>
-      <link>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</link>
-      <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</guid>
-      <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
+            <content type="html"><![CDATA[<p>Here is a quote from:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.theatlantic.com/thumbor/Q-hLXmRtjhrQKlT1zeTN6pszmKc=/18x192:3831x2178/960x500/media/img/mt/2020/03/GettyImages_1189517812_bw/original.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The President Is Trapped</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">https://www.theatlantic.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem. He will try to use this crisis to pit one party against the other—but the virus will kill both Republicans and Democrats. He will try to create an alternate story to distract people from an inconvenient truth—but in this case, the public is too afraid, the story is too big, and the carnage will be too great to be distracted from it.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] You Can Think of Any Web Server as a Function</title>
+            <link>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</link>
+            <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</guid>
+            <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
  Excerpt From Programming Phoenix by Chris McCord
 Buy on Amazon
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] Manual Work is a Bug</title>
-      <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
-      <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
-      <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
+            <content type="html"><![CDATA[<blockquote>
+<p>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”</p>
+</blockquote>
+
+<p>Excerpt From <em><a href="https://www.goodreads.com/book/show/26871792-programming-phoenix">Programming Phoenix</a></em> by Chris McCord</p>
+
+<p><a href="https://amzn.to/2vkYthk">Buy on Amazon</a></p>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444081913i/26871792._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/26871792-programming-phoenix">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Programming Phoenix</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Don’t accept the compromise between fast and beautiful: you can have it all. Phoenix creator Chris McCord, Elixir creator José Valim, and...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/26871792-programming-phoenix">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] Manual Work is a Bug</title>
+            <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
+            <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
+            <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
  The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] Ten Years of Erlang</title>
-      <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
-      <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
-      
-      <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
-      <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+            <content type="html"><![CDATA[<p>Here are a few lines from <em><a href="https://queue.acm.org/detail.cfm?id=3197520">Manual Work is a Bug</a></em> that I firmly stand by:</p>
+
+<blockquote>
+<p>The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start. Heck, they have a dedicated second monitor just for their editing app!</p>
+
+<p>[…]</p>
+
+<p>The successful engineer realizes that the earlier he starts collaborating, the sooner others can contribute. Together they can create a culture of documentation that spreads throughout the team. Thus, every project is collaborative and has a “stone soup” feeling, as all are invited to bring their skills and insights. The more people who embody this culture, the more success it has.</p>
+
+<p>[…]</p>
+
+<p>By creating a culture of continuous improvement, constantly taking baby steps along the four phases, the work becomes less stressful and easier to manage. While the other reasons listed here are quite logical, what motivates me to maintain this discipline is more emotional: I want to reduce stress and have more time for creativity and joy.</p>
+</blockquote>
+
+<p>/Thomas A. Limoncelli/</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://queue.acm.org/detail.cfm?id=3197520">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Manual Work is a Bug</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      </div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://queue.acm.org/detail.cfm?id=3197520">https://queue.acm.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] Ten Years of Erlang</title>
+            <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
+            <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
+            <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
  @media (max-width: 640px) { .</description>
-    </item>
-    
-    <item>
-      <title>[Quote]: Adults in the Room</title>
-      <link>https://preslav.me/microblog/201906251911/</link>
-      <pubDate>Tue, 25 Jun 2019 16:11:13 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906251911/</guid>
-      <description>A quote from the book &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
+            <content type="html"><![CDATA[<blockquote>
+<p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ferd.ca/static/img/erlang-ladder.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://ferd.ca/ten-years-of-erlang.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Ten Years of Erlang</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      For my ten years in the Erlang community, I decided to cover a few topics such as hype phases and how this related to Erlang, the ladder of ideas within the language and how that can impact adoption, what changed in my decade there, and what I think Erlang still has to bring to the programming community at large.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://ferd.ca/ten-years-of-erlang.html">https://ferd.ca | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote]: Adults in the Room</title>
+            <link>https://preslav.me/microblog/201906251911/</link>
+            <pubDate>Tue, 25 Jun 2019 16:11:13 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906251911/</guid>
+            <description>A quote from the book &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
  That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the .</description>
-    </item>
-    
-    <item>
-      <title>[Quote] What Do I Know?</title>
-      <link>https://preslav.me/2019/06/11/quote-what-do-i-know/</link>
-      <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
-      
-      <guid>https://preslav.me/2019/06/11/quote-what-do-i-know/</guid>
-      <description>I happen to know and have worked together with Dom. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:
+            <content type="html"><![CDATA[<p>A quote from the book <a href="https://amzn.to/2FxKWoX"><em>&ldquo;Adults in the Room&rdquo;</em></a> by Yanis Varoufakis</p>
+
+<blockquote>
+<p>That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490342337i/34673467._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/34673467-adults-in-the-room">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Adults in the Room</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the ...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/34673467-adults-in-the-room">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] What Do I Know?</title>
+            <link>https://preslav.me/2019/06/11/quote-what-do-i-know/</link>
+            <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/06/11/quote-what-do-i-know/</guid>
+            <description>I happen to know and have worked together with Dom. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:
  Don’t question whether something is advanced enough to share it. Don’t worry if that knowledge already exists on the internet. The only question you need to ask yourself is this:
 What do I know?
  @media (max-width: 640px) { .</description>
-    </item>
-    
-    <item>
-      <title>[Quote]: The Dying Art of Disagreement</title>
-      <link>https://preslav.me/2018/10/30/quote-the-dying-art-of-disagreement/</link>
-      <pubDate>Tue, 30 Oct 2018 10:56:54 +0200</pubDate>
-      
-      <guid>https://preslav.me/2018/10/30/quote-the-dying-art-of-disagreement/</guid>
-      <description>Here is a quote from:
+            <content type="html"><![CDATA[<p>I happen to know and have worked together with <a href="https://islovely.co">Dom</a>. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:</p>
+
+<blockquote>
+<p>Don’t question whether something is advanced enough to share it. Don’t worry if that knowledge already exists on the internet. The only question you need to ask yourself is this:</p>
+
+<p><strong><em>What do I know?</em></strong></p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://islovely.co/posts/what-do-i-know/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        What do I know?</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I recently started an email newsletter helping people improve their English. I manage the content and list on ConvertKit (👈 affiliate link), which is a fantastic tool. Their motto is highly motivating: “teach everything you know”.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://islovely.co/posts/what-do-i-know/">https://islovely.co | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote]: The Dying Art of Disagreement</title>
+            <link>https://preslav.me/2018/10/30/quote-the-dying-art-of-disagreement/</link>
+            <pubDate>Tue, 30 Oct 2018 10:56:54 +0200</pubDate>
+            
+            <guid>https://preslav.me/2018/10/30/quote-the-dying-art-of-disagreement/</guid>
+            <description>Here is a quote from:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Opinion | The Dying Art of Disagreement  Today’s clashes may hoarsen our voices, but they rarely sharpen our thinking, much less change our minds. https://www.nytimes.com |  Created with NoEmbed     Intelligent disagreement is the lifeblood of any thriving society. Yet we in the United States are raising a younger generation who have never been taught either the how or the why of disagreement, and who seem to think that free speech is a one-way right: Namely, their right to disinvite, shout down or abuse anyone they dislike, lest they run the risk of listening to that person — or even allowing someone else to listen.</description>
-    </item>
-    
-    <item>
-      <title>[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</title>
-      <link>https://preslav.me/2018/01/06/quote-plastic-synapses/</link>
-      <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/01/06/quote-plastic-synapses/</guid>
-      <description>via Plastic synapses offer hardware alternative to neural networks | ArsTechnica
+            <content type="html"><![CDATA[<p>Here is a quote from:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://static01.nyt.com/images/2017/09/24/opinion/24stephensWEB/24stephensWEB-facebookJumbo.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Opinion | The Dying Art of Disagreement</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Today’s clashes may hoarsen our voices, but they rarely sharpen our thinking, much less change our minds.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html">https://www.nytimes.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>Intelligent disagreement is the lifeblood of any thriving society. Yet we in the United States are raising a younger generation who have never been taught either the how or the why of disagreement, and who seem to think that free speech is a one-way right: Namely, their right to disinvite, shout down or abuse anyone they dislike, lest they run the risk of listening to that person — or even allowing someone else to listen. The results are evident in the parlous state of our universities, and the frayed edges of our democracies.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</title>
+            <link>https://preslav.me/2018/01/06/quote-plastic-synapses/</link>
+            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/01/06/quote-plastic-synapses/</guid>
+            <description>via Plastic synapses offer hardware alternative to neural networks | ArsTechnica
  A synapse—the connection between two neurons—consumes at most 100 femtoJoules per event. Once you realize that the entire human body is about the equivalent of an 120W light bulb, you can see that the efficiency of the brain is just astounding. [&amp;hellip;] This result has implications. If this research does turn out to be the way forward, neural networks will not operate faster than our own brains.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>via <a href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">Plastic synapses offer hardware alternative to neural networks | ArsTechnica</a></p>
+
+<blockquote>
+<p>A synapse—the connection between two neurons—consumes at most 100 femtoJoules per event. Once you realize that the entire human body is about the equivalent of an 120W light bulb, you can see that the efficiency of the brain is just astounding. [&hellip;]
+This result has implications. If this research does turn out to be the way forward, neural networks will not operate faster than our own brains. And it will take a lot of development before artificial neural networks are as interconnected as the neurons of our own brains. If neural networks are going to show an advantage, it has to come from other directions.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.arstechnica.net/wp-content/uploads/2017/03/synapse-760x380.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Plastic synapses offer hardware alternative to neural networks</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Plastic man will have plastic brain, probably does feel pain.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">https://arstechnica.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote]: 3 Ways to Better Understand Your Emotions</title>
+            <link>https://preslav.me/2017/02/28/quote-three-ways-to-better-understand-your-emotions/</link>
+            <pubDate>Tue, 28 Feb 2017 11:01:46 +0200</pubDate>
+            
+            <guid>https://preslav.me/2017/02/28/quote-three-ways-to-better-understand-your-emotions/</guid>
+            <description>Here is a quote from:
+@media (max-width: 640px) { .embed-image { min-width: 100%; } }   3 Ways to Better Understand Your Emotions  Naming them is an important first step. https://hbr.org |  Created with NoEmbed     Anger and stress are two of the emotions we see most in the workplace — or at least those are the terms we use for them most frequently. Yet they are often masks for deeper feelings that we could and should describe in more nuanced and precise ways, so that we develop greater levels of emotional agility, a critical capability that enables us to interact more successfully with ourselves and the world</description>
+            <content type="html"><![CDATA[<p>Here is a quote from:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://hbr.org/resources/images/hbr_opengraph_940x490.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://hbr.org/2016/11/3-ways-to-better-understand-your-emotions">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        3 Ways to Better Understand Your Emotions</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Naming them is an important first step.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://hbr.org/2016/11/3-ways-to-better-understand-your-emotions">https://hbr.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>Anger and stress are two of the emotions we see most in the workplace — or at least those are the terms we use for them most frequently. Yet they are often masks for deeper feelings that we could and should describe in more nuanced and precise ways, so that we develop greater levels of emotional agility, a critical capability that enables us to interact more successfully with ourselves and the world</p>
+</blockquote>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

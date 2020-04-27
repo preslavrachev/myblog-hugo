@@ -1,115 +1,1496 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Micropost on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/micropost/</link>
-    <description>Recent content in Micropost on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/micropost/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/2019102111035/</link>
-      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/2019102111035/</guid>
-      <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
+    <channel>
+        <title>Micropost on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/micropost/</link>
+        <description>Recent content in Micropost on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 21 Oct 2019 08:35:04 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/micropost/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/2019102111035/</link>
+            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/2019102111035/</guid>
+            <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/280920191021/</link>
-      <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/280920191021/</guid>
-      <description>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/260920191021/</link>
-      <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/260920191021/</guid>
-      <description>Chiefly, Go sacrifices expressiveness for uniformity.
+            <content type="html"><![CDATA[<blockquote>
+<p>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(http://kyleprifogle.com/images/kyle-small.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://kyleprifogle.com/dear-startup/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Dear Startup: You have no idea how much that costs.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The problem</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://kyleprifogle.com/dear-startup/">http://kyleprifogle.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/280920191021/</link>
+            <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/280920191021/</guid>
+            <description>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support. The company is taking its workers and users for granted. If they get away with it, other companies will feel even more empowered to crush their own organizing efforts. It is critically important that Kickstarter be loudly opposed.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://images.currentaffairs.org/2019/09/Screen-Shot-2019-09-27-at-11.58.52-PM-1024x646.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.currentaffairs.org/2019/09/kickstarter-to-workers-and-project-creators-drop-dead">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Kickstarter To Workers and Project Creators: Drop Dead | Current Affairs</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      &lt;p&gt;The company doubles down on its anti-union stance and says it plans to fight its workers to the bitter end… &lt;/p&gt;</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.currentaffairs.org/2019/09/kickstarter-to-workers-and-project-creators-drop-dead">https://www.currentaffairs.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/260920191021/</link>
+            <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/260920191021/</guid>
+            <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/260920191020/</link>
-      <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/260920191020/</guid>
-      <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
+            <content type="html"><![CDATA[<blockquote>
+<p>Chiefly, Go sacrifices expressiveness for uniformity.</p>
+
+<p>The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.</p>
+
+<p>Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try <a href="http://www.idris-lang.org/">Idris</a>). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc). Sometimes it isn’t the innovative new features that distinguish a language, but its choice of restrictions.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ocwww.wpengine.com/wp-content/uploads/2016/10/Visualization_of_two_dimensions_of_a_NK_fitness_landscape-400x292.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://opencredo.com/blogs/java-go-back/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        From Java to Go, and Back Again - OpenCredo</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Introduction: fitness landscapes, Cassandra, and making things worse   In evolutionary biology, a fitness landscape is a way of visualising the relationship between genotypes and reproductive success. Each possible variation of a genotype is projected onto a position on a map, and the height of the terrain at that position represents the reproductive success associated …</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://opencredo.com/blogs/java-go-back/">https://opencredo.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/260920191020/</link>
+            <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/260920191020/</guid>
+            <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
 Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/220920191020/</link>
-      <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/220920191020/</guid>
-      <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
+            <content type="html"><![CDATA[<blockquote>
+<p>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent <a href="https://medium.com/@CanadianPodcastListener/if-i-watch-listen-to-it-on-youtube-is-it-still-a-podcast-22e64a0129ab">survey of Canadian adults</a> found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).</p>
+
+<p>Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s <a href="https://www.youtube.com/channel/UCLtREJY21xRfCuEKvdki1Kw">H3 Podcast</a> or <a href="https://www.youtube.com/channel/UCzQUP1qoWDoEbmsQxvdjxgQ">Joe Rogan’s Joe Rogan Experience</a>, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch. While the podcasts are also distributed via Spotify and Apple Podcasts, YouTube acts as a first stop.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/IR4Vq5BMVQMhbwnHfxT6Jv-TpyM=/0x215:3000x1786/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19180861/acastro_190821_3603_youtubers_podcasts_0001.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theverge.com/2019/9/9/20801873/youtube-podcast-creators-h3-joe-rogan-ethan-klein-hila-david-dobrik-views">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        YouTube creators are turning the site into a podcast network</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      And they’re launching secondary channels to do so.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theverge.com/2019/9/9/20801873/youtube-podcast-creators-h3-joe-rogan-ethan-klein-hila-david-dobrik-views">https://www.theverge.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/220920191020/</link>
+            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/220920191020/</guid>
+            <description>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
 Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201909021700/</link>
-      <pubDate>Mon, 02 Sep 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201909021700/</guid>
-      <description>A quote from &amp;ldquo;The Mom Test&amp;rdquo; by Rob Fitzpatrick
+            <content type="html"><![CDATA[<blockquote>
+<p>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.</p>
+
+<p>Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair. The unicorns aren’t doomed, even if their old valuations are. But they have to change their stories, and their businesses. Magic made them. Only math will save them.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.theatlantic.com/assets/media/img/mt/2019/09/RTS2P5XP/facebook.jpg?1568926150); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theatlantic.com/ideas/archive/2019/09/unicorn-delusion/598465/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        WeWork and the Great Unicorn Delusion</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Why the consumer-tech revolution can’t seem to survive public scrutiny</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theatlantic.com/ideas/archive/2019/09/unicorn-delusion/598465/">https://www.theatlantic.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201909021700/</link>
+            <pubDate>Mon, 02 Sep 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201909021700/</guid>
+            <description>A quote from &amp;ldquo;The Mom Test&amp;rdquo; by Rob Fitzpatrick
  It’s not anyone else’s responsibility to show us the truth. It’s our responsibility to find it.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Mom Test  The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&amp;#39;t ask your mom wh... https://www.goodreads.com |  Created with NoEmbed    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908211824/</link>
-      <pubDate>Wed, 21 Aug 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908211824/</guid>
-      <description>A quote from &amp;ldquo;Without their Permission&amp;rdquo; by Alexis Ohanian
+            <content type="html"><![CDATA[<p>A quote from <a href="https://amzn.to/2ZTznQp">&ldquo;The Mom Test&rdquo;</a> by Rob Fitzpatrick</p>
+
+<blockquote>
+<p>It’s not anyone else’s responsibility to show us the truth. It’s our responsibility to find it.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566473431i/47883410._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/47883410">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Mom Test</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. 
+  
+They say you shouldn&#39;t ask your mom wh...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/47883410">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908211824/</link>
+            <pubDate>Wed, 21 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908211824/</guid>
+            <description>A quote from &amp;ldquo;Without their Permission&amp;rdquo; by Alexis Ohanian
  We like to think that real talent always has a way of getting noticed. Harrison Ford was a self-taught professional carpenter when he as hired to build cabinets in the home of George Lucas, who cast him in American Graffiti and set him on a course that led to Indiana Jones. If Ford hadn’t picked up the right hammer or taken another job, Solo would’ve ended up saying “I love you, too”, instead of “I know.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908181824/</link>
-      <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908181824/</guid>
-      <description>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908171824/</link>
-      <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908171824/</guid>
-      <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
-module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201830111824/</link>
-      <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201830111824/</guid>
-      <description>Japanese websites don&amp;rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
+            <content type="html"><![CDATA[<p>A quote from <a href="https://amzn.to/2ZNNOoV"><em>&ldquo;Without their Permission&rdquo;</em></a> by Alexis Ohanian</p>
+
+<blockquote>
+<p>We like to think that real talent always has a way of getting noticed. Harrison Ford was a self-taught professional carpenter when he as hired to build cabinets in the home of George Lucas, who cast him in <em>American Graffiti</em> and set him on a course that led to Indiana Jones. If Ford hadn’t picked up the right hammer or taken another job, Solo would’ve ended up saying “I love you, too”, instead of “I know.”</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840494i/17333428._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/17333428-without-their-permission">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Without Their Permission</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      A WALL STREET JOURNAL BESTSELLER As Alexis Ohanian learned when he helped to co-found the immensely popular reddit.com, the internet is t...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/17333428-without-their-permission">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908181824/</link>
+            <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908181824/</guid>
+            <description>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</description>
+            <content type="html"><![CDATA[
+
+<p>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with <a href="https://en.wikipedia.org/wiki/Tobias_L%C3%BCtke">Tobias Lütke</a>, co-founder and CEO of <a href="https://www.shopify.com/">Shopify</a>. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</p>
+
+<p>Out of his passion for snowboarding, Tobias has managed to build a market leader in online sales software. Yet, I was amazed at how humble his whole attitude is. This is one trait I can directly trace to his German roots.</p>
+
+<p>Fun fact: Tobias was one of the early adopters of Ruby on Rails, and as a result, Shopify is one of the largest sites using it nowadays, and a major flagship showcase, together with <a href="https://basecamp.com/">Basecamp</a>.</p>
+
+<p>Listen to the whole show:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        NPR Choice page</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      By choosing “I agree” below, you agree that NPR’s sites use cookies, similar tracking and storage technologies, and information about the device you use to access our sites to enhance your viewing, listening and user experience, personalize content, personalize messages from NPR’s sponsors, provide social media features, and analyze NPR’s traffic. This information is shared with social media services, sponsorship, analytics and other third-party service providers.
+            See details.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke">https://choice.npr.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h5 id="i-managed-to-find-amazing-podcast-episode-through-mixtape-https-mixtape-preslav-me-the-search-and-discovery-engine-for-podcasts-i-built-check-it-out-and-help-me-keep-working-on-it-by-buying-me-a-coffee-https-www-buymeacoffee-com-0b7zhlq2i">I managed to find amazing podcast episode through <a href="https://mixtape.preslav.me/">Mixtape</a>, the search and discovery engine for podcasts I built. Check it out and help me keep working on it, by <a href="https://www.buymeacoffee.com/0B7zhlQ2I">buying me a coffee</a>.</h5>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908171824/</link>
+            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908171824/</guid>
+            <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
+module.exports = { devServer: { proxy: { &amp;quot;/&amp;quot;: { target: &amp;quot;https://remote-server.com&amp;quot;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
+            <content type="html"><![CDATA[<p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a <code>vue.config.js</code> file:</p>
+
+<pre><code class="language-javascript">module.exports = {
+  devServer: {
+    proxy: {
+      &quot;/&quot;: {
+        target: &quot;https://remote-server.com&quot;,
+        changeOrigin: true
+      }
+    }
+  }
+};
+</code></pre>
+
+<p>When calling <code>yarn serve</code>, I get the following message flashing in the developer console:</p>
+
+<pre><code>The connection to ws://remote-server.com was interrupted while the page was loading.
+</code></pre>
+
+<p>The app seems running and proxying to the remote API works just fine, but this annoying message obliterates everything else in the developer console. Thankfully, there is an easy way to get rid of it. Simply, add a <code>ws: false</code> to the configuration:</p>
+
+<pre><code class="language-javascript">module.exports = {
+  devServer: {
+    proxy: {
+      &quot;/&quot;: {
+        target: &quot;https://remote-server.com&quot;,
+        changeOrigin: true,
+        ws: false
+      }
+    }
+  }
+};
+</code></pre>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars1.githubusercontent.com/u/6128107?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Errors in browser console when proxying &#39;/&#39; · Issue #2662 · vuejs/vue-cli</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Version 3.0.4 Reproduction link https://github.com/CK159/vue-proxy-issue Node and OS info node 8.12.0 npm 6.4.1 Steps to reproduce Create project vue create my-app Add vue.config.js with this conte...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201830111824/</link>
+            <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201830111824/</guid>
+            <description>Japanese websites don&amp;rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Why doesn’t Japan excel in software as they did in hardware?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<blockquote>
+<p>Japanese websites don&rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Why doesn’t Japan excel in software as they did in hardware?</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Ah… Finally. My time has come.Where to begin?In Japan software development is not held to the same standard as other engineering positions.Japan has always had a custom where every year, new university graduates in their thousands march through giant career fairs searching for a job. This is something I call the March of the Penguins - every one of them is adorned with a new black suit with a pristine white shirt.There the companies will take their resumes, interview them and perhaps extend an invitation to the next interview. None of these companies care about what you studied or what your passions are. They might perk up if they hear that you are from one of the top flight schools (Todai, Keio, Waseda, Tokyo Tech et al).The whole idea here is that everything you need to know about doing your job will be taught to you.Now I know people working at somewhat (emphasis on somewhat) internationalized companies like Mercari or Rakuten (the Japanese eBay and Amazon respectively) will tell you that this is not how tech companies hire.The sad truth is that they do. While there are enough foreigners who will stand up to being told to hire and train clueless graduates and mold them into proper software developers in more international companies - the huge majority of software development firms don&#39;t operate like that.Naturally, many Japanese software development firms have engineering teams of pitiful quality.Software development is looked at as any other skill that can be picked up in a few months to a year: accounting, secretarial work, project management, business analysis etc.They don&#39;t speak EnglishNaturally when you cannot read or speak English, the tools you use to develop software as well as the methods you use to develop them will be those that have managed to percolate downwards from English sources due to the magnanimity of people willing to volunteer their time to translate documentation and articles.At any given time, the cutting edge of software development in Japan is 6 months to 7 years behind the rest of the world.Software development is a reversed pyramid schemeMost technology consulting firms who are awarded contracts do not actually have developers - or have only a handful at hand. They will sub-contract their work to firms down the totem pole who will in turn sub-sub-contract their work to a lesser firm.The actual developer working on your product could be a sub-contract 5 contract levels removed from you.Good luck managing changes in business requirements.All this works because the people who award the contracts are as technologically illiterate as the ones proposing them. If there ever was an apropos time to use the word circlejerk this would be it.Consumers have extremely conservative tastesAnyone asking this question by now will have seen the absolutely antediluvian website designs that are still being employed by Japanese firms. (Behold the largest online travel agency site in Japan: www.jalan.net).We have actually done user testing and A/B testing with non-trivial sample sizes.Japanese websites don&#39;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.So you can either create modern designs that will bring in international attention, but alienate domestic users, or serve your existing customers as you have been doing for decades.That&#39;s an easy choice for many companies.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware">https://www.quora.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908031736/</link>
+            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908031736/</guid>
+            <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
+I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
+            <content type="html"><![CDATA[<p>My first attempt to try out compiling a <a href="https://guides.micronaut.io/micronaut-creating-first-graal-app/guide/index.html">Micronaut</a> app to a native <a href="https://www.graalvm.org/">GraalVM</a> image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-03 17-45-05.png" alt="" /></p>
+
+<p>I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way. Yet, as of this moment this option just seems too impractical, compared to Go&rsquo;s compilation time of mere seconds.</p>
+
+<p>That said, the startup time and memory footprint of the same Micronaut app running on the JVM are quite good, when compared to Spring Boot.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907241129/</link>
+            <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907241129/</guid>
+            <description>Apple is becoming a macOS gatekeeper too.
+ For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
+            <content type="html"><![CDATA[<p>Apple is becoming a macOS gatekeeper too.</p>
+
+<blockquote>
+<p>For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</p>
+</blockquote>
+
+<p>via <a href="https://bitsplitting.org/2019/07/22/a-real-gatekeeper/">A Real Gatekeeper</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907131824/</link>
+            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907131824/</guid>
+            <description>My new favorite coffee mug - a special &amp;ldquo;You Are Here&amp;rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</description>
+            <content type="html"><![CDATA[<p>My new favorite coffee mug - a special &ldquo;You Are Here&rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</p>
+
+<p><img src="/images/2019/07/1SkDWiS.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907101824/</link>
+            <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907101824/</guid>
+            <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
+This is quite neat and might save me one or two print statements 😉
+Thanks to @FlorimondManca for this discovery!</description>
+            <content type="html"><![CDATA[<p>#TIL about the <code>breakpoint()</code> function in #Python 3.7 It starts a <code>pdb</code> session when the statement gets reached.</p>
+
+<p>This is quite neat and might save me one or two <code>print</code> statements 😉</p>
+
+<p><img src="/images/2019/07/PucNak1.jpg" alt="" /></p>
+
+<p>Thanks to <a href="https://twitter.com/FlorimondManca/status/1149023023153983488">@FlorimondManca</a> for this discovery!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907081824/</link>
+            <pubDate>Mon, 08 Jul 2019 16:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907081824/</guid>
+            <description>Scooter Craze The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.
+In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians.</description>
+            <content type="html"><![CDATA[
+
+<h1 id="scooter-craze">Scooter Craze</h1>
+
+<p>The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.</p>
+
+<p>In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians. I just hope they don&rsquo;t follow the fate of <a href="https://www.instagram.com/obikesofmunich/">OBike&rsquo;s rentable bikes</a>, some of which ended up in the local river. An electric scooter&rsquo;s battery is a mini lab of toxic stuff, so if this is in your mind, please, think twice.</p>
+
+<p><img src="/images/2019/07/yUkF0kO.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907041930/</link>
+            <pubDate>Thu, 04 Jul 2019 18:30:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907041930/</guid>
+            <description>Chillin&amp;rsquo;</description>
+            <content type="html"><![CDATA[<p>Chillin&rsquo;</p>
+
+<p><img src="/images/2019/07/D7F6E34A-8C10-4A48-AC8D-1DD43D8C44DA-1.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907040754/</link>
+            <pubDate>Thu, 04 Jul 2019 05:54:08 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907040754/</guid>
+            <description>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:
+Those are called Adidas Terrex Two Boa. They feature a very stiff, but sturdy underfoot part (because they are made for trail running), and an innovative lacing system called Boa. It was a bit of a love at first sight, but I amnot really sure, if I am going to get used to those shoes.</description>
+            <content type="html"><![CDATA[<p>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:</p>
+
+<p><img src="/images/2019/07/vDYwFM3.jpg" alt="" /></p>
+
+<p>Those are called <a href="https://amzn.to/2XwXRm2">Adidas Terrex Two Boa</a>. They feature a very stiff, but sturdy underfoot part (because they are made for trail running), and an innovative lacing system called <a href="https://www.boafit.com/en-us">Boa</a>. It was a bit of a love at first sight, but I amnot really sure, if I am going to get used to those shoes. In particular, the lacing system seems fancy, but once it gets damaged, do I have to throw the shoes away? Who knows.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907022242/</link>
+            <pubDate>Tue, 02 Jul 2019 19:42:07 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907022242/</guid>
+            <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p><em>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. -</em> <a href="https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9"><em>Mark Miller</em></a></p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        An Open Letter To The Go Team About Try</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent&amp;rdquo;. - Mark Miller The new try proposal is an addition to the language that introduces a second mechanic to handle errors. It is being introduced in response to data gathered from the 2018 Go Survey and a review of proposals that were submitted during the Go 2 proposal process.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">https://www.ardanlabs.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>This is a serious change and it feels like it’s being pushed through without a concerted effort to understand exactly what those 5% of Go developers meant when they said they wanted improved error handling. I plead to the Go team to re-evaluate the data sets being used before the <code>try</code> error handling experiment finds itself in any version of the language.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907011324/</link>
+            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907011324/</guid>
+            <description>On the road again&amp;hellip;</description>
+            <content type="html"><![CDATA[<p>On the road again&hellip;</p>
+
+<p><img src="/images/2019/07/TulqGYv.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906281812/</link>
+            <pubDate>Fri, 28 Jun 2019 15:12:38 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906281812/</guid>
+            <description>A sneak peek at the wedding location.</description>
+            <content type="html"><![CDATA[<p>A sneak peek at the <a href="https://www.booking.com/hotel/bg/vilarte.html?aid=356980">wedding location</a>.</p>
+
+<p><img src="/images/2019/07/074E179E-4AC2-4E86-810D-E1306CF889D9.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote]: Adults in the Room</title>
+            <link>https://preslav.me/microblog/201906251911/</link>
+            <pubDate>Tue, 25 Jun 2019 16:11:13 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906251911/</guid>
+            <description>A quote from the book &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
+ That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the .</description>
+            <content type="html"><![CDATA[<p>A quote from the book <a href="https://amzn.to/2FxKWoX"><em>&ldquo;Adults in the Room&rdquo;</em></a> by Yanis Varoufakis</p>
+
+<blockquote>
+<p>That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490342337i/34673467._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/34673467-adults-in-the-room">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Adults in the Room</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the ...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/34673467-adults-in-the-room">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906231845/</link>
+            <pubDate>Sun, 23 Jun 2019 15:45:35 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906231845/</guid>
+            <description>A quote from &amp;ldquo;The Three-Body Problem&amp;rdquo;:
+ &amp;ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&amp;rdquo;
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Three-Body Problem (Remembrance of Earth’s Past #1)  The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
+            <content type="html"><![CDATA[<p>A quote from <a href="https://amzn.to/2X2gFJu"><em>&ldquo;The Three-Body Problem&rdquo;</em></a>:</p>
+
+<blockquote>
+<p>&ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&rdquo;</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415428227i/20518872._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/20518872-the-three-body-problem">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Three-Body Problem (Remembrance of Earth’s Past #1)</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&#39;s...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/20518872-the-three-body-problem">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906211000/</link>
+            <pubDate>Fri, 21 Jun 2019 08:00:18 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906211000/</guid>
+            <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
+ @media (max-width: 640px) { .</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ongoing by Tim Bray · Go Creeping In</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I’ve seen the inside of the Google and Amazon tech stacks. There are common threads that run through them and also, I bet, through
+most BigTechCos.  Here and there down the stack is a lot of C&#43;&#43; and vestigial remnants from earlier days, Perl or PHP or whatever.
+Out in front of humans, of course, JS.  But in between, there are oceans and oceans of Java; to a remarkable degree, it runs
+the Internet. Except for, here and there, you find a small but steadily increasing proportion of Go.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">https://www.tbray.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906111300/</link>
+            <pubDate>Tue, 11 Jun 2019 11:00:50 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906111300/</guid>
+            <description>A quote from &amp;ldquo;Without Their Permission&amp;rdquo; by Alexis Ohanian:
+ “Building an audience doesn’t require a large advertising budget, certainly not at the beginning. Making something people want—something that people love, that solves a real problem they have in an elegant way—is the most effective thing one can do to generate buzz. There’s no secret to “going viral,” despite what plenty of self-appointed “social media gurus” may tell you (hint: if they call themselves that, run in the opposite direction).</description>
+            <content type="html"><![CDATA[<p>A quote from <a href="https://amzn.to/2MF9sdU">&ldquo;Without Their Permission&rdquo;</a> by Alexis Ohanian:</p>
+
+<blockquote>
+<p>“Building an audience doesn’t require a large advertising budget, certainly not at the beginning. Making something people want—something that people love, that solves a real problem they have in an elegant way—is the most effective thing one can do to generate buzz. There’s no secret to “going viral,” despite what plenty of self-appointed “social media gurus” may tell you (hint: if they call themselves that, run in the opposite direction). ”</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840494i/17333428._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/17333428-without-their-permission">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Without Their Permission</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      A WALL STREET JOURNAL BESTSELLER As Alexis Ohanian learned when he helped to co-found the immensely popular reddit.com, the internet is t...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/17333428-without-their-permission">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906101457/</link>
+            <pubDate>Mon, 10 Jun 2019 12:56:03 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906101457/</guid>
+            <description>The moment you realize that even a PhD in Mathematical Combinatorics won’t help you, is when you start organizing the seating order for your wedding 🤦‍♂️👰</description>
+            <content type="html"><![CDATA[<p>The moment you realize that even a PhD in Mathematical Combinatorics won’t help you, is when you start organizing the seating order for your wedding 🤦‍♂️👰</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906081458/</link>
+            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906081458/</guid>
+            <description> Q: Aesthetically, what do you think about the design of the new grater?
+A: It has been optimized for softer cheeses 😂
+   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
+            <content type="html"><![CDATA[<blockquote>
+<p>Q: Aesthetically, what do you think about the design of the new grater?</p>
+
+<p>A: It has been optimized for softer cheeses 😂</p>
+</blockquote>
+
+<article class="center">
+    <iframe width="100%" height="100%" frameborder="0" src="https://overcast.fm/podcasts/episode_card/1261197307846866?t=699"></iframe>
+</article>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://overcast.fm/art?s=3fba7cd33ee1b897707efaf08b335c6425ec5907e491ca2eb07ecd32a51590dd&amp;w=840&amp;u=http%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F513abd71e4b0fe58c655c105%2Ft%2F52c45a37e4b0a77a5034aa84%2F1388599866232%2F1500w%2FArtwork.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://overcast.fm/&#43;R7DWGGoNI/11:39">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        329: Mac Pro Day — Accidental Tech Podcast — Overcast</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Our live show from WWDC 2019!</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906080735/</link>
+            <pubDate>Sat, 08 Jun 2019 05:24:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906080735/</guid>
+            <description>Who wants to buy an almost new Google Pixel 3 XL at a great price?
+Two weeks ago, I bought this phone from eBay with the hope that it will make me go back to Android, but it turns out that I am more connected to iOS than I thought. I will lay out my exact reasons in a separate post, but they have to do more with Google than this phone&amp;rsquo;s hardware in particular.</description>
+            <content type="html"><![CDATA[<p>Who wants to <a href="https://www.ebay.de/itm/Google-Pixel-3-XL-64GB-Just-Black-Ohne-Simlock-Zwei-Wochen-benutzt/183836663820">buy</a> an almost new Google Pixel 3 XL at a great price?</p>
+
+<p>Two weeks ago, I bought this phone from eBay with the hope that it will make me go back to Android, but it turns out that I am more connected to  iOS than I thought. I will lay out my exact reasons in a separate post, but they have to do more with Google than this phone&rsquo;s hardware in particular.</p>
+
+<p>Speaking of hardware, this Pixel 3 XL is just perfect. Its battery life is outstanding, when compared to my poor iPhone 7. For the two weeks of use, I have not noticed a single moment of lagging, jitter, or other types of annoyance caused by performance. The camera, well, the camera is the absolute best on the market (the photo below was clearly not shot with it), what else can I say?</p>
+
+<p>If interested, please, go to the <a href="https://www.ebay.de/itm/Google-Pixel-3-XL-64GB-Just-Black-Ohne-Simlock-Zwei-Wochen-benutzt/183836663820">following eBay link</a> to take part in the auction. Hurry up!</p>
+
+<p><img src="/images/2019/06/IMG_7103.jpeg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905240633/</link>
+            <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905240633/</guid>
+            <description>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&amp;rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&amp;rsquo;s a beast with an incredible performance:
+
+Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max.</description>
+            <content type="html"><![CDATA[<p>Apple <a href="https://www.apple.com/newsroom/2019/05/apple-introduces-first-8-core-macbook-pro-the-fastest-mac-notebook-ever/">introduced on Tuesday</a> a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&rsquo;s a beast with an incredible performance:</p>
+
+<p><a href="https://browser.geekbench.com/v4/cpu/13240025"><img src="https://cdn.macrumors.com/article-new/2019/05/macbookprobenchmark2019.jpg" alt="" /></a></p>
+
+<p>Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max. This is what came out:</p>
+
+<p><img src="/images/2019/05/2019-05-24 06.40.33.jpg" alt="" /></p>
+
+<p>7779,00 EUR?!? For a laptop? No f*** way! The price is ridiculous. Granted, much of the cost comes from the added SSD space. If you are happy to live with only 512 GB (I have 256 and feel perfectly fine), you should be able to get this beast in Germany for about &hellip; 4500 EUR.</p>
+
+<p>Is it worthy it? I am leaving it up t you to decide.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905210746/</link>
+            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905210746/</guid>
+            <description>Some interesting observations on the Eurovision Song Contest winners since the year 2000. Not surprisingly, the majority of the winners are in a minor key. Like, this years’ winner from The Netherlands (A minor).
+Songs written in a major key seem to be showing a directly oppising trend, often hotting the hard rock bottom.
+Since 2000, the majority of Eurovision winners have been written in a minor key. Not only have minor keys won 15 of the last 20 contests (major keys have only won five), major keys have placed rock bottom nearly twice as often as minor ones.</description>
+            <content type="html"><![CDATA[<p>Some interesting observations on the Eurovision Song Contest winners since the year 2000. Not surprisingly, the majority of the winners are in a minor key. Like, this years’ winner from The Netherlands (A minor).</p>
+
+<p>Songs written in a major key seem to be showing a directly oppising trend, often hotting the hard rock bottom.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Since 2000, the majority of Eurovision winners have been written in a minor key. Not only have minor keys won 15 of the last 20 contests (major keys have only won five), major keys have placed rock bottom nearly twice as often as minor ones. <a href="https://t.co/6yzGELAyr1">pic.twitter.com/6yzGELAyr1</a></p>&mdash; Kit Lovelace (@kitlovelace) <a href="https://twitter.com/kitlovelace/status/1130077488791654400?ref_src=twsrc%5Etfw">May 19, 2019</a></blockquote>
+
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905121007/</link>
+            <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905121007/</guid>
+            <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
+Customers: Go Home, Google, you’re drunk.
+Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
+Customers: it’s the best Take my money!
+Google: Tricked ya!</description>
+            <content type="html"><![CDATA[<p><strong>Google:</strong> Here is somewhat of a premium phone (Pixel 3) for $800</p>
+
+<p><strong>Customers:</strong> Go Home, Google, you’re drunk.</p>
+
+<p><strong>Google:</strong> Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400</p>
+
+<p><strong>Customers:</strong> it’s the best <img src="https://abs.twimg.com/emoji/v2/72x72/1f60d.png" alt="😍" title="Smiling face with heart-shaped eyes" /> Take my money!</p>
+
+<p><strong>Google:</strong> Tricked ya!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905120928/</link>
+            <pubDate>Sun, 12 May 2019 07:28:07 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905120928/</guid>
+            <description>Back to Wunderlist After what seems like an eternity (close to 3 years), I decided to install and try Wunderlist again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be Microsoft To-Do - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</description>
+            <content type="html"><![CDATA[
+
+<h1 id="back-to-wunderlist">Back to Wunderlist</h1>
+
+<p>After what seems like an eternity (close to 3 years), I decided to install and try <a href="https://www.wunderlist.com/">Wunderlist</a> again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be <a href="https://todo.microsoft.com/en-us">Microsoft To-Do</a> - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</p>
+
+<p>Three years later, Wunderlist still seems alive and kicking. Despite claims that it will eventually be replaced by Microsoft To-Do there are no signs of this happening (yet). In fact, there might be a <a href="https://www.theverge.com/2018/3/21/17146308/microsoft-wunderlist-to-do-app-acquisition-complicated">deeper angle</a> to the story, which is why I am hopeful in Wunderlist&rsquo;s resurrection and second life.</p>
+
+<p>I&rsquo;ve just installed the app again and after signing up, I was met by the same pleasant user experience (and all the unfinished ToDos) I left three years ago. Let&rsquo;s see how the story unfolds.</p>
+
+<p><img src="https://dr0wv9n0kx6h5.cloudfront.net/4f8fe5befb0b95eda676c05faea99bfed39c0b42/content/twodevices@2x.png" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/2019051111035/</link>
+            <pubDate>Sat, 11 May 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/2019051111035/</guid>
+            <description>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.
+One thing I learned during the 3 years of active running:
+ Distance running is 20% physical and 80% mental fitness.</description>
+            <content type="html"><![CDATA[<p>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.</p>
+
+<p>One thing I learned during the 3 years of active running:</p>
+
+<blockquote>
+<p>Distance running is 20% physical and 80% mental fitness.</p>
+</blockquote>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/8YWyac1ZdsU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905110736/</link>
+            <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905110736/</guid>
+            <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
+The series starts with:
+Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
+            <content type="html"><![CDATA[<p>Today, I caught this nice series of tweets by <a href="https://twitter.com/benedictevans">@benedictevans</a> on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.</p>
+
+<p>The series starts with:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1127280727475679232?ref_src=twsrc%5Etfw">May 11, 2019</a></blockquote>
+
+
+<p>then it continues:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Microsoft didn’t take IBM’s mainframe business, and Apple and Google didn’t take Microsoft’s businesses in PC operating systems or spreadsheets. And those businesses have a long half life, but they stopped being the means for dominance. No-one is scared of IBM or Microsoft today.</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1127283553639604224?ref_src=twsrc%5Etfw">May 11, 2019</a></blockquote>
+
+
+<p>I compiled the entire series into a <a href="https://threader.app/thread/1127280727475679232">single post</a> - for your (and mine) reading pleasure.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905100746/</link>
+            <pubDate>Fri, 10 May 2019 05:46:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905100746/</guid>
+            <description>Google will soon introduce searching for podcast episodes as part of its search results. This much was said during the keynote of this year&amp;rsquo;s Google I/O. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</description>
+            <content type="html"><![CDATA[<p>Google will <a href="https://techcrunch.com/2019/05/07/google-search-will-offer-better-news-coverage-and-soon-support-for-podcast-search/">soon introduce searching for podcast episodes</a> as part of its search results. This much was said during the keynote of this year&rsquo;s <a href="https://events.google.com/io/">Google I/O</a>. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</p>
+
+<p>You can check how your podcast will look among Google&rsquo;s search results: <a href="https://search.google.com/devtools/podcast/preview">Podcast Preview</a></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lyRPyRKHO8M?start=305" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905091358/</link>
+            <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905091358/</guid>
+            <description>Today, I woke up to this!
+As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the sixth largest exchange hack in crypto history. More here:
+Hackers Stole $40 Million From Binance Cryptocurrency Exchange</description>
+            <content type="html"><![CDATA[<p>Today, I woke up to <a href="https://trends.google.com/trends/explore?date=now%207-d&amp;q=cryptocurrency%20hack">this</a>!</p>
+
+<p><img src="/images/2019/05/Spark - rachev.preslav@gmail.com 2019-05-09 13-51-31.png" alt="" /></p>
+
+<p>As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the <a href="https://www.newsbtc.com/2019/05/09/binance-hack-marks-6th-largest-in-crypto-history-lost-bitcoin-recouped-in-47-days/">sixth largest exchange hack in crypto history</a>. More here:</p>
+
+<p><a href="https://www.wired.com/story/hack-binance-cryptocurrency-exchange/">Hackers Stole $40 Million From Binance Cryptocurrency Exchange</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201903051009/</link>
+            <pubDate>Fri, 03 May 2019 08:09:56 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201903051009/</guid>
+            <description>Quotes, highlighted from recently read articles:
+ Convenience is the powerful marketing tool deployed by utopian evangelists to describe a world of total ease and seamless interactions that deliberately masks a frantic race to monopolize a near-bottomless well of behavioral and biometric data. It is the device used to reduce our personal agency, strip us of personal choice, and ultimately render us helpless to the terms and conditions to which we have unwittingly clicked “I agree.</description>
+            <content type="html"><![CDATA[<p>Quotes, highlighted from recently read articles:</p>
+
+<blockquote>
+<p>Convenience is the powerful marketing tool deployed by utopian evangelists to describe a world of total ease and seamless interactions that deliberately masks a frantic race to monopolize a near-bottomless well of behavioral and biometric data. It is the device used to reduce our personal agency, strip us of personal choice, and ultimately <a href="https://medium.com/s/story/welcome-to-the-age-of-helplessness-985943db5733">render us helpless</a> to the terms and conditions to which we have unwittingly clicked “<a href="https://privacyinternational.org/feature/2433/i-asked-online-tracking-company-all-my-data-and-heres-what-i-found">I agree</a>.”</p>
+</blockquote>
+
+<p>via <a href="https://onezero.medium.com/the-tyranny-of-convenience-2e7fa145ab4"><strong>The Tyranny of Convenience</strong></a> <strong>on Medium</strong></p>
+
+<p>and</p>
+
+<blockquote>
+<p>Many see 996 culture as a threat to Western economies, but we shouldn’t cave in to these practices. Instead, we should focus on strategy and workforce efficiency. Companies should strive to create the conditions that allow their employees and products to succeed without being shackled to their desks. We should clear out meaningless meetings. We should allow for deep, focused work that moves the needle. We should give employees the flexibility they need to be their most productive.</p>
+
+<p>We should work hard, but most importantly, we should go home. That’s how we win the marathon.</p>
+</blockquote>
+
+<p>via <a href="https://onezero.medium.com/the-rebellion-against-chinas-996-culture-b5b21b6a92c0"><strong>The Rebellion Against China’s 996 Culture</strong></a> <strong>on Medium</strong></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/220503190745/</link>
+            <pubDate>Fri, 03 May 2019 05:45:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/220503190745/</guid>
+            <description>I caught myself using my old Android phone more and more these days. A 5-year-old Nexus 5, that is. I dug it out a few weeks ago. After the fresh reset all the service updates, it works as if it hasn’t been two years since I last used it for real. Trinkering with Android like in the good old days felt exciting. In comparison, my experience with iOS has always been like living a comfortable, but relatively boring life.</description>
+            <content type="html"><![CDATA[<p>I caught myself using my old Android phone more and more these days. A 5-year-old Nexus 5, that is. I dug it out a few weeks ago. After the fresh reset all the service updates, it works as if it hasn’t been two years since I last used it for real. Trinkering with Android like in the good old days  felt exciting. In comparison, my experience with iOS has always been like living a comfortable, but relatively boring life. Always very efficient, but somewhat boring.</p>
+
+<p>Perhaps, it’s time to ditch the iPhone and switch camps again?</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905011824/</link>
+            <pubDate>Wed, 01 May 2019 16:24:56 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905011824/</guid>
+            <description>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium  For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a https://medium.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*x_OU1YRmBR8037eqsSAfYA.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@jondot/my-key-learnings-after-30-000-loc-in-rust-a553e6403c19">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@jondot/my-key-learnings-after-30-000-loc-in-rust-a553e6403c19">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201904261848/</link>
+            <pubDate>Fri, 26 Apr 2019 16:48:32 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201904261848/</guid>
+            <description> Ask the reader: This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.
+  (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id=&#34;typef_orm&#34;, b=&#34;https://embed.typeform.com/&#34;; if(!gi.call(d,id)) { js=ce.call(d,&#34;script&#34;); js.id=id; js.src=b+&#34;embed.js&#34;; q=gt.call(d,&#34;script&#34;)[0]; q.parentNode.insertBefore(js,q) } })()  powered by Typeform  </description>
+            <content type="html"><![CDATA[
+
+<h2 id="ask-the-reader">Ask the reader:</h2>
+
+<p>This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.</p>
+
+<div class="typeform-widget" data-url="https://preslavrachev.typeform.com/to/b6hzTP" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=b6hzTP&utm_source=typeform.com-260811-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/220420191020/</link>
+            <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/220420191020/</guid>
+            <description>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</description>
+            <content type="html"><![CDATA[<p>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</p>
+
+<p><img src="/images/2019/april/augsburg.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
+            <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
+            <description>Meanwhile in Munich&amp;hellip;</description>
+            <content type="html"><![CDATA[<p>Meanwhile in Munich&hellip;</p>
+
+<p><img src="/images/2019/march/IMG_6811.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</link>
+            <pubDate>Wed, 23 Jan 2019 06:57:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/</guid>
+            <description>A view to live for! 😍
+Sendlinger Tor | Munich</description>
+            <content type="html"><![CDATA[<p>A view to live for! 😍</p>
+
+<p><img src="https://images.unsplash.com/photo-1549954489-d19021417c77?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2768&amp;q=80" alt="" />
+<a href="https://unsplash.com/photos/4Xdl1bzWT4I">Sendlinger Tor | Munich</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201830111824/</link>
+            <pubDate>Fri, 30 Nov 2018 21:13:21 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201830111824/</guid>
+            <description>Opportunities are whispers, not foghorns.
+If we can&amp;rsquo;t hear their soft rhythms - if we are to busy rushing about, waiting for thunderclaps of revelation, inspiration, and certainty - or if we can spot them but can&amp;rsquo;t nurture them into real advantages, then we might as well be blind to them.
+ From the book &amp;ldquo;Nikola Tesla: Imagination and the Man That Invented the 20th Century&amp;rdquo;
+@media (max-width: 640px) { .</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>Opportunities are whispers, not foghorns.</p>
+
+<p>If we can&rsquo;t hear their soft rhythms - if we are to busy rushing about, waiting for thunderclaps of revelation, inspiration, and certainty - or if we can spot them but can&rsquo;t nurture them into real advantages, then we might as well be blind to them.</p>
+</blockquote>
+
+<p>From the book <em><a href="https://www.goodreads.com/book/show/17835351-nikola-tesla">&ldquo;Nikola Tesla: Imagination and the Man That Invented the 20th Century&rdquo;</a></em></p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366561721i/17835351._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/17835351-nikola-tesla">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Nikola Tesla</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      If you want to learn about one of history’s most fascinating minds and uncover some of his secrets of imagination—secrets that enabled hi...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/17835351-nikola-tesla">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905051824/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905051824/</guid>
+            <description>Test post. Let&amp;rsquo;s see if this deploys to the website.</description>
+            <content type="html"><![CDATA[<p>Test post. Let&rsquo;s see if this deploys to the website.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

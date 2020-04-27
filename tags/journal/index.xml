@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Journal on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/journal/</link>
-    <description>Recent content in Journal on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 29 Mar 2020 21:36:52 +0200</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/journal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>This Week in Social Distancing</title>
-      <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
-      <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
-      
-      <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
-      <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
+    <channel>
+        <title>Journal on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/journal/</link>
+        <description>Recent content in Journal on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 29 Mar 2020 21:36:52 +0200</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>This Week in Social Distancing</title>
+            <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
+            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
+            <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
 Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.</p>
+
+<p>Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying. Many of them among the classes of society, which would normally be spared the inconvenience of feeling the pain and misery of the masses. The Coronavirus is an equaliser. It spares no age, money, nor class of society.</p>
+
+<p>For everyone else, things are moving along, albeit slowly, and under the dark forecast of an impeding economic depression. People in my circles have been fighting to keep their jobs for the first time in more than a decade. Many of them, up until a month ago still drank the cool-aid called having an impact on the world. The sincere belief that they actually help <em>make the world a better place</em>. That everything can be solved with technology. That there&rsquo;s more capital in the world than ever before. Until, the ship started sinking.</p>
+
+<p>What surprised me is how many businesses went belly up in just a couple of months. I perfectly understand that the rules of the game have been tweaked to favour investing and chasing growth. But honestly, two months of salaries and rent and that&rsquo;s it? It&rsquo;s called high risk - high reward, I know. Yet, it still cracks me up when I think about it.</p>
+
+<h2 id="what-doesn-t-kill-me-makes-me-stronger">What doesn&rsquo;t kill me, makes me stronger</h2>
+
+<p>I like to believe in that maxim. If we survive this crisis, we will be stronger than ever. Actually, for some people, this situation is the perfect opportunity to start something new, hopefully having learned some mistakes from the past.</p>
+
+<p>I, in particular, started using some of the time to go back to my personal projects. In only a couple of weeks, I have essentially managed to re-write a substantial part of <a href="https://mixtape.preslav.me/">Mixtape</a>&rsquo;s original code in Elixir. On top of that, there are now many new features that make the experience complete, albeit, still quite ugly. My motivation is higher than ever, but I am trying to just make things right, without overdoing them, or focusing on the useless things, such as growth.</p>
+
+<p>Will <a href="https://mixtape.preslav.me/">Mixtape</a> become the YouTube of podcasting? Probably not, and I don&rsquo;t really care. It makes me happy, it serves my needs, and if it serves those of others, even better. I&rsquo;d much rather focus on making something that a small niche of customers would use and gladly support its development.</p>
+
+<p>If it doesn&rsquo;t, so be it. Besides the time spent working on Mixtape, (which I consider valuable learning) keeping the app alive costs me nothing. The actual infrastructure costs at the moment sum up to around $7/m. Yes, you heard it right. A podcasting search engine, serving close to 3 million podcast episodes for just $7/m. And, I am not talking about some buzz-worthy cloud crap, but a tiny old-school VM that hosts Mixtape among a couple of other experiments. You can&rsquo;t beat that! <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<p>Enough boasting. This is not the idea of the post, but to hopefully reach out to others out there, lost in their own thoughts. Yes, it&rsquo;s a tough time, but usually being down at the bottom gives you a chance to change your life. Pick up your old ideas and dreams, and start slowly, step by step.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">I am planning a separate post that focuses entirely on the recent development around Mixtape.
+ <a class="footnote-return" href="#fnref:1">^</a></li>
+</ol>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

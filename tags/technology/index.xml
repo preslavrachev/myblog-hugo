@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Technology on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/technology/</link>
-    <description>Recent content in Technology on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 06 Jan 2018 13:34:36 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/technology/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</title>
-      <link>https://preslav.me/2018/01/06/quote-plastic-synapses/</link>
-      <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/01/06/quote-plastic-synapses/</guid>
-      <description>via Plastic synapses offer hardware alternative to neural networks | ArsTechnica
+    <channel>
+        <title>Technology on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/technology/</link>
+        <description>Recent content in Technology on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 06 Jan 2018 13:34:36 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</title>
+            <link>https://preslav.me/2018/01/06/quote-plastic-synapses/</link>
+            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/01/06/quote-plastic-synapses/</guid>
+            <description>via Plastic synapses offer hardware alternative to neural networks | ArsTechnica
  A synapse—the connection between two neurons—consumes at most 100 femtoJoules per event. Once you realize that the entire human body is about the equivalent of an 120W light bulb, you can see that the efficiency of the brain is just astounding. [&amp;hellip;] This result has implications. If this research does turn out to be the way forward, neural networks will not operate faster than our own brains.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>via <a href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">Plastic synapses offer hardware alternative to neural networks | ArsTechnica</a></p>
+
+<blockquote>
+<p>A synapse—the connection between two neurons—consumes at most 100 femtoJoules per event. Once you realize that the entire human body is about the equivalent of an 120W light bulb, you can see that the efficiency of the brain is just astounding. [&hellip;]
+This result has implications. If this research does turn out to be the way forward, neural networks will not operate faster than our own brains. And it will take a lot of development before artificial neural networks are as interconnected as the neurons of our own brains. If neural networks are going to show an advantage, it has to come from other directions.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.arstechnica.net/wp-content/uploads/2017/03/synapse-760x380.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Plastic synapses offer hardware alternative to neural networks</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Plastic man will have plastic brain, probably does feel pain.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">https://arstechnica.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

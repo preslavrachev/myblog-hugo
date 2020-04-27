@@ -1,66 +1,249 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Kotlin on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/kotlin/</link>
-    <description>Recent content in Kotlin on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 02 Aug 2019 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908031736/</link>
-      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908031736/</guid>
-      <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
+    <channel>
+        <title>Kotlin on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/kotlin/</link>
+        <description>Recent content in Kotlin on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 02 Aug 2019 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908031736/</link>
+            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908031736/</guid>
+            <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
 I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin ❤️ Data Science? (Part 1)</title>
-      <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
-      <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
-      <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
+            <content type="html"><![CDATA[<p>My first attempt to try out compiling a <a href="https://guides.micronaut.io/micronaut-creating-first-graal-app/guide/index.html">Micronaut</a> app to a native <a href="https://www.graalvm.org/">GraalVM</a> image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-03 17-45-05.png" alt="" /></p>
+
+<p>I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way. Yet, as of this moment this option just seems too impractical, compared to Go&rsquo;s compilation time of mere seconds.</p>
+
+<p>That said, the startup time and memory footprint of the same Micronaut app running on the JVM are quite good, when compared to Spring Boot.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Kotlin ❤️ Data Science? (Part 1)</title>
+            <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
+            <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
+            <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
    Mathematical Modeling with Kotlin | Thomas Nield</description>
-    </item>
-    
-    <item>
-      <title>Connecting to a MongoDB Instance Using KMongo</title>
-      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
-      <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
-      <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
+            <content type="html"><![CDATA[
+
+<p>A few days ago, I was invited to give a talk at the <a href="https://www.meetup.com/Kotlin-User-Group-Munich/events/257927489/">Munich Kotlin Users Group</a> meetup (check out my slides <a href="https://speakerdeck.com/preslavrachev/kotlin-data-science">here</a>) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. During<a href="https://preslav.me/2018/11/01/kotlinconf-2018-recap/"> KotlinConf 2018</a>, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.</p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/-zTqtEcnM7A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://youtu.be/-zTqtEcnM7A">Mathematical Modeling with Kotlin | Thomas Nield</a></p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/yjVW6uCmVBA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=yjVW6uCmVBA">Building Data Science Workflows with Kotlin | Holger Brandl</a></p>
+
+<p>Indeed, the future seems full of opportunities for Kotlin, but not before JetBrains and the developer community remove a few of the pending roadblocks.</p>
+
+<p>The following article is the first part of a two-part series based on my talk. After the meetup, I realized that the topic is far deeper than just going through a few slides about what Kotlin as a language can and can’t. Therefore, I decided to properly introduce the reader to the topic first. Next time, we will talk about where and how Kotlin can fit into the puzzle.</p>
+
+<h1 id="the-problem-with-data">The Problem with Data</h1>
+
+<p>We live in an age of unprecedented data abundance. So much, that our wishful imagination is easy to make us believe that we are on the verge of getting computers to think. Not surprisingly, when speaking about the future, the use of the term “AI” has recently become a favorite topic among company management and technology media alike.</p>
+
+<p>Yet, in reality, we are only touching the surface. The path towards autonomous AI requires more basic human intervention than anything else. In particular, it needs a way for properly communicating data science into the software engineering field, and vice versa.</p>
+
+<p>Aren’t We Already There?
+Nope, not quite. Bringing data science into the production workflow of established companies is not as easy as one might think. More so, when talking about the JVM, which a vast majority of enterprise software has been built upon.</p>
+
+<p>See, there is a mismatch between software engineering and data science practices:</p>
+
+<p>Software engineering works best when building well-defined systems. Requirements are set at the beginning and ideally, evolve over time, but rarely change entirely. There are traceable boundaries between components, with deterministic inputs and outputs, to help testability and ease extension. Like other forms of engineering, building a piece of software starts with a rough skeleton, which gets iterated over time and again. The goal of every step is to make the software either more feature complete or gradually morph it into a new direction, but keep it compatible with the original requirements.</p>
+
+<p>Data science, on the other hand, deals with supporting or refuting hypotheses. Like other fields of science, it starts with a relatively generic question and goes through a process of data exploration and validation, until either the question can be answered fully, or it needs to be formulated again, due to an insufficiency of the data/selected approach. The exploration phase often involves trying out different approaches and seeing a large portion of them fail. This is why it is so important for the data science field to use tools and technologies that allow for easy exploration and visualization of the underlying data.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*_At3wUK_Zqgz_goL.png" alt="" />
+<a href="https://www.xkcd.com/1838/">Machine Learning | xkcd</a></p>
+
+<p>Another important difference between software engineering and data science is the interpretation of the outputs of systems at hand. Although, the understanding of distributed systems has almost become a science of its own, interpreting the outcome of a non-deterministic machine learning model is a whole different game. It is not easy to unit-test complex ML models, mainly because of the level of randomness they are built upon. Removing this randomness factor can help test the model in isolation, but might also provide the wrong assumptions when feeding the model with real-world data. Just like with the exploration phase above, it is a matter of having the right tools at hand and a fairly deep level of human interpretation.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*ihz1vmQr7OcBTVx4.png" alt="" />
+<a href="https://xkcd.com/605/">Extrapolating | xkcd</a></p>
+
+<h1 id="ai-ml-and-the-role-of-data-science-in-all-of-this">AI, ML, and the Role of Data Science in All of This</h1>
+
+<p>So, we are back to our favorite term: Artificial Intelligence, also known as AI. AI has had a long history of ups and downs, most notably its birth and early progress during the 1950s and 1960s, followed by the so-called AI winter covering most of the late 1980s, 1990s, and the beginning of the 21st Century. The recent advancement of hardware technology has given researchers the opportunity to dig out the old papers, beat them off the dust, and re-imagine the utopian bright future, in which humans and machines become alike.</p>
+
+<p>The fields of AI and Data Science have been complementing one another for a long time. Yet, while AI still seems rather ephemeral and difficult to grasp (a bit like Virtual Reality), Data Science resembles Augmented Reality, in that it employs technology, but leaves the ultimate decision and interpretation to humans.</p>
+
+<p>Machine Learning (or ML, for short) is just one of the techniques that both rely on, in order to make machines reason about large amounts of data, but by far not the only one.</p>
+
+<p>If you are looking for a more cynical view of the difference between the three you can rather use this one:</p>
+
+<ul>
+<li>AI is what brings the VC Money in.</li>
+<li>ML (a.k.a sophisticated brute-force) is what gets the job done. ML models are very limited to a given domain.</li>
+<li>DS is the craft of finding which ML model works for a particular case, and which doesn’t.
+<br /></li>
+</ul>
+
+<p>Until next time, when I will talk more about whether Kotlin can help fill the gap between Software Engineering and Data Science, as well as what steps are still needed to help us get there.</p>
+
+<h1 id="further-resources">Further Resources</h1>
+
+<p>The slides to my talk
+<script async class="speakerdeck-embed" data-id="99478ac60b134f5393f45d382b1d1bc6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></p>
+
+<ul>
+<li><a href="http://approximatelycorrect.com/2017/03/28/the-ai-misinformation-epidemic/">The AI Misinformation Epidemic</a></li>
+<li><a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">What’s the Difference Between Artificial Intelligence, Machine Learning, and Deep Learning?</a></li>
+<li><a href="https://towardsdatascience.com/data-science-has-become-too-vague-538899bab57">Data Science Has Become Too Vague</a></li>
+<li><a href="https://towardsdatascience.com/deep-misconceptions-about-deep-learning-f26c41faceec">Deep Misconceptions About Deep Learning</a></li>
+<li><a href="https://stats.stackexchange.com/questions/423/what-is-your-favorite-data-analysis-cartoon/9254">What is your favorite “data analysis” cartoon?</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Connecting to a MongoDB Instance Using KMongo</title>
+            <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
+            <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
+            <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
 Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
-    </item>
-    
-    <item>
-      <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
-      <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
-      <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
-      <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
+val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;quot;test&amp;quot;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method  The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
+            <content type="html"><![CDATA[
+
+<p>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using <a href="https://litote.org/kmongo/quick-start/">KMongo</a>.</p>
+
+<p>Basically, if you have checked out the KMongo <a href="https://litote.org/kmongo/quick-start/">quick start</a>, setting up a client and fetching some data should be extremely easy:</p>
+
+<pre><code class="language-kotlin">val client = KMongo.createClient() //get com.mongodb.MongoClient new instance
+val database = client.getDatabase(&quot;test&quot;) //normal java driver usage
+val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method
+</code></pre>
+
+<p>The quick start tutorial assumes that your DB resides on <code>mongodb://localhost:27017</code>, but in reality, your MongoDB connection string looks more like this:</p>
+
+<pre><code class="language-text">mongodb://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE&gt;
+</code></pre>
+
+<p>and in proper production environments, it is unknown until runtime. Let&rsquo;s assume that it was passed to the running application as an environment variable, e.g. <code>MONGODB</code>. Simply passing this string to <code>KMongo.createClient()</code>won&rsquo;t do it. The problem is that KMongo assumes that this string is simply the <code>&lt;HOST&gt;</code> part and creates a <code>ServerAddress</code>out of it. This results in an error when connecting.</p>
+
+<p>The solution is to use a class called <code>MongoClientURI</code>instead. <code>MongoClientURI</code> parses the string argument and splits it into its corresponding parts.</p>
+
+<p>So, the solution to my problem:</p>
+
+<pre><code class="language-kotlin">val uri = MongoClientURI(System.getenv(&quot;MONGODB&quot;))
+val collection = KMongo.createClient(uri = uri)
+        .getDatabase(uri.database)
+        .getCollection&lt;Jedi&gt;()
+</code></pre>
+
+<hr />
+
+<h1 id="related">Related</h1>
+
+<ul>
+<li><a href="https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i">https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
+            <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
+            <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
+            <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
 My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
-    </item>
-    
-    <item>
-      <title>Kotlin Basics: apply() and copy()</title>
-      <link>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</link>
-      <pubDate>Sun, 26 Jun 2016 12:56:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</guid>
-      <description>Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
+            <content type="html"><![CDATA[<p><em>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on <a href="https://twitter.com/intent/tweet?text=%40preslavrachev%20%5BADD%20YOUR%20COMMENT%20HERE%5D&amp;url=https://preslav.me/p/72a4a26e-c120-428f-af5d-98f09f88e2db/&amp;related=preslavrachev">Twitter</a>, <a href="https://www.reddit.com/r/Kotlin/comments/aa9anw/q_how_much_of_the_kotlin_way_is_the_right_way/">Reddit</a>, or <a href="https://dev.to/preslavrachev/q-how-much-of-the-kotlin-way-is-the-right-way-3129">Dev.to</a>.</em></p>
+
+<hr />
+
+<p>My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5. Those were tough beasts. More verbose and tedious to write code in.</p>
+
+<p>At that time, we began searching for a way to release the burden of writing code, but keep relying on the vast adoption of the JVM. Groovy and Scala were the two alternatives offering more language expressiveness with less boilerplate and ceremony. And, while Groovy somehow never picked up the self-esteem to be seen as something more of a scripting language for build orchestration and runtime in-app plumbing, Scala looked like the bold and sexy future of the JVM.</p>
+
+<p>That is, until the language and its community ideologically drifted apart from Java. Although most of the existing Java libraries at the time were compatible and accessible from the Scala runtime, those were seen as archaic, tedious to work with, and simply not built <em>&ldquo;the Scala way&rdquo;</em>. This slogan was used to justify the building of a whole new ecosystem of tools, libraries, and frameworks, written from the ground up with Scala in mind. It is safe to say that nowadays for every Java library out there, one could find two or three Scala equivalents written <em>&ldquo;the Scala way&rdquo;</em>. I am not much of a Scala expert, but IMHO, this has led to a total separation between the two communities, each re-inventing the wheel its own way.</p>
+
+<p>Kotlin was supposed to help solve all of that. Having joined the game late enough, JetBrains put a bet on Kotlin&rsquo;s inter-operability with standard Java code. To achieve this, a language has to be perceived as a companion, and not as a true paradigm shift. For the three years I have worked with and followed Kotlin&rsquo;s development, there have been only a few minor occasions when the inter-operability did not work on 100%, and those were more or less edge cases. It seemed that had finally reached the golden mean, where multiple language paradigms can co-exist and their communities cooperate in order to achieve a common goal.</p>
+
+<p>Yet, this is not quite what is happening. I have seen the birth of a Kotlin-first community of developers, preaching things <em>&ldquo;the Kotlin way&rdquo;</em>. Soon enough, tools, libraries, and frameworks started appearing, having perfectly working equivalents in Java, but written in <em>&ldquo;idiomatic Kotlin&rdquo;</em>. I started wondering where I had seen this before 🤔.</p>
+
+<p>Don&rsquo;t get me wrong, I am 100% for challenging the Status Quo, but by stepping on what already works well, and not merely throwing it off-board, because it was not built <em>&ldquo;the XYZ way&rdquo;</em>.</p>
+
+<p>And what do you think?</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Kotlin Basics: apply() and copy()</title>
+            <link>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</link>
+            <pubDate>Sun, 26 Jun 2016 12:56:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2016/06/26/kotlin-basics-apply-and-copy/</guid>
+            <description>Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.
 How many times have you had to do the same thing over and over again:</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>Without any doubt, Java is a verbose language. This verbosity of the language makes it easy to understand Java code by new programmers. It is though one of the reasons, why many Java programmers find writing Java code tedious. Kotlin brings a touch of succinctness in places, where even programmers new to Java, may find code unnecessarily over-bloated.</p>
+
+<p>How many times have you had to do the same thing over and over again:</p>
+
+<pre><code class="language-java">private A updateA(A objA, B objB) {
+    objA.setC(objB.getC());
+    objA.setD(objB.getD());
+    return objA;
+}
+</code></pre>
+
+<p>Having an object, you want to modify some of its properties and simply return the same object. In Java, you can&rsquo;t do this in a single chained fashion. In Kotlin, you can squeeze the above method to the following single line of code:</p>
+
+<pre><code class="language-java">fun updateA(objA: A, objB: B): A = objA.apply { c = objB.c; d = objB.d }
+</code></pre>
+
+<h3 id="apply">apply()</h3>
+
+<p>By definition, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/apply.html"><code>apply</code></a> accepts a function, and sets its scope to that of the object on which apply has been invoked. This means that no explicit reference to the object is needed. <code>Apply()</code> can do much more than simply setting properties of course. It is a transformation function, capable of evaluating complex logic before returning. At the end, the function simply returns the same object (with the added changes), so one can keep using it on the same line of code.</p>
+
+<p><strong>Note:</strong> Please, note as well the direct use of properties instead of explicitly calling getters and setters. This is not a bad practice, since Kotlin implicitly invokes provided getters and setters of a property, when working with the property (similar to C#).</p>
+
+<h3 id="copy">copy()</h3>
+
+<p>Please, remember that using apply on an object is NOT a thread-safe operation, and mutates the state of the object. If you want to retain the original object and return an immutable copy of it, you can use the function <a href="https://kotlinlang.org/docs/reference/data-classes.html#copying"><code>copy()</code></a>, provided in all instances of data classes.</p>
+
+<p>Assuming that your class contains only data (usually a good practice to separate logic from data), you can turn it into a <a href="https://kotlinlang.org/docs/reference/data-classes.html">data class</a>:</p>
+
+<pre><code class="language-java">data class User(val name: String, val age: Int)
+</code></pre>
+
+<p>Data classes have a few advantages, and one of them is definitely the <a href="https://kotlinlang.org/docs/reference/data-classes.html#copying"><code>copy()</code></a> function, provided to each and every instance. It not only provides a copy of the original object, leaving its state intact, but also allows setting new values to some of its properties at copy-time:</p>
+
+<pre><code class="language-java">val user1 = User(&quot;John Smith&quot;, 24)
+val user2 = user1.copy(age = 31)
+</code></pre>
+
+<p>Kotlin supports <a href="http://blog.preslav.me/2016/05/29/kotlin-tips-named-parameters-default-arguments/">named parameters</a>, known from other languages, such as Python and Scala. In this case, they make life much easier, as all you need to do, is specify the name of the particular property (or properties) you want to modify by copying.</p>
+
+<p>At the end you can combine the power and succinctness of both <code>apply()</code> and <code>copy()</code> by calling apply after copying:</p>
+
+<pre><code class="language-java">val user2 = user1.copy(age = 31).apply { // execute some logic here }
+</code></pre>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

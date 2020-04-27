@@ -1,38 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Advice on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/advice/</link>
-    <description>Recent content in Advice on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/advice/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Good Code is Boring</title>
-      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
-      <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
-      <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
+    <channel>
+        <title>Advice on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/advice/</link>
+        <description>Recent content in Advice on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/advice/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Good Code is Boring</title>
+            <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
+            <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
+            <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
-&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] What Do I Know?</title>
-      <link>https://preslav.me/2019/06/11/quote-what-do-i-know/</link>
-      <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
-      
-      <guid>https://preslav.me/2019/06/11/quote-what-do-i-know/</guid>
-      <description>I happen to know and have worked together with Dom. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:
+&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017 I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
+            <content type="html"><![CDATA[<p>You have seen them many times. Small snippets of code and the question <strong><em>&ldquo;What would the the following piece of code print</em></strong>&rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> pop quiz: what will this print? <a href="https://t.co/99xR8wybpp">https://t.co/99xR8wybpp</a> <a href="https://t.co/Q7YpJbYr8c">pic.twitter.com/Q7YpJbYr8c</a></p>&mdash; ✕✕✕✕✕ (@peterbourgon) <a href="https://twitter.com/peterbourgon/status/865159346149314560?ref_src=twsrc%5Etfw">May 18, 2017</a></blockquote>
+
+
+<p>I find those kinds of questions utterly pointless. They not only teach you <strong>nothing</strong> about real-world programming, but might also lead many newcomers to long-term frustration with programming.</p>
+
+<p>All programming languages have baggage - obscure features that made it in the spec but were later deemed as <strong>hacks</strong> that should be avoided. There is a certain sense of pride that junior programmers feel when they find such hacks and use them to demonstrate problem-solving skills. I am all in favor of encouraging developers to be proactive and think out of the box. Yet, I often try to point out that using questions like the above as a way of judging one&rsquo;s skills is the wrong way to do it. The mere fact that an opportunity for such questions exists in the first place, should make one take a skeptical look at the language itself.</p>
+
+<p>Contrary to what your teacher taught you, real-world programming is all but proving yourself at solving complex riddles. Much of the well-written production code I have seen is pretty trivial and boring-looking like. This makes it easy to follow and maintain years down the road, once its original creator no longer works on it.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] What Do I Know?</title>
+            <link>https://preslav.me/2019/06/11/quote-what-do-i-know/</link>
+            <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/06/11/quote-what-do-i-know/</guid>
+            <description>I happen to know and have worked together with Dom. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:
  Don’t question whether something is advanced enough to share it. Don’t worry if that knowledge already exists on the internet. The only question you need to ask yourself is this:
 What do I know?
  @media (max-width: 640px) { .</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>I happen to know and have worked together with <a href="https://islovely.co">Dom</a>. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:</p>
+
+<blockquote>
+<p>Don’t question whether something is advanced enough to share it. Don’t worry if that knowledge already exists on the internet. The only question you need to ask yourself is this:</p>
+
+<p><strong><em>What do I know?</em></strong></p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://islovely.co/posts/what-do-i-know/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        What do I know?</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I recently started an email newsletter helping people improve their English. I manage the content and list on ConvertKit (👈 affiliate link), which is a fantastic tool. Their motto is highly motivating: “teach everything you know”.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://islovely.co/posts/what-do-i-know/">https://islovely.co | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

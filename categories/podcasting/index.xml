@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Podcasting on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/podcasting/</link>
-    <description>Recent content in Podcasting on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 26 Sep 2019 10:20:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/podcasting/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/260920191020/</link>
-      <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/260920191020/</guid>
-      <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
+    <channel>
+        <title>Podcasting on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/podcasting/</link>
+        <description>Recent content in Podcasting on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 26 Sep 2019 10:20:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/podcasting/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/260920191020/</link>
+            <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/260920191020/</guid>
+            <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
 Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<blockquote>
+<p>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent <a href="https://medium.com/@CanadianPodcastListener/if-i-watch-listen-to-it-on-youtube-is-it-still-a-podcast-22e64a0129ab">survey of Canadian adults</a> found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).</p>
+
+<p>Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s <a href="https://www.youtube.com/channel/UCLtREJY21xRfCuEKvdki1Kw">H3 Podcast</a> or <a href="https://www.youtube.com/channel/UCzQUP1qoWDoEbmsQxvdjxgQ">Joe Rogan’s Joe Rogan Experience</a>, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch. While the podcasts are also distributed via Spotify and Apple Podcasts, YouTube acts as a first stop.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/IR4Vq5BMVQMhbwnHfxT6Jv-TpyM=/0x215:3000x1786/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19180861/acastro_190821_3603_youtubers_podcasts_0001.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theverge.com/2019/9/9/20801873/youtube-podcast-creators-h3-joe-rogan-ethan-klein-hila-david-dobrik-views">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        YouTube creators are turning the site into a podcast network</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      And they’re launching secondary channels to do so.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theverge.com/2019/9/9/20801873/youtube-podcast-creators-h3-joe-rogan-ethan-klein-hila-david-dobrik-views">https://www.theverge.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

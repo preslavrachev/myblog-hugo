@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev">
-<meta name="description" content="Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="Preslav Rachev">
+    <meta name="description" content="Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
 When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services." />
-<meta name="keywords" content="programming, golang, python, elixir, Programming, Docker, Python" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/" />
-
-
-    <title>
-        
-            Using Ephemeral Docker Containers as CLI Applications :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="keywords" content="programming, golang, python, elixir, Programming, Docker, Python" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Using Ephemeral Docker Containers as CLI Applications · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Using Ephemeral Docker Containers as CLI Applications">
 <meta itemprop="description" content="Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
 When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.">
@@ -56,7 +34,7 @@ When I said services, I bet that the first thing you thought about was HTTP serv
 
 <meta itemprop="datePublished" content="2019-03-18T06:30:04&#43;00:00" />
 <meta itemprop="dateModified" content="2019-03-18T06:30:04&#43;00:00" />
-<meta itemprop="wordCount" content="879">
+<meta itemprop="wordCount" content="885">
 
 
 
@@ -68,98 +46,105 @@ When I said services, I bet that the first thing you thought about was HTTP serv
 <meta name="twitter:description" content="Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
 When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services."/>
 
-
-
-    <meta property="article:section" content="Programming" />
-
-    <meta property="article:section" content="Docker" />
-
-    <meta property="article:section" content="Python" />
-
-
-
-    <meta property="article:published_time" content="2019-03-18 06:30:04 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/programming">Programming</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>5 minutes
+                <h1 class="post-full-title">Using Ephemeral Docker Containers as CLI Applications</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>Preslav Rachev</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">Preslav Rachev</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2019-63-03">18 March 2019</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 5 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
-
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/">Using Ephemeral Docker Containers as CLI Applications</a>
-        </h1>
-
-        
-
-        <div class="post-content">
-            
+            <section class="post-full-content">
+                <div class="post-content">
+                    
 
 <p>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a <code>Dockerfile</code> and you should be able to replicate the process on every host OS that has Docker support.</p>
 
@@ -167,7 +152,7 @@ When I said services, I bet that the first thing you thought about was HTTP serv
 
 <p>One such application is the use of Docker containers to sandbox the complex inner workings of a command-line (CLI) application. Most data projects involve the running of scheduled scripts which access remote services, do data processing and eventually, write the results either to disk, or to dedicated data storage. Such scripts have required dependencies, and often, the dependencies of one may collide with the ones required by another, which ends up in a big mess. This is the primary reason, why things like virtual environments in Python or Node.js&rsquo; notorious <code>node_modules</code> folder exist in the first place. Yet, we all know one or two about <code>node_modules</code>&hellip;</p>
 
-<p><a href="https://hackernoon.com/circleci-performance-difference-between-cache-and-workspace-5567679c3601" target="_blank"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*i5S2tUk0CQBh1Euc.&amp;f=1" alt="" /></a></p>
+<p><a href="https://hackernoon.com/circleci-performance-difference-between-cache-and-workspace-5567679c3601"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*i5S2tUk0CQBh1Euc.&amp;f=1" alt="" /></a></p>
 
 <p>The ideal case for such applications would be statically-bound executable files containing everything needed, and running into their own dedicated processes. One such approach is championed by languages like Go, Swift, and Kotlin&rsquo;s Native option (and of course, good old C/C++). Others, like Java (fat Jars) and Python (wheels) offer a somewhat reasonable compromise by putting the code and every dependency into a single deployable artifact. I call this a compromise, because it still requires the presence of either JDK or a Python runtime on the host OS.</p>
 
@@ -176,167 +161,212 @@ When I said services, I bet that the first thing you thought about was HTTP serv
 <h2 id="an-example">An Example</h2>
 
 <p>Here is a simple Python script, which will fetch the current price of Bitcoin, and convert it to a desired fiat currency of our choice (&ldquo;USD&rdquo;, &ldquo;EUR&rdquo;).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> argparse
-<span style="color:#f92672">import</span> requests
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch</span>(currency):
-    price <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;https://api.coindesk.com/v1/bpi/currentprice.json&#34;</span>)<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#34;bpi&#34;</span>][currency][<span style="color:#e6db74">&#34;rate_float&#34;</span>]
+<pre><code class="language-python">import argparse
+import requests
 
-    <span style="color:#66d9ef">print</span>(price)
+def fetch(currency):
+    price = requests.get(&quot;https://api.coindesk.com/v1/bpi/currentprice.json&quot;).json()[&quot;bpi&quot;][currency][&quot;rate_float&quot;]
 
-parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;My Fancy CLI&#34;</span>)
-parser<span style="color:#f92672">.</span>add_argument(
-    <span style="color:#e6db74">&#39;--currency&#39;</span>,
-    help<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Choose currency to convert to&#39;</span>,
+    print(price)
+
+parser = argparse.ArgumentParser(description=&quot;My Fancy CLI&quot;)
+parser.add_argument(
+    '--currency',
+    help='Choose currency to convert to',
 )
-args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args()
+args = parser.parse_args()
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-    <span style="color:#66d9ef">print</span>(args)
-    <span style="color:#66d9ef">if</span> args<span style="color:#f92672">.</span>currency:
-        fetch(args<span style="color:#f92672">.</span>currency)
-    <span style="color:#66d9ef">else</span>:
-        parser<span style="color:#f92672">.</span>print_help()</code></pre></div>
+if __name__ == &quot;__main__&quot;:
+    print(args)
+    if args.currency:
+        fetch(args.currency)
+    else:
+        parser.print_help()
+</code></pre>
+
 <p>There are two things to keep a note on, in this example. First, is the use of <code>requests</code>, a popular HTTP request/response library, but not a part of the Python standard library, so it has to be installed separately. Second, is the use of command-line arguments, namely <code>--currency</code>.</p>
 
 <p>Next, is the <code>Dockerfile</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3.7</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install requests<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>COPY script.py .<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span><span style="color:#e6db74"> [&#34;python&#34;, &#34;script.py&#34;]</span></code></pre></div>
+
+<pre><code class="language-Dockerfile">FROM python:3.7
+RUN pip install requests
+COPY script.py .
+ENTRYPOINT [&quot;python&quot;, &quot;script.py&quot;]
+</code></pre>
+
 <p>Again, very simple. In light of keeping the example simple, we will install <code>requests</code> right in the <code>Dockerfile</code> and using a <code>requirements.txt</code> file or some kind of a setup script, which are the common practice.</p>
 
 <p>Let&rsquo;s build the image, assuming that both files are in our current directory:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker build -t my-command .</code></pre></div>
+
+<pre><code class="language-bash">docker build -t my-command .
+</code></pre>
+
 <p>Great, now we can grab our newly baked image and run it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --rm -it my-command --currency USD</code></pre></div>
+
+<pre><code class="language-bash">docker run --rm -it my-command --currency USD
+</code></pre>
+
 <p>The <code>--rm</code> option will remove the container immediately after the command has been executed. If you have ever ran <code>docker ps -a</code>, you would know that inactive containers do not get deleted immediately, but are left for a possible later restart. Assuming that we would like to run our command multiple times per day, this will result in lots of wasted resources.</p>
 
 <p>The other interesting option is <code>-i</code>. This one, combined with the fact that we chose <code>ENTRYPOINT</code> instead of <code>CMD</code> for our starting point in the <code>Dockerfile</code> would allow us to pass the <code>--currency</code> argument at the very end. There are a few subtle differences between <code>ENTRYPOINT</code> and <code>CMD</code> but the very basic is the ability to adapt <code>ENTRYPOINT</code>, while <code>CMD</code> is more or less final.</p>
 
 <p>You can, of course, create an alias fo your command to make the execution easier:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias my-cmd<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;docker run --rm -i my-command&#34;</span>
 
-my-cmd --currency USD</code></pre></div>
+<pre><code class="language-bash">alias my-cmd=&quot;docker run --rm -i my-command&quot;
+
+my-cmd --currency USD
+</code></pre>
+
 <p>That&rsquo;s it! Now you can ahead and run your application as a scheduled cron task and e.g. accrue data over time:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv</code></pre></div>
+
+<pre><code class="language-bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv
+</code></pre>
+
 <h2 id="limitations">Limitations</h2>
 
 <p>Once again, the solution is far from the ease of a drag-and-drop that Go executables allow. Also, it assumes a working Docker setup (less and less of an issue nowadays), and quite a bit of space, because of the images. It also, for the most part, requires building the image locally, or at least, pulling the ingredients from an image registry. Docker allows for an option to save an image with all of its dependencies and load it on a remote host OS. Think of it as a sort of fat-Jar. I tried it just for the sake of demonstration, but it seems very impractical, as it resulted in an enormous zip file for that tiny Python script (of course, it bakes a whole Linux bistro inside):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker save -o my-command.zip my-command</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rw------- <span style="color:#ae81ff">1</span> user user 920M Mar <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">08</span>:47 my-command.zip</code></pre></div>
+
+<pre><code class="language-bash">docker save -o my-command.zip my-command
+</code></pre>
+
+<pre><code class="language-bash">rw------- 1 user user 920M Mar 17 08:47 my-command.zip
+</code></pre>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/programming">Programming</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/programming">Programming</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/docker">Docker</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/python">Python</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>879 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2019-03-18 06:30 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2019/03/23/give-me-back-my-monolith/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">Give Me Back My Monolith</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2019/03/09/introducing-devnotes/">
-                    <span class="button__text">Introducing DevNotes</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
-
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
-
-            
-        </div>
+<article class="post-card post
+ no-image
+ ">
 
         
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/03/09/introducing-devnotes/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Blog</div>
+                    
+
+                    <h2 class="post-card-title">Introducing DevNotes</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>With a few short micro-post exceptions, my blog has been relatively quiet over the past month. The reason for this is simple. I have devoted much of my writing resources of the past weeks into a new site. A wiki called DevNotes.
+That is right, I have started a separate writing project, parallel to my blog. Yet, before you start thinking that this is the end of the blog, don't worry.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-113-03">9 March 2019</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/03/23/give-me-back-my-monolith/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">Give Me Back My Monolith</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-53-03">23 March 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2019</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -347,14 +377,6 @@ my-cmd --currency USD</code></pre></div>
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

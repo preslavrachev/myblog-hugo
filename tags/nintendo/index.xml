@@ -1,25 +1,170 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Nintendo on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/nintendo/</link>
-    <description>Recent content in Nintendo on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/nintendo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>This Week I Learned</title>
-      <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
-      <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
-      <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
+    <channel>
+        <title>Nintendo on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/nintendo/</link>
+        <description>Recent content in Nintendo on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/nintendo/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>This Week I Learned</title>
+            <link>https://preslav.me/2020/04/18/this-week-i-learned/</link>
+            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
+            <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
 Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.</p>
+
+<hr />
+
+<h2 id="apps-and-tools">Apps and Tools</h2>
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars3.githubusercontent.com/u/36013798?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/goulinkh/podcast-cli">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        goulinkh/podcast-cli</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/goulinkh/podcast-cli">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/df/ba/bc/dfbabc29-78fd-4b11-94d5-67fc6a98dea7/AppIcon-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://apps.apple.com/app/data-jar/id1453273600">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ‎Data Jar</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      ‎Data Jar is a data store designed to be used with Shortcuts. The data store lets you persist key-value pairs.
+
+If you have used dictionaries and lists in Shortcuts, then you’ll find that the data format used by Data Jar is very similar.
+
+- Extensive support for Shortcuts, enabling you to read and up…</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://apps.apple.com/app/data-jar/id1453273600">https://apps.apple.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+
+<h2 id="media">Media</h2>
+
+<h3 id="podcasts">Podcasts</h3>
+
+<p>I am a child of the 90s. Technically, I was born in 1987, but I spent much of my childhood and early teenage years during the 90s. As every kid of that era, I was mesmerized by early-age 3D games. During my growing up, there was no better example of what the digital future held for us, than Sony&rsquo;s PlayStation. As a kid, I only wanted to play great games, and console makers seemed like the good guys making sure we get to play them. I never even realized how rivalry, fierce competition, and trickery tactics there were between Sony, Nintendo, and SEGA at the time. This mini podcast series pulls the curtain of the story behind the stage.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://is4-ssl.mzstatic.com/image/thumb/Podcasts113/v4/37/f9/c4/37f9c4c9-c628-bb4f-37b1-1b6fef8f18a7/mza_7296818625298515281.jpeg/1200x630wp.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ‎Business Wars: Encore: Nintendo vs Sony - Stabbed in the Back | 1 auf Apple Podcasts</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      ‎Sendung Business Wars, Folge Encore: Nintendo vs Sony - Stabbed in the Back | 1 – 05.02.2020</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">https://podcasts.apple.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="tips-and-tricks">Tips and Tricks</h2>
+
+<h3 id="browser-design-mode">Browser Design Mode</h3>
+
+<p>Check this out:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">That feeling when you first discovered `document.designMode` <a href="https://t.co/bxA1otzCjN">pic.twitter.com/bxA1otzCjN</a></p>&mdash; Tomek Sułkowski (@sulco) <a href="https://twitter.com/sulco/status/1177559150563344384?ref_src=twsrc%5Etfw">September 27, 2019</a></blockquote>
+</p>
+
+<p>As it turns out, setting <code>document.designMode=&quot;on&quot;</code> in the browser&rsquo;s console, will start a special mode on your browser, which allows you to edit any visible portion of any page. I have checked its existence on Chrome, Firefox, Brave (Chromium), and Safari. More of a visual gimmick than a really useful feature, if you ask me, but still, some people might find this useful.</p>
+
+<h2 id="misc">Misc</h2>
+
+<p><a href="https://atoms.com/products/atoms-everyday-mask">Atoms Everyday Mask</a></p>
+
+<p>Comfortable non-medical face mask made from a blend of Polyester, Nylon, and PU with copper fused thread. They are hand washable up to 30 times, after which they behave like a regular cloth mask, just the copper will have worn down. Each mask comes with a lanyard and a pouch for safe storage.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

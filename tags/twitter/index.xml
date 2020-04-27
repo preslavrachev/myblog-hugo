@@ -1,55 +1,390 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Twitter on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/twitter/</link>
-    <description>Recent content in Twitter on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
-      <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
-      <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
+    <channel>
+        <title>Twitter on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/twitter/</link>
+        <description>Recent content in Twitter on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How I Stay Focused on Twitter Despite All the Buzz</title>
+            <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+            <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905110736/</link>
-      <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905110736/</guid>
-      <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
+            <content type="html"><![CDATA[
+
+<p>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.</p>
+
+<h1 id="from-people-to-topics">From people to topics</h1>
+
+<p>Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter. I achieve this with by organizing accounts into thematic lists, combined with clever searching.</p>
+
+<p>If you have never created a single list on Twitter, you’re missing half the fun. At the moment of this writing, I actively curate <a href="https://twitter.com/preslavrachev/lists">around 50 lists</a>. The majority of those revolve around a certain topic I’m interested about, say <a href="https://twitter.com/preslavrachev/lists/go-developers">Go</a> or <a href="https://twitter.com/preslavrachev/lists/python-developers">Python</a> programming. Others are location based (Bremen, Munich, Bulgaria). In short, the fact that I don’t follow people on Twitter into a single timeline does not mean that that I don’t follow them at all. It’s actually the opposite - I follow many more people into many more thematically organized timelines.</p>
+
+<p>This won’t solve the original problem, will it? In fact, many timelines must be making it a hell of a time to stay on top of each one. Well, yes, and this is where the power of clever searching comes to the stage.</p>
+
+<p>In a <a href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">previous article</a>, I wrote at length about some of the hidden powers of Twitter searching. One of the many examples I presented in my article was using a Twitter list as the base filter for your search. Put simply, the following search:</p>
+
+<pre><code>list:username/list “climate change”
+</code></pre>
+
+<p>Will only return results that match the query <code>climate change</code>, but only within the scope of the given list. Search for the right topics within the right lists, and you automatically get a significant noise reduction. As lists will inevitably get bigger, you can further reduce the noise, by leaving out only tweets with certain popularity or number of responses to.</p>
+
+<pre><code>list:username/list “climate change” min_retweets:3
+</code></pre>
+
+<p>or</p>
+
+<pre><code>list:username/list “climate change” min_replies:3
+</code></pre>
+
+<p>I have saved many such searches, which I then keep open on my favourite Twitter client. I like using <a href="https://tapbots.com/tweetbot/mac/">TweetBot</a> for iOS and macOS, but one could easily <a href="https://tweetdeck.twitter.com/">TweetDeck’s</a> tabs for the same purpose.</p>
+
+<p><img src="https://i.imgur.com/4ml6zVF.jpg" alt="" /></p>
+
+<hr />
+
+<p>P.S. I hear that Twitter is also going to release some support for topic subscriptions as soon as this week. Let’s wait and see the final outcome. Until then, I keep using the method, I described above.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/XHLt3wEMJOsEC2eUPaLuGXUQqBw=/0x492:1080x1057/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19352076/CB_14444_Topics_2.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Twitter is rolling out Topics, a way to follow subjects automatically in the timeline</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It’s starting with more than 300 subjects across sports, gaming, and entertainment.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">https://www.theverge.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905110736/</link>
+            <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905110736/</guid>
+            <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
 The series starts with:
 Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
-    </item>
-    
-    <item>
-      <title>I Made a Mastodon Account and so Far I like It</title>
-      <link>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
-      <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
-      <description>So, you might have heard about Mastodon. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
+            <content type="html"><![CDATA[<p>Today, I caught this nice series of tweets by <a href="https://twitter.com/benedictevans">@benedictevans</a> on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.</p>
+
+<p>The series starts with:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1127280727475679232?ref_src=twsrc%5Etfw">May 11, 2019</a></blockquote>
+
+
+<p>then it continues:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Microsoft didn’t take IBM’s mainframe business, and Apple and Google didn’t take Microsoft’s businesses in PC operating systems or spreadsheets. And those businesses have a long half life, but they stopped being the means for dominance. No-one is scared of IBM or Microsoft today.</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1127283553639604224?ref_src=twsrc%5Etfw">May 11, 2019</a></blockquote>
+
+
+<p>I compiled the entire series into a <a href="https://threader.app/thread/1127280727475679232">single post</a> - for your (and mine) reading pleasure.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>I Made a Mastodon Account and so Far I like It</title>
+            <link>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</link>
+            <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/08/19/i-made-a-mastodon-account-and-i-like-it/</guid>
+            <description>So, you might have heard about Mastodon. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.
   Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy&amp;hellip;on paper.</description>
-    </item>
-    
-    <item>
-      <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
-      <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
-      <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
-      <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>So, you might have heard about <a href="https://joinmastodon.org/">Mastodon</a>. A micro-blogging alternative to Twitter, boasting itself for being 100% open-source, and for its decentralised nature.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/IPSbNdBmWKE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Unlike traditional social networks like Twitter and Facebook, Mastodon is not driven by a single company profiting by selling your identity to others, but by a network of instance maintainers and supporters who put their own money on the line. Ensuring that Mastodon is going to live in the long term sounds easy&hellip;on paper. Many of the instance maintainers gladly accept donations through <a href="https://www.patreon.com/ashfurrow">Patreon</a> or other means, and of course, adding your own instance to the network is relatively easy. Whether this is actually going to work in the long run, is a different question. There has been a list of alleged P2P Facebook/Twitter killers, which for one reason or another, have failed to the critical mass needed for mass adoption. I am willing to bet on a hopeful &ldquo;YES&rdquo;.</p>
+
+<p>Being an early adopter of all things digital, and annoyed by the direction that Twitter is taking, I signed up for an account yesterday: <a href="https://mastodon.technology/@preslavrachev">@preslavrachev@mastodon.technology</a>. I gladly encourage everyone to join and follow me. In case you ask yourselves what <a href="https://mastodon.technology/about">@mastodon.technology</a> has to do with my username, this is the name of the instance where I registered my account.</p>
+
+<p>Instance names are somewhat like email domains. Being on a particular instance ensures that one will get the entire flow of communication inside the given instance. Just like email however, cross-instance communication is an essential part of what makes Mastodon work. In fact, a large percentage of the people I follow now are not on the same instance as I am but communicate flawlessly with each other.</p>
+
+<p>Just like with email, the real advantage of having multiple identities on Mastodon comes when one wants to claim allegiance to a certain organisation, group, or topic of interest. Say, your company decided to run a private Mastodon instance. Having an identity there would allow you to follow locally shared chatter, but also prove to the rest of the Mastodon Universe that you belong to the given organisation. As of yet, I haven&rsquo;t yet figured out how multi-identity management really works, so I might have to leave this part for a later post.</p>
+
+<p>The last 24 hours of being on Mastodon feel very much like the early days of Twitter. When I joined Twitter in 2008, it was still a very turbulent time for both the service and the team. There have been way too many occasions when the fail whale appeared on my screen, something which I have not really witnessed during the past couple of years.</p>
+
+<p><img src="/images/2019/05/fail-whale.jpg" alt="" /></p>
+
+<p>With the frequent downtimes and shakes inside the team, something else slowly started going away - the community spirit of the early days. Don&rsquo;t get me wrong, I still use Twitter on a daily basis, though somewhat automatically. The community is still there, it is just that the bond and the friendly chatter of the early days is gone. It got replaced by incessant advertising (which I fervently mute on every occasion) and a stream of posts clearly optimised to target eyeballs and clicks. And of course, the clear statement to third-party app developers. I still remember the early days, when budding app or Web developers would use the developer-friendly Twitter API and boast with the client they developed. In no small terms, it was the developers who helped Twitter reach mainstream fame, and it is just sad that things had to reach their current state. Looks like my thoughts are being shared by the community as well:</p>
+
+<figure>
+<iframe src="https://mastodon.social/@bastianallgeier/100577435213222907/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
+</figure>
+
+<p>Back to Mastodon, during my first 24 hours, I spent an hour browsing among the many available alternative clients for both iOS and macOS. I spent another couple of hours waiting for the instance to go back up after a maintenance downtime that took longer than expected. Everyone else in my place would have backed off and left, but this just raised my level of excitement. It showed me that there is some actual work needed, and that the community is working hard to put things where they should be. I can but clap in respect to the efforts that the maintainers of my instance put yesterday, in order to ensure its stability in the upcoming days and weeks. During the hours when the instance was online, I managed to set up a few friendships and engaged in some interesting discussions. It seems like a bunch fo the early spirit is back. People reply more often, and others join in to the chat. I have the feeling that conversations flow more easily.</p>
+
+<p>In many respects, being on Mastodon feels like the Wild West. There are many open questions I have, like how to manage multiple accounts, what would happen with my identity, if an instance dies. I am not yet sure if I am going to leave Twitter for Mastodon (not in the foreseeable future, at least), but it sure feels exciting to try a refreshing look at what Twitter might have evolved into, had it not been forced to turn into an ordinary business.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
+            <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
+            <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
+            <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
+            <content type="html"><![CDATA[
+
+<p>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Starting today you can choose to try our new feature, so you&#39;ll never miss important Tweets from people you follow: <a href="https://t.co/fS1axkDiUh">https://t.co/fS1axkDiUh</a></p>&mdash; Twitter (@Twitter) <a href="https://twitter.com/Twitter/status/697420917253668868?ref_src=twsrc%5Etfw">February 10, 2016</a></blockquote>
+
+
+<p>A couple of years later, some might argue that this was a good move, others, that it kills the natural springing momentum which is what made Twitter what it is today. I personally tend to stay away from the algorithmic timeline, which is why I am mostly relying on TweetBot — perhaps, one of the last bastions of the real, unsavored Twitter experience.</p>
+
+<p>To keep on top of the stream, I have devised a series of heuristics that help me filter the massive Twitter stream down to what matters to me. Down to where real, actual human discussions are happening. Because Twitter is about active engagement and not just scrolling around, right? Let me share my few tips with you.</p>
+
+<p><strong><em>NOTE</em></strong><em>: Many of the search parameters have remained largely undocumented, so I cannot really guarantee that they will be around forever.</em></p>
+
+<h1 id="the-basics">The Basics</h1>
+
+<p>Since the beginning of time, there has been a <a href="https://twitter.com/search-advanced">page</a> on the Twitter website that allowed you to perform some of what they called “advanced search” operations. If you type a few queries and see how they get executed in the search box, you can deduce the syntax for a couple of basics that I am sure, most of you have learned by now:</p>
+
+<h2 id="exact-phrase-matching"><strong>Exact phrase matching</strong></h2>
+
+<pre><code>&quot;this query will be treated like a whole phrase&quot;
+</code></pre>
+
+<h2 id="boolean-operators"><strong>Boolean operators</strong></h2>
+
+<pre><code>word1 word2 OR word3 -word4 -word5
+</code></pre>
+
+<p><code>Word1</code> and <code>word2</code> will be treated as “must be present”, whereas <code>word3</code> is optional, and <code>word4</code> and <code>word5</code> will not be present in any of the search results.</p>
+
+<p>As with any syntax that allows boolean expressions, you can also put words in parentheses, if you think this will help make the syntax easier to understand. In my experience, parentheses actually made the syntax more complex. At the end, it is up to you. All you have to remember is that if you don’t explicitly put an OR or a minus before a word, the relation between words is always AND, all of them must appear in the end result.</p>
+
+<h1 id="social-engagement-thresholds">Social Engagement Thresholds</h1>
+
+<p>Moving to the less documented stuff. How many of you did you know that you can apply minimum thresholds of favorites, retweets, and even replies as part of your search?</p>
+
+<pre><code>my search query min_retweets:5 min:faves:5 min_replies:5
+</code></pre>
+
+<p>How cool is that? I discovered this myself a couple of years ago, while hacking around TweetDeck. It was the first Twitter app that allowed something like that, so I did not hesitate to look under the hood. Turns out, it was pretty simple. All you need to do, is apply any of the following as part of your search query, and results will get filtered to only those that that match desired level of engagement. Of course, you will have to play around adjusting the desired numbers. Depending on the popularity of the rest of your search, the result might return too little or too much. You have to also keep in mind that the different actions were designed with different intentions in mind, and this will reflect in your search results. While the number of faves and retweets might be an indication that the particular tweet is viral (ideal for news and sudden events), the number of replies indicates narrative or content provoking a discussion.</p>
+
+<p>Two tiny things before I move on:</p>
+
+<ol>
+<li>As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:</li>
+</ol>
+
+<pre><code>   my search query min_retweets:5 OR min:faves:5
+</code></pre>
+
+<pre><code>will return results that match either of the engagement thresholds, or both.
+</code></pre>
+
+<ol>
+<li>The results are limited back in time to the most recent 10 days.</li>
+</ol>
+
+<h2 id="search-in-lists">Search in Lists</h2>
+
+<p>Another relatively unknown keyword is the <code>list</code> one. It allows you to filter your search results only to tweets written by members of a particular list. Keeping people in thematically curated lists instead of, or as a supplement to following, is a whole other topic, which I’ll elaborate on in another post. Generally, if you organize people around topics, it will be way easier for you follow streams where things roughly revolve around the same topic, instead of trying to stay up-to-date with your timeline.</p>
+
+<p>Back to the syntax, this is how you can restrict you search query to a given list:</p>
+
+<pre><code>list:username/list_name my search query
+</code></pre>
+
+<p>Needless to say, Boolean logic, as well as all the previous syntax rules apply here too.</p>
+
+<h2 id="content-type-filters-and-excludes">Content Type Filters and Excludes</h2>
+
+<p>The <code>filter</code> keyword allows you to specify whether:</p>
+
+<ol>
+<li>tweet results include a certain feature:</li>
+<li><code>filter:links</code> - links to Web sites</li>
+<li><code>filter:news</code> - tweets from or containing links to identified news sources</li>
+<li><code>filter:mentions</code> - tweets containing <code>@mentions</code> inside the tweet content</li>
+<li><code>filter:replies</code> - tweets that are explicit replies. Keep in mind that this has no effect on the tweet containing <code>mentions</code>. Those should be explicitly filtered with the above mentioned <code>filter:mentions</code></li>
+<li><code>filter:media</code> - Tweets that include any kind of media. These might be native videos, images, audios or links to the same, coming from external Web sites.</li>
+<li><code>filter:images</code> - Tweets that contain any kind of images. Those might include ones uploaded via Twitter, as well as ones coming from external Web sites. For photos, explicitly loaded via the Twitter app or the API, use <code>filter:twimg</code></li>
+<li><code>filter:videos</code> - Tweets that include either attached videos, or links to externally hosted ones (e.g. form YouTube, Vimeo, etc). If you want to see videos, explicitly loaded via the Twitter app or the API, use <code>filter:native_video</code></li>
+<li><code>filter:quote</code> - returns only quoted tweets.</li>
+<li><code>filter:verified</code> lists only tweets written by verified accounts, while <code>filter:safe</code> will return ones that do not contain obscene words, imagery, or come from accounts known to produce such content.</li>
+</ol>
+
+<p>Adding a <code>-</code> to any of those filters will essentially negate the meaning, and can be used for filtering out posts without media, links, etc.</p>
+
+<h1 id="examples">Examples</h1>
+
+<h2 id="example-1-interesting-discussions-from-the-apple-developer-community">Example #1: Interesting discussions from the Apple developer community</h2>
+
+<pre><code>list:preslavrachev/ios-macos-developers exclude:retweets exclude:replies min_retweets:10 swift OR apple OR iOS OR objC
+</code></pre>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://twitter.com/search?src=typd&amp;amp;q=list%3Apreslavrachev%2Fios-macos-developers%20exclude%3Aretweets%20exclude%3Areplies%20min_retweets%3A10%20filter%3Alinks%20swift%20OR%20apple%20OR%20iOS%20OR%20objC">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Anzeigen, was jetzt gerade passiert.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Durchsuche Twitter, um die neuesten Nachrichten und globale Events schneller zu finden. Finde beliebte Leute, Hashtags und Fotos für jedes Thema, das Du Dir vorstellen kannst.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://twitter.com/search?src=typd&amp;amp;q=list%3Apreslavrachev%2Fios-macos-developers%20exclude%3Aretweets%20exclude%3Areplies%20min_retweets%3A10%20filter%3Alinks%20swift%20OR%20apple%20OR%20iOS%20OR%20objC">https://twitter.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="example-2-top-bitcoin-news-from-verified-german-sources">Example #2: Top Bitcoin news from verified German sources</h2>
+
+<p>If you want to see what the mainstream press (e.g. in Germany) writes about Bitcoin, write something like this:</p>
+
+<pre><code>bitcoin filter:news filter:verified -filter:quotes -filter:hashtags lang:de
+</code></pre>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://twitter.com/search?src=typd&amp;amp;q=bitcoin%20filter%3Anews%20-filter%3Aquotes%20filter%3Averified%20-filter%3Ahashtags%20lang%3Ade">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Anzeigen, was jetzt gerade passiert.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Durchsuche Twitter, um die neuesten Nachrichten und globale Events schneller zu finden. Finde beliebte Leute, Hashtags und Fotos für jedes Thema, das Du Dir vorstellen kannst.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://twitter.com/search?src=typd&amp;amp;q=bitcoin%20filter%3Anews%20-filter%3Aquotes%20filter%3Averified%20-filter%3Ahashtags%20lang%3Ade">https://twitter.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h1 id="links">Links</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.labnol.org/files/twitter.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.labnol.org/internet/twitter-search-tricks/13693/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Best Twitter Search Tricks - Digital Inspiration</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Search Twitter like a pro with this list of useful but lesser known Twitter search operators.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.labnol.org/internet/twitter-search-tricks/13693/">https://www.labnol.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

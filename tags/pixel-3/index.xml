@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pixel 3 on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/pixel-3/</link>
-    <description>Recent content in Pixel 3 on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 12 May 2019 08:07:59 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/pixel-3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905121007/</link>
-      <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905121007/</guid>
-      <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
+    <channel>
+        <title>Pixel 3 on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/pixel-3/</link>
+        <description>Recent content in Pixel 3 on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 12 May 2019 08:07:59 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/pixel-3/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905121007/</link>
+            <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905121007/</guid>
+            <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
 Customers: Go Home, Google, you’re drunk.
 Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
 Customers: it’s the best Take my money!
 Google: Tricked ya!</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p><strong>Google:</strong> Here is somewhat of a premium phone (Pixel 3) for $800</p>
+
+<p><strong>Customers:</strong> Go Home, Google, you’re drunk.</p>
+
+<p><strong>Google:</strong> Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400</p>
+
+<p><strong>Customers:</strong> it’s the best <img src="https://abs.twimg.com/emoji/v2/72x72/1f60d.png" alt="😍" title="Smiling face with heart-shaped eyes" /> Take my money!</p>
+
+<p><strong>Google:</strong> Tricked ya!</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,35 +1,185 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Git on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/git/</link>
-    <description>Recent content in Git on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Use the Git History to Identify Pain Points in Any Project</title>
-      <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
-      <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
-      <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+    <channel>
+        <title>Git on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/git/</link>
+        <description>Recent content in Git on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/git/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Use the Git History to Identify Pain Points in Any Project</title>
+            <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
+            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
+            <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive.</description>
-    </item>
-    
-    <item>
-      <title>What’s with the 50/72 rule?</title>
-      <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
-      <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
-      <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+            <content type="html"><![CDATA[
+
+<p>Have you heard of <a href="https://twitter.com/AdamTornhill">Adam Tornhill</a>&rsquo;s work? If not, I highly recommend that you set some time aside and check out <em><a href="https://amzn.to/32DM1G9">Your Code as a Crime Scene</a></em> or <em><a href="https://amzn.to/2vtbjdR">Software DEsign X-Rays</a></em>. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.</p>
+
+<p>Much of the tooling we use to mitigate tech debt is preventive. Compilers, linters, static analysis tools, etc. All trying to prevent developers from checking in code, which might cause problems in the future. What all of these fail to catch, is that the code might be perfectly fine, and still not lead to a well functioning system.</p>
+
+<p>The process of software development is as much about <em>developer-to-self</em> and <em>developer-to-others</em> interaction, as much as it is about making the machine do certain things. This interaction can only be let to grow, and reflected upon at certain periods of time. And what better tool to help us do that, than the one we use on a daily basis - git.</p>
+
+<h2 id="git-to-the-rescue">Git to the rescue</h2>
+
+<p>In his books, Tornhill discuses multiple evolutions on the same basic idea - files that change often (with some exceptions) tend to be the ones where most issues occur, hence the need to change. We rarely think of this simple fact when we work on the same project for a long period of time. Yet, when on-boarding a new team member, looking up an unknown piece of code, or simply, retrospecting over your code, such knowledge can be invaluable.</p>
+
+<p>The code is surprisingly simple:</p>
+
+<pre><code class="language-bash">git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10
+</code></pre>
+
+<p>What I like to do is add such commands to my list of git aliases. Open up your <code>~/.gitconfig</code> file and add the following two lines to the <code>[Aliases]</code>section:</p>
+
+<pre><code class="language-bash">code-changes = &quot;!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10&quot;
+cc = &quot;!git code-changes&quot;
+</code></pre>
+
+<p>What this will do, is sort the files in your project by their number of changes, and take the first 10. Those are the ones where most changes have occurred over time, consequently there is a higher chance that those will require the most changes in the future.</p>
+
+<p>Let&rsquo;s do an example. I chose (completely by accident) to look at Gorm, one of the popular Go ORMs. These are the top 10 files that appear at the time of this writing:</p>
+
+<pre><code class="language-bash">272 main.go
+246 scope.go
+208 README.md
+155 scope_private.go
+117 main_test.go
+116 gorm_test.go
+105 model_struct.go
+97 do.go
+81 model.go
+80 utils.go
+</code></pre>
+
+<p>Excluding the <code>README.md</code> file, one can clearly see some dominance of certain files over others. Many Go projects start out from a single <code>main.go</code> file, and with time, logic phases out to other files and packages. In our case, this is certainly not the case. Gorm &rsquo;s <code>main.go</code> is one big chunk of code, which can easily get split into two or more files, especially, since multiple files can share the same Go package.</p>
+
+<p>I&rsquo;ll go into more details on Adam Tornhil&rsquo;s work. There&rsquo;s even more interesting stuff, like identifying which files get changed together, etc. For now, take this simple trick and try to use it on the projects you&rsquo;re working on, or the libraries you frequently work with.</p>
+
+<p>What do you see?</p>
+
+<hr />
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502137388i/23627482._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Your Code As a Crime Scene</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Jack the Ripper and legacy codebases have more in common than you&#39;d think. Inspired by forensic psychology methods, you&#39;ll learn strategi...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511521225i/36517037._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Software Design X-Rays</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Are you working on a codebase where cost overruns, death marches, and heroic fights with legacy code monsters are the norm? Battle these ...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What’s with the 50/72 rule?</title>
+            <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
+            <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
+            <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
 They don&amp;rsquo;t tell much do they?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.</p>
+
+<p>They don&rsquo;t tell much do they? Six months down the road, you&rsquo;d be scratching your head, trying to remember what you were thinking exactly six months before, when you wrote that commit.</p>
+
+<p>On the other hand are the &ldquo;novels&rdquo;. Some programmers go into much detail of what they&rsquo;ve done, both in the summary, and in the description. This makes it difficult to read, and understand later on, what they did exactly.</p>
+
+<p>Being verbose is by no means a bad thing. In fact, programmers are encouraged to put lengthy details about their commits, but only in the description. The summary is what helps you and other programmers to skim through thousands of commits, so it must be both concise and insightful.</p>
+
+<p>In a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">2008 blog post</a>, <a href="https://twitter.com/tpope">tpope</a>, described a system for creating commit messages, which I started calling simply, the <em>&ldquo;50 / 72&rdquo;</em> rule. The rules of the game are simple:</p>
+
+<ol>
+<li>The first line of your commit message must be maximum 50 characters long. No more, and (ideally), no less.</li>
+<li>Leave a blank line</li>
+<li>Start writing your description. The description can be as verbose as it suits you. Each line in your description should though wrap at the 72nd mark.</li>
+</ol>
+
+<p>Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try <em>git shortlog</em>, instead of <em>git log</em>, you will see a long list of commit messages, consisting of the id of the commit, and the summary only. The reason for wrapping your description lines at the 72nd mark is that <em>git log</em> adds a padding of 4 blank spaces when displaying the commit message. To center the message perfectly, and make it read well on an 80-column terminal, you&rsquo;d want to leave space for 4 more blank spaces at right side. That&rsquo;s where 72 comes from.</p>
+
+<p>What about the 50? An analysis of the average length of commit messages in the linux kernel suggests that the ideal size of a git commit summary is around 50 characters in length:</p>
+
+<p><img src="/images/2015/february/0_Hm0dO0UnjFBprfV-.png" alt="" />Most commit messages average around 50 characters in length</p>
+
+<p>Most code editors display the current line and column number that the cursor is at. Many support automatic wrap-line settings. If you are using GitHub&rsquo;s desktop app (as I used to), it will also show you warnings when you are over the limit.</p>
+
+<p>Writing a great commit summary is like writing a great tweet, only shorter. Id suggest to try and write your thoughts at first, to see how long it gets. Then you&rsquo;s paraphrase it, and put the extra content (the details) in the summary. Try to use the 50-column mark as a guideline for your thoughts. Try to reach as close as possible to it, without going over. Remember, short commit messages do not help, too long don&rsquo;t either.</p>
+
+<p>How does your team compare to the linux kernel contributors? You can check yourselves, using the code below:</p>
+
+<p>You can use the data and plot it on a real histogram, using <a href="http://stackoverflow.com/a/5328669/1107412">matplotlib</a>. Many thanks to <a href="http://stackoverflow.com/users/209050/mgalgs">mgalgs</a> for posting the <a href="http://stackoverflow.com/a/11993051/1107412">code</a>, and the <a href="http://stackoverflow.com/a/11993051/1107412">histogram</a> originally on <a href="http://stackoverflow.com/a/11993051/1107412">StackOverflow</a>.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

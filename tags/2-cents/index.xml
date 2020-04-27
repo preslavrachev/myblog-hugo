@@ -1,116 +1,813 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2 Cents on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/2-cents/</link>
-    <description>Recent content in 2 Cents on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 29 Mar 2020 21:36:52 +0200</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/2-cents/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>This Week in Social Distancing</title>
-      <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
-      <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
-      
-      <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
-      <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
+    <channel>
+        <title>2 Cents on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/2-cents/</link>
+        <description>Recent content in 2 Cents on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 29 Mar 2020 21:36:52 +0200</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/2-cents/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>This Week in Social Distancing</title>
+            <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
+            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
+            <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
 Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying.</description>
-    </item>
-    
-    <item>
-      <title>Stay the F*** Home, Germany!</title>
-      <link>https://preslav.me/2020/03/20/stay-the-f-home-germany/</link>
-      <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/20/stay-the-f-home-germany/</guid>
-      <description>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.
+            <content type="html"><![CDATA[
+
+<p>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.</p>
+
+<p>Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying. Many of them among the classes of society, which would normally be spared the inconvenience of feeling the pain and misery of the masses. The Coronavirus is an equaliser. It spares no age, money, nor class of society.</p>
+
+<p>For everyone else, things are moving along, albeit slowly, and under the dark forecast of an impeding economic depression. People in my circles have been fighting to keep their jobs for the first time in more than a decade. Many of them, up until a month ago still drank the cool-aid called having an impact on the world. The sincere belief that they actually help <em>make the world a better place</em>. That everything can be solved with technology. That there&rsquo;s more capital in the world than ever before. Until, the ship started sinking.</p>
+
+<p>What surprised me is how many businesses went belly up in just a couple of months. I perfectly understand that the rules of the game have been tweaked to favour investing and chasing growth. But honestly, two months of salaries and rent and that&rsquo;s it? It&rsquo;s called high risk - high reward, I know. Yet, it still cracks me up when I think about it.</p>
+
+<h2 id="what-doesn-t-kill-me-makes-me-stronger">What doesn&rsquo;t kill me, makes me stronger</h2>
+
+<p>I like to believe in that maxim. If we survive this crisis, we will be stronger than ever. Actually, for some people, this situation is the perfect opportunity to start something new, hopefully having learned some mistakes from the past.</p>
+
+<p>I, in particular, started using some of the time to go back to my personal projects. In only a couple of weeks, I have essentially managed to re-write a substantial part of <a href="https://mixtape.preslav.me/">Mixtape</a>&rsquo;s original code in Elixir. On top of that, there are now many new features that make the experience complete, albeit, still quite ugly. My motivation is higher than ever, but I am trying to just make things right, without overdoing them, or focusing on the useless things, such as growth.</p>
+
+<p>Will <a href="https://mixtape.preslav.me/">Mixtape</a> become the YouTube of podcasting? Probably not, and I don&rsquo;t really care. It makes me happy, it serves my needs, and if it serves those of others, even better. I&rsquo;d much rather focus on making something that a small niche of customers would use and gladly support its development.</p>
+
+<p>If it doesn&rsquo;t, so be it. Besides the time spent working on Mixtape, (which I consider valuable learning) keeping the app alive costs me nothing. The actual infrastructure costs at the moment sum up to around $7/m. Yes, you heard it right. A podcasting search engine, serving close to 3 million podcast episodes for just $7/m. And, I am not talking about some buzz-worthy cloud crap, but a tiny old-school VM that hosts Mixtape among a couple of other experiments. You can&rsquo;t beat that! <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<p>Enough boasting. This is not the idea of the post, but to hopefully reach out to others out there, lost in their own thoughts. Yes, it&rsquo;s a tough time, but usually being down at the bottom gives you a chance to change your life. Pick up your old ideas and dreams, and start slowly, step by step.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">I am planning a separate post that focuses entirely on the recent development around Mixtape.
+ <a class="footnote-return" href="#fnref:1">^</a></li>
+</ol>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Stay the F*** Home, Germany!</title>
+            <link>https://preslav.me/2020/03/20/stay-the-f-home-germany/</link>
+            <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/20/stay-the-f-home-germany/</guid>
+            <description>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.
 Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:
  they all live in complete denial of the situation they already gave up they fully trust that no matter what happens, the German healthcare system would fix them in no time.</description>
-    </item>
-    
-    <item>
-      <title>A Step Outside the Comfort Zone</title>
-      <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
-      <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
-      <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
-    </item>
-    
-    <item>
-      <title>Reflecting on My Experience With Go, One Year After</title>
-      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
-      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
-      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+            <content type="html"><![CDATA[
+
+<p><strong>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.</strong></p>
+
+<hr />
+
+<p>Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:</p>
+
+<ul>
+<li>they all live in complete denial of the situation</li>
+<li>they already gave up</li>
+<li>they fully trust that no matter what happens, the German healthcare system would fix them in no time.</li>
+<li>it’s sunny outside, so who cares</li>
+</ul>
+
+<p>I’ve said it before, and I will say it once again. Social distancing does not mean complete isolation. I am totally for taking walks and individually doing sports. But come on, having group picnics in the middle of all this, is <em>merely irresponsible</em>.</p>
+
+<p>What’s being widely played out in the media, is how dire the situation is in Italy. In the meantime, despite the increasingly growing worries of the Germany government, some part of the population seems to be unaffected. The popular belief is that the low death rate in Germany (0.3% as of 20.03) vs. that of Italy (8.3% as of 20.03.) is a signal that the virus is either not as deadly as previously predicted, or that Germany is well-equipped to handle it. While any of these statements may be true, sources suggest that there may be a difference in counting the casualties between countries, as well as differences in test sample interpretation, etc. Therefore, I’d still stick to the global death rate of 4.1% (as of 20.03).</p>
+
+<p>What one is clearly underestimating, is the number of German people who will potentially get infected in the coming days.</p>
+
+<p>One does not need a Ph.D. in Data Science or some fancy AI tool to set up a simple prediction scenario of how the infection would roll out in the coming days. I used data from <a href="https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/">Berliner Morgenpost</a> and only Google Sheets for that. As we all know, viruses spread in an exponential fashion, by one person potentially infecting several other individuals. Based on the data, I calculated and plotted the daily percentage multiplier for Germany, Italy, and Europe:</p>
+
+<figure>
+    <img src="/images/2020/03/infection-acceleration.png"
+         alt="Infection acceleration: Germany, Italy and Europe"/> <figcaption>
+            <h4>Infection acceleration: Germany, Italy and Europe</h4><p>Infection acceleration: Germany, Italy and Europe</p>
+        </figcaption>
+</figure>
+
+
+<p>Germany has the highest for now (~1.35), meaning, that on a single day, the total number of infected people becomes 1.35 times larger than the day before. Of course, assuming that:</p>
+
+<ul>
+<li>everyone ultimately gets infected, develops immunity, and breaks the cycle</li>
+<li>measures are being taken to slow its spread</li>
+<li>Doomsday comes true and everyone dies</li>
+</ul>
+
+<p>this multiplier will go down. And, looking at the data, it really seems to go down! Hurray! Let’s go out and have a beer!</p>
+
+<p>Well, hold on a minute. The fact that seems to be slowing down does not mean that it won’t affect thousands or millions more on its way. Let’s try to do a rough prediction.:</p>
+
+<p>This are the numbers that every source on the planet presents us every day:</p>
+
+<figure>
+    <img src="/images/2020/03/infected-people.png"
+         alt="infected people: Germany, Italy and Europe "/> <figcaption>
+            <h4>Number of infected people: Germany, Italy and Europe</h4><p><h1 id="infected-people-germany-italy-and-europe">infected people: Germany, Italy and Europe</h1>
+</p>
+        </figcaption>
+</figure>
+
+
+<p>Germany being well below Italy, and both being well below the total for Europe. By all means, the situation in Italy seems far worse, and no one can question that. What no one can see however, is the dramatic turn of events, which may cause the situation in Italy to improve rapidly, and Germany to start nose-diving.</p>
+
+<p>Let’s look at the spread acceleration from the first chart again. Using a simple trick known to statisticians and stock traders, known as <a href="https://www.daytrading.com/moving-linear-regression">Moving Linear Regression</a> we can plot a naive prediction model for the change of this acceleration by the end of April:</p>
+
+<figure>
+    <img src="/images/2020/03/mlr-acceleration-prediction.png"
+         alt="MLR acceleration prediction: Germany, Italy and Europe"/> <figcaption>
+            <h4>MLR acceleration prediction: Germany, Italy and Europe</h4><p>MLR acceleration prediction: Germany, Italy and Europe</p>
+        </figcaption>
+</figure>
+
+
+<p>Using my newly generated acceleration values, let me try and plot the total number of people that this model predicts would get infected by the end of April:</p>
+
+<figure>
+    <img src="/images/2020/03/infection-prediction.png"
+         alt="Predicted # of infectied people: Germany, Italy and Europe"/> <figcaption>
+            <h4>Predicted number of infectied people: Germany, Italy and Europe</h4><p>Predicted # of infectied people: Germany, Italy and Europe</p>
+        </figcaption>
+</figure>
+
+
+<p>And this is where the story turns upside down. The proactive measures taken by the Italian government seem to ultimately take an effect and flatten the curve significantly. Germany, on the other hand takes a leap into the hundreds of thousands, ultimately peaking by the end of April.</p>
+
+<p>This is a dire scenario, and one that I am crossing fingers, my naive prediction model won’t even get close to. It assumes that no further measures are taken, and the social responsibility of the population remains at the same low level. At that level of reach, even with the lower death rate in Germany would result in thousands of deaths (950.000 * 0.003 results in 2850 people dead by the end of April alone).</p>
+
+<p>Even if none of us or our families get affected by the Coronavirus (which I sincerely hope for), we bear a social responsibility for the people we encounter. As passive transmitters, we might be causing the death of somebody, Of many. We can prevent many of those deaths from happening by just staying home.</p>
+
+<hr />
+
+<h2 id="read-more">Read More</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*4kOJv8hmd5VFPcBL1mywsw.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Coronavirus: Why You Must Act Now</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Politicians and Business Leaders: What Should You Do and When?</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://staythefuckhome.com/images/meta/og.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://staythefuckhome.com/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        A Movement to Stop the COVID-19 Pandemic | #StayTheFuckHome</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Our governments can&#39;t do it alone, we have to take action now! Do your part and stay the fuck home!</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://staythefuckhome.com/">https://staythefuckhome.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>A Step Outside the Comfort Zone</title>
+            <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
+            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
+            <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
+            <content type="html"><![CDATA[<p>Yes, the current situation sucks. Big time. It&rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come. Also, the ability to adapt to a constantly changing environment.</p>
+
+<p>I keep seeing people I follow, express disappointment with the current situation in social media. Not so much because of fear. More, because the measures to curb the outbreak, push people to step away from the comfort zone. As individuals, we have grown to protect what&rsquo;s perceive as ours so much, that the mere act of doing something for the common good can cause a backlash.</p>
+
+<p>Let me tell you a secret. This isn&rsquo;t the first, and won&rsquo;t be the last time that society faces a test of this kind. In markets, such phenomena are known as &ldquo;corrections&rdquo;. A very long upward run ends up with a shard downward move, only to start going up again. So is life. It has ups and downs. The general rule for living life is this: enjoy it while you&rsquo;re up, but keep in mind that there will be a day when you&rsquo;ll be down again. Also, don&rsquo;t give up hope when you&rsquo;re down. You&rsquo;ll be up again soon enough.</p>
+
+<p>The best we can do now (besides personal hygiene) is to swallow any pride and <a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/">distance one another from social gatherings</a> for some time. Whoever can study or work remotely, <strong>must absolutely do so</strong>. This isn&rsquo;t a time to show heroism at school, or at work, because frankly, none of this actually matters. What matters is that the lives of others are above petty profits. Plus, social distancing is not about locking oneself down completely. Regular walking, and doing sports in the open are more than welcome. I personally keep my distance running routing. Only, not in places with lots of other people.</p>
+
+<p>Moments like now are good for a reassessment of priorities, and for questioning the Status Quo. They confront the Old with the New, and put to the test much of what society takes for granted. As a technologist, I can&rsquo;t help but ask myself a few questions. For instance, whether information technology really stands up to the promise of making our lives better. Whether solutions &ldquo;powered by AI&rdquo; can help us solve the difficult problems in life, or just drive up product sales. Whether &ldquo;solutions&rdquo; is what they really are, or simply, an individual&rsquo;s pipe dream. Whether &ldquo;remote work&rdquo; was ever going to be the future, or just an employee perk for a privileged class of the workforce. Whether media omnipresence does us any good, or helps dig the trap deeper.  The list goes on and on.</p>
+
+<p>Not many have found a positive answer by now.</p>
+
+<p>Keep being strong and healthy!</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sicily has figured out this whole self-isolation thing.<a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/CoronavirusPandemic?src=hash&amp;ref_src=twsrc%5Etfw">#CoronavirusPandemic</a> <a href="https://t.co/93whPVtQcR">pic.twitter.com/93whPVtQcR</a></p>&mdash; John Nichols (@NicholsUprising) <a href="https://twitter.com/NicholsUprising/status/1238545438476730369?ref_src=twsrc%5Etfw">March 13, 2020</a></blockquote>
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>Reflecting on My Experience With Go, One Year After</title>
+            <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+            <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
  I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
-    </item>
-    
-    <item>
-      <title>Trip to Vienna</title>
-      <link>https://preslav.me/2020/01/05/trip-to-vienna/</link>
-      <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/05/trip-to-vienna/</guid>
-      <description>My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital.
+            <content type="html"><![CDATA[
+
+<p>In my little more than a year day-to-day developer experience with Go, I have so far <strong>learned three things</strong>:</p>
+
+<ol>
+<li>I can change my entire view of how programming works, even after 12+ years of doing it in one form or another.</li>
+<li>People are blaming Java for all the wrong reasons</li>
+<li>People are praising Go for all the wrong reasons</li>
+</ol>
+
+<p>Let me explain. This post is not about saying that “language A is better than language B”, or vice versa. It is about asking ourselves the question why things work the way they do, and whether doing them differently is a bad, or potentially, good thing.</p>
+
+<p>Before joining the Go camp, I had worked quite a few years as a Java developer, with all the stereotypes that this role could evoke in one’s head. I co-developed data-processing systems for various industries. Yet, much of the code I wrote was just boilerplate: passing data from one format to the other, or devising complex abstractions behind what should have really just been calling a function and obtaining its result. Yes, the code was difficult to comprehend, but I was proud of it for this exact reason. The more hoops I created, the more secure I felt that:</p>
+
+<ol>
+<li>I was doing what I thought was right</li>
+<li>If people didn’t understand the code, they’d have to come to me for an advice, further boosting my ego.</li>
+</ol>
+
+<h2 id="the-language-is-not-to-blame-for-this">The language is not to blame for this</h2>
+
+<p>The fact that much of the existing Java code is full of bureaucracy has nothing to do with the language itself, or with its platform. Our developer community should bear the sole responsibility. I can assure anyone that perfectly functioning Java applications can be written without 90% of the ceremony. They will be smaller and run faster. Most probably, easier to comprehend, too. And yet, they won’t get you hired in any well-respected company. They just won’t pass the <em>developer prejudice</em> test. I know. I’ve seen many elegant solutions and rejected them for not being /idiomatic/ enough.</p>
+
+<h2 id="go-isn-t-a-silver-bullet-either">Go isn’t a silver bullet either</h2>
+
+<p>For much of the same reasoning, jumping ship towards Go, just because “it is not Java”, won’t bring anyone far. Even before I started writing Go, I had heard and read many stories, about how simple and fast it made everything, how little ceremony it had, compared to Java, how it would eventually kill all other languages, etc. All blah, blah. Despite all of the above being true, you have to discover the truth in each for yourselves. If you approach the language out of desperation with your current way of working, you’re going to be set for a rough path.</p>
+
+<p>See, if you all you wanted was to get a faster running (name language of choice), you could certainly do it. Yet, holding on to the mental baggage of your previous experience will be hard and messy. My first Go project started out as a rewrite of a Spring Boot app I’d started earlier, so I thought I’d just organize it the same way. To keep the story short, let’s just say it was a spectacular disaster. Only after I started from scratch, did it really start taking off.</p>
+
+<h2 id="go-is-a-language-without-with-less-idioms">Go is a language without (with less) idioms</h2>
+
+<p>Let’s do a naive math experiment. Imagine that you could create valid programming expressions combining any 3 keywords, from a programming language’s vocabulary. Thus, if a language only has 10 keywords, the maximum number of possible expressions is 10 * 9 * 8 = 720. In contrast, a language, with, say, 20 keywords would end up having 20 * 19 * 18 = 6840 expressions. Twice as many keywords would result in almost 10 times as many expressions!</p>
+
+<p>Languages tend to encourage the creation and use of idioms. With that many possible expressions, it’s a normal behaviour for an individual, or a group of people to start associating and using expressions for certain things. The problems usually occur when another group comes with its own way of expressing the same thing. Both are perfectly valid, but each group would have issues understanding the other.</p>
+
+<p>This is not to say that Go having a very strict and concise nature, is totally devoid of idioms. That would be impossible. It is in our nature to try to associate and abstract certain concepts. Yet, when a language has a deliberately smaller vocabulary, the chances for different groups accidentally finding multiple ways of doing the same thing are smaller. This helps the communication between people a great deal, but comes with a very obvious downside. Code (or any written expression, for that matter) without idioms is very, very verbose.</p>
+
+<p>So, whoever told you that Go is not a verbose language, probably either lied to you on purpose, or had’n really seen any other programming languages up until that point. But hey, we agreed that verbosity in the name of communication and common understanding is a actually a good thing, right?s</p>
+
+<h2 id="go-is-a-test-for-senior-engineers">Go is a test for senior engineers</h2>
+
+<p>A lot has been said about the initial concept about Go, and how the idea was to design a language for juniors fresh out of college, and with little programming experience. I think that understanding the beauty of going back to the roots of programming, can be a cathartic experience for many seasoned programmers.</p>
+
+<p>See, junior programmers start with little baggage and preconceptions, so in their view, anything that can be done with code is fair and justified. Including, burning a CPU, or erasing a disk due to an arithmetic error.</p>
+
+<p>Somewhere along the middle of the career path, a bunch of principles start to pile up. All of them out of the desire to step on what’s already been learned, and to make sure that things are smoothly and safely without immediate supervision. Learning and applying the principles is great, because it ensures a gradual path forward. But for many, it becomes a dogma which they blindly stick to, without asking whether a simpler alternative could be better.</p>
+
+<p>The problem with principles is that they only work well around 80% of the time. It is the remaining 20% that can be disastrous for a project, or for one’s career. It is the understanding where to apply a principle, and where to deliberately throw it away in the name of pragmatism, which turns a software engineer into a senior software engineer.</p>
+
+<p>To really appreciate Go, one needs to learn how to discern what makes it and its community stand out from the rest. One needs to go through a phase of utter disgust with the language, for it “lacking” certain feature. Moving on despite the urge to go back to a familiar ground, would result in one of two things:</p>
+
+<ol>
+<li>Make one realise that indeed, the Go language is not what they need or want</li>
+<li>Learn to appreciate going back to the roots, as well as when to favour pragmatism over principles</li>
+</ol>
+
+<p>In any case, it would be an interesting experience.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Trip to Vienna</title>
+            <link>https://preslav.me/2020/01/05/trip-to-vienna/</link>
+            <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/05/trip-to-vienna/</guid>
+            <description>My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital.
 There is no doubt that Vienna is a world city, both historically, geographically, and culturally. For years in a row, the city has been named the world’s best place to live in, and as much as Munich is trying to steal the title, it’s not come close yet.</description>
-    </item>
-    
-    <item>
-      <title>Why Is Bulgaria So Poor?</title>
-      <link>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</link>
-      <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
-      
-      <guid>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</guid>
-      <description>Note: What follows is my answer to question on Quora. I thought it might be worth sharing with my readers too.
+            <content type="html"><![CDATA[
+
+<p>My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital.</p>
+
+<p><img src="/images/2020/04/fullsizeoutput_c04-scaled.jpeg" alt="" /></p>
+
+<p><img src="/images/2020/04/IMG_0421-scaled.jpg" alt="" /></p>
+
+<p><img src="/images/2020/04/IMG_0395-scaled.jpg" alt="" /></p>
+
+<p><img src="/images/2020/04/IMG_0433-scaled.jpg" alt="" /></p>
+
+<p><img src="/images/2020/04/IMG_0406-scaled.jpg" alt="" /></p>
+
+<p>There is no doubt that Vienna is a world city, both historically, geographically, and culturally. For years in a row, the city has been named the world’s best place to live in, and as much as Munich is trying to steal the title, it’s not come close yet.</p>
+
+<p>Yet, I’ve always put such statistics aside, after having read the stories of tens of expats who had chosen Austria as a place to start a new life. Especially in the 90s and 00s, people claimed, living as an expat in Austria was hard. Being judged by everyone, and having to fight prejudice everywhere, made the lives of many first and second generation expats quite a traumatic experience.</p>
+
+<p>I know, being a tourist is something completely different. People would gladly take your money, no matter what country you come from. Yet, I’m just such a type of person. I like to imagine living in the places I visit.</p>
+
+<h1 id="breaking-the-prejudice">Breaking the prejudice</h1>
+
+<p>For the two days in Vienna, I changed a few of my assumptions about the Austrian capital and the Austrian culture.</p>
+
+<p>First, the obvious things. The city is extremely clean, and the central parts feel really, really safe. Coming from Munich, one develops a certain sense of noticing these things. At the same time, however, Vienna seems to open up to many more and diverse activities at all times. Munich is pretty boring and conservative in that regard. Despite its (on paper) population of 1.5 million people, Munich often feels dead on evenings, Sundays and holidays. Vienna looked like a normal big city, hustling and bustling at all times. If are coming from other parts of the world where big city culture is prevalent, don’t expect miracles. This is Europe after all.</p>
+
+<p>What was even more surprising was people’s reception, which appeared to be totally friendly and positive. Everywhere we went, my wife and I were met warmly and openly. Now, I have to say again that being a tourist is quite different from actually living in a place. Plus, we have lived long enough in a German-speaking world to pass for locals. On that note, the other interesting fact was that everybody spoke Hochdeutsch (standard German taught in school) with a tiny hint of southern Bavarian-like accent. This was perfect, because I felt like home, as if I were in Munich. Sadly, this is not often the case if you go up the mountains. There you can frequently lost the track when you start speaking to locals. However, the same can be said about villages in Bavaria, so…</p>
+
+<h1 id="the-verdict">The verdict</h1>
+
+<p>For the two days we spent in Vienna, I liked it well enough to imagine living there at some point. The city is big enough, and opportunities for work, development, and recreation appear everywhere. Not to mention the housing situation, which from what I have hear is way more affordable than that in Munich. I am not yet sure, if I would like my future kids to grow up in Austria. I haven’t had enough exposure yet to decide on that, but I hope that a lot of the old walls have fallen and stereotypes have been erased.</p>
+
+<hr />
+
+<p><em>P.S. Write me a comment describing your tourist or expat experience in Vienna, and Austria in general. Especially, if you are fellow software engineers working there. I would love to hear what you have struggled with.</em></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Why Is Bulgaria So Poor?</title>
+            <link>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</link>
+            <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/</guid>
+            <description>Note: What follows is my answer to question on Quora. I thought it might be worth sharing with my readers too.
 This is perhaps an unpopular opinion, but for whatever it is worth, I am going to let my mind speak. I would like to emphasize on the fact that I am, and will always be a Bulgarian, despite my conscious choice to live and have business somewhere else.
 The reason why Bulgaria is so poor has nothing to do with its nature and geographic location.</description>
-    </item>
-    
-    <item>
-      <title>Why I Still Find the Minimap Useful</title>
-      <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
-      <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
-      <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
+            <content type="html"><![CDATA[<p><strong>Note:</strong> What follows is my answer to <a href="https://www.quora.com/Why-is-Bulgaria-so-poor/answer/Preslav-Rachev">question on Quora</a>. I thought it might be worth sharing with my readers too.</p>
+
+<hr />
+
+<p>This is perhaps an unpopular opinion, but for whatever it is worth, I am going to let my mind speak. I would like to emphasize on the fact that I am, and will always be a Bulgarian, despite my conscious choice to live and have business somewhere else.</p>
+
+<p>The reason why Bulgaria is so poor has nothing to do with its nature and geographic location. Neither, is it a lack of smart brains, creative artists, or strong athletes. It also isn’t (shocking to some) a lack of money and material possessions. Nope, it is none of those.</p>
+
+<p>What makes Bulgaria so poor is <strong>the lack of a strong society and civic spirit</strong>. We might be smart as individuals, but as a society, we are below mediocre.</p>
+
+<p>It is this lack of strong social norms, which has led our tiny nation from one bad choice to the next, living a sub-standard level of life for decades in a row. This lack of a strong society causes distrust and apathy. Those in turn, have managed to estrange people even further from one another, ultimately leading to the disintegration of our tiny nation. It is a vicious cycle.</p>
+
+<p>It is easy to blame it on the politicians and the mafia, but remember, neither came to power alone. Our distrust and apathy let them be where they are today.</p>
+
+<p>It is easy to blame it on the others, but when the time comes to pay our dues, invest in our common future, or take action to discourage grey economy, we are the first to hide back in the rat hole.</p>
+
+<p>By not showing civic courage, the Bulgarian people (myself included) have been putting a nail after nail in the coffin holding our society, but it’s not too late to act. I see hope in many places, and this makes me look at opportunities to help.</p>
+
+<p>So, yes, my friends, Bulgarians are poor. They can’t see how rich they could have been, had they given each other a hand, instead of sneaking behind the front door, looking through the peephole.</p>
+
+<p>—</p>
+
+<p>P.S. I fully realize that people like me are a big part of the problem. Yet, I also believe that in order to see the problem, one needs to have gotten out, only to return with fresh solutions. Sitting in the warm broth and complaining about daily life won’t help.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Why I Still Find the Minimap Useful</title>
+            <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+            <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+            <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/2019102111035/</link>
-      <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/2019102111035/</guid>
-      <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
+            <content type="html"><![CDATA[<p>This is an answer, I wrote in response to a recent blog post by <a href="https://ericasadun.com">Erica Sadun</a>:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ericasadun.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-08-at-8.07.45-AM.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://ericasadun.com/2019/11/08/my-enemy-the-minimap/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        My enemy the Minimap</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://ericasadun.com/2019/11/08/my-enemy-the-minimap/">https://ericasadun.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p>Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line. In most languages, complexity increases with the level of nesting of code. This is usually difficult to estimate when reading the code itself, since the brain is focused on what the code does, rather than how nested it is. By obscuring the text, and leaving only a bird&rsquo;s-eye view of the layout, the minimap might help pinpoint parts of the code, needing improvement. It can be very helpful when working with someone else code, or with a code base, which you haven&rsquo;t touched in a while.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/2019102111035/</link>
+            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/2019102111035/</guid>
+            <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
-    </item>
-    
-    <item>
-      <title>A Few Broken Windows</title>
-      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
-      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
-      <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
-    </item>
-    
-    <item>
-      <title>Good Code is Boring</title>
-      <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
-      <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
-      <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
+            <content type="html"><![CDATA[<blockquote>
+<p>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(http://kyleprifogle.com/images/kyle-small.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://kyleprifogle.com/dear-startup/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Dear Startup: You have no idea how much that costs.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The problem</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://kyleprifogle.com/dear-startup/">http://kyleprifogle.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>A Few Broken Windows</title>
+            <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+            <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+            <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
+            <content type="html"><![CDATA[<p>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind. Yet, there are many tiny things that give a feeling of something unfinished. The worst thing is, those used to work in previous OS versions, and they do now too, but only sometimes:</p>
+
+<ul>
+<li>copying links and files between Apple devices occasionally won&rsquo;t happen</li>
+<li>the same for the new Share Sheet. Sometimes, I&rsquo;d keep tapping an app or an action several times and nothing would happen.</li>
+<li>when running the Apple Watch in Cinema Mode, tapping the screen might not wake it up. Sometimes, up to four or five taps were needed.</li>
+<li>Apple Pay occasionally won&rsquo;t open up on a double tap.</li>
+</ul>
+
+<p>If those were all things that did not work in general, I wouldn&rsquo;t t be worried. Those I am sure that Apple would have fixed by now. What worries me are those many tiny things that work most of the time, but often fail to do so. I know from experience with the the products that I have been working on that those are the issues that cause the most customer distrust, because of being treated as <em>working</em>.</p>
+
+<p>P.S. All of this reminds me of:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/Pentonvilleiso19.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Broken_windows_theory">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Broken windows theory - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Theory</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Broken_windows_theory">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Good Code is Boring</title>
+            <link>https://preslav.me/2019/09/21/good-code-is-boring/</link>
+            <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/09/21/good-code-is-boring/</guid>
+            <description>You have seen them many times. Small snippets of code and the question &amp;ldquo;What would the the following piece of code print&amp;rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
 #golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
-&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017  I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
-    </item>
-    
-  </channel>
+&amp;mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017 I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</description>
+            <content type="html"><![CDATA[<p>You have seen them many times. Small snippets of code and the question <strong><em>&ldquo;What would the the following piece of code print</em></strong>&rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a> pop quiz: what will this print? <a href="https://t.co/99xR8wybpp">https://t.co/99xR8wybpp</a> <a href="https://t.co/Q7YpJbYr8c">pic.twitter.com/Q7YpJbYr8c</a></p>&mdash; ✕✕✕✕✕ (@peterbourgon) <a href="https://twitter.com/peterbourgon/status/865159346149314560?ref_src=twsrc%5Etfw">May 18, 2017</a></blockquote>
+
+
+<p>I find those kinds of questions utterly pointless. They not only teach you <strong>nothing</strong> about real-world programming, but might also lead many newcomers to long-term frustration with programming.</p>
+
+<p>All programming languages have baggage - obscure features that made it in the spec but were later deemed as <strong>hacks</strong> that should be avoided. There is a certain sense of pride that junior programmers feel when they find such hacks and use them to demonstrate problem-solving skills. I am all in favor of encouraging developers to be proactive and think out of the box. Yet, I often try to point out that using questions like the above as a way of judging one&rsquo;s skills is the wrong way to do it. The mere fact that an opportunity for such questions exists in the first place, should make one take a skeptical look at the language itself.</p>
+
+<p>Contrary to what your teacher taught you, real-world programming is all but proving yourself at solving complex riddles. Much of the well-written production code I have seen is pretty trivial and boring-looking like. This makes it easy to follow and maintain years down the road, once its original creator no longer works on it.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] Ten Years of Erlang</title>
+            <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
+            <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
+            <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+ @media (max-width: 640px) { .</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ferd.ca/static/img/erlang-ladder.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://ferd.ca/ten-years-of-erlang.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Ten Years of Erlang</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      For my ten years in the Erlang community, I decided to cover a few topics such as hype phases and how this related to Erlang, the ladder of ideas within the language and how that can impact adoption, what changed in my decade there, and what I think Erlang still has to bring to the programming community at large.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://ferd.ca/ten-years-of-erlang.html">https://ferd.ca | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905121007/</link>
+            <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905121007/</guid>
+            <description>Google: Here is somewhat of a premium phone (Pixel 3) for $800
+Customers: Go Home, Google, you’re drunk.
+Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
+Customers: it’s the best Take my money!
+Google: Tricked ya!</description>
+            <content type="html"><![CDATA[<p><strong>Google:</strong> Here is somewhat of a premium phone (Pixel 3) for $800</p>
+
+<p><strong>Customers:</strong> Go Home, Google, you’re drunk.</p>
+
+<p><strong>Google:</strong> Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400</p>
+
+<p><strong>Customers:</strong> it’s the best <img src="https://abs.twimg.com/emoji/v2/72x72/1f60d.png" alt="😍" title="Smiling face with heart-shaped eyes" /> Take my money!</p>
+
+<p><strong>Google:</strong> Tricked ya!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905110736/</link>
+            <pubDate>Sat, 11 May 2019 05:36:25 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905110736/</guid>
+            <description>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
+The series starts with:
+Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</description>
+            <content type="html"><![CDATA[<p>Today, I caught this nice series of tweets by <a href="https://twitter.com/benedictevans">@benedictevans</a> on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.</p>
+
+<p>The series starts with:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1127280727475679232?ref_src=twsrc%5Etfw">May 11, 2019</a></blockquote>
+
+
+<p>then it continues:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Microsoft didn’t take IBM’s mainframe business, and Apple and Google didn’t take Microsoft’s businesses in PC operating systems or spreadsheets. And those businesses have a long half life, but they stopped being the means for dominance. No-one is scared of IBM or Microsoft today.</p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1127283553639604224?ref_src=twsrc%5Etfw">May 11, 2019</a></blockquote>
+
+
+<p>I compiled the entire series into a <a href="https://threader.app/thread/1127280727475679232">single post</a> - for your (and mine) reading pleasure.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Give Me Back My Monolith</title>
+            <link>https://preslav.me/2019/03/23/give-me-back-my-monolith/</link>
+            <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
+            <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</description>
+            <content type="html"><![CDATA[
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Give me back my monolith</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog …</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">http://www.craigkerstiens.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p><p><a href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">Give Me Back My Monolith</a> by Craig Kerstiens is something I have been ranting about for quite some time. It is thus good to see <a href="http://www.craigkerstiens.com">other people</a> standing on the same side of the bridge:</p><blockquote>As we ventured into micro-services onboarding time skyrocketed. Yes, we have docker and orchestration such as K8s these days to help, but the time from start to up and running a K8s cluster just to onboard a new engineer is orders of magnitude larger than we saw a few years ago. For many junior engineers this is a burden that really is unnecessary complexity.</blockquote><p>What most programmers forget is that a) <a href="https://en.wikipedia.org/wiki/Cargo_cult_programming">cargo-culting</a> is a thing, and b) micro-services are just a tool like anything else. I have fallen into this trap myself quite a few times myself. Just like you won&rsquo;t use Objective-C for Web development or embed an Oracle database inside your mobile app, <em>you don&rsquo;t have to use micro-services in every project you are working on</em>. You can, but in 90% of the cases, you won&rsquo;t need to. As with most things in life, a micro-service (or macro) architecture is something you reach out of necessity. Unless requirements force you right off the bat, focus on building your product as a single, unified core instead.</p><p><strong>Remember:</strong> A micro-service architecture shifts the complexity form the code to the infrastructure, Or, as I used to say: <em>&ldquo;Before micro-services, I chased domain problems, now I am mostly chasing Kubernetes issues, in order to get to the domain problems&rdquo;</em></p><p><a href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">Give Me Back My Monolith</a> was also featured in the latest of the <a href="https://pythonbytes.fm">Python Bytes</a> podcast:</p><audio controls src="https://pythonbytes.fm/episodes/download/122/give-me-back-my-monolith.mp3"></audio><p></p><ul><li><a href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">Give Me Back My Monolith</a></li><li><a href="https://pythonbytes.fm/episodes/show/122/give-me-back-my-monolith">Episode #122: Give Me Back My Monolith | Python Bytes Podcast</a></li></ul></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What I learned in 2018</title>
+            <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
+            <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
+            <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
+In 2018, I:
+ Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
+            <content type="html"><![CDATA[<p>It&rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:</p>
+
+<p>In 2018, I:</p>
+
+<ul>
+<li>Got engaged</li>
+<li>Changed my job</li>
+<li>Started new new side projects</li>
+<li>Attended 4 conferences and countless meetups</li>
+<li>Had my own chance to present in front of an audience (twice)</li>
+<li>Visited 5 countries and met many new people</li>
+<li>Read 15 books</li>
+<li>Wrote nearly 30 blog posts</li>
+<li>Ran 626 km, and finished 4 half-marathons</li>
+<li>Made between 5,500 and 6,000 push-ups</li>
+</ul>
+
+<p>Wow, quite a year, heh?In reality, these numbers would mean nothing, if it weren&rsquo;t for the things I learned in between. I am one of the people who believe that goals are not destinations, but guiding posts. To me it&rsquo;s the journey that matters. For instance, the fact that I finished 15 books this year wouldn&rsquo;t matter, if I cannot remember even a single quote to keep in my mind for the rest of my life. Same with running. It&rsquo;s not the number of half marathons I ran throughout this year, but about the transformation my body and mind underwent every time - anxiety, exhaustion, acceptance, relief, exhilaration.</p>
+
+<p>So let&rsquo;s see what I learned this year:</p>
+
+<p><strong>I learned to embrace the unknown</strong>, get out of my comfort zone, and jump into unknown waters. I was reluctant to leave the safety of my old job, but in retrospect, it seems like I have really missed a gulp of fresh air.</p>
+
+<p><strong>I learned that patience and persistence matter</strong>. When you look at the numbers above, every single one of them alone, would seem insurmountable, if you push yourself to achieve it once. But I did everything stepwise, one tiny bit at a time, day after day. Doing things this way is harder, because it requires a lot of motivation, but it certainly has a more long-lasting effect at the end.</p>
+
+<p><strong>learned that people are different</strong>, and what worked for me, may not work for others. In fact, it will <strong>most probably not work for others</strong>. You cannot take people by the hand and show them the right way, because you don&rsquo;t know the right way for others. What you can and definitely should do, is encourage them to find it for themselves.</p>
+
+<p>As a direct consequence of the above, <strong>I learned to listen more</strong>. Normally, I am the type of person who won&rsquo;t start a conversation, but once I feel comfortable enough, I won&rsquo;t stop talking. Sometimes too much. Talking is good, but being a good listener is a way more appreciated.</p>
+
+<p><strong>I learned that being having an introverted personality is unlike what society tells us, but a hidden gem in disguise</strong>. Previously, I thought that it is some kind of a disadvantage that I need to cure myself from. So, I thought that becoming a sports person and an active community persona, would help me &ldquo;get cured&rdquo;. In fact, I had to try everything to come to the realization that this is not something people need to cure themselves from, but a unique gift that they should embrace. The ability to observe the surrounding environment with the focus of an introvert, or be able to go deep in the flow when solving a problem or mastering a skill, is something you shouldn&rsquo;t be ashamed of, but actively go after. If I could do something for the community in 2019, it would be to meet more and more introverted people, and share my discoveries with them.</p>
+
+<p>Last but not least, <strong>I realized how much I really, really love writing</strong>.</p>
+
+<p>When I look back, it seems like 2018 was a great year indeed. Looking forward to an amazing 2019! My best wishes for a wonderful new year!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How Much of &#34;The Kotlin Way&#34; Is the Right Way?</title>
+            <link>https://preslav.me/2018/12/28/the-kotlin-way/</link>
+            <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/the-kotlin-way/</guid>
+            <description>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
+My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&amp;rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</description>
+            <content type="html"><![CDATA[<p><em>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on <a href="https://twitter.com/intent/tweet?text=%40preslavrachev%20%5BADD%20YOUR%20COMMENT%20HERE%5D&amp;url=https://preslav.me/p/72a4a26e-c120-428f-af5d-98f09f88e2db/&amp;related=preslavrachev">Twitter</a>, <a href="https://www.reddit.com/r/Kotlin/comments/aa9anw/q_how_much_of_the_kotlin_way_is_the_right_way/">Reddit</a>, or <a href="https://dev.to/preslavrachev/q-how-much-of-the-kotlin-way-is-the-right-way-3129">Dev.to</a>.</em></p>
+
+<hr />
+
+<p>My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5. Those were tough beasts. More verbose and tedious to write code in.</p>
+
+<p>At that time, we began searching for a way to release the burden of writing code, but keep relying on the vast adoption of the JVM. Groovy and Scala were the two alternatives offering more language expressiveness with less boilerplate and ceremony. And, while Groovy somehow never picked up the self-esteem to be seen as something more of a scripting language for build orchestration and runtime in-app plumbing, Scala looked like the bold and sexy future of the JVM.</p>
+
+<p>That is, until the language and its community ideologically drifted apart from Java. Although most of the existing Java libraries at the time were compatible and accessible from the Scala runtime, those were seen as archaic, tedious to work with, and simply not built <em>&ldquo;the Scala way&rdquo;</em>. This slogan was used to justify the building of a whole new ecosystem of tools, libraries, and frameworks, written from the ground up with Scala in mind. It is safe to say that nowadays for every Java library out there, one could find two or three Scala equivalents written <em>&ldquo;the Scala way&rdquo;</em>. I am not much of a Scala expert, but IMHO, this has led to a total separation between the two communities, each re-inventing the wheel its own way.</p>
+
+<p>Kotlin was supposed to help solve all of that. Having joined the game late enough, JetBrains put a bet on Kotlin&rsquo;s inter-operability with standard Java code. To achieve this, a language has to be perceived as a companion, and not as a true paradigm shift. For the three years I have worked with and followed Kotlin&rsquo;s development, there have been only a few minor occasions when the inter-operability did not work on 100%, and those were more or less edge cases. It seemed that had finally reached the golden mean, where multiple language paradigms can co-exist and their communities cooperate in order to achieve a common goal.</p>
+
+<p>Yet, this is not quite what is happening. I have seen the birth of a Kotlin-first community of developers, preaching things <em>&ldquo;the Kotlin way&rdquo;</em>. Soon enough, tools, libraries, and frameworks started appearing, having perfectly working equivalents in Java, but written in <em>&ldquo;idiomatic Kotlin&rdquo;</em>. I started wondering where I had seen this before 🤔.</p>
+
+<p>Don&rsquo;t get me wrong, I am 100% for challenging the Status Quo, but by stepping on what already works well, and not merely throwing it off-board, because it was not built <em>&ldquo;the XYZ way&rdquo;</em>.</p>
+
+<p>And what do you think?</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

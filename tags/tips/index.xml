@@ -1,118 +1,1386 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tips on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/tips/</link>
-    <description>Recent content in Tips on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Use the Git History to Identify Pain Points in Any Project</title>
-      <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
-      <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
-      <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+    <channel>
+        <title>Tips on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/tips/</link>
+        <description>Recent content in Tips on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Use the Git History to Identify Pain Points in Any Project</title>
+            <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
+            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
+            <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive.</description>
-    </item>
-    
-    <item>
-      <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
-      <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
-      <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
-sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
+            <content type="html"><![CDATA[
+
+<p>Have you heard of <a href="https://twitter.com/AdamTornhill">Adam Tornhill</a>&rsquo;s work? If not, I highly recommend that you set some time aside and check out <em><a href="https://amzn.to/32DM1G9">Your Code as a Crime Scene</a></em> or <em><a href="https://amzn.to/2vtbjdR">Software DEsign X-Rays</a></em>. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.</p>
+
+<p>Much of the tooling we use to mitigate tech debt is preventive. Compilers, linters, static analysis tools, etc. All trying to prevent developers from checking in code, which might cause problems in the future. What all of these fail to catch, is that the code might be perfectly fine, and still not lead to a well functioning system.</p>
+
+<p>The process of software development is as much about <em>developer-to-self</em> and <em>developer-to-others</em> interaction, as much as it is about making the machine do certain things. This interaction can only be let to grow, and reflected upon at certain periods of time. And what better tool to help us do that, than the one we use on a daily basis - git.</p>
+
+<h2 id="git-to-the-rescue">Git to the rescue</h2>
+
+<p>In his books, Tornhill discuses multiple evolutions on the same basic idea - files that change often (with some exceptions) tend to be the ones where most issues occur, hence the need to change. We rarely think of this simple fact when we work on the same project for a long period of time. Yet, when on-boarding a new team member, looking up an unknown piece of code, or simply, retrospecting over your code, such knowledge can be invaluable.</p>
+
+<p>The code is surprisingly simple:</p>
+
+<pre><code class="language-bash">git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10
+</code></pre>
+
+<p>What I like to do is add such commands to my list of git aliases. Open up your <code>~/.gitconfig</code> file and add the following two lines to the <code>[Aliases]</code>section:</p>
+
+<pre><code class="language-bash">code-changes = &quot;!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10&quot;
+cc = &quot;!git code-changes&quot;
+</code></pre>
+
+<p>What this will do, is sort the files in your project by their number of changes, and take the first 10. Those are the ones where most changes have occurred over time, consequently there is a higher chance that those will require the most changes in the future.</p>
+
+<p>Let&rsquo;s do an example. I chose (completely by accident) to look at Gorm, one of the popular Go ORMs. These are the top 10 files that appear at the time of this writing:</p>
+
+<pre><code class="language-bash">272 main.go
+246 scope.go
+208 README.md
+155 scope_private.go
+117 main_test.go
+116 gorm_test.go
+105 model_struct.go
+97 do.go
+81 model.go
+80 utils.go
+</code></pre>
+
+<p>Excluding the <code>README.md</code> file, one can clearly see some dominance of certain files over others. Many Go projects start out from a single <code>main.go</code> file, and with time, logic phases out to other files and packages. In our case, this is certainly not the case. Gorm &rsquo;s <code>main.go</code> is one big chunk of code, which can easily get split into two or more files, especially, since multiple files can share the same Go package.</p>
+
+<p>I&rsquo;ll go into more details on Adam Tornhil&rsquo;s work. There&rsquo;s even more interesting stuff, like identifying which files get changed together, etc. For now, take this simple trick and try to use it on the projects you&rsquo;re working on, or the libraries you frequently work with.</p>
+
+<p>What do you see?</p>
+
+<hr />
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502137388i/23627482._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Your Code As a Crime Scene</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Jack the Ripper and legacy codebases have more in common than you&#39;d think. Inspired by forensic psychology methods, you&#39;ll learn strategi...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511521225i/36517037._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Software Design X-Rays</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Are you working on a codebase where cost overruns, death marches, and heroic fights with legacy code monsters are the norm? Battle these ...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
+            <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+            <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
+sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/  Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
-    </item>
-    
-    <item>
-      <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
-      <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
-      <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
+            <content type="html"><![CDATA[
+
+<p>You need to explicitly set the beta version of Xcode as your default one via the command line:</p>
+
+<pre><code class="language-bash">sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/
+</code></pre>
+
+<p>Afterwards, getting your app  to run via <code>flutter run</code> should work as it used to before.</p>
+
+<h2 id="related-resources">Related Resources</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        select - Managing Multiple Versions Of Xcode</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It&#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">http://iosdevelopertips.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How I Stay Focused on Twitter Despite All the Buzz</title>
+            <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+            <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
-    </item>
-    
-    <item>
-      <title>Simple Immutable Builders in Go, Using Value Receivers</title>
-      <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
-      <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
-      <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
-l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes) Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
-    </item>
-    
-    <item>
-      <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
-      <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
-      <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
-struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
-struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201908171824/</link>
-      <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201908171824/</guid>
-      <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
-module.exports = { devServer: { proxy: { &amp;#34;/&amp;#34;: { target: &amp;#34;https://remote-server.com&amp;#34;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
-    </item>
-    
-    <item>
-      <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
-      <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
-      <description>If you ever get the following message:
-x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
+            <content type="html"><![CDATA[
+
+<p>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.</p>
+
+<h1 id="from-people-to-topics">From people to topics</h1>
+
+<p>Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter. I achieve this with by organizing accounts into thematic lists, combined with clever searching.</p>
+
+<p>If you have never created a single list on Twitter, you’re missing half the fun. At the moment of this writing, I actively curate <a href="https://twitter.com/preslavrachev/lists">around 50 lists</a>. The majority of those revolve around a certain topic I’m interested about, say <a href="https://twitter.com/preslavrachev/lists/go-developers">Go</a> or <a href="https://twitter.com/preslavrachev/lists/python-developers">Python</a> programming. Others are location based (Bremen, Munich, Bulgaria). In short, the fact that I don’t follow people on Twitter into a single timeline does not mean that that I don’t follow them at all. It’s actually the opposite - I follow many more people into many more thematically organized timelines.</p>
+
+<p>This won’t solve the original problem, will it? In fact, many timelines must be making it a hell of a time to stay on top of each one. Well, yes, and this is where the power of clever searching comes to the stage.</p>
+
+<p>In a <a href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">previous article</a>, I wrote at length about some of the hidden powers of Twitter searching. One of the many examples I presented in my article was using a Twitter list as the base filter for your search. Put simply, the following search:</p>
+
+<pre><code>list:username/list “climate change”
+</code></pre>
+
+<p>Will only return results that match the query <code>climate change</code>, but only within the scope of the given list. Search for the right topics within the right lists, and you automatically get a significant noise reduction. As lists will inevitably get bigger, you can further reduce the noise, by leaving out only tweets with certain popularity or number of responses to.</p>
+
+<pre><code>list:username/list “climate change” min_retweets:3
+</code></pre>
+
+<p>or</p>
+
+<pre><code>list:username/list “climate change” min_replies:3
+</code></pre>
+
+<p>I have saved many such searches, which I then keep open on my favourite Twitter client. I like using <a href="https://tapbots.com/tweetbot/mac/">TweetBot</a> for iOS and macOS, but one could easily <a href="https://tweetdeck.twitter.com/">TweetDeck’s</a> tabs for the same purpose.</p>
+
+<p><img src="https://i.imgur.com/4ml6zVF.jpg" alt="" /></p>
+
+<hr />
+
+<p>P.S. I hear that Twitter is also going to release some support for topic subscriptions as soon as this week. Let’s wait and see the final outcome. Until then, I keep using the method, I described above.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/XHLt3wEMJOsEC2eUPaLuGXUQqBw=/0x492:1080x1057/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19352076/CB_14444_Topics_2.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Twitter is rolling out Topics, a way to follow subjects automatically in the timeline</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It’s starting with more than 300 subjects across sports, gaming, and entertainment.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">https://www.theverge.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Simple Immutable Builders in Go, Using Value Receivers</title>
+            <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+            <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+            <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
+l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes)  Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
+            <content type="html"><![CDATA[
+
+<p>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:</p>
+
+<pre><code class="language-go">l := content.NewLoader()
+l.PageCount = 5
+c := l.Load(bytes)
+</code></pre>
+
+<p>Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to <code>l</code>, interjects and sets <code>PageCount</code> to 1000? Or worse, updates the state of <code>l</code> such that a panic is inevitable?</p>
+
+<p>The simplest solution to this is to pack as much of the initial state configuration into the initialisation step. Constructors do not exist in Go, but unless we speak about a data-only struct (no logic), I would always recommend providing an initialiZer func <code>NewLoader(...)</code> and keeping as much of the state   of the struct unexported. This will transform the previous piece of code into:</p>
+
+<pre><code class="language-go">l := content.NewLoader(pageCount: 5)
+c := l.Load(bytes)
+</code></pre>
+
+<p>The problem there becomes apparent when you start having more than three arguments:</p>
+
+<pre><code class="language-go">l := content.NewLoader(pageCount: 5, offset: 3, protocol: &quot;HTTP&quot;, //... )
+c := l.Load(bytes)
+</code></pre>
+
+<p>How can we initialize <code>Loader</code> in a safe way, providing for some defaults, and without having to pack tens of parameters into the initializing func? There are various ways to achieve this. I have already written about <a href="https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/">one way</a> to approach this, another could be the functional options approach, suggested by <a href="https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis">Dave Cheney</a>.</p>
+
+<h1 id="value-receivers-as-builder-methods">Value receivers as builder methods</h1>
+
+<p>The simplest one I have found so far, takes advantage of an innate property of the Go language. Namely, the fact that everything is passed by value. One of the first questions many go beginners ask about, is the difference between <a href="https://tour.golang.org/methods/8">value and pointer receivers</a>. Pointer receivers are usually the preferred way to go, often, as an (premature) optimization, rather than because modifications are required. A bit underrated, value receivers have one big advantage, which is that they are safe for concurrent use. What a value receiver would get is a copy of the original value. This makes them perfect for implementing builder methods:</p>
+
+<pre><code class="language-go">type Loader struct {
+	pageSize int
+}
+
+func NewLoader() *Loader {
+	return &amp;Loader{
+		pageSize:10, // default
+	}
+}
+
+// check the use of a value receiver here
+func (l Loader) WithPageSize(ps int) *Loader {
+	l.pageSize = ps
+	return &amp;l
+}
+
+// The rest could be your usual pointer receivers
+func (l *Loader) Load(bytes []byte) string {
+	// ...
+}
+</code></pre>
+
+<p>The fact that we use a value receiver will cause the value of <code>l</code> to be copied, so technically, what we set <code>pageSize</code> to is a completely different place in memory. This is why we have to return a pointer to it and and reassign <code>l</code>:</p>
+
+<pre><code class="language-go">l := content.NewLoader().
+			withPageSize(5)
+
+c := l.Load(bytes)
+</code></pre>
+
+<p>This will cause some copying and a bit of work for the garbage collector, but in the grand scheme of things, it will be a negligible overhead. The safety that you gain is far more important.</p>
+
+<p>Let me know what you think.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
+            <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+            <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
+struct { a bool b int32 c string d string }  The size of the struct above is is different from the one down below
+struct { b int32 c string d string a bool }  Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
+            <content type="html"><![CDATA[
+
+<h5 id="many-thanks-to-themaour-https-twitter-com-themaour-status-1165555578019692544-for-sharing-this-tip-on-twitter">Many thanks to <a href="https://twitter.com/themaour/status/1165555578019692544">@themaour</a> for sharing this tip on Twitter</h5>
+
+<p>TIL that in Go, struct size depends on how underlying types were defined.</p>
+
+<pre><code class="language-go">struct {
+	a bool
+    b int32
+    c string
+    d string
+}
+</code></pre>
+
+<p>The size of the struct above is is different from the one down below</p>
+
+<pre><code class="language-go">struct {
+	b int32
+    c string
+    d string
+    a bool
+}
+</code></pre>
+
+<p>Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment. The remaining space (a.k.a, <em>padding</em>) remains unused, and every instance of your struct might have some portion of unused padding when initialised.</p>
+
+<p>There is a <a href="http://golang-sizeof.tips">great online resource</a> where you can see this by providing a sample struct definition. Let&rsquo;s see what it shows for struct #1:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-27 18-07-29.png" alt="" /></p>
+
+<p>and struct #2:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-27 18-03-26.png" alt="" /></p>
+
+<p>Think of this the next time you get to process a slice of 1 mln instances of a given struct.</p>
+
+<h1 id="resources">Resources</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://www.catb.org/esr/structure-packing/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Lost Art of Structure Packing</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      This page is about a technique for reducing the memory footprint of
+programs in compiled languages with C-like structures - manually
+repacking these declarations for reduced size. To read it, you will
+require basic knowledge of the C programming language.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://www.catb.org/esr/structure-packing/">http://www.catb.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908171824/</link>
+            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908171824/</guid>
+            <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
+module.exports = { devServer: { proxy: { &amp;quot;/&amp;quot;: { target: &amp;quot;https://remote-server.com&amp;quot;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
+            <content type="html"><![CDATA[<p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a <code>vue.config.js</code> file:</p>
+
+<pre><code class="language-javascript">module.exports = {
+  devServer: {
+    proxy: {
+      &quot;/&quot;: {
+        target: &quot;https://remote-server.com&quot;,
+        changeOrigin: true
+      }
+    }
+  }
+};
+</code></pre>
+
+<p>When calling <code>yarn serve</code>, I get the following message flashing in the developer console:</p>
+
+<pre><code>The connection to ws://remote-server.com was interrupted while the page was loading.
+</code></pre>
+
+<p>The app seems running and proxying to the remote API works just fine, but this annoying message obliterates everything else in the developer console. Thankfully, there is an easy way to get rid of it. Simply, add a <code>ws: false</code> to the configuration:</p>
+
+<pre><code class="language-javascript">module.exports = {
+  devServer: {
+    proxy: {
+      &quot;/&quot;: {
+        target: &quot;https://remote-server.com&quot;,
+        changeOrigin: true,
+        ws: false
+      }
+    }
+  }
+};
+</code></pre>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars1.githubusercontent.com/u/6128107?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Errors in browser console when proxying &#39;/&#39; · Issue #2662 · vuejs/vue-cli</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Version 3.0.4 Reproduction link https://github.com/CK159/vue-proxy-issue Node and OS info node 8.12.0 npm 6.4.1 Steps to reproduce Create project vue create my-app Add vue.config.js with this conte...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
+            <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+            <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+            <description>If you ever get the following message:
+x509: certificate signed by unknown authority  While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907101824/</link>
-      <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907101824/</guid>
-      <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
+            <content type="html"><![CDATA[
+
+<p>If you ever get the following message:</p>
+
+<pre><code class="language-bash">x509: certificate signed by unknown authority
+</code></pre>
+
+<p>While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on <a href="https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch">Scratch</a> or Alpine, you will have to add the certificates yourselves.</p>
+
+<p>On Alpine, this can be done using the default package installer:</p>
+
+<pre><code class="language-docker">RUN apk --no-cache add ca-certificates
+</code></pre>
+
+<p>Since Scratch is not based on a particular distribution you would have to download the certificates manually and add them as part of the build process:</p>
+
+<pre><code class="language-docker">ADD ca-certificates.crt /etc/ssl/certs/
+</code></pre>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Docker container running golang http.Client getting error `certificate signed by unknown authority`</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I created a docker container for talking to the google api using GoLang. I started off using a SCRATCH container and am getting the error certificate signed by unknown authority upon changing to ub...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">https://stackoverflow.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*-SxwIr4XV3YS0OSLrLNVqg.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Create the smallest and secured golang docker image based on scratch</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      When we are building a docker Image, the first idea is using the default official image.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907101824/</link>
+            <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907101824/</guid>
+            <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
 This is quite neat and might save me one or two print statements 😉
 Thanks to @FlorimondManca for this discovery!</description>
-    </item>
-    
-    <item>
-      <title>Adding Version Information to Go Binaries</title>
-      <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
-      <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
-      <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
-    </item>
-    
-    <item>
-      <title>Developer Tool Tip: DevDocs</title>
-      <link>https://preslav.me/2019/05/03/dev-tip-devdocs/</link>
-      <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
-      <description>Here is a handy developer tool tip for today: DevDocs
+            <content type="html"><![CDATA[<p>#TIL about the <code>breakpoint()</code> function in #Python 3.7 It starts a <code>pdb</code> session when the statement gets reached.</p>
+
+<p>This is quite neat and might save me one or two <code>print</code> statements 😉</p>
+
+<p><img src="/images/2019/07/PucNak1.jpg" alt="" /></p>
+
+<p>Thanks to <a href="https://twitter.com/FlorimondManca/status/1149023023153983488">@FlorimondManca</a> for this discovery!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Adding Version Information to Go Binaries</title>
+            <link>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</link>
+            <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/07/09/adding-version-information-to-go-binaries/</guid>
+            <description>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&amp;rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</description>
+            <content type="html"><![CDATA[<p>One of the things that I find really neat about Go, is the single-executable delivery model. For small projects, it&rsquo;s as simple as dragging and dropping the built executable right where I need it. After some time, however, I might easily forget which version of my codebase a given executable has been built upon. If I have to revert a change, how can I make sure that I build from the right commit?</p>
+
+<p>In large projects, this is where CI/CD comes to save the day. For small prototypes, however, setting up CI might be an unnecessary overkill until a much later stage in the process.</p>
+
+<p>Luckily, there is an easy way to &ldquo;bake&rdquo; the information about the current commit hash right into the built executable.</p>
+
+<p>Go does not have a dedicated build system, but the standard practice across the community is to use <a href="https://en.wikipedia.org/wiki/Make_(software)">make</a>. Make is widely available across *nix operating systems (incl. macOS), so I would usually add a simple <code>Makefile</code> to most of my Go projects. In this case, my makefile would look like this:</p>
+
+<pre><code class="language-make">GOOS=linux
+GOARCH=386
+
+.PHONY: build
+
+GIT_COMMIT := $(shell git rev-list -1 HEAD)
+
+build:
+	GOOS=$(GOOS) GOARCH=$(GOARCH) go build -ldflags &quot;-X main.gitCommit=$(GIT_COMMIT)&quot; .
+</code></pre>
+
+<p>Two things to note here:</p>
+
+<ol>
+<li><code>GIT_COMMIT</code> will store of the value of the current commit hash that our code base is at.</li>
+<li><code>-ldflags &quot;-X main.gitCommit=$(GIT_COMMIT)&quot;</code> is Go&rsquo;s way of telling the linker to pass the commit hash to a variable in the code (<code>main.gitCommit</code>). Think of this as &ldquo;baking&rdquo; the information right into the compiled executable.</li>
+</ol>
+
+<p>All we need to make this happen, is use <code>make build</code> instead of <code>go build ...</code></p>
+
+<p>In our code, we can check for the presence of a flag (e.g. <code>-v</code>) and display the hash:</p>
+
+<pre><code class="language-go">package main
+
+var gitCommit string
+
+func printVersion() {
+	log.Printf(&quot;Current build version: %s&quot;, gitCommit)
+}
+
+func main() {
+	versionFlag := flag.Bool(&quot;v&quot;, false, &quot;Print the current version and exit&quot;)
+	flag.Parse()
+
+	switch {
+	case *versionFlag:
+		printVersion()
+		return
+	}
+	// continue with other stuff
+}
+</code></pre>
+
+<hr />
+
+<p>Related reading:</p>
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Make_%28software%29">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Make (software) - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      In software development, Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program. Though integrated development environments and language-specific compiler features can also be used to manage a build process, Make remains widely used, especially in Unix and Unix-like operating systems.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Make_%28software%29">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://blog.alexellis.io/content/images/2017/08/pexels-photo-249580_crop.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://blog.alexellis.io/inject-build-time-vars-golang/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Inject build-time variables with Golang</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      In this blog post I&#39;ll show you how to inject variables into your Golang executable at build-time such as a Git Commit digest, then automate it with Docker</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://blog.alexellis.io/inject-build-time-vars-golang/">https://blog.alexellis.io | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://goreleaser.com/card.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://goreleaser.com/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        GoReleaser</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Deliver Go binaries as fast and easily as possible</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://goreleaser.com/">https://goreleaser.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Developer Tool Tip: DevDocs</title>
+            <link>https://preslav.me/2019/05/03/dev-tip-devdocs/</link>
+            <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/05/03/dev-tip-devdocs/</guid>
+            <description>Here is a handy developer tool tip for today: DevDocs
 As developers, we spend a large portion of our time, searching for the &amp;ldquo;name of the function abc that did thing xyz&amp;rdquo;. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called Dash.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>Here is a handy developer tool tip for today: <a href="https://devdocs.io/">DevDocs</a></p>
+
+<p>As developers, we spend a large portion of our time, searching for the <em>&ldquo;name of the function abc that did thing xyz&rdquo;</em>. Not surprisingly, sites like StackOverflow have become so popular. Yet, SO answers are often full of additional information, and what we need most of the time is a simple search on top of the docs themselves. Years ago, I used a tool for macOS, called <a href="https://kapeli.com/dash">Dash</a>. It was a good tool at the time, but eventually, I stopped using it, because it was accessing my (still spinning) HDD way too much at the time.</p>
+
+<p>A couple of years ago, I discovered <a href="https://devdocs.io/">DevDocs</a>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/8784712/27121730-11676ba8-511b-11e7-8c01-00444ee8501a.png" alt="" /></p>
+
+<p>image source: <a href="https://electronjs.org/apps/devdocs-app">electronjs.org</a></p>
+
+<p>It is the same idea, but running on the Web (supports offline as well) and accessible from everywhere. It has been my primary go-to docs site for much of my non-library-specific stuff (programming language syntax, standard libraries, popular frameworks). The default selection of docsets is pretty satisfactory and there are many coming all the time. The real magic here is the search:</p>
+
+<p><img src="/images/2019/05/2019-05-06 15-01-27.2019-05-06 15_02_36.gif" style="width: 320px !important" /></p>
+
+<p>There are quite a few options for bringing DevDocs to your daily workflow. For instance, a <a href="https://marketplace.visualstudio.com/items?itemName=deibit.devdocs">VS Code plugin</a>, an <a href="https://github.com/yannickglt/alfred-devdocs">Alfred workflow</a>, a <a href="https://github.com/egoist/devdocs-app">desktop app</a>, etc.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Deploying a Native Go Binary on Heroku</title>
+            <link>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</link>
+            <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/04/20/deploying-native-go-binary-on-heroku/</guid>
+            <description>My company, KI labs recently held its first hackathon in our Munich office. My team and I went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&amp;rsquo;s backend part, written in Go.</description>
+            <content type="html"><![CDATA[
+
+<p>My company, <a href="https://www.ki-labs.com/">KI labs</a> recently held its first hackathon in our Munich office. My team and I  went for a very cool mobile app idea that promotes healthy walking competitions among colleagues and friends. Though the app itself deserves a proper introduction, I will talk about it in a separate post. This time I will focus on one problem I experienced while working on the app&rsquo;s backend part, written in Go.</p>
+
+<p>The challenges with using the Go language aside, one unanticipated hurdle was actually getting the backend to run in Heroku. I know, I could have gone for a different solution, but my usual workflow is to deploy to Heroku, until the requirements push for an alternative approach. And Heroku already supports deploying Go applications. Or at least, that&rsquo;s what the <a href="https://www.heroku.com/go">documentation</a> says. And indeed, after the stress of the hackathon, I figured it out, but at the time, getting Heroku to build a Go application that uses modules seemed like it needed more time than we actually had.</p>
+
+<p>Due to the limited time constraints, I decided to take a shortcut and use what has traditionally been one of the Go&rsquo;s strongest selling points - creating a static binary and running it natively inside a VM or a container. But Heroku can&rsquo;t run native apps directly, can it? Or at least, it won&rsquo;t allow you to run those directly.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>The trick is to make the installer think that it is going to use a certain <a href="https://devcenter.heroku.com/articles/buildpacks">Buildpack</a>, but actually in your Procfile you override the control and execute a native binary directly.</p>
+
+<p>Heroku uses certain triggers to initiate the start of an instance. For example, the presence of a <code>package.json</code> file (Node.js) or <code>pom.xml</code> / <code>build.gradle</code> (Java), <code>requirements.txt</code> / <code>setup.py</code> (Python), etc.</p>
+
+<pre><code class="language-bash">GOOS=linux go build server.go
+</code></pre>
+
+<p>For our needs, we might as well hijack the <a href="https://github.com/heroku/heroku-buildpack-nodejs">Node.js Buildpack</a>. This is relatively simple. In order to trick Heroku, all we need is a <code>package.json</code> file, which lists a few basic properties needed for the Buildpack initialization:</p>
+
+<pre><code class="language-json">{ &quot;name&quot;: &quot;appname&quot;, &quot;version&quot;: &quot;0.0.1&quot;, &quot;dependencies&quot;: {} }
+</code></pre>
+
+<p>With the <code>package.json</code> file in place, we need a simple <code>Procfile</code>, which will tell Heroku what to execute once the Buildpack initialization has finiehsed. In our case, this will be the already compiled Go executable:</p>
+
+<pre><code class="language-yaml">web: ./main $PORT
+</code></pre>
+
+<p>A minor disadvantage of this approach is that we need to check the compiled binary into our git repository. I would do this on a separate branch, which I would try not to merge back to master and delete as soon as no longer necessary. By default, Heroku would use the <code>master</code> branch when buiding an application, so we need to be assertive when pushing our special deployment branch:</p>
+
+<pre><code class="language-bash">git push heroku my-deployment-branch:master
+# tell Heroku to use my deployment branch as its `master`
+</code></pre>
+
+<p>That&rsquo;s it! If fyour application is built using a technology that Heroku might not be actively supporting, or you are in for an extra performance boost (e.g. using Swift, Rust, C, etc) this tip might help you.</p>
+
+<h1 id="related-resources">Related Resources</h1>
+
+<ul>
+<li><a href="http://blog.jan-ahrens.eu/2014/06/17/heroku-with-c.html">Heroku with C</a></li>
+<li><a href="https://github.com/heroku/heroku-buildpack-go">heroku/heroku-buildpack-go: Heroku Go Buildpack</a></li>
+<li><a href="https://github.com/heroku/go-getting-started">heroku/go-getting-started: Getting Started with Go on Heroku https://devcenter.heroku.com/articles/getting-started-with-go</a></li>
+<li><a href="https://devcenter.heroku.com/articles/go-support">Heroku Go Support | Heroku Dev Center</a></li>
+<li><a href="https://www.heroku.com/go">Deploy, manage, scale Go apps in the cloud | Heroku</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Use Dotenv Files When Developing Your Python Apps</title>
+            <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
+            <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
+            <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
+            <content type="html"><![CDATA[
+
+<p>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing. The <a href="https://12factor.net/">Twelve-Factor-App</a> methodology calls this a <em>violation</em>, and has whole <a href="https://12factor.net/config">section</a> on why should be externalized and read from the environment at runtime.</p>
+
+<p>I used to avoid using environment variables, because they made it hard to set up a local environment for testing. I’d either pass all the assignments at the start, or use a cumbersome startup script to export them to the current shell.</p>
+
+<p>Luckily, it is easy to improve the quality of your code, and ease testing in different environments at the same time. It has become somewhat of a standard practice to use <code>.env</code> (a.k.a dotenv) files for configuring sensitive data while testing across environments. A <em>dotenv</em> file contains nothing more than text, where  it has one environment variable assignment per line:</p>
+
+<pre><code class="language-bash">ABC_KEY=1234xyz
+DEF_KEY=2349875
+DEBUG=True
+</code></pre>
+
+<p><strong>NOTE</strong>: <em>Dotenv</em> files <strong>must be ignored</strong> from version control for exactly the same reason mentioned at the beginning of this post: exposing sensitive information as part of the project is bad. These files are only used to quickly set up or change an environment when needed.</p>
+
+<h2 id="using-a-dotenv-file-in-our-app">Using a dotenv file in our app</h2>
+
+<p>How do we get our Python app to read a <code>.env</code> file? <a href="https://pypi.org/project/python-dotenv/">python-dotenv</a> is a great Python package that does exactly that. It will search for a <code>.env</code> as part of the project, and if it finds one, will expose the variables in it to the app. All you need to do, is <code>pip install python-dotenv</code> and add the following couple of lines at the start of your project:</p>
+
+<pre><code class="language-python">from dotenv import load_dotenv
+load_dotenv()
+</code></pre>
+
+<p>The starting point may vary, depending on whether your project is a command line script, a Flask, or a Django project. For instance, in a Django project, the above two lines need to be added at the top of the <code>settings.py</code> file.</p>
+
+<p>Having set <code>python-loadenv</code> up, the rest is easy. Create a <code>.env</code> file at the root of your app with all the environment variables needed to configure it, and make sure that you invoke them properly from your code (e.g. use something like <code>os.getenv('MY_API_KEY')</code>). Don’t forget to exclude the <code>.env</code> file from being checked into your source code repository!</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="https://pypi.org/project/python-dotenv/">python-dotenv · PyPI</a></li>
+<li><a href="http://12factor.net/">http://12factor.net/</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Connecting to a MongoDB Instance Using KMongo</title>
+            <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
+            <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
+            <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
+Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
+val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;quot;test&amp;quot;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method  The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
+            <content type="html"><![CDATA[
+
+<p>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using <a href="https://litote.org/kmongo/quick-start/">KMongo</a>.</p>
+
+<p>Basically, if you have checked out the KMongo <a href="https://litote.org/kmongo/quick-start/">quick start</a>, setting up a client and fetching some data should be extremely easy:</p>
+
+<pre><code class="language-kotlin">val client = KMongo.createClient() //get com.mongodb.MongoClient new instance
+val database = client.getDatabase(&quot;test&quot;) //normal java driver usage
+val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method
+</code></pre>
+
+<p>The quick start tutorial assumes that your DB resides on <code>mongodb://localhost:27017</code>, but in reality, your MongoDB connection string looks more like this:</p>
+
+<pre><code class="language-text">mongodb://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE&gt;
+</code></pre>
+
+<p>and in proper production environments, it is unknown until runtime. Let&rsquo;s assume that it was passed to the running application as an environment variable, e.g. <code>MONGODB</code>. Simply passing this string to <code>KMongo.createClient()</code>won&rsquo;t do it. The problem is that KMongo assumes that this string is simply the <code>&lt;HOST&gt;</code> part and creates a <code>ServerAddress</code>out of it. This results in an error when connecting.</p>
+
+<p>The solution is to use a class called <code>MongoClientURI</code>instead. <code>MongoClientURI</code> parses the string argument and splits it into its corresponding parts.</p>
+
+<p>So, the solution to my problem:</p>
+
+<pre><code class="language-kotlin">val uri = MongoClientURI(System.getenv(&quot;MONGODB&quot;))
+val collection = KMongo.createClient(uri = uri)
+        .getDatabase(uri.database)
+        .getCollection&lt;Jedi&gt;()
+</code></pre>
+
+<hr />
+
+<h1 id="related">Related</h1>
+
+<ul>
+<li><a href="https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i">https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+            <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+            <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+            <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
+            <content type="html"><![CDATA[
+
+<p>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.</p>
+
+<p>With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test. The problem is, when I do changes to the Python code (like, add a new function), they are not immediately usable, because neither the Python REPL, nor IPython / Jupyter would auto-reload them.</p>
+
+<h2 id="give-me-the-code">Give me the code</h2>
+
+<p>Yes, we are coming to that</p>
+
+<h3 id="general-way">General Way</h3>
+
+<p>Python 3 supports inline reloading of modules using a function called, well clever enough, <code>reload</code>. It used to be a built-in function in Python 2, but this is no longer the case. If you are using Python 3.2+, you should import it extra:</p>
+
+<p>For Python 3.2 and 3.3:</p>
+
+<pre><code class="language-python">import importlib
+importlib.reload(some_module)
+</code></pre>
+
+<p>For Python 3.4+:</p>
+
+<pre><code class="language-python">import imp
+imp.reload(some_module)
+</code></pre>
+
+<h3 id="ipython-jupyter-magic">IPython/Jupyter Magic</h3>
+
+<p>Jupyter comes with a set of extensions only applicable to the Jupyter/iPython sessions, called <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">magics</a>. One of these “magics” is the ability to load custom extensions, <a href="http://ipython.readthedocs.io/en/stable/config/extensions/index.html">one of which</a> allows auto-reloading of modules. To enable this, you should add the following two commands, before any imports:</p>
+
+<pre><code class="language-python">%load_ext autoreload
+%autoreload 2
+# you can check out the the documentation for the rest of the autoreaload modes
+# by apending a question mark to %autoreload, like this:
+# %autoreload?
+</code></pre>
+
+<p>This way, as soon as you hit <code>Save</code> in your code editor, you should be able to re-run a Jupyter cell or an iPython line again, and if it is calling your  module, it should automatically call the latest version.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><p><a href="https://support.enthought.com/hc/en-us/articles/204469240-Jupyter-IPython-After-editing-a-module-changes-are-not-effective-without-kernel-restart">Jupyter / IPython: After editing a module, changes are not effective without kernel restart – Enthought Knowledge Base</a></p></li>
+
+<li><p><a href="https://stackoverflow.com/questions/5364050/reloading-submodules-in-ipython#5399339">python - Reloading submodules in IPython - Stack Overflow</a></p></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How to Use Twitter More Efficiently with These Hidden Search Features</title>
+            <link>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</link>
+            <pubDate>Mon, 02 Apr 2018 04:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/</guid>
+            <description>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</description>
+            <content type="html"><![CDATA[
+
+<p>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Starting today you can choose to try our new feature, so you&#39;ll never miss important Tweets from people you follow: <a href="https://t.co/fS1axkDiUh">https://t.co/fS1axkDiUh</a></p>&mdash; Twitter (@Twitter) <a href="https://twitter.com/Twitter/status/697420917253668868?ref_src=twsrc%5Etfw">February 10, 2016</a></blockquote>
+
+
+<p>A couple of years later, some might argue that this was a good move, others, that it kills the natural springing momentum which is what made Twitter what it is today. I personally tend to stay away from the algorithmic timeline, which is why I am mostly relying on TweetBot — perhaps, one of the last bastions of the real, unsavored Twitter experience.</p>
+
+<p>To keep on top of the stream, I have devised a series of heuristics that help me filter the massive Twitter stream down to what matters to me. Down to where real, actual human discussions are happening. Because Twitter is about active engagement and not just scrolling around, right? Let me share my few tips with you.</p>
+
+<p><strong><em>NOTE</em></strong><em>: Many of the search parameters have remained largely undocumented, so I cannot really guarantee that they will be around forever.</em></p>
+
+<h1 id="the-basics">The Basics</h1>
+
+<p>Since the beginning of time, there has been a <a href="https://twitter.com/search-advanced">page</a> on the Twitter website that allowed you to perform some of what they called “advanced search” operations. If you type a few queries and see how they get executed in the search box, you can deduce the syntax for a couple of basics that I am sure, most of you have learned by now:</p>
+
+<h2 id="exact-phrase-matching"><strong>Exact phrase matching</strong></h2>
+
+<pre><code>&quot;this query will be treated like a whole phrase&quot;
+</code></pre>
+
+<h2 id="boolean-operators"><strong>Boolean operators</strong></h2>
+
+<pre><code>word1 word2 OR word3 -word4 -word5
+</code></pre>
+
+<p><code>Word1</code> and <code>word2</code> will be treated as “must be present”, whereas <code>word3</code> is optional, and <code>word4</code> and <code>word5</code> will not be present in any of the search results.</p>
+
+<p>As with any syntax that allows boolean expressions, you can also put words in parentheses, if you think this will help make the syntax easier to understand. In my experience, parentheses actually made the syntax more complex. At the end, it is up to you. All you have to remember is that if you don’t explicitly put an OR or a minus before a word, the relation between words is always AND, all of them must appear in the end result.</p>
+
+<h1 id="social-engagement-thresholds">Social Engagement Thresholds</h1>
+
+<p>Moving to the less documented stuff. How many of you did you know that you can apply minimum thresholds of favorites, retweets, and even replies as part of your search?</p>
+
+<pre><code>my search query min_retweets:5 min:faves:5 min_replies:5
+</code></pre>
+
+<p>How cool is that? I discovered this myself a couple of years ago, while hacking around TweetDeck. It was the first Twitter app that allowed something like that, so I did not hesitate to look under the hood. Turns out, it was pretty simple. All you need to do, is apply any of the following as part of your search query, and results will get filtered to only those that that match desired level of engagement. Of course, you will have to play around adjusting the desired numbers. Depending on the popularity of the rest of your search, the result might return too little or too much. You have to also keep in mind that the different actions were designed with different intentions in mind, and this will reflect in your search results. While the number of faves and retweets might be an indication that the particular tweet is viral (ideal for news and sudden events), the number of replies indicates narrative or content provoking a discussion.</p>
+
+<p>Two tiny things before I move on:</p>
+
+<ol>
+<li>As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:</li>
+</ol>
+
+<pre><code>   my search query min_retweets:5 OR min:faves:5
+</code></pre>
+
+<pre><code>will return results that match either of the engagement thresholds, or both.
+</code></pre>
+
+<ol>
+<li>The results are limited back in time to the most recent 10 days.</li>
+</ol>
+
+<h2 id="search-in-lists">Search in Lists</h2>
+
+<p>Another relatively unknown keyword is the <code>list</code> one. It allows you to filter your search results only to tweets written by members of a particular list. Keeping people in thematically curated lists instead of, or as a supplement to following, is a whole other topic, which I’ll elaborate on in another post. Generally, if you organize people around topics, it will be way easier for you follow streams where things roughly revolve around the same topic, instead of trying to stay up-to-date with your timeline.</p>
+
+<p>Back to the syntax, this is how you can restrict you search query to a given list:</p>
+
+<pre><code>list:username/list_name my search query
+</code></pre>
+
+<p>Needless to say, Boolean logic, as well as all the previous syntax rules apply here too.</p>
+
+<h2 id="content-type-filters-and-excludes">Content Type Filters and Excludes</h2>
+
+<p>The <code>filter</code> keyword allows you to specify whether:</p>
+
+<ol>
+<li>tweet results include a certain feature:</li>
+<li><code>filter:links</code> - links to Web sites</li>
+<li><code>filter:news</code> - tweets from or containing links to identified news sources</li>
+<li><code>filter:mentions</code> - tweets containing <code>@mentions</code> inside the tweet content</li>
+<li><code>filter:replies</code> - tweets that are explicit replies. Keep in mind that this has no effect on the tweet containing <code>mentions</code>. Those should be explicitly filtered with the above mentioned <code>filter:mentions</code></li>
+<li><code>filter:media</code> - Tweets that include any kind of media. These might be native videos, images, audios or links to the same, coming from external Web sites.</li>
+<li><code>filter:images</code> - Tweets that contain any kind of images. Those might include ones uploaded via Twitter, as well as ones coming from external Web sites. For photos, explicitly loaded via the Twitter app or the API, use <code>filter:twimg</code></li>
+<li><code>filter:videos</code> - Tweets that include either attached videos, or links to externally hosted ones (e.g. form YouTube, Vimeo, etc). If you want to see videos, explicitly loaded via the Twitter app or the API, use <code>filter:native_video</code></li>
+<li><code>filter:quote</code> - returns only quoted tweets.</li>
+<li><code>filter:verified</code> lists only tweets written by verified accounts, while <code>filter:safe</code> will return ones that do not contain obscene words, imagery, or come from accounts known to produce such content.</li>
+</ol>
+
+<p>Adding a <code>-</code> to any of those filters will essentially negate the meaning, and can be used for filtering out posts without media, links, etc.</p>
+
+<h1 id="examples">Examples</h1>
+
+<h2 id="example-1-interesting-discussions-from-the-apple-developer-community">Example #1: Interesting discussions from the Apple developer community</h2>
+
+<pre><code>list:preslavrachev/ios-macos-developers exclude:retweets exclude:replies min_retweets:10 swift OR apple OR iOS OR objC
+</code></pre>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://twitter.com/search?src=typd&amp;amp;q=list%3Apreslavrachev%2Fios-macos-developers%20exclude%3Aretweets%20exclude%3Areplies%20min_retweets%3A10%20filter%3Alinks%20swift%20OR%20apple%20OR%20iOS%20OR%20objC">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Anzeigen, was jetzt gerade passiert.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Durchsuche Twitter, um die neuesten Nachrichten und globale Events schneller zu finden. Finde beliebte Leute, Hashtags und Fotos für jedes Thema, das Du Dir vorstellen kannst.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://twitter.com/search?src=typd&amp;amp;q=list%3Apreslavrachev%2Fios-macos-developers%20exclude%3Aretweets%20exclude%3Areplies%20min_retweets%3A10%20filter%3Alinks%20swift%20OR%20apple%20OR%20iOS%20OR%20objC">https://twitter.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="example-2-top-bitcoin-news-from-verified-german-sources">Example #2: Top Bitcoin news from verified German sources</h2>
+
+<p>If you want to see what the mainstream press (e.g. in Germany) writes about Bitcoin, write something like this:</p>
+
+<pre><code>bitcoin filter:news filter:verified -filter:quotes -filter:hashtags lang:de
+</code></pre>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://twitter.com/search?src=typd&amp;amp;q=bitcoin%20filter%3Anews%20-filter%3Aquotes%20filter%3Averified%20-filter%3Ahashtags%20lang%3Ade">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Anzeigen, was jetzt gerade passiert.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Durchsuche Twitter, um die neuesten Nachrichten und globale Events schneller zu finden. Finde beliebte Leute, Hashtags und Fotos für jedes Thema, das Du Dir vorstellen kannst.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://twitter.com/search?src=typd&amp;amp;q=bitcoin%20filter%3Anews%20-filter%3Aquotes%20filter%3Averified%20-filter%3Ahashtags%20lang%3Ade">https://twitter.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h1 id="links">Links</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.labnol.org/files/twitter.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.labnol.org/internet/twitter-search-tricks/13693/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Best Twitter Search Tricks - Digital Inspiration</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Search Twitter like a pro with this list of useful but lesser known Twitter search operators.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.labnol.org/internet/twitter-search-tricks/13693/">https://www.labnol.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
+            <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+            <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
+XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
+chrome --disable-web-security  then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="tl-dr-just-give-me-the-code">TL;DR! Just give me the code</h2>
+
+<p>In your <code>index.js</code> file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the <code>import</code> statements:</p>
+
+<pre><code class="language-javascript">XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? 
+  GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+</code></pre>
+
+<p>You will also need a Chrome plugin that overrides <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>. I use <a href="https://chrome.google.com/webstore/detail/cors-toggle/omcncfnpmcabckcddookmnajignpffnh?hl=en">CORS Toggle</a>. You may also decide to skip the plugin and start Chrome with CORS disabled:</p>
+
+<pre><code class="language-bash">chrome --disable-web-security
+</code></pre>
+
+<p>then, as usually, start remote debugging from your app, and open: <code>http://localhost:8081/debugger-ui</code> on your computer.</p>
+
+<p>That&rsquo;s it. Please, make sure to never rely completely on the network infrastructure of the Chrome debugger. Many networking problems may be specific to your device/simulator, and will not be caught by the debugger.</p>
+
+<h2 id="ok-now-the-longer-explanation">OK, now the longer explanation</h2>
+
+<p>One of the big advantages of React Native is the ease of debugging your code. When running an app in development mode, one can debug it remotely, using the well familiar Chrome DevTools. Logging to the console and setting breakpoints in the code work just as if the app were running in a normal browser&rsquo;s window.</p>
+
+<p>It is, therefore, strange to many RN starters, why one of the core functionalities of the Chrome Inspector, namely the network call interception, is not available. Instead, if a network error occurs, all the JavaScript code gets access to, is an Error object that simply says &ldquo;Network Error&rdquo;.</p>
+
+<p>To fully explain why this is so is out of the scope of this post. There is a great Medium article that explains in detail how the &ldquo;magic&rdquo; behind the RN remote debugging works. I totally recommend you read, regardless of your experience with React and RN.</p>
+
+<p>Long story short, when debugging RN remotely, the JavaScript code actually gets executed in the browser, and not on the device. This allows you to interrupt the flow with breakpoints, or log the console output in the Chrome DevTools window. While the JS code gets executed in the browser, the native calls happen on the device itself. The browser and the device running the app keep a WebSocket connection open and synchronize the code execution on every step.</p>
+
+<p>All the native calls run on the device itself, and executing a network call makes no difference. As such, it is not an easy task to make network traces appear in the Inspector window. At least, not without overriding the default platform APIs (for each of the supported platforms) and communicate every state change with the browser. I am sure that the core dev team is working on a solution, and will deliver it in a future release.</p>
+
+<p>Until then, you can test network calls by replacing the default implementation of <code>XMLHttpRequest</code> and use the one provided by the browser. As you saw in the beginning, it turns out that this is surprisingly simple. Once you do it, override the browser&rsquo;s default CORS rules, and reload the app, you should start seeing network requests in the Chrome Inspector. As I already pointed out, though, the Chrome Inspector can be helpful inasmuch as the requests and responses are concerned. It won&rsquo;t help you prevent issues with the native network infrastructure of your emulator/device. To inspect those, you will rather have to use a proxy, such as <a href="https://www.charlesproxy.com/">Charles</a>, or jump into tracing the native log files.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What’s with the 50/72 rule?</title>
+            <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
+            <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
+            <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+They don&amp;rsquo;t tell much do they?</description>
+            <content type="html"><![CDATA[<p>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.</p>
+
+<p>They don&rsquo;t tell much do they? Six months down the road, you&rsquo;d be scratching your head, trying to remember what you were thinking exactly six months before, when you wrote that commit.</p>
+
+<p>On the other hand are the &ldquo;novels&rdquo;. Some programmers go into much detail of what they&rsquo;ve done, both in the summary, and in the description. This makes it difficult to read, and understand later on, what they did exactly.</p>
+
+<p>Being verbose is by no means a bad thing. In fact, programmers are encouraged to put lengthy details about their commits, but only in the description. The summary is what helps you and other programmers to skim through thousands of commits, so it must be both concise and insightful.</p>
+
+<p>In a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">2008 blog post</a>, <a href="https://twitter.com/tpope">tpope</a>, described a system for creating commit messages, which I started calling simply, the <em>&ldquo;50 / 72&rdquo;</em> rule. The rules of the game are simple:</p>
+
+<ol>
+<li>The first line of your commit message must be maximum 50 characters long. No more, and (ideally), no less.</li>
+<li>Leave a blank line</li>
+<li>Start writing your description. The description can be as verbose as it suits you. Each line in your description should though wrap at the 72nd mark.</li>
+</ol>
+
+<p>Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try <em>git shortlog</em>, instead of <em>git log</em>, you will see a long list of commit messages, consisting of the id of the commit, and the summary only. The reason for wrapping your description lines at the 72nd mark is that <em>git log</em> adds a padding of 4 blank spaces when displaying the commit message. To center the message perfectly, and make it read well on an 80-column terminal, you&rsquo;d want to leave space for 4 more blank spaces at right side. That&rsquo;s where 72 comes from.</p>
+
+<p>What about the 50? An analysis of the average length of commit messages in the linux kernel suggests that the ideal size of a git commit summary is around 50 characters in length:</p>
+
+<p><img src="/images/2015/february/0_Hm0dO0UnjFBprfV-.png" alt="" />Most commit messages average around 50 characters in length</p>
+
+<p>Most code editors display the current line and column number that the cursor is at. Many support automatic wrap-line settings. If you are using GitHub&rsquo;s desktop app (as I used to), it will also show you warnings when you are over the limit.</p>
+
+<p>Writing a great commit summary is like writing a great tweet, only shorter. Id suggest to try and write your thoughts at first, to see how long it gets. Then you&rsquo;s paraphrase it, and put the extra content (the details) in the summary. Try to use the 50-column mark as a guideline for your thoughts. Try to reach as close as possible to it, without going over. Remember, short commit messages do not help, too long don&rsquo;t either.</p>
+
+<p>How does your team compare to the linux kernel contributors? You can check yourselves, using the code below:</p>
+
+<p>You can use the data and plot it on a real histogram, using <a href="http://stackoverflow.com/a/5328669/1107412">matplotlib</a>. Many thanks to <a href="http://stackoverflow.com/users/209050/mgalgs">mgalgs</a> for posting the <a href="http://stackoverflow.com/a/11993051/1107412">code</a>, and the <a href="http://stackoverflow.com/a/11993051/1107412">histogram</a> originally on <a href="http://stackoverflow.com/a/11993051/1107412">StackOverflow</a>.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

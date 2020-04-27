@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Beer on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/beer/</link>
-    <description>Recent content in Beer on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 22 Mar 2019 14:01:47 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/beer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
-      <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
-      <description>Meanwhile in Munich&amp;hellip;</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Beer on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/beer/</link>
+        <description>Recent content in Beer on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 22 Mar 2019 14:01:47 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/beer/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</link>
+            <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/</guid>
+            <description>Meanwhile in Munich&amp;hellip;</description>
+            <content type="html"><![CDATA[<p>Meanwhile in Munich&hellip;</p>
+
+<p><img src="/images/2019/march/IMG_6811.jpg" alt="" /></p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

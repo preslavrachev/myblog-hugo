@@ -1,26 +1,105 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Struct on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/struct/</link>
-    <description>Recent content in Struct on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 27 Aug 2019 15:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/struct/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
-      <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
-      <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
-      <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
-struct { a bool b int32 c string d string } The size of the struct above is is different from the one down below
-struct { b int32 c string d string a bool } Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Struct on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/struct/</link>
+        <description>Recent content in Struct on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Tue, 27 Aug 2019 15:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/struct/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Reduce Struct Size by Laying out Attributes Accordingly</title>
+            <link>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</link>
+            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/27/reduce-struct-size-by-laying-out-attributes-accordingly/</guid>
+            <description>Many thanks to @themaour for sharing this tip on Twitter TIL that in Go, struct size depends on how underlying types were defined.
+struct { a bool b int32 c string d string }  The size of the struct above is is different from the one down below
+struct { b int32 c string d string a bool }  Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment.</description>
+            <content type="html"><![CDATA[
+
+<h5 id="many-thanks-to-themaour-https-twitter-com-themaour-status-1165555578019692544-for-sharing-this-tip-on-twitter">Many thanks to <a href="https://twitter.com/themaour/status/1165555578019692544">@themaour</a> for sharing this tip on Twitter</h5>
+
+<p>TIL that in Go, struct size depends on how underlying types were defined.</p>
+
+<pre><code class="language-go">struct {
+	a bool
+    b int32
+    c string
+    d string
+}
+</code></pre>
+
+<p>The size of the struct above is is different from the one down below</p>
+
+<pre><code class="language-go">struct {
+	b int32
+    c string
+    d string
+    a bool
+}
+</code></pre>
+
+<p>Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment. The remaining space (a.k.a, <em>padding</em>) remains unused, and every instance of your struct might have some portion of unused padding when initialised.</p>
+
+<p>There is a <a href="http://golang-sizeof.tips">great online resource</a> where you can see this by providing a sample struct definition. Let&rsquo;s see what it shows for struct #1:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-27 18-07-29.png" alt="" /></p>
+
+<p>and struct #2:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-27 18-03-26.png" alt="" /></p>
+
+<p>Think of this the next time you get to process a slice of 1 mln instances of a given struct.</p>
+
+<h1 id="resources">Resources</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://www.catb.org/esr/structure-packing/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Lost Art of Structure Packing</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      This page is about a technique for reducing the memory footprint of
+programs in compiled languages with C-like structures - manually
+repacking these declarations for reduced size. To read it, you will
+require basic knowledge of the C programming language.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://www.catb.org/esr/structure-packing/">http://www.catb.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

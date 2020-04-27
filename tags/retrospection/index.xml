@@ -1,26 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Retrospection on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/retrospection/</link>
-    <description>Recent content in Retrospection on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 31 Dec 2018 16:51:09 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/retrospection/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>What I learned in 2018</title>
-      <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
-      <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
-      <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
+    <channel>
+        <title>Retrospection on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/retrospection/</link>
+        <description>Recent content in Retrospection on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 31 Dec 2018 16:51:09 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/retrospection/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>What I learned in 2018</title>
+            <link>https://preslav.me/2018/12/31/what-i-learned-in-2018/</link>
+            <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/31/what-i-learned-in-2018/</guid>
+            <description>It&amp;rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
 In 2018, I:
  Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>It&rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:</p>
+
+<p>In 2018, I:</p>
+
+<ul>
+<li>Got engaged</li>
+<li>Changed my job</li>
+<li>Started new new side projects</li>
+<li>Attended 4 conferences and countless meetups</li>
+<li>Had my own chance to present in front of an audience (twice)</li>
+<li>Visited 5 countries and met many new people</li>
+<li>Read 15 books</li>
+<li>Wrote nearly 30 blog posts</li>
+<li>Ran 626 km, and finished 4 half-marathons</li>
+<li>Made between 5,500 and 6,000 push-ups</li>
+</ul>
+
+<p>Wow, quite a year, heh?In reality, these numbers would mean nothing, if it weren&rsquo;t for the things I learned in between. I am one of the people who believe that goals are not destinations, but guiding posts. To me it&rsquo;s the journey that matters. For instance, the fact that I finished 15 books this year wouldn&rsquo;t matter, if I cannot remember even a single quote to keep in my mind for the rest of my life. Same with running. It&rsquo;s not the number of half marathons I ran throughout this year, but about the transformation my body and mind underwent every time - anxiety, exhaustion, acceptance, relief, exhilaration.</p>
+
+<p>So let&rsquo;s see what I learned this year:</p>
+
+<p><strong>I learned to embrace the unknown</strong>, get out of my comfort zone, and jump into unknown waters. I was reluctant to leave the safety of my old job, but in retrospect, it seems like I have really missed a gulp of fresh air.</p>
+
+<p><strong>I learned that patience and persistence matter</strong>. When you look at the numbers above, every single one of them alone, would seem insurmountable, if you push yourself to achieve it once. But I did everything stepwise, one tiny bit at a time, day after day. Doing things this way is harder, because it requires a lot of motivation, but it certainly has a more long-lasting effect at the end.</p>
+
+<p><strong>learned that people are different</strong>, and what worked for me, may not work for others. In fact, it will <strong>most probably not work for others</strong>. You cannot take people by the hand and show them the right way, because you don&rsquo;t know the right way for others. What you can and definitely should do, is encourage them to find it for themselves.</p>
+
+<p>As a direct consequence of the above, <strong>I learned to listen more</strong>. Normally, I am the type of person who won&rsquo;t start a conversation, but once I feel comfortable enough, I won&rsquo;t stop talking. Sometimes too much. Talking is good, but being a good listener is a way more appreciated.</p>
+
+<p><strong>I learned that being having an introverted personality is unlike what society tells us, but a hidden gem in disguise</strong>. Previously, I thought that it is some kind of a disadvantage that I need to cure myself from. So, I thought that becoming a sports person and an active community persona, would help me &ldquo;get cured&rdquo;. In fact, I had to try everything to come to the realization that this is not something people need to cure themselves from, but a unique gift that they should embrace. The ability to observe the surrounding environment with the focus of an introvert, or be able to go deep in the flow when solving a problem or mastering a skill, is something you shouldn&rsquo;t be ashamed of, but actively go after. If I could do something for the community in 2019, it would be to meet more and more introverted people, and share my discoveries with them.</p>
+
+<p>Last but not least, <strong>I realized how much I really, really love writing</strong>.</p>
+
+<p>When I look back, it seems like 2018 was a great year indeed. Looking forward to an amazing 2019! My best wishes for a wonderful new year!</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,26 +1,77 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Crystal on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/crystal/</link>
-    <description>Recent content in Crystal on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/crystal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>A Crystal in Go’s World</title>
-      <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
-      <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
-      <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+    <channel>
+        <title>Crystal on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/crystal/</link>
+        <description>Recent content in Crystal on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 26 Jan 2020 08:35:04 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/crystal/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>A Crystal in Go’s World</title>
+            <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
+            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
+            <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
 Meet Crystal!
 Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.</p>
+
+<p>Meet <a href="https://crystal-lang.org/">Crystal</a>!</p>
+
+
+    <img src="/images/2020/image-crystal.png"  alt="Crystal home page"  class="center"  style="border-radius: 8px;"  />
+
+
+
+<p>Crystal is all of the above, plus it has types, <a href="https://crystal-lang.org/reference/overview/">outstanding documentation</a>, and a strong community, delivering a steady stream of new libraries (a.k.a “shards”). Don’t get fooled by the current version number (0.32.1). Crystal has been around for quite a few years (since 2012) and has a mature set of language features and an ecosystem of good libraries.</p>
+
+<h2 id="where-does-the-speed-come-from">Where does the speed come from?</h2>
+
+<p>Crystal produces fast and lightweight native applications using the LLVM infrastructure. When I say fast, I mean, <a href="https://github.com/kostya/benchmarks">really fast</a>. Take the fastest Go code you can find and chances are, the same code in Crystal will perform at least on par with it, and often quite a bit faster. Measuring Crystal’s performance against that of Ruby makes no sense.</p>
+
+<p>There are no runtime frameworks or virtual machines necessary. One can just grab the compiled binary and deploy it. When compared with deploying and running a Ruby application, this feels like a whole different league.</p>
+
+<p>Note that there are some caveats, which I am going to discuss in a future blog post. For now, let’s just say that building and distribution are equally as easy, as those in Rust. As of yet, nothing can beat the Go compiler speed-wise, but my experience with the Crystal tooling has been more than pleasant so far.</p>
+
+<h2 id="csp-style-concurrency">CSP-style concurrency</h2>
+
+<p>One of the things that make Go so interesting is its concurrency model. The idea about goroutines that communicate via channels is based on an approach dating back to the late 1970s, called <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating Sequential Processes (CSP)</a>. Crystal uses an analogous approach. Programs run in what is known as <a href="https://crystal-lang.org/reference/guides/concurrency.html">“fibers”</a>. The main fiber can spawn any number of concurrent fibers that send and receive data via blocking channels.</p>
+
+<pre><code class="language-crystal">channel = Channel(Nil).new 
+spawn do    
+	puts &quot;Before send&quot;    
+	channel.send(nil)    
+	puts &quot;After send&quot; 
+end  
+
+puts &quot;Before receive&quot; 
+channel.receive 
+puts &quot;After receive&quot;
+</code></pre>
+
+<h2 id="why-re-invent-ruby-in-2020">Why re-invent Ruby in 2020?</h2>
+
+<p>The creators of Crystal obviously didn’t intend on changing the world of programming by creating a new language. They just <a href="https://web.archive.org/web/20181126095302/https://manas.tech/blog/2016/04/01/the-story-behind-crystal.html">loved Ruby</a> and felt it sad to leave it for a more performant and type-safe alternative. Due to a series of trade-offs at the implementation level, Ruby is still slower and more memory-hungry than its competitors. Despite perfectly serving the needs of a large segment of Web users through Rails, its performance puts it at the back of the pack, when it comes to other use cases.</p>
+
+<p>The point is fair and valid. As a language, Ruby has a concise and elegant syntax for writing. Once beyond the basic idioms, writing Ruby evokes pure joy. Crystal brings that joy to an even higher level through type-safety, native speed, and extremely simple concurrency model.</p>
+
+<p>Don’t get me wrong, I like Go too, precisely because of its verbosity and lack of idioms. When working with others on a big project, I’d prefer more ceremony and hoops, in the name of transparency and equal code comprehension. Different languages exist to serve different purposes and be used by different groups of people. The trick is knowing when to use and when the other.</p>
+
+<h2 id="so-is-crystal-worth-having-a-look">So, is Crystal worth having a look?</h2>
+
+<p>Absolutely! If only to know that it exists and keep an eye on it, I’d go check it out and write a few applications with it. Whether Crystal will take off in the future is a bit more difficult to say, however. As mentioned, the 99% resemblance to Ruby is nice, and so is the blazing-fast performance. Yet, I am missing the Crystal community’s drive towards more prominence. There has been a long-awaited move towards a 1.0 release, which is a crucial milestone and would surely bring in many newcomers. To my understanding, the language and its tooling are stable enough for a 1.0 release.</p>
+
+<p>I understand that Crystal does not have the backing of either Google or Mozilla. Neither does it have multi-billion-dollar use-cases to put on its home page. I understand that fighting for the same space with Go, C/C++, and Rust is an unfair battle. Yet, I also believe that we’re long past the days when choosing one technology over another was a zero-sum game. All it needs is a little push.</p>
+
+<p>I am hoping for the best!</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

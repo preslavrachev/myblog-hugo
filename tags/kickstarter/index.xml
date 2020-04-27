@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Kickstarter on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/kickstarter/</link>
-    <description>Recent content in Kickstarter on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 28 Sep 2019 11:20:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/kickstarter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/280920191021/</link>
-      <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/280920191021/</guid>
-      <description>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Kickstarter on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/kickstarter/</link>
+        <description>Recent content in Kickstarter on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 28 Sep 2019 11:20:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/kickstarter/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/280920191021/</link>
+            <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/280920191021/</guid>
+            <description>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support. The company is taking its workers and users for granted. If they get away with it, other companies will feel even more empowered to crush their own organizing efforts. It is critically important that Kickstarter be loudly opposed.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://images.currentaffairs.org/2019/09/Screen-Shot-2019-09-27-at-11.58.52-PM-1024x646.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.currentaffairs.org/2019/09/kickstarter-to-workers-and-project-creators-drop-dead">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Kickstarter To Workers and Project Creators: Drop Dead | Current Affairs</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      &lt;p&gt;The company doubles down on its anti-union stance and says it plans to fight its workers to the bitter end… &lt;/p&gt;</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.currentaffairs.org/2019/09/kickstarter-to-workers-and-project-creators-drop-dead">https://www.currentaffairs.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

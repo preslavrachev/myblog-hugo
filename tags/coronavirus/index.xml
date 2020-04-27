@@ -1,55 +1,307 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Coronavirus on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/coronavirus/</link>
-    <description>Recent content in Coronavirus on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 10:38:05 +0200</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/coronavirus/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[Quote]: The President Is Trapped</title>
-      <link>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</link>
-      <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-      
-      <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
-      <description>Here is a quote from:
+    <channel>
+        <title>Coronavirus on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/coronavirus/</link>
+        <description>Recent content in Coronavirus on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 30 Mar 2020 10:38:05 +0200</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/coronavirus/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[Quote]: The President Is Trapped</title>
+            <link>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
+            <description>Here is a quote from:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with NoEmbed     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
-    </item>
-    
-    <item>
-      <title>This Week in Social Distancing</title>
-      <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
-      <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
-      
-      <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
-      <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
+            <content type="html"><![CDATA[<p>Here is a quote from:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.theatlantic.com/thumbor/Q-hLXmRtjhrQKlT1zeTN6pszmKc=/18x192:3831x2178/960x500/media/img/mt/2020/03/GettyImages_1189517812_bw/original.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The President Is Trapped</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">https://www.theatlantic.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem. He will try to use this crisis to pit one party against the other—but the virus will kill both Republicans and Democrats. He will try to create an alternate story to distract people from an inconvenient truth—but in this case, the public is too afraid, the story is too big, and the carnage will be too great to be distracted from it.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>This Week in Social Distancing</title>
+            <link>https://preslav.me/2020/03/29/this-week-in-social-distancing/</link>
+            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/29/this-week-in-social-distancing/</guid>
+            <description>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
 Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying.</description>
-    </item>
-    
-    <item>
-      <title>Stay the F*** Home, Germany!</title>
-      <link>https://preslav.me/2020/03/20/stay-the-f-home-germany/</link>
-      <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/20/stay-the-f-home-germany/</guid>
-      <description>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.
+            <content type="html"><![CDATA[
+
+<p>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.</p>
+
+<p>Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying. Many of them among the classes of society, which would normally be spared the inconvenience of feeling the pain and misery of the masses. The Coronavirus is an equaliser. It spares no age, money, nor class of society.</p>
+
+<p>For everyone else, things are moving along, albeit slowly, and under the dark forecast of an impeding economic depression. People in my circles have been fighting to keep their jobs for the first time in more than a decade. Many of them, up until a month ago still drank the cool-aid called having an impact on the world. The sincere belief that they actually help <em>make the world a better place</em>. That everything can be solved with technology. That there&rsquo;s more capital in the world than ever before. Until, the ship started sinking.</p>
+
+<p>What surprised me is how many businesses went belly up in just a couple of months. I perfectly understand that the rules of the game have been tweaked to favour investing and chasing growth. But honestly, two months of salaries and rent and that&rsquo;s it? It&rsquo;s called high risk - high reward, I know. Yet, it still cracks me up when I think about it.</p>
+
+<h2 id="what-doesn-t-kill-me-makes-me-stronger">What doesn&rsquo;t kill me, makes me stronger</h2>
+
+<p>I like to believe in that maxim. If we survive this crisis, we will be stronger than ever. Actually, for some people, this situation is the perfect opportunity to start something new, hopefully having learned some mistakes from the past.</p>
+
+<p>I, in particular, started using some of the time to go back to my personal projects. In only a couple of weeks, I have essentially managed to re-write a substantial part of <a href="https://mixtape.preslav.me/">Mixtape</a>&rsquo;s original code in Elixir. On top of that, there are now many new features that make the experience complete, albeit, still quite ugly. My motivation is higher than ever, but I am trying to just make things right, without overdoing them, or focusing on the useless things, such as growth.</p>
+
+<p>Will <a href="https://mixtape.preslav.me/">Mixtape</a> become the YouTube of podcasting? Probably not, and I don&rsquo;t really care. It makes me happy, it serves my needs, and if it serves those of others, even better. I&rsquo;d much rather focus on making something that a small niche of customers would use and gladly support its development.</p>
+
+<p>If it doesn&rsquo;t, so be it. Besides the time spent working on Mixtape, (which I consider valuable learning) keeping the app alive costs me nothing. The actual infrastructure costs at the moment sum up to around $7/m. Yes, you heard it right. A podcasting search engine, serving close to 3 million podcast episodes for just $7/m. And, I am not talking about some buzz-worthy cloud crap, but a tiny old-school VM that hosts Mixtape among a couple of other experiments. You can&rsquo;t beat that! <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<p>Enough boasting. This is not the idea of the post, but to hopefully reach out to others out there, lost in their own thoughts. Yes, it&rsquo;s a tough time, but usually being down at the bottom gives you a chance to change your life. Pick up your old ideas and dreams, and start slowly, step by step.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">I am planning a separate post that focuses entirely on the recent development around Mixtape.
+ <a class="footnote-return" href="#fnref:1">^</a></li>
+</ol>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Stay the F*** Home, Germany!</title>
+            <link>https://preslav.me/2020/03/20/stay-the-f-home-germany/</link>
+            <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/20/stay-the-f-home-germany/</guid>
+            <description>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.
 Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:
  they all live in complete denial of the situation they already gave up they fully trust that no matter what happens, the German healthcare system would fix them in no time.</description>
-    </item>
-    
-    <item>
-      <title>A Step Outside the Comfort Zone</title>
-      <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
-      <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
-      <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p><strong>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.</strong></p>
+
+<hr />
+
+<p>Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:</p>
+
+<ul>
+<li>they all live in complete denial of the situation</li>
+<li>they already gave up</li>
+<li>they fully trust that no matter what happens, the German healthcare system would fix them in no time.</li>
+<li>it’s sunny outside, so who cares</li>
+</ul>
+
+<p>I’ve said it before, and I will say it once again. Social distancing does not mean complete isolation. I am totally for taking walks and individually doing sports. But come on, having group picnics in the middle of all this, is <em>merely irresponsible</em>.</p>
+
+<p>What’s being widely played out in the media, is how dire the situation is in Italy. In the meantime, despite the increasingly growing worries of the Germany government, some part of the population seems to be unaffected. The popular belief is that the low death rate in Germany (0.3% as of 20.03) vs. that of Italy (8.3% as of 20.03.) is a signal that the virus is either not as deadly as previously predicted, or that Germany is well-equipped to handle it. While any of these statements may be true, sources suggest that there may be a difference in counting the casualties between countries, as well as differences in test sample interpretation, etc. Therefore, I’d still stick to the global death rate of 4.1% (as of 20.03).</p>
+
+<p>What one is clearly underestimating, is the number of German people who will potentially get infected in the coming days.</p>
+
+<p>One does not need a Ph.D. in Data Science or some fancy AI tool to set up a simple prediction scenario of how the infection would roll out in the coming days. I used data from <a href="https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/">Berliner Morgenpost</a> and only Google Sheets for that. As we all know, viruses spread in an exponential fashion, by one person potentially infecting several other individuals. Based on the data, I calculated and plotted the daily percentage multiplier for Germany, Italy, and Europe:</p>
+
+<figure>
+    <img src="/images/2020/03/infection-acceleration.png"
+         alt="Infection acceleration: Germany, Italy and Europe"/> <figcaption>
+            <h4>Infection acceleration: Germany, Italy and Europe</h4><p>Infection acceleration: Germany, Italy and Europe</p>
+        </figcaption>
+</figure>
+
+
+<p>Germany has the highest for now (~1.35), meaning, that on a single day, the total number of infected people becomes 1.35 times larger than the day before. Of course, assuming that:</p>
+
+<ul>
+<li>everyone ultimately gets infected, develops immunity, and breaks the cycle</li>
+<li>measures are being taken to slow its spread</li>
+<li>Doomsday comes true and everyone dies</li>
+</ul>
+
+<p>this multiplier will go down. And, looking at the data, it really seems to go down! Hurray! Let’s go out and have a beer!</p>
+
+<p>Well, hold on a minute. The fact that seems to be slowing down does not mean that it won’t affect thousands or millions more on its way. Let’s try to do a rough prediction.:</p>
+
+<p>This are the numbers that every source on the planet presents us every day:</p>
+
+<figure>
+    <img src="/images/2020/03/infected-people.png"
+         alt="infected people: Germany, Italy and Europe "/> <figcaption>
+            <h4>Number of infected people: Germany, Italy and Europe</h4><p><h1 id="infected-people-germany-italy-and-europe">infected people: Germany, Italy and Europe</h1>
+</p>
+        </figcaption>
+</figure>
+
+
+<p>Germany being well below Italy, and both being well below the total for Europe. By all means, the situation in Italy seems far worse, and no one can question that. What no one can see however, is the dramatic turn of events, which may cause the situation in Italy to improve rapidly, and Germany to start nose-diving.</p>
+
+<p>Let’s look at the spread acceleration from the first chart again. Using a simple trick known to statisticians and stock traders, known as <a href="https://www.daytrading.com/moving-linear-regression">Moving Linear Regression</a> we can plot a naive prediction model for the change of this acceleration by the end of April:</p>
+
+<figure>
+    <img src="/images/2020/03/mlr-acceleration-prediction.png"
+         alt="MLR acceleration prediction: Germany, Italy and Europe"/> <figcaption>
+            <h4>MLR acceleration prediction: Germany, Italy and Europe</h4><p>MLR acceleration prediction: Germany, Italy and Europe</p>
+        </figcaption>
+</figure>
+
+
+<p>Using my newly generated acceleration values, let me try and plot the total number of people that this model predicts would get infected by the end of April:</p>
+
+<figure>
+    <img src="/images/2020/03/infection-prediction.png"
+         alt="Predicted # of infectied people: Germany, Italy and Europe"/> <figcaption>
+            <h4>Predicted number of infectied people: Germany, Italy and Europe</h4><p>Predicted # of infectied people: Germany, Italy and Europe</p>
+        </figcaption>
+</figure>
+
+
+<p>And this is where the story turns upside down. The proactive measures taken by the Italian government seem to ultimately take an effect and flatten the curve significantly. Germany, on the other hand takes a leap into the hundreds of thousands, ultimately peaking by the end of April.</p>
+
+<p>This is a dire scenario, and one that I am crossing fingers, my naive prediction model won’t even get close to. It assumes that no further measures are taken, and the social responsibility of the population remains at the same low level. At that level of reach, even with the lower death rate in Germany would result in thousands of deaths (950.000 * 0.003 results in 2850 people dead by the end of April alone).</p>
+
+<p>Even if none of us or our families get affected by the Coronavirus (which I sincerely hope for), we bear a social responsibility for the people we encounter. As passive transmitters, we might be causing the death of somebody, Of many. We can prevent many of those deaths from happening by just staying home.</p>
+
+<hr />
+
+<h2 id="read-more">Read More</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*4kOJv8hmd5VFPcBL1mywsw.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Coronavirus: Why You Must Act Now</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Politicians and Business Leaders: What Should You Do and When?</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://staythefuckhome.com/images/meta/og.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://staythefuckhome.com/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        A Movement to Stop the COVID-19 Pandemic | #StayTheFuckHome</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Our governments can&#39;t do it alone, we have to take action now! Do your part and stay the fuck home!</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://staythefuckhome.com/">https://staythefuckhome.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>A Step Outside the Comfort Zone</title>
+            <link>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</link>
+            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/</guid>
+            <description>Yes, the current situation sucks. Big time. It&amp;rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&amp;rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</description>
+            <content type="html"><![CDATA[<p>Yes, the current situation sucks. Big time. It&rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come. Also, the ability to adapt to a constantly changing environment.</p>
+
+<p>I keep seeing people I follow, express disappointment with the current situation in social media. Not so much because of fear. More, because the measures to curb the outbreak, push people to step away from the comfort zone. As individuals, we have grown to protect what&rsquo;s perceive as ours so much, that the mere act of doing something for the common good can cause a backlash.</p>
+
+<p>Let me tell you a secret. This isn&rsquo;t the first, and won&rsquo;t be the last time that society faces a test of this kind. In markets, such phenomena are known as &ldquo;corrections&rdquo;. A very long upward run ends up with a shard downward move, only to start going up again. So is life. It has ups and downs. The general rule for living life is this: enjoy it while you&rsquo;re up, but keep in mind that there will be a day when you&rsquo;ll be down again. Also, don&rsquo;t give up hope when you&rsquo;re down. You&rsquo;ll be up again soon enough.</p>
+
+<p>The best we can do now (besides personal hygiene) is to swallow any pride and <a href="https://www.washingtonpost.com/graphics/2020/world/corona-simulator/">distance one another from social gatherings</a> for some time. Whoever can study or work remotely, <strong>must absolutely do so</strong>. This isn&rsquo;t a time to show heroism at school, or at work, because frankly, none of this actually matters. What matters is that the lives of others are above petty profits. Plus, social distancing is not about locking oneself down completely. Regular walking, and doing sports in the open are more than welcome. I personally keep my distance running routing. Only, not in places with lots of other people.</p>
+
+<p>Moments like now are good for a reassessment of priorities, and for questioning the Status Quo. They confront the Old with the New, and put to the test much of what society takes for granted. As a technologist, I can&rsquo;t help but ask myself a few questions. For instance, whether information technology really stands up to the promise of making our lives better. Whether solutions &ldquo;powered by AI&rdquo; can help us solve the difficult problems in life, or just drive up product sales. Whether &ldquo;solutions&rdquo; is what they really are, or simply, an individual&rsquo;s pipe dream. Whether &ldquo;remote work&rdquo; was ever going to be the future, or just an employee perk for a privileged class of the workforce. Whether media omnipresence does us any good, or helps dig the trap deeper.  The list goes on and on.</p>
+
+<p>Not many have found a positive answer by now.</p>
+
+<p>Keep being strong and healthy!</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sicily has figured out this whole self-isolation thing.<a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/CoronavirusPandemic?src=hash&amp;ref_src=twsrc%5Etfw">#CoronavirusPandemic</a> <a href="https://t.co/93whPVtQcR">pic.twitter.com/93whPVtQcR</a></p>&mdash; John Nichols (@NicholsUprising) <a href="https://twitter.com/NicholsUprising/status/1238545438476730369?ref_src=twsrc%5Etfw">March 13, 2020</a></blockquote>
+
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

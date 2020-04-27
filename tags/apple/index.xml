@@ -1,84 +1,281 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Apple on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/apple/</link>
-    <description>Recent content in Apple on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/apple/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
-      <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
-      <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
-      <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
-    </item>
-    
-    <item>
-      <title>How to Request an App Refund on the Apple App Store</title>
-      <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
-      <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
-      <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way.</description>
-    </item>
-    
-    <item>
-      <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
-      <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
-      <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
-      <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
+    <channel>
+        <title>Apple on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/apple/</link>
+        <description>Recent content in Apple on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
+            <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
+            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
+            <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
+            <content type="html"><![CDATA[<p>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&rsquo;s Apple we&rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid. Who knows.</p>
+
+<p>via <a href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021/">The Case for Apple to Postpone macOS 10.16 into 2021</a></p>
+
+<blockquote>
+<p>We’re all struggling to stay safe and secure in macOS 10.15 Catalina or even 10.14 Mojave. And since new apps are being pressed into service for working at home, the last thing we need is a new version of macOS with its traditional teething pains—especially in post WWDC betas. We don’t need any rugs pulled out from under our collaboration apps. Let’s focus on stability and security until the pandemic has completely dissipated.</p>
+
+<p>[…]</p>
+
+<p>Our developer heroes have been complaining for years that they just can’t keep up with the fast-evolving structural and security changes in macOS every 12 months. A six month delay in 10.16 would provide critical time to iron out the kinks in their apps due to changes in Catalina. Not to mention relaxing stress on the developers due to concern for their family’s health.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.macobserver.com/wp-content/uploads/2019/03/Apple-iMac-2019-1200w.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Case for Apple to Postpone macOS 10.16 into 2021 - The Mac Observer</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Apple previews the next version of macOS at WWDC, then releases it late September. Now there&#39;s a case to be made to postpone macOS into 2021.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">https://www.macobserver.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How to Request an App Refund on the Apple App Store</title>
+            <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
+            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
+            <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way.</description>
+            <content type="html"><![CDATA[<p>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way. In the case of the App Store, I don’t think you can really do it from the app itself. You have to go to a special site instead:</p>
+
+<p><a href="reportaproblem.apple.com">https://reportaproblem.apple.com</a></p>
+
+<p>After signing in, you will see all the apps you have downloaded for free or purchased. Find the one you want to refund (assuming, you are within 14 days of the purchase). Click on “Report a Problem” (I know, you are actually exercising your rights, but just keep playing the game). Be careful to select the right option from the menu:</p>
+
+<figure>
+    <img src="/images/2019/12/appstore1.png"
+         alt="The right option is down below"/> <figcaption>
+            <p>The right option is down below</p>
+        </figcaption>
+</figure>
+
+
+<p>See how far below the right option is? Anyway, once you choose it, there are no further obstructions. Just hit “Cancel Purchase” and you are good to go!</p>
+
+<p><img src="/images/2019/12/appstore2.png" alt="" /></p>
+
+<p><img src="/images/2019/12/appstore3.png" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Q/A: Why Does an iPhone Need Less Memory Than an Android Phone?</title>
+            <link>https://preslav.me/2019/10/31/iphone-less-memory-android/</link>
+            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/31/iphone-less-memory-android/</guid>
+            <description>Note: Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻
 It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called Automatic Reference Counting (ARC). Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</description>
-    </item>
-    
-    <item>
-      <title>A Few Broken Windows</title>
-      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
-      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
-      <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907241129/</link>
-      <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907241129/</guid>
-      <description>Apple is becoming a macOS gatekeeper too.
+            <content type="html"><![CDATA[<p><strong>Note:</strong> <em>Unlike my usual posts, this is a very basic, non-technical explanation. A friend asked me this question, and I thought I might share the answer here. You can use it on your next cocktail party 🍻</em></p>
+
+<hr />
+
+<p>It mainly boils down to how memory garbage gets collected on each platform. iOS applications rely on an approach called <a href="https://en.wikipedia.org/wiki/Automatic_Reference_Counting">Automatic Reference Counting (ARC)</a>. Every piece of memory that gets assigned some value gets tracked and released, as soon as the number of its accessors reaches zero.</p>
+
+<p>Android on the other hand, uses a mark-and-sweep garbage collector, known from the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine?wprov=sfti1">Java virtual machine (JVM)</a>. It won’t clean up memory right away, but will occasionally free big chunks of it in one big pass (also known as stop-the-world). This approach assumes that there is a lot of memory available on the device so that these stop-the-world cleanups occur less frequently.</p>
+
+<p>Both approaches have their advantages and disadvantages.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>A Few Broken Windows</title>
+            <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+            <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+            <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
+            <content type="html"><![CDATA[<p>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind. Yet, there are many tiny things that give a feeling of something unfinished. The worst thing is, those used to work in previous OS versions, and they do now too, but only sometimes:</p>
+
+<ul>
+<li>copying links and files between Apple devices occasionally won&rsquo;t happen</li>
+<li>the same for the new Share Sheet. Sometimes, I&rsquo;d keep tapping an app or an action several times and nothing would happen.</li>
+<li>when running the Apple Watch in Cinema Mode, tapping the screen might not wake it up. Sometimes, up to four or five taps were needed.</li>
+<li>Apple Pay occasionally won&rsquo;t open up on a double tap.</li>
+</ul>
+
+<p>If those were all things that did not work in general, I wouldn&rsquo;t t be worried. Those I am sure that Apple would have fixed by now. What worries me are those many tiny things that work most of the time, but often fail to do so. I know from experience with the the products that I have been working on that those are the issues that cause the most customer distrust, because of being treated as <em>working</em>.</p>
+
+<p>P.S. All of this reminds me of:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/Pentonvilleiso19.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Broken_windows_theory">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Broken windows theory - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Theory</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Broken_windows_theory">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907241129/</link>
+            <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907241129/</guid>
+            <description>Apple is becoming a macOS gatekeeper too.
  For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906081458/</link>
-      <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906081458/</guid>
-      <description> Q: Aesthetically, what do you think about the design of the new grater?
+            <content type="html"><![CDATA[<p>Apple is becoming a macOS gatekeeper too.</p>
+
+<blockquote>
+<p>For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</p>
+</blockquote>
+
+<p>via <a href="https://bitsplitting.org/2019/07/22/a-real-gatekeeper/">A Real Gatekeeper</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906081458/</link>
+            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906081458/</guid>
+            <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905240633/</link>
-      <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905240633/</guid>
-      <description>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&amp;rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&amp;rsquo;s a beast with an incredible performance:
+            <content type="html"><![CDATA[<blockquote>
+<p>Q: Aesthetically, what do you think about the design of the new grater?</p>
+
+<p>A: It has been optimized for softer cheeses 😂</p>
+</blockquote>
+
+<article class="center">
+    <iframe width="100%" height="100%" frameborder="0" src="https://overcast.fm/podcasts/episode_card/1261197307846866?t=699"></iframe>
+</article>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://overcast.fm/art?s=3fba7cd33ee1b897707efaf08b335c6425ec5907e491ca2eb07ecd32a51590dd&amp;w=840&amp;u=http%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F513abd71e4b0fe58c655c105%2Ft%2F52c45a37e4b0a77a5034aa84%2F1388599866232%2F1500w%2FArtwork.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://overcast.fm/&#43;R7DWGGoNI/11:39">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        329: Mac Pro Day — Accidental Tech Podcast — Overcast</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Our live show from WWDC 2019!</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905240633/</link>
+            <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905240633/</guid>
+            <description>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&amp;rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&amp;rsquo;s a beast with an incredible performance:
 
 Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>Apple <a href="https://www.apple.com/newsroom/2019/05/apple-introduces-first-8-core-macbook-pro-the-fastest-mac-notebook-ever/">introduced on Tuesday</a> a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&rsquo;s a beast with an incredible performance:</p>
+
+<p><a href="https://browser.geekbench.com/v4/cpu/13240025"><img src="https://cdn.macrumors.com/article-new/2019/05/macbookprobenchmark2019.jpg" alt="" /></a></p>
+
+<p>Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max. This is what came out:</p>
+
+<p><img src="/images/2019/05/2019-05-24 06.40.33.jpg" alt="" /></p>
+
+<p>7779,00 EUR?!? For a laptop? No f*** way! The price is ridiculous. Granted, much of the cost comes from the added SSD space. If you are happy to live with only 512 GB (I have 256 and feel perfectly fine), you should be able to get this beast in Germany for about &hellip; 4500 EUR.</p>
+
+<p>Is it worthy it? I am leaving it up t you to decide.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

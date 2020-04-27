@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Japan on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/japan/</link>
-    <description>Recent content in Japan on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 16 Aug 2019 21:13:21 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/japan/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201830111824/</link>
-      <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201830111824/</guid>
-      <description>Japanese websites don&amp;rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
+    <channel>
+        <title>Japan on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/japan/</link>
+        <description>Recent content in Japan on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 16 Aug 2019 21:13:21 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/japan/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201830111824/</link>
+            <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201830111824/</guid>
+            <description>Japanese websites don&amp;rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Why doesn’t Japan excel in software as they did in hardware?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<blockquote>
+<p>Japanese websites don&rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Why doesn’t Japan excel in software as they did in hardware?</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Ah… Finally. My time has come.Where to begin?In Japan software development is not held to the same standard as other engineering positions.Japan has always had a custom where every year, new university graduates in their thousands march through giant career fairs searching for a job. This is something I call the March of the Penguins - every one of them is adorned with a new black suit with a pristine white shirt.There the companies will take their resumes, interview them and perhaps extend an invitation to the next interview. None of these companies care about what you studied or what your passions are. They might perk up if they hear that you are from one of the top flight schools (Todai, Keio, Waseda, Tokyo Tech et al).The whole idea here is that everything you need to know about doing your job will be taught to you.Now I know people working at somewhat (emphasis on somewhat) internationalized companies like Mercari or Rakuten (the Japanese eBay and Amazon respectively) will tell you that this is not how tech companies hire.The sad truth is that they do. While there are enough foreigners who will stand up to being told to hire and train clueless graduates and mold them into proper software developers in more international companies - the huge majority of software development firms don&#39;t operate like that.Naturally, many Japanese software development firms have engineering teams of pitiful quality.Software development is looked at as any other skill that can be picked up in a few months to a year: accounting, secretarial work, project management, business analysis etc.They don&#39;t speak EnglishNaturally when you cannot read or speak English, the tools you use to develop software as well as the methods you use to develop them will be those that have managed to percolate downwards from English sources due to the magnanimity of people willing to volunteer their time to translate documentation and articles.At any given time, the cutting edge of software development in Japan is 6 months to 7 years behind the rest of the world.Software development is a reversed pyramid schemeMost technology consulting firms who are awarded contracts do not actually have developers - or have only a handful at hand. They will sub-contract their work to firms down the totem pole who will in turn sub-sub-contract their work to a lesser firm.The actual developer working on your product could be a sub-contract 5 contract levels removed from you.Good luck managing changes in business requirements.All this works because the people who award the contracts are as technologically illiterate as the ones proposing them. If there ever was an apropos time to use the word circlejerk this would be it.Consumers have extremely conservative tastesAnyone asking this question by now will have seen the absolutely antediluvian website designs that are still being employed by Japanese firms. (Behold the largest online travel agency site in Japan: www.jalan.net).We have actually done user testing and A/B testing with non-trivial sample sizes.Japanese websites don&#39;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.So you can either create modern designs that will bring in international attention, but alienate domestic users, or serve your existing customers as you have been doing for decades.That&#39;s an easy choice for many companies.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware">https://www.quora.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

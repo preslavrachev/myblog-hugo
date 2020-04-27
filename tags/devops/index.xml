@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Devops on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/devops/</link>
-    <description>Recent content in Devops on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 03 Feb 2017 05:29:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/devops/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Securing your ElasticSearch instances</title>
-      <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
-      <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
-      <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
+    <channel>
+        <title>Devops on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/devops/</link>
+        <description>Recent content in Devops on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 03 Feb 2017 05:29:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Securing your ElasticSearch instances</title>
+            <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
+            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
+            <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
 Unfortunately, one thing comes for another, and as we have recently seen, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<h3 id="securing-your-elasticsearch-instances-and-keeping-all-the-fun">Securing your ElasticSearch instances and keeping all the fun</h3>
+
+<p>Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&rsquo;re ready to start sending queries.</p>
+
+<p>Unfortunately, one thing comes for another, and as <a href="http://www.zdnet.com/article/elasticsearch-ransomware-attacks-now-number-in-the-thousands/">we have recently seen</a>, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday. In light of the <a href="http://www.zdnet.com/article/elasticsearch-ransomware-attacks-now-number-in-the-thousands/">recent attacks</a> on many open ElasticSearch instances across the world, I decided to share a quick tip on how to set remote ES instances, and keep them secure, by not compromising on its easy-to-play-with nature.</p>
+
+<h2 id="part-one-restricting-the-access-to-your-elasticsearch-instance">Part One: Restricting the access to your ElasticSearch instance</h2>
+
+<p>Let&rsquo;s start. The easiest way to setup an ElasticSearch instance is <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html">spinning up a container</a> off the default Docker image:</p>
+
+<pre><code class="language-bash">docker pull docker.elastic.co/elasticsearch/elasticsearch:&lt;VERSION&gt;
+
+docker run -p 9200:9200 -e &quot;http.host=0.0.0.0&quot; -e &quot;transport.host=127.0.0.1&quot; elasticsearch:&lt;VERSION&gt;
+</code></pre>
+
+<p>Running the above line, will create a portion mapping from 9200 within the container, to port 9200 on the host machine. One problem here, is that by doing so, it also exposes it to the outside world. This could easily be seen by running <code>iptables</code> against your host:</p>
+
+<pre><code class="language-bash">iptables -t nat -L -n
+
+# Outputs
+...
+target     prot opt source               destination
+DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:XXX.XXX.XXX.XXX:9200
+...
+
+</code></pre>
+
+<p>Indeed, Docker takes the heavy-lifting of configuring your <code>iptables</code> firewall, but often, this may result in a configuration which is too permissive. What one should do instead, is provide a specific IP to the port mapping configuration. Thankfully, Docker supports this, so all we have to do is modify the above command, using the <code>IP:host_port:container_port</code> mapping:</p>
+
+<pre><code class="language-bash">docker run -p 127.0.0.1:9200:9200 -e &quot;http.host=0.0.0.0&quot; -e &quot;transport.host=127.0.0.1&quot; elasticsearch:&lt;VERSION&gt;
+</code></pre>
+
+<p>Perfect! Putting the <code>127.0.0.1</code> will guarantee that the container will be available inside the host machine, but not accessible outside. A quick proof of this is looking at iptables again:</p>
+
+<pre><code class="language-bash">target     prot opt source               destination
+DNAT       tcp  --  0.0.0.0/0            127.0.0.1            tcp dpt:9200 to:XX.XXX.XXX.XXX:9200
+</code></pre>
+
+<p>if you point your browser to port 9200 you should not be able to see anything, but executing `curl 127.0.0.1:9200 from inside the host machine should work.</p>
+
+<h2 id="part-two-accessing-your-elasticsearch-instance-in-a-secure-manner">Part Two: Accessing your ElasticSearch instance in a secure manner</h2>
+
+<p>What we did was all fine, but how do access our ElasticSearch instance now, without losing the flexibility of quickly testing stuff on ES? Easy, using *NIX&rsquo;s Swiss Army Knife - <code>SSH</code>. SSH is a tool most programmers use on a daily basis, but fewer of them are aware that SSH allows for local and remote port forwarding. What this means is that SSH can create an encrypted tunnel between your machine and your server, such that you can accesses services running remotely, as if they were running on loclahost (local forwarding). There is also remote forwarding, which alternatively, allows you to securely access locally running services from your remote server.</p>
+
+<p>While we are going to use local port forwarding in our case, both are analogous to each other:</p>
+
+<pre><code class="language-bash">ssh -L/-R &lt;PORT_ON_THE_LOCAL/REMOTE_MACHINE&gt;:&lt;HOST_TO_MAP_TO&gt;:&lt;PORT_ON_THE_REMOTE/LOCAL_MACHINE&gt; &lt;USERNAME&gt;@&lt;REMOTE_IP&gt;
+</code></pre>
+
+<p>In our particular case, this looks like this:</p>
+
+<pre><code class="language-bash">ssh -L 9200:127.0.0.1:9200  user@XX.XXX.XXX.XXX
+</code></pre>
+
+<p>This basically says: map my local port <code>9200</code> to a call to <code>127.0.0.1:9200</code> on the <code>XX.XXX.XXX.XXX</code> server. When you point your browser to <code>http://localhost:9200</code>, you should now see the familiar ElasticSearch output, even though, as before <code>XX.XXX.XXX.XXX:9200</code> returns nothing. You can let the above command run in the background and run as a daemon.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>These two steps are all you need, in order to keep enjoying the freedom of playing with ElasticSearch or MongoDB, but doing it in a fully secure manner. This recipe can be applied to just about any service. And you really don&rsquo;t need Docker even. The fact that I mentioned it in part one, is because it makes setting up easy, and also saves you from having to tinker with <code>iptables</code> yourselves.</p>
+
+<p><strong>NOTE:</strong> Please, keep in mind that while running a SSH tunnel is just about perfect for testing and development purposes, it may not be an optimal solution for production. The reason for this is the latency caused by en/decrypting the data and shuffling it through the tunnel. It may become a bottleneck with many incoming requests running in parallel. I am yet to stress-test this setup and will share my observations in a further post. I will also share some more ideas on how to access an ElasticSearch instance securely, but also in a productive manner.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev ">
-<meta name="description" content="Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="">
+    <meta name="description" content="Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive." />
-<meta name="keywords" content="programming, golang, python, elixir, Programming, Git, Tips" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2020/03/01/use-the-git-history/" />
-
-
-    <title>
-        
-            Use the Git History to Identify Pain Points in Any Project :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="keywords" content="programming, golang, python, elixir, Programming, Git, Tips" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2020/03/01/use-the-git-history/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Use the Git History to Identify Pain Points in Any Project · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Use the Git History to Identify Pain Points in Any Project">
 <meta itemprop="description" content="Have you heard of Adam Tornhill&rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive.">
@@ -68,96 +46,97 @@ Much of the tooling we use to mitigate tech debt is preventive.">
 <meta name="twitter:description" content="Have you heard of Adam Tornhill&rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive."/>
 
-
-
-    <meta property="article:section" content="Programming" />
-
-
-
-    <meta property="article:published_time" content="2020-03-01 17:50:14 &#43;0100 &#43;0100" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+            
+        
+    
+    
+    <meta name="twitter:image" content="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502137388i/23627482._SR1200,630_.jpg">
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post  no-image ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/programming">Programming</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>4 minutes
+                <h1 class="post-full-title">Use the Git History to Identify Pain Points in Any Project</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        
+
+                        <section class="post-full-byline-meta">
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-53-03">1 March 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 4 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
+            <section class="post-full-content">
+                <div class="post-content">
+                    
 
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2020/03/01/use-the-git-history/">Use the Git History to Identify Pain Points in Any Project</a>
-        </h1>
-
-        
-
-        <div class="post-content">
-            
-
-<p>Have you heard of <a href="https://twitter.com/AdamTornhill" target="_blank">Adam Tornhill</a>&rsquo;s work? If not, I highly recommend that you set some time aside and check out <em><a href="https://amzn.to/32DM1G9" target="_blank">Your Code as a Crime Scene</a></em> or <em><a href="https://amzn.to/2vtbjdR" target="_blank">Software DEsign X-Rays</a></em>. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.</p>
+<p>Have you heard of <a href="https://twitter.com/AdamTornhill">Adam Tornhill</a>&rsquo;s work? If not, I highly recommend that you set some time aside and check out <em><a href="https://amzn.to/32DM1G9">Your Code as a Crime Scene</a></em> or <em><a href="https://amzn.to/2vtbjdR">Software DEsign X-Rays</a></em>. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.</p>
 
 <p>Much of the tooling we use to mitigate tech debt is preventive. Compilers, linters, static analysis tools, etc. All trying to prevent developers from checking in code, which might cause problems in the future. What all of these fail to catch, is that the code might be perfectly fine, and still not lead to a well functioning system.</p>
 
@@ -168,23 +147,32 @@ Much of the tooling we use to mitigate tech debt is preventive."/>
 <p>In his books, Tornhill discuses multiple evolutions on the same basic idea - files that change often (with some exceptions) tend to be the ones where most issues occur, hence the need to change. We rarely think of this simple fact when we work on the same project for a long period of time. Yet, when on-boarding a new team member, looking up an unknown piece of code, or simply, retrospecting over your code, such knowledge can be invaluable.</p>
 
 <p>The code is surprisingly simple:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git log --format<span style="color:#f92672">=</span>format: --name-only | egrep -v <span style="color:#e6db74">&#39;^$&#39;</span> | sort | uniq -c | sort -rg | head -10</code></pre></div>
+
+<pre><code class="language-bash">git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10
+</code></pre>
+
 <p>What I like to do is add such commands to my list of git aliases. Open up your <code>~/.gitconfig</code> file and add the following two lines to the <code>[Aliases]</code>section:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">code-changes <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git log --format=format: --name-only | egrep -v &#39;^</span>$<span style="color:#e6db74">&#39; | sort | uniq -c | sort -rg | head -10&#34;</span>
-cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git code-changes&#34;</span></code></pre></div>
+
+<pre><code class="language-bash">code-changes = &quot;!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10&quot;
+cc = &quot;!git code-changes&quot;
+</code></pre>
+
 <p>What this will do, is sort the files in your project by their number of changes, and take the first 10. Those are the ones where most changes have occurred over time, consequently there is a higher chance that those will require the most changes in the future.</p>
 
 <p>Let&rsquo;s do an example. I chose (completely by accident) to look at Gorm, one of the popular Go ORMs. These are the top 10 files that appear at the time of this writing:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ae81ff">272</span> main.go
-<span style="color:#ae81ff">246</span> scope.go
-<span style="color:#ae81ff">208</span> README.md
-<span style="color:#ae81ff">155</span> scope_private.go
-<span style="color:#ae81ff">117</span> main_test.go
-<span style="color:#ae81ff">116</span> gorm_test.go
-<span style="color:#ae81ff">105</span> model_struct.go
-<span style="color:#ae81ff">97</span> <span style="color:#66d9ef">do</span>.go
-<span style="color:#ae81ff">81</span> model.go
-<span style="color:#ae81ff">80</span> utils.go</code></pre></div>
+
+<pre><code class="language-bash">272 main.go
+246 scope.go
+208 README.md
+155 scope_private.go
+117 main_test.go
+116 gorm_test.go
+105 model_struct.go
+97 do.go
+81 model.go
+80 utils.go
+</code></pre>
+
 <p>Excluding the <code>README.md</code> file, one can clearly see some dominance of certain files over others. Many Go projects start out from a single <code>main.go</code> file, and with time, logic phases out to other files and packages. In our case, this is certainly not the case. Gorm &rsquo;s <code>main.go</code> is one big chunk of code, which can easily get split into two or more files, especially, since multiple files can share the same Go package.</p>
 
 <p>I&rsquo;ll go into more details on Adam Tornhil&rsquo;s work. There&rsquo;s even more interesting stuff, like identifying which files get changed together, etc. For now, take this simple trick and try to use it on the projects you&rsquo;re working on, or the libraries you frequently work with.</p>
@@ -268,119 +256,153 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
   </div>
 </div></p>
 
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/programming">Programming</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/programming">Programming</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/git">Git</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/tips">Tips</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>649 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2020-03-01 16:50 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">Elixir-Style Actors in Go</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2020/02/24/iex-is-dope/">
-                    <span class="button__text">iEx Is Dope!</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
+    
+        
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
+<article class="post-card post
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
 
-            
-        </div>
+ ">
 
         
+            <a class="post-card-image-link" href="https://preslav.me/2020/02/24/iex-is-dope/">
+                <img class="post-card-image"src="https://miro.medium.com/max/1200/1*DKLIm-vne8pO-G58yjaRwA.jpeg" alt="iEx Is Dope!"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/02/24/iex-is-dope/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">iEx Is Dope!</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>iEx (Elixir&rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &ldquo;let&rsquo;s play and see what happens&rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&rsquo;d try to keep one module called Demo, or Scratch, etc, where I&rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-72-02">24 February 2020</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg" alt="Elixir-Style Actors in Go"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Elixir-Style Actors in Go</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-53-03">7 March 2020</time>
+                            <span class="bull">&bull;</span> 8 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -391,14 +413,6 @@ cc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!git co
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

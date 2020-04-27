@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pandas on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/pandas/</link>
-    <description>Recent content in Pandas on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 16 Feb 2018 06:58:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
-      <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
-      <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
-      <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&amp;#39;TotalPayBenefits&amp;#39;] == sal[&amp;#39;TotalPayBenefits&amp;#39;].max()][&amp;#39;EmployeeName&amp;#39;] which is absolutely valid, but is it the only option?</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Pandas on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/pandas/</link>
+        <description>Recent content in Pandas on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 16 Feb 2018 06:58:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
+            <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
+            <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
+            <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?</description>
+            <content type="html"><![CDATA[<p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
+
+<pre><code class="language-python">sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']
+</code></pre>
+
+<p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
+
+<pre><code class="language-python">sal.loc[sal['TotalPayBenefits'].idxmax()]['EmployeeName']
+
+sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
+</code></pre>
+
+<p>I did a quick performance check, and indeed, idmax/argmax turn out twice as fast:</p>
+
+<pre><code class="language-bash"># the original filter condition
+815 µs ± 11.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# idmax()
+402 µs ± 7.61 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# argmax
+404 µs ± 8.81 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+</code></pre>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

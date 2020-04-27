@@ -1,26 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Flutter on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/flutter/</link>
-    <description>Recent content in Flutter on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
-      <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
-      <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
-      <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
-sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/ Afterwards, getting your app to run via flutter run should work as it used to before.
+    <channel>
+        <title>Flutter on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/flutter/</link>
+        <description>Recent content in Flutter on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 11 Nov 2019 07:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
+            <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+            <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
+sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/  Afterwards, getting your app to run via flutter run should work as it used to before.
 Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>You need to explicitly set the beta version of Xcode as your default one via the command line:</p>
+
+<pre><code class="language-bash">sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/
+</code></pre>
+
+<p>Afterwards, getting your app  to run via <code>flutter run</code> should work as it used to before.</p>
+
+<h2 id="related-resources">Related Resources</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        select - Managing Multiple Versions Of Xcode</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It&#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">http://iosdevelopertips.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

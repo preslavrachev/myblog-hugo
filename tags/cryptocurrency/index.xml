@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cryptocurrency on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/cryptocurrency/</link>
-    <description>Recent content in Cryptocurrency on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 09 May 2019 11:49:20 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201905091358/</link>
-      <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201905091358/</guid>
-      <description>Today, I woke up to this!
+    <channel>
+        <title>Cryptocurrency on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/cryptocurrency/</link>
+        <description>Recent content in Cryptocurrency on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 09 May 2019 11:49:20 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/cryptocurrency/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201905091358/</link>
+            <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201905091358/</guid>
+            <description>Today, I woke up to this!
 As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the sixth largest exchange hack in crypto history. More here:
 Hackers Stole $40 Million From Binance Cryptocurrency Exchange</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>Today, I woke up to <a href="https://trends.google.com/trends/explore?date=now%207-d&amp;q=cryptocurrency%20hack">this</a>!</p>
+
+<p><img src="/images/2019/05/Spark - rachev.preslav@gmail.com 2019-05-09 13-51-31.png" alt="" /></p>
+
+<p>As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the <a href="https://www.newsbtc.com/2019/05/09/binance-hack-marks-6th-largest-in-crypto-history-lost-bitcoin-recouped-in-47-days/">sixth largest exchange hack in crypto history</a>. More here:</p>
+
+<p><a href="https://www.wired.com/story/hack-binance-cryptocurrency-exchange/">Hackers Stole $40 Million From Binance Cryptocurrency Exchange</a></p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

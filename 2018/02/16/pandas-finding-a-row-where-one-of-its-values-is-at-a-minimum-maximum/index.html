@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev">
-<meta name="description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&amp;#39;TotalPayBenefits&amp;#39;] == sal[&amp;#39;TotalPayBenefits&amp;#39;].max()][&amp;#39;EmployeeName&amp;#39;] which is absolutely valid, but is it the only option?" />
-<meta name="keywords" content="programming, golang, python, elixir, Python, Pandas" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-
-    <title>
-        
-            Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="author" content="Preslav Rachev">
+    <meta name="description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?" />
+    <meta name="keywords" content="programming, golang, python, elixir, Python, Pandas" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum">
 <meta itemprop="description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;] which is absolutely valid, but is it the only option?">
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?">
 
 
 <meta itemprop="datePublished" content="2018-02-16T06:58:00&#43;00:00" />
@@ -66,222 +44,278 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
 
 <meta name="twitter:title" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum"/>
 <meta name="twitter:description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;] which is absolutely valid, but is it the only option?"/>
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?"/>
 
-
-
-    <meta property="article:section" content="Data Science" />
-
-
-
-    <meta property="article:published_time" content="2018-02-16 06:58:00 &#43;0000 UTC" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post  no-image ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/python">Python</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>2 minutes
+                <h1 class="post-full-title">Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>Preslav Rachev</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">Preslav Rachev</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2018-62-02">16 February 2018</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 2 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
 
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/">Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</a>
-        </h1>
+<pre><code class="language-python">sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']
+</code></pre>
 
-        
+<p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
 
-        <div class="post-content">
-            <p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries" target="_blank">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sal[sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>] <span style="color:#f92672">==</span> sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>]<span style="color:#f92672">.</span>max()][<span style="color:#e6db74">&#39;EmployeeName&#39;</span>]</code></pre></div>
-<p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html" target="_blank">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html" target="_blank">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sal<span style="color:#f92672">.</span>loc[sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>]<span style="color:#f92672">.</span>idxmax()][<span style="color:#e6db74">&#39;EmployeeName&#39;</span>]
+<pre><code class="language-python">sal.loc[sal['TotalPayBenefits'].idxmax()]['EmployeeName']
 
-sal<span style="color:#f92672">.</span>loc[sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>]<span style="color:#f92672">.</span>argmax()][<span style="color:#e6db74">&#39;EmployeeName&#39;</span>]</code></pre></div>
+sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
+</code></pre>
+
 <p>I did a quick performance check, and indeed, idmax/argmax turn out twice as fast:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># the original filter condition</span>
-<span style="color:#ae81ff">815</span> µs ± <span style="color:#ae81ff">11</span>.5 µs per loop <span style="color:#f92672">(</span>mean ± std. dev. of <span style="color:#ae81ff">7</span> runs, <span style="color:#ae81ff">1000</span> loops each<span style="color:#f92672">)</span>
 
-<span style="color:#75715e"># idmax()</span>
-<span style="color:#ae81ff">402</span> µs ± <span style="color:#ae81ff">7</span>.61 µs per loop <span style="color:#f92672">(</span>mean ± std. dev. of <span style="color:#ae81ff">7</span> runs, <span style="color:#ae81ff">1000</span> loops each<span style="color:#f92672">)</span>
+<pre><code class="language-bash"># the original filter condition
+815 µs ± 11.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 
-<span style="color:#75715e"># argmax</span>
-<span style="color:#ae81ff">404</span> µs ± <span style="color:#ae81ff">8</span>.81 µs per loop <span style="color:#f92672">(</span>mean ± std. dev. of <span style="color:#ae81ff">7</span> runs, <span style="color:#ae81ff">1000</span> loops each<span style="color:#f92672">)</span></code></pre></div>
+# idmax()
+402 µs ± 7.61 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# argmax
+404 µs ± 8.81 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+</code></pre>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/python">Python</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/python">Python</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/pandas">Pandas</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>222 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2018-02-16 06:58 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">How to Use Twitter More Efficiently with These Hidden Search Features</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2018/01/06/quote-plastic-synapses/">
-                    <span class="button__text">[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
+    
+        
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
+<article class="post-card post
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
 
-            
-        </div>
+ ">
 
         
+            <a class="post-card-image-link" href="https://preslav.me/2018/01/06/quote-plastic-synapses/">
+                <img class="post-card-image"src="https://cdn.arstechnica.net/wp-content/uploads/2017/03/synapse-760x380.jpg" alt="[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2018/01/06/quote-plastic-synapses/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Quote</div>
+                    
+
+                    <h2 class="post-card-title">[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>via Plastic synapses offer hardware alternative to neural networks | ArsTechnica
+ A synapse—the connection between two neurons—consumes at most 100 femtoJoules per event. Once you realize that the entire human body is about the equivalent of an 120W light bulb, you can see that the efficiency of the brain is just astounding. [&hellip;] This result has implications. If this research does turn out to be the way forward, neural networks will not operate faster than our own brains.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2018-11-01">6 January 2018</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">
+                <img class="post-card-image"src="https://www.labnol.org/files/twitter.png" alt="How to Use Twitter More Efficiently with These Hidden Search Features"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Social Media</div>
+                    
+
+                    <h2 class="post-card-title">How to Use Twitter More Efficiently with These Hidden Search Features</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2018-44-04">2 April 2018</time>
+                            <span class="bull">&bull;</span> 6 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2018</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -292,14 +326,6 @@ sal<span style="color:#f92672">.</span>loc[sal[<span style="color:#e6db74">&#39;
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

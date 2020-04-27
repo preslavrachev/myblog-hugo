@@ -1,35 +1,181 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Javascript on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/javascript/</link>
-    <description>Recent content in Javascript on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Mar 2017 05:25:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
-      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
-      <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
+    <channel>
+        <title>Javascript on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/javascript/</link>
+        <description>Recent content in Javascript on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 26 Mar 2017 05:25:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
+            <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+            <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
 XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
-chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
-    </item>
+chrome --disable-web-security  then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="tl-dr-just-give-me-the-code">TL;DR! Just give me the code</h2>
+
+<p>In your <code>index.js</code> file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the <code>import</code> statements:</p>
+
+<pre><code class="language-javascript">XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? 
+  GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+</code></pre>
+
+<p>You will also need a Chrome plugin that overrides <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>. I use <a href="https://chrome.google.com/webstore/detail/cors-toggle/omcncfnpmcabckcddookmnajignpffnh?hl=en">CORS Toggle</a>. You may also decide to skip the plugin and start Chrome with CORS disabled:</p>
+
+<pre><code class="language-bash">chrome --disable-web-security
+</code></pre>
+
+<p>then, as usually, start remote debugging from your app, and open: <code>http://localhost:8081/debugger-ui</code> on your computer.</p>
+
+<p>That&rsquo;s it. Please, make sure to never rely completely on the network infrastructure of the Chrome debugger. Many networking problems may be specific to your device/simulator, and will not be caught by the debugger.</p>
+
+<h2 id="ok-now-the-longer-explanation">OK, now the longer explanation</h2>
+
+<p>One of the big advantages of React Native is the ease of debugging your code. When running an app in development mode, one can debug it remotely, using the well familiar Chrome DevTools. Logging to the console and setting breakpoints in the code work just as if the app were running in a normal browser&rsquo;s window.</p>
+
+<p>It is, therefore, strange to many RN starters, why one of the core functionalities of the Chrome Inspector, namely the network call interception, is not available. Instead, if a network error occurs, all the JavaScript code gets access to, is an Error object that simply says &ldquo;Network Error&rdquo;.</p>
+
+<p>To fully explain why this is so is out of the scope of this post. There is a great Medium article that explains in detail how the &ldquo;magic&rdquo; behind the RN remote debugging works. I totally recommend you read, regardless of your experience with React and RN.</p>
+
+<p>Long story short, when debugging RN remotely, the JavaScript code actually gets executed in the browser, and not on the device. This allows you to interrupt the flow with breakpoints, or log the console output in the Chrome DevTools window. While the JS code gets executed in the browser, the native calls happen on the device itself. The browser and the device running the app keep a WebSocket connection open and synchronize the code execution on every step.</p>
+
+<p>All the native calls run on the device itself, and executing a network call makes no difference. As such, it is not an easy task to make network traces appear in the Inspector window. At least, not without overriding the default platform APIs (for each of the supported platforms) and communicate every state change with the browser. I am sure that the core dev team is working on a solution, and will deliver it in a future release.</p>
+
+<p>Until then, you can test network calls by replacing the default implementation of <code>XMLHttpRequest</code> and use the one provided by the browser. As you saw in the beginning, it turns out that this is surprisingly simple. Once you do it, override the browser&rsquo;s default CORS rules, and reload the app, you should start seeing network requests in the Chrome Inspector. As I already pointed out, though, the Chrome Inspector can be helpful inasmuch as the requests and responses are concerned. It won&rsquo;t help you prevent issues with the native network infrastructure of your emulator/device. To inspect those, you will rather have to use a proxy, such as <a href="https://www.charlesproxy.com/">Charles</a>, or jump into tracing the native log files.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Gulp vs Grunt. Why one? Why the Other?</title>
+            <link>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</link>
+            <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</guid>
+            <description>So you&amp;rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&amp;rsquo;t really hard. I&amp;rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc.</description>
+            <content type="html"><![CDATA[
+
+<p>So you&rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&rsquo;t really hard. I&rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc. At one point, I switched over to Grunt, but my workflow essentially mimicked the one I had already created using ANT.</p>
+
+<p>So, when Gulp came out, I was right at the point of willing to dive deep into JS-based task runners. Plus, it quickly became the darling of a large portion of the JS community, and many projects, like Ionic, adopted it right away. So, my choice was easy.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting started with Gulp <a href="http://t.co/qKo0rOXGT4">http://t.co/qKo0rOXGT4</a> &quot;Gulp is a streaming build system&quot;. Think Grunt, but faster and less config.</p>&mdash; Sindre Sorhus (@sindresorhus) <a href="https://twitter.com/sindresorhus/status/420272334281662464?ref_src=twsrc%5Etfw">January 6, 2014</a></blockquote>
+
+
+<p>Yet, writing Grunt off for all the wrong reasons does not feel right. It is still a great tool, with a bustling community around it, so it makes a lot of sense to make a proper comparison between Grunt and Gulp.</p>
+
+<h1 id="the-differences">The Differences</h1>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Grunt?src=hash&amp;ref_src=twsrc%5Etfw">#Grunt</a> vs <a href="https://twitter.com/hashtag/Gulp?src=hash&amp;ref_src=twsrc%5Etfw">#Gulp</a>: <a href="http://t.co/eaaolHHIl6">http://t.co/eaaolHHIl6</a> (piping is beautiful!) This is so reminds me of <a href="https://twitter.com/hashtag/Maven?src=hash&amp;ref_src=twsrc%5Etfw">#Maven</a> vs <a href="https://twitter.com/hashtag/Gradle?src=hash&amp;ref_src=twsrc%5Etfw">#Gradle</a>. Always voted for code over config</p>&mdash; evgeny_goldin (@evgeny_goldin) <a href="https://twitter.com/evgeny_goldin/status/521003643802513409?ref_src=twsrc%5Etfw">October 11, 2014</a></blockquote>
+
+
+<p>There are two main differences between Grunt and Gulp:</p>
+
+<ol>
+<li>Grunt focuses on configuration, while Gulp focuses on code</li>
+<li>Grunt was built around a set of <a href="http://bocoup.com/weblog/introducing-grunt/">built-in, and commonly used tasks</a>, while Gulp came around with the idea of enforcing nothing, but how community-developed micro-tasks should connect to each other</li>
+</ol>
+
+<p>That is not to say that Grunt does not support community extensions. Of course, Grunt has supported creating custom plugins since the beginning, and I am sure that one can find a plugin for just about anything one needs. It was just the nature of the built-in tasks that made me stick around a little longer with my ANT script. In retrospect, I have to admit that I was wrong that for being sceptical about it becoming as popular as it is today. In early 2015, Grunt still holds a larger community than Gulp, despite the latter catching up fast.</p>
+
+<p>Every task in Grunt is an array of different plugin configurations, that simply get executed one after another, in a strictly independent, and sequential fashion:</p>
+
+<pre><code class="language-javascript">grunt.initConfig({
+    clean: {
+    src: ['build/app.js', 'build/vendor.js']
+    },
     
-    <item>
-      <title>Gulp vs Grunt. Why one? Why the Other?</title>
-      <link>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</link>
-      <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</guid>
-      <description>So you&amp;rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&amp;rsquo;t really hard. I&amp;rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc.</description>
-    </item>
+    copy: {
+    files: [{
+        src: 'build/app.js',
+        dest: 'build/dist/app.js'
+    }]
+    }
     
-  </channel>
+    concat: {
+    'build/app.js': ['build/vendors.js', 'build/app.js']
+    }
+    
+    // ... other task configurations ...
+    
+});
+
+grunt.registerTask('build', ['clean', 'bower', 'browserify', 'concat', 'copy']);
+</code></pre>
+
+<p>In this case, &lsquo;clean&rsquo; and &lsquo;concat&rsquo; must be configured before the &lsquo;build&rsquo; task is registered. Each task configuration is independent from all the rest. When dealing with IO, such as files, each task accesses the file separately — opening the file, applying the changes, and closing the file. Therefore, almost every task requires a source and destination to be specified. This not only doubles the effort for the developer, but it also makes Grunt relatively slower thanGulp.</p>
+
+<p>Gulp on the other hand is all about streams and building complex pipelines with ease. It uses node.js&rsquo; streams, and executes faster, since it does not open/close files, or create intermediary copies all the time. This is a sample task declaration, taken straight from Ionic&rsquo;s gulpfile.js</p>
+
+<pre><code class="language-javascript">//import the necessary gulp plugins
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var minifyCss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+
+//declare the task
+gulp.task('sass', function(done) {
+    gulp.src('./scss/ionic.app.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./www/css/'))
+    .pipe(minifyCss({
+        keepSpecialComments: 0
+    }))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./www/css/'))
+    .on('end', done);
+});
+</code></pre>
+
+<p>One thing that is immediately noticed here, is the lack of any up-front configuration, especially, specifying a source and destination. It is clear how one processor plugs into another. Just like LEGO bricks, plugins fit right into each other. The magic happens because of the object format that plugins exchange, the so called <a href="https://github.com/wearefractal/vinyl">Vinyl</a>. Vinyl is just an abstraction that describes a virtual file object — one that could refer to an existing file on the FS, a stream, or simply dead-ends with a null.</p>
+
+<p>The use of streams is also a part of how gulp plugins are developed. In unison with the UNIX philosophy, gulp plugins must <a href="https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/guidelines.md"><strong>try to do one thing well</strong></a>. In simple words, if your plugin tries to do way too many things, better split it into several smaller plugins, and try to use as many readily developed plugins as you can. Let the complexity reside within the task orchestration, not the plugin body.</p>
+
+<p>Both Grunt and Gulp have their own specifics when developing extensions. Both will make you sacrifice a bit of the beauty of your code, for the sake of plugging it into each build system. Truth is though that Gulp plugins feel one idea less coupled than their Grunt counterparts. This is because every Gulp plugin is first and foremost a legit node.js streaming module. With a bit of fitting, it can be re-used in other pieces of streaming node.js code.</p>
+
+<p><img src="https://preslav.me/content/images/2019/02/image.png" alt="" /><a href="https://twitter.com/maxogden/status/421375617733386242">@maxodgen | Twitter</a></p>
+
+<p>One word of advice though is to try not to fit every piece of your code into a Gulp plugin. As this <a href="http://blog.overzealous.com/post/74121048393/why-you-shouldnt-create-a-gulp-plugin-or-how-to">article points out</a>, thinking of your code as a Gulp plugin would inevitably increase configuration, which is counter to what the Gulp guidelines, and the <strong>do one thing well</strong> philosophy suggest. This is where the <strong>code over configuration</strong> principle shines. Unlike Grunt, Gulp makes it extremely easy to fit other code within a task definition, besides streaming from one plugin to another. In fact, a Gulp task may not even contain a streaming pipeline:</p>
+
+<pre><code class="language-javascript">var http = require('http');
+    
+//declare the task
+gulp.task('server', function(done) {
+    //start an http server (I know, a totally useless example, but helps to illustrate the point)
+    var requestListener = function (req, res) {
+    res.writeHead(200);
+    res.end('Hello, World!n');
+    }
+    
+    var server = http.createServer(requestListener);
+    server.listen(8080);
+    
+    done();
+});
+</code></pre>
+
+<h1 id="the-verdict">The Verdict</h1>
+
+<p>Has Gulp made Grunt obsolete. <a href="http://qr.ae/6rv0g"><em>No, for the same reason that Burger King didn&rsquo;t make McDonald&rsquo;s obsolete</em></a>. Truth is, if you&rsquo;re starting to work with JS-based build systems, there is a high chance that you&rsquo;d pick Gulp right away. The prospects for it just seem a little rosier, plus, it has been adopted by a large portion of projects. Yet, if you are still using Grunt and feel comfortable using it, there is nothing to be worried about — the community is still there, bigger than Gulp, and keeps growing. Grunt has almost a couple of years of advantage, and I am sure that large project maintainers will try to stick to it for as long as possible. Another advantage of using Grunt is if all you need is that little built-in set of simple tasks. In that case, you&rsquo;d feel right at home with it, and Gulp, despite all of its flexibility, will make you spend more time in theory than you need. As with everything else project related, you should choose based on the circumstances.</p>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+<li><a href="http://benalman.com/news/2012/08/why-grunt/">Why grunt? Why not something else?</a></li>
+<li><a href="http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt">Build Wars: Gulp vs Grunt</a></li>
+<li><a href="https://medium.com/p/3828e8126466">gulp - Eric Schoffstall - Medium</a></li>
+<li><a href="http://www.100percentjs.com/just-like-grunt-gulp-browserify-now/">自家用車の新車について</a>
+and others&hellip;</li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Video on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/video/</link>
-    <description>Recent content in Video on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 11 May 2019 08:35:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/video/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/2019051111035/</link>
-      <pubDate>Sat, 11 May 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/2019051111035/</guid>
-      <description>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.
+    <channel>
+        <title>Video on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/video/</link>
+        <description>Recent content in Video on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 11 May 2019 08:35:04 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/video/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/2019051111035/</link>
+            <pubDate>Sat, 11 May 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/2019051111035/</guid>
+            <description>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.
 One thing I learned during the 3 years of active running:
  Distance running is 20% physical and 80% mental fitness.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.</p>
+
+<p>One thing I learned during the 3 years of active running:</p>
+
+<blockquote>
+<p>Distance running is 20% physical and 80% mental fitness.</p>
+</blockquote>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/8YWyac1ZdsU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

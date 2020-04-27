@@ -1,43 +1,210 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Project on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/project/</link>
-    <description>Recent content in Project on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/project/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>What&#39;s New in Mixtape</title>
-      <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
-      <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
-      <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
-    </item>
-    
-    <item>
-      <title>What&#39;s in a Mixtape?</title>
-      <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
-      <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
-      <description>Mixtape
+    <channel>
+        <title>Project on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/project/</link>
+        <description>Recent content in Project on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 10 Oct 2019 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/project/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>What&#39;s New in Mixtape</title>
+            <link>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</link>
+            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/10/what-is-new-in-mixtape/</guid>
+            <description>Give me more like these&amp;hellip; Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="give-me-more-like-these">Give me more like these&hellip;</h2>
+
+<p>Search engines are a great tool for content discovery beyond the simple text searching. Often, it is difficult to express exactly what we are looking for. This may be due to limitations of the interface, or our own struggle to explain it in enough detail. There is one thing, however, which we are fairly good at. Given two things, we can easily say which one we like more than the other.</p>
+
+<p>With the most recent update on <a href="https://mixtape.preslav.me/">Mixtape</a>, I have added the ability to use Mixtape as a way to discover new podcast episodes, by simply providing the IDs of ones that might be of interest to you. Those who have worked with search engines before, probably know that this is something that this type of applications are fairly well-suited, but not often used for. In particular, ElasticSearch (the brain behind the whole search operation) has a particular type of search query, which allows for just that.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.elastic.co/static/images/elastic-logo-200.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        More like this query | Elasticsearch Reference [7.4]</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The More Like This Query finds documents that are &#34;like&#34; a given
+set of documents. In order to do so, MLT selects a set of representative terms
+of these input documents, forms a query using these terms, executes the query
+and returns the results. The user controls the input documents, how the terms
+should be selected and how the query is formed.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">https://www.elastic.co | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>Currently, this is still an API-only feature, but it will open up the door for applications of various sorts. One particular thing I am working on, is in the form of a chat bot application, which one will be able to send podcast episode links to (e.g. from <a href="https://overcast.fm/">Overcast</a>, <a href="https://www.pocketcasts.com/">Pocket Casts</a>, <a href="https://www.apple.com/itunes/">Apple Podcasts</a>, etc) and get related podcast episodes to keep listening to.</p>
+
+<p>Stay tuned!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What&#39;s in a Mixtape?</title>
+            <link>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</link>
+            <pubDate>Wed, 25 Sep 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/09/25/what-is-in-a-mixtape/</guid>
+            <description>Mixtape
  A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &amp;ndash; Urban Dictionary A budding search and discovery engine for podcasts built by yours truly.  The 20th century marked a giant leap forward in music production and distribution.</description>
-    </item>
-    
-    <item>
-      <title>Introducing NoEmbed</title>
-      <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
-      <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-      <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p><em>Mixtape</em></p>
+
+<ol>
+<li><em>A homemade music compilation (usually on cassette or CD-R) that contains all your favourite tracks. Often you give such a compilation to the guy or gal of your fancy in hopes that it will help you win their heart. &ndash; <a href="https://www.urbandictionary.com/define.php?term=Mixtapes">Urban Dictionary</a></em></li>
+<li><em>A budding <a href="https://mixtape.preslav.me/">search and discovery engine for podcasts</a> built by yours truly.</em></li>
+</ol>
+
+<p>The 20th century marked a giant leap forward in music production and distribution. It started with the vinyl record which made music available in everyone&rsquo;s home. Then, at the turn of the century, the digital cassette recorder came to shake the game, by allowing everyone to create mixes of their own liking.</p>
+
+<p>See, vinyl records are great, but they could only play the same thing over and over again. Assuming you bought one album per record, you quickly ended up holding a pile of records from your favourite bands. We all know that artists back then were great and almost all songs in an album became hits, but what if, hypothetically, one liked only a couple of songs and skipped the rest? One still needed to buy and keep the entire record.</p>
+
+<p>Digital cassette recorders changed all that. Not only were cassettes smaller in size; one could record on top, multiple times over. This gave the birth of the <strong>mixtape</strong>. Decades before the playlists of today, mixtapes let everyone create and share thematic mixes of songs from different artists, and often, from completely different genres.</p>
+
+<h1 id="from-cassettes-to-podcasting">From cassettes to podcasting</h1>
+
+<p>In a funny, but similar way, podcast distribution still works like buying vinyls from a record store. You can subscribe manually, or via any of the myriads of mobile apps out there. Yet, podcasts still get distributed primarily as RSS feeds that you either follow entirely or not at all. Just like with records, if you like the podcast host, over the years you build up a certain sense of loyalty and bonding. I have been listening to podcasts since 2004, and there are are many that I have been following for more than a decade.</p>
+
+<p>Unfortunately, just like music, podcasts nowadays are in the millions. While I still follow my favorites, there are many more, from which I occasionally grab an interesting episode and skip the rest. Kind of like your Twitter timeline. Of the hundreds (or thousands) of people you follow, perhaps, you only interact with a couple. The rest are somewhat matching your taste, but you probably only added them because you like one of their tweets. Now you are stuck with them forever, hoping for them to strike gold again.</p>
+
+<p>This is one of the reasons why I started working on <a href="https://mixtape.preslav.me/">Mixtape</a>. From a rough first glance, <a href="https://mixtape.preslav.me/">Mixtape</a> looks like a search engine. This is totally true - the search engine is what powers the foundation of <a href="https://mixtape.preslav.me/">Mixtape</a>. Unlike what you would get in your podcast player, the search engine goes beyond the podcast itself, and focuses on what makes each of its episodes unique. That&rsquo;s why, you would get episodes from various podcasts when searching for a given topic:</p>
+
+<ul>
+<li><a href="https://mixtape.preslav.me/?search=sleep%20science"><em>Why is sleep so important</em></a></li>
+<li><a href="https://mixtape.preslav.me/?search=space%20exploration&amp;category=science"><em>What&rsquo;s the up with space exploration?</em></a></li>
+<li><a href="https://mixtape.preslav.me/?search=future%20of%20work&amp;category=business"><em>Are we ready for the future of work?</em></a></li>
+</ul>
+
+<p>Yet, the search is only the beginning. The <strong>mixtape</strong> part in <a href="https://mixtape.preslav.me/">Mixtape</a> comes from the fact that each search is essentialy a new podcast you can subscribe to. A whole new podcast, made up of episodes from various shows, and centred around the topic that interested you.</p>
+
+<p>And here comes the discovery part. By providing the full credits to the original podcast creator (incl. links, podcast covers, etc), I am hoping that having caught up on a new podcast via a mixtape feed, a listener would eventually go and subscribe for the podcast itself. The difference with subscribing up-front, is that the listener would have gained enough confidence that the podcast is really up to their liking.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Introducing NoEmbed</title>
+            <link>https://preslav.me/2019/06/20/introducing-noembed/</link>
+            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
+            <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</description>
+            <content type="html"><![CDATA[
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://noembed.preslav.me">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        NoEmbed: Create rich URL embeds, even when sites don&#39;t support oEmbed.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://noembed.preslav.me">https://noembed.preslav.me | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p>A picture is worth a thousand words. Everyone knows that. How about, <em>a preview is worth a thousand links</em>, however? If you have ever written a <a href="https://medium.com/">Medium</a> article, more than certainly, you have tried adding links to videos or other Web pages. One of the cool features that distinguished Medium early on, were its really nice link previews. Simply, dropping a link will turn it into a block of information containing a title, an image, and an informative description:</p>
+
+<p><img src="/images/2019/06/noembed.gif" alt="" /></p>
+
+<p>In fact, if you keep looking around, you will find quite a few other apps adopting the same idea. <a href="https://slack.com">Slack</a> and <a href="https://www.notion.so/">Notion</a> are good examples that come to mind. Such previews are great, because unlike plain links, they deliver much more context, and therefore, help increase visitor engagement.</p>
+
+<p>I wanted to provide similar link previews to my personal website, but what I found right away was how poorly adopted <a href="https://oembed.com/">oEmbed</a> is out in the world. I will discuss <a href="https://oembed.com/">oEmbed</a> in detail in a further post, but basically, it is a Web format allowing website owners to expose structured information for every particular link in that website. A good example is YouTube. If you check out the <a href="http://www.youtube.com/oembed?url=http%3A//youtube.com/watch%3Fv%3DM3r2XDceM6A&amp;format=json">following link</a>, you will get a JSON object will all the information about the video in the URL parameter. This info is ready to be rendered as a preview in a site or an app that consumes it.</p>
+
+<p>The problems with oEmbed are apparent right away. In order for you to use it, the order side must have adopted it, and exposed an API endpoint for you to obtain metadata. Even if you built a proxy service that wrapped all the known oEmbed providers on the Web, you are essentially limited to the number of those providers. What about the rest of the Web?</p>
+
+<p>Those were the thoughts that made me start working on what I called <a href="https://noembed.preslav.me/">NoEmbed</a>. It solves the problem with the limited number of oEmbed providers by employing smart content extraction characteristics where needed. By using an officially provided list of well-known oEmbed providers, the service proxies to them when possible. Most of the time, however, <a href="https://noembed.preslav.me/">NoEmbed</a> grabs the content of the requested URL, extracts valuable information out of it (title, excerpt, main image, etc) and returns an oEmbed-compatible response, so it can be integrated by any other services that already use oEmbed in some form or fashion.</p>
+
+<p>I built <a href="https://noembed.preslav.me/">NoEmbed</a> in my spare time writing 100% Go code. It is still crude and unfinished, but already working, and with your help and feedback, I might be able to turn it into a real service.</p>
+
+<h1 id="faq">FAQ</h1>
+
+<h2 id="aren-t-there-other-services-doing-this-already">Aren&rsquo;t there other services doing this already?</h2>
+
+<p>Of course, there are. <a href="https://embed.ly/">Embed.ly</a> is a great example (used by Medium). Other notable examples are <a href="https://iframely.com/">Iframely</a>, <a href="https://microlink.io/">microlink.io</a>, and <a href="https://embed.rocks/try">Embed.rocks</a>. All of them are great services, of course, but I wanted to one first and foremost for myself; one that is lean and fast and also respects the privacy of its users.</p>
+
+<h2 id="what-s-with-the-name">What&rsquo;s with the name?</h2>
+
+<p>This is just a temporary name. NoEmbed is actually the name of a <a href="https://noembed.com/">famous oEmbed proxy</a>, which I wanted to use in the very begging. Yet, the small number of available oEmbed provides was a crucial factor that led me not to.</p>
+
+<p>That said, the name will most probably change, and I am open to hear your suggestions.</p>
+
+<h2 id="what-is-the-tech-stack">What is the tech stack?</h2>
+
+<p>Pretty boring, actually. Nothing super fancy. At the moment, we are talking about a single tailor-made Web/API service written in pure Go, sitting behind nginx (doing the load-balancing and some heavy caching).</p>
+
+<h2 id="who-is-using-it">Who is using it?</h2>
+
+<p>At the moment, the primary integrator of NoEmbed is the site you are reading at the moment. The embed that you saw at the beginning of this page, was generated with it.</p>
+
+<h2 id="are-you-planning-on-turning-this-into-an-actual-product">Are you planning on turning this into an actual product?</h2>
+
+<p>If you think you are ready to pay me for it, absolutely! If you already have a matching use case, do let me know, or sign up right away. I am planning to release a future update, which will allow consumers to use the API using secure tokens and authentication.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

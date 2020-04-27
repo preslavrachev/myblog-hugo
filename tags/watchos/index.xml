@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Watchos on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/watchos/</link>
-    <description>Recent content in Watchos on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/watchos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>A Few Broken Windows</title>
-      <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
-      <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
-      <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Watchos on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/watchos/</link>
+        <description>Recent content in Watchos on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 10 Oct 2019 08:35:04 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/watchos/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>A Few Broken Windows</title>
+            <link>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</link>
+            <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/</guid>
+            <description>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&amp;rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</description>
+            <content type="html"><![CDATA[<p>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind. Yet, there are many tiny things that give a feeling of something unfinished. The worst thing is, those used to work in previous OS versions, and they do now too, but only sometimes:</p>
+
+<ul>
+<li>copying links and files between Apple devices occasionally won&rsquo;t happen</li>
+<li>the same for the new Share Sheet. Sometimes, I&rsquo;d keep tapping an app or an action several times and nothing would happen.</li>
+<li>when running the Apple Watch in Cinema Mode, tapping the screen might not wake it up. Sometimes, up to four or five taps were needed.</li>
+<li>Apple Pay occasionally won&rsquo;t open up on a double tap.</li>
+</ul>
+
+<p>If those were all things that did not work in general, I wouldn&rsquo;t t be worried. Those I am sure that Apple would have fixed by now. What worries me are those many tiny things that work most of the time, but often fail to do so. I know from experience with the the products that I have been working on that those are the issues that cause the most customer distrust, because of being treated as <em>working</em>.</p>
+
+<p>P.S. All of this reminds me of:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/Pentonvilleiso19.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Broken_windows_theory">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Broken windows theory - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Theory</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Broken_windows_theory">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

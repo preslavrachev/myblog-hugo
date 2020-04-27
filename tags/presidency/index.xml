@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Presidency on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/presidency/</link>
-    <description>Recent content in Presidency on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 10:38:05 +0200</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/presidency/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[Quote]: The President Is Trapped</title>
-      <link>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</link>
-      <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-      
-      <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
-      <description>Here is a quote from:
+    <channel>
+        <title>Presidency on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/presidency/</link>
+        <description>Recent content in Presidency on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Mon, 30 Mar 2020 10:38:05 +0200</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/presidency/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[Quote]: The President Is Trapped</title>
+            <link>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
+            <description>Here is a quote from:
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with NoEmbed     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>Here is a quote from:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.theatlantic.com/thumbor/Q-hLXmRtjhrQKlT1zeTN6pszmKc=/18x192:3831x2178/960x500/media/img/mt/2020/03/GettyImages_1189517812_bw/original.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The President Is Trapped</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">https://www.theatlantic.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem. He will try to use this crisis to pit one party against the other—but the virus will kill both Republicans and Democrats. He will try to create an alternate story to distract people from an inconvenient truth—but in this case, the public is too afraid, the story is too big, and the carnage will be too great to be distracted from it.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

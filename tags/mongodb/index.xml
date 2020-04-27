@@ -1,26 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mongodb on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/mongodb/</link>
-    <description>Recent content in Mongodb on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 28 Dec 2018 16:45:41 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Connecting to a MongoDB Instance Using KMongo</title>
-      <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
-      <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
-      <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
+    <channel>
+        <title>Mongodb on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/mongodb/</link>
+        <description>Recent content in Mongodb on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 28 Dec 2018 16:45:41 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Connecting to a MongoDB Instance Using KMongo</title>
+            <link>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</link>
+            <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/</guid>
+            <description>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
 Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
-val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;#34;test&amp;#34;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
-    </item>
-    
-  </channel>
+val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&amp;quot;test&amp;quot;) //normal java driver usage val col = database.getCollection&amp;lt;Jedi&amp;gt;() //KMongo extension method  The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:</description>
+            <content type="html"><![CDATA[
+
+<p>Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using <a href="https://litote.org/kmongo/quick-start/">KMongo</a>.</p>
+
+<p>Basically, if you have checked out the KMongo <a href="https://litote.org/kmongo/quick-start/">quick start</a>, setting up a client and fetching some data should be extremely easy:</p>
+
+<pre><code class="language-kotlin">val client = KMongo.createClient() //get com.mongodb.MongoClient new instance
+val database = client.getDatabase(&quot;test&quot;) //normal java driver usage
+val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method
+</code></pre>
+
+<p>The quick start tutorial assumes that your DB resides on <code>mongodb://localhost:27017</code>, but in reality, your MongoDB connection string looks more like this:</p>
+
+<pre><code class="language-text">mongodb://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST&gt;:&lt;PORT&gt;/&lt;DATABASE&gt;
+</code></pre>
+
+<p>and in proper production environments, it is unknown until runtime. Let&rsquo;s assume that it was passed to the running application as an environment variable, e.g. <code>MONGODB</code>. Simply passing this string to <code>KMongo.createClient()</code>won&rsquo;t do it. The problem is that KMongo assumes that this string is simply the <code>&lt;HOST&gt;</code> part and creates a <code>ServerAddress</code>out of it. This results in an error when connecting.</p>
+
+<p>The solution is to use a class called <code>MongoClientURI</code>instead. <code>MongoClientURI</code> parses the string argument and splits it into its corresponding parts.</p>
+
+<p>So, the solution to my problem:</p>
+
+<pre><code class="language-kotlin">val uri = MongoClientURI(System.getenv(&quot;MONGODB&quot;))
+val collection = KMongo.createClient(uri = uri)
+        .getDatabase(uri.database)
+        .getCollection&lt;Jedi&gt;()
+</code></pre>
+
+<hr />
+
+<h1 id="related">Related</h1>
+
+<ul>
+<li><a href="https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i">https://www.mongodb.com/blog/post/getting-started-with-mongodb-and-java-part-i</a></li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Git on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/git/</link>
-    <description>Recent content in Git on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Feb 2015 06:59:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>What’s with the 50/72 rule?</title>
-      <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
-      <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
-      <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+    <channel>
+        <title>Git on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/git/</link>
+        <description>Recent content in Git on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 21 Feb 2015 06:59:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/git/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>What’s with the 50/72 rule?</title>
+            <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
+            <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
+            <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
 They don&amp;rsquo;t tell much do they?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.</p>
+
+<p>They don&rsquo;t tell much do they? Six months down the road, you&rsquo;d be scratching your head, trying to remember what you were thinking exactly six months before, when you wrote that commit.</p>
+
+<p>On the other hand are the &ldquo;novels&rdquo;. Some programmers go into much detail of what they&rsquo;ve done, both in the summary, and in the description. This makes it difficult to read, and understand later on, what they did exactly.</p>
+
+<p>Being verbose is by no means a bad thing. In fact, programmers are encouraged to put lengthy details about their commits, but only in the description. The summary is what helps you and other programmers to skim through thousands of commits, so it must be both concise and insightful.</p>
+
+<p>In a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">2008 blog post</a>, <a href="https://twitter.com/tpope">tpope</a>, described a system for creating commit messages, which I started calling simply, the <em>&ldquo;50 / 72&rdquo;</em> rule. The rules of the game are simple:</p>
+
+<ol>
+<li>The first line of your commit message must be maximum 50 characters long. No more, and (ideally), no less.</li>
+<li>Leave a blank line</li>
+<li>Start writing your description. The description can be as verbose as it suits you. Each line in your description should though wrap at the 72nd mark.</li>
+</ol>
+
+<p>Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try <em>git shortlog</em>, instead of <em>git log</em>, you will see a long list of commit messages, consisting of the id of the commit, and the summary only. The reason for wrapping your description lines at the 72nd mark is that <em>git log</em> adds a padding of 4 blank spaces when displaying the commit message. To center the message perfectly, and make it read well on an 80-column terminal, you&rsquo;d want to leave space for 4 more blank spaces at right side. That&rsquo;s where 72 comes from.</p>
+
+<p>What about the 50? An analysis of the average length of commit messages in the linux kernel suggests that the ideal size of a git commit summary is around 50 characters in length:</p>
+
+<p><img src="/images/2015/february/0_Hm0dO0UnjFBprfV-.png" alt="" />Most commit messages average around 50 characters in length</p>
+
+<p>Most code editors display the current line and column number that the cursor is at. Many support automatic wrap-line settings. If you are using GitHub&rsquo;s desktop app (as I used to), it will also show you warnings when you are over the limit.</p>
+
+<p>Writing a great commit summary is like writing a great tweet, only shorter. Id suggest to try and write your thoughts at first, to see how long it gets. Then you&rsquo;s paraphrase it, and put the extra content (the details) in the summary. Try to use the 50-column mark as a guideline for your thoughts. Try to reach as close as possible to it, without going over. Remember, short commit messages do not help, too long don&rsquo;t either.</p>
+
+<p>How does your team compare to the linux kernel contributors? You can check yourselves, using the code below:</p>
+
+<p>You can use the data and plot it on a real histogram, using <a href="http://stackoverflow.com/a/5328669/1107412">matplotlib</a>. Many thanks to <a href="http://stackoverflow.com/users/209050/mgalgs">mgalgs</a> for posting the <a href="http://stackoverflow.com/a/11993051/1107412">code</a>, and the <a href="http://stackoverflow.com/a/11993051/1107412">histogram</a> originally on <a href="http://stackoverflow.com/a/11993051/1107412">StackOverflow</a>.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

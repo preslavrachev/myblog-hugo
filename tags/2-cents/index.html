@@ -1,268 +1,855 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev ">
-<meta name="description" content="" />
-<meta name="keywords" content="programming, golang, python, elixir" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/tags/2-cents/" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-
-    <title>
-        
-            2 Cents :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="programming, golang, python, elixir" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/tags/2-cents/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>2 Cents · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="2 Cents">
-<meta itemprop="description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music.">
+<meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet.">
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
 
 <meta name="twitter:title" content="2 Cents"/>
-<meta name="twitter:description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."/>
+<meta name="twitter:description" content="I am a software engineer building his own stuff. This is my home on the Internet."/>
 
-
-
-
-
-
-
-<link rel="alternate" type="application/rss+xml" href="https://preslav.me/tags/2-cents/index.xml" title="Random Bits of Wisdom" />
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    <link rel="alternate" type="application/rss+xml" href="https://preslav.me/tags/2-cents/index.xml" title="Random Bits of Wisdom" />
+    
+    
+
+</head>
+<body class=" tag-template  ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div>
+    <div class="outer site-header-background no-image">
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
+<div class="inner site-header-content">
+            <h1 class="site-title">2 Cents</h1>
+            <h2 class="site-description">
+                
+                    I am a software engineer building his own stuff. This is my home on the Internet.
+                
+            </h2>
+        </div>
+    </div>
 </header>
 
-
-            <div class="content">
-                
-    <main class="posts">
-        <h1>2 Cents</h1>
-            <div class="posts-group">
-                <div class="post-year">2020</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/03/29/this-week-in-social-distancing/">
-                                <span class="post-title">This Week in Social Distancing</span>
-                                <span class="post-day">Mar 29</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/03/20/stay-the-f-home-germany/">
-                                <span class="post-title">Stay the F*** Home, Germany!</span>
-                                <span class="post-day">Mar 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/">
-                                <span class="post-title">A Step Outside the Comfort Zone</span>
-                                <span class="post-day">Mar 14</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/">
-                                <span class="post-title">Reflecting on My Experience With Go, One Year After</span>
-                                <span class="post-day">Jan 17</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2020/01/05/trip-to-vienna/">
-                                <span class="post-title">Trip to Vienna</span>
-                                <span class="post-day">Jan 5</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-            <div class="posts-group">
-                <div class="post-year">2019</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/">
-                                <span class="post-title">Why Is Bulgaria So Poor?</span>
-                                <span class="post-day">Dec 20</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/">
-                                <span class="post-title">Why I Still Find the Minimap Useful</span>
-                                <span class="post-day">Nov 10</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/2019102111035/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Oct 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/">
-                                <span class="post-title">A Few Broken Windows</span>
-                                <span class="post-day">Oct 10</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/09/21/good-code-is-boring/">
-                                <span class="post-title">Good Code is Boring</span>
-                                <span class="post-day">Sep 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/07/10/quote-ten-years-of-erlang/">
-                                <span class="post-title">[Quote] Ten Years of Erlang</span>
-                                <span class="post-day">Jul 10</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905121007/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 12</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905110736/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 11</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2019/03/23/give-me-back-my-monolith/">
-                                <span class="post-title">Give Me Back My Monolith</span>
-                                <span class="post-day">Mar 23</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-            <div class="posts-group">
-                <div class="post-year">2018</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/2018/12/31/what-i-learned-in-2018/">
-                                <span class="post-title">What I learned in 2018</span>
-                                <span class="post-day">Dec 31</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/2018/12/28/the-kotlin-way/">
-                                <span class="post-title">How Much of &#34;The Kotlin Way&#34; Is the Right Way?</span>
-                                <span class="post-day">Dec 28</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-    </main>
-
-            </div>
-
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
             
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
 
-            
-        </div>
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
 
         
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/29/this-week-in-social-distancing/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">This Week in Social Distancing</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>This post is a sort of a time capsule. An attempt to journal my thoughts at this particular point in time. Despite the seemingly rough first part, I want it to have a hopeful message. I think that now is the time to re-align our principles, and set new trajectories.
+Everywhere around the world, things are still developing faster than anyone had expected. More and more people getting infected, sick, and some, eventually dying.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-93-03">29 March 2020</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2020/03/20/stay-the-f-home-germany/">
+                <img class="post-card-image"src="https://miro.medium.com/max/1200/1*4kOJv8hmd5VFPcBL1mywsw.png" alt="Stay the F*** Home, Germany!"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/20/stay-the-f-home-germany/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">Stay the F*** Home, Germany!</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>TL;DR: This is not a drill! Despite the seemingly low moratilty rate in Germany, nearly 3000 people might die by the end of April alone. We can help keep many of them alive.
+Judging by how much people in Munich seem to enjoy the sunny days of spring, I am going to conclude that either:
+ they all live in complete denial of the situation they already gave up they fully trust that no matter what happens, the German healthcare system would fix them in no time.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-113-03">20 March 2020</time>
+                            <span class="bull">&bull;</span> 5 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">A Step Outside the Comfort Zone</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Yes, the current situation sucks. Big time. It&rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-53-03">14 March 2020</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Reflecting on My Experience With Go, One Year After</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+ I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-81-01">17 January 2020</time>
+                            <span class="bull">&bull;</span> 6 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/01/05/trip-to-vienna/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Austria</div>
+                    
+
+                    <h2 class="post-card-title">Trip to Vienna</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>My wife and I spent the last two days in beautiful Vienna. This trip changed quite a few of the prejudices and assumptions I had previously had about the Austrian capital.
+There is no doubt that Vienna is a world city, both historically, geographically, and culturally. For years in a row, the city has been named the world’s best place to live in, and as much as Munich is trying to steal the title, it’s not come close yet.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-111-01">5 January 2020</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/12/20/why-is-bulgaria-so-poor/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">Why Is Bulgaria So Poor?</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Note: What follows is my answer to question on Quora. I thought it might be worth sharing with my readers too.
+This is perhaps an unpopular opinion, but for whatever it is worth, I am going to let my mind speak. I would like to emphasize on the fact that I am, and will always be a Bulgarian, despite my conscious choice to live and have business somewhere else.
+The reason why Bulgaria is so poor has nothing to do with its nature and geographic location.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-412-12">20 December 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+ post-card-large 
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/">
+                <img class="post-card-image"src="https://ericasadun.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-08-at-8.07.45-AM.png" alt="Why I Still Find the Minimap Useful"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Why I Still Find the Minimap Useful</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
+@media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-711-11">10 November 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/2019102111035/">
+                <img class="post-card-image"src="http://kyleprifogle.com/images/kyle-small.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/2019102111035/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-810-10">21 October 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/">
+                <img class="post-card-image"src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Pentonvilleiso19.jpg" alt="A Few Broken Windows"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/10/10/a-few-broken-windows-apple-ios13/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Apple</div>
+                    
+
+                    <h2 class="post-card-title">A Few Broken Windows</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I have been using iOS 13 / iPadOS / watchOS 6 for a couple of weeks now. My general impression: something seems a bit off. Don&rsquo;t get me wrong, the new features are great. I totally love the Dark Mode support, the new Notes features, etc. I also have managed to get through the whole update phase without any major issues. No iCloud syncing problems, no significant battery drain, no frequent restarts, or any of the kind.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-810-10">10 October 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/09/21/good-code-is-boring/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Advice</div>
+                    
+
+                    <h2 class="post-card-title">Good Code is Boring</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>You have seen them many times. Small snippets of code and the question &ldquo;What would the the following piece of code print&rdquo; beneath. You might have tried taking a guess, and perhaps, even failed.
+#golang pop quiz: what will this print? https://t.co/99xR8wybpp pic.twitter.com/Q7YpJbYr8c
+&mdash; ✕✕✕✕✕ (@peterbourgon) May 18, 2017 I find those kinds of questions utterly pointless. They not only teach you nothing about real-world programming, but might also lead many newcomers to long-term frustration with programming.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-109-09">21 September 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2019/07/10/quote-ten-years-of-erlang/">
+                <img class="post-card-image"src="https://ferd.ca/static/img/erlang-ladder.png" alt="[Quote] Ten Years of Erlang"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/07/10/quote-ten-years-of-erlang/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Quote</div>
+                    
+
+                    <h2 class="post-card-title">[Quote] Ten Years of Erlang</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+ @media (max-width: 640px) { .</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-107-07">10 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905121007/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Google: Here is somewhat of a premium phone (Pixel 3) for $800
+Customers: Go Home, Google, you’re drunk.
+Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
+Customers: it’s the best Take my money!
+Google: Tricked ya!</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-85-05">12 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905110736/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
+The series starts with:
+Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-55-05">11 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2019/03/23/give-me-back-my-monolith/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">Give Me Back My Monolith</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-53-03">23 March 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2018/12/31/what-i-learned-in-2018/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Retrospection</div>
+                    
+
+                    <h2 class="post-card-title">What I learned in 2018</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>It&rsquo;s that time of the year again. The time when you make yourself a cup of coffee, and go through the events of the past years, searching for a sign that it has been worth it. And judging by the numbers alone, it seems like a very eventful year:
+In 2018, I:
+ Got engaged Changed my job Started new new side projects Attended 4 conferences and countless meetups Had my own chance to present in front of an audience (twice) Visited 5 countries and met many new people Read 15 books Wrote nearly 30 blog posts Ran 626 km, and finished 4 half-marathons Made between 5,500 and 6,000 push-ups  Wow, quite a year, heh?</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2018-412-12">31 December 2018</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2018/12/28/the-kotlin-way/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Kotlin</div>
+                    
+
+                    <h2 class="post-card-title">How Much of &#34;The Kotlin Way&#34; Is the Right Way?</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>NOTE: This post was originally intended to provoke a discussion, and despite its length, the original goal is still the same. Please, share your feedback on Twitter, Reddit, or Dev.to.
+My experience with the JVM dates back from around 2010. Java in those days was a bit different from todays&rsquo; standpoint. Java 6 was the current standard at the time, but most projects I got to work on, were stuck between Java 4 and 5.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2018-712-12">28 December 2018</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</main>
 
 
 
 
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+
+
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -273,14 +860,6 @@
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

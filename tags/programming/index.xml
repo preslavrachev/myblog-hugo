@@ -1,115 +1,2464 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Programming on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/programming/</link>
-    <description>Recent content in Programming on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Elixir-Style Actors in Go</title>
-      <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
-      <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
-      <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
-    </item>
-    
-    <item>
-      <title>Use the Git History to Identify Pain Points in Any Project</title>
-      <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
-      <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
-      <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+    <channel>
+        <title>Programming on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/programming/</link>
+        <description>Recent content in Programming on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 07 Mar 2020 17:04:29 +0100</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Elixir-Style Actors in Go</title>
+            <link>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</link>
+            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/07/elixir-style-actors-in-golang/</guid>
+            <description>My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.</description>
+            <content type="html"><![CDATA[
+
+<p>My foray into <a href="https://elixir-lang.org/">Elixir</a> brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with <code>sync.Mutex</code> slapped on it, you’d be (almost) right. Yet, it’s worth exploring different ways of thinking.</p>
+
+<h1 id="a-10-000-foot-view-of-elixir">A 10.000-foot view of Elixir</h1>
+
+<p>For those not aware of it, Elixir is a functional language. Everything runs inside an immutable function scope, and no state remains on the table. A function can only work on what it has been fed with. Functions reside inside modules and are being executed inside Erlang processes.</p>
+
+<p>Technical differences aside, you can think of processes as the equivalent of Go’s goroutines. A function chain call runs inside a process/goroutine. When the outermost function returns, the process/goroutine ends. A process/goroutine can spawn other processes/goroutines to achieve concurrent execution of tasks. Go synchronizes over channels while Elixir over a message inbox that is built into every process. Using the built-in receive keyword, a function’s execution blocks inside a process, until a certain type of message gets received</p>
+
+<pre><code class="language-elixir">receive do
+    # Don't get too caught up on the Elixir syntax.
+    # For now, it is only important to know that :message_a is equivalent
+    # to a string with the value of &quot;message_a&quot;
+    # Those are called &quot;atoms&quot; and are quite often used in Ruby-like laguages
+    {:message_a, msg} -&gt;
+        do_something_with(msg)
+end
+</code></pre>
+
+<p>Fundamentally, this is the same as having a <a href="https://play.golang.org/p/rZkdET2ZhJl">goroutine block its execution waiting on a channel</a>:</p>
+
+<pre><code class="language-go">type message struct {
+    val string
+}
+
+msgStream := make(chan message)
+
+go func(out chan message) {
+    out &lt;- message{val: &quot;hello world&quot;}
+}(msgStream)
+
+msg := &lt;-msgStream
+fmt.Printf(&quot;%+v&quot;, msg)
+</code></pre>
+
+<p>Whether you are waiting on a message to arrive in your inbox, or explicitly set a blocking channel as a communication mechanism, to me, it describes the same paradigm.</p>
+
+<h1 id="turn-goroutines-into-stateful-actors">Turn goroutines into stateful actors</h1>
+
+<p>Clear until now? Alright. Let’s move on. I already mentioned that Elixir is a functional language. Everything that gets passed to a function is immutable, and the only way to change it, is to return a new version of it. This means that looping constructs are not possible, since it would imply modifying and keeping track of a counter variable. The way functional languages achieve the effect of looping is through recursion (or to be more precise tail recursion):</p>
+
+<pre><code class="language-elixir">def loop(5) do
+    # Elixir uses pattern-matching when choosing which function to call.
+    # In our case, as soon as its gets a count == 5, it will stop the loop
+    5
+end
+
+def loop(count) do
+    # Just print the count, but use pipes (|&gt;)
+    # instead of wrapping in a function call -&gt; IO.puts(count)
+    # Pipes totally save the day, when you have multiple call chains
+    count
+    |&gt; IO.puts()
+
+    loop(count + 1)
+end
+</code></pre>
+
+<h2 id="from-recursion-to-actors">From recursion to actors</h2>
+
+<p>What if we take this recursion example and think of it as a never-ending loop. The first call to the function sets the initial state, and the function keeps calling itself ad-infinitum.</p>
+
+<p>Now, this is where the purely functional paradigm breaks. We already learned that Erlang allows for other processes to communicate to us. This means that if our never ending recursive function receives a message from the outside, it can use its payload to call itself with a modified version of its initial state. Keeping in mind that receiving a message is a blocking operation, the process will simply linger around, not using any CPU resources, until our the right message arrives.</p>
+
+<p>We can use the same messaging paradigm to poke inside the state of our never-ending function. Since it runs inside a separate process, the only way to do that is to send an appropriate message to it, pass our current process’ ID (PID) and let it send us a message back.</p>
+
+<pre><code class="language-elixir">defmodule Calculator do
+    def start do
+    # creates a separate process with its own internal state
+    spawn(fn -&gt; loop(0) end)
+    end
+
+    defp loop(current_value) do
+    new_value =
+        receive do
+        # with this type of message, we can fetch the state of our calculator
+        {:get, caller_pid} -&gt;
+            send(caller_pid, {:response, current_value})
+            current_value
+
+        # with this type of message, we can modify the state of our calculator
+        {:add, value} -&gt;
+            current_value + value
+        end
+
+    loop(new_value)
+    end
+end
+</code></pre>
+
+<p>Let&rsquo;s test our calculator process:</p>
+
+<pre><code class="language-elixir">defmodule CalculatorTest do
+    def test_calculator do
+    calc_pid = Calculator.start()
+
+        # Like `receive`, `send` is built-in and take a PID, as well as a message
+        # self() returns the process id (PID) of the current process
+        # Like in Go, every piece of Elixir/Erlang code runs in a process
+    send(calc_pid, {:get, self()})
+
+        # `receive` will block, until we receive a message,
+        # that matches the expected pattern - {:response, value}
+    receive do
+        {:response, value} -&gt;
+        value |&gt; IO.puts()
+    end
+
+    send(calc_pid, {:add, 100})
+
+    send(calc_pid, {:get, self()})
+
+    receive do
+        {:response, value} -&gt;
+        value |&gt; IO.puts()
+    end
+    end
+end
+</code></pre>
+
+<p>In essence, our never-ending function becomes what Elixir calls a stateful server process, an implementation of the <a href="https://en.wikipedia.org/wiki/Actor_model">Actor model</a>. Actors are great for isolating critical state and allowing for concurrent communication to it, ensuring that only one change happens at a time.</p>
+
+<h2 id="from-elixir-to-go">From Elixir to Go</h2>
+
+<p>Ok now that we know how things work in Elixir land, achieving the same thing on Go is super straightforward.</p>
+
+<pre><code class="language-go">func main() {
+    in := make(chan message)
+    out := make(chan int)
+    go newCalculator(0, in, out)
+
+    in &lt;- message{operation: &quot;get&quot;}
+    state := &lt;-out
+    log.Printf(&quot;Current state: %d&quot;, state)
+
+    in &lt;- message{operation: &quot;add&quot;, value: 100}
+    in &lt;- message{operation: &quot;get&quot;}
+    state = &lt;-out
+    log.Printf(&quot;Current state: %d&quot;, state)
+}
+
+type message struct {
+    operation string
+    value     int
+}
+
+func newCalculator(initialState int, in chan message, out chan int) {
+    state := initialState
+    for {
+        p := &lt;-in
+        switch p.operation {
+        case &quot;add&quot;:
+            log.Printf(&quot;Adding %d to the current state&quot;, p.value)
+            state += p.value
+
+        case &quot;get&quot;:
+            out &lt;- state
+        }
+    }
+}
+</code></pre>
+
+<p>One thing to note is that since we can use an infinite-loop, we should just use that, especially, since based on my knowledge Go is not particularly optimized for long-cycle recursion. But the main premise remains the same. A function gets called with some initial state and returns a channel. The function starts an endless loop, blocking on the channel. If we push a value to that channel, the function will take it, update the state and block again.</p>
+
+<h1 id="what-are-actors-good-for">What are actors good for?</h1>
+
+<h2 id="private-state">Private state</h2>
+
+<p>So, now that we unveiled the mystery behind actors, it’s a good point to discuss what they might be useful for.</p>
+
+<p>One thing that immediately comes to mind, is achieving globally accessible, but truly private, synchronized state. This is currently achieved with the use of channels, <code>sync.Mutex</code>, or the new <code>sync.Map</code>.</p>
+
+<pre><code class="language-go">type SynchronizedMap struct {
+    sync.RWMutex
+    internal map[string]interface{}
+}
+
+func (rm *SynchronizedMap) Store(key string, value interface{}) {
+    rm.Lock()
+    rm.internal[key] = value
+    rm.Unlock()
+}
+</code></pre>
+
+<p>The fragility of this approach comes from the fact that there is no real private state in Go applications. The map we named <code>internal</code> in the above example is only protected from outside access. Any piece of code inside the same package as our <code>SynchronizedMap</code> can freely access and modify its internals, leading to unexpected consequences. While this shouldn&rsquo;t be a concern in most cases, it&rsquo;s definitely good to keep in mind for special cases.</p>
+
+<h2 id="stateful-autonomous-agents">Stateful autonomous agents</h2>
+
+<p>Where the Actor model shines is the orchestration of systems of Actor instances - autonomous agents. Each Actor instance is able to change its state, reacting to the messages sent to it. Actor instances can easily spawn other Actor instances, which only the creating actors (supervisors) have control over (private state, remember). Supervisors can also take over failures of the actors their are responsible for, potentially, killing some off, and restarting them with a clean state. Taking this example to extremes, groroutines being fairly cheap, one can easily imagine a swarm of thousands of Actor instances, in a deeply nested hierarchy, with multiple levels of supervising actors taking over their &ldquo;progeny&rdquo;. This is the unique selling proposition of Erlang, but as I hope to have demonstrated, could be replicated in Go too.</p>
+
+<p>As discussed in the beginning, I would leave the discussions about this approach&rsquo;s practicality, as well as its other applications to the reader. I would love to hear your thoughts. Do not hesitate to drop me a comment, or start a new discussion.</p>
+
+<hr />
+
+<h1 id="resources">Resources</h1>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/38732242-elixir-in-action">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Elixir in Action</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Elixir language blends the battle-tested power and stability of the Erlang virtual machine with an approachable and expressive syntax...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p>One of the best books about learning Elixir, and certainly, the one that inspired me to write this post. Saša Jurić&rsquo;s explanations are clear and demonstrative, especially on complex topics such as this one. If you like this blog, and would love to support my passion for reading great books, you can <a href="https://amzn.to/39AXJ6T">buy it on Amazon using this special link</a>. Thanks!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Use the Git History to Identify Pain Points in Any Project</title>
+            <link>https://preslav.me/2020/03/01/use-the-git-history/</link>
+            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/03/01/use-the-git-history/</guid>
+            <description>Have you heard of Adam Tornhill&amp;rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
 Much of the tooling we use to mitigate tech debt is preventive.</description>
-    </item>
-    
-    <item>
-      <title>iEx Is Dope!</title>
-      <link>https://preslav.me/2020/02/24/iex-is-dope/</link>
-      <pubDate>Mon, 24 Feb 2020 07:45:20 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
-      <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
-    </item>
-    
-    <item>
-      <title>Elixir Month</title>
-      <link>https://preslav.me/2020/02/11/elixir-month/</link>
-      <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
-      <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
+            <content type="html"><![CDATA[
+
+<p>Have you heard of <a href="https://twitter.com/AdamTornhill">Adam Tornhill</a>&rsquo;s work? If not, I highly recommend that you set some time aside and check out <em><a href="https://amzn.to/32DM1G9">Your Code as a Crime Scene</a></em> or <em><a href="https://amzn.to/2vtbjdR">Software DEsign X-Rays</a></em>. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.</p>
+
+<p>Much of the tooling we use to mitigate tech debt is preventive. Compilers, linters, static analysis tools, etc. All trying to prevent developers from checking in code, which might cause problems in the future. What all of these fail to catch, is that the code might be perfectly fine, and still not lead to a well functioning system.</p>
+
+<p>The process of software development is as much about <em>developer-to-self</em> and <em>developer-to-others</em> interaction, as much as it is about making the machine do certain things. This interaction can only be let to grow, and reflected upon at certain periods of time. And what better tool to help us do that, than the one we use on a daily basis - git.</p>
+
+<h2 id="git-to-the-rescue">Git to the rescue</h2>
+
+<p>In his books, Tornhill discuses multiple evolutions on the same basic idea - files that change often (with some exceptions) tend to be the ones where most issues occur, hence the need to change. We rarely think of this simple fact when we work on the same project for a long period of time. Yet, when on-boarding a new team member, looking up an unknown piece of code, or simply, retrospecting over your code, such knowledge can be invaluable.</p>
+
+<p>The code is surprisingly simple:</p>
+
+<pre><code class="language-bash">git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10
+</code></pre>
+
+<p>What I like to do is add such commands to my list of git aliases. Open up your <code>~/.gitconfig</code> file and add the following two lines to the <code>[Aliases]</code>section:</p>
+
+<pre><code class="language-bash">code-changes = &quot;!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10&quot;
+cc = &quot;!git code-changes&quot;
+</code></pre>
+
+<p>What this will do, is sort the files in your project by their number of changes, and take the first 10. Those are the ones where most changes have occurred over time, consequently there is a higher chance that those will require the most changes in the future.</p>
+
+<p>Let&rsquo;s do an example. I chose (completely by accident) to look at Gorm, one of the popular Go ORMs. These are the top 10 files that appear at the time of this writing:</p>
+
+<pre><code class="language-bash">272 main.go
+246 scope.go
+208 README.md
+155 scope_private.go
+117 main_test.go
+116 gorm_test.go
+105 model_struct.go
+97 do.go
+81 model.go
+80 utils.go
+</code></pre>
+
+<p>Excluding the <code>README.md</code> file, one can clearly see some dominance of certain files over others. Many Go projects start out from a single <code>main.go</code> file, and with time, logic phases out to other files and packages. In our case, this is certainly not the case. Gorm &rsquo;s <code>main.go</code> is one big chunk of code, which can easily get split into two or more files, especially, since multiple files can share the same Go package.</p>
+
+<p>I&rsquo;ll go into more details on Adam Tornhil&rsquo;s work. There&rsquo;s even more interesting stuff, like identifying which files get changed together, etc. For now, take this simple trick and try to use it on the projects you&rsquo;re working on, or the libraries you frequently work with.</p>
+
+<p>What do you see?</p>
+
+<hr />
+
+<p>
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502137388i/23627482._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Your Code As a Crime Scene</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Jack the Ripper and legacy codebases have more in common than you&#39;d think. Inspired by forensic psychology methods, you&#39;ll learn strategi...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511521225i/36517037._SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Software Design X-Rays</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Are you working on a codebase where cost overruns, death marches, and heroic fights with legacy code monsters are the norm? Battle these ...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>iEx Is Dope!</title>
+            <link>https://preslav.me/2020/02/24/iex-is-dope/</link>
+            <pubDate>Mon, 24 Feb 2020 07:45:20 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/02/24/iex-is-dope/</guid>
+            <description>iEx (Elixir&amp;rsquo;s interactive shell) is pure dope! It helped bring my development efforts back to the &amp;ldquo;let&amp;rsquo;s play and see what happens&amp;rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling r MyModule inside iEx. During development, I&amp;rsquo;d try to keep one module called Demo, or Scratch, etc, where I&amp;rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called demo or run.</description>
+            <content type="html"><![CDATA[<p><a href="https://hexdocs.pm/iex/IEx.html">iEx (Elixir&rsquo;s interactive shell)</a> is pure dope! It helped bring my development efforts back to the &ldquo;let&rsquo;s play and see what happens&rdquo; level. Since Elixir modules are stateless and made up of pure functions, reloading a module is as easy as calling <code>r MyModule</code> inside iEx.
+During development, I&rsquo;d try to keep one module called <code>Demo</code>, or <code>Scratch</code>, etc, where I&rsquo;d do the quick and dirty setting up of things. This scratch module would usually have one function only, called <code>demo</code> or <code>run</code>. This is what I call in iex. The rest I do in the respective modules, which I reload after every change.</p>
+
+<p>At work, I get to work with Python a lot and one of the things I love there is <a href="https://ipython.org/">iPython</a>. It&rsquo;s such a strong REPL that I would often try and get my hands dirty there, before formalizing into code/test. In Python <a href="https://preslav.me/2018/04/22/live-reloading-of-python-modules/">module reloads are not always trivial</a>, however. This is where Elixir&rsquo;s functional, &ldquo;share-nothing&rdquo; nature steps up the game. It&rsquo;s easy to reload modules that have essentially no state.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*DKLIm-vne8pO-G58yjaRwA.jpeg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Tips and Tricks for IEx</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      When I first started learning Elixir, one of the first things I learned is how to get into the command line interface via IEx. Here are the…</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">https://blog.echobind.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Elixir Month</title>
+            <link>https://preslav.me/2020/02/11/elixir-month/</link>
+            <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/02/11/elixir-month/</guid>
+            <description>Yes, the Elixir. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.
 But why Elixir and why just now? There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] You Can Think of Any Web Server as a Function</title>
-      <link>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</link>
-      <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</guid>
-      <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
+            <content type="html"><![CDATA[
+
+<p>Yes, the <a href="https://elixir-lang.org/">Elixir</a>. I’ve decided to use the cold February weather, as well as the relative project calm, and see how far I can go with it.</p>
+
+<h2 id="but-why-elixir-and-why-just-now">But why Elixir and why just now?</h2>
+
+<p>There are a few reasons. Actually, this is not my first encounter with the language or the Erlang/BEAM ecosystem. About a year ago, a colleague at work and I started doing lunch break walks, in which we discussed tech topics, beyond the scope of our current projects. My colleague is a big Elixir fan and has mentioned many times the advantages of Erlang and the BEAM VM. More than anything else, one thing struck me the most. All of the challenges that the cloud community of today is trying to tackle, such as:</p>
+
+<ul>
+<li>resilience</li>
+<li>scalabiltiy</li>
+<li>distribution</li>
+<li>deployment</li>
+</ul>
+
+<p>etc, have already been thought about, and solved by a research group at Ericsson around three decades ago (albeit, at a smaller scale). Sure, Erlang is not an easy language to work with, but thanks to <a href="https://twitter.com/josevalim">José Valim</a> and his work on Elixir, it wouldn’t even be necessary. So, about a year back, I took my first plunge.</p>
+
+<h2 id="that-s-not-for-me">That’s not for me</h2>
+
+<p>I got out of the water just as quickly as I got in there. Sure, Elixir is not nearly as obscure as Erlang, but it can be a bit overwhelming for the newcomer. Especially, if one is trying to swallow the whole OTP bit at the same time. At the time, I had discovered the simplistic philosophy of Golang, and despite all the alleged advantages, Elixir seemed way too much overhead. I (in)famously dismissed the language, as one where “the amount of punctuation might give you a headache”. Let alone the fact that similar to Java applications, Elixir ones also need the entire kitchen sink to be in place for an application to run. Compare this to a statically-bound Go app that you just throw onto a machine and you are good to go.</p>
+
+<h2 id="crystal-enters-the-stage">Crystal enters the stage</h2>
+
+<p>As a side note, I have to mention that part of why I dropped my initial foray into Elixir was because of a bias. I felt that it was too, Ruby-esque, whatever that must have meant to me at the time. I have somehow missed the early Ruby and Rails train around 15 years ago. My programming career set me on a different path. I have always been aware of Ruby’s community spirit, but only during the past year, did I come to appreciate the language and its writing aesthetic. Ironically, not through a Ruby itself, but via a wonderful derivative language, named <a href="https://crystal-lang.org/">Crystal</a>. I already went into more detail about Crystal <a href="https://preslav.me/2020/01/26/a-crystal-in-go-s-world/">in a previous post</a>.</p>
+
+<p>The more I started dabbling into Crystal, the more I started looking at its inspiration - Ruby. Ruby is certainly not a language without flaws, and the community is trying to work on those. Partially, via addressing those issues at the core - Ruby 3.0 is expected to arrive <a href="https://bugs.ruby-lang.org/versions/5">at the end of this year</a>. Yet, others are taking what the language is best known for, and applying it to other paradigms - such as Elixir’s functional approach to programming.</p>
+
+<h2 id="second-attempt-elixir-month">Second attempt: Elixir Month</h2>
+
+<p>My second attempt to tackle Elixir seems to go much more smoothly than the first one. One day, I had the feeling that the constructs in the language just clicked for me- even the nasty OTP ones. I set out out a goal for myself to use Elixir for a month during February, and see how far I can go with it.</p>
+
+<hr />
+
+<h2 id="some-starting-resources">Some starting resources</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/38732242-elixir-in-action">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Elixir in Action</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Elixir language blends the battle-tested power and stability of the Erlang virtual machine with an approachable and expressive syntax...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p>Really, one of the best books on starting with Elixir. If you enjoy it, please help me support this site by <a href="https://amzn.to/2HFjtSR">buying it on Amazon</a>.</p>
+
+<p>Let Saša Jurić himself convince you:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/JvBT4XBdoUE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/gom6nEvtl3U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] You Can Think of Any Web Server as a Function</title>
+            <link>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</link>
+            <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/02/10/quote-you-can-think-of-any-web-server-as-a-function/</guid>
+            <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
  Excerpt From Programming Phoenix by Chris McCord
 Buy on Amazon
 @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
-    </item>
-    
-    <item>
-      <title>A Crystal in Go’s World</title>
-      <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
-      <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
-      <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
+            <content type="html"><![CDATA[<blockquote>
+<p>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”</p>
+</blockquote>
+
+<p>Excerpt From <em><a href="https://www.goodreads.com/book/show/26871792-programming-phoenix">Programming Phoenix</a></em> by Chris McCord</p>
+
+<p><a href="https://amzn.to/2vkYthk">Buy on Amazon</a></p>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444081913i/26871792._UY630_SR1200,630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/26871792-programming-phoenix">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Programming Phoenix</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Don’t accept the compromise between fast and beautiful: you can have it all. Phoenix creator Chris McCord, Elixir creator José Valim, and...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/26871792-programming-phoenix">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>A Crystal in Go’s World</title>
+            <link>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</link>
+            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/26/a-crystal-in-go-s-world/</guid>
+            <description>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.
 Meet Crystal!
 Crystal is all of the above, plus it has types, outstanding documentation, and a strong community, delivering a steady stream of new libraries (a.</description>
-    </item>
-    
-    <item>
-      <title>[Quote] Manual Work is a Bug</title>
-      <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
-      <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
-      <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
+            <content type="html"><![CDATA[
+
+<p>Imagine a programming language with the ergonomic syntax of Ruby, the speed of execution of C, the concurrency model of Go, and last but not least, a compiler that performs null checks at compile time. Sounds like a dream? Well, this language exists, but chances are, you haven’t heard of it so far.</p>
+
+<p>Meet <a href="https://crystal-lang.org/">Crystal</a>!</p>
+
+
+    <img src="/images/2020/image-crystal.png"  alt="Crystal home page"  class="center"  style="border-radius: 8px;"  />
+
+
+
+<p>Crystal is all of the above, plus it has types, <a href="https://crystal-lang.org/reference/overview/">outstanding documentation</a>, and a strong community, delivering a steady stream of new libraries (a.k.a “shards”). Don’t get fooled by the current version number (0.32.1). Crystal has been around for quite a few years (since 2012) and has a mature set of language features and an ecosystem of good libraries.</p>
+
+<h2 id="where-does-the-speed-come-from">Where does the speed come from?</h2>
+
+<p>Crystal produces fast and lightweight native applications using the LLVM infrastructure. When I say fast, I mean, <a href="https://github.com/kostya/benchmarks">really fast</a>. Take the fastest Go code you can find and chances are, the same code in Crystal will perform at least on par with it, and often quite a bit faster. Measuring Crystal’s performance against that of Ruby makes no sense.</p>
+
+<p>There are no runtime frameworks or virtual machines necessary. One can just grab the compiled binary and deploy it. When compared with deploying and running a Ruby application, this feels like a whole different league.</p>
+
+<p>Note that there are some caveats, which I am going to discuss in a future blog post. For now, let’s just say that building and distribution are equally as easy, as those in Rust. As of yet, nothing can beat the Go compiler speed-wise, but my experience with the Crystal tooling has been more than pleasant so far.</p>
+
+<h2 id="csp-style-concurrency">CSP-style concurrency</h2>
+
+<p>One of the things that make Go so interesting is its concurrency model. The idea about goroutines that communicate via channels is based on an approach dating back to the late 1970s, called <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating Sequential Processes (CSP)</a>. Crystal uses an analogous approach. Programs run in what is known as <a href="https://crystal-lang.org/reference/guides/concurrency.html">“fibers”</a>. The main fiber can spawn any number of concurrent fibers that send and receive data via blocking channels.</p>
+
+<pre><code class="language-crystal">channel = Channel(Nil).new 
+spawn do    
+	puts &quot;Before send&quot;    
+	channel.send(nil)    
+	puts &quot;After send&quot; 
+end  
+
+puts &quot;Before receive&quot; 
+channel.receive 
+puts &quot;After receive&quot;
+</code></pre>
+
+<h2 id="why-re-invent-ruby-in-2020">Why re-invent Ruby in 2020?</h2>
+
+<p>The creators of Crystal obviously didn’t intend on changing the world of programming by creating a new language. They just <a href="https://web.archive.org/web/20181126095302/https://manas.tech/blog/2016/04/01/the-story-behind-crystal.html">loved Ruby</a> and felt it sad to leave it for a more performant and type-safe alternative. Due to a series of trade-offs at the implementation level, Ruby is still slower and more memory-hungry than its competitors. Despite perfectly serving the needs of a large segment of Web users through Rails, its performance puts it at the back of the pack, when it comes to other use cases.</p>
+
+<p>The point is fair and valid. As a language, Ruby has a concise and elegant syntax for writing. Once beyond the basic idioms, writing Ruby evokes pure joy. Crystal brings that joy to an even higher level through type-safety, native speed, and extremely simple concurrency model.</p>
+
+<p>Don’t get me wrong, I like Go too, precisely because of its verbosity and lack of idioms. When working with others on a big project, I’d prefer more ceremony and hoops, in the name of transparency and equal code comprehension. Different languages exist to serve different purposes and be used by different groups of people. The trick is knowing when to use and when the other.</p>
+
+<h2 id="so-is-crystal-worth-having-a-look">So, is Crystal worth having a look?</h2>
+
+<p>Absolutely! If only to know that it exists and keep an eye on it, I’d go check it out and write a few applications with it. Whether Crystal will take off in the future is a bit more difficult to say, however. As mentioned, the 99% resemblance to Ruby is nice, and so is the blazing-fast performance. Yet, I am missing the Crystal community’s drive towards more prominence. There has been a long-awaited move towards a 1.0 release, which is a crucial milestone and would surely bring in many newcomers. To my understanding, the language and its tooling are stable enough for a 1.0 release.</p>
+
+<p>I understand that Crystal does not have the backing of either Google or Mozilla. Neither does it have multi-billion-dollar use-cases to put on its home page. I understand that fighting for the same space with Go, C/C++, and Rust is an unfair battle. Yet, I also believe that we’re long past the days when choosing one technology over another was a zero-sum game. All it needs is a little push.</p>
+
+<p>I am hoping for the best!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] Manual Work is a Bug</title>
+            <link>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</link>
+            <pubDate>Sat, 18 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/18/quote-manual-work-is-a-bug/</guid>
+            <description>Here are a few lines from Manual Work is a Bug that I firmly stand by:
  The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start.</description>
-    </item>
-    
-    <item>
-      <title>Reflecting on My Experience With Go, One Year After</title>
-      <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
-      <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
-      <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
+            <content type="html"><![CDATA[<p>Here are a few lines from <em><a href="https://queue.acm.org/detail.cfm?id=3197520">Manual Work is a Bug</a></em> that I firmly stand by:</p>
+
+<blockquote>
+<p>The successful engineer has a quick way to create documents for new procedures and to find existing procedures. People with this mindset avoid the cognitive load of deciding whether or not a task is worth documenting, because they document everything. On finding a potential improvement, they are not slowed by the speed bump of switching from a document viewer to a document editor because they work from the editor at the start. Heck, they have a dedicated second monitor just for their editing app!</p>
+
+<p>[…]</p>
+
+<p>The successful engineer realizes that the earlier he starts collaborating, the sooner others can contribute. Together they can create a culture of documentation that spreads throughout the team. Thus, every project is collaborative and has a “stone soup” feeling, as all are invited to bring their skills and insights. The more people who embody this culture, the more success it has.</p>
+
+<p>[…]</p>
+
+<p>By creating a culture of continuous improvement, constantly taking baby steps along the four phases, the work becomes less stressful and easier to manage. While the other reasons listed here are quite logical, what motivates me to maintain this discipline is more emotional: I want to reduce stress and have more time for creativity and joy.</p>
+</blockquote>
+
+<p>/Thomas A. Limoncelli/</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://queue.acm.org/detail.cfm?id=3197520">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Manual Work is a Bug</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      </div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://queue.acm.org/detail.cfm?id=3197520">https://queue.acm.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Reflecting on My Experience With Go, One Year After</title>
+            <link>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</link>
+            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/01/17/reflecting-on-my-experience-with-go-one-year-after/</guid>
+            <description>In my little more than a year day-to-day developer experience with Go, I have so far learned three things:
  I can change my entire view of how programming works, even after 12+ years of doing it in one form or another. People are blaming Java for all the wrong reasons People are praising Go for all the wrong reasons  Let me explain. This post is not about saying that “language A is better than language B”, or vice versa.</description>
-    </item>
-    
-    <item>
-      <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
-      <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
-      <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
-      
-      <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
-      <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
+            <content type="html"><![CDATA[
+
+<p>In my little more than a year day-to-day developer experience with Go, I have so far <strong>learned three things</strong>:</p>
+
+<ol>
+<li>I can change my entire view of how programming works, even after 12+ years of doing it in one form or another.</li>
+<li>People are blaming Java for all the wrong reasons</li>
+<li>People are praising Go for all the wrong reasons</li>
+</ol>
+
+<p>Let me explain. This post is not about saying that “language A is better than language B”, or vice versa. It is about asking ourselves the question why things work the way they do, and whether doing them differently is a bad, or potentially, good thing.</p>
+
+<p>Before joining the Go camp, I had worked quite a few years as a Java developer, with all the stereotypes that this role could evoke in one’s head. I co-developed data-processing systems for various industries. Yet, much of the code I wrote was just boilerplate: passing data from one format to the other, or devising complex abstractions behind what should have really just been calling a function and obtaining its result. Yes, the code was difficult to comprehend, but I was proud of it for this exact reason. The more hoops I created, the more secure I felt that:</p>
+
+<ol>
+<li>I was doing what I thought was right</li>
+<li>If people didn’t understand the code, they’d have to come to me for an advice, further boosting my ego.</li>
+</ol>
+
+<h2 id="the-language-is-not-to-blame-for-this">The language is not to blame for this</h2>
+
+<p>The fact that much of the existing Java code is full of bureaucracy has nothing to do with the language itself, or with its platform. Our developer community should bear the sole responsibility. I can assure anyone that perfectly functioning Java applications can be written without 90% of the ceremony. They will be smaller and run faster. Most probably, easier to comprehend, too. And yet, they won’t get you hired in any well-respected company. They just won’t pass the <em>developer prejudice</em> test. I know. I’ve seen many elegant solutions and rejected them for not being /idiomatic/ enough.</p>
+
+<h2 id="go-isn-t-a-silver-bullet-either">Go isn’t a silver bullet either</h2>
+
+<p>For much of the same reasoning, jumping ship towards Go, just because “it is not Java”, won’t bring anyone far. Even before I started writing Go, I had heard and read many stories, about how simple and fast it made everything, how little ceremony it had, compared to Java, how it would eventually kill all other languages, etc. All blah, blah. Despite all of the above being true, you have to discover the truth in each for yourselves. If you approach the language out of desperation with your current way of working, you’re going to be set for a rough path.</p>
+
+<p>See, if you all you wanted was to get a faster running (name language of choice), you could certainly do it. Yet, holding on to the mental baggage of your previous experience will be hard and messy. My first Go project started out as a rewrite of a Spring Boot app I’d started earlier, so I thought I’d just organize it the same way. To keep the story short, let’s just say it was a spectacular disaster. Only after I started from scratch, did it really start taking off.</p>
+
+<h2 id="go-is-a-language-without-with-less-idioms">Go is a language without (with less) idioms</h2>
+
+<p>Let’s do a naive math experiment. Imagine that you could create valid programming expressions combining any 3 keywords, from a programming language’s vocabulary. Thus, if a language only has 10 keywords, the maximum number of possible expressions is 10 * 9 * 8 = 720. In contrast, a language, with, say, 20 keywords would end up having 20 * 19 * 18 = 6840 expressions. Twice as many keywords would result in almost 10 times as many expressions!</p>
+
+<p>Languages tend to encourage the creation and use of idioms. With that many possible expressions, it’s a normal behaviour for an individual, or a group of people to start associating and using expressions for certain things. The problems usually occur when another group comes with its own way of expressing the same thing. Both are perfectly valid, but each group would have issues understanding the other.</p>
+
+<p>This is not to say that Go having a very strict and concise nature, is totally devoid of idioms. That would be impossible. It is in our nature to try to associate and abstract certain concepts. Yet, when a language has a deliberately smaller vocabulary, the chances for different groups accidentally finding multiple ways of doing the same thing are smaller. This helps the communication between people a great deal, but comes with a very obvious downside. Code (or any written expression, for that matter) without idioms is very, very verbose.</p>
+
+<p>So, whoever told you that Go is not a verbose language, probably either lied to you on purpose, or had’n really seen any other programming languages up until that point. But hey, we agreed that verbosity in the name of communication and common understanding is a actually a good thing, right?s</p>
+
+<h2 id="go-is-a-test-for-senior-engineers">Go is a test for senior engineers</h2>
+
+<p>A lot has been said about the initial concept about Go, and how the idea was to design a language for juniors fresh out of college, and with little programming experience. I think that understanding the beauty of going back to the roots of programming, can be a cathartic experience for many seasoned programmers.</p>
+
+<p>See, junior programmers start with little baggage and preconceptions, so in their view, anything that can be done with code is fair and justified. Including, burning a CPU, or erasing a disk due to an arithmetic error.</p>
+
+<p>Somewhere along the middle of the career path, a bunch of principles start to pile up. All of them out of the desire to step on what’s already been learned, and to make sure that things are smoothly and safely without immediate supervision. Learning and applying the principles is great, because it ensures a gradual path forward. But for many, it becomes a dogma which they blindly stick to, without asking whether a simpler alternative could be better.</p>
+
+<p>The problem with principles is that they only work well around 80% of the time. It is the remaining 20% that can be disastrous for a project, or for one’s career. It is the understanding where to apply a principle, and where to deliberately throw it away in the name of pragmatism, which turns a software engineer into a senior software engineer.</p>
+
+<p>To really appreciate Go, one needs to learn how to discern what makes it and its community stand out from the rest. One needs to go through a phase of utter disgust with the language, for it “lacking” certain feature. Moving on despite the urge to go back to a familiar ground, would result in one of two things:</p>
+
+<ol>
+<li>Make one realise that indeed, the Go language is not what they need or want</li>
+<li>Learn to appreciate going back to the roots, as well as when to favour pragmatism over principles</li>
+</ol>
+
+<p>In any case, it would be an interesting experience.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Using Gohack for Temporary Modifications to Go Module Dependencies</title>
+            <link>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</link>
+            <pubDate>Fri, 10 Jan 2020 19:14:17 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/01/10/using-gohack-for-temporary-modifications-to-go-module-dependencies/</guid>
+            <description>I started programming Go right at the time when the topic of modularization heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.
 One big disadvantage of modules is that one can’t really edit them.</description>
-    </item>
+            <content type="html"><![CDATA[<p>I started programming Go right at the time when the topic of <em>modularization</em> heated up. Of course, we all know how it all played out with Go modules. They are here and they are (IMO) great. I have spent a significant amount programming Python before virtual environments were really a thing, and believe me, things got really messed up at times.</p>
+
+<p>One big disadvantage of modules is that one can’t really edit them. For a good reason, of course. You want them to be clean and reproducible, but occasionally, one needs to just insert a <code>log.Printf</code> or a tiny inspection function somewhere. One option is to call <code>mod vendor</code>, but this would copy all the dependencies to the vendor folder. Clearly, a lot more overhead than what one would need.</p>
+
+<p>This is where <a href="https://github.com/rogpeppe/gohack">gohack</a> comes in really handy. It uses a clever feature of the Go modules, called /replace/. It allows the user to manually override the path to a given dependency. Instead of doing all of this manually, however, gohack will do it all for you.</p>
+
+<p>After installing go-installing gohack, go to your module-bound Go project and use it instead of <code>go get</code> for a given dependency:</p>
+
+<pre><code>gohack get example.com/foo/bar
+</code></pre>
+
+<p>gohack will fetch the code and store it in a special place inside your <code>$HOME</code> directory. It will also do the go.mod replacements for you:</p>
+
+<pre><code>replace example.com/foo/bar =&gt; /home/me/gohack/example.com/foo/bar
+</code></pre>
+
+<p>All the edits you now do to the dependency that was added to your <code>$HOME</code> folder, will now affect the project that uses it.</p>
+
+<p>Once you have done checking, and want to revert to using the original dependency, you can simply use the undo functionality:</p>
+
+<pre><code>gohack undo example.com/foo/bar
+</code></pre>
+
+<p>or to revert all changes to all “hacked” dependencies:</p>
+
+<pre><code>gohack undo
+</code></pre>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars0.githubusercontent.com/u/66491?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/rogpeppe/gohack">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        rogpeppe/gohack</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Make temporary edits to your Go module dependencies - rogpeppe/gohack</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/rogpeppe/gohack">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Panic Without Worry</title>
+            <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
+            <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
+            <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
+            <content type="html"><![CDATA[<p>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</p>
+
+<p>When necessary, panic without worry.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>If You Can’t Get Flutter to Work with Your Beta Version of Xcode</title>
+            <link>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</link>
+            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
+            <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
+sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/  Afterwards, getting your app to run via flutter run should work as it used to before.
+Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
+            <content type="html"><![CDATA[
+
+<p>You need to explicitly set the beta version of Xcode as your default one via the command line:</p>
+
+<pre><code class="language-bash">sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/
+</code></pre>
+
+<p>Afterwards, getting your app  to run via <code>flutter run</code> should work as it used to before.</p>
+
+<h2 id="related-resources">Related Resources</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        select - Managing Multiple Versions Of Xcode</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It&#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">http://iosdevelopertips.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Why I Still Find the Minimap Useful</title>
+            <link>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</link>
+            <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
+            <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
+@media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
+            <content type="html"><![CDATA[<p>This is an answer, I wrote in response to a recent blog post by <a href="https://ericasadun.com">Erica Sadun</a>:</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ericasadun.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-08-at-8.07.45-AM.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://ericasadun.com/2019/11/08/my-enemy-the-minimap/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        My enemy the Minimap</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (…</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://ericasadun.com/2019/11/08/my-enemy-the-minimap/">https://ericasadun.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<p>Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line. In most languages, complexity increases with the level of nesting of code. This is usually difficult to estimate when reading the code itself, since the brain is focused on what the code does, rather than how nested it is. By obscuring the text, and leaving only a bird&rsquo;s-eye view of the layout, the minimap might help pinpoint parts of the code, needing improvement. It can be very helpful when working with someone else code, or with a code base, which you haven&rsquo;t touched in a while.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Go is Good Enough</title>
+            <link>https://preslav.me/2019/10/18/go-is-good-enough/</link>
+            <pubDate>Fri, 18 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/18/go-is-good-enough/</guid>
+            <description>Have you heard about the Pareto Principle? Also known as the 80&amp;frasl;20 Rule, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent.</description>
+            <content type="html"><![CDATA[<p>Have you heard about the <a href="https://en.wikipedia.org/wiki/Pareto_principle">Pareto Principle</a>? Also known as the <em><sup>80</sup>&frasl;<sub>20</sub> Rule</em>, it states that for many aspects of life, 80% of the effects come from 20% of the inputs. Flip it around and the opposite is also true: reaching out for the rest of the 20% requires 80% of the initial effort. It is amazing how many manifestations of both exist in real life. One of the big wisdoms in life - it is often not the smartest, fastest, or strongest individuals that leave a dent. It is the ones pragmatic enough to achieve the 80% with 20% of the effort and energy spent.</p>
+
+<p>The slight deviation aside, the same very much applies to the Go programming language. It is just good enough. Go won&rsquo;t win the category of language design, neither is it the fastest one on the market. Nor is it the safest member of the bunch. The truth is, what Go offers on the table might seem pretty boring at first. It is a compiled, statically typed language with an extremely reduced syntax, a somewhat simplified concurrency model, and a bit of memory safety. Nothing near close to the speed of C, the beauty of Ruby or the dogmatic memory management of Rust.</p>
+
+<p>And this is what makes Go succeed. It does not have any of those things, but it is simple and fast enough to get you going on a new project without having to second-guess your approach every second. The lack of features helps reduce the cognitive burden on both the programmer and the compiler. The speed, file-size and memory consumption of the final applications is more optimal than those of 80% of applications built using other technologies.</p>
+
+<p>Will Go ever be the best in any single programming language category? Probably no. Is it good enough to sustain 80% of your programming efforts? Absolutely!</p>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://en.wikipedia.org/wiki/Pareto_principle">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Pareto principle - Wikipedia</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Pareto principle (also known as the 80/20 rule, the law of the vital few, or the principle of factor sparsity)[1][2] states that, for many events, roughly 80% of the effects come from 20% of the causes.[3] Management consultant Joseph M. Juran suggested the principle and named it after Italian economist Vilfredo Pareto, who noted the 80/20 connection while at the University of Lausanne in 1896, as published in his first work, Cours d&#39;économie politique. In it, Pareto showed that approximately 80% of the land in Italy was owned by 20% of the population.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Simple Immutable Builders in Go, Using Value Receivers</title>
+            <link>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</link>
+            <pubDate>Sun, 06 Oct 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/10/06/simple-immutable-builders-in-go-using-value-receivers/</guid>
+            <description>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:
+l := content.NewLoader() l.PageCount = 5 c := l.Load(bytes)  Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to l, interjects and sets PageCount to 1000? Or worse, updates the state of l such that a panic is inevitable?</description>
+            <content type="html"><![CDATA[
+
+<p>Even in a simple language like Go, concurrently updating mutable state is like playing with fire. Take this piece of code, for example:</p>
+
+<pre><code class="language-go">l := content.NewLoader()
+l.PageCount = 5
+c := l.Load(bytes)
+</code></pre>
+
+<p>Can you be sure that what you are loading is actually going to contain five pages? What if another goroutine having access to <code>l</code>, interjects and sets <code>PageCount</code> to 1000? Or worse, updates the state of <code>l</code> such that a panic is inevitable?</p>
+
+<p>The simplest solution to this is to pack as much of the initial state configuration into the initialisation step. Constructors do not exist in Go, but unless we speak about a data-only struct (no logic), I would always recommend providing an initialiZer func <code>NewLoader(...)</code> and keeping as much of the state   of the struct unexported. This will transform the previous piece of code into:</p>
+
+<pre><code class="language-go">l := content.NewLoader(pageCount: 5)
+c := l.Load(bytes)
+</code></pre>
+
+<p>The problem there becomes apparent when you start having more than three arguments:</p>
+
+<pre><code class="language-go">l := content.NewLoader(pageCount: 5, offset: 3, protocol: &quot;HTTP&quot;, //... )
+c := l.Load(bytes)
+</code></pre>
+
+<p>How can we initialize <code>Loader</code> in a safe way, providing for some defaults, and without having to pack tens of parameters into the initializing func? There are various ways to achieve this. I have already written about <a href="https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/">one way</a> to approach this, another could be the functional options approach, suggested by <a href="https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis">Dave Cheney</a>.</p>
+
+<h1 id="value-receivers-as-builder-methods">Value receivers as builder methods</h1>
+
+<p>The simplest one I have found so far, takes advantage of an innate property of the Go language. Namely, the fact that everything is passed by value. One of the first questions many go beginners ask about, is the difference between <a href="https://tour.golang.org/methods/8">value and pointer receivers</a>. Pointer receivers are usually the preferred way to go, often, as an (premature) optimization, rather than because modifications are required. A bit underrated, value receivers have one big advantage, which is that they are safe for concurrent use. What a value receiver would get is a copy of the original value. This makes them perfect for implementing builder methods:</p>
+
+<pre><code class="language-go">type Loader struct {
+	pageSize int
+}
+
+func NewLoader() *Loader {
+	return &amp;Loader{
+		pageSize:10, // default
+	}
+}
+
+// check the use of a value receiver here
+func (l Loader) WithPageSize(ps int) *Loader {
+	l.pageSize = ps
+	return &amp;l
+}
+
+// The rest could be your usual pointer receivers
+func (l *Loader) Load(bytes []byte) string {
+	// ...
+}
+</code></pre>
+
+<p>The fact that we use a value receiver will cause the value of <code>l</code> to be copied, so technically, what we set <code>pageSize</code> to is a completely different place in memory. This is why we have to return a pointer to it and and reassign <code>l</code>:</p>
+
+<pre><code class="language-go">l := content.NewLoader().
+			withPageSize(5)
+
+c := l.Load(bytes)
+</code></pre>
+
+<p>This will cause some copying and a bit of work for the garbage collector, but in the grand scheme of things, it will be a negligible overhead. The safety that you gain is far more important.</p>
+
+<p>Let me know what you think.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201908031736/</link>
+            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201908031736/</guid>
+            <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
+I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
+            <content type="html"><![CDATA[<p>My first attempt to try out compiling a <a href="https://guides.micronaut.io/micronaut-creating-first-graal-app/guide/index.html">Micronaut</a> app to a native <a href="https://www.graalvm.org/">GraalVM</a> image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:</p>
+
+<p><img src="/images/2019/08/Image 2019-08-03 17-45-05.png" alt="" /></p>
+
+<p>I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way. Yet, as of this moment this option just seems too impractical, compared to Go&rsquo;s compilation time of mere seconds.</p>
+
+<p>That said, the startup time and memory footprint of the same Micronaut app running on the JVM are quite good, when compared to Spring Boot.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907241129/</link>
+            <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907241129/</guid>
+            <description>Apple is becoming a macOS gatekeeper too.
+ For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
+            <content type="html"><![CDATA[<p>Apple is becoming a macOS gatekeeper too.</p>
+
+<blockquote>
+<p>For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</p>
+</blockquote>
+
+<p>via <a href="https://bitsplitting.org/2019/07/22/a-real-gatekeeper/">A Real Gatekeeper</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907101824/</link>
+            <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907101824/</guid>
+            <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
+This is quite neat and might save me one or two print statements 😉
+Thanks to @FlorimondManca for this discovery!</description>
+            <content type="html"><![CDATA[<p>#TIL about the <code>breakpoint()</code> function in #Python 3.7 It starts a <code>pdb</code> session when the statement gets reached.</p>
+
+<p>This is quite neat and might save me one or two <code>print</code> statements 😉</p>
+
+<p><img src="/images/2019/07/PucNak1.jpg" alt="" /></p>
+
+<p>Thanks to <a href="https://twitter.com/FlorimondManca/status/1149023023153983488">@FlorimondManca</a> for this discovery!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[Quote] Ten Years of Erlang</title>
+            <link>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</link>
+            <pubDate>Wed, 10 Jul 2019 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
+            <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
+ @media (max-width: 640px) { .</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://ferd.ca/static/img/erlang-ladder.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://ferd.ca/ten-years-of-erlang.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Ten Years of Erlang</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      For my ten years in the Erlang community, I decided to cover a few topics such as hype phases and how this related to Erlang, the ladder of ideas within the language and how that can impact adoption, what changed in my decade there, and what I think Erlang still has to bring to the programming community at large.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://ferd.ca/ten-years-of-erlang.html">https://ferd.ca | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907022242/</link>
+            <pubDate>Tue, 02 Jul 2019 19:42:07 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907022242/</guid>
+            <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p><em>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. -</em> <a href="https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9"><em>Mark Miller</em></a></p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        An Open Letter To The Go Team About Try</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent&amp;rdquo;. - Mark Miller The new try proposal is an addition to the language that introduces a second mechanic to handle errors. It is being introduced in response to data gathered from the 2018 Go Survey and a review of proposals that were submitted during the Go 2 proposal process.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">https://www.ardanlabs.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+<blockquote>
+<p>This is a serious change and it feels like it’s being pushed through without a concerted effort to understand exactly what those 5% of Go developers meant when they said they wanted improved error handling. I plead to the Go team to re-evaluate the data sets being used before the <code>try</code> error handling experiment finds itself in any version of the language.</p>
+</blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906211000/</link>
+            <pubDate>Fri, 21 Jun 2019 08:00:18 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906211000/</guid>
+            <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
+ @media (max-width: 640px) { .</description>
+            <content type="html"><![CDATA[<blockquote>
+<p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        ongoing by Tim Bray · Go Creeping In</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I’ve seen the inside of the Google and Amazon tech stacks. There are common threads that run through them and also, I bet, through
+most BigTechCos.  Here and there down the stack is a lot of C&#43;&#43; and vestigial remnants from earlier days, Perl or PHP or whatever.
+Out in front of humans, of course, JS.  But in between, there are oceans and oceans of Java; to a remarkable degree, it runs
+the Internet. Except for, here and there, you find a small but steadily increasing proportion of Go.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">https://www.tbray.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Using Ephemeral Docker Containers as CLI Applications</title>
+            <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
+            <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
+            <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
+When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.</description>
+            <content type="html"><![CDATA[
+
+<p>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a <code>Dockerfile</code> and you should be able to replicate the process on every host OS that has Docker support.</p>
+
+<p>When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services. While the majority of Docker use cases fit exactly into this scenario, the realm of possible applications it offers, far exceeds that.</p>
+
+<p>One such application is the use of Docker containers to sandbox the complex inner workings of a command-line (CLI) application. Most data projects involve the running of scheduled scripts which access remote services, do data processing and eventually, write the results either to disk, or to dedicated data storage. Such scripts have required dependencies, and often, the dependencies of one may collide with the ones required by another, which ends up in a big mess. This is the primary reason, why things like virtual environments in Python or Node.js&rsquo; notorious <code>node_modules</code> folder exist in the first place. Yet, we all know one or two about <code>node_modules</code>&hellip;</p>
+
+<p><a href="https://hackernoon.com/circleci-performance-difference-between-cache-and-workspace-5567679c3601"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*i5S2tUk0CQBh1Euc.&amp;f=1" alt="" /></a></p>
+
+<p>The ideal case for such applications would be statically-bound executable files containing everything needed, and running into their own dedicated processes. One such approach is championed by languages like Go, Swift, and Kotlin&rsquo;s Native option (and of course, good old C/C++). Others, like Java (fat Jars) and Python (wheels) offer a somewhat reasonable compromise by putting the code and every dependency into a single deployable artifact. I call this a compromise, because it still requires the presence of either JDK or a Python runtime on the host OS.</p>
+
+<p>The majority of the time however, we won&rsquo;t have the opportunity to deploy everything into a single executable. Much of the time, we also won&rsquo;t have the freedom to install different runtimes globally. In such cases, baking a CLI application together with all of its dependencies into a dedicated Docker image can be a good option. Let&rsquo;s try a simple example:</p>
+
+<h2 id="an-example">An Example</h2>
+
+<p>Here is a simple Python script, which will fetch the current price of Bitcoin, and convert it to a desired fiat currency of our choice (&ldquo;USD&rdquo;, &ldquo;EUR&rdquo;).</p>
+
+<pre><code class="language-python">import argparse
+import requests
+
+def fetch(currency):
+    price = requests.get(&quot;https://api.coindesk.com/v1/bpi/currentprice.json&quot;).json()[&quot;bpi&quot;][currency][&quot;rate_float&quot;]
+
+    print(price)
+
+parser = argparse.ArgumentParser(description=&quot;My Fancy CLI&quot;)
+parser.add_argument(
+    '--currency',
+    help='Choose currency to convert to',
+)
+args = parser.parse_args()
+
+if __name__ == &quot;__main__&quot;:
+    print(args)
+    if args.currency:
+        fetch(args.currency)
+    else:
+        parser.print_help()
+</code></pre>
+
+<p>There are two things to keep a note on, in this example. First, is the use of <code>requests</code>, a popular HTTP request/response library, but not a part of the Python standard library, so it has to be installed separately. Second, is the use of command-line arguments, namely <code>--currency</code>.</p>
+
+<p>Next, is the <code>Dockerfile</code>:</p>
+
+<pre><code class="language-Dockerfile">FROM python:3.7
+RUN pip install requests
+COPY script.py .
+ENTRYPOINT [&quot;python&quot;, &quot;script.py&quot;]
+</code></pre>
+
+<p>Again, very simple. In light of keeping the example simple, we will install <code>requests</code> right in the <code>Dockerfile</code> and using a <code>requirements.txt</code> file or some kind of a setup script, which are the common practice.</p>
+
+<p>Let&rsquo;s build the image, assuming that both files are in our current directory:</p>
+
+<pre><code class="language-bash">docker build -t my-command .
+</code></pre>
+
+<p>Great, now we can grab our newly baked image and run it:</p>
+
+<pre><code class="language-bash">docker run --rm -it my-command --currency USD
+</code></pre>
+
+<p>The <code>--rm</code> option will remove the container immediately after the command has been executed. If you have ever ran <code>docker ps -a</code>, you would know that inactive containers do not get deleted immediately, but are left for a possible later restart. Assuming that we would like to run our command multiple times per day, this will result in lots of wasted resources.</p>
+
+<p>The other interesting option is <code>-i</code>. This one, combined with the fact that we chose <code>ENTRYPOINT</code> instead of <code>CMD</code> for our starting point in the <code>Dockerfile</code> would allow us to pass the <code>--currency</code> argument at the very end. There are a few subtle differences between <code>ENTRYPOINT</code> and <code>CMD</code> but the very basic is the ability to adapt <code>ENTRYPOINT</code>, while <code>CMD</code> is more or less final.</p>
+
+<p>You can, of course, create an alias fo your command to make the execution easier:</p>
+
+<pre><code class="language-bash">alias my-cmd=&quot;docker run --rm -i my-command&quot;
+
+my-cmd --currency USD
+</code></pre>
+
+<p>That&rsquo;s it! Now you can ahead and run your application as a scheduled cron task and e.g. accrue data over time:</p>
+
+<pre><code class="language-bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv
+</code></pre>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Once again, the solution is far from the ease of a drag-and-drop that Go executables allow. Also, it assumes a working Docker setup (less and less of an issue nowadays), and quite a bit of space, because of the images. It also, for the most part, requires building the image locally, or at least, pulling the ingredients from an image registry. Docker allows for an option to save an image with all of its dependencies and load it on a remote host OS. Think of it as a sort of fat-Jar. I tried it just for the sake of demonstration, but it seems very impractical, as it resulted in an enormous zip file for that tiny Python script (of course, it bakes a whole Linux bistro inside):</p>
+
+<pre><code class="language-bash">docker save -o my-command.zip my-command
+</code></pre>
+
+<pre><code class="language-bash">rw------- 1 user user 920M Mar 17 08:47 my-command.zip
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Kotlin ❤️ Data Science? (Part 1)</title>
+            <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
+            <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
+            <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
+   Mathematical Modeling with Kotlin | Thomas Nield</description>
+            <content type="html"><![CDATA[
+
+<p>A few days ago, I was invited to give a talk at the <a href="https://www.meetup.com/Kotlin-User-Group-Munich/events/257927489/">Munich Kotlin Users Group</a> meetup (check out my slides <a href="https://speakerdeck.com/preslavrachev/kotlin-data-science">here</a>) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. During<a href="https://preslav.me/2018/11/01/kotlinconf-2018-recap/"> KotlinConf 2018</a>, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.</p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/-zTqtEcnM7A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://youtu.be/-zTqtEcnM7A">Mathematical Modeling with Kotlin | Thomas Nield</a></p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/yjVW6uCmVBA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=yjVW6uCmVBA">Building Data Science Workflows with Kotlin | Holger Brandl</a></p>
+
+<p>Indeed, the future seems full of opportunities for Kotlin, but not before JetBrains and the developer community remove a few of the pending roadblocks.</p>
+
+<p>The following article is the first part of a two-part series based on my talk. After the meetup, I realized that the topic is far deeper than just going through a few slides about what Kotlin as a language can and can’t. Therefore, I decided to properly introduce the reader to the topic first. Next time, we will talk about where and how Kotlin can fit into the puzzle.</p>
+
+<h1 id="the-problem-with-data">The Problem with Data</h1>
+
+<p>We live in an age of unprecedented data abundance. So much, that our wishful imagination is easy to make us believe that we are on the verge of getting computers to think. Not surprisingly, when speaking about the future, the use of the term “AI” has recently become a favorite topic among company management and technology media alike.</p>
+
+<p>Yet, in reality, we are only touching the surface. The path towards autonomous AI requires more basic human intervention than anything else. In particular, it needs a way for properly communicating data science into the software engineering field, and vice versa.</p>
+
+<p>Aren’t We Already There?
+Nope, not quite. Bringing data science into the production workflow of established companies is not as easy as one might think. More so, when talking about the JVM, which a vast majority of enterprise software has been built upon.</p>
+
+<p>See, there is a mismatch between software engineering and data science practices:</p>
+
+<p>Software engineering works best when building well-defined systems. Requirements are set at the beginning and ideally, evolve over time, but rarely change entirely. There are traceable boundaries between components, with deterministic inputs and outputs, to help testability and ease extension. Like other forms of engineering, building a piece of software starts with a rough skeleton, which gets iterated over time and again. The goal of every step is to make the software either more feature complete or gradually morph it into a new direction, but keep it compatible with the original requirements.</p>
+
+<p>Data science, on the other hand, deals with supporting or refuting hypotheses. Like other fields of science, it starts with a relatively generic question and goes through a process of data exploration and validation, until either the question can be answered fully, or it needs to be formulated again, due to an insufficiency of the data/selected approach. The exploration phase often involves trying out different approaches and seeing a large portion of them fail. This is why it is so important for the data science field to use tools and technologies that allow for easy exploration and visualization of the underlying data.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*_At3wUK_Zqgz_goL.png" alt="" />
+<a href="https://www.xkcd.com/1838/">Machine Learning | xkcd</a></p>
+
+<p>Another important difference between software engineering and data science is the interpretation of the outputs of systems at hand. Although, the understanding of distributed systems has almost become a science of its own, interpreting the outcome of a non-deterministic machine learning model is a whole different game. It is not easy to unit-test complex ML models, mainly because of the level of randomness they are built upon. Removing this randomness factor can help test the model in isolation, but might also provide the wrong assumptions when feeding the model with real-world data. Just like with the exploration phase above, it is a matter of having the right tools at hand and a fairly deep level of human interpretation.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*ihz1vmQr7OcBTVx4.png" alt="" />
+<a href="https://xkcd.com/605/">Extrapolating | xkcd</a></p>
+
+<h1 id="ai-ml-and-the-role-of-data-science-in-all-of-this">AI, ML, and the Role of Data Science in All of This</h1>
+
+<p>So, we are back to our favorite term: Artificial Intelligence, also known as AI. AI has had a long history of ups and downs, most notably its birth and early progress during the 1950s and 1960s, followed by the so-called AI winter covering most of the late 1980s, 1990s, and the beginning of the 21st Century. The recent advancement of hardware technology has given researchers the opportunity to dig out the old papers, beat them off the dust, and re-imagine the utopian bright future, in which humans and machines become alike.</p>
+
+<p>The fields of AI and Data Science have been complementing one another for a long time. Yet, while AI still seems rather ephemeral and difficult to grasp (a bit like Virtual Reality), Data Science resembles Augmented Reality, in that it employs technology, but leaves the ultimate decision and interpretation to humans.</p>
+
+<p>Machine Learning (or ML, for short) is just one of the techniques that both rely on, in order to make machines reason about large amounts of data, but by far not the only one.</p>
+
+<p>If you are looking for a more cynical view of the difference between the three you can rather use this one:</p>
+
+<ul>
+<li>AI is what brings the VC Money in.</li>
+<li>ML (a.k.a sophisticated brute-force) is what gets the job done. ML models are very limited to a given domain.</li>
+<li>DS is the craft of finding which ML model works for a particular case, and which doesn’t.
+<br /></li>
+</ul>
+
+<p>Until next time, when I will talk more about whether Kotlin can help fill the gap between Software Engineering and Data Science, as well as what steps are still needed to help us get there.</p>
+
+<h1 id="further-resources">Further Resources</h1>
+
+<p>The slides to my talk
+<script async class="speakerdeck-embed" data-id="99478ac60b134f5393f45d382b1d1bc6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></p>
+
+<ul>
+<li><a href="http://approximatelycorrect.com/2017/03/28/the-ai-misinformation-epidemic/">The AI Misinformation Epidemic</a></li>
+<li><a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">What’s the Difference Between Artificial Intelligence, Machine Learning, and Deep Learning?</a></li>
+<li><a href="https://towardsdatascience.com/data-science-has-become-too-vague-538899bab57">Data Science Has Become Too Vague</a></li>
+<li><a href="https://towardsdatascience.com/deep-misconceptions-about-deep-learning-f26c41faceec">Deep Misconceptions About Deep Learning</a></li>
+<li><a href="https://stats.stackexchange.com/questions/423/what-is-your-favorite-data-analysis-cartoon/9254">What is your favorite “data analysis” cartoon?</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Use Dotenv Files When Developing Your Python Apps</title>
+            <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
+            <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
+            <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
+            <content type="html"><![CDATA[
+
+<p>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing. The <a href="https://12factor.net/">Twelve-Factor-App</a> methodology calls this a <em>violation</em>, and has whole <a href="https://12factor.net/config">section</a> on why should be externalized and read from the environment at runtime.</p>
+
+<p>I used to avoid using environment variables, because they made it hard to set up a local environment for testing. I’d either pass all the assignments at the start, or use a cumbersome startup script to export them to the current shell.</p>
+
+<p>Luckily, it is easy to improve the quality of your code, and ease testing in different environments at the same time. It has become somewhat of a standard practice to use <code>.env</code> (a.k.a dotenv) files for configuring sensitive data while testing across environments. A <em>dotenv</em> file contains nothing more than text, where  it has one environment variable assignment per line:</p>
+
+<pre><code class="language-bash">ABC_KEY=1234xyz
+DEF_KEY=2349875
+DEBUG=True
+</code></pre>
+
+<p><strong>NOTE</strong>: <em>Dotenv</em> files <strong>must be ignored</strong> from version control for exactly the same reason mentioned at the beginning of this post: exposing sensitive information as part of the project is bad. These files are only used to quickly set up or change an environment when needed.</p>
+
+<h2 id="using-a-dotenv-file-in-our-app">Using a dotenv file in our app</h2>
+
+<p>How do we get our Python app to read a <code>.env</code> file? <a href="https://pypi.org/project/python-dotenv/">python-dotenv</a> is a great Python package that does exactly that. It will search for a <code>.env</code> as part of the project, and if it finds one, will expose the variables in it to the app. All you need to do, is <code>pip install python-dotenv</code> and add the following couple of lines at the start of your project:</p>
+
+<pre><code class="language-python">from dotenv import load_dotenv
+load_dotenv()
+</code></pre>
+
+<p>The starting point may vary, depending on whether your project is a command line script, a Flask, or a Django project. For instance, in a Django project, the above two lines need to be added at the top of the <code>settings.py</code> file.</p>
+
+<p>Having set <code>python-loadenv</code> up, the rest is easy. Create a <code>.env</code> file at the root of your app with all the environment variables needed to configure it, and make sure that you invoke them properly from your code (e.g. use something like <code>os.getenv('MY_API_KEY')</code>). Don’t forget to exclude the <code>.env</code> file from being checked into your source code repository!</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="https://pypi.org/project/python-dotenv/">python-dotenv · PyPI</a></li>
+<li><a href="http://12factor.net/">http://12factor.net/</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
+            <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
+            <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
+            <description>Dependency Injection (DI) in Python? Seriously? 🤔
+At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? Spoiler: I am going to mention Spring only once in this post, I promise.
+NOTE: If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to the example at the end.</description>
+            <content type="html"><![CDATA[
+
+<p>Dependency Injection (DI) in Python? Seriously? 🤔</p>
+
+<p>At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? <em>Spoiler:</em> I am going to mention Spring only once in this post, I promise.</p>
+
+<p><strong><em>NOTE:</em></strong> If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to <a href="#a-more-complex-example">the example</a> at the end. Otherwise, keep reading. As always, feel free to send me a <a href="https://twitter.com/intent/tweet?text=%40preslavrachev%20%5BADD%20YOUR%20COMMENT%20HERE%5D&amp;url=https://preslav.me/p/3c4daf3d-607c-49e4-8aa9-c87a61be1697/&amp;related=preslavrachev">✏️comment on Twitter</a>. Your feedback is more than appreciated.</p>
+
+<p>&hellip;</p>
+
+<h1 id="let-s-get-things-straight">Let&rsquo;s Get Things Straight</h1>
+
+<p>While I am definitely approaching Python software development from my close-to-a-decade  experience building Java software, I am not trying to preach to you a certain style of programming. Take this simply as a different perspective on things. The Python Universe is so immense that it will be a crime to pretend that DI is necessary for every Python project. While certain types of Python projects will definitely benefit from a bit more structure, for many others, DI might become the worst nightmare. I will try to write down my reasons, and leave the final decision to the reader.</p>
+
+<h1 id="a-quick-detour-on-dependency-injection">A Quick Detour on Dependency Injection</h1>
+
+<p>I will save you the lecture here. I am sure that many of you already know what DI is all about. Perhaps, some of you have already looked at, if not even read Martin Fowler&rsquo;s <a href="https://martinfowler.com/articles/injection.html">Dependency Injection essay</a>. Even if you haven&rsquo;t, don&rsquo;t panic. I will share you a secret, and that is, <strong>you already know DI, and have used it many times,</strong> even if you haven&rsquo;t used a particular name for it.</p>
+
+<p>There is one golden prerequisite for Dependency Injection and that is, Separation of Concerns. Put simply, group logic in separable units, and let these units work together, without any of them knowing much about the implementation details of the other. OOP calls such units <em>classes</em>, and FP, <em>functions</em>. The point is, <em>units isolate common logic</em>. Let&rsquo;s add to this the requirement that no unit explicitly instantiates the units it works with (dependencies). Instead, dependencies are passed upon the unit (injected), usually, during its instantiation.</p>
+
+<p>So, DI is a fancy term for instantiating classes in a top-level module, and passing them as initializer arguments to one another:</p>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
+
+
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
+
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+
+# ---
+
+if __name__ == '__main__':
+    api = Api()
+    logic = BusinessLogic(api=api)
+
+    # ...
+    print(logic.do_stuff())
+</code></pre>
+
+<p>There are of course, more Pythonic ways of implementing Dependency Injection. I realize that the one I provided above is very Java-like. I have tried to collect a list of Python-related resources you might want to consult. You will find it at the end of this post.</p>
+
+<h1 id="where-explicit-dependency-injection-might-help">Where Explicit Dependency Injection Might Help</h1>
+
+<p>I already tried to make it clear that DI is not a silver bullet, and due to Python&rsquo;s versatility of use, it might not fit to every project. In some, it might even hamper the development of the project.</p>
+
+<p>Python was created to give its developers the freedom to just do things, without sweating much about structure or ceremony, when those are not needed. This is why the Python ecosystem is perfect for scratching out ideas and prototyping, single-purpose CLI tools, or scripts with limited scope and lifetime.</p>
+
+<p>Yet, for many of these projects, there comes a time, when they grow, or are bound to grow from the onset, and with this growth comes a different set of challenges. Where I see DI fit best, are projects with established requirements, serving a large number of stakeholders. The challenge here is to scale and constantly improve the system, without compromising its stability.</p>
+
+<p><strong>Advantages</strong></p>
+
+<p>Adding DI to your project will potentially</p>
+
+<ul>
+<li>increase its testability and reusability, because by design, it allows for easily replacing one component with another (great for mocking, or replacing one concrete implementation with another)</li>
+<li>increase the readability. When applying DI your top-level model becomes sort of an orchestrator, instantiating your units and passing dependencies to them. Although this might add a bit of boilerplate, it helps ensure that all the LEGO-block wiring-up happens in one place, and this place will always be the starting point of your later investigations.</li>
+<li>adds a certain level of common understanding between programmers of different backgrounds. While I am sure that many of you would come up with some more elegant and more Pythonic ways for solving the dependency issue, some of them might be too obscure for non-Python gurus (hi there 👋🏼) and lead to misunderstanding, lost communication, and potentially, compromising the resilience of the end product.</li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<p>Well, the boilerplate and ceremony might be quite of an issue for some Python purists.</p>
+
+<h1 id="a-more-complex-example">A More Complex Example</h1>
+
+<p>I have already mentioned it a few times that doing all the instantiation and passing dependencies around by hand can be a bit tedious. It can also be complicated, because of the order of instantiation. The core dependencies must be instantiated first, the units that depend on them afterwards, and so on, until the top-level units, whose role is usually to coordinate the flow of data among their dependencies.</p>
+
+<p>There are many Python libraries, which already facilitate this process. Among those, I looked at <a href="https://github.com/ets-labs/python-dependency-injector">python-dependency-injector</a>, <a href="https://github.com/suned/serum">serum</a>, and <a href="https://github.com/alecthomas/injector">injector</a>. I found <a href="https://github.com/alecthomas/injector">injector</a> to be closest to what I have come to know and use on Java - <a href="https://spring.io/">Spring</a> and <a href="https://github.com/google/guice">Guice</a>. It is not the least verbose, but it gets the job done. Let&rsquo;s see how it works:</p>
+
+<pre><code class="language-bash">pip install injector
+</code></pre>
+
+<p>Let&rsquo;s take the two classes, I have created above:</p>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
+
+
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
+
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+</code></pre>
+
+<p>The only modification I made, was adding an explicit <a href="https://www.python.org/dev/peps/pep-0484/">type hint</a> to the <code>Api</code> dependency. This will be used by the library to determine the right object to pass at instantiation.</p>
+
+<p>Injector, similar to Guice and Spring, adds the concept of a dependency <code>Module</code>. This is a class that inherits from <code>injector.Module</code> and has a bunch of methods, each corresponding to the initialization of one dependency or the other:</p>
+
+<pre><code class="language-python">class AppModule(Module):
+
+    @singleton
+    @provider
+    def provide_business_logic(self, api: Api) -&gt; BusinessLogic:
+        return BusinessLogic(api=api)
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        # there is no complex logic in our case,
+        # but you can use this method to hide the complexity of initial 
+        configuration
+        # e.g. when instantiating a particular DB connector.
+        return Api()
+</code></pre>
+
+<p>Each of these methods is decorated with <code>@provider</code> (required) and <code>@singleton</code> (optional, only if you want to ensure that the object instance will always remain the same). Pay attention to the use of type hinting here too. One the one hand, it makes the dependency module code more readable, on the other, it is used by the injector library to determine the right objects to return.</p>
+
+<p>Let&rsquo;s see how to use our classes. We need to create an Injector and pass it an instance of our AppModule.</p>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    injector = Injector(AppModule())
+
+    logic = injector.get(BusinessLogic)
+    logic.do_stuff()
+</code></pre>
+
+<p>From now on, when you want to obtain an instance which is inside the dependency graph, from outside the graph, you would have to use the injector. Before you start grunting about the rising amount of boilerplate, let me point out that the actual places where you would need to do that, are either your app&rsquo;s main starting points, or API/Web endpoints in the context of a Web application. Actually, if you are building a Flask app, the creator of injector has got you covered. There is an extension for Flask, called <a href="https://github.com/alecthomas/flask_injector">flask-injector,</a> which hides the boilerplate of having to use the injector object directly.</p>
+
+<p>Back to our injector instance. The real benefit of having dependency modules, is when you have several of them, for running your app in different contexts. The simplest example is testing. Let&rsquo;s create a version of our Api class for testing purposes:</p>
+
+<pre><code class="language-python">class TestApi(Api):
+    def fetch_remote_data(self):
+        print('Demo Api called')
+        return 24
+</code></pre>
+
+<p>Assuming that there might be more classes we&rsquo;d like to mock, we create a separate dependency module for them:</p>
+
+<pre><code class="language-python">class TestAppModule(Module):
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        return TestApi()
+</code></pre>
+
+<p>The real magic happens when creating the injector. You can have as many injectors as you have, and each injector instance can be supplied with as many dependency module configurations as you wish:</p>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    real_injector = Injector(AppModule())
+    test_injector = Injector([AppModule(), TestAppModule()])
+
+    real_logic = real_injector.get(BusinessLogic)
+    real_logic.do_stuff()
+
+    test_logic = test_injector.get(BusinessLogic)
+    test_logic.do_stuff()
+</code></pre>
+
+<pre><code>Api called
+the api returned a result: 42
+Demo Api called
+the api returned a result: 24
+</code></pre>
+
+<h1 id="the-end">The End</h1>
+
+<p>I will stop here. I hope, if not really having managed to convince you, to have given you a slightly different perspective on things. Until next time!</p>
+
+<hr />
+
+<h1 id="related-resources">Related Resources</h1>
+
+<ul>
+<li><a href="https://martinfowler.com/articles/injection.html">Inversion of Control Containers and the Dependency Injection pattern</a></li>
+<li><a href="https://medium.com/@suneandreasdybrodebel/pythonic-dependency-injection-a-practical-guide-83a1b1299280">Pythonic Dependency Injection: A Practical Guide - Sune Andreas Dybro Debel - Medium</a></li>
+<li><a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html">Python 3 Patterns, Recipes and Idioms - Python 3 Patterns, Recipes and Idioms</a></li>
+<li><a href="http://python-dependency-injector.ets-labs.org/introduction/di_in_python.html">Dependency injection and inversion of control in Python - Dependency Injector 3.14.2 documentation</a></li>
+<li><a href="https://github.com/alecthomas/injector">alecthomas/injector</a></li>
+<li><a href="https://github.com/suned/serum">suned/serum</a></li>
+<li><a href="https://github.com/ets-labs/python-dependency-injector">ets-labs/python-dependency-injector</a></li>
+<li><a href="https://github.com/RobertoPrevato/rodi">RobertoPrevato/rodi</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Designing Well-Structured REST APIs with Flask-RestPlus: Part 1</title>
+            <link>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</link>
+            <pubDate>Sun, 02 Dec 2018 15:46:47 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/02/designing-well-structured-rest-apis-with-flask-restplus-part-1/</guid>
+            <description>This is the first part of a two-part series. In this post, I will introduce Flask-RestPlus and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.
+A seasoned Spring developer, I felt a bit uneasy when designing and future-proofing a Flask-based API for the first time. I have recently started using Python way beyond my original intention to just play with data, and found Flask to be a super-easy micro-service alternative to Spring Boot or Ktor.</description>
+            <content type="html"><![CDATA[
+
+<p>This is the first part of a two-part series. In this post, I will introduce <a href="https://flask-restplus.readthedocs.io/en/stable/">Flask-RestPlus</a> and demonstrate how to start organising APIs around its simple REST-based conventions. Next time, I will address the topic of request/response marshalling (serialisation) and validation.</p>
+
+<hr />
+
+<p>A seasoned Spring developer, I felt a bit uneasy when designing and future-proofing a <a href="http://flask.pocoo.org/">Flask</a>-based API for the first time. I have recently started using Python way beyond my original intention to just play with data, and found Flask to be a super-easy micro-service alternative to <a href="https://spring.io/projects/spring-boot">Spring Boot</a> or <a href="https://ktor.io/">Ktor</a>. The one thing I was really concerned about, was making sure that the API  request/response format was standardised (think, providing a Swagger schema), well-documented, and validated. While working with Java, much of this would come straight from the compiler itself, due to the static-type nature of the language. When you combine this with a couple of great libraries like <a href="https://github.com/FasterXML/jackson">Jackson</a> and <a href="http://springfox.github.io/springfox/">SpringFox</a>, the API communication gets documented and validated with minimal intrusion to the actual code. In Python, this would require tedious <code>if-else</code> checks all over the place &hellip; or so I thought.</p>
+
+<h2 id="flask-restplus-to-the-rescue">Flask-RestPlus to the Rescue</h2>
+
+<p>Unlike <a href="https://www.djangoproject.com/">Django</a>, Flask does not come with batteries included, but there is a whole ecosystem of open-source libraries and extensions contributed by the community. One of these is called <a href="https://flask-restplus.readthedocs.io/en/stable/">Flask-RestPlus</a> and it is the absolute dream-come-true for every Flask API designer. Flask-RestPlus is a <a href="http://flask.pocoo.org/docs/1.0/extensiondev/">Flask extension</a> library, and as the name suggests, it helps ease the building of structured RESTful APIs with minimal setup, and encourages best practices. Flask RestPlus follows certain conventions, but does not insist on them, the way Django does.  In a way, Flask-RestPlus tries to help organise a growing Flask project, but without it losing its minimal overhead, which is the greatest charm of Flask.</p>
+
+<p>The goal of this series is to start with a simple Flask app, and try to address the following points with a bit of Flask-RestPlus at a time:</p>
+
+<ol>
+<li>Structure and auto-document an API <strong>(Part 1)</strong></li>
+<li>Ensure request/response payload validation <strong>(Part 2)</strong></li>
+</ol>
+
+<h3 id="demo-app">Demo App</h3>
+
+<p>Let&rsquo;s start with a simple Flask-based API for a conference management application:</p>
+
+<pre><code class="language-python">from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route(&quot;/conferences/&quot;)
+def get_all__conferences():
+    &quot;&quot;&quot;
+    returns a list of conferences
+    &quot;&quot;&quot;
+
+
+@app.route(&quot;/conferences/&quot;, methods=['POST'])
+def add_conference():
+    &quot;&quot;&quot;
+    Adds a new conference to the list
+    &quot;&quot;&quot;
+
+
+@app.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def get_conference(id):
+    &quot;&quot;&quot;
+    Displays a conference's details
+    &quot;&quot;&quot;
+
+@app.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def edit_conference(id):
+    &quot;&quot;&quot;
+    Edits a selected conference
+    &quot;&quot;&quot;
+</code></pre>
+
+<p>Installing Flask-RestPlus is easy</p>
+
+<pre><code class="language-bash">pip install Flask-RestPlus
+</code></pre>
+
+<p>Let&rsquo;s simply introduce an Api object for now, try to wrap our app instance with it, replace the routing decorators, and see what happens:</p>
+
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api
+
+app = Flask(__name__)
+api = Api(app=app)
+
+
+@api.route(&quot;/conferences/&quot;)
+def get_all__conferences():
+    pass
+
+
+@api.route(&quot;/conferences/&quot;, methods=['POST'])
+def add_conference():
+    pass
+
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def get_conference(id):
+    &quot;&quot;&quot;
+    Displays a conference's details
+    &quot;&quot;&quot;
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def edit_conference(id):
+    &quot;&quot;&quot;
+    Edits a selected conference
+    &quot;&quot;&quot;
+</code></pre>
+
+<p>As soon as the app starts, we will get the following error:</p>
+
+<pre><code>AttributeError: 'function' object has no attribute 'as_view'
+</code></pre>
+
+<p>This is because if you want to use RestPlus for some of your Flask functions, you have to enclose them in a scoping class. Not only that, but inside the enclosing class, you should name your methods, corresponding to the HTTP methods that REST is based on: GET, POST, PUT, and DELETE:</p>
+
+<pre><code class="language-python">@api.route(&quot;/conferences/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+</code></pre>
+
+<p>Before anyone starts objecting, let me explain why this is helpful. Flask-RestPlus uses the Flask concept of &ldquo;Pluggable Views&rdquo; to introduce <code>Resource</code> (as in, REST resource).</p>
+
+<p>Let&rsquo;s be honest. While most Flask applications start simple, many of them outgrow the initial idea, and cramming several handler functions in the main module scope quickly becomes a mess. This is why <a href="http://exploreflask.com/en/latest/blueprints.html">Flask Blueprints</a> exist to help split common functionality into multiple modules.</p>
+
+<p>Flask-RestPlus makes great use of Blueprints too, as I will demonstrate later, but Resources go one level of granularity further. A Resource class can have multiple methods, but each one should be named after one of the accepted HTTP verbs. What if you need more than one <code>GET</code> or <code>POST</code> method for your API? Well, create multiple Resource classes and put each method in the corresponding resource class. It might look a little overwhelming at first, coming from the cut-the-boilerplate nature of Flask, but with a bit of playing around, it won&rsquo;t be a brainer at all, and it will pay off tremendously in the long run.</p>
+
+<p>Let&rsquo;s see how our tiny app will look after the transformations:</p>
+
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api, Resource
+
+app = Flask(__name__)
+api = Api(app=app)
+
+
+@api.route(&quot;/conferences/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+
+    def post(self):
+        &quot;&quot;&quot;
+        Adds a new conference to the list
+        &quot;&quot;&quot;
+
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+class Conference(Resource):
+    def get(self, id):
+        &quot;&quot;&quot;
+        Displays a conference's details
+        &quot;&quot;&quot;
+
+    def put(self, id):
+        &quot;&quot;&quot;
+        Edits a selected conference
+        &quot;&quot;&quot; 
+</code></pre>
+
+<p>With this tiny bit of overhead (if you even consider this any overhead at all), you get so much in return. Start the app and point to <a href="http://localhost:5000">http://localhost:5000</a>. You will see that the index page has turned into a Swagger UI, which shows the already defined API endpoints, neatly organised into categories (namespaces):</p>
+
+<p><img src="/images/2018/december/image.png" alt="" /></p>
+
+<p>This is great for documenting, playing with, and sharing you API schema around. Yet, this is by far not the only thing that Flask-RestPlus does for you. It goes beyond simply documenting the API, in ensuring that the API is compliant with the schema. Put simply, Flask-RestPlus makes sure that if certain request parameters are marked as mandatory, or if request/response models are supposed to have a certain structure, those are checked and validated at runtime. In my opinion, this is real advantage of Flask-RestPlus, sitting on top of a Flask application. The current example is too simple to demonstrate the real power of request/response marshalling and validation, but both will be throughly described in Part 2.</p>
+
+<h3 id="namespaces">Namespaces</h3>
+
+<p>Namespaces are optional, and add a bit of additional organisational touch to the API, mainly, from a documentation point of view. A namespace allows you to group related Resources under a common root, and is simple to create:</p>
+
+<pre><code class="language-python">ns_conf = api.namespace('conferences', description='Conference operations')
+</code></pre>
+
+<p>To bring certain Resources under a given namespace, all you need to do, is to replace <code>@api</code> with <code>@ns_conf</code>. Notice also that the name of the namespace replaces the name of the resource, so endpoints can simply to refer to <code>/</code>, instead of copying the name of the resource time and again:</p>
+
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api, Resource
+
+app = Flask(__name__)
+api = Api(app=app)
+ns_conf = api.namespace('conferences', description='Conference operations')
+
+
+@ns_conf.route(&quot;/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+
+    def post(self):
+        &quot;&quot;&quot;
+        Adds a new conference to the list
+        &quot;&quot;&quot;
+
+
+@ns_conf.route(&quot;/&lt;int:id&gt;&quot;)
+class Conference(Resource):
+    def get(self, id):
+        &quot;&quot;&quot;
+        Displays a conference's details
+        &quot;&quot;&quot;
+
+    def put(self, id):
+        &quot;&quot;&quot;
+        Edits a selected conference
+        &quot;&quot;&quot;
+</code></pre>
+
+<p>One will notice afterwards that the Swagger UI display has changed too, to reflect the namespacing:</p>
+
+<p><img src="/images/2018/december/image-1.png" alt="" /></p>
+
+<h3 id="blueprints">Blueprints</h3>
+
+<p><a href="http://flask.pocoo.org/docs/blueprints/#blueprints">Flask Blueprints</a> are a popular way of designing modular applications. The same applies to Flask-RestPlus. The production version of our application will certainly outgrow the four endpoints we started with. There might be other resources, or at the very least, you might want to move to move your API away from the root of your app. Both cases are a perfect candidate for a Blueprint.  Let&rsquo;s move all of our API endpoints under <code>/api/v1</code>, without touching the routes of even one of them. This example is coming straight from the Flask-RestPlus <a href="https://flask-restplus.readthedocs.io/en/stable/scaling.html#use-with-blueprints">documentation</a>, and is illustrative enough to help close this chapter of the journey:</p>
+
+<p>Create a Blueprint the usual way, and instead of wrapping our app instance with the RestPlus API,  we will wrap the Blueprint instead. This way, independent of our app, we are free to move our API part into a different module: (e.g. <code>blueprint/api.py</code>).</p>
+
+<pre><code class="language-python">from flask import Blueprint
+from flask_restplus import Api
+
+blueprint = Blueprint('api', __name__)
+api = Api(blueprint)
+
+# Bring in the rest of our API code here
+</code></pre>
+
+<p>This leaves only a tiny bit of bridging code to introduce the Blueprint to the main app, and set the URL prefix. The next time you start your app, the API endpoints will be accessible only under the specified URL prefix (<code>/api/v1</code>):</p>
+
+<pre><code class="language-python">from flask import Flask
+from apis import blueprint as api
+
+app = Flask(__name__)
+app.register_blueprint(api, url_prefix='/api/1')
+</code></pre>
+
+<p>Last but not least, it is always a good idea to move the Swagger UI documentation away from the root. As in everything else in RestPlus, this part is extremely ease, too. You can override the default location by passing an additional parameter to the initialiser:</p>
+
+<pre><code class="language-python">api = Api(app=app, doc='/docs')
+</code></pre>
+
+<hr />
+
+<p>This sums up the first part of my series. I hope that it was informative, and will help you structure your Flask-based REST APIs better in the future. Till next time!</p>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+<li><a href="https://medium.freecodecamp.org/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563">How to structure a Flask-RESTPlus web service for production builds</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Data Science on Your iPad</title>
+            <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+            <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+            <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
+            <content type="html"><![CDATA[
+
+<p>This article is a follow-up transcription to a talk I recently gave at a local <a href="https://www.meetup.com/Hacking-Machine-Learning">Munich machine learning meetup</a>. Unlike <a href="https://preslav.me/2018/05/25/my-first-machine-learning-talk/">my previous talk</a>, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea. Being an iOS developer, who has once built a 3rd-party App Store search engine, I know first-hand how difficult it is to find anything inside the App Store, more so, when carefully specifying what one is looking for. Therefore, I believe that if nothing else, even having this one collection of links should be a valuable starting point for further exploration.</p>
+
+<p>Before I get to the apps, let me start with some background:</p>
+
+<h2 id="why-a-tablet">Why a Tablet?</h2>
+
+<p>Although it might no longer get the media&rsquo;s attention as the tech sector&rsquo;s latest sexy gadget, the tablet has replaced the laptop/desktop in a number of activities, where one previously needed a &ldquo;real machine&rdquo;. What is more, the tablet is slowly getting out of people&rsquo;s notion as being handy coffee table device for content consumption. It is rather becoming the preferred content creation choice of many, particularly, creative professions, such as writers, musicians, and visual artists. This has caught the eye of companies like Apple, who have decided to double-down on the iPad&rsquo;s Pro model, targeted primarily at professionals.</p>
+
+<p>If there is one thing that could describe our generation best, this would be our constant state of movement. We spend so much time commuting, or in some form of passive travel. We might as well try to start reclaiming some of this time and use it for creative and productive activities. This is where a tablet fits in for me.</p>
+
+<p>Even at the bulkiest of sizes, an iPad is more convenient to carry around than a laptop. It is &ldquo;always on&rdquo;, can be used while sitting, lying or standing, with or without a keyboard, and requires less interactions than a laptop. More than anything else, I find the level of multitasking exactly right for this type of medium. Indeed, one can do way less things at the same time on an iPad than one can do using a laptop. I tend to consider this a feature rather than a shortcoming: less multitasking =&gt; less distraction, i.e. more immersion.</p>
+
+<p>Although my daily work involves sitting behind a laptop and crafting complex systems, it is rarely behind the laptop where these ideas originate. I feel most creative when discussing things with people or when I drift away somewhere outside, my iPad in my hand.</p>
+
+<p>Now back to the main topic&hellip;</p>
+
+<h2 id="coding-on-an-ipad">Coding on an iPad?</h2>
+
+<p>It is certainly doable, and getting used to it takes way less time than one might expect. As an example, take developer Richard Morgan, who <a href="https://www.imore.com/starsceptre-ios-game-was-entirely-coded-ipad">developed an iOS game on his iPad</a>, entirely during his commute around London. Everything is possible when you have the right mindset and the right tools.</p>
+
+<p>As for the tools, there are quite a few good ones, hidden inside the App Store. In fact, code editors for iOS have existed even before the release of the original iPad. Among them, many in-app IDEs of sorts. Yet, it wasn&rsquo;t until last year, when I started seriously taking look at the possibility writing code and running it entirely on an iPad. In 2017, Apple <a href="https://www.macstories.net/linked/apples-app-store-guidelines-now-allow-executable-code-in-educational-apps-and-developer-tools/">permitted</a> the sharing and downloading of executable code on iOS devices, for teaching, learning and personal development purposes. A validation that writing code on iOS is here to stay.</p>
+
+<p>The apps below are in no particular order, besides the fact that I will be specifically looking at Pythonista later on. All apps are paid, which is something I firmly stand behind and support, yet this post is no product or service endorsement of any kind. I am just a happy customer:</p>
+
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Languages</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://omz-software.com/pythonista/">Pythonista 3</a></td>
+<td>Python 2 / 3</td>
+</tr>
+
+<tr>
+<td><a href="https://codea.io/">Codea</a></td>
+<td>Lua</td>
+</tr>
+
+<tr>
+<td><a href="http://continuous.codes/">Continuous</a></td>
+<td>C# / F# .NET</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/irstudio/id1173749340">iRstudio</a></td>
+<td> R</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a></td>
+<td>Python</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492">Playgrounds</a></td>
+<td>Swift</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="pythonista">Pythonista</h2>
+
+<p><a href="http://omz-software.com/pythonista/">Pythonista</a> is one the few apps, just like <a href="https://ia.net/writer">iA Writer</a> (which I am using right now to write this post), which IMHO, deserves to come on an iPad pre-installed. To those having tried the Swift Playgrounds app on an iPad, it is just mere peanuts in comparison with what Pythonista offers:</p>
+
+<ul>
+<li>Fully featured support for both Python 2 and Python 3</li>
+<li>Excellent documentation, keyboard extensions, and code completion</li>
+<li>Has an integrated debugger, a property inspector, and its own REPL-like console</li>
+<li>Provides extensions for writing GUIs and communication with other apps on your device</li>
+</ul>
+
+<p><img src="/images/2018/august/pythonista-1.jpg" alt="" /></p>
+
+<p><img src="/images/2018/august/pythonista-2.jpg" alt="" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UYIZlqQPusw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Pythonista comes pre-packed with a ton of libraries we love and use every day: NumPy, Matplotlib, Requests, BeatufulSoup, etc. Yet, lacks some of our favourites, due to Apple&rsquo;s restrictions: Pandas, SciPy, Scikit-Learn, and unfortunately, TensorFlow. There are other apps like
+<a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a> and the now defunct Computable, which feature many of those as part of the app bundle, which lets me remain optimistic that we will see many of those included in future releases of Pythonista too.</p>
+
+<p>Pythonista is great for quickly scrapping ideas, and doing exploratory data analysis. In fact, I am running most of my early-stage exploratory analysis on cryptocurrency pricing directly in the app. It is absolutely indispensable when learning new concepts, be those Python, or math / science-related. Last but not least, the integrated GUI and extension capabilities allow for creating entire iOS applications using Python. Think about it. An iOS app, built using Python, using only an iPad. It can&rsquo;t get better than this.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a7QcX4Ke3Hc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="what-about-jupyter">What about Jupyter?</h2>
+
+<p>Indeed, what about <a href="https://jupyter.org/">Jupyter</a>? Unless you have been living in a cave, and self-proclaimed yourself a data scientist, you should know that Jupyter  Notebook, and similar tools which mix code and narrative have taken the scientific world by storm. Moreover, Jupyter Notebook is entirely Web-based. Therefore, it shouldn&rsquo;t be a big deal to run your private Jupyter instance, or use of the many readily available instances from <a href="https://notebooks.azure.com/">Microsoft</a>, <a href="https://www.kaggle.com/kernels">Kaggle</a>, <a href="https://colab.research.google.com/">Google</a>, and many other providers. My answer to this is <strong>yes and no</strong>. Although Jupyter Notebook is Web-based and technically opens up in mobile Safari, the actual usability of the Web version on mobile is less than ideal. Browsing through and reading code somehow works. It is the editing of code, where things get really painful. Many of the beloved Jupyter shortcuts are not supported, due to the lack of corresponding keys on the iPad&rsquo;s keyboard. When trying to type inside a cell, the browser tries to compensate by zooming in in and out in a horrible fashion. A very, very unpleasant thing.</p>
+
+<p>So far, so good, but there must be an app that brings the best of Jupyter and the native iOS experience together, right? Indeed, but a bit later on that. First, a word about Computable.</p>
+
+<p><a href="http://computableapp.com/index_old.html">Computable</a> was an app that promised to be the best of Pythonista, with  even more DS libraries under the hood, and its own native Jupyter support. The ultimate bliss.</p>
+
+<p><img src="http://www.computableapp.com/img/keyboard@2x.png" alt="" /></p>
+
+<h6 id="computable-in-action-photo-source-http-www-computableapp-com-index-old-html">Computable in Action. <a href="http://www.computableapp.com/index_old.html">Photo Source</a></h6>
+
+<p>Sadly, the app is no longer available. It was pulled from the App Store in 2015 for various reasons, but the developer was kind enough to <a href="https://github.com/ktraunmueller/Computable">put the original code up on GitHub</a>, and make it open-source. In fact, as far as I know, I have been the first one to <a href="https://github.com/preslavrachev/Computable">fork</a> the repository, and I am keen on trying to at least trying to revive it. I am looking for other contributors as well, so anyone willing to help is more than welcome.</p>
+
+<p>Now, back to my dilemma. Indeed, there is a great app I discovered last year, which brings the best of both worlds. It is called
+<a href="https://juno.sh/">Juno</a> and it is a slick, brand new, native iOS client for working with Jupyter Notebook and JupyterLab instances.</p>
+
+<p><img src="https://navoshta.com/images/posts/juno/screenshot_h_01@2x.png" alt="" /></p>
+
+<h6 id="photo-source-https-navoshta-com"><a href="https://navoshta.com">Photo Source</a></h6>
+
+<p>Juno will easily connect to a self-hosted Jupyter server, or to a cloud-provided Jupyter VM (e.g. Azure, CoCalc, and many more coming soon). It also supports <a href="https://mybinder.org/">Binder</a>, for a series of pre-made tutorial notebooks, which is ideal for people to get on board without yet having an actual Jupyter instance running.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6QNFi4EIz6U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Indeed, the lack of working truly offline might be a show-stopper for some, but I am more than sure that the developers are working hard to address this in future versions. Understanding the difficulties of having all Python libraries locally under the hood, I can only wish for an easy way to browse through, and perhaps, locally caching pre-rendered Jupyter notebooks for later reference. This would be great, and one won&rsquo;t have to render those to PDF or something more obscure.</p>
+
+<h2 id="a-few-more-apps">A few more apps</h2>
+
+<p>Before closings have decided to reiterate on my original statement that  the App Store is full of hidden gems which unfortunately, often did not really get the credit they deserve. This is the reason why I decided to share a few complementary apps that professionals from all disciplines will surely be interested in trying out. As before, those are not in any particular order, and I am not endorsing any of them, just sharing my personal opinion.</p>
+
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Apps</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Taking Notes and Documenting</td>
+<td><a href="http://happenapps.com/#quiver">Quiver</a>, <a href="https://ia.net/writer">iAWriter</a>, <a href="http://www.bear-writer.com/">Bear</a>, <a href="https://fsnot.es/">FSNotes</a></td>
+</tr>
+
+<tr>
+<td>Source Control</td>
+<td><a href="https://workingcopyapp.com/">Working Copy</a></td>
+</tr>
+
+<tr>
+<td>SSH and Terminal Emulation</td>
+<td><a href="https://www.termius.com/">Termius</a>, <a href="https://panic.com/prompt/">Prompt</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p>Last but not least, here are <a href="https://speakerdeck.com/preslavrachev/data-science-on-your-ipad">my slides</a> from the talk. Until next time!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+            <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+            <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+            <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
+            <content type="html"><![CDATA[
+
+<p>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.</p>
+
+<p>With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test. The problem is, when I do changes to the Python code (like, add a new function), they are not immediately usable, because neither the Python REPL, nor IPython / Jupyter would auto-reload them.</p>
+
+<h2 id="give-me-the-code">Give me the code</h2>
+
+<p>Yes, we are coming to that</p>
+
+<h3 id="general-way">General Way</h3>
+
+<p>Python 3 supports inline reloading of modules using a function called, well clever enough, <code>reload</code>. It used to be a built-in function in Python 2, but this is no longer the case. If you are using Python 3.2+, you should import it extra:</p>
+
+<p>For Python 3.2 and 3.3:</p>
+
+<pre><code class="language-python">import importlib
+importlib.reload(some_module)
+</code></pre>
+
+<p>For Python 3.4+:</p>
+
+<pre><code class="language-python">import imp
+imp.reload(some_module)
+</code></pre>
+
+<h3 id="ipython-jupyter-magic">IPython/Jupyter Magic</h3>
+
+<p>Jupyter comes with a set of extensions only applicable to the Jupyter/iPython sessions, called <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">magics</a>. One of these “magics” is the ability to load custom extensions, <a href="http://ipython.readthedocs.io/en/stable/config/extensions/index.html">one of which</a> allows auto-reloading of modules. To enable this, you should add the following two commands, before any imports:</p>
+
+<pre><code class="language-python">%load_ext autoreload
+%autoreload 2
+# you can check out the the documentation for the rest of the autoreaload modes
+# by apending a question mark to %autoreload, like this:
+# %autoreload?
+</code></pre>
+
+<p>This way, as soon as you hit <code>Save</code> in your code editor, you should be able to re-run a Jupyter cell or an iPython line again, and if it is calling your  module, it should automatically call the latest version.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><p><a href="https://support.enthought.com/hc/en-us/articles/204469240-Jupyter-IPython-After-editing-a-module-changes-are-not-effective-without-kernel-restart">Jupyter / IPython: After editing a module, changes are not effective without kernel restart – Enthought Knowledge Base</a></p></li>
+
+<li><p><a href="https://stackoverflow.com/questions/5364050/reloading-submodules-in-ipython#5399339">python - Reloading submodules in IPython - Stack Overflow</a></p></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
+            <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+            <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
+XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
+chrome --disable-web-security  then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="tl-dr-just-give-me-the-code">TL;DR! Just give me the code</h2>
+
+<p>In your <code>index.js</code> file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the <code>import</code> statements:</p>
+
+<pre><code class="language-javascript">XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? 
+  GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+</code></pre>
+
+<p>You will also need a Chrome plugin that overrides <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>. I use <a href="https://chrome.google.com/webstore/detail/cors-toggle/omcncfnpmcabckcddookmnajignpffnh?hl=en">CORS Toggle</a>. You may also decide to skip the plugin and start Chrome with CORS disabled:</p>
+
+<pre><code class="language-bash">chrome --disable-web-security
+</code></pre>
+
+<p>then, as usually, start remote debugging from your app, and open: <code>http://localhost:8081/debugger-ui</code> on your computer.</p>
+
+<p>That&rsquo;s it. Please, make sure to never rely completely on the network infrastructure of the Chrome debugger. Many networking problems may be specific to your device/simulator, and will not be caught by the debugger.</p>
+
+<h2 id="ok-now-the-longer-explanation">OK, now the longer explanation</h2>
+
+<p>One of the big advantages of React Native is the ease of debugging your code. When running an app in development mode, one can debug it remotely, using the well familiar Chrome DevTools. Logging to the console and setting breakpoints in the code work just as if the app were running in a normal browser&rsquo;s window.</p>
+
+<p>It is, therefore, strange to many RN starters, why one of the core functionalities of the Chrome Inspector, namely the network call interception, is not available. Instead, if a network error occurs, all the JavaScript code gets access to, is an Error object that simply says &ldquo;Network Error&rdquo;.</p>
+
+<p>To fully explain why this is so is out of the scope of this post. There is a great Medium article that explains in detail how the &ldquo;magic&rdquo; behind the RN remote debugging works. I totally recommend you read, regardless of your experience with React and RN.</p>
+
+<p>Long story short, when debugging RN remotely, the JavaScript code actually gets executed in the browser, and not on the device. This allows you to interrupt the flow with breakpoints, or log the console output in the Chrome DevTools window. While the JS code gets executed in the browser, the native calls happen on the device itself. The browser and the device running the app keep a WebSocket connection open and synchronize the code execution on every step.</p>
+
+<p>All the native calls run on the device itself, and executing a network call makes no difference. As such, it is not an easy task to make network traces appear in the Inspector window. At least, not without overriding the default platform APIs (for each of the supported platforms) and communicate every state change with the browser. I am sure that the core dev team is working on a solution, and will deliver it in a future release.</p>
+
+<p>Until then, you can test network calls by replacing the default implementation of <code>XMLHttpRequest</code> and use the one provided by the browser. As you saw in the beginning, it turns out that this is surprisingly simple. Once you do it, override the browser&rsquo;s default CORS rules, and reload the app, you should start seeing network requests in the Chrome Inspector. As I already pointed out, though, the Chrome Inspector can be helpful inasmuch as the requests and responses are concerned. It won&rsquo;t help you prevent issues with the native network infrastructure of your emulator/device. To inspect those, you will rather have to use a proxy, such as <a href="https://www.charlesproxy.com/">Charles</a>, or jump into tracing the native log files.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What’s with the 50/72 rule?</title>
+            <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
+            <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
+            <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+They don&amp;rsquo;t tell much do they?</description>
+            <content type="html"><![CDATA[<p>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.</p>
+
+<p>They don&rsquo;t tell much do they? Six months down the road, you&rsquo;d be scratching your head, trying to remember what you were thinking exactly six months before, when you wrote that commit.</p>
+
+<p>On the other hand are the &ldquo;novels&rdquo;. Some programmers go into much detail of what they&rsquo;ve done, both in the summary, and in the description. This makes it difficult to read, and understand later on, what they did exactly.</p>
+
+<p>Being verbose is by no means a bad thing. In fact, programmers are encouraged to put lengthy details about their commits, but only in the description. The summary is what helps you and other programmers to skim through thousands of commits, so it must be both concise and insightful.</p>
+
+<p>In a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">2008 blog post</a>, <a href="https://twitter.com/tpope">tpope</a>, described a system for creating commit messages, which I started calling simply, the <em>&ldquo;50 / 72&rdquo;</em> rule. The rules of the game are simple:</p>
+
+<ol>
+<li>The first line of your commit message must be maximum 50 characters long. No more, and (ideally), no less.</li>
+<li>Leave a blank line</li>
+<li>Start writing your description. The description can be as verbose as it suits you. Each line in your description should though wrap at the 72nd mark.</li>
+</ol>
+
+<p>Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try <em>git shortlog</em>, instead of <em>git log</em>, you will see a long list of commit messages, consisting of the id of the commit, and the summary only. The reason for wrapping your description lines at the 72nd mark is that <em>git log</em> adds a padding of 4 blank spaces when displaying the commit message. To center the message perfectly, and make it read well on an 80-column terminal, you&rsquo;d want to leave space for 4 more blank spaces at right side. That&rsquo;s where 72 comes from.</p>
+
+<p>What about the 50? An analysis of the average length of commit messages in the linux kernel suggests that the ideal size of a git commit summary is around 50 characters in length:</p>
+
+<p><img src="/images/2015/february/0_Hm0dO0UnjFBprfV-.png" alt="" />Most commit messages average around 50 characters in length</p>
+
+<p>Most code editors display the current line and column number that the cursor is at. Many support automatic wrap-line settings. If you are using GitHub&rsquo;s desktop app (as I used to), it will also show you warnings when you are over the limit.</p>
+
+<p>Writing a great commit summary is like writing a great tweet, only shorter. Id suggest to try and write your thoughts at first, to see how long it gets. Then you&rsquo;s paraphrase it, and put the extra content (the details) in the summary. Try to use the 50-column mark as a guideline for your thoughts. Try to reach as close as possible to it, without going over. Remember, short commit messages do not help, too long don&rsquo;t either.</p>
+
+<p>How does your team compare to the linux kernel contributors? You can check yourselves, using the code below:</p>
+
+<p>You can use the data and plot it on a real histogram, using <a href="http://stackoverflow.com/a/5328669/1107412">matplotlib</a>. Many thanks to <a href="http://stackoverflow.com/users/209050/mgalgs">mgalgs</a> for posting the <a href="http://stackoverflow.com/a/11993051/1107412">code</a>, and the <a href="http://stackoverflow.com/a/11993051/1107412">histogram</a> originally on <a href="http://stackoverflow.com/a/11993051/1107412">StackOverflow</a>.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Gulp vs Grunt. Why one? Why the Other?</title>
+            <link>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</link>
+            <pubDate>Tue, 06 Jan 2015 06:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/01/06/gulp-vs-grunt-why-one-why-the-other/</guid>
+            <description>So you&amp;rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&amp;rsquo;t really hard. I&amp;rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc.</description>
+            <content type="html"><![CDATA[
+
+<p>So you&rsquo;ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn&rsquo;t really hard. I&rsquo;ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc. At one point, I switched over to Grunt, but my workflow essentially mimicked the one I had already created using ANT.</p>
+
+<p>So, when Gulp came out, I was right at the point of willing to dive deep into JS-based task runners. Plus, it quickly became the darling of a large portion of the JS community, and many projects, like Ionic, adopted it right away. So, my choice was easy.</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting started with Gulp <a href="http://t.co/qKo0rOXGT4">http://t.co/qKo0rOXGT4</a> &quot;Gulp is a streaming build system&quot;. Think Grunt, but faster and less config.</p>&mdash; Sindre Sorhus (@sindresorhus) <a href="https://twitter.com/sindresorhus/status/420272334281662464?ref_src=twsrc%5Etfw">January 6, 2014</a></blockquote>
+
+
+<p>Yet, writing Grunt off for all the wrong reasons does not feel right. It is still a great tool, with a bustling community around it, so it makes a lot of sense to make a proper comparison between Grunt and Gulp.</p>
+
+<h1 id="the-differences">The Differences</h1>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Grunt?src=hash&amp;ref_src=twsrc%5Etfw">#Grunt</a> vs <a href="https://twitter.com/hashtag/Gulp?src=hash&amp;ref_src=twsrc%5Etfw">#Gulp</a>: <a href="http://t.co/eaaolHHIl6">http://t.co/eaaolHHIl6</a> (piping is beautiful!) This is so reminds me of <a href="https://twitter.com/hashtag/Maven?src=hash&amp;ref_src=twsrc%5Etfw">#Maven</a> vs <a href="https://twitter.com/hashtag/Gradle?src=hash&amp;ref_src=twsrc%5Etfw">#Gradle</a>. Always voted for code over config</p>&mdash; evgeny_goldin (@evgeny_goldin) <a href="https://twitter.com/evgeny_goldin/status/521003643802513409?ref_src=twsrc%5Etfw">October 11, 2014</a></blockquote>
+
+
+<p>There are two main differences between Grunt and Gulp:</p>
+
+<ol>
+<li>Grunt focuses on configuration, while Gulp focuses on code</li>
+<li>Grunt was built around a set of <a href="http://bocoup.com/weblog/introducing-grunt/">built-in, and commonly used tasks</a>, while Gulp came around with the idea of enforcing nothing, but how community-developed micro-tasks should connect to each other</li>
+</ol>
+
+<p>That is not to say that Grunt does not support community extensions. Of course, Grunt has supported creating custom plugins since the beginning, and I am sure that one can find a plugin for just about anything one needs. It was just the nature of the built-in tasks that made me stick around a little longer with my ANT script. In retrospect, I have to admit that I was wrong that for being sceptical about it becoming as popular as it is today. In early 2015, Grunt still holds a larger community than Gulp, despite the latter catching up fast.</p>
+
+<p>Every task in Grunt is an array of different plugin configurations, that simply get executed one after another, in a strictly independent, and sequential fashion:</p>
+
+<pre><code class="language-javascript">grunt.initConfig({
+    clean: {
+    src: ['build/app.js', 'build/vendor.js']
+    },
     
-    <item>
-      <title>Panic Without Worry</title>
-      <link>https://preslav.me/2019/12/14/panic-without-worry/</link>
-      <pubDate>Sat, 14 Dec 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/12/14/panic-without-worry/</guid>
-      <description>In the Go community, there is some kind of paranoia around panicking, as if it’s the worst thing that can happen to your application. In fact, it often is the better option. Think about Go programs as CLI applications. Would you rather crash right away and let the user react, or hang, trying to recover? The same applies to applications running as services. Modern tooling makes it easy to automatically restart a crashing service within seconds.</description>
-    </item>
+    copy: {
+    files: [{
+        src: 'build/app.js',
+        dest: 'build/dist/app.js'
+    }]
+    }
     
-  </channel>
+    concat: {
+    'build/app.js': ['build/vendors.js', 'build/app.js']
+    }
+    
+    // ... other task configurations ...
+    
+});
+
+grunt.registerTask('build', ['clean', 'bower', 'browserify', 'concat', 'copy']);
+</code></pre>
+
+<p>In this case, &lsquo;clean&rsquo; and &lsquo;concat&rsquo; must be configured before the &lsquo;build&rsquo; task is registered. Each task configuration is independent from all the rest. When dealing with IO, such as files, each task accesses the file separately — opening the file, applying the changes, and closing the file. Therefore, almost every task requires a source and destination to be specified. This not only doubles the effort for the developer, but it also makes Grunt relatively slower thanGulp.</p>
+
+<p>Gulp on the other hand is all about streams and building complex pipelines with ease. It uses node.js&rsquo; streams, and executes faster, since it does not open/close files, or create intermediary copies all the time. This is a sample task declaration, taken straight from Ionic&rsquo;s gulpfile.js</p>
+
+<pre><code class="language-javascript">//import the necessary gulp plugins
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var minifyCss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+
+//declare the task
+gulp.task('sass', function(done) {
+    gulp.src('./scss/ionic.app.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./www/css/'))
+    .pipe(minifyCss({
+        keepSpecialComments: 0
+    }))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./www/css/'))
+    .on('end', done);
+});
+</code></pre>
+
+<p>One thing that is immediately noticed here, is the lack of any up-front configuration, especially, specifying a source and destination. It is clear how one processor plugs into another. Just like LEGO bricks, plugins fit right into each other. The magic happens because of the object format that plugins exchange, the so called <a href="https://github.com/wearefractal/vinyl">Vinyl</a>. Vinyl is just an abstraction that describes a virtual file object — one that could refer to an existing file on the FS, a stream, or simply dead-ends with a null.</p>
+
+<p>The use of streams is also a part of how gulp plugins are developed. In unison with the UNIX philosophy, gulp plugins must <a href="https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/guidelines.md"><strong>try to do one thing well</strong></a>. In simple words, if your plugin tries to do way too many things, better split it into several smaller plugins, and try to use as many readily developed plugins as you can. Let the complexity reside within the task orchestration, not the plugin body.</p>
+
+<p>Both Grunt and Gulp have their own specifics when developing extensions. Both will make you sacrifice a bit of the beauty of your code, for the sake of plugging it into each build system. Truth is though that Gulp plugins feel one idea less coupled than their Grunt counterparts. This is because every Gulp plugin is first and foremost a legit node.js streaming module. With a bit of fitting, it can be re-used in other pieces of streaming node.js code.</p>
+
+<p><img src="https://preslav.me/content/images/2019/02/image.png" alt="" /><a href="https://twitter.com/maxogden/status/421375617733386242">@maxodgen | Twitter</a></p>
+
+<p>One word of advice though is to try not to fit every piece of your code into a Gulp plugin. As this <a href="http://blog.overzealous.com/post/74121048393/why-you-shouldnt-create-a-gulp-plugin-or-how-to">article points out</a>, thinking of your code as a Gulp plugin would inevitably increase configuration, which is counter to what the Gulp guidelines, and the <strong>do one thing well</strong> philosophy suggest. This is where the <strong>code over configuration</strong> principle shines. Unlike Grunt, Gulp makes it extremely easy to fit other code within a task definition, besides streaming from one plugin to another. In fact, a Gulp task may not even contain a streaming pipeline:</p>
+
+<pre><code class="language-javascript">var http = require('http');
+    
+//declare the task
+gulp.task('server', function(done) {
+    //start an http server (I know, a totally useless example, but helps to illustrate the point)
+    var requestListener = function (req, res) {
+    res.writeHead(200);
+    res.end('Hello, World!n');
+    }
+    
+    var server = http.createServer(requestListener);
+    server.listen(8080);
+    
+    done();
+});
+</code></pre>
+
+<h1 id="the-verdict">The Verdict</h1>
+
+<p>Has Gulp made Grunt obsolete. <a href="http://qr.ae/6rv0g"><em>No, for the same reason that Burger King didn&rsquo;t make McDonald&rsquo;s obsolete</em></a>. Truth is, if you&rsquo;re starting to work with JS-based build systems, there is a high chance that you&rsquo;d pick Gulp right away. The prospects for it just seem a little rosier, plus, it has been adopted by a large portion of projects. Yet, if you are still using Grunt and feel comfortable using it, there is nothing to be worried about — the community is still there, bigger than Gulp, and keeps growing. Grunt has almost a couple of years of advantage, and I am sure that large project maintainers will try to stick to it for as long as possible. Another advantage of using Grunt is if all you need is that little built-in set of simple tasks. In that case, you&rsquo;d feel right at home with it, and Gulp, despite all of its flexibility, will make you spend more time in theory than you need. As with everything else project related, you should choose based on the circumstances.</p>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+<li><a href="http://benalman.com/news/2012/08/why-grunt/">Why grunt? Why not something else?</a></li>
+<li><a href="http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt">Build Wars: Gulp vs Grunt</a></li>
+<li><a href="https://medium.com/p/3828e8126466">gulp - Eric Schoffstall - Medium</a></li>
+<li><a href="http://www.100percentjs.com/just-like-grunt-gulp-browserify-now/">自家用車の新車について</a>
+and others&hellip;</li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

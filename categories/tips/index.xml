@@ -1,64 +1,226 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tips on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/tips/</link>
-    <description>Recent content in Tips on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Dec 2019 08:35:04 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/tips/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>How to Request an App Refund on the Apple App Store</title>
-      <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
-      <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
-      <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way.</description>
-    </item>
-    
-    <item>
-      <title>Use Dotenv Files When Developing Your Python Apps</title>
-      <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
-      <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
-      <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
-    </item>
-    
-    <item>
-      <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
-      <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
-      <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
-      <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
+    <channel>
+        <title>Tips on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/tips/</link>
+        <description>Recent content in Tips on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 21 Dec 2019 08:35:04 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How to Request an App Refund on the Apple App Store</title>
+            <link>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</link>
+            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/12/21/how-to-request-an-app-refund-on-the-apple-app-store/</guid>
+            <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way.</description>
+            <content type="html"><![CDATA[<p>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way. In the case of the App Store, I don’t think you can really do it from the app itself. You have to go to a special site instead:</p>
+
+<p><a href="reportaproblem.apple.com">https://reportaproblem.apple.com</a></p>
+
+<p>After signing in, you will see all the apps you have downloaded for free or purchased. Find the one you want to refund (assuming, you are within 14 days of the purchase). Click on “Report a Problem” (I know, you are actually exercising your rights, but just keep playing the game). Be careful to select the right option from the menu:</p>
+
+<figure>
+    <img src="/images/2019/12/appstore1.png"
+         alt="The right option is down below"/> <figcaption>
+            <p>The right option is down below</p>
+        </figcaption>
+</figure>
+
+
+<p>See how far below the right option is? Anyway, once you choose it, there are no further obstructions. Just hit “Cancel Purchase” and you are good to go!</p>
+
+<p><img src="/images/2019/12/appstore2.png" alt="" /></p>
+
+<p><img src="/images/2019/12/appstore3.png" alt="" /></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Use Dotenv Files When Developing Your Python Apps</title>
+            <link>https://preslav.me/2019/01/09/dotenv-files-python/</link>
+            <pubDate>Wed, 09 Jan 2019 06:28:16 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/01/09/dotenv-files-python/</guid>
+            <description>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing.</description>
+            <content type="html"><![CDATA[
+
+<p>Hard-coding configuration is bad. This is one of the things that newbie programmers learn quickly after they realize that have committed sensitive information to a public GitHub repository. And it happens so easily. Often, you are in the spur of the moment, wanting to test something locally, when you figure out that you need some API key in order for your app to work. Adding the key to the code takes a second, and is just as easy to forget when committing. The <a href="https://12factor.net/">Twelve-Factor-App</a> methodology calls this a <em>violation</em>, and has whole <a href="https://12factor.net/config">section</a> on why should be externalized and read from the environment at runtime.</p>
+
+<p>I used to avoid using environment variables, because they made it hard to set up a local environment for testing. I’d either pass all the assignments at the start, or use a cumbersome startup script to export them to the current shell.</p>
+
+<p>Luckily, it is easy to improve the quality of your code, and ease testing in different environments at the same time. It has become somewhat of a standard practice to use <code>.env</code> (a.k.a dotenv) files for configuring sensitive data while testing across environments. A <em>dotenv</em> file contains nothing more than text, where  it has one environment variable assignment per line:</p>
+
+<pre><code class="language-bash">ABC_KEY=1234xyz
+DEF_KEY=2349875
+DEBUG=True
+</code></pre>
+
+<p><strong>NOTE</strong>: <em>Dotenv</em> files <strong>must be ignored</strong> from version control for exactly the same reason mentioned at the beginning of this post: exposing sensitive information as part of the project is bad. These files are only used to quickly set up or change an environment when needed.</p>
+
+<h2 id="using-a-dotenv-file-in-our-app">Using a dotenv file in our app</h2>
+
+<p>How do we get our Python app to read a <code>.env</code> file? <a href="https://pypi.org/project/python-dotenv/">python-dotenv</a> is a great Python package that does exactly that. It will search for a <code>.env</code> as part of the project, and if it finds one, will expose the variables in it to the app. All you need to do, is <code>pip install python-dotenv</code> and add the following couple of lines at the start of your project:</p>
+
+<pre><code class="language-python">from dotenv import load_dotenv
+load_dotenv()
+</code></pre>
+
+<p>The starting point may vary, depending on whether your project is a command line script, a Flask, or a Django project. For instance, in a Django project, the above two lines need to be added at the top of the <code>settings.py</code> file.</p>
+
+<p>Having set <code>python-loadenv</code> up, the rest is easy. Create a <code>.env</code> file at the root of your app with all the environment variables needed to configure it, and make sure that you invoke them properly from your code (e.g. use something like <code>os.getenv('MY_API_KEY')</code>). Don’t forget to exclude the <code>.env</code> file from being checked into your source code repository!</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><a href="https://pypi.org/project/python-dotenv/">python-dotenv · PyPI</a></li>
+<li><a href="http://12factor.net/">http://12factor.net/</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</title>
+            <link>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</link>
+            <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/04/22/live-reloading-of-python-modules/</guid>
+            <description>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.
 With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test.</description>
-    </item>
-    
-    <item>
-      <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
-      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
-      <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
+            <content type="html"><![CDATA[
+
+<p>Often, I would work on a Python module and add changes to it live, which I would then want to test immediately. Piece of cake! Add the changes and execute the script again. Well, that’s certainly a way, but as modules get bigger, they tend to import other modules, or do some preliminary setup work.</p>
+
+<p>With time, I have developed this practice of opening up a Python REPL (though I recommend IPython or the Jupyter Console for that), importing my in-progress module and singling out separate functions I would like to test. The problem is, when I do changes to the Python code (like, add a new function), they are not immediately usable, because neither the Python REPL, nor IPython / Jupyter would auto-reload them.</p>
+
+<h2 id="give-me-the-code">Give me the code</h2>
+
+<p>Yes, we are coming to that</p>
+
+<h3 id="general-way">General Way</h3>
+
+<p>Python 3 supports inline reloading of modules using a function called, well clever enough, <code>reload</code>. It used to be a built-in function in Python 2, but this is no longer the case. If you are using Python 3.2+, you should import it extra:</p>
+
+<p>For Python 3.2 and 3.3:</p>
+
+<pre><code class="language-python">import importlib
+importlib.reload(some_module)
+</code></pre>
+
+<p>For Python 3.4+:</p>
+
+<pre><code class="language-python">import imp
+imp.reload(some_module)
+</code></pre>
+
+<h3 id="ipython-jupyter-magic">IPython/Jupyter Magic</h3>
+
+<p>Jupyter comes with a set of extensions only applicable to the Jupyter/iPython sessions, called <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">magics</a>. One of these “magics” is the ability to load custom extensions, <a href="http://ipython.readthedocs.io/en/stable/config/extensions/index.html">one of which</a> allows auto-reloading of modules. To enable this, you should add the following two commands, before any imports:</p>
+
+<pre><code class="language-python">%load_ext autoreload
+%autoreload 2
+# you can check out the the documentation for the rest of the autoreaload modes
+# by apending a question mark to %autoreload, like this:
+# %autoreload?
+</code></pre>
+
+<p>This way, as soon as you hit <code>Save</code> in your code editor, you should be able to re-run a Jupyter cell or an iPython line again, and if it is calling your  module, it should automatically call the latest version.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li><p><a href="https://support.enthought.com/hc/en-us/articles/204469240-Jupyter-IPython-After-editing-a-module-changes-are-not-effective-without-kernel-restart">Jupyter / IPython: After editing a module, changes are not effective without kernel restart – Enthought Knowledge Base</a></p></li>
+
+<li><p><a href="https://stackoverflow.com/questions/5364050/reloading-submodules-in-ipython#5399339">python - Reloading submodules in IPython - Stack Overflow</a></p></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
+            <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+            <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
 XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
-chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
-    </item>
-    
-    <item>
-      <title>What’s with the 50/72 rule?</title>
-      <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
-      <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
-      <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
+chrome --disable-web-security  then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="tl-dr-just-give-me-the-code">TL;DR! Just give me the code</h2>
+
+<p>In your <code>index.js</code> file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the <code>import</code> statements:</p>
+
+<pre><code class="language-javascript">XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? 
+  GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+</code></pre>
+
+<p>You will also need a Chrome plugin that overrides <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>. I use <a href="https://chrome.google.com/webstore/detail/cors-toggle/omcncfnpmcabckcddookmnajignpffnh?hl=en">CORS Toggle</a>. You may also decide to skip the plugin and start Chrome with CORS disabled:</p>
+
+<pre><code class="language-bash">chrome --disable-web-security
+</code></pre>
+
+<p>then, as usually, start remote debugging from your app, and open: <code>http://localhost:8081/debugger-ui</code> on your computer.</p>
+
+<p>That&rsquo;s it. Please, make sure to never rely completely on the network infrastructure of the Chrome debugger. Many networking problems may be specific to your device/simulator, and will not be caught by the debugger.</p>
+
+<h2 id="ok-now-the-longer-explanation">OK, now the longer explanation</h2>
+
+<p>One of the big advantages of React Native is the ease of debugging your code. When running an app in development mode, one can debug it remotely, using the well familiar Chrome DevTools. Logging to the console and setting breakpoints in the code work just as if the app were running in a normal browser&rsquo;s window.</p>
+
+<p>It is, therefore, strange to many RN starters, why one of the core functionalities of the Chrome Inspector, namely the network call interception, is not available. Instead, if a network error occurs, all the JavaScript code gets access to, is an Error object that simply says &ldquo;Network Error&rdquo;.</p>
+
+<p>To fully explain why this is so is out of the scope of this post. There is a great Medium article that explains in detail how the &ldquo;magic&rdquo; behind the RN remote debugging works. I totally recommend you read, regardless of your experience with React and RN.</p>
+
+<p>Long story short, when debugging RN remotely, the JavaScript code actually gets executed in the browser, and not on the device. This allows you to interrupt the flow with breakpoints, or log the console output in the Chrome DevTools window. While the JS code gets executed in the browser, the native calls happen on the device itself. The browser and the device running the app keep a WebSocket connection open and synchronize the code execution on every step.</p>
+
+<p>All the native calls run on the device itself, and executing a network call makes no difference. As such, it is not an easy task to make network traces appear in the Inspector window. At least, not without overriding the default platform APIs (for each of the supported platforms) and communicate every state change with the browser. I am sure that the core dev team is working on a solution, and will deliver it in a future release.</p>
+
+<p>Until then, you can test network calls by replacing the default implementation of <code>XMLHttpRequest</code> and use the one provided by the browser. As you saw in the beginning, it turns out that this is surprisingly simple. Once you do it, override the browser&rsquo;s default CORS rules, and reload the app, you should start seeing network requests in the Chrome Inspector. As I already pointed out, though, the Chrome Inspector can be helpful inasmuch as the requests and responses are concerned. It won&rsquo;t help you prevent issues with the native network infrastructure of your emulator/device. To inspect those, you will rather have to use a proxy, such as <a href="https://www.charlesproxy.com/">Charles</a>, or jump into tracing the native log files.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>What’s with the 50/72 rule?</title>
+            <link>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</link>
+            <pubDate>Sat, 21 Feb 2015 06:59:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2015/02/21/what-s-with-the-50-72-rule/</guid>
+            <description>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&amp;rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.
 They don&amp;rsquo;t tell much do they?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>It is part of common sense to assume that the worthiest commit messages lie far from any extremes. Years ago, I often fell in the trap of hastily sending a commit after commit, annoyed by the fact that I have to add a summary to it (let alone a description). I&rsquo;ve seen many projects whose commit summaries consist primarily of one-word verbs like [FIX], [CLEAN], [TEST], etc.</p>
+
+<p>They don&rsquo;t tell much do they? Six months down the road, you&rsquo;d be scratching your head, trying to remember what you were thinking exactly six months before, when you wrote that commit.</p>
+
+<p>On the other hand are the &ldquo;novels&rdquo;. Some programmers go into much detail of what they&rsquo;ve done, both in the summary, and in the description. This makes it difficult to read, and understand later on, what they did exactly.</p>
+
+<p>Being verbose is by no means a bad thing. In fact, programmers are encouraged to put lengthy details about their commits, but only in the description. The summary is what helps you and other programmers to skim through thousands of commits, so it must be both concise and insightful.</p>
+
+<p>In a <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">2008 blog post</a>, <a href="https://twitter.com/tpope">tpope</a>, described a system for creating commit messages, which I started calling simply, the <em>&ldquo;50 / 72&rdquo;</em> rule. The rules of the game are simple:</p>
+
+<ol>
+<li>The first line of your commit message must be maximum 50 characters long. No more, and (ideally), no less.</li>
+<li>Leave a blank line</li>
+<li>Start writing your description. The description can be as verbose as it suits you. Each line in your description should though wrap at the 72nd mark.</li>
+</ol>
+
+<p>Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try <em>git shortlog</em>, instead of <em>git log</em>, you will see a long list of commit messages, consisting of the id of the commit, and the summary only. The reason for wrapping your description lines at the 72nd mark is that <em>git log</em> adds a padding of 4 blank spaces when displaying the commit message. To center the message perfectly, and make it read well on an 80-column terminal, you&rsquo;d want to leave space for 4 more blank spaces at right side. That&rsquo;s where 72 comes from.</p>
+
+<p>What about the 50? An analysis of the average length of commit messages in the linux kernel suggests that the ideal size of a git commit summary is around 50 characters in length:</p>
+
+<p><img src="/images/2015/february/0_Hm0dO0UnjFBprfV-.png" alt="" />Most commit messages average around 50 characters in length</p>
+
+<p>Most code editors display the current line and column number that the cursor is at. Many support automatic wrap-line settings. If you are using GitHub&rsquo;s desktop app (as I used to), it will also show you warnings when you are over the limit.</p>
+
+<p>Writing a great commit summary is like writing a great tweet, only shorter. Id suggest to try and write your thoughts at first, to see how long it gets. Then you&rsquo;s paraphrase it, and put the extra content (the details) in the summary. Try to use the 50-column mark as a guideline for your thoughts. Try to reach as close as possible to it, without going over. Remember, short commit messages do not help, too long don&rsquo;t either.</p>
+
+<p>How does your team compare to the linux kernel contributors? You can check yourselves, using the code below:</p>
+
+<p>You can use the data and plot it on a real histogram, using <a href="http://stackoverflow.com/a/5328669/1107412">matplotlib</a>. Many thanks to <a href="http://stackoverflow.com/users/209050/mgalgs">mgalgs</a> for posting the <a href="http://stackoverflow.com/a/11993051/1107412">code</a>, and the <a href="http://stackoverflow.com/a/11993051/1107412">histogram</a> originally on <a href="http://stackoverflow.com/a/11993051/1107412">StackOverflow</a>.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

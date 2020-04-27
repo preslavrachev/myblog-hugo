@@ -1,26 +1,212 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Dependency Injection on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/dependency-injection/</link>
-    <description>Recent content in Dependency Injection on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 20 Dec 2018 13:34:36 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/dependency-injection/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
-      <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
-      <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
-      <description>Dependency Injection (DI) in Python? Seriously? 🤔
+    <channel>
+        <title>Dependency Injection on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/dependency-injection/</link>
+        <description>Recent content in Dependency Injection on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 20 Dec 2018 13:34:36 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/dependency-injection/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Dependency Injection in Python: The Java Guy&#39;s Perspective</title>
+            <link>https://preslav.me/2018/12/20/dependency-injection-in-python/</link>
+            <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/12/20/dependency-injection-in-python/</guid>
+            <description>Dependency Injection (DI) in Python? Seriously? 🤔
 At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? Spoiler: I am going to mention Spring only once in this post, I promise.
 NOTE: If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to the example at the end.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>Dependency Injection (DI) in Python? Seriously? 🤔</p>
+
+<p>At this point, I am expecting people to yell at me for thinking like a Java guy, but just bear with me for a moment, will you? <em>Spoiler:</em> I am going to mention Spring only once in this post, I promise.</p>
+
+<p><strong><em>NOTE:</em></strong> If you are already familiar with Dependency Injection and want to see it in action, you might want to jump right to <a href="#a-more-complex-example">the example</a> at the end. Otherwise, keep reading. As always, feel free to send me a <a href="https://twitter.com/intent/tweet?text=%40preslavrachev%20%5BADD%20YOUR%20COMMENT%20HERE%5D&amp;url=https://preslav.me/p/3c4daf3d-607c-49e4-8aa9-c87a61be1697/&amp;related=preslavrachev">✏️comment on Twitter</a>. Your feedback is more than appreciated.</p>
+
+<p>&hellip;</p>
+
+<h1 id="let-s-get-things-straight">Let&rsquo;s Get Things Straight</h1>
+
+<p>While I am definitely approaching Python software development from my close-to-a-decade  experience building Java software, I am not trying to preach to you a certain style of programming. Take this simply as a different perspective on things. The Python Universe is so immense that it will be a crime to pretend that DI is necessary for every Python project. While certain types of Python projects will definitely benefit from a bit more structure, for many others, DI might become the worst nightmare. I will try to write down my reasons, and leave the final decision to the reader.</p>
+
+<h1 id="a-quick-detour-on-dependency-injection">A Quick Detour on Dependency Injection</h1>
+
+<p>I will save you the lecture here. I am sure that many of you already know what DI is all about. Perhaps, some of you have already looked at, if not even read Martin Fowler&rsquo;s <a href="https://martinfowler.com/articles/injection.html">Dependency Injection essay</a>. Even if you haven&rsquo;t, don&rsquo;t panic. I will share you a secret, and that is, <strong>you already know DI, and have used it many times,</strong> even if you haven&rsquo;t used a particular name for it.</p>
+
+<p>There is one golden prerequisite for Dependency Injection and that is, Separation of Concerns. Put simply, group logic in separable units, and let these units work together, without any of them knowing much about the implementation details of the other. OOP calls such units <em>classes</em>, and FP, <em>functions</em>. The point is, <em>units isolate common logic</em>. Let&rsquo;s add to this the requirement that no unit explicitly instantiates the units it works with (dependencies). Instead, dependencies are passed upon the unit (injected), usually, during its instantiation.</p>
+
+<p>So, DI is a fancy term for instantiating classes in a top-level module, and passing them as initializer arguments to one another:</p>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
+
+
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
+
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+
+# ---
+
+if __name__ == '__main__':
+    api = Api()
+    logic = BusinessLogic(api=api)
+
+    # ...
+    print(logic.do_stuff())
+</code></pre>
+
+<p>There are of course, more Pythonic ways of implementing Dependency Injection. I realize that the one I provided above is very Java-like. I have tried to collect a list of Python-related resources you might want to consult. You will find it at the end of this post.</p>
+
+<h1 id="where-explicit-dependency-injection-might-help">Where Explicit Dependency Injection Might Help</h1>
+
+<p>I already tried to make it clear that DI is not a silver bullet, and due to Python&rsquo;s versatility of use, it might not fit to every project. In some, it might even hamper the development of the project.</p>
+
+<p>Python was created to give its developers the freedom to just do things, without sweating much about structure or ceremony, when those are not needed. This is why the Python ecosystem is perfect for scratching out ideas and prototyping, single-purpose CLI tools, or scripts with limited scope and lifetime.</p>
+
+<p>Yet, for many of these projects, there comes a time, when they grow, or are bound to grow from the onset, and with this growth comes a different set of challenges. Where I see DI fit best, are projects with established requirements, serving a large number of stakeholders. The challenge here is to scale and constantly improve the system, without compromising its stability.</p>
+
+<p><strong>Advantages</strong></p>
+
+<p>Adding DI to your project will potentially</p>
+
+<ul>
+<li>increase its testability and reusability, because by design, it allows for easily replacing one component with another (great for mocking, or replacing one concrete implementation with another)</li>
+<li>increase the readability. When applying DI your top-level model becomes sort of an orchestrator, instantiating your units and passing dependencies to them. Although this might add a bit of boilerplate, it helps ensure that all the LEGO-block wiring-up happens in one place, and this place will always be the starting point of your later investigations.</li>
+<li>adds a certain level of common understanding between programmers of different backgrounds. While I am sure that many of you would come up with some more elegant and more Pythonic ways for solving the dependency issue, some of them might be too obscure for non-Python gurus (hi there 👋🏼) and lead to misunderstanding, lost communication, and potentially, compromising the resilience of the end product.</li>
+</ul>
+
+<p><strong>Disadvantages</strong></p>
+
+<p>Well, the boilerplate and ceremony might be quite of an issue for some Python purists.</p>
+
+<h1 id="a-more-complex-example">A More Complex Example</h1>
+
+<p>I have already mentioned it a few times that doing all the instantiation and passing dependencies around by hand can be a bit tedious. It can also be complicated, because of the order of instantiation. The core dependencies must be instantiated first, the units that depend on them afterwards, and so on, until the top-level units, whose role is usually to coordinate the flow of data among their dependencies.</p>
+
+<p>There are many Python libraries, which already facilitate this process. Among those, I looked at <a href="https://github.com/ets-labs/python-dependency-injector">python-dependency-injector</a>, <a href="https://github.com/suned/serum">serum</a>, and <a href="https://github.com/alecthomas/injector">injector</a>. I found <a href="https://github.com/alecthomas/injector">injector</a> to be closest to what I have come to know and use on Java - <a href="https://spring.io/">Spring</a> and <a href="https://github.com/google/guice">Guice</a>. It is not the least verbose, but it gets the job done. Let&rsquo;s see how it works:</p>
+
+<pre><code class="language-bash">pip install injector
+</code></pre>
+
+<p>Let&rsquo;s take the two classes, I have created above:</p>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
+
+
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
+
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+</code></pre>
+
+<p>The only modification I made, was adding an explicit <a href="https://www.python.org/dev/peps/pep-0484/">type hint</a> to the <code>Api</code> dependency. This will be used by the library to determine the right object to pass at instantiation.</p>
+
+<p>Injector, similar to Guice and Spring, adds the concept of a dependency <code>Module</code>. This is a class that inherits from <code>injector.Module</code> and has a bunch of methods, each corresponding to the initialization of one dependency or the other:</p>
+
+<pre><code class="language-python">class AppModule(Module):
+
+    @singleton
+    @provider
+    def provide_business_logic(self, api: Api) -&gt; BusinessLogic:
+        return BusinessLogic(api=api)
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        # there is no complex logic in our case,
+        # but you can use this method to hide the complexity of initial 
+        configuration
+        # e.g. when instantiating a particular DB connector.
+        return Api()
+</code></pre>
+
+<p>Each of these methods is decorated with <code>@provider</code> (required) and <code>@singleton</code> (optional, only if you want to ensure that the object instance will always remain the same). Pay attention to the use of type hinting here too. One the one hand, it makes the dependency module code more readable, on the other, it is used by the injector library to determine the right objects to return.</p>
+
+<p>Let&rsquo;s see how to use our classes. We need to create an Injector and pass it an instance of our AppModule.</p>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    injector = Injector(AppModule())
+
+    logic = injector.get(BusinessLogic)
+    logic.do_stuff()
+</code></pre>
+
+<p>From now on, when you want to obtain an instance which is inside the dependency graph, from outside the graph, you would have to use the injector. Before you start grunting about the rising amount of boilerplate, let me point out that the actual places where you would need to do that, are either your app&rsquo;s main starting points, or API/Web endpoints in the context of a Web application. Actually, if you are building a Flask app, the creator of injector has got you covered. There is an extension for Flask, called <a href="https://github.com/alecthomas/flask_injector">flask-injector,</a> which hides the boilerplate of having to use the injector object directly.</p>
+
+<p>Back to our injector instance. The real benefit of having dependency modules, is when you have several of them, for running your app in different contexts. The simplest example is testing. Let&rsquo;s create a version of our Api class for testing purposes:</p>
+
+<pre><code class="language-python">class TestApi(Api):
+    def fetch_remote_data(self):
+        print('Demo Api called')
+        return 24
+</code></pre>
+
+<p>Assuming that there might be more classes we&rsquo;d like to mock, we create a separate dependency module for them:</p>
+
+<pre><code class="language-python">class TestAppModule(Module):
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        return TestApi()
+</code></pre>
+
+<p>The real magic happens when creating the injector. You can have as many injectors as you have, and each injector instance can be supplied with as many dependency module configurations as you wish:</p>
+
+<pre><code class="language-python">if __name__ == '__main__':
+    real_injector = Injector(AppModule())
+    test_injector = Injector([AppModule(), TestAppModule()])
+
+    real_logic = real_injector.get(BusinessLogic)
+    real_logic.do_stuff()
+
+    test_logic = test_injector.get(BusinessLogic)
+    test_logic.do_stuff()
+</code></pre>
+
+<pre><code>Api called
+the api returned a result: 42
+Demo Api called
+the api returned a result: 24
+</code></pre>
+
+<h1 id="the-end">The End</h1>
+
+<p>I will stop here. I hope, if not really having managed to convince you, to have given you a slightly different perspective on things. Until next time!</p>
+
+<hr />
+
+<h1 id="related-resources">Related Resources</h1>
+
+<ul>
+<li><a href="https://martinfowler.com/articles/injection.html">Inversion of Control Containers and the Dependency Injection pattern</a></li>
+<li><a href="https://medium.com/@suneandreasdybrodebel/pythonic-dependency-injection-a-practical-guide-83a1b1299280">Pythonic Dependency Injection: A Practical Guide - Sune Andreas Dybro Debel - Medium</a></li>
+<li><a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html">Python 3 Patterns, Recipes and Idioms - Python 3 Patterns, Recipes and Idioms</a></li>
+<li><a href="http://python-dependency-injector.ets-labs.org/introduction/di_in_python.html">Dependency injection and inversion of control in Python - Dependency Injector 3.14.2 documentation</a></li>
+<li><a href="https://github.com/alecthomas/injector">alecthomas/injector</a></li>
+<li><a href="https://github.com/suned/serum">suned/serum</a></li>
+<li><a href="https://github.com/ets-labs/python-dependency-injector">ets-labs/python-dependency-injector</a></li>
+<li><a href="https://github.com/RobertoPrevato/rodi">RobertoPrevato/rodi</a></li>
+</ul>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

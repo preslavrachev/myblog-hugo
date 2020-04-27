@@ -1,46 +1,296 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docker on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/docker/</link>
-    <description>Recent content in Docker on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 11 Aug 2019 07:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
-      <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
-      <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
-      <description>If you ever get the following message:
-x509: certificate signed by unknown authority While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
+    <channel>
+        <title>Docker on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/docker/</link>
+        <description>Recent content in Docker on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 11 Aug 2019 07:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>X509: Certificate Signed by Unknown Authority (Running a Go App Inside a Docker Container)</title>
+            <link>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</link>
+            <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/08/11/x509-certificate-signed-by-unknown-authority-running-a-go-app-inside-a-docker-container/</guid>
+            <description>If you ever get the following message:
+x509: certificate signed by unknown authority  While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on Scratch or Alpine, you will have to add the certificates yourselves.
 On Alpine, this can be done using the default package installer:</description>
-    </item>
-    
-    <item>
-      <title>Using Ephemeral Docker Containers as CLI Applications</title>
-      <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
-      <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
-      <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
+            <content type="html"><![CDATA[
+
+<p>If you ever get the following message:</p>
+
+<pre><code class="language-bash">x509: certificate signed by unknown authority
+</code></pre>
+
+<p>While running your Go app in a Docker container, there is a chance that you might not have the necessary trusted certificates installed in your Docker container. Assuming that you run your Go apps in lightweight containers, based on <a href="https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch">Scratch</a> or Alpine, you will have to add the certificates yourselves.</p>
+
+<p>On Alpine, this can be done using the default package installer:</p>
+
+<pre><code class="language-docker">RUN apk --no-cache add ca-certificates
+</code></pre>
+
+<p>Since Scratch is not based on a particular distribution you would have to download the certificates manually and add them as part of the build process:</p>
+
+<pre><code class="language-docker">ADD ca-certificates.crt /etc/ssl/certs/
+</code></pre>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Docker container running golang http.Client getting error `certificate signed by unknown authority`</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      I created a docker container for talking to the google api using GoLang. I started off using a SCRATCH container and am getting the error certificate signed by unknown authority upon changing to ub...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">https://stackoverflow.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://miro.medium.com/max/1200/1*-SxwIr4XV3YS0OSLrLNVqg.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Create the smallest and secured golang docker image based on scratch</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      When we are building a docker Image, the first idea is using the default official image.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">https://medium.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Using Ephemeral Docker Containers as CLI Applications</title>
+            <link>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</link>
+            <pubDate>Mon, 18 Mar 2019 06:30:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/03/18/using-ephemeral-docker-containers-as-cli-applications/</guid>
+            <description>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a Dockerfile and you should be able to replicate the process on every host OS that has Docker support.
 When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services.</description>
-    </item>
-    
-    <item>
-      <title>Securing your ElasticSearch instances</title>
-      <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
-      <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
-      <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
+            <content type="html"><![CDATA[
+
+<p>Docker containers have proven themselves extremely useful in allowing developers to sandbox environments and ease the deployment of services. Have a complicated service setup? No worries. Simply, describe the steps in a <code>Dockerfile</code> and you should be able to replicate the process on every host OS that has Docker support.</p>
+
+<p>When I said services, I bet that the first thing you thought about was HTTP servers, or some sort of persistent, always running processes that send or accept requests to such services. While the majority of Docker use cases fit exactly into this scenario, the realm of possible applications it offers, far exceeds that.</p>
+
+<p>One such application is the use of Docker containers to sandbox the complex inner workings of a command-line (CLI) application. Most data projects involve the running of scheduled scripts which access remote services, do data processing and eventually, write the results either to disk, or to dedicated data storage. Such scripts have required dependencies, and often, the dependencies of one may collide with the ones required by another, which ends up in a big mess. This is the primary reason, why things like virtual environments in Python or Node.js&rsquo; notorious <code>node_modules</code> folder exist in the first place. Yet, we all know one or two about <code>node_modules</code>&hellip;</p>
+
+<p><a href="https://hackernoon.com/circleci-performance-difference-between-cache-and-workspace-5567679c3601"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1600%2F0*i5S2tUk0CQBh1Euc.&amp;f=1" alt="" /></a></p>
+
+<p>The ideal case for such applications would be statically-bound executable files containing everything needed, and running into their own dedicated processes. One such approach is championed by languages like Go, Swift, and Kotlin&rsquo;s Native option (and of course, good old C/C++). Others, like Java (fat Jars) and Python (wheels) offer a somewhat reasonable compromise by putting the code and every dependency into a single deployable artifact. I call this a compromise, because it still requires the presence of either JDK or a Python runtime on the host OS.</p>
+
+<p>The majority of the time however, we won&rsquo;t have the opportunity to deploy everything into a single executable. Much of the time, we also won&rsquo;t have the freedom to install different runtimes globally. In such cases, baking a CLI application together with all of its dependencies into a dedicated Docker image can be a good option. Let&rsquo;s try a simple example:</p>
+
+<h2 id="an-example">An Example</h2>
+
+<p>Here is a simple Python script, which will fetch the current price of Bitcoin, and convert it to a desired fiat currency of our choice (&ldquo;USD&rdquo;, &ldquo;EUR&rdquo;).</p>
+
+<pre><code class="language-python">import argparse
+import requests
+
+def fetch(currency):
+    price = requests.get(&quot;https://api.coindesk.com/v1/bpi/currentprice.json&quot;).json()[&quot;bpi&quot;][currency][&quot;rate_float&quot;]
+
+    print(price)
+
+parser = argparse.ArgumentParser(description=&quot;My Fancy CLI&quot;)
+parser.add_argument(
+    '--currency',
+    help='Choose currency to convert to',
+)
+args = parser.parse_args()
+
+if __name__ == &quot;__main__&quot;:
+    print(args)
+    if args.currency:
+        fetch(args.currency)
+    else:
+        parser.print_help()
+</code></pre>
+
+<p>There are two things to keep a note on, in this example. First, is the use of <code>requests</code>, a popular HTTP request/response library, but not a part of the Python standard library, so it has to be installed separately. Second, is the use of command-line arguments, namely <code>--currency</code>.</p>
+
+<p>Next, is the <code>Dockerfile</code>:</p>
+
+<pre><code class="language-Dockerfile">FROM python:3.7
+RUN pip install requests
+COPY script.py .
+ENTRYPOINT [&quot;python&quot;, &quot;script.py&quot;]
+</code></pre>
+
+<p>Again, very simple. In light of keeping the example simple, we will install <code>requests</code> right in the <code>Dockerfile</code> and using a <code>requirements.txt</code> file or some kind of a setup script, which are the common practice.</p>
+
+<p>Let&rsquo;s build the image, assuming that both files are in our current directory:</p>
+
+<pre><code class="language-bash">docker build -t my-command .
+</code></pre>
+
+<p>Great, now we can grab our newly baked image and run it:</p>
+
+<pre><code class="language-bash">docker run --rm -it my-command --currency USD
+</code></pre>
+
+<p>The <code>--rm</code> option will remove the container immediately after the command has been executed. If you have ever ran <code>docker ps -a</code>, you would know that inactive containers do not get deleted immediately, but are left for a possible later restart. Assuming that we would like to run our command multiple times per day, this will result in lots of wasted resources.</p>
+
+<p>The other interesting option is <code>-i</code>. This one, combined with the fact that we chose <code>ENTRYPOINT</code> instead of <code>CMD</code> for our starting point in the <code>Dockerfile</code> would allow us to pass the <code>--currency</code> argument at the very end. There are a few subtle differences between <code>ENTRYPOINT</code> and <code>CMD</code> but the very basic is the ability to adapt <code>ENTRYPOINT</code>, while <code>CMD</code> is more or less final.</p>
+
+<p>You can, of course, create an alias fo your command to make the execution easier:</p>
+
+<pre><code class="language-bash">alias my-cmd=&quot;docker run --rm -i my-command&quot;
+
+my-cmd --currency USD
+</code></pre>
+
+<p>That&rsquo;s it! Now you can ahead and run your application as a scheduled cron task and e.g. accrue data over time:</p>
+
+<pre><code class="language-bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv
+</code></pre>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Once again, the solution is far from the ease of a drag-and-drop that Go executables allow. Also, it assumes a working Docker setup (less and less of an issue nowadays), and quite a bit of space, because of the images. It also, for the most part, requires building the image locally, or at least, pulling the ingredients from an image registry. Docker allows for an option to save an image with all of its dependencies and load it on a remote host OS. Think of it as a sort of fat-Jar. I tried it just for the sake of demonstration, but it seems very impractical, as it resulted in an enormous zip file for that tiny Python script (of course, it bakes a whole Linux bistro inside):</p>
+
+<pre><code class="language-bash">docker save -o my-command.zip my-command
+</code></pre>
+
+<pre><code class="language-bash">rw------- 1 user user 920M Mar 17 08:47 my-command.zip
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Securing your ElasticSearch instances</title>
+            <link>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</link>
+            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/02/03/securing-your-elasticsearch-instances/</guid>
+            <description>Securing your ElasticSearch instances and keeping all the fun Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&amp;rsquo;re ready to start sending queries.
 Unfortunately, one thing comes for another, and as we have recently seen, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<h3 id="securing-your-elasticsearch-instances-and-keeping-all-the-fun">Securing your ElasticSearch instances and keeping all the fun</h3>
+
+<p>Often, we choose convenience over security. Many modern tools such as MongoDB and ElasticSearch, have grown in popularity, partly because of their easy-to-set-up-and-tinker-with nature. Just spin off an instance, point your browser to the right URL and you&rsquo;re ready to start sending queries.</p>
+
+<p>Unfortunately, one thing comes for another, and as <a href="http://www.zdnet.com/article/elasticsearch-ransomware-attacks-now-number-in-the-thousands/">we have recently seen</a>, ElasticSearch left in the open can be a vulnerable target, same as MongoDB was in its heyday. In light of the <a href="http://www.zdnet.com/article/elasticsearch-ransomware-attacks-now-number-in-the-thousands/">recent attacks</a> on many open ElasticSearch instances across the world, I decided to share a quick tip on how to set remote ES instances, and keep them secure, by not compromising on its easy-to-play-with nature.</p>
+
+<h2 id="part-one-restricting-the-access-to-your-elasticsearch-instance">Part One: Restricting the access to your ElasticSearch instance</h2>
+
+<p>Let&rsquo;s start. The easiest way to setup an ElasticSearch instance is <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html">spinning up a container</a> off the default Docker image:</p>
+
+<pre><code class="language-bash">docker pull docker.elastic.co/elasticsearch/elasticsearch:&lt;VERSION&gt;
+
+docker run -p 9200:9200 -e &quot;http.host=0.0.0.0&quot; -e &quot;transport.host=127.0.0.1&quot; elasticsearch:&lt;VERSION&gt;
+</code></pre>
+
+<p>Running the above line, will create a portion mapping from 9200 within the container, to port 9200 on the host machine. One problem here, is that by doing so, it also exposes it to the outside world. This could easily be seen by running <code>iptables</code> against your host:</p>
+
+<pre><code class="language-bash">iptables -t nat -L -n
+
+# Outputs
+...
+target     prot opt source               destination
+DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:9200 to:XXX.XXX.XXX.XXX:9200
+...
+
+</code></pre>
+
+<p>Indeed, Docker takes the heavy-lifting of configuring your <code>iptables</code> firewall, but often, this may result in a configuration which is too permissive. What one should do instead, is provide a specific IP to the port mapping configuration. Thankfully, Docker supports this, so all we have to do is modify the above command, using the <code>IP:host_port:container_port</code> mapping:</p>
+
+<pre><code class="language-bash">docker run -p 127.0.0.1:9200:9200 -e &quot;http.host=0.0.0.0&quot; -e &quot;transport.host=127.0.0.1&quot; elasticsearch:&lt;VERSION&gt;
+</code></pre>
+
+<p>Perfect! Putting the <code>127.0.0.1</code> will guarantee that the container will be available inside the host machine, but not accessible outside. A quick proof of this is looking at iptables again:</p>
+
+<pre><code class="language-bash">target     prot opt source               destination
+DNAT       tcp  --  0.0.0.0/0            127.0.0.1            tcp dpt:9200 to:XX.XXX.XXX.XXX:9200
+</code></pre>
+
+<p>if you point your browser to port 9200 you should not be able to see anything, but executing `curl 127.0.0.1:9200 from inside the host machine should work.</p>
+
+<h2 id="part-two-accessing-your-elasticsearch-instance-in-a-secure-manner">Part Two: Accessing your ElasticSearch instance in a secure manner</h2>
+
+<p>What we did was all fine, but how do access our ElasticSearch instance now, without losing the flexibility of quickly testing stuff on ES? Easy, using *NIX&rsquo;s Swiss Army Knife - <code>SSH</code>. SSH is a tool most programmers use on a daily basis, but fewer of them are aware that SSH allows for local and remote port forwarding. What this means is that SSH can create an encrypted tunnel between your machine and your server, such that you can accesses services running remotely, as if they were running on loclahost (local forwarding). There is also remote forwarding, which alternatively, allows you to securely access locally running services from your remote server.</p>
+
+<p>While we are going to use local port forwarding in our case, both are analogous to each other:</p>
+
+<pre><code class="language-bash">ssh -L/-R &lt;PORT_ON_THE_LOCAL/REMOTE_MACHINE&gt;:&lt;HOST_TO_MAP_TO&gt;:&lt;PORT_ON_THE_REMOTE/LOCAL_MACHINE&gt; &lt;USERNAME&gt;@&lt;REMOTE_IP&gt;
+</code></pre>
+
+<p>In our particular case, this looks like this:</p>
+
+<pre><code class="language-bash">ssh -L 9200:127.0.0.1:9200  user@XX.XXX.XXX.XXX
+</code></pre>
+
+<p>This basically says: map my local port <code>9200</code> to a call to <code>127.0.0.1:9200</code> on the <code>XX.XXX.XXX.XXX</code> server. When you point your browser to <code>http://localhost:9200</code>, you should now see the familiar ElasticSearch output, even though, as before <code>XX.XXX.XXX.XXX:9200</code> returns nothing. You can let the above command run in the background and run as a daemon.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>These two steps are all you need, in order to keep enjoying the freedom of playing with ElasticSearch or MongoDB, but doing it in a fully secure manner. This recipe can be applied to just about any service. And you really don&rsquo;t need Docker even. The fact that I mentioned it in part one, is because it makes setting up easy, and also saves you from having to tinker with <code>iptables</code> yourselves.</p>
+
+<p><strong>NOTE:</strong> Please, keep in mind that while running a SSH tunnel is just about perfect for testing and development purposes, it may not be an optimal solution for production. The reason for this is the latency caused by en/decrypting the data and shuffling it through the tunnel. It may become a bottleneck with many incoming requests running in parallel. I am yet to stress-test this setup and will share my observations in a further post. I will also share some more ideas on how to access an ElasticSearch instance securely, but also in a productive manner.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Productivity on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/productivity/</link>
-    <description>Recent content in Productivity on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>How I Stay Focused on Twitter Despite All the Buzz</title>
-      <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
-      <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
-      <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
+    <channel>
+        <title>Productivity on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/productivity/</link>
+        <description>Recent content in Productivity on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 06 Nov 2019 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How I Stay Focused on Twitter Despite All the Buzz</title>
+            <link>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</link>
+            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/11/06/how-i-stay-connected-on-twitter/</guid>
+            <description>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.
 From people to topics Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>With so much going on Twitter, we long have passed the point of being able to just look at our timelines and stay up-to-date. In fact, I have personally stopped following and would even go as far as to remove a significant portion of the people I’ve been following over the years.</p>
+
+<h1 id="from-people-to-topics">From people to topics</h1>
+
+<p>Before anyone gets offended by my supposed rudeness, let me clear up. I do get to stay up-to-date with a large variety of stuff on Twitter. I achieve this with by organizing accounts into thematic lists, combined with clever searching.</p>
+
+<p>If you have never created a single list on Twitter, you’re missing half the fun. At the moment of this writing, I actively curate <a href="https://twitter.com/preslavrachev/lists">around 50 lists</a>. The majority of those revolve around a certain topic I’m interested about, say <a href="https://twitter.com/preslavrachev/lists/go-developers">Go</a> or <a href="https://twitter.com/preslavrachev/lists/python-developers">Python</a> programming. Others are location based (Bremen, Munich, Bulgaria). In short, the fact that I don’t follow people on Twitter into a single timeline does not mean that that I don’t follow them at all. It’s actually the opposite - I follow many more people into many more thematically organized timelines.</p>
+
+<p>This won’t solve the original problem, will it? In fact, many timelines must be making it a hell of a time to stay on top of each one. Well, yes, and this is where the power of clever searching comes to the stage.</p>
+
+<p>In a <a href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">previous article</a>, I wrote at length about some of the hidden powers of Twitter searching. One of the many examples I presented in my article was using a Twitter list as the base filter for your search. Put simply, the following search:</p>
+
+<pre><code>list:username/list “climate change”
+</code></pre>
+
+<p>Will only return results that match the query <code>climate change</code>, but only within the scope of the given list. Search for the right topics within the right lists, and you automatically get a significant noise reduction. As lists will inevitably get bigger, you can further reduce the noise, by leaving out only tweets with certain popularity or number of responses to.</p>
+
+<pre><code>list:username/list “climate change” min_retweets:3
+</code></pre>
+
+<p>or</p>
+
+<pre><code>list:username/list “climate change” min_replies:3
+</code></pre>
+
+<p>I have saved many such searches, which I then keep open on my favourite Twitter client. I like using <a href="https://tapbots.com/tweetbot/mac/">TweetBot</a> for iOS and macOS, but one could easily <a href="https://tweetdeck.twitter.com/">TweetDeck’s</a> tabs for the same purpose.</p>
+
+<p><img src="https://i.imgur.com/4ml6zVF.jpg" alt="" /></p>
+
+<hr />
+
+<p>P.S. I hear that Twitter is also going to release some support for topic subscriptions as soon as this week. Let’s wait and see the final outcome. Until then, I keep using the method, I described above.</p>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/XHLt3wEMJOsEC2eUPaLuGXUQqBw=/0x492:1080x1057/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19352076/CB_14444_Topics_2.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Twitter is rolling out Topics, a way to follow subjects automatically in the timeline</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      It’s starting with more than 300 subjects across sports, gaming, and entertainment.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theverge.com/2019/11/6/20948547/twitter-topics-launch-sports-gaming-entertainment-test">https://www.theverge.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

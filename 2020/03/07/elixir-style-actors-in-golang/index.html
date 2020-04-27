@@ -1,53 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev ">
-<meta name="description" content="My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync." />
-<meta name="keywords" content="programming, golang, python, elixir, Programming, Golang, Elixir, Erlang" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-
-    <title>
-        
-            Elixir-Style Actors in Go :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="author" content="">
+    <meta name="description" content="My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync." />
+    <meta name="keywords" content="programming, golang, python, elixir, Programming, Golang, Elixir, Erlang" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Elixir-Style Actors in Go · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Elixir-Style Actors in Go">
 <meta itemprop="description" content="My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync.">
 
@@ -65,143 +43,153 @@
 <meta name="twitter:title" content="Elixir-Style Actors in Go"/>
 <meta name="twitter:description" content="My foray into Elixir brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with sync."/>
 
-
-
-    <meta property="article:section" content="Programming" />
-
-
-
-    <meta property="article:published_time" content="2020-03-07 17:04:29 &#43;0100 &#43;0100" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+            
+        
+    
+    
+    <meta name="twitter:image" content="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519435676i/38732242._UY630_SR1200,630_.jpg">
+    
+
+    
+    
+    
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div></header>
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
-</header>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
+        <article class="post-full post  no-image ">
 
-            <div class="content">
+            <header class="post-full-header">
+
                 
-<main class="post">
+                    
+                    <section class="post-full-tags">
+                        <a href="/tags/programming">Programming</a>
+                    </section>
+                
 
-    <div class="post-info">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-clock">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>8 minutes
+                <h1 class="post-full-title">Elixir-Style Actors in Go</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        
+
+                        <section class="post-full-byline-meta">
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-53-03">7 March 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 8 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
 
             
 
-            | <a href="#disqus_thread"
-                style="padding: 2px; border-radius: 1px; text-decoration: none; background-color: #fe5186; color: #ffffff">start
-                a discussion</a>
-        </p>
-    </div>
+            <section class="post-full-content">
+                <div class="post-content">
+                    
 
-    <article>
-        <h1 class="post-title">
-            <a href="https://preslav.me/2020/03/07/elixir-style-actors-in-golang/">Elixir-Style Actors in Go</a>
-        </h1>
-
-        
-
-        <div class="post-content">
-            
-
-<p>My foray into <a href="https://elixir-lang.org/" target="_blank">Elixir</a> brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with <code>sync.Mutex</code> slapped on it, you’d be (almost) right. Yet, it’s worth exploring different ways of thinking.</p>
+<p>My foray into <a href="https://elixir-lang.org/">Elixir</a> brought forward many more similarities between it and Go, than I originally expected. One of them is how both handle concurrency. With respect to that, creating Elixir-style stateful actors in Go is surprisingly easy. Answering the question, whether one needs them, or can make use of them, I’d leave to the user. If you approach me back saying that the same thing can be achieved using a channel or a map with <code>sync.Mutex</code> slapped on it, you’d be (almost) right. Yet, it’s worth exploring different ways of thinking.</p>
 
 <h1 id="a-10-000-foot-view-of-elixir">A 10.000-foot view of Elixir</h1>
 
 <p>For those not aware of it, Elixir is a functional language. Everything runs inside an immutable function scope, and no state remains on the table. A function can only work on what it has been fed with. Functions reside inside modules and are being executed inside Erlang processes.</p>
 
 <p>Technical differences aside, you can think of processes as the equivalent of Go’s goroutines. A function chain call runs inside a process/goroutine. When the outermost function returns, the process/goroutine ends. A process/goroutine can spawn other processes/goroutines to achieve concurrent execution of tasks. Go synchronizes over channels while Elixir over a message inbox that is built into every process. Using the built-in receive keyword, a function’s execution blocks inside a process, until a certain type of message gets received</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir">receive do
-    <span style="color:#75715e"># Don&#39;t get too caught up on the Elixir syntax.</span>
-    <span style="color:#75715e"># For now, it is only important to know that :message_a is equivalent</span>
-    <span style="color:#75715e"># to a string with the value of &#34;message_a&#34;</span>
-    <span style="color:#75715e"># Those are called &#34;atoms&#34; and are quite often used in Ruby-like laguages</span>
-    {<span style="color:#e6db74">:message_a</span>, msg} <span style="color:#f92672">-&gt;</span>
+
+<pre><code class="language-elixir">receive do
+    # Don't get too caught up on the Elixir syntax.
+    # For now, it is only important to know that :message_a is equivalent
+    # to a string with the value of &quot;message_a&quot;
+    # Those are called &quot;atoms&quot; and are quite often used in Ruby-like laguages
+    {:message_a, msg} -&gt;
         do_something_with(msg)
-end</code></pre></div>
-<p>Fundamentally, this is the same as having a <a href="https://play.golang.org/p/rZkdET2ZhJl" target="_blank">goroutine block its execution waiting on a channel</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">message</span> <span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">val</span> <span style="color:#66d9ef">string</span>
+end
+</code></pre>
+
+<p>Fundamentally, this is the same as having a <a href="https://play.golang.org/p/rZkdET2ZhJl">goroutine block its execution waiting on a channel</a>:</p>
+
+<pre><code class="language-go">type message struct {
+    val string
 }
 
-<span style="color:#a6e22e">msgStream</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">message</span>)
+msgStream := make(chan message)
 
-<span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">out</span> <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">message</span>) {
-    <span style="color:#a6e22e">out</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">message</span>{<span style="color:#a6e22e">val</span>: <span style="color:#e6db74">&#34;hello world&#34;</span>}
-}(<span style="color:#a6e22e">msgStream</span>)
+go func(out chan message) {
+    out &lt;- message{val: &quot;hello world&quot;}
+}(msgStream)
 
-<span style="color:#a6e22e">msg</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">msgStream</span>
-<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;%+v&#34;</span>, <span style="color:#a6e22e">msg</span>)</code></pre></div>
+msg := &lt;-msgStream
+fmt.Printf(&quot;%+v&quot;, msg)
+</code></pre>
+
 <p>Whether you are waiting on a message to arrive in your inbox, or explicitly set a blocking channel as a communication mechanism, to me, it describes the same paradigm.</p>
 
 <h1 id="turn-goroutines-into-stateful-actors">Turn goroutines into stateful actors</h1>
 
 <p>Clear until now? Alright. Let’s move on. I already mentioned that Elixir is a functional language. Everything that gets passed to a function is immutable, and the only way to change it, is to return a new version of it. This means that looping constructs are not possible, since it would imply modifying and keeping track of a counter variable. The way functional languages achieve the effect of looping is through recursion (or to be more precise tail recursion):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir">def loop(<span style="color:#ae81ff">5</span>) do
-    <span style="color:#75715e"># Elixir uses pattern-matching when choosing which function to call.</span>
-    <span style="color:#75715e"># In our case, as soon as its gets a count == 5, it will stop the loop</span>
-    <span style="color:#ae81ff">5</span>
+
+<pre><code class="language-elixir">def loop(5) do
+    # Elixir uses pattern-matching when choosing which function to call.
+    # In our case, as soon as its gets a count == 5, it will stop the loop
+    5
 end
 
 def loop(count) do
-    <span style="color:#75715e"># Just print the count, but use pipes (|&gt;)</span>
-    <span style="color:#75715e"># instead of wrapping in a function call -&gt; IO.puts(count)</span>
-    <span style="color:#75715e"># Pipes totally save the day, when you have multiple call chains</span>
+    # Just print the count, but use pipes (|&gt;)
+    # instead of wrapping in a function call -&gt; IO.puts(count)
+    # Pipes totally save the day, when you have multiple call chains
     count
-    <span style="color:#f92672">|&gt;</span> <span style="color:#a6e22e">IO</span><span style="color:#f92672">.</span>puts()
+    |&gt; IO.puts()
 
-    loop(count <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
-end</code></pre></div>
+    loop(count + 1)
+end
+</code></pre>
+
 <h2 id="from-recursion-to-actors">From recursion to actors</h2>
 
 <p>What if we take this recursion example and think of it as a never-ending loop. The first call to the function sets the initial state, and the function keeps calling itself ad-infinitum.</p>
@@ -209,94 +197,103 @@ end</code></pre></div>
 <p>Now, this is where the purely functional paradigm breaks. We already learned that Erlang allows for other processes to communicate to us. This means that if our never ending recursive function receives a message from the outside, it can use its payload to call itself with a modified version of its initial state. Keeping in mind that receiving a message is a blocking operation, the process will simply linger around, not using any CPU resources, until our the right message arrives.</p>
 
 <p>We can use the same messaging paradigm to poke inside the state of our never-ending function. Since it runs inside a separate process, the only way to do that is to send an appropriate message to it, pass our current process’ ID (PID) and let it send us a message back.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir">defmodule <span style="color:#a6e22e">Calculator</span> do
+
+<pre><code class="language-elixir">defmodule Calculator do
     def start do
-    <span style="color:#75715e"># creates a separate process with its own internal state</span>
-    spawn(fn <span style="color:#f92672">-&gt;</span> loop(<span style="color:#ae81ff">0</span>) end)
+    # creates a separate process with its own internal state
+    spawn(fn -&gt; loop(0) end)
     end
 
     defp loop(current_value) do
-    new_value <span style="color:#f92672">=</span>
+    new_value =
         receive do
-        <span style="color:#75715e"># with this type of message, we can fetch the state of our calculator</span>
-        {<span style="color:#e6db74">:get</span>, caller_pid} <span style="color:#f92672">-&gt;</span>
-            send(caller_pid, {<span style="color:#e6db74">:response</span>, current_value})
+        # with this type of message, we can fetch the state of our calculator
+        {:get, caller_pid} -&gt;
+            send(caller_pid, {:response, current_value})
             current_value
 
-        <span style="color:#75715e"># with this type of message, we can modify the state of our calculator</span>
-        {<span style="color:#e6db74">:add</span>, value} <span style="color:#f92672">-&gt;</span>
-            current_value <span style="color:#f92672">+</span> value
+        # with this type of message, we can modify the state of our calculator
+        {:add, value} -&gt;
+            current_value + value
         end
 
     loop(new_value)
     end
-end</code></pre></div>
+end
+</code></pre>
+
 <p>Let&rsquo;s test our calculator process:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elixir" data-lang="elixir">defmodule <span style="color:#a6e22e">CalculatorTest</span> do
+
+<pre><code class="language-elixir">defmodule CalculatorTest do
     def test_calculator do
-    calc_pid <span style="color:#f92672">=</span> <span style="color:#a6e22e">Calculator</span><span style="color:#f92672">.</span>start()
+    calc_pid = Calculator.start()
 
-        <span style="color:#75715e"># Like `receive`, `send` is built-in and take a PID, as well as a message</span>
-        <span style="color:#75715e"># self() returns the process id (PID) of the current process</span>
-        <span style="color:#75715e"># Like in Go, every piece of Elixir/Erlang code runs in a process</span>
-    send(calc_pid, {<span style="color:#e6db74">:get</span>, self()})
+        # Like `receive`, `send` is built-in and take a PID, as well as a message
+        # self() returns the process id (PID) of the current process
+        # Like in Go, every piece of Elixir/Erlang code runs in a process
+    send(calc_pid, {:get, self()})
 
-        <span style="color:#75715e"># `receive` will block, until we receive a message,</span>
-        <span style="color:#75715e"># that matches the expected pattern - {:response, value}</span>
+        # `receive` will block, until we receive a message,
+        # that matches the expected pattern - {:response, value}
     receive do
-        {<span style="color:#e6db74">:response</span>, value} <span style="color:#f92672">-&gt;</span>
-        value <span style="color:#f92672">|&gt;</span> <span style="color:#a6e22e">IO</span><span style="color:#f92672">.</span>puts()
+        {:response, value} -&gt;
+        value |&gt; IO.puts()
     end
 
-    send(calc_pid, {<span style="color:#e6db74">:add</span>, <span style="color:#ae81ff">100</span>})
+    send(calc_pid, {:add, 100})
 
-    send(calc_pid, {<span style="color:#e6db74">:get</span>, self()})
+    send(calc_pid, {:get, self()})
 
     receive do
-        {<span style="color:#e6db74">:response</span>, value} <span style="color:#f92672">-&gt;</span>
-        value <span style="color:#f92672">|&gt;</span> <span style="color:#a6e22e">IO</span><span style="color:#f92672">.</span>puts()
+        {:response, value} -&gt;
+        value |&gt; IO.puts()
     end
     end
-end</code></pre></div>
-<p>In essence, our never-ending function becomes what Elixir calls a stateful server process, an implementation of the <a href="https://en.wikipedia.org/wiki/Actor_model" target="_blank">Actor model</a>. Actors are great for isolating critical state and allowing for concurrent communication to it, ensuring that only one change happens at a time.</p>
+end
+</code></pre>
+
+<p>In essence, our never-ending function becomes what Elixir calls a stateful server process, an implementation of the <a href="https://en.wikipedia.org/wiki/Actor_model">Actor model</a>. Actors are great for isolating critical state and allowing for concurrent communication to it, ensuring that only one change happens at a time.</p>
 
 <h2 id="from-elixir-to-go">From Elixir to Go</h2>
 
 <p>Ok now that we know how things work in Elixir land, achieving the same thing on Go is super straightforward.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-    <span style="color:#a6e22e">in</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">message</span>)
-    <span style="color:#a6e22e">out</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">int</span>)
-    <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">newCalculator</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">in</span>, <span style="color:#a6e22e">out</span>)
 
-    <span style="color:#a6e22e">in</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">message</span>{<span style="color:#a6e22e">operation</span>: <span style="color:#e6db74">&#34;get&#34;</span>}
-    <span style="color:#a6e22e">state</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">out</span>
-    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Current state: %d&#34;</span>, <span style="color:#a6e22e">state</span>)
+<pre><code class="language-go">func main() {
+    in := make(chan message)
+    out := make(chan int)
+    go newCalculator(0, in, out)
 
-    <span style="color:#a6e22e">in</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">message</span>{<span style="color:#a6e22e">operation</span>: <span style="color:#e6db74">&#34;add&#34;</span>, <span style="color:#a6e22e">value</span>: <span style="color:#ae81ff">100</span>}
-    <span style="color:#a6e22e">in</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">message</span>{<span style="color:#a6e22e">operation</span>: <span style="color:#e6db74">&#34;get&#34;</span>}
-    <span style="color:#a6e22e">state</span> = <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">out</span>
-    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Current state: %d&#34;</span>, <span style="color:#a6e22e">state</span>)
+    in &lt;- message{operation: &quot;get&quot;}
+    state := &lt;-out
+    log.Printf(&quot;Current state: %d&quot;, state)
+
+    in &lt;- message{operation: &quot;add&quot;, value: 100}
+    in &lt;- message{operation: &quot;get&quot;}
+    state = &lt;-out
+    log.Printf(&quot;Current state: %d&quot;, state)
 }
 
-<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">message</span> <span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">operation</span> <span style="color:#66d9ef">string</span>
-    <span style="color:#a6e22e">value</span>     <span style="color:#66d9ef">int</span>
+type message struct {
+    operation string
+    value     int
 }
 
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">newCalculator</span>(<span style="color:#a6e22e">initialState</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">in</span> <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">message</span>, <span style="color:#a6e22e">out</span> <span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">int</span>) {
-    <span style="color:#a6e22e">state</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">initialState</span>
-    <span style="color:#66d9ef">for</span> {
-        <span style="color:#a6e22e">p</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">in</span>
-        <span style="color:#66d9ef">switch</span> <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">operation</span> {
-        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;add&#34;</span>:
-            <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Adding %d to the current state&#34;</span>, <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">value</span>)
-            <span style="color:#a6e22e">state</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">value</span>
+func newCalculator(initialState int, in chan message, out chan int) {
+    state := initialState
+    for {
+        p := &lt;-in
+        switch p.operation {
+        case &quot;add&quot;:
+            log.Printf(&quot;Adding %d to the current state&quot;, p.value)
+            state += p.value
 
-        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;get&#34;</span>:
-            <span style="color:#a6e22e">out</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">state</span>
+        case &quot;get&quot;:
+            out &lt;- state
         }
     }
-}</code></pre></div>
+}
+</code></pre>
+
 <p>One thing to note is that since we can use an infinite-loop, we should just use that, especially, since based on my knowledge Go is not particularly optimized for long-cycle recursion. But the main premise remains the same. A function gets called with some initial state and returns a channel. The function starts an endless loop, blocking on the channel. If we push a value to that channel, the function will take it, update the state and block again.</p>
 
 <h1 id="what-are-actors-good-for">What are actors good for?</h1>
@@ -306,16 +303,19 @@ end</code></pre></div>
 <p>So, now that we unveiled the mystery behind actors, it’s a good point to discuss what they might be useful for.</p>
 
 <p>One thing that immediately comes to mind, is achieving globally accessible, but truly private, synchronized state. This is currently achieved with the use of channels, <code>sync.Mutex</code>, or the new <code>sync.Map</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">SynchronizedMap</span> <span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">RWMutex</span>
-    <span style="color:#a6e22e">internal</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">interface</span>{}
+
+<pre><code class="language-go">type SynchronizedMap struct {
+    sync.RWMutex
+    internal map[string]interface{}
 }
 
-<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">rm</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">SynchronizedMap</span>) <span style="color:#a6e22e">Store</span>(<span style="color:#a6e22e">key</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">value</span> <span style="color:#66d9ef">interface</span>{}) {
-    <span style="color:#a6e22e">rm</span>.<span style="color:#a6e22e">Lock</span>()
-    <span style="color:#a6e22e">rm</span>.<span style="color:#a6e22e">internal</span>[<span style="color:#a6e22e">key</span>] = <span style="color:#a6e22e">value</span>
-    <span style="color:#a6e22e">rm</span>.<span style="color:#a6e22e">Unlock</span>()
-}</code></pre></div>
+func (rm *SynchronizedMap) Store(key string, value interface{}) {
+    rm.Lock()
+    rm.internal[key] = value
+    rm.Unlock()
+}
+</code></pre>
+
 <p>The fragility of this approach comes from the fact that there is no real private state in Go applications. The map we named <code>internal</code> in the above example is only protected from outside access. Any piece of code inside the same package as our <code>SynchronizedMap</code> can freely access and modify its internals, leading to unexpected consequences. While this shouldn&rsquo;t be a concern in most cases, it&rsquo;s definitely good to keep in mind for special cases.</p>
 
 <h2 id="stateful-autonomous-agents">Stateful autonomous agents</h2>
@@ -366,122 +366,149 @@ end</code></pre></div>
   </div>
 </div>
 
-<p>One of the best books about learning Elixir, and certainly, the one that inspired me to write this post. Saša Jurić&rsquo;s explanations are clear and demonstrative, especially on complex topics such as this one. If you like this blog, and would love to support my passion for reading great books, you can <a href="https://amzn.to/39AXJ6T" target="_blank">buy it on Amazon using this special link</a>. Thanks!</p>
+<p>One of the best books about learning Elixir, and certainly, the one that inspired me to write this post. Saša Jurić&rsquo;s explanations are clear and demonstrative, especially on complex topics such as this one. If you like this blog, and would love to support my passion for reading great books, you can <a href="https://amzn.to/39AXJ6T">buy it on Amazon using this special link</a>. Thanks!</p>
 
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="/tags/programming">Programming</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
         </div>
     </article>
 
-    <hr />
-
-    <div class="post-info">
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-tag meta-icon">
-                <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
-                </path>
-                <line x1="7" y1="7" x2="7" y2="7"></line>
-            </svg><span class="tag"><a
-                    href="https://preslav.me/tags/programming">Programming</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/golang">Golang</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/elixir">Elixir</a></span><span class="tag"><a
-                    href="https://preslav.me/tags/erlang">Erlang</a></span>
-        </p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-file-text">
-                <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-                </path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-            </svg>1518 Words</p>
-
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-calendar">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>2020-03-07 16:04 &#43;0000
-        </p>
-    </div>
 
     
-    <div class="pagination">
-        <div class="pagination__title">
-            <span
-                class="pagination__title-h"></span>
-            <hr />
-        </div>
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">A Step Outside the Comfort Zone</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://preslav.me/2020/03/01/use-the-git-history/">
-                    <span class="button__text">Use the Git History to Identify Pain Points in Any Project</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
-    </div>
+    
+        
     
 
-    
-    <div id="comments" class="thin">
-</div>
-    
-</main>
 
-            </div>
+<article class="post-card post
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
 
-            
-        </div>
+ ">
 
         
+            <a class="post-card-image-link" href="https://preslav.me/2020/03/01/use-the-git-history/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502137388i/23627482._SR1200,630_.jpg" alt="Use the Git History to Identify Pain Points in Any Project"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/01/use-the-git-history/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Programming</div>
+                    
+
+                    <h2 class="post-card-title">Use the Git History to Identify Pain Points in Any Project</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Have you heard of Adam Tornhill&rsquo;s work? If not, I highly recommend that you set some time aside and check out Your Code as a Crime Scene or Software DEsign X-Rays. In both books, the author dives into a bit of an unexplored territory - looking at the evolution of a codebase as a factor of its changes over time.
+Much of the tooling we use to mitigate tech debt is preventive.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-53-03">1 March 2020</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2020/03/14/a-step-outside-the-comfort-zone/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">2 Cents</div>
+                    
+
+                    <h2 class="post-card-title">A Step Outside the Comfort Zone</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Yes, the current situation sucks. Big time. It&rsquo;s not good for anyone. Least of all, for the ones fighting for their lives, and those, doing their best to bring things back to normal. It needs patience and coordinated effort, but we&rsquo;ll make it through, sooner or later. Patience and perseverance are hard, I know, but those are what has kept humanity moving forward. They would do so, for generations to come.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2020-53-03">14 March 2020</time>
+                            <span class="bull">&bull;</span> 3 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
 
 
 
-
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -492,14 +519,6 @@ end</code></pre></div>
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>

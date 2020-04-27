@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sale on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/sale/</link>
-    <description>Recent content in Sale on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 08 Jun 2019 05:24:36 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/sale/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201906080735/</link>
-      <pubDate>Sat, 08 Jun 2019 05:24:36 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201906080735/</guid>
-      <description>Who wants to buy an almost new Google Pixel 3 XL at a great price?
+    <channel>
+        <title>Sale on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/sale/</link>
+        <description>Recent content in Sale on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sat, 08 Jun 2019 05:24:36 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/sale/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201906080735/</link>
+            <pubDate>Sat, 08 Jun 2019 05:24:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201906080735/</guid>
+            <description>Who wants to buy an almost new Google Pixel 3 XL at a great price?
 Two weeks ago, I bought this phone from eBay with the hope that it will make me go back to Android, but it turns out that I am more connected to iOS than I thought. I will lay out my exact reasons in a separate post, but they have to do more with Google than this phone&amp;rsquo;s hardware in particular.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>Who wants to <a href="https://www.ebay.de/itm/Google-Pixel-3-XL-64GB-Just-Black-Ohne-Simlock-Zwei-Wochen-benutzt/183836663820">buy</a> an almost new Google Pixel 3 XL at a great price?</p>
+
+<p>Two weeks ago, I bought this phone from eBay with the hope that it will make me go back to Android, but it turns out that I am more connected to  iOS than I thought. I will lay out my exact reasons in a separate post, but they have to do more with Google than this phone&rsquo;s hardware in particular.</p>
+
+<p>Speaking of hardware, this Pixel 3 XL is just perfect. Its battery life is outstanding, when compared to my poor iPhone 7. For the two weeks of use, I have not noticed a single moment of lagging, jitter, or other types of annoyance caused by performance. The camera, well, the camera is the absolute best on the market (the photo below was clearly not shot with it), what else can I say?</p>
+
+<p>If interested, please, go to the <a href="https://www.ebay.de/itm/Google-Pixel-3-XL-64GB-Just-Black-Ohne-Simlock-Zwei-Wochen-benutzt/183836663820">following eBay link</a> to take part in the auction. Hurry up!</p>
+
+<p><img src="/images/2019/06/IMG_7103.jpeg" alt="" /></p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

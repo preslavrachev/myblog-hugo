@@ -1,44 +1,295 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Data Science on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/data-science/</link>
-    <description>Recent content in Data Science on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 03 Feb 2019 14:29:06 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Kotlin ❤️ Data Science? (Part 1)</title>
-      <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
-      <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
-      <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
+    <channel>
+        <title>Data Science on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/data-science/</link>
+        <description>Recent content in Data Science on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 03 Feb 2019 14:29:06 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Kotlin ❤️ Data Science? (Part 1)</title>
+            <link>https://preslav.me/2019/02/03/kotlin-loves-data-science/</link>
+            <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/02/03/kotlin-loves-data-science/</guid>
+            <description>A few days ago, I was invited to give a talk at the Munich Kotlin Users Group meetup (check out my slides here) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. DuringKotlinConf 2018, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.
    Mathematical Modeling with Kotlin | Thomas Nield</description>
-    </item>
-    
-    <item>
-      <title>Data Science on Your iPad</title>
-      <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
-      <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
-      <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
-    </item>
-    
-    <item>
-      <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
-      <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
-      <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
-      <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&amp;#39;TotalPayBenefits&amp;#39;] == sal[&amp;#39;TotalPayBenefits&amp;#39;].max()][&amp;#39;EmployeeName&amp;#39;] which is absolutely valid, but is it the only option?</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>A few days ago, I was invited to give a talk at the <a href="https://www.meetup.com/Kotlin-User-Group-Munich/events/257927489/">Munich Kotlin Users Group</a> meetup (check out my slides <a href="https://speakerdeck.com/preslavrachev/kotlin-data-science">here</a>) For quite some time, I have had an idea to promote Kotlin as the missing link between software engineering and Data Science. During<a href="https://preslav.me/2018/11/01/kotlinconf-2018-recap/"> KotlinConf 2018</a>, I had the chance and the privilege to meet a couple of amazing people, whose talks only helped confirm my thoughts.</p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/-zTqtEcnM7A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://youtu.be/-zTqtEcnM7A">Mathematical Modeling with Kotlin | Thomas Nield</a></p>
+
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube-nocookie.com/embed/yjVW6uCmVBA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<a href="https://www.youtube.com/watch?v=yjVW6uCmVBA">Building Data Science Workflows with Kotlin | Holger Brandl</a></p>
+
+<p>Indeed, the future seems full of opportunities for Kotlin, but not before JetBrains and the developer community remove a few of the pending roadblocks.</p>
+
+<p>The following article is the first part of a two-part series based on my talk. After the meetup, I realized that the topic is far deeper than just going through a few slides about what Kotlin as a language can and can’t. Therefore, I decided to properly introduce the reader to the topic first. Next time, we will talk about where and how Kotlin can fit into the puzzle.</p>
+
+<h1 id="the-problem-with-data">The Problem with Data</h1>
+
+<p>We live in an age of unprecedented data abundance. So much, that our wishful imagination is easy to make us believe that we are on the verge of getting computers to think. Not surprisingly, when speaking about the future, the use of the term “AI” has recently become a favorite topic among company management and technology media alike.</p>
+
+<p>Yet, in reality, we are only touching the surface. The path towards autonomous AI requires more basic human intervention than anything else. In particular, it needs a way for properly communicating data science into the software engineering field, and vice versa.</p>
+
+<p>Aren’t We Already There?
+Nope, not quite. Bringing data science into the production workflow of established companies is not as easy as one might think. More so, when talking about the JVM, which a vast majority of enterprise software has been built upon.</p>
+
+<p>See, there is a mismatch between software engineering and data science practices:</p>
+
+<p>Software engineering works best when building well-defined systems. Requirements are set at the beginning and ideally, evolve over time, but rarely change entirely. There are traceable boundaries between components, with deterministic inputs and outputs, to help testability and ease extension. Like other forms of engineering, building a piece of software starts with a rough skeleton, which gets iterated over time and again. The goal of every step is to make the software either more feature complete or gradually morph it into a new direction, but keep it compatible with the original requirements.</p>
+
+<p>Data science, on the other hand, deals with supporting or refuting hypotheses. Like other fields of science, it starts with a relatively generic question and goes through a process of data exploration and validation, until either the question can be answered fully, or it needs to be formulated again, due to an insufficiency of the data/selected approach. The exploration phase often involves trying out different approaches and seeing a large portion of them fail. This is why it is so important for the data science field to use tools and technologies that allow for easy exploration and visualization of the underlying data.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*_At3wUK_Zqgz_goL.png" alt="" />
+<a href="https://www.xkcd.com/1838/">Machine Learning | xkcd</a></p>
+
+<p>Another important difference between software engineering and data science is the interpretation of the outputs of systems at hand. Although, the understanding of distributed systems has almost become a science of its own, interpreting the outcome of a non-deterministic machine learning model is a whole different game. It is not easy to unit-test complex ML models, mainly because of the level of randomness they are built upon. Removing this randomness factor can help test the model in isolation, but might also provide the wrong assumptions when feeding the model with real-world data. Just like with the exploration phase above, it is a matter of having the right tools at hand and a fairly deep level of human interpretation.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*ihz1vmQr7OcBTVx4.png" alt="" />
+<a href="https://xkcd.com/605/">Extrapolating | xkcd</a></p>
+
+<h1 id="ai-ml-and-the-role-of-data-science-in-all-of-this">AI, ML, and the Role of Data Science in All of This</h1>
+
+<p>So, we are back to our favorite term: Artificial Intelligence, also known as AI. AI has had a long history of ups and downs, most notably its birth and early progress during the 1950s and 1960s, followed by the so-called AI winter covering most of the late 1980s, 1990s, and the beginning of the 21st Century. The recent advancement of hardware technology has given researchers the opportunity to dig out the old papers, beat them off the dust, and re-imagine the utopian bright future, in which humans and machines become alike.</p>
+
+<p>The fields of AI and Data Science have been complementing one another for a long time. Yet, while AI still seems rather ephemeral and difficult to grasp (a bit like Virtual Reality), Data Science resembles Augmented Reality, in that it employs technology, but leaves the ultimate decision and interpretation to humans.</p>
+
+<p>Machine Learning (or ML, for short) is just one of the techniques that both rely on, in order to make machines reason about large amounts of data, but by far not the only one.</p>
+
+<p>If you are looking for a more cynical view of the difference between the three you can rather use this one:</p>
+
+<ul>
+<li>AI is what brings the VC Money in.</li>
+<li>ML (a.k.a sophisticated brute-force) is what gets the job done. ML models are very limited to a given domain.</li>
+<li>DS is the craft of finding which ML model works for a particular case, and which doesn’t.
+<br /></li>
+</ul>
+
+<p>Until next time, when I will talk more about whether Kotlin can help fill the gap between Software Engineering and Data Science, as well as what steps are still needed to help us get there.</p>
+
+<h1 id="further-resources">Further Resources</h1>
+
+<p>The slides to my talk
+<script async class="speakerdeck-embed" data-id="99478ac60b134f5393f45d382b1d1bc6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></p>
+
+<ul>
+<li><a href="http://approximatelycorrect.com/2017/03/28/the-ai-misinformation-epidemic/">The AI Misinformation Epidemic</a></li>
+<li><a href="https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/">What’s the Difference Between Artificial Intelligence, Machine Learning, and Deep Learning?</a></li>
+<li><a href="https://towardsdatascience.com/data-science-has-become-too-vague-538899bab57">Data Science Has Become Too Vague</a></li>
+<li><a href="https://towardsdatascience.com/deep-misconceptions-about-deep-learning-f26c41faceec">Deep Misconceptions About Deep Learning</a></li>
+<li><a href="https://stats.stackexchange.com/questions/423/what-is-your-favorite-data-analysis-cartoon/9254">What is your favorite “data analysis” cartoon?</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Data Science on Your iPad</title>
+            <link>https://preslav.me/2018/08/12/data-science-on-your-ipad/</link>
+            <pubDate>Sun, 12 Aug 2018 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/08/12/data-science-on-your-ipad/</guid>
+            <description>This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</description>
+            <content type="html"><![CDATA[
+
+<p>This article is a follow-up transcription to a talk I recently gave at a local <a href="https://www.meetup.com/Hacking-Machine-Learning">Munich machine learning meetup</a>. Unlike <a href="https://preslav.me/2018/05/25/my-first-machine-learning-talk/">my previous talk</a>, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea. Being an iOS developer, who has once built a 3rd-party App Store search engine, I know first-hand how difficult it is to find anything inside the App Store, more so, when carefully specifying what one is looking for. Therefore, I believe that if nothing else, even having this one collection of links should be a valuable starting point for further exploration.</p>
+
+<p>Before I get to the apps, let me start with some background:</p>
+
+<h2 id="why-a-tablet">Why a Tablet?</h2>
+
+<p>Although it might no longer get the media&rsquo;s attention as the tech sector&rsquo;s latest sexy gadget, the tablet has replaced the laptop/desktop in a number of activities, where one previously needed a &ldquo;real machine&rdquo;. What is more, the tablet is slowly getting out of people&rsquo;s notion as being handy coffee table device for content consumption. It is rather becoming the preferred content creation choice of many, particularly, creative professions, such as writers, musicians, and visual artists. This has caught the eye of companies like Apple, who have decided to double-down on the iPad&rsquo;s Pro model, targeted primarily at professionals.</p>
+
+<p>If there is one thing that could describe our generation best, this would be our constant state of movement. We spend so much time commuting, or in some form of passive travel. We might as well try to start reclaiming some of this time and use it for creative and productive activities. This is where a tablet fits in for me.</p>
+
+<p>Even at the bulkiest of sizes, an iPad is more convenient to carry around than a laptop. It is &ldquo;always on&rdquo;, can be used while sitting, lying or standing, with or without a keyboard, and requires less interactions than a laptop. More than anything else, I find the level of multitasking exactly right for this type of medium. Indeed, one can do way less things at the same time on an iPad than one can do using a laptop. I tend to consider this a feature rather than a shortcoming: less multitasking =&gt; less distraction, i.e. more immersion.</p>
+
+<p>Although my daily work involves sitting behind a laptop and crafting complex systems, it is rarely behind the laptop where these ideas originate. I feel most creative when discussing things with people or when I drift away somewhere outside, my iPad in my hand.</p>
+
+<p>Now back to the main topic&hellip;</p>
+
+<h2 id="coding-on-an-ipad">Coding on an iPad?</h2>
+
+<p>It is certainly doable, and getting used to it takes way less time than one might expect. As an example, take developer Richard Morgan, who <a href="https://www.imore.com/starsceptre-ios-game-was-entirely-coded-ipad">developed an iOS game on his iPad</a>, entirely during his commute around London. Everything is possible when you have the right mindset and the right tools.</p>
+
+<p>As for the tools, there are quite a few good ones, hidden inside the App Store. In fact, code editors for iOS have existed even before the release of the original iPad. Among them, many in-app IDEs of sorts. Yet, it wasn&rsquo;t until last year, when I started seriously taking look at the possibility writing code and running it entirely on an iPad. In 2017, Apple <a href="https://www.macstories.net/linked/apples-app-store-guidelines-now-allow-executable-code-in-educational-apps-and-developer-tools/">permitted</a> the sharing and downloading of executable code on iOS devices, for teaching, learning and personal development purposes. A validation that writing code on iOS is here to stay.</p>
+
+<p>The apps below are in no particular order, besides the fact that I will be specifically looking at Pythonista later on. All apps are paid, which is something I firmly stand behind and support, yet this post is no product or service endorsement of any kind. I am just a happy customer:</p>
+
+<table>
+<thead>
+<tr>
+<th>App Name</th>
+<th>Languages</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="http://omz-software.com/pythonista/">Pythonista 3</a></td>
+<td>Python 2 / 3</td>
+</tr>
+
+<tr>
+<td><a href="https://codea.io/">Codea</a></td>
+<td>Lua</td>
+</tr>
+
+<tr>
+<td><a href="http://continuous.codes/">Continuous</a></td>
+<td>C# / F# .NET</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/irstudio/id1173749340">iRstudio</a></td>
+<td> R</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a></td>
+<td>Python</td>
+</tr>
+
+<tr>
+<td><a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492">Playgrounds</a></td>
+<td>Swift</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="pythonista">Pythonista</h2>
+
+<p><a href="http://omz-software.com/pythonista/">Pythonista</a> is one the few apps, just like <a href="https://ia.net/writer">iA Writer</a> (which I am using right now to write this post), which IMHO, deserves to come on an iPad pre-installed. To those having tried the Swift Playgrounds app on an iPad, it is just mere peanuts in comparison with what Pythonista offers:</p>
+
+<ul>
+<li>Fully featured support for both Python 2 and Python 3</li>
+<li>Excellent documentation, keyboard extensions, and code completion</li>
+<li>Has an integrated debugger, a property inspector, and its own REPL-like console</li>
+<li>Provides extensions for writing GUIs and communication with other apps on your device</li>
+</ul>
+
+<p><img src="/images/2018/august/pythonista-1.jpg" alt="" /></p>
+
+<p><img src="/images/2018/august/pythonista-2.jpg" alt="" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UYIZlqQPusw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Pythonista comes pre-packed with a ton of libraries we love and use every day: NumPy, Matplotlib, Requests, BeatufulSoup, etc. Yet, lacks some of our favourites, due to Apple&rsquo;s restrictions: Pandas, SciPy, Scikit-Learn, and unfortunately, TensorFlow. There are other apps like
+<a href="https://itunes.apple.com/gb/app/analyser/id1083042861?mt=8">Analyser</a> and the now defunct Computable, which feature many of those as part of the app bundle, which lets me remain optimistic that we will see many of those included in future releases of Pythonista too.</p>
+
+<p>Pythonista is great for quickly scrapping ideas, and doing exploratory data analysis. In fact, I am running most of my early-stage exploratory analysis on cryptocurrency pricing directly in the app. It is absolutely indispensable when learning new concepts, be those Python, or math / science-related. Last but not least, the integrated GUI and extension capabilities allow for creating entire iOS applications using Python. Think about it. An iOS app, built using Python, using only an iPad. It can&rsquo;t get better than this.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a7QcX4Ke3Hc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="what-about-jupyter">What about Jupyter?</h2>
+
+<p>Indeed, what about <a href="https://jupyter.org/">Jupyter</a>? Unless you have been living in a cave, and self-proclaimed yourself a data scientist, you should know that Jupyter  Notebook, and similar tools which mix code and narrative have taken the scientific world by storm. Moreover, Jupyter Notebook is entirely Web-based. Therefore, it shouldn&rsquo;t be a big deal to run your private Jupyter instance, or use of the many readily available instances from <a href="https://notebooks.azure.com/">Microsoft</a>, <a href="https://www.kaggle.com/kernels">Kaggle</a>, <a href="https://colab.research.google.com/">Google</a>, and many other providers. My answer to this is <strong>yes and no</strong>. Although Jupyter Notebook is Web-based and technically opens up in mobile Safari, the actual usability of the Web version on mobile is less than ideal. Browsing through and reading code somehow works. It is the editing of code, where things get really painful. Many of the beloved Jupyter shortcuts are not supported, due to the lack of corresponding keys on the iPad&rsquo;s keyboard. When trying to type inside a cell, the browser tries to compensate by zooming in in and out in a horrible fashion. A very, very unpleasant thing.</p>
+
+<p>So far, so good, but there must be an app that brings the best of Jupyter and the native iOS experience together, right? Indeed, but a bit later on that. First, a word about Computable.</p>
+
+<p><a href="http://computableapp.com/index_old.html">Computable</a> was an app that promised to be the best of Pythonista, with  even more DS libraries under the hood, and its own native Jupyter support. The ultimate bliss.</p>
+
+<p><img src="http://www.computableapp.com/img/keyboard@2x.png" alt="" /></p>
+
+<h6 id="computable-in-action-photo-source-http-www-computableapp-com-index-old-html">Computable in Action. <a href="http://www.computableapp.com/index_old.html">Photo Source</a></h6>
+
+<p>Sadly, the app is no longer available. It was pulled from the App Store in 2015 for various reasons, but the developer was kind enough to <a href="https://github.com/ktraunmueller/Computable">put the original code up on GitHub</a>, and make it open-source. In fact, as far as I know, I have been the first one to <a href="https://github.com/preslavrachev/Computable">fork</a> the repository, and I am keen on trying to at least trying to revive it. I am looking for other contributors as well, so anyone willing to help is more than welcome.</p>
+
+<p>Now, back to my dilemma. Indeed, there is a great app I discovered last year, which brings the best of both worlds. It is called
+<a href="https://juno.sh/">Juno</a> and it is a slick, brand new, native iOS client for working with Jupyter Notebook and JupyterLab instances.</p>
+
+<p><img src="https://navoshta.com/images/posts/juno/screenshot_h_01@2x.png" alt="" /></p>
+
+<h6 id="photo-source-https-navoshta-com"><a href="https://navoshta.com">Photo Source</a></h6>
+
+<p>Juno will easily connect to a self-hosted Jupyter server, or to a cloud-provided Jupyter VM (e.g. Azure, CoCalc, and many more coming soon). It also supports <a href="https://mybinder.org/">Binder</a>, for a series of pre-made tutorial notebooks, which is ideal for people to get on board without yet having an actual Jupyter instance running.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6QNFi4EIz6U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Indeed, the lack of working truly offline might be a show-stopper for some, but I am more than sure that the developers are working hard to address this in future versions. Understanding the difficulties of having all Python libraries locally under the hood, I can only wish for an easy way to browse through, and perhaps, locally caching pre-rendered Jupyter notebooks for later reference. This would be great, and one won&rsquo;t have to render those to PDF or something more obscure.</p>
+
+<h2 id="a-few-more-apps">A few more apps</h2>
+
+<p>Before closings have decided to reiterate on my original statement that  the App Store is full of hidden gems which unfortunately, often did not really get the credit they deserve. This is the reason why I decided to share a few complementary apps that professionals from all disciplines will surely be interested in trying out. As before, those are not in any particular order, and I am not endorsing any of them, just sharing my personal opinion.</p>
+
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Apps</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Taking Notes and Documenting</td>
+<td><a href="http://happenapps.com/#quiver">Quiver</a>, <a href="https://ia.net/writer">iAWriter</a>, <a href="http://www.bear-writer.com/">Bear</a>, <a href="https://fsnot.es/">FSNotes</a></td>
+</tr>
+
+<tr>
+<td>Source Control</td>
+<td><a href="https://workingcopyapp.com/">Working Copy</a></td>
+</tr>
+
+<tr>
+<td>SSH and Terminal Emulation</td>
+<td><a href="https://www.termius.com/">Termius</a>, <a href="https://panic.com/prompt/">Prompt</a></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<p>Last but not least, here are <a href="https://speakerdeck.com/preslavrachev/data-science-on-your-ipad">my slides</a> from the talk. Until next time!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</title>
+            <link>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</link>
+            <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/</guid>
+            <description>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?</description>
+            <content type="html"><![CDATA[<p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
+
+<pre><code class="language-python">sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']
+</code></pre>
+
+<p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
+
+<pre><code class="language-python">sal.loc[sal['TotalPayBenefits'].idxmax()]['EmployeeName']
+
+sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
+</code></pre>
+
+<p>I did a quick performance check, and indeed, idmax/argmax turn out twice as fast:</p>
+
+<pre><code class="language-bash"># the original filter condition
+815 µs ± 11.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# idmax()
+402 µs ± 7.61 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# argmax
+404 µs ± 8.81 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+</code></pre>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

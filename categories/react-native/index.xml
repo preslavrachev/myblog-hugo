@@ -1,26 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>React Native on Random Bits of Wisdom</title>
-    <link>https://preslav.me/categories/react-native/</link>
-    <description>Recent content in React Native on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 26 Mar 2017 05:25:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/categories/react-native/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
-      <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
-      <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
-      <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
+    <channel>
+        <title>React Native on Random Bits of Wisdom</title>
+        <link>https://preslav.me/categories/react-native/</link>
+        <description>Recent content in React Native on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 26 Mar 2017 05:25:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/categories/react-native/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
+            <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
+            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</guid>
+            <description>TL;DR! Just give me the code In your index.js file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the import statements:
 XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;  You will also need a Chrome plugin that overrides CORS. I use CORS Toggle. You may also decide to skip the plugin and start Chrome with CORS disabled:
-chrome --disable-web-security then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
-    </item>
-    
-  </channel>
+chrome --disable-web-security  then, as usually, start remote debugging from your app, and open: http://localhost:8081/debugger-ui on your computer.</description>
+            <content type="html"><![CDATA[
+
+<h2 id="tl-dr-just-give-me-the-code">TL;DR! Just give me the code</h2>
+
+<p>In your <code>index.js</code> file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the <code>import</code> statements:</p>
+
+<pre><code class="language-javascript">XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? 
+  GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+</code></pre>
+
+<p>You will also need a Chrome plugin that overrides <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>. I use <a href="https://chrome.google.com/webstore/detail/cors-toggle/omcncfnpmcabckcddookmnajignpffnh?hl=en">CORS Toggle</a>. You may also decide to skip the plugin and start Chrome with CORS disabled:</p>
+
+<pre><code class="language-bash">chrome --disable-web-security
+</code></pre>
+
+<p>then, as usually, start remote debugging from your app, and open: <code>http://localhost:8081/debugger-ui</code> on your computer.</p>
+
+<p>That&rsquo;s it. Please, make sure to never rely completely on the network infrastructure of the Chrome debugger. Many networking problems may be specific to your device/simulator, and will not be caught by the debugger.</p>
+
+<h2 id="ok-now-the-longer-explanation">OK, now the longer explanation</h2>
+
+<p>One of the big advantages of React Native is the ease of debugging your code. When running an app in development mode, one can debug it remotely, using the well familiar Chrome DevTools. Logging to the console and setting breakpoints in the code work just as if the app were running in a normal browser&rsquo;s window.</p>
+
+<p>It is, therefore, strange to many RN starters, why one of the core functionalities of the Chrome Inspector, namely the network call interception, is not available. Instead, if a network error occurs, all the JavaScript code gets access to, is an Error object that simply says &ldquo;Network Error&rdquo;.</p>
+
+<p>To fully explain why this is so is out of the scope of this post. There is a great Medium article that explains in detail how the &ldquo;magic&rdquo; behind the RN remote debugging works. I totally recommend you read, regardless of your experience with React and RN.</p>
+
+<p>Long story short, when debugging RN remotely, the JavaScript code actually gets executed in the browser, and not on the device. This allows you to interrupt the flow with breakpoints, or log the console output in the Chrome DevTools window. While the JS code gets executed in the browser, the native calls happen on the device itself. The browser and the device running the app keep a WebSocket connection open and synchronize the code execution on every step.</p>
+
+<p>All the native calls run on the device itself, and executing a network call makes no difference. As such, it is not an easy task to make network traces appear in the Inspector window. At least, not without overriding the default platform APIs (for each of the supported platforms) and communicate every state change with the browser. I am sure that the core dev team is working on a solution, and will deliver it in a future release.</p>
+
+<p>Until then, you can test network calls by replacing the default implementation of <code>XMLHttpRequest</code> and use the one provided by the browser. As you saw in the beginning, it turns out that this is surprisingly simple. Once you do it, override the browser&rsquo;s default CORS rules, and reload the app, you should start seeing network requests in the Chrome Inspector. As I already pointed out, though, the Chrome Inspector can be helpful inasmuch as the requests and responses are concerned. It won&rsquo;t help you prevent issues with the native network infrastructure of your emulator/device. To inspect those, you will rather have to use a proxy, such as <a href="https://www.charlesproxy.com/">Charles</a>, or jump into tracing the native log files.</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,25 +1,126 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Functional Programming on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/functional-programming/</link>
-    <description>Recent content in Functional Programming on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 07 Jul 2019 10:17:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Implementing a Functional-Style Builder in Go</title>
-      <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
-      <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
-      <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
+    <channel>
+        <title>Functional Programming on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/functional-programming/</link>
+        <description>Recent content in Functional Programming on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 07 Jul 2019 10:17:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Implementing a Functional-Style Builder in Go</title>
+            <link>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</link>
+            <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2019/07/07/implementing-a-functional-style-builder-in-go/</guid>
+            <description>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are first-class citizens in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.
 In this post, I want to demonstrate the use of functional constructs for implementing the well-known Builder pattern. Please, note that there are many ways to implement a Builder, and I don&amp;rsquo;t claim that mine is certainly the best.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[
+
+<p>Go is definitely not the first language on my mind, when I hear the term “Functional Programming”. Yet, functions are <a href="https://golangbot.com/first-class-functions/">first-class citizens</a> in Go, and one can achieve a lot using higher-order functions (those that can receive and/or return other functions) alone.</p>
+
+<p>In this post, I want to demonstrate the use of functional constructs for implementing the well-known <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a> pattern. Please, note that there are many ways to implement a Builder, and I don&rsquo;t claim that mine is certainly the best. Think of it as a neat and simple exercise that would teach you some introductory functional concepts in the scope of Go.</p>
+
+<p>To begin with, what is a <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a>? Builders help separate the <em>construction</em> of an object from its <em>representation</em>. Often, when dealing with complex object configurations, we end up writing code like this:</p>
+
+<pre><code class="language-golang">instance := NewInstanceBuilder().
+	WithA(1).
+	WithB(2).
+	WithC(3).
+	Build()
+</code></pre>
+
+<p>using an intermediate Builder <code>struct</code>, or more directly:</p>
+
+<pre><code class="language-golang">instance := NewInstance().
+	WithA(1).
+	WithB(2).
+	WithC(3)
+</code></pre>
+
+<p>which is not safe, because the final instance is accessible at any point in time, and can be modified by any other goroutine running in parallel.</p>
+
+<h1 id="a-functional-approach-to-building">A Functional Approach to Building</h1>
+
+<p>Functional programming guarantees the safety of providing the instance only at the final step. At the same time, it can help minimise boilerplate. Using the functional approach, no additional structs should be necessary. Let&rsquo;s see how we can achieve this. Start with our core <code>struct</code>:</p>
+
+<pre><code class="language-golang">type MyStruct struct {
+	a int
+	b int
+}
+</code></pre>
+
+<p>Nothing special there. Now, pay attention to the next line of code:</p>
+
+<pre><code class="language-golang">type Decorator func(m *MyStruct) *MyStruct
+</code></pre>
+
+<p>What do we have here? One of the revelations for every new Go programmer is that everything in Go can be a type, including functions. In our case, we specify a type called <code>Decorator</code>, to which we pass an instance of <code>MyStruct</code>, it performs some modifications on it, and returns the modified instance.</p>
+
+<p><small><strong>Side note:</strong> the use of a pointer makes the example simpler. It is also safe-enough, since the <code>MyStruct</code> instance will not be accessible until the final build step. Still, if you prefer <a href="https://en.wikipedia.org/wiki/Pure_function">pure functions</a>, the example should be equally easy to implement using value-copying.</small></p>
+
+<p>The really ingenious thing of thinking about a function as a type, is that we can reuse the type, and what&rsquo;s even more grounbreaking, add functionality to it. Check this out:</p>
+
+<pre><code class="language-golang">func (f Decorator) WithA(a int) Decorator {
+	return func(m *MyStruct) *MyStruct {
+		f(m).a = a
+		return m
+	}
+}
+</code></pre>
+
+<p>What did we just do? We added more functionality to <code>Decorator</code> - a higher-order function, which unwraps the decorator it has been attached to by calling it, modifies the value, and wraps it in a new <code>Decorator</code>.</p>
+
+<p>The same way, we can add a function that sets the <code>b</code> property of our <code>MyStruct</code>:</p>
+
+<pre><code class="language-golang">func (f Decorator) WithB(b int) Decorator {
+	return func(m *MyStruct) *MyStruct {
+		f(m).b = b
+		return m
+	}
+}
+</code></pre>
+
+<p>By now you have probably started to guess that attaching decorators to each other will form a chain, which, when eventually executed, will unwrap itself in a reverse manner, each decorator applying its modifications to the passed <code>MyStruct</code> instance.</p>
+
+<p>We are almost done, but how do we actually get our <code>MyStruct</code> instance out? We need some sort of a Go-style <code>constructor</code> function, right? Indeed, we do, but our <code>constructor</code> is a little different when we apply the <code>Builder</code> pattern. Instead of returning the <code>MyStruct</code> instance, it would rather create a simple no-op <code>Decorator</code> function, so we can attach other decorators to it:</p>
+
+<pre><code class="language-golang">func NewMyStruct() Decorator {
+	return func(m *MyStruct) *MyStruct {
+		// This function really does nothing 
+		return m
+	}
+}
+</code></pre>
+
+<p>The last part of our construct is the actual <code>Build</code> method. Its role is to create an empty <code>MyStruct</code> instance and pass it onto the decorator that it gets attached to:</p>
+
+<pre><code class="language-golang">func (f Decorator) Build() *MyStruct {
+	return f(&amp;MyStruct{})
+}
+</code></pre>
+
+<p>Please, recall that since the chain of <code>Decorator</code> functions gets unwrapped in a reverse fashion, even though <code>Build</code> is the last method to be called, it is actually the one that starts the unwrapping of the chain.</p>
+
+<p>Finally, let&rsquo;s see how we can use our <code>Builder</code>:</p>
+
+<pre><code class="language-golang">instance := NewMyType().
+		WithA(42).
+		WithB(123).
+		Build()
+
+// at this point, `instance` is fully configured and ready for use
+</code></pre>
+
+<p>You can see the entire example in action <a href="https://play.golang.org/p/kmDh_oD-8qu">here</a></p>
+
+<p>I hope you liked my little take on Go-style functional programming, applied to the Builder pattern. Feel free to share your feedback.</p>
+
+<p>Happy coding!</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

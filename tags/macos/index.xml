@@ -1,34 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Macos on Random Bits of Wisdom</title>
-    <link>https://preslav.me/tags/macos/</link>
-    <description>Recent content in Macos on Random Bits of Wisdom</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://preslav.me/tags/macos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
-      <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
-      <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
-      <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://preslav.me/microblog/201907241129/</link>
-      <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
-      
-      <guid>https://preslav.me/microblog/201907241129/</guid>
-      <description>Apple is becoming a macOS gatekeeper too.
+    <channel>
+        <title>Macos on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/macos/</link>
+        <description>Recent content in Macos on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 01 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>[Quote]: The Case for Apple to Postpone macOS 10.16 into 2021 </title>
+            <link>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</link>
+            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/04/01/quote-the-case-for-apple-to-postpone-macos-10-16-into-2021/</guid>
+            <description>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&amp;rsquo;s Apple we&amp;rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid.</description>
+            <content type="html"><![CDATA[<p>With so many errors reported throughout the lifetime of macOS Catalina, it kind of makes sense for Apple to slow down a bit and work on polishing it. Moving towards new features without fixing the existing bugs might be disastrous for the macOS ecosystem. But again, that&rsquo;s Apple we&rsquo;re talkign about. Anything can be expected from Apple. Like, deprecating macOS altogether, and eventually, replacing it with some some sort of iOS hybrid. Who knows.</p>
+
+<p>via <a href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021/">The Case for Apple to Postpone macOS 10.16 into 2021</a></p>
+
+<blockquote>
+<p>We’re all struggling to stay safe and secure in macOS 10.15 Catalina or even 10.14 Mojave. And since new apps are being pressed into service for working at home, the last thing we need is a new version of macOS with its traditional teething pains—especially in post WWDC betas. We don’t need any rugs pulled out from under our collaboration apps. Let’s focus on stability and security until the pandemic has completely dissipated.</p>
+
+<p>[…]</p>
+
+<p>Our developer heroes have been complaining for years that they just can’t keep up with the fast-evolving structural and security changes in macOS every 12 months. A six month delay in 10.16 would provide critical time to iron out the kinks in their apps due to changes in Catalina. Not to mention relaxing stress on the developers due to concern for their family’s health.</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.macobserver.com/wp-content/uploads/2019/03/Apple-iMac-2019-1200w.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Case for Apple to Postpone macOS 10.16 into 2021 - The Mac Observer</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Apple previews the next version of macOS at WWDC, then releases it late September. Now there&#39;s a case to be made to postpone macOS into 2021.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">https://www.macobserver.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
+            <title></title>
+            <link>https://preslav.me/microblog/201907241129/</link>
+            <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
+            
+            <guid>https://preslav.me/microblog/201907241129/</guid>
+            <description>Apple is becoming a macOS gatekeeper too.
  For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
-    </item>
-    
-  </channel>
+            <content type="html"><![CDATA[<p>Apple is becoming a macOS gatekeeper too.</p>
+
+<blockquote>
+<p>For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</p>
+</blockquote>
+
+<p>via <a href="https://bitsplitting.org/2019/07/22/a-real-gatekeeper/">A Real Gatekeeper</a></p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,436 +1,2120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Preslav Rachev ">
-<meta name="description" content="" />
-<meta name="keywords" content="programming, golang, python, elixir" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://preslav.me/microblog/" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-
-    <title>
-        
-            Microblogs :: Random Bits of Wisdom 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="https://preslav.me/main.min.2f0d18b84270567c723bff340b09ab08db3a7634237cd9667d052eb6b14669b8.css">
-
+    <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="programming, golang, python, elixir" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="" />
+    <link rel="canonical" href="https://preslav.me/microblog/" />
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/styles.css">
+    
+    <title>Microblogs · Random Bits of Wisdom</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+    <link rel="stylesheet" href="https://preslav.me/style.main.min.3169bc690ac20e399fe6abcf32f5a891f13f367cde1295448c255e51dbd2a300.css" />
+    <link rel="stylesheet" href="https://preslav.me/site.min.d1eeb730c0cb433676d79c5e0069a5b4a83a68a0851bbd9717610cbdf506b955.css" />
+
     
 
     
-        <link rel="stylesheet" type="text/css" href="https://preslav.me/css/cookieconsent.min.css">
-    
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="https://preslav.me/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://preslav.me/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://preslav.me/favicon-16x16.png">
-    <link rel="manifest" href="https://preslav.me/site.webmanifest">
-    <link rel="mask-icon" href="https://preslav.me/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="https://preslav.me/favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
-
 <meta itemprop="name" content="Microblogs">
-<meta itemprop="description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music.">
+<meta itemprop="description" content="I am a software engineer building his own stuff. This is my home on the Internet.">
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
 
 <meta name="twitter:title" content="Microblogs"/>
-<meta name="twitter:description" content="I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."/>
+<meta name="twitter:description" content="I am a software engineer building his own stuff. This is my home on the Internet."/>
 
-
-
-
-
-
-
-<link rel="alternate" type="application/rss+xml" href="https://preslav.me/microblog/index.xml" title="Random Bits of Wisdom" />
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="https://preslav.me/" style="text-decoration: none;">
-    <div class="logo">
+    
+    
         
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/preslav.me</span>
-            <span class="logo__cursor" style=""></span>
+        
+    
+    
+
+    
+    <link rel="alternate" type="application/rss+xml" href="https://preslav.me/microblog/index.xml" title="Random Bits of Wisdom" />
+    
+    
+
+</head>
+<body class=" tag-template  ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="https://preslav.me">Random Bits of Wisdom</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="/about/">About Me</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/projects/">Projects</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/privacy/">Privacy</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </div>
         
     </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://preslav.me/about/">About</a></li><li><a href="https://preslav.me/post/">Blog</a></li><li><a href="https://preslav.me/projects/">Projects</a></li><li><a href="https://preslav.me/contact/">Contact</a></li>
-    </ul>
 </nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
+</div>
+</div>
+    <div class="outer site-header-background no-image">
 
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
+<div class="inner site-header-content">
+            <h1 class="site-title">Microblogs</h1>
+            <h2 class="site-description">
+                
+                    I am a software engineer building his own stuff. This is my home on the Internet.
+                
+            </h2>
+        </div>
+    </div>
 </header>
 
-
-            <div class="content">
-                
-    <main class="posts">
-        <h1>Microblogs</h1>
-            <div class="posts-group">
-                <div class="post-year">2019</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/2019102111035/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Oct 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/280920191021/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Sep 28</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/260920191021/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Sep 26</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/260920191020/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Sep 26</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/220920191020/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Sep 22</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201909021700/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Sep 2</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201908211824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Aug 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201908181824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Aug 18</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201908171824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Aug 17</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201830111824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Aug 16</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201908031736/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Aug 2</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907241129/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 24</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907131824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 13</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907101824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 10</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907081824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 8</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907041930/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 4</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907040754/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 4</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907022242/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 2</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201907011324/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jul 1</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906281812/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 28</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906251911/">
-                                <span class="post-title">[Quote]: Adults in the Room</span>
-                                <span class="post-day">Jun 25</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906231845/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 23</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906211000/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906111300/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 11</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906101457/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 10</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906081458/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 8</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201906080735/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jun 8</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905240633/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 24</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905210746/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 21</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905121007/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 12</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905120928/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 12</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/2019051111035/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 11</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905110736/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 11</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905100746/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 10</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905091358/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 9</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201903051009/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 3</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/220503190745/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 3</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905011824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">May 1</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201904261848/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Apr 26</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/220420191020/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Apr 22</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Mar 22</span>
-                            </a>
-                        </li>
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jan 23</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-            <div class="posts-group">
-                <div class="post-year">2018</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201830111824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Nov 30</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-            <div class="posts-group">
-                <div class="post-year">0001</div>
-
-                <ul class="posts-list">
-                        <li class="post-item">
-                            <a href="https://preslav.me/microblog/201905051824/">
-                                <span class="post-title"></span>
-                                <span class="post-day">Jan 1</span>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-    </main>
-
-            </div>
-
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
             
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://preslav.me">Preslav Rachev</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://preslav.me/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
-        </div>
-    </div>
-</footer>
 
-            
-        </div>
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+ post-card-large 
+ ">
 
         
+            <a class="post-card-image-link" href="https://preslav.me/microblog/2019102111035/">
+                <img class="post-card-image"src="http://kyleprifogle.com/images/kyle-small.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/2019102111035/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-810-10">21 October 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/280920191021/">
+                <img class="post-card-image"src="https://images.currentaffairs.org/2019/09/Screen-Shot-2019-09-27-at-11.58.52-PM-1024x646.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/280920191021/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Kickstarter has made its position clear. It is against unions. It opposes its workers’ effort to organize. It will not be changing its mind. It will be fighting its own staff and its project creators. Now, Kickstarter’s users must make their position clear. We will not tolerate union-busting. We will not give our money to a company that does it. We demand that the company reverse its position and commit to voluntarily recognizing the union if a majority of workers signal support.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-119-09">28 September 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/260920191021/">
+                <img class="post-card-image"src="https://ocwww.wpengine.com/wp-content/uploads/2016/10/Visualization_of_two_dimensions_of_a_NK_fitness_landscape-400x292.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/260920191021/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Chiefly, Go sacrifices expressiveness for uniformity.
+The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
+Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-119-09">26 September 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/260920191020/">
+                <img class="post-card-image"src="https://cdn.vox-cdn.com/thumbor/IR4Vq5BMVQMhbwnHfxT6Jv-TpyM=/0x215:3000x1786/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19180861/acastro_190821_3603_youtubers_podcasts_0001.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/260920191020/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
+Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-109-09">26 September 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/220920191020/">
+                <img class="post-card-image"src="https://cdn.theatlantic.com/assets/media/img/mt/2019/09/RTS2P5XP/facebook.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/220920191020/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>If you wake up on a Casper mattress, hail a Lyft to get to your desk at WeWork, use DoorDash to order lunch to the office, hail another Lyft home, and have Uber Eats bring you dinner, you have spent your entire day interacting with companies that will collectively lose nearly \$13 billion this year. Most have never announced, and may never achieve, a profit.
+Too many consumer-tech companies nearing their public offerings are selling magic shows at a science fair.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-109-09">22 September 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201909021700/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566473431i/47883410._SR1200,630_.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201909021700/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A quote from &ldquo;The Mom Test&rdquo; by Rob Fitzpatrick
+ It’s not anyone else’s responsibility to show us the truth. It’s our responsibility to find it.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Mom Test  The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&#39;t ask your mom wh... https://www.goodreads.com |  Created with NoEmbed    </p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-49-09">2 September 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+ post-card-large 
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201908211824/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840494i/17333428._UY630_SR1200,630_.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201908211824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A quote from &ldquo;Without their Permission&rdquo; by Alexis Ohanian
+ We like to think that real talent always has a way of getting noticed. Harrison Ford was a self-taught professional carpenter when he as hired to build cabinets in the home of George Lucas, who cast him in American Graffiti and set him on a course that led to Indiana Jones. If Ford hadn’t picked up the right hammer or taken another job, Solo would’ve ended up saying “I love you, too”, instead of “I know.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-48-08">21 August 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201908181824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>One of the best podcasts interviews I have listened to in the past couple of months, if not during the past year. Guy Raz sits down together with Tobias Lütke, co-founder and CEO of Shopify. You might not have heard of Shopify, but surely, if you have bought anything online during the past few years, which did not come form Amazon, you most certainly have used its flagship product.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-48-08">18 August 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201908171824/">
+                <img class="post-card-image"src="https://avatars1.githubusercontent.com/u/6128107" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201908171824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
+module.exports = { devServer: { proxy: { &quot;/&quot;: { target: &quot;https://remote-server.com&quot;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-48-08">17 August 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201830111824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Japanese websites don&rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Why doesn’t Japan excel in software as they did in hardware?</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-98-08">16 August 2019</time>
+                            <span class="bull">&bull;</span> 4 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201908031736/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:
+I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-108-08">2 August 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907241129/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Apple is becoming a macOS gatekeeper too.
+ For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-97-07">24 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907131824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>My new favorite coffee mug - a special &ldquo;You Are Here&rdquo; Starbucks edition featuring Bulgaria. From what I heard, also quite a rare collectible item.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-47-07">13 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907101824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
+This is quite neat and might save me one or two print statements 😉
+Thanks to @FlorimondManca for this discovery!</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-47-07">10 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907081824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Scooter Craze The scooter invasion reached Germany as well. 😲 If I recall correctly, electric scooter renting has been a hot topic across German courts, and has only been officially given a legal status at the beginning of July.
+In what seems only a couple of days, hundreds of these have been dropped on the streets of Munich. Now both locals and tourists, thirsty for some thrill from their boring day, are desperately trying to end the lives of innocent pedestrians.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-47-07">8 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907041930/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Chillin&rsquo;</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-67-07">4 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907040754/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>The short pause from running is over and I am back to action. First things first, I bought a new pair of running shoes:
+Those are called Adidas Terrex Two Boa. They feature a very stiff, but sturdy underfoot part (because they are made for trail running), and an innovative lacing system called Boa. It was a bit of a love at first sight, but I amnot really sure, if I am going to get used to those shoes.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-57-07">4 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907022242/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-77-07">2 July 2019</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201907011324/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>On the road again&hellip;</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-117-07">1 July 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906281812/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A sneak peek at the wedding location.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-36-06">28 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201906251911/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490342337i/34673467._UY630_SR1200,630_.jpg" alt="[Quote]: Adults in the Room"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906251911/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title">[Quote]: Adults in the Room</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A quote from the book &ldquo;Adults in the Room&rdquo; by Yanis Varoufakis
+ That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the .</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-46-06">25 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201906231845/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415428227i/20518872._UY630_SR1200,630_.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906231845/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A quote from &ldquo;The Three-Body Problem&rdquo;:
+ &ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&rdquo;
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Three-Body Problem (Remembrance of Earth’s Past #1)  The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&#39;s.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-36-06">23 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906211000/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
+ @media (max-width: 640px) { .</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-86-06">21 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201906111300/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840494i/17333428._UY630_SR1200,630_.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906111300/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A quote from &ldquo;Without Their Permission&rdquo; by Alexis Ohanian:
+ “Building an audience doesn’t require a large advertising budget, certainly not at the beginning. Making something people want—something that people love, that solves a real problem they have in an elegant way—is the most effective thing one can do to generate buzz. There’s no secret to “going viral,” despite what plenty of self-appointed “social media gurus” may tell you (hint: if they call themselves that, run in the opposite direction).</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-116-06">11 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906101457/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>The moment you realize that even a PhD in Mathematical Combinatorics won’t help you, is when you start organizing the seating order for your wedding 🤦‍♂️👰</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-126-06">10 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201906081458/">
+                <img class="post-card-image"src="https://overcast.fm/art" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906081458/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p> Q: Aesthetically, what do you think about the design of the new grater?
+A: It has been optimized for softer cheeses 😂
+   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-126-06">8 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201906080735/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Who wants to buy an almost new Google Pixel 3 XL at a great price?
+Two weeks ago, I bought this phone from eBay with the hope that it will make me go back to Android, but it turns out that I am more connected to iOS than I thought. I will lay out my exact reasons in a separate post, but they have to do more with Google than this phone&rsquo;s hardware in particular.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-56-06">8 June 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905240633/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Apple introduced on Tuesday a new line of MacBook Pros with supposedly, a more durable keyboard, and the latest gen Intel chips. The 15&rsquo; version features an 8-Core CPU and up to 32 GB of RAM and up to 4 TB SSD. It&rsquo;s a beast with an incredible performance:
+
+Have no illusions however. All this power comes at a cost. An what a cost! I went to the Apple website and configured myself a top-of-the-line MBP with all the specs pushed to the max.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-45-05">24 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905210746/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Some interesting observations on the Eurovision Song Contest winners since the year 2000. Not surprisingly, the majority of the winners are in a minor key. Like, this years’ winner from The Netherlands (A minor).
+Songs written in a major key seem to be showing a directly oppising trend, often hotting the hard rock bottom.
+Since 2000, the majority of Eurovision winners have been written in a minor key. Not only have minor keys won 15 of the last 20 contests (major keys have only won five), major keys have placed rock bottom nearly twice as often as minor ones.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-55-05">21 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905121007/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Google: Here is somewhat of a premium phone (Pixel 3) for $800
+Customers: Go Home, Google, you’re drunk.
+Google: Here is a plastic version of the same phone with less features and slower hardware (Pixel 3a) for $400
+Customers: it’s the best Take my money!
+Google: Tricked ya!</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-85-05">12 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905120928/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Back to Wunderlist After what seems like an eternity (close to 3 years), I decided to install and try Wunderlist again. For those who have followed the story, Microsoft bought Wunderlist in 2015 for an undisclosed, but very high amount of money (in the 100s of millions of dollars). The intention was to create what came out to be Microsoft To-Do - a half-baked (IMHO) product that not only did not stick with me, but pushed me away from using a ToDo app whatsoever.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-75-05">12 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/2019051111035/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>This is one of the best movies about running I have seen in a while. Although I peaked at the half-marathon distance (21K), I do run for pretty much the reasons that motivate this guy to run 100 miles. I also fight the same daemons along the race, urging me to stop and quit all the time.
+One thing I learned during the 3 years of active running:
+ Distance running is 20% physical and 80% mental fitness.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-85-05">11 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905110736/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Today, I caught this nice series of tweets by @benedictevans on the rise and demise of tech giants. Unlike smaller companies, those do not die abruptly, or in a direct fight with the competition. Instead, they get sidelined by smarter and more innovative upstarts.
+The series starts with:
+Tech monopolies tend not to fall like Rome. They fall like Venice. They’re still there, and no-one actually invades them, but the trade routes moved, the things that gave them power and wealth stop mattering, and they become just another city, and then a backwater.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-55-05">11 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905100746/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Google will soon introduce searching for podcast episodes as part of its search results. This much was said during the keynote of this year&rsquo;s Google I/O. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-55-05">10 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905091358/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Today, I woke up to this!
+As it turns out, hackers have stolen close to $40 Million from the Binance exchange. According to some, the sixth largest exchange hack in crypto history. More here:
+Hackers Stole $40 Million From Binance Cryptocurrency Exchange</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-115-05">9 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201903051009/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Quotes, highlighted from recently read articles:
+ Convenience is the powerful marketing tool deployed by utopian evangelists to describe a world of total ease and seamless interactions that deliberately masks a frantic race to monopolize a near-bottomless well of behavioral and biometric data. It is the device used to reduce our personal agency, strip us of personal choice, and ultimately render us helpless to the terms and conditions to which we have unwittingly clicked “I agree.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-85-05">3 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/220503190745/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I caught myself using my old Android phone more and more these days. A 5-year-old Nexus 5, that is. I dug it out a few weeks ago. After the fresh reset all the service updates, it works as if it hasn’t been two years since I last used it for real. Trinkering with Android like in the good old days felt exciting. In comparison, my experience with iOS has always been like living a comfortable, but relatively boring life.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-55-05">3 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201905011824/">
+                <img class="post-card-image"src="https://miro.medium.com/max/1200/1*x_OU1YRmBR8037eqsSAfYA.png" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905011824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
+ @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium  For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a https://medium.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-45-05">1 May 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201904261848/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p> Ask the reader: This is a question for the avid podcast listeners among you. It will help me take a few decisions for a side project of mine. Your answers are completely anonymous.
+  (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()  powered by Typeform  </p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-44-04">26 April 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/220420191020/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Good morning from Augsburg, Germany 👋🏼 Not many people around (expected for the second day of Easter), but we got a beatufil sunshine and a great view.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-104-04">22 April 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/229c405a-737f-4509-8d0f-ebed00a44820/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Meanwhile in Munich&hellip;</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-23-03">22 March 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/06482203-14be-4333-a9c1-398461d66c7c/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>A view to live for! 😍
+Sendlinger Tor | Munich</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2019-61-01">23 January 2019</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+ post-card-large 
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/microblog/201830111824/">
+                <img class="post-card-image"src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366561721i/17835351._UY630_SR1200,630_.jpg" alt=""/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201830111824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Opportunities are whispers, not foghorns.
+If we can&rsquo;t hear their soft rhythms - if we are to busy rushing about, waiting for thunderclaps of revelation, inspiration, and certainty - or if we can spot them but can&rsquo;t nurture them into real advantages, then we might as well be blind to them.
+ From the book &ldquo;Nikola Tesla: Imagination and the Man That Invented the 20th Century&rdquo;
+@media (max-width: 640px) { .</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2018-911-11">30 November 2018</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+    
+    
+
+
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/microblog/201905051824/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">micropost</div>
+                    
+
+                    <h2 class="post-card-title"></h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Test post. Let&rsquo;s see if this deploys to the website.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="0001-121-01">1 January 0001</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+        </div>
+    </div>
+</main>
 
 
 
 
-<script type="text/javascript" src="https://preslav.me/bundle.min.8047d1b063234db7e4f910f9d54abd62686428b775f14770e6c6314980002e1d3014e6f9d5df0df37d0a5fd3a15f20b320fb949c4f014e74059de1c57eb0e40a.js" integrity="sha512-gEfRsGMjTbfk&#43;RD51Uq9YmhkKLd18Udw5sYxSYAALh0wFOb51d8N830KX9OhXyCzIPuUnE8BTnQFneHFfrDkCg=="></script>
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="https://preslav.me">Random Bits of Wisdom</a> &copy; 2019</section>
+                <nav class="site-footer-nav">
+                    <a href="https://preslav.me">Latest Posts</a>
+                    
+                    <a href="https://twitter.com/preslavrachev" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/preslavrachev" target="_blank" rel="noopener">Github</a>
+                    <a href="https://jonathanjanssens.com" target="_blank" rel="noopener" style="opacity: 0.5;">Hugo Casper3 by Jonathan Janssens</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    
+
+
+
+<script type="text/javascript" src="/bundle.min.18b382e0e0f13bbc39ba7947ccc49817bb009bafb71af43fd0977d474b7a1a51b88f81a58dcd21a3698ced10465577fa91405062868c8a6a4ddb221cda440444.js" integrity="sha512-GLOC4ODxO7w5unlHzMSYF7sAm6&#43;3GvQ/0Jd9R0t6GlG4j4Gljc0ho2mM7RBGVXf6kUBQYoaMimpN2yIc2kQERA=="></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -441,14 +2125,6 @@
     </script>
 
 
-	
-		<script src="https://preslav.me/js/cookieconsent.min.js"></script>
-	
 
-	
-		<script src="https://preslav.me/js/site.js"></script>
-	
-
-
-    </body>
+</body>
 </html>
