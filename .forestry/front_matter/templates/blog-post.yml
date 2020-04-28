@@ -18,6 +18,11 @@ fields:
     schema:
       format: markdown
   label: Summary
+- name: feature_image
+  type: file
+  config:
+    maxSize: 
+  label: Feature Image
 - type: list
   name: categories
   label: categories
@@ -33,16 +38,6 @@ fields:
 - type: list
   name: tags
   label: tags
-- name: featured_image
-  type: file
-  config:
-    maxSize: 250
-  label: Featured Image
-- name: cover
-  type: file
-  config:
-    maxSize: 250
-  label: Cover
 - name: toc
   type: boolean
   label: Table of Contents
