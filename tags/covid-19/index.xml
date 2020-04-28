@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Covid 19 on Random Bits of Wisdom</title>
+        <title>COVID-19 on Random Bits of Wisdom</title>
         <link>https://preslav.me/tags/covid-19/</link>
-        <description>Recent content in Covid 19 on Random Bits of Wisdom</description>
+        <description>Recent content in COVID-19 on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Mon, 30 Mar 2020 10:38:05 +0200</lastBuildDate>
@@ -160,9 +159,8 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 <figure>
     <img src="/images/2020/03/infected-people.png"
-         alt="infected people: Germany, Italy and Europe "/> <figcaption>
-            <h4>Number of infected people: Germany, Italy and Europe</h4><p><h1 id="infected-people-germany-italy-and-europe">infected people: Germany, Italy and Europe</h1>
-</p>
+         alt="infected people: Germany, Italy and Europe"/> <figcaption>
+            <h4>Number of infected people: Germany, Italy and Europe</h4><p><h1 id="infected-people-germany-italy-and-europe">infected people: Germany, Italy and Europe</h1></p>
         </figcaption>
 </figure>
 

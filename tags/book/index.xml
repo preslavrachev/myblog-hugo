@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Book on Random Bits of Wisdom</title>
@@ -15,9 +14,7 @@
             <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/2020/04/15/quote-developer-hegemony-the-future-of-labor/</guid>
-            <description>A quote from the amazing book &amp;ldquo;Developer Hegemony&amp;rdquo; (Buy on Amazon) by Erik Dietrich:
- You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other.
- How many of you, dear readers think this way?</description>
+            <description>You need to stop viewing yourself as a software engineer II or a QA specialist or a dev manager. You need to stop viewing yourself as an employee of your (or any) company and start viewing yourself as the owner of your personal brand and operation. You are an island. You are other.</description>
             <content type="html"><![CDATA[<p>A quote from the amazing book <a href="https://amzn.to/2Va55tn">&ldquo;Developer Hegemony&rdquo; (Buy on Amazon)</a> by Erik Dietrich:</p>
 
 <blockquote>

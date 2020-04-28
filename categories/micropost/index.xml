@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Micropost on Random Bits of Wisdom</title>
+        <title>micropost on Random Bits of Wisdom</title>
         <link>https://preslav.me/categories/micropost/</link>
-        <description>Recent content in Micropost on Random Bits of Wisdom</description>
+        <description>Recent content in micropost on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Fri, 03 May 2019 05:45:00 +0000</lastBuildDate>

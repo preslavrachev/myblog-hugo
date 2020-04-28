@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Mongodb on Random Bits of Wisdom</title>
+        <title>MongoDB on Random Bits of Wisdom</title>
         <link>https://preslav.me/tags/mongodb/</link>
-        <description>Recent content in Mongodb on Random Bits of Wisdom</description>
+        <description>Recent content in MongoDB on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Fri, 28 Dec 2018 16:45:41 +0000</lastBuildDate>

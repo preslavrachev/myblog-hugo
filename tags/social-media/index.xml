@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Social Media on Random Bits of Wisdom</title>
@@ -99,17 +98,14 @@
 <p>Two tiny things before I move on:</p>
 
 <ol>
-<li>As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:</li>
-</ol>
+<li><p>As with the rest of the syntax, you can apply boolean logic operators here too. So the following query:</p>
 
-<pre><code>   my search query min_retweets:5 OR min:faves:5
+<pre><code>my search query min_retweets:5 OR min:faves:5
 </code></pre>
 
-<pre><code>will return results that match either of the engagement thresholds, or both.
-</code></pre>
+<p>will return results that match either of the engagement thresholds, or both.</p></li>
 
-<ol>
-<li>The results are limited back in time to the most recent 10 days.</li>
+<li><p>The results are limited back in time to the most recent 10 days.</p></li>
 </ol>
 
 <h2 id="search-in-lists">Search in Lists</h2>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Random Bits of Wisdom</title>
@@ -6,165 +5,35 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 29 Mar 2020 21:36:52 +0200</lastBuildDate>
+        <lastBuildDate>Tue, 21 Apr 2020 06:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>2 Cents</title>
-            <link>https://preslav.me/tags/2-cents/</link>
-            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            <title>Project</title>
+            <link>https://preslav.me/tags/project/</link>
+            <pubDate>Tue, 21 Apr 2020 06:00:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/2-cents/</guid>
+            <guid>https://preslav.me/tags/project/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
-            <title>Advice</title>
-            <link>https://preslav.me/tags/advice/</link>
-            <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
+            <title>Podcast</title>
+            <link>https://preslav.me/tags/podcast/</link>
+            <pubDate>Mon, 20 Apr 2020 22:00:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/advice/</guid>
+            <guid>https://preslav.me/tags/podcast/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
-            <title>Android</title>
-            <link>https://preslav.me/tags/android/</link>
-            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+            <title>TWIL</title>
+            <link>https://preslav.me/tags/twil/</link>
+            <pubDate>Mon, 20 Apr 2020 22:00:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/android/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Api</title>
-            <link>https://preslav.me/tags/api/</link>
-            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/api/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>App Store</title>
-            <link>https://preslav.me/tags/app-store/</link>
-            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/app-store/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Apple</title>
-            <link>https://preslav.me/tags/apple/</link>
-            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/apple/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Augsburg</title>
-            <link>https://preslav.me/tags/augsburg/</link>
-            <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/augsburg/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Austria</title>
-            <link>https://preslav.me/tags/austria/</link>
-            <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/austria/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Bavaria</title>
-            <link>https://preslav.me/tags/bavaria/</link>
-            <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/bavaria/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Beer</title>
-            <link>https://preslav.me/tags/beer/</link>
-            <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/beer/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Best Practices</title>
-            <link>https://preslav.me/tags/best-practices/</link>
-            <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/best-practices/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Bitcoin</title>
-            <link>https://preslav.me/tags/bitcoin/</link>
-            <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/bitcoin/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Blog</title>
-            <link>https://preslav.me/tags/blog/</link>
-            <pubDate>Sat, 09 Mar 2019 23:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/blog/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Book</title>
-            <link>https://preslav.me/tags/book/</link>
-            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/book/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Bookmark</title>
-            <link>https://preslav.me/tags/bookmark/</link>
-            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/bookmark/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Bulgaria</title>
-            <link>https://preslav.me/tags/bulgaria/</link>
-            <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/bulgaria/</guid>
+            <guid>https://preslav.me/tags/twil/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -180,261 +49,11 @@
         </item>
         
         <item>
-            <title>Coffee</title>
-            <link>https://preslav.me/tags/coffee/</link>
-            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/coffee/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Concurrency</title>
-            <link>https://preslav.me/tags/concurrency/</link>
-            <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/concurrency/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Coronavirus</title>
-            <link>https://preslav.me/tags/coronavirus/</link>
-            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/coronavirus/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Covid 19</title>
-            <link>https://preslav.me/tags/covid-19/</link>
-            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/covid-19/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Cryptocurrency</title>
-            <link>https://preslav.me/tags/cryptocurrency/</link>
-            <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/cryptocurrency/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Crystal</title>
-            <link>https://preslav.me/tags/crystal/</link>
-            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/crystal/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Data</title>
-            <link>https://preslav.me/tags/data/</link>
-            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/data/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Data Science</title>
-            <link>https://preslav.me/tags/data-science/</link>
-            <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/data-science/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Dependency Injection</title>
-            <link>https://preslav.me/tags/dependency-injection/</link>
-            <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/dependency-injection/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Dev Culture</title>
-            <link>https://preslav.me/tags/dev-culture/</link>
-            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/dev-culture/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Devculture</title>
-            <link>https://preslav.me/tags/devculture/</link>
-            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/devculture/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Devops</title>
-            <link>https://preslav.me/tags/devops/</link>
-            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/devops/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Docker</title>
-            <link>https://preslav.me/tags/docker/</link>
-            <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/docker/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Docs</title>
-            <link>https://preslav.me/tags/docs/</link>
-            <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/docs/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Elasticsearch</title>
-            <link>https://preslav.me/tags/elasticsearch/</link>
-            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/elasticsearch/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Elixir</title>
-            <link>https://preslav.me/tags/elixir/</link>
-            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/elixir/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Entrepreneurship</title>
-            <link>https://preslav.me/tags/entrepreneurship/</link>
-            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/entrepreneurship/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Erlang</title>
-            <link>https://preslav.me/tags/erlang/</link>
-            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/erlang/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Eu</title>
-            <link>https://preslav.me/tags/eu/</link>
-            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/eu/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Eurovision</title>
-            <link>https://preslav.me/tags/eurovision/</link>
-            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/eurovision/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
             <title>Firefox</title>
             <link>https://preslav.me/tags/firefox/</link>
             <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/firefox/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Flutter</title>
-            <link>https://preslav.me/tags/flutter/</link>
-            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/flutter/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Functional Programming</title>
-            <link>https://preslav.me/tags/functional-programming/</link>
-            <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/functional-programming/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Germany</title>
-            <link>https://preslav.me/tags/germany/</link>
-            <pubDate>Mon, 08 Jul 2019 16:24:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/germany/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Git</title>
-            <link>https://preslav.me/tags/git/</link>
-            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/git/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Go</title>
-            <link>https://preslav.me/tags/go/</link>
-            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/go/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -450,6 +69,1026 @@
         </item>
         
         <item>
+            <title>Nintendo</title>
+            <link>https://preslav.me/tags/nintendo/</link>
+            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/nintendo/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>PlayStation</title>
+            <link>https://preslav.me/tags/playstation/</link>
+            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/playstation/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Sony</title>
+            <link>https://preslav.me/tags/sony/</link>
+            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/sony/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Book</title>
+            <link>https://preslav.me/tags/book/</link>
+            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/book/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Dev Culture</title>
+            <link>https://preslav.me/tags/dev-culture/</link>
+            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/dev-culture/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Entrepreneurship</title>
+            <link>https://preslav.me/tags/entrepreneurship/</link>
+            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/entrepreneurship/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Quote</title>
+            <link>https://preslav.me/tags/quote/</link>
+            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/quote/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Apple</title>
+            <link>https://preslav.me/tags/apple/</link>
+            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/apple/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>macOS</title>
+            <link>https://preslav.me/tags/macos/</link>
+            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/macos/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Coronavirus</title>
+            <link>https://preslav.me/tags/coronavirus/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/coronavirus/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>COVID-19</title>
+            <link>https://preslav.me/tags/covid-19/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/covid-19/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Presidency</title>
+            <link>https://preslav.me/tags/presidency/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/presidency/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Trump</title>
+            <link>https://preslav.me/tags/trump/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/trump/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>US</title>
+            <link>https://preslav.me/tags/us/</link>
+            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/us/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>2 Cents</title>
+            <link>https://preslav.me/tags/2-cents/</link>
+            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/2-cents/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Journal</title>
+            <link>https://preslav.me/tags/journal/</link>
+            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/journal/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Data Science</title>
+            <link>https://preslav.me/tags/data-science/</link>
+            <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/data-science/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Statistics</title>
+            <link>https://preslav.me/tags/statistics/</link>
+            <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/statistics/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Pandemia</title>
+            <link>https://preslav.me/tags/pandemia/</link>
+            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/pandemia/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Society</title>
+            <link>https://preslav.me/tags/society/</link>
+            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/society/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Elixir</title>
+            <link>https://preslav.me/tags/elixir/</link>
+            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/elixir/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Erlang</title>
+            <link>https://preslav.me/tags/erlang/</link>
+            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/erlang/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Programming</title>
+            <link>https://preslav.me/tags/programming/</link>
+            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/programming/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Git</title>
+            <link>https://preslav.me/tags/git/</link>
+            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/git/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Tips</title>
+            <link>https://preslav.me/tags/tips/</link>
+            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/tips/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Ruby</title>
+            <link>https://preslav.me/tags/ruby/</link>
+            <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/ruby/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Phoenix</title>
+            <link>https://preslav.me/tags/phoenix/</link>
+            <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/phoenix/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Crystal</title>
+            <link>https://preslav.me/tags/crystal/</link>
+            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/crystal/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Go</title>
+            <link>https://preslav.me/tags/go/</link>
+            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/go/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Java</title>
+            <link>https://preslav.me/tags/java/</link>
+            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/java/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Austria</title>
+            <link>https://preslav.me/tags/austria/</link>
+            <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/austria/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Vienna</title>
+            <link>https://preslav.me/tags/vienna/</link>
+            <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/vienna/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>App store</title>
+            <link>https://preslav.me/tags/app-store/</link>
+            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/app-store/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>EU</title>
+            <link>https://preslav.me/tags/eu/</link>
+            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/eu/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Refund</title>
+            <link>https://preslav.me/tags/refund/</link>
+            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/refund/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Bulgaria</title>
+            <link>https://preslav.me/tags/bulgaria/</link>
+            <pubDate>Fri, 20 Dec 2019 16:30:10 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/bulgaria/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Flutter</title>
+            <link>https://preslav.me/tags/flutter/</link>
+            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/flutter/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>iOS</title>
+            <link>https://preslav.me/tags/ios/</link>
+            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/ios/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Xcode</title>
+            <link>https://preslav.me/tags/xcode/</link>
+            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/xcode/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Tools</title>
+            <link>https://preslav.me/tags/tools/</link>
+            <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/tools/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Productivity</title>
+            <link>https://preslav.me/tags/productivity/</link>
+            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/productivity/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Twitter</title>
+            <link>https://preslav.me/tags/twitter/</link>
+            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/twitter/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Android</title>
+            <link>https://preslav.me/tags/android/</link>
+            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/android/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>iPhone</title>
+            <link>https://preslav.me/tags/iphone/</link>
+            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/iphone/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Q&amp;A</title>
+            <link>https://preslav.me/tags/qa/</link>
+            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/qa/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Best Practices</title>
+            <link>https://preslav.me/tags/best-practices/</link>
+            <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/best-practices/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Python</title>
+            <link>https://preslav.me/tags/python/</link>
+            <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/python/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Bookmark</title>
+            <link>https://preslav.me/tags/bookmark/</link>
+            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/bookmark/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>DevCulture</title>
+            <link>https://preslav.me/tags/devculture/</link>
+            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/devculture/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>micropost</title>
+            <link>https://preslav.me/tags/micropost/</link>
+            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/micropost/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Record</title>
+            <link>https://preslav.me/tags/record/</link>
+            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/record/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Running</title>
+            <link>https://preslav.me/tags/running/</link>
+            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/running/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Ultra-humans</title>
+            <link>https://preslav.me/tags/ultra-humans/</link>
+            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/ultra-humans/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>ElasticSearch</title>
+            <link>https://preslav.me/tags/elasticsearch/</link>
+            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/elasticsearch/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Podcasting</title>
+            <link>https://preslav.me/tags/podcasting/</link>
+            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/podcasting/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>watchOS</title>
+            <link>https://preslav.me/tags/watchos/</link>
+            <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/watchos/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Kickstarter</title>
+            <link>https://preslav.me/tags/kickstarter/</link>
+            <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/kickstarter/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Youtube</title>
+            <link>https://preslav.me/tags/youtube/</link>
+            <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/youtube/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Silicon Valley</title>
+            <link>https://preslav.me/tags/silicon-valley/</link>
+            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/silicon-valley/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Startups</title>
+            <link>https://preslav.me/tags/startups/</link>
+            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/startups/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Uber</title>
+            <link>https://preslav.me/tags/uber/</link>
+            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/uber/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>WeWork</title>
+            <link>https://preslav.me/tags/wework/</link>
+            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/wework/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Advice</title>
+            <link>https://preslav.me/tags/advice/</link>
+            <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/advice/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>IDE</title>
+            <link>https://preslav.me/tags/ide/</link>
+            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/ide/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>IntelliJ</title>
+            <link>https://preslav.me/tags/intellij/</link>
+            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/intellij/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>JetBrains</title>
+            <link>https://preslav.me/tags/jetbrains/</link>
+            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/jetbrains/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Optimization</title>
+            <link>https://preslav.me/tags/optimization/</link>
+            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/optimization/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Struct</title>
+            <link>https://preslav.me/tags/struct/</link>
+            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/struct/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Startup</title>
+            <link>https://preslav.me/tags/startup/</link>
+            <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/startup/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>JavaScript</title>
+            <link>https://preslav.me/tags/javascript/</link>
+            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/javascript/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Vue.js</title>
+            <link>https://preslav.me/tags/vue.js/</link>
+            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/vue.js/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Japan</title>
+            <link>https://preslav.me/tags/japan/</link>
+            <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/japan/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Docker</title>
+            <link>https://preslav.me/tags/docker/</link>
+            <pubDate>Sun, 11 Aug 2019 07:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/docker/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Mixtape</title>
+            <link>https://preslav.me/tags/mixtape/</link>
+            <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/mixtape/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>GraalVM</title>
+            <link>https://preslav.me/tags/graalvm/</link>
+            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/graalvm/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Kotlin</title>
+            <link>https://preslav.me/tags/kotlin/</link>
+            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/kotlin/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Coffee</title>
+            <link>https://preslav.me/tags/coffee/</link>
+            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/coffee/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Munich</title>
+            <link>https://preslav.me/tags/munich/</link>
+            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/munich/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Photo Stories</title>
+            <link>https://preslav.me/tags/photo-stories/</link>
+            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/photo-stories/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Weekend</title>
+            <link>https://preslav.me/tags/weekend/</link>
+            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/weekend/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Germany</title>
+            <link>https://preslav.me/tags/germany/</link>
+            <pubDate>Mon, 08 Jul 2019 16:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/germany/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Functional Programming</title>
+            <link>https://preslav.me/tags/functional-programming/</link>
+            <pubDate>Sun, 07 Jul 2019 10:17:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/functional-programming/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Summer</title>
+            <link>https://preslav.me/tags/summer/</link>
+            <pubDate>Thu, 04 Jul 2019 18:30:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/summer/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Vacation</title>
+            <link>https://preslav.me/tags/vacation/</link>
+            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/vacation/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Wedding</title>
+            <link>https://preslav.me/tags/wedding/</link>
+            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/wedding/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Politics</title>
+            <link>https://preslav.me/tags/politics/</link>
+            <pubDate>Tue, 25 Jun 2019 16:11:13 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/politics/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Sofia</title>
+            <link>https://preslav.me/tags/sofia/</link>
+            <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/sofia/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Trams</title>
+            <link>https://preslav.me/tags/trams/</link>
+            <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/trams/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Sci-Fi</title>
+            <link>https://preslav.me/tags/sci-fi/</link>
+            <pubDate>Sun, 23 Jun 2019 15:45:35 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/sci-fi/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>API</title>
+            <link>https://preslav.me/tags/api/</link>
+            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/api/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Medium</title>
+            <link>https://preslav.me/tags/medium/</link>
+            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/medium/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Web</title>
+            <link>https://preslav.me/tags/web/</link>
+            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/web/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Writing</title>
+            <link>https://preslav.me/tags/writing/</link>
+            <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/writing/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>WWDC</title>
+            <link>https://preslav.me/tags/wwdc/</link>
+            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/wwdc/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Sale</title>
+            <link>https://preslav.me/tags/sale/</link>
+            <pubDate>Sat, 08 Jun 2019 05:24:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/sale/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Concurrency</title>
+            <link>https://preslav.me/tags/concurrency/</link>
+            <pubDate>Mon, 03 Jun 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/concurrency/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>MacBook</title>
+            <link>https://preslav.me/tags/macbook/</link>
+            <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/macbook/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Data</title>
+            <link>https://preslav.me/tags/data/</link>
+            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/data/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Eurovision</title>
+            <link>https://preslav.me/tags/eurovision/</link>
+            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/eurovision/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>TIL</title>
+            <link>https://preslav.me/tags/til/</link>
+            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/til/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Bavaria</title>
+            <link>https://preslav.me/tags/bavaria/</link>
+            <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/bavaria/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Half-Marathon</title>
+            <link>https://preslav.me/tags/half-marathon/</link>
+            <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/half-marathon/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
             <title>Google</title>
             <link>https://preslav.me/tags/google/</link>
             <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
@@ -460,11 +1099,301 @@
         </item>
         
         <item>
-            <title>Graalvm</title>
-            <link>https://preslav.me/tags/graalvm/</link>
-            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+            <title>Pixel 3</title>
+            <link>https://preslav.me/tags/pixel-3/</link>
+            <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/graalvm/</guid>
+            <guid>https://preslav.me/tags/pixel-3/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Video</title>
+            <link>https://preslav.me/tags/video/</link>
+            <pubDate>Sat, 11 May 2019 08:35:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/video/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Bitcoin</title>
+            <link>https://preslav.me/tags/bitcoin/</link>
+            <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/bitcoin/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Cryptocurrency</title>
+            <link>https://preslav.me/tags/cryptocurrency/</link>
+            <pubDate>Thu, 09 May 2019 11:49:20 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/cryptocurrency/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Spring Boot</title>
+            <link>https://preslav.me/tags/spring-boot/</link>
+            <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/spring-boot/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Docs</title>
+            <link>https://preslav.me/tags/docs/</link>
+            <pubDate>Fri, 03 May 2019 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/docs/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>quotes</title>
+            <link>https://preslav.me/tags/quotes/</link>
+            <pubDate>Fri, 03 May 2019 08:09:56 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/quotes/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>reading</title>
+            <link>https://preslav.me/tags/reading/</link>
+            <pubDate>Fri, 03 May 2019 08:09:56 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/reading/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Augsburg</title>
+            <link>https://preslav.me/tags/augsburg/</link>
+            <pubDate>Mon, 22 Apr 2019 10:20:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/augsburg/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Heroku</title>
+            <link>https://preslav.me/tags/heroku/</link>
+            <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/heroku/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Beer</title>
+            <link>https://preslav.me/tags/beer/</link>
+            <pubDate>Fri, 22 Mar 2019 14:01:47 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/beer/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Blog</title>
+            <link>https://preslav.me/tags/blog/</link>
+            <pubDate>Sat, 09 Mar 2019 23:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/blog/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Meetup</title>
+            <link>https://preslav.me/tags/meetup/</link>
+            <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/meetup/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Retrospection</title>
+            <link>https://preslav.me/tags/retrospection/</link>
+            <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/retrospection/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>MongoDB</title>
+            <link>https://preslav.me/tags/mongodb/</link>
+            <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/mongodb/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Scala</title>
+            <link>https://preslav.me/tags/scala/</link>
+            <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/scala/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Dependency Injection</title>
+            <link>https://preslav.me/tags/dependency-injection/</link>
+            <pubDate>Thu, 20 Dec 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/dependency-injection/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Media</title>
+            <link>https://preslav.me/tags/media/</link>
+            <pubDate>Tue, 30 Oct 2018 10:56:54 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/media/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Mastodon</title>
+            <link>https://preslav.me/tags/mastodon/</link>
+            <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/mastodon/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Social Media</title>
+            <link>https://preslav.me/tags/social-media/</link>
+            <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/social-media/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Jupyter Notebook</title>
+            <link>https://preslav.me/tags/jupyter-notebook/</link>
+            <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/jupyter-notebook/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Pandas</title>
+            <link>https://preslav.me/tags/pandas/</link>
+            <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/pandas/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Neural Networks</title>
+            <link>https://preslav.me/tags/neural-networks/</link>
+            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/neural-networks/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Science</title>
+            <link>https://preslav.me/tags/science/</link>
+            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/science/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Technology</title>
+            <link>https://preslav.me/tags/technology/</link>
+            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/technology/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>React Native</title>
+            <link>https://preslav.me/tags/react-native/</link>
+            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/react-native/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Psychology</title>
+            <link>https://preslav.me/tags/psychology/</link>
+            <pubDate>Tue, 28 Feb 2017 11:01:46 +0200</pubDate>
+            
+            <guid>https://preslav.me/tags/psychology/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>DevOps</title>
+            <link>https://preslav.me/tags/devops/</link>
+            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/devops/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>InfoSec</title>
+            <link>https://preslav.me/tags/infosec/</link>
+            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/infosec/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>SSH</title>
+            <link>https://preslav.me/tags/ssh/</link>
+            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/ssh/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -490,931 +1419,11 @@
         </item>
         
         <item>
-            <title>Half Marathon</title>
-            <link>https://preslav.me/tags/half-marathon/</link>
-            <pubDate>Fri, 17 May 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/half-marathon/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Heroku</title>
-            <link>https://preslav.me/tags/heroku/</link>
-            <pubDate>Sat, 20 Apr 2019 07:30:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/heroku/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Ide</title>
-            <link>https://preslav.me/tags/ide/</link>
-            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/ide/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Infosec</title>
-            <link>https://preslav.me/tags/infosec/</link>
-            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/infosec/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Intellij</title>
-            <link>https://preslav.me/tags/intellij/</link>
-            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/intellij/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Ios</title>
-            <link>https://preslav.me/tags/ios/</link>
-            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/ios/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Iphone</title>
-            <link>https://preslav.me/tags/iphone/</link>
-            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/iphone/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Japan</title>
-            <link>https://preslav.me/tags/japan/</link>
-            <pubDate>Fri, 16 Aug 2019 21:13:21 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/japan/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Java</title>
-            <link>https://preslav.me/tags/java/</link>
-            <pubDate>Fri, 17 Jan 2020 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/java/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Javascript</title>
-            <link>https://preslav.me/tags/javascript/</link>
-            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/javascript/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Jetbrains</title>
-            <link>https://preslav.me/tags/jetbrains/</link>
-            <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/jetbrains/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Journal</title>
-            <link>https://preslav.me/tags/journal/</link>
-            <pubDate>Sun, 29 Mar 2020 21:36:52 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/journal/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Jupyter Notebook</title>
-            <link>https://preslav.me/tags/jupyter-notebook/</link>
-            <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/jupyter-notebook/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Kickstarter</title>
-            <link>https://preslav.me/tags/kickstarter/</link>
-            <pubDate>Sat, 28 Sep 2019 11:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/kickstarter/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Kotlin</title>
-            <link>https://preslav.me/tags/kotlin/</link>
-            <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/kotlin/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Macbook</title>
-            <link>https://preslav.me/tags/macbook/</link>
-            <pubDate>Fri, 24 May 2019 04:33:12 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/macbook/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Macos</title>
-            <link>https://preslav.me/tags/macos/</link>
-            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/macos/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Mastodon</title>
-            <link>https://preslav.me/tags/mastodon/</link>
-            <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/mastodon/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Media</title>
-            <link>https://preslav.me/tags/media/</link>
-            <pubDate>Tue, 30 Oct 2018 10:56:54 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/media/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Medium</title>
-            <link>https://preslav.me/tags/medium/</link>
-            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/medium/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Meetup</title>
-            <link>https://preslav.me/tags/meetup/</link>
-            <pubDate>Sun, 03 Feb 2019 14:29:06 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/meetup/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Micropost</title>
-            <link>https://preslav.me/tags/micropost/</link>
-            <pubDate>Mon, 21 Oct 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/micropost/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Mixtape</title>
-            <link>https://preslav.me/tags/mixtape/</link>
-            <pubDate>Sat, 03 Aug 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/mixtape/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Mongodb</title>
-            <link>https://preslav.me/tags/mongodb/</link>
-            <pubDate>Fri, 28 Dec 2018 16:45:41 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/mongodb/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Munich</title>
-            <link>https://preslav.me/tags/munich/</link>
-            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/munich/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Neural Networks</title>
-            <link>https://preslav.me/tags/neural-networks/</link>
-            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/neural-networks/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Nintendo</title>
-            <link>https://preslav.me/tags/nintendo/</link>
-            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/nintendo/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Optimization</title>
-            <link>https://preslav.me/tags/optimization/</link>
-            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/optimization/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Pandas</title>
-            <link>https://preslav.me/tags/pandas/</link>
-            <pubDate>Fri, 16 Feb 2018 06:58:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/pandas/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Pandemia</title>
-            <link>https://preslav.me/tags/pandemia/</link>
-            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/pandemia/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Phoenix</title>
-            <link>https://preslav.me/tags/phoenix/</link>
-            <pubDate>Mon, 10 Feb 2020 19:07:54 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/phoenix/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Photo Stories</title>
-            <link>https://preslav.me/tags/photo-stories/</link>
-            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/photo-stories/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Pixel 3</title>
-            <link>https://preslav.me/tags/pixel-3/</link>
-            <pubDate>Sun, 12 May 2019 08:07:59 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/pixel-3/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Playstation</title>
-            <link>https://preslav.me/tags/playstation/</link>
-            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/playstation/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Podcast</title>
-            <link>https://preslav.me/tags/podcast/</link>
-            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/podcast/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Podcasting</title>
-            <link>https://preslav.me/tags/podcasting/</link>
-            <pubDate>Thu, 10 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/podcasting/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Politics</title>
-            <link>https://preslav.me/tags/politics/</link>
-            <pubDate>Tue, 25 Jun 2019 16:11:13 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/politics/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Presidency</title>
-            <link>https://preslav.me/tags/presidency/</link>
-            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/presidency/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Productivity</title>
-            <link>https://preslav.me/tags/productivity/</link>
-            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/productivity/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Programming</title>
-            <link>https://preslav.me/tags/programming/</link>
-            <pubDate>Sat, 07 Mar 2020 17:04:29 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/programming/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Project</title>
-            <link>https://preslav.me/tags/project/</link>
-            <pubDate>Tue, 21 Apr 2020 06:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/project/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Psychology</title>
-            <link>https://preslav.me/tags/psychology/</link>
-            <pubDate>Tue, 28 Feb 2017 11:01:46 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/psychology/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Python</title>
-            <link>https://preslav.me/tags/python/</link>
-            <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/python/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Qa</title>
-            <link>https://preslav.me/tags/qa/</link>
-            <pubDate>Thu, 31 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/qa/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Quote</title>
-            <link>https://preslav.me/tags/quote/</link>
-            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/quote/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Quotes</title>
-            <link>https://preslav.me/tags/quotes/</link>
-            <pubDate>Fri, 03 May 2019 08:09:56 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/quotes/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>React Native</title>
-            <link>https://preslav.me/tags/react-native/</link>
-            <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/react-native/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Reading</title>
-            <link>https://preslav.me/tags/reading/</link>
-            <pubDate>Fri, 03 May 2019 08:09:56 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/reading/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Record</title>
-            <link>https://preslav.me/tags/record/</link>
-            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/record/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Refund</title>
-            <link>https://preslav.me/tags/refund/</link>
-            <pubDate>Sat, 21 Dec 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/refund/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Retrospection</title>
-            <link>https://preslav.me/tags/retrospection/</link>
-            <pubDate>Mon, 31 Dec 2018 16:51:09 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/retrospection/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Ruby</title>
-            <link>https://preslav.me/tags/ruby/</link>
-            <pubDate>Tue, 11 Feb 2020 07:49:10 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/ruby/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Running</title>
-            <link>https://preslav.me/tags/running/</link>
-            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/running/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Sale</title>
-            <link>https://preslav.me/tags/sale/</link>
-            <pubDate>Sat, 08 Jun 2019 05:24:36 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/sale/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Scala</title>
-            <link>https://preslav.me/tags/scala/</link>
-            <pubDate>Fri, 28 Dec 2018 07:10:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/scala/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Sci Fi</title>
-            <link>https://preslav.me/tags/sci-fi/</link>
-            <pubDate>Sun, 23 Jun 2019 15:45:35 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/sci-fi/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Science</title>
-            <link>https://preslav.me/tags/science/</link>
-            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/science/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Silicon Valley</title>
-            <link>https://preslav.me/tags/silicon-valley/</link>
-            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/silicon-valley/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Social Media</title>
-            <link>https://preslav.me/tags/social-media/</link>
-            <pubDate>Sun, 19 Aug 2018 17:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/social-media/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Society</title>
-            <link>https://preslav.me/tags/society/</link>
-            <pubDate>Sat, 14 Mar 2020 17:36:59 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/society/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Sofia</title>
-            <link>https://preslav.me/tags/sofia/</link>
-            <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/sofia/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Sony</title>
-            <link>https://preslav.me/tags/sony/</link>
-            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/sony/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Spring Boot</title>
-            <link>https://preslav.me/tags/spring-boot/</link>
-            <pubDate>Tue, 07 May 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/spring-boot/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Ssh</title>
-            <link>https://preslav.me/tags/ssh/</link>
-            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/ssh/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Startup</title>
-            <link>https://preslav.me/tags/startup/</link>
-            <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/startup/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Startups</title>
-            <link>https://preslav.me/tags/startups/</link>
-            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/startups/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Statistics</title>
-            <link>https://preslav.me/tags/statistics/</link>
-            <pubDate>Fri, 20 Mar 2020 11:28:11 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/statistics/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Struct</title>
-            <link>https://preslav.me/tags/struct/</link>
-            <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/struct/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Summer</title>
-            <link>https://preslav.me/tags/summer/</link>
-            <pubDate>Thu, 04 Jul 2019 18:30:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/summer/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Technology</title>
-            <link>https://preslav.me/tags/technology/</link>
-            <pubDate>Sat, 06 Jan 2018 13:34:36 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/technology/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Til</title>
-            <link>https://preslav.me/tags/til/</link>
-            <pubDate>Tue, 21 May 2019 05:44:38 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/til/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Tips</title>
-            <link>https://preslav.me/tags/tips/</link>
-            <pubDate>Sun, 01 Mar 2020 17:50:14 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/tips/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Tools</title>
-            <link>https://preslav.me/tags/tools/</link>
-            <pubDate>Sun, 10 Nov 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/tools/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Trams</title>
-            <link>https://preslav.me/tags/trams/</link>
-            <pubDate>Sun, 23 Jun 2019 21:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/trams/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Trump</title>
-            <link>https://preslav.me/tags/trump/</link>
-            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/trump/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Twil</title>
-            <link>https://preslav.me/tags/twil/</link>
-            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/twil/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Twitter</title>
-            <link>https://preslav.me/tags/twitter/</link>
-            <pubDate>Wed, 06 Nov 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/twitter/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Uber</title>
-            <link>https://preslav.me/tags/uber/</link>
-            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/uber/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Ultra Humans</title>
-            <link>https://preslav.me/tags/ultra-humans/</link>
-            <pubDate>Sat, 12 Oct 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/ultra-humans/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Us</title>
-            <link>https://preslav.me/tags/us/</link>
-            <pubDate>Mon, 30 Mar 2020 10:38:05 +0200</pubDate>
-            
-            <guid>https://preslav.me/tags/us/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Vacation</title>
-            <link>https://preslav.me/tags/vacation/</link>
-            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/vacation/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Video</title>
-            <link>https://preslav.me/tags/video/</link>
-            <pubDate>Sat, 11 May 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/video/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Vienna</title>
-            <link>https://preslav.me/tags/vienna/</link>
-            <pubDate>Sun, 05 Jan 2020 23:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/vienna/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Vue.js</title>
-            <link>https://preslav.me/tags/vue.js/</link>
-            <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/vue.js/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Watchos</title>
-            <link>https://preslav.me/tags/watchos/</link>
-            <pubDate>Thu, 10 Oct 2019 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/watchos/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Web</title>
-            <link>https://preslav.me/tags/web/</link>
-            <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/web/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Wedding</title>
-            <link>https://preslav.me/tags/wedding/</link>
-            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/wedding/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Weekend</title>
-            <link>https://preslav.me/tags/weekend/</link>
-            <pubDate>Sat, 13 Jul 2019 16:24:31 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/weekend/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Wework</title>
-            <link>https://preslav.me/tags/wework/</link>
-            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/wework/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Writing</title>
-            <link>https://preslav.me/tags/writing/</link>
-            <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/writing/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Wwdc</title>
-            <link>https://preslav.me/tags/wwdc/</link>
-            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/wwdc/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Xcode</title>
-            <link>https://preslav.me/tags/xcode/</link>
-            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/xcode/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Youtube</title>
-            <link>https://preslav.me/tags/youtube/</link>
-            <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/youtube/</guid>
+            <title>WebRTC</title>
+            <link>https://preslav.me/tags/webrtc/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/webrtc/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>

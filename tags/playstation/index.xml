@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Playstation on Random Bits of Wisdom</title>
+        <title>PlayStation on Random Bits of Wisdom</title>
         <link>https://preslav.me/tags/playstation/</link>
-        <description>Recent content in Playstation on Random Bits of Wisdom</description>
+        <description>Recent content in PlayStation on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
@@ -15,8 +14,7 @@
             <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/2020/04/18/this-week-i-learned/</guid>
-            <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.
-Apps and Tools  @media (max-width: 640px) { .embed-image { min-width: 100%; } }   goulinkh/podcast-cli  CLI podcast player. Contribute to goulinkh/podcast-cli development by creating an account on GitHub. https://github.com |  Created with NoEmbed    @media (max-width: 640px) { .embed-image { min-width: 100%; } }   ‎Data Jar  ‎Data Jar is a data store designed to be used with Shortcuts.</description>
+            <description>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.</description>
             <content type="html"><![CDATA[
 
 <p>This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week.</p>

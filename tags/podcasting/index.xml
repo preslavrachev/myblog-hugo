@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Podcasting on Random Bits of Wisdom</title>
@@ -185,17 +184,15 @@ Some of the top podcasts on YouTube are pulling in millions of views every few d
 <p>In the few months running to the initial release, I learned a lot and was confronted by a couple of challenges that other fellow programmers have also been raving about:</p>
 
 <ul>
-<li>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</li>
-</ul>
+<li><p>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</p>
 
 <pre><code class="language-go">result, err := doSomething()
 if err != nil {
-    // do something with the error, and potentially return or throw a Panic
+// do something with the error, and potentially return or throw a Panic
 }
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</li>
+<li><p>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</p></li>
 </ul>
 
 <h1 id="build-deploy-take-a-step-back">Build, deploy, take a step back</h1>
