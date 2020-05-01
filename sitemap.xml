@@ -28,12 +28,32 @@
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/2-cents/</loc>
+    <lastmod>2020-04-20T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/categories/</loc>
     <lastmod>2020-04-20T22:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/dev-culture/</loc>
+    <lastmod>2020-04-20T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/podcast/</loc>
+    <lastmod>2020-04-20T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/2020/04/20/quote-programmers-stop-calling-yourselves-engineers/</loc>
+    <lastmod>2020-04-20T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/quote/</loc>
     <lastmod>2020-04-20T22:00:00+00:00</lastmod>
   </url>
   
@@ -83,17 +103,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/book/</loc>
-    <lastmod>2020-04-15T16:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/categories/book/</loc>
     <lastmod>2020-04-15T16:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/dev-culture/</loc>
+    <loc>https://preslav.me/tags/book/</loc>
     <lastmod>2020-04-15T16:00:00+00:00</lastmod>
   </url>
   
@@ -109,11 +124,6 @@
   
   <url>
     <loc>https://preslav.me/categories/quote/</loc>
-    <lastmod>2020-04-15T16:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/quote/</loc>
     <lastmod>2020-04-15T16:00:00+00:00</lastmod>
   </url>
   
@@ -164,11 +174,6 @@
   
   <url>
     <loc>https://preslav.me/categories/2-cents/</loc>
-    <lastmod>2020-03-29T21:36:52+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/2-cents/</loc>
     <lastmod>2020-03-29T21:36:52+02:00</lastmod>
   </url>
   
@@ -438,12 +443,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/qa/</loc>
+    <loc>https://preslav.me/tags/qa/</loc>
     <lastmod>2019-10-31T22:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/qa/</loc>
+    <loc>https://preslav.me/categories/qa/</loc>
     <lastmod>2019-10-31T22:00:00+00:00</lastmod>
   </url>
   
@@ -503,12 +508,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/running/</loc>
+    <loc>https://preslav.me/categories/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/running/</loc>
+    <loc>https://preslav.me/tags/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
   
@@ -603,12 +608,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/startups/</loc>
+    <loc>https://preslav.me/categories/startups/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/startups/</loc>
+    <loc>https://preslav.me/tags/startups/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
   </url>
   
@@ -843,12 +848,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/wedding/</loc>
+    <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/vacation/</loc>
+    <loc>https://preslav.me/tags/wedding/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
@@ -1128,12 +1133,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/augsburg/</loc>
+    <loc>https://preslav.me/tags/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/augsburg/</loc>
+    <loc>https://preslav.me/categories/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
   </url>
   
@@ -1463,12 +1468,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/gulp/</loc>
+    <loc>https://preslav.me/categories/gulp/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/gulp/</loc>
+    <loc>https://preslav.me/tags/gulp/</loc>
     <lastmod>2015-01-06T06:29:00+00:00</lastmod>
   </url>
   
