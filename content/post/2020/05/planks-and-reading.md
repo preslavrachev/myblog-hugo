@@ -1,7 +1,8 @@
 +++ 
 author = "Preslav Rachev"  
 date = 2020-05-02T22:00:00Z 
-description = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week." featured_image = "/images/2020/05/photo-of-woman-doing-yoga-2294354.jpg"
+description = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week." 
+featured_image = "/images/2020/05/photo-of-woman-doing-yoga-2294354.jpg"
 summary = "Strengthen your body while brodening your mind"
 tags = ["Health & Fitness"]
 title = "Planks and Reading"
