@@ -13,8 +13,6 @@ You all have seen it at least once. The stupid tele commercial promising a rippe
 
 Planks are a simple, but an incredibly effective exercise. Get on all fours, as if for doing a push up, but rather, use your forearms, instead of your hands. Got it? Now, don't move and simply lock your body in this position, for as long as you can.
 
-{{<youtube "z6KKo85V9Ew">}}
-
 That's really it! If you were expecting a page-long explanation of how to do a plank, I am sorry to disappoint you. Keeping your posture straight (like the lady on the photo above) is the most important bit. This part cannot be explained in any other way than trying it right away. You may pause your reading, try a simple plank, but stop at the slightest sign of pressure. Even if that's just a few seconds, don't worry too much about it. You'Il be able to ramp it up, as days move on. You don't want to get injured right at the start.
 
 I started doing planks back in December last year. It was more or less out of necessity. Due to an issue with my wrist, I had to cut my push-up routine. I had heard about planks before, but never taken them seriously. Staying locked in one place for minutes without moving seemed pointless. Yet, I had no choice. I needed some sort of an alternative to push-ups, and being able to use my forearms instead was crucial. I am so grateful I did. I learned two very important things:
