@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Designing Well-Structured REST APIs with Flask-RestPlus: Part 1</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">December 2, 2018</time>
       </section>
     </header>
@@ -61,79 +61,91 @@
 <h3 id="demo-app">Demo App</h3>
 
 <p>Let&rsquo;s start with a simple Flask-based API for a conference management application:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
 
-app <span style="color:#f92672">=</span> Flask(__name__)
+<pre><code class="language-python">from flask import Flask
 
-
-<span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#34;/conferences/&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_all__conferences</span>():
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    returns a list of conferences
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+app = Flask(__name__)
 
 
-<span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#34;/conferences/&#34;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_conference</span>():
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    Adds a new conference to the list
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+@app.route(&quot;/conferences/&quot;)
+def get_all__conferences():
+    &quot;&quot;&quot;
+    returns a list of conferences
+    &quot;&quot;&quot;
 
 
-<span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#34;/conferences/&lt;int:id&gt;&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_conference</span>(id):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    Displays a conference&#39;s details
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+@app.route(&quot;/conferences/&quot;, methods=['POST'])
+def add_conference():
+    &quot;&quot;&quot;
+    Adds a new conference to the list
+    &quot;&quot;&quot;
 
-<span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#34;/conferences/&lt;int:id&gt;&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">edit_conference</span>(id):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    Edits a selected conference
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span></code></pre></div>
+
+@app.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def get_conference(id):
+    &quot;&quot;&quot;
+    Displays a conference's details
+    &quot;&quot;&quot;
+
+@app.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def edit_conference(id):
+    &quot;&quot;&quot;
+    Edits a selected conference
+    &quot;&quot;&quot;
+</code></pre>
+
 <p>Installing Flask-RestPlus is easy</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install Flask-RestPlus</code></pre></div>
+
+<pre><code class="language-bash">pip install Flask-RestPlus
+</code></pre>
+
 <p>Let&rsquo;s simply introduce an Api object for now, try to wrap our app instance with it, replace the routing decorators, and see what happens:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
-<span style="color:#f92672">from</span> flask_restplus <span style="color:#f92672">import</span> Api
 
-app <span style="color:#f92672">=</span> Flask(__name__)
-api <span style="color:#f92672">=</span> Api(app<span style="color:#f92672">=</span>app)
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api
 
-
-<span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_all__conferences</span>():
-    <span style="color:#66d9ef">pass</span>
+app = Flask(__name__)
+api = Api(app=app)
 
 
-<span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&#34;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_conference</span>():
-    <span style="color:#66d9ef">pass</span>
+@api.route(&quot;/conferences/&quot;)
+def get_all__conferences():
+    pass
 
 
-<span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&lt;int:id&gt;&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_conference</span>(id):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    Displays a conference&#39;s details
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+@api.route(&quot;/conferences/&quot;, methods=['POST'])
+def add_conference():
+    pass
 
-<span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&lt;int:id&gt;&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">edit_conference</span>(id):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    Edits a selected conference
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span></code></pre></div>
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def get_conference(id):
+    &quot;&quot;&quot;
+    Displays a conference's details
+    &quot;&quot;&quot;
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+def edit_conference(id):
+    &quot;&quot;&quot;
+    Edits a selected conference
+    &quot;&quot;&quot;
+</code></pre>
+
 <p>As soon as the app starts, we will get the following error:</p>
 
 <pre><code>AttributeError: 'function' object has no attribute 'as_view'
 </code></pre>
 
 <p>This is because if you want to use RestPlus for some of your Flask functions, you have to enclose them in a scoping class. Not only that, but inside the enclosing class, you should name your methods, corresponding to the HTTP methods that REST is based on: GET, POST, PUT, and DELETE:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&#34;</span>)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConferenceList</span>(Resource):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        returns a list of conferences
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span></code></pre></div>
+
+<pre><code class="language-python">@api.route(&quot;/conferences/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
+</code></pre>
+
 <p>Before anyone starts objecting, let me explain why this is helpful. Flask-RestPlus uses the Flask concept of &ldquo;Pluggable Views&rdquo; to introduce <code>Resource</code> (as in, REST resource).</p>
 
 <p>Let&rsquo;s be honest. While most Flask applications start simple, many of them outgrow the initial idea, and cramming several handler functions in the main module scope quickly becomes a mess. This is why <a href="http://exploreflask.com/en/latest/blueprints.html">Flask Blueprints</a> exist to help split common functionality into multiple modules.</p>
@@ -141,37 +153,40 @@ api <span style="color:#f92672">=</span> Api(app<span style="color:#f92672">=</s
 <p>Flask-RestPlus makes great use of Blueprints too, as I will demonstrate later, but Resources go one level of granularity further. A Resource class can have multiple methods, but each one should be named after one of the accepted HTTP verbs. What if you need more than one <code>GET</code> or <code>POST</code> method for your API? Well, create multiple Resource classes and put each method in the corresponding resource class. It might look a little overwhelming at first, coming from the cut-the-boilerplate nature of Flask, but with a bit of playing around, it won&rsquo;t be a brainer at all, and it will pay off tremendously in the long run.</p>
 
 <p>Let&rsquo;s see how our tiny app will look after the transformations:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
-<span style="color:#f92672">from</span> flask_restplus <span style="color:#f92672">import</span> Api, Resource
 
-app <span style="color:#f92672">=</span> Flask(__name__)
-api <span style="color:#f92672">=</span> Api(app<span style="color:#f92672">=</span>app)
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api, Resource
 
-
-<span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&#34;</span>)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConferenceList</span>(Resource):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        returns a list of conferences
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">post</span>(self):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Adds a new conference to the list
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+app = Flask(__name__)
+api = Api(app=app)
 
 
-<span style="color:#a6e22e">@api.route</span>(<span style="color:#e6db74">&#34;/conferences/&lt;int:id&gt;&#34;</span>)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Conference</span>(Resource):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, id):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Displays a conference&#39;s details
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+@api.route(&quot;/conferences/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put</span>(self, id):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Edits a selected conference
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span> </code></pre></div>
+    def post(self):
+        &quot;&quot;&quot;
+        Adds a new conference to the list
+        &quot;&quot;&quot;
+
+
+@api.route(&quot;/conferences/&lt;int:id&gt;&quot;)
+class Conference(Resource):
+    def get(self, id):
+        &quot;&quot;&quot;
+        Displays a conference's details
+        &quot;&quot;&quot;
+
+    def put(self, id):
+        &quot;&quot;&quot;
+        Edits a selected conference
+        &quot;&quot;&quot; 
+</code></pre>
+
 <p>With this tiny bit of overhead (if you even consider this any overhead at all), you get so much in return. Start the app and point to <a href="http://localhost:5000">http://localhost:5000</a>. You will see that the index page has turned into a Swagger UI, which shows the already defined API endpoints, neatly organised into categories (namespaces):</p>
 
 <p><div style="position: relative; width:100%; height: 400px;"><amp-img layout="fill"  src="/images/2018/december/image.png" alt="" ></amp-img></div></p>
@@ -181,40 +196,46 @@ api <span style="color:#f92672">=</span> Api(app<span style="color:#f92672">=</s
 <h3 id="namespaces">Namespaces</h3>
 
 <p>Namespaces are optional, and add a bit of additional organisational touch to the API, mainly, from a documentation point of view. A namespace allows you to group related Resources under a common root, and is simple to create:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ns_conf <span style="color:#f92672">=</span> api<span style="color:#f92672">.</span>namespace(<span style="color:#e6db74">&#39;conferences&#39;</span>, description<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Conference operations&#39;</span>)</code></pre></div>
+
+<pre><code class="language-python">ns_conf = api.namespace('conferences', description='Conference operations')
+</code></pre>
+
 <p>To bring certain Resources under a given namespace, all you need to do, is to replace <code>@api</code> with <code>@ns_conf</code>. Notice also that the name of the namespace replaces the name of the resource, so endpoints can simply to refer to <code>/</code>, instead of copying the name of the resource time and again:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
-<span style="color:#f92672">from</span> flask_restplus <span style="color:#f92672">import</span> Api, Resource
 
-app <span style="color:#f92672">=</span> Flask(__name__)
-api <span style="color:#f92672">=</span> Api(app<span style="color:#f92672">=</span>app)
-ns_conf <span style="color:#f92672">=</span> api<span style="color:#f92672">.</span>namespace(<span style="color:#e6db74">&#39;conferences&#39;</span>, description<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Conference operations&#39;</span>)
+<pre><code class="language-python">from flask import Flask
+from flask_restplus import Api, Resource
 
-
-<span style="color:#a6e22e">@ns_conf.route</span>(<span style="color:#e6db74">&#34;/&#34;</span>)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConferenceList</span>(Resource):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        returns a list of conferences
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">post</span>(self):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Adds a new conference to the list
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+app = Flask(__name__)
+api = Api(app=app)
+ns_conf = api.namespace('conferences', description='Conference operations')
 
 
-<span style="color:#a6e22e">@ns_conf.route</span>(<span style="color:#e6db74">&#34;/&lt;int:id&gt;&#34;</span>)
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Conference</span>(Resource):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, id):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Displays a conference&#39;s details
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+@ns_conf.route(&quot;/&quot;)
+class ConferenceList(Resource):
+    def get(self):
+        &quot;&quot;&quot;
+        returns a list of conferences
+        &quot;&quot;&quot;
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put</span>(self, id):
-        <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">        Edits a selected conference
-</span><span style="color:#e6db74">        &#34;&#34;&#34;</span></code></pre></div>
+    def post(self):
+        &quot;&quot;&quot;
+        Adds a new conference to the list
+        &quot;&quot;&quot;
+
+
+@ns_conf.route(&quot;/&lt;int:id&gt;&quot;)
+class Conference(Resource):
+    def get(self, id):
+        &quot;&quot;&quot;
+        Displays a conference's details
+        &quot;&quot;&quot;
+
+    def put(self, id):
+        &quot;&quot;&quot;
+        Edits a selected conference
+        &quot;&quot;&quot;
+</code></pre>
+
 <p>One will notice afterwards that the Swagger UI display has changed too, to reflect the namespacing:</p>
 
 <p><div style="position: relative; width:100%; height: 400px;"><amp-img layout="fill"  src="/images/2018/december/image-1.png" alt="" ></amp-img></div></p>
@@ -224,21 +245,30 @@ ns_conf <span style="color:#f92672">=</span> api<span style="color:#f92672">.</s
 <p><a href="http://flask.pocoo.org/docs/blueprints/#blueprints">Flask Blueprints</a> are a popular way of designing modular applications. The same applies to Flask-RestPlus. The production version of our application will certainly outgrow the four endpoints we started with. There might be other resources, or at the very least, you might want to move to move your API away from the root of your app. Both cases are a perfect candidate for a Blueprint.  Let&rsquo;s move all of our API endpoints under <code>/api/v1</code>, without touching the routes of even one of them. This example is coming straight from the Flask-RestPlus <a href="https://flask-restplus.readthedocs.io/en/stable/scaling.html#use-with-blueprints">documentation</a>, and is illustrative enough to help close this chapter of the journey:</p>
 
 <p>Create a Blueprint the usual way, and instead of wrapping our app instance with the RestPlus API,  we will wrap the Blueprint instead. This way, independent of our app, we are free to move our API part into a different module: (e.g. <code>blueprint/api.py</code>).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Blueprint
-<span style="color:#f92672">from</span> flask_restplus <span style="color:#f92672">import</span> Api
 
-blueprint <span style="color:#f92672">=</span> Blueprint(<span style="color:#e6db74">&#39;api&#39;</span>, __name__)
-api <span style="color:#f92672">=</span> Api(blueprint)
+<pre><code class="language-python">from flask import Blueprint
+from flask_restplus import Api
 
-<span style="color:#75715e"># Bring in the rest of our API code here</span></code></pre></div>
+blueprint = Blueprint('api', __name__)
+api = Api(blueprint)
+
+# Bring in the rest of our API code here
+</code></pre>
+
 <p>This leaves only a tiny bit of bridging code to introduce the Blueprint to the main app, and set the URL prefix. The next time you start your app, the API endpoints will be accessible only under the specified URL prefix (<code>/api/v1</code>):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask
-<span style="color:#f92672">from</span> apis <span style="color:#f92672">import</span> blueprint <span style="color:#66d9ef">as</span> api
 
-app <span style="color:#f92672">=</span> Flask(__name__)
-app<span style="color:#f92672">.</span>register_blueprint(api, url_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/api/1&#39;</span>)</code></pre></div>
+<pre><code class="language-python">from flask import Flask
+from apis import blueprint as api
+
+app = Flask(__name__)
+app.register_blueprint(api, url_prefix='/api/1')
+</code></pre>
+
 <p>Last but not least, it is always a good idea to move the Swagger UI documentation away from the root. As in everything else in RestPlus, this part is extremely ease, too. You can override the default location by passing an additional parameter to the initialiser:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">api <span style="color:#f92672">=</span> Api(app<span style="color:#f92672">=</span>app, doc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/docs&#39;</span>)</code></pre></div>
+
+<pre><code class="language-python">api = Api(app=app, doc='/docs')
+</code></pre>
+
 <hr />
 
 <p>This sums up the first part of my series. I hope that it was informative, and will help you structure your Flask-based REST APIs better in the future. Till next time!</p>
@@ -256,7 +286,7 @@ app<span style="color:#f92672">.</span>register_blueprint(api, url_prefix<span s
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2018</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2018</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

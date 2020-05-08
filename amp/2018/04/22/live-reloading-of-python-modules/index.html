@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Live-reloading of Python Modules in the Python REPL / IPython / Jupyter Console</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">April 22, 2018</time>
       </section>
     </header>
@@ -54,19 +54,28 @@
 <p>Python 3 supports inline reloading of modules using a function called, well clever enough, <code>reload</code>. It used to be a built-in function in Python 2, but this is no longer the case. If you are using Python 3.2+, you should import it extra:</p>
 
 <p>For Python 3.2 and 3.3:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> importlib
-importlib<span style="color:#f92672">.</span>reload(some_module)</code></pre></div>
+
+<pre><code class="language-python">import importlib
+importlib.reload(some_module)
+</code></pre>
+
 <p>For Python 3.4+:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> imp
-imp<span style="color:#f92672">.</span>reload(some_module)</code></pre></div>
+
+<pre><code class="language-python">import imp
+imp.reload(some_module)
+</code></pre>
+
 <h3 id="ipython-jupyter-magic">IPython/Jupyter Magic</h3>
 
 <p>Jupyter comes with a set of extensions only applicable to the Jupyter/iPython sessions, called <a href="https://ipython.org/ipython-doc/3/interactive/magics.html">magics</a>. One of these “magics” is the ability to load custom extensions, <a href="http://ipython.readthedocs.io/en/stable/config/extensions/index.html">one of which</a> allows auto-reloading of modules. To enable this, you should add the following two commands, before any imports:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%</span>load_ext autoreload
-<span style="color:#f92672">%</span>autoreload <span style="color:#ae81ff">2</span>
-<span style="color:#75715e"># you can check out the the documentation for the rest of the autoreaload modes</span>
-<span style="color:#75715e"># by apending a question mark to %autoreload, like this:</span>
-<span style="color:#75715e"># %autoreload?</span></code></pre></div>
+
+<pre><code class="language-python">%load_ext autoreload
+%autoreload 2
+# you can check out the the documentation for the rest of the autoreaload modes
+# by apending a question mark to %autoreload, like this:
+# %autoreload?
+</code></pre>
+
 <p>This way, as soon as you hit <code>Save</code> in your code editor, you should be able to re-run a Jupyter cell or an iPython line again, and if it is calling your  module, it should automatically call the latest version.</p>
 
 <h2 id="links">Links</h2>
@@ -82,7 +91,7 @@ imp<span style="color:#f92672">.</span>reload(some_module)</code></pre></div>
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2018</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2018</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

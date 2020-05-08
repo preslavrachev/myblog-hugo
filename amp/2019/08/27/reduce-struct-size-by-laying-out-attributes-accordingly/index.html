@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Reduce Struct Size by Laying out Attributes Accordingly</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">August 27, 2019</time>
       </section>
     </header>
@@ -44,19 +44,25 @@
 <h5 id="many-thanks-to-themaour-https-twitter-com-themaour-status-1165555578019692544-for-sharing-this-tip-on-twitter">Many thanks to <a href="https://twitter.com/themaour/status/1165555578019692544">@themaour</a> for sharing this tip on Twitter</h5>
 
 <p>TIL that in Go, struct size depends on how underlying types were defined.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">struct</span> { 
-	<span style="color:#a6e22e">a</span> <span style="color:#66d9ef">bool</span> 
-    <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int32</span> 
-    <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">string</span> 
-    <span style="color:#a6e22e">d</span> <span style="color:#66d9ef">string</span> 
-}</code></pre></div>
+
+<pre><code class="language-go">struct {
+	a bool
+    b int32
+    c string
+    d string
+}
+</code></pre>
+
 <p>The size of the struct above is is different from the one down below</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">struct</span> {
-	<span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int32</span>
-    <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">string</span>
-    <span style="color:#a6e22e">d</span> <span style="color:#66d9ef">string</span>
-    <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">bool</span> 
-}</code></pre></div>
+
+<pre><code class="language-go">struct {
+	b int32
+    c string
+    d string
+    a bool
+}
+</code></pre>
+
 <p>Why is that? Well, think of memory as consisting of segments of certain size, where, if the amount of data you fill the segment with is bigger than the current remainder of the segment, the data will get written onto the next segment. The remaining space (a.k.a, <em>padding</em>) remains unused, and every instance of your struct might have some portion of unused padding when initialised.</p>
 
 <p>There is a <a href="http://golang-sizeof.tips">great online resource</a> where you can see this by providing a sample struct definition. Let&rsquo;s see what it shows for struct #1:</p>
@@ -71,80 +77,55 @@
 
 <h1 id="resources">Resources</h1>
 
-<p>
 
 
 
 
 
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="http://golang-sizeof.tips">
-      <h1 class="f6 ttu tracked">Golang sizeof tips</h1>
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="http://www.catb.org/esr/structure-packing/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Lost Art of Structure Packing</div>
     </a>
-  </div>
-
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://source.unsplash.com/200x200/?nature,water'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>Ask gopher about struct size!</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="http://golang-sizeof.tips"
-          >http://golang-sizeof.tips</a
-        ></small
-      >
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="http://www.catb.org/esr/structure-packing/">
-      <h1 class="f6 ttu tracked">The Lost Art of Structure Packing</h1>
-    </a>
-  </div>
-
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://source.unsplash.com/200x200/?nature,water'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>This page is about a technique for reducing the memory footprint of
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      This page is about a technique for reducing the memory footprint of
 programs in compiled languages with C-like structures - manually
 repacking these declarations for reduced size. To read it, you will
-require basic knowledge of the C programming language.</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="http://www.catb.org/esr/structure-packing/"
-          >http://www.catb.org</a
-        ></small
-      >
+require basic knowledge of the C programming language.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="http://www.catb.org/esr/structure-packing/">http://www.catb.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
-
-</p>
+</div>
 
       </div>
     </section>
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2019</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2019</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

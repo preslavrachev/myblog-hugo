@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Use Dotenv Files When Developing Your Python Apps</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">January 9, 2019</time>
       </section>
     </header>
@@ -46,16 +46,22 @@
 <p>I used to avoid using environment variables, because they made it hard to set up a local environment for testing. I’d either pass all the assignments at the start, or use a cumbersome startup script to export them to the current shell.</p>
 
 <p>Luckily, it is easy to improve the quality of your code, and ease testing in different environments at the same time. It has become somewhat of a standard practice to use <code>.env</code> (a.k.a dotenv) files for configuring sensitive data while testing across environments. A <em>dotenv</em> file contains nothing more than text, where  it has one environment variable assignment per line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ABC_KEY<span style="color:#f92672">=</span>1234xyz
-DEF_KEY<span style="color:#f92672">=</span><span style="color:#ae81ff">2349875</span>
-DEBUG<span style="color:#f92672">=</span>True</code></pre></div>
+
+<pre><code class="language-bash">ABC_KEY=1234xyz
+DEF_KEY=2349875
+DEBUG=True
+</code></pre>
+
 <p><strong>NOTE</strong>: <em>Dotenv</em> files <strong>must be ignored</strong> from version control for exactly the same reason mentioned at the beginning of this post: exposing sensitive information as part of the project is bad. These files are only used to quickly set up or change an environment when needed.</p>
 
 <h2 id="using-a-dotenv-file-in-our-app">Using a dotenv file in our app</h2>
 
 <p>How do we get our Python app to read a <code>.env</code> file? <a href="https://pypi.org/project/python-dotenv/">python-dotenv</a> is a great Python package that does exactly that. It will search for a <code>.env</code> as part of the project, and if it finds one, will expose the variables in it to the app. All you need to do, is <code>pip install python-dotenv</code> and add the following couple of lines at the start of your project:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> dotenv <span style="color:#f92672">import</span> load_dotenv
-load_dotenv()</code></pre></div>
+
+<pre><code class="language-python">from dotenv import load_dotenv
+load_dotenv()
+</code></pre>
+
 <p>The starting point may vary, depending on whether your project is a command line script, a Flask, or a Django project. For instance, in a Django project, the above two lines need to be added at the top of the <code>settings.py</code> file.</p>
 
 <p>Having set <code>python-loadenv</code> up, the rest is easy. Create a <code>.env</code> file at the root of your app with all the environment variables needed to configure it, and make sure that you invoke them properly from your code (e.g. use something like <code>os.getenv('MY_API_KEY')</code>). Don’t forget to exclude the <code>.env</code> file from being checked into your source code repository!</p>
@@ -72,7 +78,7 @@ load_dotenv()</code></pre></div>
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2019</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2019</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

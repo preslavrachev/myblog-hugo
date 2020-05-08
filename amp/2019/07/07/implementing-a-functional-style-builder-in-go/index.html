@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Implementing a Functional-Style Builder in Go</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">July 7, 2019</time>
       </section>
     </header>
@@ -46,69 +46,96 @@
 <p>In this post, I want to demonstrate the use of functional constructs for implementing the well-known <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a> pattern. Please, note that there are many ways to implement a Builder, and I don&rsquo;t claim that mine is certainly the best. Think of it as a neat and simple exercise that would teach you some introductory functional concepts in the scope of Go.</p>
 
 <p>To begin with, what is a <a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder</a>? Builders help separate the <em>construction</em> of an object from its <em>representation</em>. Often, when dealing with complex object configurations, we end up writing code like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a6e22e">instance</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">NewInstanceBuilder</span>().
-	<span style="color:#a6e22e">WithA</span>(<span style="color:#ae81ff">1</span>).
-	<span style="color:#a6e22e">WithB</span>(<span style="color:#ae81ff">2</span>).
-	<span style="color:#a6e22e">WithC</span>(<span style="color:#ae81ff">3</span>).
-	<span style="color:#a6e22e">Build</span>()</code></pre></div>
+
+<pre><code class="language-golang">instance := NewInstanceBuilder().
+	WithA(1).
+	WithB(2).
+	WithC(3).
+	Build()
+</code></pre>
+
 <p>using an intermediate Builder <code>struct</code>, or more directly:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a6e22e">instance</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">NewInstance</span>().
-	<span style="color:#a6e22e">WithA</span>(<span style="color:#ae81ff">1</span>).
-	<span style="color:#a6e22e">WithB</span>(<span style="color:#ae81ff">2</span>).
-	<span style="color:#a6e22e">WithC</span>(<span style="color:#ae81ff">3</span>)</code></pre></div>
+
+<pre><code class="language-golang">instance := NewInstance().
+	WithA(1).
+	WithB(2).
+	WithC(3)
+</code></pre>
+
 <p>which is not safe, because the final instance is accessible at any point in time, and can be modified by any other goroutine running in parallel.</p>
 
 <h1 id="a-functional-approach-to-building">A Functional Approach to Building</h1>
 
 <p>Functional programming guarantees the safety of providing the instance only at the final step. At the same time, it can help minimise boilerplate. Using the functional approach, no additional structs should be necessary. Let&rsquo;s see how we can achieve this. Start with our core <code>struct</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">MyStruct</span> <span style="color:#66d9ef">struct</span> {
-	<span style="color:#a6e22e">a</span> <span style="color:#66d9ef">int</span>
-	<span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>
-}</code></pre></div>
+
+<pre><code class="language-golang">type MyStruct struct {
+	a int
+	b int
+}
+</code></pre>
+
 <p>Nothing special there. Now, pay attention to the next line of code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Decorator</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">m</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span></code></pre></div>
+
+<pre><code class="language-golang">type Decorator func(m *MyStruct) *MyStruct
+</code></pre>
+
 <p>What do we have here? One of the revelations for every new Go programmer is that everything in Go can be a type, including functions. In our case, we specify a type called <code>Decorator</code>, to which we pass an instance of <code>MyStruct</code>, it performs some modifications on it, and returns the modified instance.</p>
 
 <p><small><strong>Side note:</strong> the use of a pointer makes the example simpler. It is also safe-enough, since the <code>MyStruct</code> instance will not be accessible until the final build step. Still, if you prefer <a href="https://en.wikipedia.org/wiki/Pure_function">pure functions</a>, the example should be equally easy to implement using value-copying.</small></p>
 
 <p>The really ingenious thing of thinking about a function as a type, is that we can reuse the type, and what&rsquo;s even more grounbreaking, add functionality to it. Check this out:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">f</span> <span style="color:#a6e22e">Decorator</span>) <span style="color:#a6e22e">WithA</span>(<span style="color:#a6e22e">a</span> <span style="color:#66d9ef">int</span>) <span style="color:#a6e22e">Decorator</span> {
-	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">m</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span> {
-		<span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">m</span>).<span style="color:#a6e22e">a</span> = <span style="color:#a6e22e">a</span>
-		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">m</span>
+
+<pre><code class="language-golang">func (f Decorator) WithA(a int) Decorator {
+	return func(m *MyStruct) *MyStruct {
+		f(m).a = a
+		return m
 	}
-}</code></pre></div>
+}
+</code></pre>
+
 <p>What did we just do? We added more functionality to <code>Decorator</code> - a higher-order function, which unwraps the decorator it has been attached to by calling it, modifies the value, and wraps it in a new <code>Decorator</code>.</p>
 
 <p>The same way, we can add a function that sets the <code>b</code> property of our <code>MyStruct</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">f</span> <span style="color:#a6e22e">Decorator</span>) <span style="color:#a6e22e">WithB</span>(<span style="color:#a6e22e">b</span> <span style="color:#66d9ef">int</span>) <span style="color:#a6e22e">Decorator</span> {
-	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">m</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span> {
-		<span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">m</span>).<span style="color:#a6e22e">b</span> = <span style="color:#a6e22e">b</span>
-		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">m</span>
+
+<pre><code class="language-golang">func (f Decorator) WithB(b int) Decorator {
+	return func(m *MyStruct) *MyStruct {
+		f(m).b = b
+		return m
 	}
-}</code></pre></div>
+}
+</code></pre>
+
 <p>By now you have probably started to guess that attaching decorators to each other will form a chain, which, when eventually executed, will unwrap itself in a reverse manner, each decorator applying its modifications to the passed <code>MyStruct</code> instance.</p>
 
 <p>We are almost done, but how do we actually get our <code>MyStruct</code> instance out? We need some sort of a Go-style <code>constructor</code> function, right? Indeed, we do, but our <code>constructor</code> is a little different when we apply the <code>Builder</code> pattern. Instead of returning the <code>MyStruct</code> instance, it would rather create a simple no-op <code>Decorator</code> function, so we can attach other decorators to it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewMyStruct</span>() <span style="color:#a6e22e">Decorator</span> {
-	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">m</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span> {
-		<span style="color:#75715e">// This function really does nothing 
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">m</span>
+
+<pre><code class="language-golang">func NewMyStruct() Decorator {
+	return func(m *MyStruct) *MyStruct {
+		// This function really does nothing 
+		return m
 	}
-}</code></pre></div>
+}
+</code></pre>
+
 <p>The last part of our construct is the actual <code>Build</code> method. Its role is to create an empty <code>MyStruct</code> instance and pass it onto the decorator that it gets attached to:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">f</span> <span style="color:#a6e22e">Decorator</span>) <span style="color:#a6e22e">Build</span>() <span style="color:#f92672">*</span><span style="color:#a6e22e">MyStruct</span> {
-	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">f</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">MyStruct</span>{})
-}</code></pre></div>
+
+<pre><code class="language-golang">func (f Decorator) Build() *MyStruct {
+	return f(&amp;MyStruct{})
+}
+</code></pre>
+
 <p>Please, recall that since the chain of <code>Decorator</code> functions gets unwrapped in a reverse fashion, even though <code>Build</code> is the last method to be called, it is actually the one that starts the unwrapping of the chain.</p>
 
 <p>Finally, let&rsquo;s see how we can use our <code>Builder</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a6e22e">instance</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">NewMyType</span>().
-		<span style="color:#a6e22e">WithA</span>(<span style="color:#ae81ff">42</span>).
-		<span style="color:#a6e22e">WithB</span>(<span style="color:#ae81ff">123</span>).
-		<span style="color:#a6e22e">Build</span>()
 
-<span style="color:#f92672">//</span> <span style="color:#a6e22e">at</span> <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">point</span>, <span style="color:#e6db74">`instance`</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">fully</span> <span style="color:#a6e22e">configured</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">ready</span> <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">use</span></code></pre></div>
+<pre><code class="language-golang">instance := NewMyType().
+		WithA(42).
+		WithB(123).
+		Build()
+
+// at this point, `instance` is fully configured and ready for use
+</code></pre>
+
 <p>You can see the entire example in action <a href="https://play.golang.org/p/kmDh_oD-8qu">here</a></p>
 
 <p>I hope you liked my little take on Go-style functional programming, applied to the Builder pattern. Feel free to share your feedback.</p>
@@ -120,7 +147,7 @@
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2019</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2019</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

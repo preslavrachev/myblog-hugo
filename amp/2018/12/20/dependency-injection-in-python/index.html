@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Dependency Injection in Python: The Java Guy&#39;s Perspective</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">December 20, 2018</time>
       </section>
     </header>
@@ -60,29 +60,32 @@
 <p>There is one golden prerequisite for Dependency Injection and that is, Separation of Concerns. Put simply, group logic in separable units, and let these units work together, without any of them knowing much about the implementation details of the other. OOP calls such units <em>classes</em>, and FP, <em>functions</em>. The point is, <em>units isolate common logic</em>. Let&rsquo;s add to this the requirement that no unit explicitly instantiates the units it works with (dependencies). Instead, dependencies are passed upon the unit (injected), usually, during its instantiation.</p>
 
 <p>So, DI is a fancy term for instantiating classes in a top-level module, and passing them as initializer arguments to one another:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Api</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_remote_data</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Api called&#39;</span>)
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
 
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BusinessLogic</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, api: Api):
-        self<span style="color:#f92672">.</span>api <span style="color:#f92672">=</span> api
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_stuff</span>(self):
-        api_result <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>api<span style="color:#f92672">.</span>fetch_remote_data()
-        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;the api returned a result: {api_result}&#39;</span>)
-        <span style="color:#75715e"># do something with the data and return a result</span>
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
 
-<span style="color:#75715e"># ---</span>
+# ---
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    api <span style="color:#f92672">=</span> Api()
-    logic <span style="color:#f92672">=</span> BusinessLogic(api<span style="color:#f92672">=</span>api)
+if __name__ == '__main__':
+    api = Api()
+    logic = BusinessLogic(api=api)
 
-    <span style="color:#75715e"># ...</span>
-    <span style="color:#66d9ef">print</span>(logic<span style="color:#f92672">.</span>do_stuff())</code></pre></div>
+    # ...
+    print(logic.do_stuff())
+</code></pre>
+
 <p>There are of course, more Pythonic ways of implementing Dependency Injection. I realize that the one I provided above is very Java-like. I have tried to collect a list of Python-related resources you might want to consult. You will find it at the end of this post.</p>
 
 <h1 id="where-explicit-dependency-injection-might-help">Where Explicit Dependency Injection Might Help</h1>
@@ -112,72 +115,93 @@
 <p>I have already mentioned it a few times that doing all the instantiation and passing dependencies around by hand can be a bit tedious. It can also be complicated, because of the order of instantiation. The core dependencies must be instantiated first, the units that depend on them afterwards, and so on, until the top-level units, whose role is usually to coordinate the flow of data among their dependencies.</p>
 
 <p>There are many Python libraries, which already facilitate this process. Among those, I looked at <a href="https://github.com/ets-labs/python-dependency-injector">python-dependency-injector</a>, <a href="https://github.com/suned/serum">serum</a>, and <a href="https://github.com/alecthomas/injector">injector</a>. I found <a href="https://github.com/alecthomas/injector">injector</a> to be closest to what I have come to know and use on Java - <a href="https://spring.io/">Spring</a> and <a href="https://github.com/google/guice">Guice</a>. It is not the least verbose, but it gets the job done. Let&rsquo;s see how it works:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install injector</code></pre></div>
+
+<pre><code class="language-bash">pip install injector
+</code></pre>
+
 <p>Let&rsquo;s take the two classes, I have created above:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Api</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_remote_data</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Api called&#39;</span>)
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">42</span>
+
+<pre><code class="language-python">class Api:
+    def fetch_remote_data(self):
+        print('Api called')
+        return 42
 
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BusinessLogic</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, api: Api):
-        self<span style="color:#f92672">.</span>api <span style="color:#f92672">=</span> api
+class BusinessLogic:
+    def __init__(self, api: Api):
+        self.api = api
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_stuff</span>(self):
-        api_result <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>api<span style="color:#f92672">.</span>fetch_remote_data()
-        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;the api returned a result: {api_result}&#39;</span>)
-        <span style="color:#75715e"># do something with the data and return a result</span></code></pre></div>
+    def do_stuff(self):
+        api_result = self.api.fetch_remote_data()
+        print(f'the api returned a result: {api_result}')
+        # do something with the data and return a result
+</code></pre>
+
 <p>The only modification I made, was adding an explicit <a href="https://www.python.org/dev/peps/pep-0484/">type hint</a> to the <code>Api</code> dependency. This will be used by the library to determine the right object to pass at instantiation.</p>
 
 <p>Injector, similar to Guice and Spring, adds the concept of a dependency <code>Module</code>. This is a class that inherits from <code>injector.Module</code> and has a bunch of methods, each corresponding to the initialization of one dependency or the other:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AppModule</span>(Module):
 
-    <span style="color:#a6e22e">@singleton</span>
-    <span style="color:#a6e22e">@provider</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">provide_business_logic</span>(self, api: Api) <span style="color:#f92672">-&gt;</span> BusinessLogic:
-        <span style="color:#66d9ef">return</span> BusinessLogic(api<span style="color:#f92672">=</span>api)
+<pre><code class="language-python">class AppModule(Module):
 
-    <span style="color:#a6e22e">@singleton</span>
-    <span style="color:#a6e22e">@provider</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">provide_api</span>(self) <span style="color:#f92672">-&gt;</span> Api:
-        <span style="color:#75715e"># there is no complex logic in our case,</span>
-        <span style="color:#75715e"># but you can use this method to hide the complexity of initial </span>
+    @singleton
+    @provider
+    def provide_business_logic(self, api: Api) -&gt; BusinessLogic:
+        return BusinessLogic(api=api)
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        # there is no complex logic in our case,
+        # but you can use this method to hide the complexity of initial 
         configuration
-        <span style="color:#75715e"># e.g. when instantiating a particular DB connector.</span>
-        <span style="color:#66d9ef">return</span> Api()</code></pre></div>
+        # e.g. when instantiating a particular DB connector.
+        return Api()
+</code></pre>
+
 <p>Each of these methods is decorated with <code>@provider</code> (required) and <code>@singleton</code> (optional, only if you want to ensure that the object instance will always remain the same). Pay attention to the use of type hinting here too. One the one hand, it makes the dependency module code more readable, on the other, it is used by the injector library to determine the right objects to return.</p>
 
 <p>Let&rsquo;s see how to use our classes. We need to create an Injector and pass it an instance of our AppModule.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    injector <span style="color:#f92672">=</span> Injector(AppModule())
 
-    logic <span style="color:#f92672">=</span> injector<span style="color:#f92672">.</span>get(BusinessLogic)
-    logic<span style="color:#f92672">.</span>do_stuff()</code></pre></div>
+<pre><code class="language-python">if __name__ == '__main__':
+    injector = Injector(AppModule())
+
+    logic = injector.get(BusinessLogic)
+    logic.do_stuff()
+</code></pre>
+
 <p>From now on, when you want to obtain an instance which is inside the dependency graph, from outside the graph, you would have to use the injector. Before you start grunting about the rising amount of boilerplate, let me point out that the actual places where you would need to do that, are either your app&rsquo;s main starting points, or API/Web endpoints in the context of a Web application. Actually, if you are building a Flask app, the creator of injector has got you covered. There is an extension for Flask, called <a href="https://github.com/alecthomas/flask_injector">flask-injector,</a> which hides the boilerplate of having to use the injector object directly.</p>
 
 <p>Back to our injector instance. The real benefit of having dependency modules, is when you have several of them, for running your app in different contexts. The simplest example is testing. Let&rsquo;s create a version of our Api class for testing purposes:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestApi</span>(Api):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_remote_data</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Demo Api called&#39;</span>)
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">24</span></code></pre></div>
+
+<pre><code class="language-python">class TestApi(Api):
+    def fetch_remote_data(self):
+        print('Demo Api called')
+        return 24
+</code></pre>
+
 <p>Assuming that there might be more classes we&rsquo;d like to mock, we create a separate dependency module for them:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestAppModule</span>(Module):
 
-    <span style="color:#a6e22e">@singleton</span>
-    <span style="color:#a6e22e">@provider</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">provide_api</span>(self) <span style="color:#f92672">-&gt;</span> Api:
-        <span style="color:#66d9ef">return</span> TestApi()</code></pre></div>
+<pre><code class="language-python">class TestAppModule(Module):
+
+    @singleton
+    @provider
+    def provide_api(self) -&gt; Api:
+        return TestApi()
+</code></pre>
+
 <p>The real magic happens when creating the injector. You can have as many injectors as you have, and each injector instance can be supplied with as many dependency module configurations as you wish:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-    real_injector <span style="color:#f92672">=</span> Injector(AppModule())
-    test_injector <span style="color:#f92672">=</span> Injector([AppModule(), TestAppModule()])
 
-    real_logic <span style="color:#f92672">=</span> real_injector<span style="color:#f92672">.</span>get(BusinessLogic)
-    real_logic<span style="color:#f92672">.</span>do_stuff()
+<pre><code class="language-python">if __name__ == '__main__':
+    real_injector = Injector(AppModule())
+    test_injector = Injector([AppModule(), TestAppModule()])
 
-    test_logic <span style="color:#f92672">=</span> test_injector<span style="color:#f92672">.</span>get(BusinessLogic)
-    test_logic<span style="color:#f92672">.</span>do_stuff()</code></pre></div>
+    real_logic = real_injector.get(BusinessLogic)
+    real_logic.do_stuff()
+
+    test_logic = test_injector.get(BusinessLogic)
+    test_logic.do_stuff()
+</code></pre>
+
 <pre><code>Api called
 the api returned a result: 42
 Demo Api called
@@ -208,7 +232,7 @@ the api returned a result: 24
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2018</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2018</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

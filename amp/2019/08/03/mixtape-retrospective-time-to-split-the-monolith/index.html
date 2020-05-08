@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Mixtape Retrospective: Time to Split the Monolith?</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">August 3, 2019</time>
       </section>
     </header>
@@ -46,14 +46,15 @@
 <p>In the few months running to the initial release, I learned a lot and was confronted by a couple of challenges that other fellow programmers have also been raving about:</p>
 
 <ul>
-<li>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">result</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">doSomething</span>()
-<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-    <span style="color:#75715e">// do something with the error, and potentially return or throw a Panic
-</span><span style="color:#75715e"></span>}</code></pre></div>
-<ul>
-<li>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</li>
+<li><p>Panics are lurking at every corner. A single panic can kill your entire app. The single (thought not 100% reliable) cure is to handle every error explicitly. This leads to code which is often interrupted by the same three lines:</p>
+
+<pre><code class="language-go">result, err := doSomething()
+if err != nil {
+// do something with the error, and potentially return or throw a Panic
+}
+</code></pre></li>
+
+<li><p>Codebases do not scale well. Whether due to the simplistic syntax of the language, data types, or its approach to packaging and encapsulation, there is a certain point, in which either the cost of setting up proper abstractions or that of copying the same piece of code multiple times, ultimately slows down development efforts.</p></li>
 </ul>
 
 <h1 id="build-deploy-take-a-step-back">Build, deploy, take a step back</h1>
@@ -75,7 +76,7 @@
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2019</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2019</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

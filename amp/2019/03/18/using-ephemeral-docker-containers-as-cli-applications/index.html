@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Using Ephemeral Docker Containers as CLI Applications</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">March 18, 2019</time>
       </section>
     </header>
@@ -56,60 +56,84 @@
 <h2 id="an-example">An Example</h2>
 
 <p>Here is a simple Python script, which will fetch the current price of Bitcoin, and convert it to a desired fiat currency of our choice (&ldquo;USD&rdquo;, &ldquo;EUR&rdquo;).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> argparse
-<span style="color:#f92672">import</span> requests
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch</span>(currency):
-    price <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;https://api.coindesk.com/v1/bpi/currentprice.json&#34;</span>)<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#34;bpi&#34;</span>][currency][<span style="color:#e6db74">&#34;rate_float&#34;</span>]
+<pre><code class="language-python">import argparse
+import requests
 
-    <span style="color:#66d9ef">print</span>(price)
+def fetch(currency):
+    price = requests.get(&quot;https://api.coindesk.com/v1/bpi/currentprice.json&quot;).json()[&quot;bpi&quot;][currency][&quot;rate_float&quot;]
 
-parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;My Fancy CLI&#34;</span>)
-parser<span style="color:#f92672">.</span>add_argument(
-    <span style="color:#e6db74">&#39;--currency&#39;</span>,
-    help<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Choose currency to convert to&#39;</span>,
+    print(price)
+
+parser = argparse.ArgumentParser(description=&quot;My Fancy CLI&quot;)
+parser.add_argument(
+    '--currency',
+    help='Choose currency to convert to',
 )
-args <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_args()
+args = parser.parse_args()
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-    <span style="color:#66d9ef">print</span>(args)
-    <span style="color:#66d9ef">if</span> args<span style="color:#f92672">.</span>currency:
-        fetch(args<span style="color:#f92672">.</span>currency)
-    <span style="color:#66d9ef">else</span>:
-        parser<span style="color:#f92672">.</span>print_help()</code></pre></div>
+if __name__ == &quot;__main__&quot;:
+    print(args)
+    if args.currency:
+        fetch(args.currency)
+    else:
+        parser.print_help()
+</code></pre>
+
 <p>There are two things to keep a note on, in this example. First, is the use of <code>requests</code>, a popular HTTP request/response library, but not a part of the Python standard library, so it has to be installed separately. Second, is the use of command-line arguments, namely <code>--currency</code>.</p>
 
 <p>Next, is the <code>Dockerfile</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3.7</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install requests<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>COPY script.py .<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span><span style="color:#e6db74"> [&#34;python&#34;, &#34;script.py&#34;]</span></code></pre></div>
+
+<pre><code class="language-Dockerfile">FROM python:3.7
+RUN pip install requests
+COPY script.py .
+ENTRYPOINT [&quot;python&quot;, &quot;script.py&quot;]
+</code></pre>
+
 <p>Again, very simple. In light of keeping the example simple, we will install <code>requests</code> right in the <code>Dockerfile</code> and using a <code>requirements.txt</code> file or some kind of a setup script, which are the common practice.</p>
 
 <p>Let&rsquo;s build the image, assuming that both files are in our current directory:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker build -t my-command .</code></pre></div>
+
+<pre><code class="language-bash">docker build -t my-command .
+</code></pre>
+
 <p>Great, now we can grab our newly baked image and run it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run --rm -it my-command --currency USD</code></pre></div>
+
+<pre><code class="language-bash">docker run --rm -it my-command --currency USD
+</code></pre>
+
 <p>The <code>--rm</code> option will remove the container immediately after the command has been executed. If you have ever ran <code>docker ps -a</code>, you would know that inactive containers do not get deleted immediately, but are left for a possible later restart. Assuming that we would like to run our command multiple times per day, this will result in lots of wasted resources.</p>
 
 <p>The other interesting option is <code>-i</code>. This one, combined with the fact that we chose <code>ENTRYPOINT</code> instead of <code>CMD</code> for our starting point in the <code>Dockerfile</code> would allow us to pass the <code>--currency</code> argument at the very end. There are a few subtle differences between <code>ENTRYPOINT</code> and <code>CMD</code> but the very basic is the ability to adapt <code>ENTRYPOINT</code>, while <code>CMD</code> is more or less final.</p>
 
 <p>You can, of course, create an alias fo your command to make the execution easier:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias my-cmd<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;docker run --rm -i my-command&#34;</span>
 
-my-cmd --currency USD</code></pre></div>
+<pre><code class="language-bash">alias my-cmd=&quot;docker run --rm -i my-command&quot;
+
+my-cmd --currency USD
+</code></pre>
+
 <p>That&rsquo;s it! Now you can ahead and run your application as a scheduled cron task and e.g. accrue data over time:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv</code></pre></div>
+
+<pre><code class="language-bash">*/10 * * * * user ./my-cmd --currency USD &gt;&gt; prices.csv
+</code></pre>
+
 <h2 id="limitations">Limitations</h2>
 
 <p>Once again, the solution is far from the ease of a drag-and-drop that Go executables allow. Also, it assumes a working Docker setup (less and less of an issue nowadays), and quite a bit of space, because of the images. It also, for the most part, requires building the image locally, or at least, pulling the ingredients from an image registry. Docker allows for an option to save an image with all of its dependencies and load it on a remote host OS. Think of it as a sort of fat-Jar. I tried it just for the sake of demonstration, but it seems very impractical, as it resulted in an enormous zip file for that tiny Python script (of course, it bakes a whole Linux bistro inside):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker save -o my-command.zip my-command</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rw------- <span style="color:#ae81ff">1</span> user user 920M Mar <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">08</span>:47 my-command.zip</code></pre></div>
+
+<pre><code class="language-bash">docker save -o my-command.zip my-command
+</code></pre>
+
+<pre><code class="language-bash">rw------- 1 user user 920M Mar 17 08:47 my-command.zip
+</code></pre>
+
       </div>
     </section>
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2019</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2019</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

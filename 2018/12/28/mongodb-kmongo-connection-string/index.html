@@ -40,26 +40,38 @@ val client = KMongo.createClient() //get com.mongodb.MongoClient new instance va
 
 
 <meta itemprop="keywords" content="Kotlin,Tips,MongoDB,Java," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Connecting to a MongoDB Instance Using KMongo"/>
 <meta name="twitter:description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
 Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
 val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&quot;test&quot;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method  The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:"/>
 
+    <meta property="og:title" content="Connecting to a MongoDB Instance Using KMongo" />
+<meta property="og:description" content="Often, the seemingly simple things can make you spend hours chasing around your tail. Like trying to connect to a MongoDB instance using KMongo.
+Basically, if you have checked out the KMongo quick start, setting up a client and fetching some data should be extremely easy:
+val client = KMongo.createClient() //get com.mongodb.MongoClient new instance val database = client.getDatabase(&quot;test&quot;) //normal java driver usage val col = database.getCollection&lt;Jedi&gt;() //KMongo extension method  The quick start tutorial assumes that your DB resides on mongodb://localhost:27017, but in reality, your MongoDB connection string looks more like this:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://preslav.me/2018/12/28/mongodb-kmongo-connection-string/" />
+<meta property="article:published_time" content="2018-12-28T16:45:41+00:00" />
+<meta property="article:modified_time" content="2018-12-28T16:45:41+00:00" />
+
     
     
         
         
     
     
+    <meta name="twitter:image" content="/images/avatar.jpg">
+    <meta property="og:image" content="/images/avatar.jpg">
+    
 
     
     
     
 
-</head>
+    <link rel="amphtml" type="text/html"
+        href="https://preslav.me/amp/2018/12/28/mongodb-kmongo-connection-string/">
+    </head>
 <body class=" post-template ">
 
     <div class="site-wrapper">
@@ -354,4 +366,5 @@ In 2018, I:
 
 
 </body>
+
 </html>

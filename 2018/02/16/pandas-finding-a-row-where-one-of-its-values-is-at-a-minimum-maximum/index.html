@@ -38,25 +38,36 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
 
 
 <meta itemprop="keywords" content="Python,Pandas," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://preslav.me/images/avatar.jpg"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum"/>
 <meta name="twitter:description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
 sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?"/>
 
+    <meta property="og:title" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum" />
+<meta property="og:description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/" />
+<meta property="article:published_time" content="2018-02-16T06:58:00+00:00" />
+<meta property="article:modified_time" content="2018-02-16T06:58:00+00:00" />
+
     
     
         
         
     
     
+    <meta name="twitter:image" content="/images/avatar.jpg">
+    <meta property="og:image" content="/images/avatar.jpg">
+    
 
     
     
     
 
-</head>
+    <link rel="amphtml" type="text/html"
+        href="https://preslav.me/amp/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/">
+    </head>
 <body class=" post-template ">
 
     <div class="site-wrapper">
@@ -351,4 +362,5 @@ sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
 
 
 </body>
+
 </html>

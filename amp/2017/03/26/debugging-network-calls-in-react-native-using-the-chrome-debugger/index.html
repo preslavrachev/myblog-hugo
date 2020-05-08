@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Debugging Network Calls in React Native Using the Chrome Debugger</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">March 26, 2017</time>
       </section>
     </header>
@@ -44,11 +44,16 @@
 <h2 id="tl-dr-just-give-me-the-code">TL;DR! Just give me the code</h2>
 
 <p>In your <code>index.js</code> file (or your platform-specific index file for that matter), simply add the following line to the top, directly after the <code>import</code> statements:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">XMLHttpRequest</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">GLOBAL</span>.<span style="color:#a6e22e">originalXMLHttpRequest</span> <span style="color:#f92672">?</span> 
-  <span style="color:#a6e22e">GLOBAL</span>.<span style="color:#a6e22e">originalXMLHttpRequest</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">GLOBAL</span>.<span style="color:#a6e22e">XMLHttpRequest</span>;
-</code></pre></div>
+
+<pre><code class="language-javascript">XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? 
+  GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+</code></pre>
+
 <p>You will also need a Chrome plugin that overrides <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">CORS</a>. I use <a href="https://chrome.google.com/webstore/detail/cors-toggle/omcncfnpmcabckcddookmnajignpffnh?hl=en">CORS Toggle</a>. You may also decide to skip the plugin and start Chrome with CORS disabled:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chrome --disable-web-security</code></pre></div>
+
+<pre><code class="language-bash">chrome --disable-web-security
+</code></pre>
+
 <p>then, as usually, start remote debugging from your app, and open: <code>http://localhost:8081/debugger-ui</code> on your computer.</p>
 
 <p>That&rsquo;s it. Please, make sure to never rely completely on the network infrastructure of the Chrome debugger. Many networking problems may be specific to your device/simulator, and will not be caught by the debugger.</p>
@@ -72,7 +77,7 @@
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2017</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2017</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

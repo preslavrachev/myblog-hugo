@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">February 16, 2018</time>
       </section>
     </header>
@@ -40,26 +40,35 @@
         
         
         <p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sal[sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>] <span style="color:#f92672">==</span> sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>]<span style="color:#f92672">.</span>max()][<span style="color:#e6db74">&#39;EmployeeName&#39;</span>]</code></pre></div>
+
+<pre><code class="language-python">sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']
+</code></pre>
+
 <p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sal<span style="color:#f92672">.</span>loc[sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>]<span style="color:#f92672">.</span>idxmax()][<span style="color:#e6db74">&#39;EmployeeName&#39;</span>]
 
-sal<span style="color:#f92672">.</span>loc[sal[<span style="color:#e6db74">&#39;TotalPayBenefits&#39;</span>]<span style="color:#f92672">.</span>argmax()][<span style="color:#e6db74">&#39;EmployeeName&#39;</span>]</code></pre></div>
+<pre><code class="language-python">sal.loc[sal['TotalPayBenefits'].idxmax()]['EmployeeName']
+
+sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
+</code></pre>
+
 <p>I did a quick performance check, and indeed, idmax/argmax turn out twice as fast:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># the original filter condition</span>
-<span style="color:#ae81ff">815</span> µs ± <span style="color:#ae81ff">11</span>.5 µs per loop <span style="color:#f92672">(</span>mean ± std. dev. of <span style="color:#ae81ff">7</span> runs, <span style="color:#ae81ff">1000</span> loops each<span style="color:#f92672">)</span>
 
-<span style="color:#75715e"># idmax()</span>
-<span style="color:#ae81ff">402</span> µs ± <span style="color:#ae81ff">7</span>.61 µs per loop <span style="color:#f92672">(</span>mean ± std. dev. of <span style="color:#ae81ff">7</span> runs, <span style="color:#ae81ff">1000</span> loops each<span style="color:#f92672">)</span>
+<pre><code class="language-bash"># the original filter condition
+815 µs ± 11.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 
-<span style="color:#75715e"># argmax</span>
-<span style="color:#ae81ff">404</span> µs ± <span style="color:#ae81ff">8</span>.81 µs per loop <span style="color:#f92672">(</span>mean ± std. dev. of <span style="color:#ae81ff">7</span> runs, <span style="color:#ae81ff">1000</span> loops each<span style="color:#f92672">)</span></code></pre></div>
+# idmax()
+402 µs ± 7.61 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+
+# argmax
+404 µs ± 8.81 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+</code></pre>
+
       </div>
     </section>
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2018</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2018</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>

@@ -31,7 +31,7 @@
     <header class="post-header">
       <h1 class="post-title">Any Code Style You like as Long It&#39;s Black</h1>
       <section class="post-meta">
-        <p class="author">by <a href="#">Preslav Rachev</a></p>
+        <p class="author">by <a href="#"></a></p>
         <time class="post-date" datetime="2018-02-16">October 26, 2019</time>
       </section>
     </header>
@@ -48,50 +48,59 @@
 
 
 
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="https://github.com/psf/black">
-      <h1 class="f6 ttu tracked">psf/black</h1>
-    </a>
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://repository-images.githubusercontent.com/125266328/48aef880-6cce-11e9-9e3c-3ca0dd3ac138); background-size:cover; background-position:center; min-height: 120px">
   </div>
+  
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://repository-images.githubusercontent.com/125266328/48aef880-6cce-11e9-9e3c-3ca0dd3ac138'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="https://github.com/psf/black"
-          >GitHub</a
-        ></small
-      >
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/psf/black">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        psf/black</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The uncompromising Python code formatter. Contribute to psf/black development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/psf/black">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
-
-
+</div>
 
 <p>The first thing I do when I start a new project nowadays, is to set up an automatic code formatter. My personal favorite for Python is <a href="https://github.com/psf/black">Black</a>. It is an opinionated formatter made by <a href="https://github.com/ambv">Łukasz Langa</a> - a Python Core developer. Black leaves little choice when it comes to configuration. You can think of it as the <a href="https://golang.org/cmd/gofmt/">gofmt</a> or <a href="https://prettier.io/">Prettier</a> of Python. Integrate it with your editor of choice, or use the CLI over your code base and Black will do the rest:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> seven_dwwarfs <span style="color:#f92672">import</span> Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
-x <span style="color:#f92672">=</span> {  <span style="color:#e6db74">&#39;a&#39;</span>:<span style="color:#ae81ff">37</span>,<span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#39;c&#39;</span>:<span style="color:#ae81ff">927</span>}
 
-<span style="color:#66d9ef">if</span> very_long_variable_name <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None <span style="color:#f92672">and</span> \
- very_long_variable_name<span style="color:#f92672">.</span>field <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> \
- very_long_variable_name<span style="color:#f92672">.</span>is_debug:
- z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello &#39;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#39;world&#39;</span>
-<span style="color:#66d9ef">else</span>:
- world <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;world&#39;</span>
- a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello {}&#39;</span><span style="color:#f92672">.</span>format(world)
- f <span style="color:#f92672">=</span> rf<span style="color:#e6db74">&#39;hello {world}&#39;</span>
-<span style="color:#66d9ef">if</span> (this
-<span style="color:#f92672">and</span> that): y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello world&#39;</span></code></pre></div>
+<pre><code class="language-python">from seven_dwwarfs import Grumpy, Happy, Sleepy, Bashful, Sneezy, Dopey, Doc
+x = {  'a':37,'b':42, 'c':927}
+
+if very_long_variable_name is not None and \
+ very_long_variable_name.field &gt; 0 or \
+ very_long_variable_name.is_debug:
+ z = 'hello '+'world'
+else:
+ world = 'world'
+ a = 'hello {}'.format(world)
+ f = rf'hello {world}'
+if (this
+and that): y = 'hello world'
+</code></pre>
+
 <p>will transform into this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> seven_dwwarfs <span style="color:#f92672">import</span> (
+
+<pre><code class="language-python">from seven_dwwarfs import (
     Grumpy,
     Happy,
     Sleepy,
@@ -101,52 +110,59 @@ x <span style="color:#f92672">=</span> {  <span style="color:#e6db74">&#39;a&#39
     Doc,
 )
 
-x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;</span>: <span style="color:#ae81ff">37</span>, <span style="color:#e6db74">&#34;b&#34;</span>: <span style="color:#ae81ff">42</span>, <span style="color:#e6db74">&#34;c&#34;</span>: <span style="color:#ae81ff">927</span>}
+x = {&quot;a&quot;: 37, &quot;b&quot;: 42, &quot;c&quot;: 927}
 
-<span style="color:#66d9ef">if</span> (
-    very_long_variable_name <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None
-    <span style="color:#f92672">and</span> very_long_variable_name<span style="color:#f92672">.</span>field <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#f92672">or</span> very_long_variable_name<span style="color:#f92672">.</span>is_debug
+if (
+    very_long_variable_name is not None
+    and very_long_variable_name.field &gt; 0
+    or very_long_variable_name.is_debug
 ):
-    z <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;world&#34;</span>
-<span style="color:#66d9ef">else</span>:
-    world <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>
-    a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello {}&#34;</span><span style="color:#f92672">.</span>format(world)
-    f <span style="color:#f92672">=</span> rf<span style="color:#e6db74">&#34;hello {world}&#34;</span>
-<span style="color:#66d9ef">if</span> this <span style="color:#f92672">and</span> that:
-    y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span></code></pre></div>
+    z = &quot;hello &quot; + &quot;world&quot;
+else:
+    world = &quot;world&quot;
+    a = &quot;hello {}&quot;.format(world)
+    f = rf&quot;hello {world}&quot;
+if this and that:
+    y = &quot;hello world&quot;
+</code></pre>
 
 
 
 
 
 
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="https://black.now.sh">
-      <h1 class="f6 ttu tracked">Black Playground</h1>
-    </a>
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://black.now.sh/static/screenshot.png); background-size:cover; background-position:center; min-height: 120px">
   </div>
+  
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://black.now.sh/static/screenshot.png'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>Playground for Black, the uncompromising Python code formatter.</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="https://black.now.sh"
-          >https://black.now.sh</a
-        ></small
-      >
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://black.now.sh">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Black Playground</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Playground for Black, the uncompromising Python code formatter.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://black.now.sh">https://black.now.sh | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
-
-
+</div>
 
 <h1 id="isn-t-pep8-enough">Isn&rsquo;t PEP8 enough?</h1>
 
@@ -185,136 +201,156 @@ x <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;a&#34;<
 
 
 
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="https://www.python.org/dev/peps/pep-0008">
-      <h1 class="f6 ttu tracked">PEP 8 -- Style Guide for Python Code</h1>
-    </a>
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://www.python.org/static/opengraph-icon-200x200.png); background-size:cover; background-position:center; min-height: 120px">
   </div>
+  
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://www.python.org/static/opengraph-icon-200x200.png'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>The official home of the Python Programming Language</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="https://www.python.org/dev/peps/pep-0008"
-          >Python.org</a
-        ></small
-      >
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.python.org/dev/peps/pep-0008">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        PEP 8 -- Style Guide for Python Code</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The official home of the Python Programming Language</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.python.org/dev/peps/pep-0008">https://www.python.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
+</div>
 
 
 
 
 
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
-
-
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="https://www.kevinpeters.net/auto-formatters-for-python">
-      <h1 class="f6 ttu tracked">The 3 best auto formatters for Python</h1>
-    </a>
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://kevinpeters.net/thumbnails/auto-formatters-for-python-opengraph.png); background-size:cover; background-position:center; min-height: 120px">
   </div>
+  
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://kevinpeters.net/thumbnails/auto-formatters-for-python-opengraph.png'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>🔥Save time by using the best auto formatters for python - a comparison to find the best. The auto formatters in this blog article can be used online or in editors like vscode and feature Python 2 and Python 3.</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="https://www.kevinpeters.net/auto-formatters-for-python"
-          >https://www.kevinpeters.net</a
-        ></small
-      >
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.kevinpeters.net/auto-formatters-for-python">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The 3 best auto formatters for Python</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      🔥Save time by using the best auto formatters for python - a comparison to find the best. The auto formatters in this blog article can be used online or in editors like vscode and feature Python 2 and Python 3.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.kevinpeters.net/auto-formatters-for-python">https://www.kevinpeters.net | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
+</div>
 
 
 
 
 
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
-
-
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="https://github.com/google/yapf">
-      <h1 class="f6 ttu tracked">google/yapf</h1>
-    </a>
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars0.githubusercontent.com/u/1342004?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
   </div>
+  
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://avatars0.githubusercontent.com/u/1342004?s=400&amp;v=4'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>A formatter for Python files. Contribute to google/yapf development by creating an account on GitHub.</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="https://github.com/google/yapf"
-          >GitHub</a
-        ></small
-      >
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/google/yapf">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        google/yapf</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      A formatter for Python files. Contribute to google/yapf development by creating an account on GitHub.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/google/yapf">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
+</div>
 
 
 
 
 
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
-
-
-<article class="bg-white center mw6 ba b--black-10 mv4">
-  <div class="pv2 ph3 bb b--black-10">
-    <a href="https://github.com/hhatto/autopep8">
-      <h1 class="f6 ttu tracked">hhatto/autopep8</h1>
-    </a>
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://avatars1.githubusercontent.com/u/150309?s=400&amp;v=4); background-size:cover; background-position:center; min-height: 120px">
   </div>
+  
 
-  <div class="flex flex-column flex-row-m flex-row-l">
-    <div
-      class="ma2 w-100-l w-100-m"
-      style="background: url('https://avatars1.githubusercontent.com/u/150309?s=400&amp;v=4'); background-position:center; background-size: cover; min-height: 100px"
-    ></div>
-    <div class="pa2">
-      <p>A tool that automatically formats Python code to conform to the PEP 8 style guide. - hhatto/autopep8</p>
-      <small class="gray db pv2"
-        >Source: -
-        <a
-          href="https://github.com/hhatto/autopep8"
-          >GitHub</a
-        ></small
-      >
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://github.com/hhatto/autopep8">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        hhatto/autopep8</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      A tool that automatically formats Python code to conform to the PEP 8 style guide. - hhatto/autopep8</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://github.com/hhatto/autopep8">https://github.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
     </div>
   </div>
-</article>
-
-</p>
+</div></p>
 
       </div>
     </section>
   </article>
 </main>
 <footer class="site-footer clearfix">
-  <section class="copyright"><a href="http://www.preslav.me">Preslav Rachev</a> ©2019</section>
+  <section class="copyright"><a href="http://www.preslav.me">Random Bits of Wisdom</a> ©2019</section>
   <section class="poweredby">Proudly published with <a href="https://gohugo.io/">Hugo</a></section>
 </footer>
 </body>
