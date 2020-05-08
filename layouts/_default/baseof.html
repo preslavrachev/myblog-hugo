@@ -54,6 +54,11 @@
         type="application/json" title="{{ .Site.Title }}" />
     {{ end }}
 
+    {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}"
+        href="{{ .Permalink | safeURL }}">
+    {{ end -}}
+
 </head>
 <body class="{{ block "body_class" . }} {{ end }}">
 

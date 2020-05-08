@@ -90,3 +90,10 @@ publishDir   = "public"
   [caches.getjson]
   dir = ":resourceDir/_gen"
   maxAge = -1
+
+[outputs]
+  page = ["HTML", "AMP"]
+
+[outputFormats]
+ [outputFormats.AMP]
+    permalinkable = false
