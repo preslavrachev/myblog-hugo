@@ -68,10 +68,6 @@ series = "series"
     disabled = false
     simple = true
 
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
 [services]
 
   [services.instagram]
