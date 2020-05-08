@@ -21,7 +21,6 @@ googleAnalytics = "UA-131031623-1"
   # Metadata mostly used in document's head
   #description = "I am a software engineer at KI labs GmbH and advocate for strong developer culture. In my free time, I enjoy running in the woods, reading a great book, or working on my next piece of writing/music."
   keywords = "programming, golang, python, elixir"
-  images = ["/images/avatar.jpg"]
 
 [permalinks]
   post = "/:year/:month/:day/:filename/"

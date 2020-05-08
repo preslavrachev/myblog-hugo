@@ -1,7 +1,6 @@
 +++
 author = "Preslav Rachev"
 date = 2020-05-02T22:00:00Z
-description = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week."
 feature_image = "/images/2020/05/photo-of-woman-doing-yoga-2294354.jpg"
 show_summary = true
 summary = "Strengthen your body, while broadening your mind"
