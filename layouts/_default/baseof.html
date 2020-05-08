@@ -32,6 +32,7 @@
     <!-- SEO Metadata -->
     {{- template "_internal/schema.html" . }}
     {{- template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
     {{ $featureImage := (.Param "feature_image")}}
     {{ if not $featureImage }}
         {{ $featureImage = index (findRE "background: url\\((.*)\\)" .Content) 0 }}
@@ -41,6 +42,10 @@
     {{ end }}
     {{if $featureImage}}
     <meta name="twitter:image" content="{{ $featureImage }}">
+    <meta property="og:image" content="{{ $featureImage }}">
+    {{else}}
+    <meta name="twitter:image" content="/images/avatar.jpg">
+    <meta property="og:image" content="/images/avatar.jpg">
     {{end}}
 
     <!-- RSS -->
@@ -53,6 +58,11 @@
         <link href="{{ if .OutputFormats.Get "json" }}{{ .Site.BaseURL }}feed.json{{ end }}" rel="alternate"
         type="application/json" title="{{ .Site.Title }}" />
     {{ end }}
+
+    {{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}"
+        href="{{ .Permalink | safeURL }}">
+    {{ end -}}
 
 </head>
 <body class="{{ block "body_class" . }} {{ end }}">
@@ -78,4 +88,5 @@
 
     {{ partial "javascript.html" . }}
 </body>
+{{.Params.images}}
 </html>
