@@ -41,8 +41,8 @@
         {{end}}
     {{ end }}
     {{if $featureImage}}
-    <meta name="twitter:image" content="{{ $featureImage }}">
-    <meta property="og:image" content="{{ $featureImage }}">
+    <meta name="twitter:image" content="{{ $featureImage | absURL }}">
+    <meta property="og:image" content="{{ $featureImage | absURL }}">
     {{else}}
     <meta name="twitter:image" content="/images/avatar.jpg">
     <meta property="og:image" content="/images/avatar.jpg">
