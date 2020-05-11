@@ -5,8 +5,71 @@
         <description>Recent content in Quote on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 20 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 11 May 2020 10:28:44 +0100</lastBuildDate>
         <atom:link href="https://preslav.me/tags/quote/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Second-Guessing the Modern Web</title>
+            <link>https://preslav.me/2020/05/11/quote-second-guessing-the-modern-web/</link>
+            <pubDate>Mon, 11 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/05/11/quote-second-guessing-the-modern-web/</guid>
+            <description>What if everyone&amp;rsquo;s wrong?</description>
+            <content type="html"><![CDATA[<p>This is a quote from <a href="https://macwright.org/2020/05/10/spa-fatigue.html">Second-guessing the modern web</a> by <a href="https://twitter.com/tmcw">Tom MacWright</a>:</p>
+
+<blockquote>
+<p>[But] I’m at the point where you look at where the field is and what the alternatives are – taking a second look at unloved, unpopular, uncool things like Django, Rails, Laravel – and think what the heck is happening. We’re layering optimizations upon optimizations in order to get the SPA-like pattern to fit every use case, and I’m not sure that it is, well, worth it.</p>
+</blockquote>
+
+<p>Tom continues:</p>
+
+<blockquote>
+<p>Frameworks should lure people into the pit of success, where following the normal rules and using normal techniques is the winning approach.</p>
+
+<p>I don’t think that React, in this context, really is that pit of success. A naïvely implemented React SPA isn’t stable, or efficient, and it doesn’t naturally scale to significant complexity</p>
+</blockquote>
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://macwright.org/2020/05/10/spa-fatigue.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Second-guessing the modern web</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      What if everyone&#39;s wrong?</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://macwright.org/2020/05/10/spa-fatigue.html">https://macwright.org | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
         
         <item>
             <title>Programmers: Stop Calling Yourselves Engineers</title>
