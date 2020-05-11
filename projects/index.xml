@@ -5,13 +5,13 @@
         <description>Recent content in Projects on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Thu, 06 Dec 2018 06:29:15 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 11 May 2020 06:29:15 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/projects/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Linqable</title>
             <link>https://preslav.me/projects/linqable/</link>
-            <pubDate>Thu, 06 Dec 2018 06:29:15 +0000</pubDate>
+            <pubDate>Mon, 11 May 2020 06:29:15 +0000</pubDate>
             
             <guid>https://preslav.me/projects/linqable/</guid>
             <description>Linqable is an easy way to create engaging URL previews from every link - even when the underlying site does not provide the necessary metadata.</description>
@@ -60,6 +60,28 @@ only what they paid for - engaging URL previews.</p>
   </div>
 </div>
 </div>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Mixtape Search</title>
+            <link>https://preslav.me/projects/mixtape/</link>
+            <pubDate>Sun, 10 May 2020 06:29:15 +0000</pubDate>
+            
+            <guid>https://preslav.me/projects/mixtape/</guid>
+            <description>Mixtape is a search engine for podcasts. Discover and subscribe to topics you like.</description>
+            <content type="html"><![CDATA[<p><a href="https://mixtape.preslav.me/">Mixtape</a> is a search engine for podcast content.
+It stands out from the rest, because of its <em>focus on episodes, rather than
+entire feeds</em>. Just like mixtapes in the old days, it allows listeners to search
+and subscribe to topics of interests, rather than to separate feeds. It also
+allows audio enthusiasts to pick and share particular audio clips with friends.
+Something like this:</p>
+
+<iframe
+  src="https://mixtape.preslav.me/episode/d0901898/embed?start=00:07:21&stop=00:07:39"
+  scrolling="no" width="400" height="300"
+  style="border:none; margin: 0px auto; display: block">
+</iframe>
 ]]></content>
         </item>
         

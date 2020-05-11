@@ -5,8 +5,18 @@
         <description>Recent content on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 02 May 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 11 May 2020 06:29:15 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Projects</title>
+            <link>https://preslav.me/projects/</link>
+            <pubDate>Mon, 11 May 2020 06:29:15 +0000</pubDate>
+            
+            <guid>https://preslav.me/projects/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>Posts</title>
@@ -69,16 +79,6 @@ events.</p>
 problems I could help solve. If yours is one of those, <a href="/contact/">I’d love to hear from
 you</a>.</p>
 ]]></content>
-        </item>
-        
-        <item>
-            <title>Projects</title>
-            <link>https://preslav.me/projects/</link>
-            <pubDate>Thu, 06 Dec 2018 06:29:15 +0000</pubDate>
-            
-            <guid>https://preslav.me/projects/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>

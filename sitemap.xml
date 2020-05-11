@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/projects/linqable/</loc>
+    <lastmod>2020-05-11T06:29:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/projects/</loc>
+    <lastmod>2020-05-11T06:29:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/</loc>
+    <lastmod>2020-05-11T06:29:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/projects/mixtape/</loc>
+    <lastmod>2020-05-10T06:29:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/health-fitness/</loc>
     <lastmod>2020-05-02T22:00:00+00:00</lastmod>
   </url>
@@ -14,11 +34,6 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-05-02T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/</loc>
     <lastmod>2020-05-02T22:00:00+00:00</lastmod>
   </url>
   
@@ -453,12 +468,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/qa/</loc>
+    <loc>https://preslav.me/tags/qa/</loc>
     <lastmod>2019-10-31T22:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/qa/</loc>
+    <loc>https://preslav.me/categories/qa/</loc>
     <lastmod>2019-10-31T22:00:00+00:00</lastmod>
   </url>
   
@@ -518,12 +533,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/running/</loc>
+    <loc>https://preslav.me/categories/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/running/</loc>
+    <loc>https://preslav.me/tags/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
   
@@ -618,12 +633,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/startups/</loc>
+    <loc>https://preslav.me/categories/startups/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/startups/</loc>
+    <loc>https://preslav.me/tags/startups/</loc>
     <lastmod>2019-09-22T10:20:00+00:00</lastmod>
   </url>
   
@@ -858,12 +873,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/wedding/</loc>
+    <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/vacation/</loc>
+    <loc>https://preslav.me/tags/wedding/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
@@ -1143,12 +1158,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/augsburg/</loc>
+    <loc>https://preslav.me/tags/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/augsburg/</loc>
+    <loc>https://preslav.me/categories/augsburg/</loc>
     <lastmod>2019-04-22T10:20:00+00:00</lastmod>
   </url>
   
@@ -1294,16 +1309,6 @@
   
   <url>
     <loc>https://preslav.me/about/</loc>
-    <lastmod>2018-12-06T06:29:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/projects/linqable/</loc>
-    <lastmod>2018-12-06T06:29:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/projects/</loc>
     <lastmod>2018-12-06T06:29:15+00:00</lastmod>
   </url>
   
