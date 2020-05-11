@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
-    {{ $prismStyles := slice (resources.Get "css/prism.css") (resources.Get "css/cookieconsent.min.css") | resources.Concat "site.css" | minify | fingerprint }}
+    {{ $prismStyles := slice (resources.Get "css/prism.css") (resources.Get "css/cookieconsent.min.css") (resources.Get "css/styles.css") | resources.Concat "site.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" />
     <link rel="stylesheet" href="{{ $prismStyles.Permalink }}" />
 
