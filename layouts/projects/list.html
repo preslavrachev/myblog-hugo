@@ -1,0 +1,31 @@
+{{ define "body_class" }} tag-template  {{ end }}
+
+{{ define "main" }}
+
+{{.Scratch.Set "background" "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80"}}
+<header class="site-header">
+    {{- partial "site-header.html" $ -}}
+
+    {{- partial "header-background.html" $ -}}
+        <div class="inner site-header-content">
+            <h1 class="site-title">My Projects</h1>
+            <h2 class="site-description">
+                What follows is a small showcase of applications, I have worked on over the past
+years and I am really proud sharing. <a href="/contact">Get in touch with me</a>, if you'd
+like to dsicuss any of them further. You can also <a href="https://www.buymeacoffee.com/0B7zhlQ2I">buy me</a> a steaming cup of ☕️, if you like what I am working on.
+            </h2>
+        </div>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
+            {{ range $index, $element := .Pages }}
+                {{- partial "post-card-project.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+            {{ end }}
+        </div>
+    </div>
+</main>
+
+{{ end }}
