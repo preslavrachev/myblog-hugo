@@ -1,0 +1,67 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Projects on Random Bits of Wisdom</title>
+        <link>https://preslav.me/projects/</link>
+        <description>Recent content in Projects on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Thu, 06 Dec 2018 06:29:15 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/projects/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Linqable</title>
+            <link>https://preslav.me/projects/linqable/</link>
+            <pubDate>Thu, 06 Dec 2018 06:29:15 +0000</pubDate>
+            
+            <guid>https://preslav.me/projects/linqable/</guid>
+            <description>Linqable is an easy way to create engaging URL previews from every link - even when the underlying site does not provide the necessary metadata.</description>
+            <content type="html"><![CDATA[<p><a href="https://linqable.pro">Linqable</a> is an easy way to create engaging URL
+previews from every link - even when the underlying site does not provide the
+necessary metadata. NoEmbed strives to be smart, fast, and WYSIWYG - there are
+no hidden ads, or suspicious analytics on behalf of end users. API consumers get
+only what they paid for - engaging URL previews.</p>
+
+<div>
+  
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://linqable.pro">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Linqable: ⚡️ fast and engaging link previews</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Linqable turns URLs into beautiful and engaging previews. Using a combination of smart extraction techniques, it finds and extracts as much information about the provided URL as possible.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://linqable.pro">https://linqable.pro | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+</div>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

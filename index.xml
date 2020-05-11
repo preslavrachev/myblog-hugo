@@ -77,6 +77,16 @@ you</a>.</p>
             <pubDate>Thu, 06 Dec 2018 06:29:15 +0000</pubDate>
             
             <guid>https://preslav.me/projects/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Projects</title>
+            <link>https://preslav.me/projects_old/</link>
+            <pubDate>Thu, 06 Dec 2018 06:29:15 +0000</pubDate>
+            
+            <guid>https://preslav.me/projects_old/</guid>
             <description>.grid { display: flex; flex-wrap: wrap; } .card-wrapper { width: 50%; padding: 0.2rem; } @media (max-width: 960px) { .card-wrapper { width: 100%; } } .card { border: 1px solid #d4d4d4; border-radius: 8px; } .card a { text-decoration: none; }  What follows is a small showcase of applications, I have worked on over the past years and I am really proud sharing. Get in touch with me, if you&amp;rsquo;d like to dsicuss them further.</description>
             <content type="html"><![CDATA[
 
