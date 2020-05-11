@@ -247,6 +247,7 @@ This time was different. My wife and I flew for the wedding of one of our best f
       if (scroll_count === 200) {
         document.removeEventListener('scroll', handler);
         document.getElementById("intergramRoot").style.display = "block";
+        goatcounter.count({path: "chat_visible", title: "User has seen the chat button", "event": true});
       } else {
         scroll_count += 1;
       }

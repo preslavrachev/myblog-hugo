@@ -248,6 +248,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       if (scroll_count === 200) {
         document.removeEventListener('scroll', handler);
         document.getElementById("intergramRoot").style.display = "block";
+        goatcounter.count({path: "chat_visible", title: "User has seen the chat button", "event": true});
       } else {
         scroll_count += 1;
       }

@@ -407,6 +407,7 @@ Too many consumer-tech companies nearing their public offerings are selling magi
       if (scroll_count === 200) {
         document.removeEventListener('scroll', handler);
         document.getElementById("intergramRoot").style.display = "block";
+        goatcounter.count({path: "chat_visible", title: "User has seen the chat button", "event": true});
       } else {
         scroll_count += 1;
       }

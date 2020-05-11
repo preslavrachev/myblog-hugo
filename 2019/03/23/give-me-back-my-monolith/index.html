@@ -392,6 +392,7 @@ When I said services, I bet that the first thing you thought about was HTTP serv
       if (scroll_count === 200) {
         document.removeEventListener('scroll', handler);
         document.getElementById("intergramRoot").style.display = "block";
+        goatcounter.count({path: "chat_visible", title: "User has seen the chat button", "event": true});
       } else {
         scroll_count += 1;
       }

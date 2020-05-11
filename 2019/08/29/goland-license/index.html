@@ -365,6 +365,7 @@ struct { b int32 c string d string a bool }  Why is that? Well, think of memory 
       if (scroll_count === 200) {
         document.removeEventListener('scroll', handler);
         document.getElementById("intergramRoot").style.display = "block";
+        goatcounter.count({path: "chat_visible", title: "User has seen the chat button", "event": true});
       } else {
         scroll_count += 1;
       }
