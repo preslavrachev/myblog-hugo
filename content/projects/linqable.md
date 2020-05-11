@@ -1,7 +1,5 @@
 +++
-categories = []
-cover = ""
-date = 2018-12-06T06:29:15Z
+date = 2020-05-11T06:29:15Z
 description = "Linqable is an easy way to create engaging URL previews from every link - even when the underlying site does not provide the necessary metadata."
 summary = "Linqable is an easy way to create engaging URL previews from every link - even when the underlying site does not provide the necessary metadata."
 tagline = "A great preview is worth a thousand links"
