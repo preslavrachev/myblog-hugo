@@ -4,7 +4,6 @@ categories = ["TWIL"]
 cover = ""
 date = 2020-04-20T22:00:00Z
 description = "This Week I Learned (TWIL) is a weekly selection of interesting things and links I found useful during the week."
-draft = true
 feature_image = ""
 featured_image = ""
 slug = ""
