@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Projects on Random Bits of Wisdom</title>
+        <title>My Projects on Random Bits of Wisdom</title>
         <link>https://preslav.me/projects/</link>
-        <description>Recent content in Projects on Random Bits of Wisdom</description>
+        <description>Recent content in My Projects on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Mon, 11 May 2020 06:29:15 +0000</lastBuildDate>
@@ -77,6 +77,19 @@ only what they paid for - engaging URL previews.</p>
 <h2 id="my-story-with-podcasts">My story with podcasts</h2>
 
 <p>I first discovered podcasts in 2004. Long before anyone thought podcasts would become so popular, I would manually search and download each episode on my MP3 player. 15 years later, my passion for listening is as strong as it was back in those years. Over time, I have developed a large selection of great audio content, which I want to share with you.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Still Hiring</title>
+            <link>https://preslav.me/projects/still-hiring/</link>
+            <pubDate>Mon, 11 May 2020 03:28:15 +0000</pubDate>
+            
+            <guid>https://preslav.me/projects/still-hiring/</guid>
+            <description>A list of IT companies still hiring, even in these difficult times.</description>
+            <content type="html"><![CDATA[<p>I created <a href="https://ddglk.glideapp.io">Still Hiring</a> with the sole idea of helping fellow developers and IT people find jobs during the COVID-19 crisis. It was a spontaneous decision, and not one I am hoping to necessarily profit from. I would be happy, if my tiny contribution has helped someone find a new opportunity in these difficult times.</p>
+
+<p>The project is still ongoing, so I can encourage anyone looking for a job to <a href="https://ddglk.glideapp.io">sign up</a>. If your company is having job openings, or you might know of someone looking, there is a suggestion form inside the app that you can use to collaborate.</p>
 ]]></content>
         </item>
         
