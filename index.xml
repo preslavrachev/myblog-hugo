@@ -264,8 +264,14 @@ only what they paid for - engaging URL previews.</p>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/contact/</guid>
-            <description>Want to get in touch? No problem! Find me on Twitter. Follow right away or send me a direct message. I am also on GitHub, Medium, and LinkedIn.</description>
+            <description>Want to get in touch? No problem! Find me on Twitter. Follow right away or send me a direct message. I am also on GitHub, Medium, and LinkedIn.
+Or simply, fill out the form below: 👇🏼
+Loading… </description>
             <content type="html"><![CDATA[<p>Want to get in touch? No problem! Find me on <a href="https://twitter.com/preslavrachev">Twitter</a>. Follow right away or send me a direct message. I am also on <a href="https://github.com/preslavrachev">GitHub</a>, <a href="https://medium.com/@preslavrachev">Medium</a>, and <a href="https://www.linkedin.com/in/preslavrachev/">LinkedIn</a>.</p>
+
+<p>Or simply, fill out the form below: 👇🏼</p>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDow83N8InP38ryEFdcdSh88JE3HI1t-QkFTpT-tLVqqlb9w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; min-height: 800px; background-color: #ffffff;">Loading…</iframe>
 ]]></content>
         </item>
         
