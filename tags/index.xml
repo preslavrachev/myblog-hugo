@@ -5,8 +5,38 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 11 May 2020 10:28:44 +0100</lastBuildDate>
+        <lastBuildDate>Fri, 15 May 2020 08:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Advice</title>
+            <link>https://preslav.me/tags/advice/</link>
+            <pubDate>Fri, 15 May 2020 08:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/advice/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Book</title>
+            <link>https://preslav.me/tags/book/</link>
+            <pubDate>Fri, 15 May 2020 08:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/book/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Startup</title>
+            <link>https://preslav.me/tags/startup/</link>
+            <pubDate>Fri, 15 May 2020 08:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/startup/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>2 Cents</title>
@@ -184,16 +214,6 @@
             <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/sony/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Book</title>
-            <link>https://preslav.me/tags/book/</link>
-            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/book/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -729,16 +749,6 @@
         </item>
         
         <item>
-            <title>Advice</title>
-            <link>https://preslav.me/tags/advice/</link>
-            <pubDate>Sat, 21 Sep 2019 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/advice/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
             <title>IDE</title>
             <link>https://preslav.me/tags/ide/</link>
             <pubDate>Thu, 29 Aug 2019 22:00:00 +0000</pubDate>
@@ -784,16 +794,6 @@
             <pubDate>Tue, 27 Aug 2019 15:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/struct/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Startup</title>
-            <link>https://preslav.me/tags/startup/</link>
-            <pubDate>Sun, 18 Aug 2019 16:24:45 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/startup/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>

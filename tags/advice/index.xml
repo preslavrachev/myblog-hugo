@@ -5,8 +5,105 @@
         <description>Recent content in Advice on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 21 Sep 2019 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 15 May 2020 08:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/advice/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>You Are Pitching Your Ideas the Wrong Way</title>
+            <link>https://preslav.me/2020/05/15/youre-pitching-it-wrong/</link>
+            <pubDate>Fri, 15 May 2020 08:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/05/15/youre-pitching-it-wrong/</guid>
+            <description>Stop pitching and start asking the right questions instead.</description>
+            <content type="html"><![CDATA[
+
+<p>What is wrong with the following question:</p>
+
+<blockquote>
+<p><em>If there were a better Zoom alternative, would you use it?</em></p>
+</blockquote>
+
+<p>Nothing, besides the fact that it won&rsquo;t give you any valuable information. It might, in fact give you false hope, and send you on a downward spiral building the wrong thing.</p>
+
+<p>But why do people still pitch their ideas like that?</p>
+
+<p>When pitching an idea, we intrinsically look for confirmation from others. We would do anything to make someone say &ldquo;yes&rdquo; or &ldquo;it&rsquo;s cool&rdquo;, or promise that they would use it. The others feel it, and will do anything on their turn to not let our hopes down. Even when it comes to lying to us. Chances are, 9 out of 10 times, people would answer the question above with a &ldquo;yes&rdquo;. I mean, no product is perfect. Who wouldn&rsquo;t want a better alternative? Since we&rsquo;re already working on it anyway&hellip;</p>
+
+<p>Wrong! The fact that someone said they would use a product does not mean that they will. Reality suggests that they most probably won&rsquo;t. You won&rsquo;t get a real answer from anybody, unless you <strong>get to know what their real pains are</strong>.</p>
+
+<h1 id="what-to-ask-for-when-pitching">What to ask for, when pitching?</h1>
+
+<p>First of all, don&rsquo;t pitch. If you start overly excited from the start, you will predispose the other side to lie to you. Don&rsquo;t ask questions like the one above. Instead, make the other side think, by offering them a trade-off. No product or service in the world is perfect, and yours won&rsquo;t be, either. Be honest, and focus instead on the unique selling advantage you can offer. To figure out what really matters to a potential customer, ask a question which requires a certain sacrifice. If instead of the question above, I had formulated the question like this:</p>
+
+<blockquote>
+<p><em>Which quality do you value the most in a video chat/conferencing app?</em></p>
+
+<ul>
+<li><em>ease of use</em></li>
+<li><em>security and privacy</em></li>
+<li><em>quality of the signal</em></li>
+</ul>
+</blockquote>
+
+<p>people answering would:
+- have a difficult time figuring out that I am trying to pitch them something. As a consequence of that, they wouldn&rsquo;t feel &ldquo;obliged&rdquo; to answer in a way that would make me feel satisfied.</p>
+
+<ul>
+<li>In a zero-sum-game, choosing one option
+over another means having to make a sacrifice. No one likes to lose, so they will be extra careful making a choice that means losing the least. Such answers are usually the most honest.</li>
+</ul>
+
+<p>To sum it up: when asking questions, avoid the ones with obvious answers. If you think that an answer will be given by the vast majority of people you ask, change the question. When in doubt, paraphrase the question in a way that any of the answers would mean giving up on something valuable.</p>
+
+<h1 id="origins">Origins</h1>
+
+<p>I didn&rsquo;t come up with this idea entirely on my own. I spent a few years asking people the wrong questions, before I discovered Rob Fitzpatrick&rsquo;s book, <a href="https://amzn.to/3bwWVAp"><em>The Mom Test</em></a>. It opened my eyes to a whole new world of ways for getting valuable information from potential customers.</p>
+
+<p>I can recommend this book to everyone, not just the people planning on launching their own product or service. You can <a href="https://amzn.to/3bwWVAp">buy Rob&rsquo;s book on Amazon</a>, and help support my humble writing efforts.</p>
+
+<hr />
+
+
+
+
+
+
+<style scoped>
+  @media (max-width: 640px) {
+    .embed-image {
+      min-width: 100%;
+    }
+  }
+</style>
+<div
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566473431l/52283963._SX1200_SY630_.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.goodreads.com/book/show/52283963-the-mom-test">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        The Mom Test</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. 
+  
+They say you shouldn&#39;t ask your mom wh...</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.goodreads.com/book/show/52283963-the-mom-test">https://www.goodreads.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://noembed.preslav.me/">NoEmbed</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
         
         <item>
             <title>Good Code is Boring</title>
