@@ -29,11 +29,10 @@ First of all, don't pitch. If you start overly excited from the start, you will 
 > - *security and privacy*
 > - *quality of the signal*
 
-people answering would:
-- have a difficult time figuring out that I am trying to pitch them something. As a consequence of that, they wouldn't feel "obliged" to answer in a way that would make me feel satisfied.
+Two things would happen:
 
-- In a zero-sum-game, choosing one option
-over another means having to make a sacrifice. No one likes to lose, so they will be extra careful making a choice that means losing the least. Such answers are usually the most honest.
+- People answering would have a difficult time figuring out that I am trying to pitch them something. As a consequence of that, they wouldn't feel "obliged" to answer in a way that would make me feel satisfied.
+- In a zero-sum-game, choosing one option over another means having to make a sacrifice. No one likes to lose, so they will be extra careful making a choice that means losing the least. Such answers are usually the most honest.
 
 To sum it up: when asking questions, avoid the ones with obvious answers. If you think that an answer will be given by the vast majority of people you ask, change the question. When in doubt, paraphrase the question in a way that any of the answers would mean giving up on something valuable.
 
