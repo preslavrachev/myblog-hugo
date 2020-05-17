@@ -3,14 +3,15 @@
 {{ $defaultThumb := "https://source.unsplash.com/200x200/?nature,water" }}
 
 
-<style scoped>
+{{/*  NOTE: This style must be present in the app's stylesheet residing in the head  */}}
+{{/*  <style scoped>
   @media (max-width: 640px) {
     .embed-image {
       min-width: 100%;
     }
   }
-</style>
-<div
+</style>  */}}
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   {{ if $dataJ.thumbnail_url}}
@@ -37,7 +38,7 @@
       <div style="float:left; max-width:80%"><a
           href="{{ $url }}">{{ $dataJ.provider_url }} | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

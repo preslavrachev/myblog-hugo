@@ -1,19 +1,24 @@
 div.label {
-    color: #ffffff;
-    font-size: 50%;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-    background-color: #c5456d;
-    opacity: 60%;
-    padding: 0.1rem;
-    padding-left: 0.2rem;
-    margin-top: 0.2rem;
-    border-radius: 4px;
+  color: #ffffff;
+  font-size: 50%;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: #c5456d;
+  opacity: 60%;
+  padding: 0.1rem;
+  padding-left: 0.2rem;
+  margin-top: 0.2rem;
+  border-radius: 4px;
 }
 
-.resp-sharing-button__link,
-.resp-sharing-button__icon {
+@media (max-width: 640px) {
+  .embed .embed-image {
+    min-width: 100%;
+  }
+}
+
+.resp-sharing-button__link, .resp-sharing-button__icon {
   display: inline-block
 }
 
@@ -27,7 +32,7 @@ div.label {
   border-radius: 5px;
   transition: 25ms ease-out;
   padding: 0.5em 0.75em;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
 .resp-sharing-button__icon svg {
@@ -42,15 +47,18 @@ div.label {
   vertical-align: middle
 }
 
+
 /* Non solid icons get a stroke */
+
 .resp-sharing-button__icon {
   stroke: #fff;
   fill: none
 }
 
+
 /* Solid icons get a fill */
-.resp-sharing-button__icon--solid,
-.resp-sharing-button__icon--solidcircle {
+
+.resp-sharing-button__icon--solid, .resp-sharing-button__icon--solidcircle {
   fill: #fff;
   stroke: none
 }
@@ -136,9 +144,12 @@ div.label {
 }
 
 .resp-sharing-button--hackernews {
-background-color: #FF6600
+  background-color: #FF6600
 }
-.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {
+  background-color: #FB6200
+}
 
 .resp-sharing-button--vk {
   background-color: #507299
@@ -153,8 +164,7 @@ background-color: #FF6600
   border-color: #55acee;
 }
 
-.resp-sharing-button--twitter:hover,
-.resp-sharing-button--twitter:active {
+.resp-sharing-button--twitter:hover, .resp-sharing-button--twitter:active {
   background-color: #2795e9;
   border-color: #2795e9;
 }
