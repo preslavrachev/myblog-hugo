@@ -16,7 +16,7 @@
             <guid>https://preslav.me/microblog/201906081458/</guid>
             <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
-   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
+    329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with Linqable    </description>
             <content type="html"><![CDATA[<blockquote>
 <p>Q: Aesthetically, what do you think about the design of the new grater?</p>
 
@@ -32,14 +32,9 @@ A: It has been optimized for softer cheeses 😂
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -60,7 +55,7 @@ A: It has been optimized for softer cheeses 😂
       <div style="float:left; max-width:80%"><a
           href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

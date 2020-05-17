@@ -32,14 +32,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -60,7 +55,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">https://www.macobserver.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -76,7 +71,7 @@
             <description>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way.</description>
             <content type="html"><![CDATA[<p>Buying the wrong product happens all the time, and apps make no exception to that. Although it does not apply to every country, if you live within the EU, you have the right to ask for a full refund of your purchases, no strings attached. You can do that with apps you have bought from the App Store too, without having to provide an explanation. It is actually very easy, though providers try to put a few stones on the way. In the case of the App Store, I don’t think you can really do it from the app itself. You have to go to a special site instead:</p>
 
-<p><a href="reportaproblem.apple.com">https://reportaproblem.apple.com</a></p>
+<p><a href="https://reportaproblem.apple.com">https://reportaproblem.apple.com</a></p>
 
 <p>After signing in, you will see all the apps you have downloaded for free or purchased. Find the one you want to refund (assuming, you are within 14 days of the purchase). Click on “Report a Problem” (I know, you are actually exercising your rights, but just keep playing the game). Be careful to select the right option from the menu:</p>
 
@@ -141,14 +136,9 @@ It mainly boils down to how memory garbage gets collected on each platform. iOS 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -169,7 +159,7 @@ It mainly boils down to how memory garbage gets collected on each platform. iOS 
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Broken_windows_theory">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -202,7 +192,7 @@ It mainly boils down to how memory garbage gets collected on each platform. iOS 
             <guid>https://preslav.me/microblog/201906081458/</guid>
             <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
-   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
+    329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with Linqable    </description>
             <content type="html"><![CDATA[<blockquote>
 <p>Q: Aesthetically, what do you think about the design of the new grater?</p>
 
@@ -218,14 +208,9 @@ A: It has been optimized for softer cheeses 😂
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -246,7 +231,7 @@ A: It has been optimized for softer cheeses 😂
       <div style="float:left; max-width:80%"><a
           href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

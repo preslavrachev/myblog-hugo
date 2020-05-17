@@ -20,14 +20,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -48,7 +43,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/">https://www.theatlantic.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -91,14 +86,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -119,7 +109,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/35051753-developer-hegemony">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -155,14 +145,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -185,7 +170,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://queue.acm.org/detail.cfm?id=3197520">https://queue.acm.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -288,20 +273,15 @@
             <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
-            <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</description>
+            <description>Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with Linqable    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time. It is thus good to see other people standing on the same side of the bridge:</description>
             <content type="html"><![CDATA[
 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -324,7 +304,7 @@
       <div style="float:left; max-width:80%"><a
           href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">http://www.craigkerstiens.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

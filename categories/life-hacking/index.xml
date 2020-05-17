@@ -110,14 +110,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -140,7 +135,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://twitter.com/search?src=typd&amp;amp;q=list%3Apreslavrachev%2Fios-macos-developers%20exclude%3Aretweets%20exclude%3Areplies%20min_retweets%3A10%20filter%3Alinks%20swift%20OR%20apple%20OR%20iOS%20OR%20objC">https://twitter.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -157,14 +152,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -187,7 +177,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://twitter.com/search?src=typd&amp;amp;q=bitcoin%20filter%3Anews%20-filter%3Aquotes%20filter%3Averified%20-filter%3Ahashtags%20lang%3Ade">https://twitter.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -199,14 +189,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -227,7 +212,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.labnol.org/internet/twitter-search-tricks/13693/">https://www.labnol.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

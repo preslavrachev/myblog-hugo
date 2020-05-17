@@ -28,14 +28,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -56,7 +51,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/35051753-developer-hegemony">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -87,14 +82,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -115,7 +105,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.macobserver.com/columns-opinions/editorial/postpone-macos-10-16-till-2021">https://www.macobserver.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -129,7 +119,7 @@
             
             <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
             <description>Here is a quote from:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with NoEmbed     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
+ The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with Linqable     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
             <content type="html"><![CDATA[<p>Here is a quote from:</p>
 
 
@@ -137,14 +127,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -165,7 +150,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">https://www.theatlantic.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -185,7 +170,7 @@
             <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
  Excerpt From Programming Phoenix by Chris McCord
 Buy on Amazon
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
+ Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”</p>
 </blockquote>
@@ -201,14 +186,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -229,7 +209,7 @@ Buy on Amazon
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/26871792-programming-phoenix">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -265,14 +245,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -295,7 +270,7 @@ Buy on Amazon
       <div style="float:left; max-width:80%"><a
           href="https://queue.acm.org/detail.cfm?id=3197520">https://queue.acm.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -309,7 +284,7 @@ Buy on Amazon
             
             <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
             <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
- @media (max-width: 640px) { .</description>
+  Ten Years of Erlang  For my ten years in the Erlang community, I decided to cover a few topics such as hype phases and how this related to Erlang, the ladder of ideas within the language and how that can impact adoption, what changed in my decade there, and what I think Erlang still has to bring to the programming community at large.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.</p>
 </blockquote>
@@ -319,14 +294,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -347,7 +317,7 @@ Buy on Amazon
       <div style="float:left; max-width:80%"><a
           href="https://ferd.ca/ten-years-of-erlang.html">https://ferd.ca | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -362,7 +332,7 @@ Buy on Amazon
             <guid>https://preslav.me/microblog/201906251911/</guid>
             <description>A quote from the book &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
  That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the .</description>
+  Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the ... https://www.goodreads.com |  Created with Linqable    </description>
             <content type="html"><![CDATA[<p>A quote from the book <a href="https://amzn.to/2FxKWoX"><em>&ldquo;Adults in the Room&rdquo;</em></a> by Yanis Varoufakis</p>
 
 <blockquote>
@@ -374,14 +344,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -402,7 +367,7 @@ Buy on Amazon
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/34673467-adults-in-the-room">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -418,7 +383,7 @@ Buy on Amazon
             <description>I happen to know and have worked together with Dom. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:
  Don’t question whether something is advanced enough to share it. Don’t worry if that knowledge already exists on the internet. The only question you need to ask yourself is this:
 What do I know?
- @media (max-width: 640px) { .</description>
+  What do I know?</description>
             <content type="html"><![CDATA[<p>I happen to know and have worked together with <a href="https://islovely.co">Dom</a>. A really inspiring person, and one, whose opinions I often share. Particularly, this one on writing and sharing your knowdledge with the world:</p>
 
 <blockquote>
@@ -432,14 +397,9 @@ What do I know?
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -462,7 +422,7 @@ What do I know?
       <div style="float:left; max-width:80%"><a
           href="https://islovely.co/posts/what-do-i-know/">https://islovely.co | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -476,7 +436,7 @@ What do I know?
             
             <guid>https://preslav.me/2018/10/30/quote-the-dying-art-of-disagreement/</guid>
             <description>Here is a quote from:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Opinion | The Dying Art of Disagreement  Today’s clashes may hoarsen our voices, but they rarely sharpen our thinking, much less change our minds. https://www.nytimes.com |  Created with NoEmbed     Intelligent disagreement is the lifeblood of any thriving society. Yet we in the United States are raising a younger generation who have never been taught either the how or the why of disagreement, and who seem to think that free speech is a one-way right: Namely, their right to disinvite, shout down or abuse anyone they dislike, lest they run the risk of listening to that person — or even allowing someone else to listen.</description>
+ Opinion | The Dying Art of Disagreement  Today’s clashes may hoarsen our voices, but they rarely sharpen our thinking, much less change our minds. https://www.nytimes.com |  Created with Linqable     Intelligent disagreement is the lifeblood of any thriving society. Yet we in the United States are raising a younger generation who have never been taught either the how or the why of disagreement, and who seem to think that free speech is a one-way right: Namely, their right to disinvite, shout down or abuse anyone they dislike, lest they run the risk of listening to that person — or even allowing someone else to listen.</description>
             <content type="html"><![CDATA[<p>Here is a quote from:</p>
 
 
@@ -484,14 +444,9 @@ What do I know?
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -512,7 +467,7 @@ What do I know?
       <div style="float:left; max-width:80%"><a
           href="https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html">https://www.nytimes.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -543,14 +498,9 @@ This result has implications. If this research does turn out to be the way forwa
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -571,7 +521,7 @@ This result has implications. If this research does turn out to be the way forwa
       <div style="float:left; max-width:80%"><a
           href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">https://arstechnica.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -585,7 +535,7 @@ This result has implications. If this research does turn out to be the way forwa
             
             <guid>https://preslav.me/2017/02/28/quote-three-ways-to-better-understand-your-emotions/</guid>
             <description>Here is a quote from:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   3 Ways to Better Understand Your Emotions  Naming them is an important first step. https://hbr.org |  Created with NoEmbed     Anger and stress are two of the emotions we see most in the workplace — or at least those are the terms we use for them most frequently. Yet they are often masks for deeper feelings that we could and should describe in more nuanced and precise ways, so that we develop greater levels of emotional agility, a critical capability that enables us to interact more successfully with ourselves and the world</description>
+ 3 Ways to Better Understand Your Emotions  Naming them is an important first step. https://hbr.org |  Created with Linqable     Anger and stress are two of the emotions we see most in the workplace — or at least those are the terms we use for them most frequently. Yet they are often masks for deeper feelings that we could and should describe in more nuanced and precise ways, so that we develop greater levels of emotional agility, a critical capability that enables us to interact more successfully with ourselves and the world</description>
             <content type="html"><![CDATA[<p>Here is a quote from:</p>
 
 
@@ -593,14 +543,9 @@ This result has implications. If this research does turn out to be the way forwa
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -621,7 +566,7 @@ This result has implications. If this research does turn out to be the way forwa
       <div style="float:left; max-width:80%"><a
           href="https://hbr.org/2016/11/3-ways-to-better-understand-your-emotions">https://hbr.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

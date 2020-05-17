@@ -34,14 +34,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -64,7 +59,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://macwright.org/2020/05/10/spa-fatigue.html">https://macwright.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -120,14 +115,9 @@ module.exports = { devServer: { proxy: { &amp;quot;/&amp;quot;: { target: &amp;q
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -148,7 +138,7 @@ module.exports = { devServer: { proxy: { &amp;quot;/&amp;quot;: { target: &amp;q
       <div style="float:left; max-width:80%"><a
           href="https://github.com/vuejs/vue-cli/issues/2662#issuecomment-480134044">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

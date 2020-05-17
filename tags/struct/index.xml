@@ -60,14 +60,9 @@ struct { b int32 c string d string a bool }  Why is that? Well, think of memory 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -93,7 +88,7 @@ require basic knowledge of the C programming language.</div>
       <div style="float:left; max-width:80%"><a
           href="http://www.catb.org/esr/structure-packing/">http://www.catb.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

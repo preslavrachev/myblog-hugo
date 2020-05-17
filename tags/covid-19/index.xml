@@ -15,7 +15,7 @@
             
             <guid>https://preslav.me/2020/03/30/quote-the-president-is-trapped/</guid>
             <description>Here is a quote from:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with NoEmbed     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
+ The President Is Trapped  Trump is utterly unsuited to deal with this crisis, either intellectually or temperamentally. https://www.theatlantic.com |  Created with Linqable     The president will try to blame someone else—but in this case the “someone else” is a virus, not a Mexican immigrant or a reporter with a disability, not a Muslim or a Clinton, not a dead war hero or a family of a fallen soldier, not a special counsel or an NFL player who kneels for the national anthem.</description>
             <content type="html"><![CDATA[<p>Here is a quote from:</p>
 
 
@@ -23,14 +23,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -51,7 +46,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.theatlantic.com/ideas/archive/2020/03/presidents-character-unequal-task/608743/">https://www.theatlantic.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -202,14 +197,9 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -230,7 +220,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -240,14 +230,9 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -268,7 +253,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <div style="float:left; max-width:80%"><a
           href="https://staythefuckhome.com/">https://staythefuckhome.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

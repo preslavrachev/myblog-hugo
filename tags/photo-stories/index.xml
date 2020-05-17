@@ -127,14 +127,9 @@ This time was different. My wife and I flew for the wedding of one of our best f
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -155,7 +150,7 @@ This time was different. My wife and I flew for the wedding of one of our best f
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Trams_in_Sofia">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

@@ -28,14 +28,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -56,7 +51,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@awilkinson/howard-stern-is-getting-ripped-off-1b721cc2f3f2">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -74,14 +69,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -107,7 +97,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://apps.apple.com/us/app/autosleep-track-sleep-on-watch/id1164801111">https://apps.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -121,14 +111,9 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -149,7 +134,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://flowapp.info/">https://flowapp.info | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -165,14 +150,9 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -193,7 +173,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://gohugo.io/content-management/summaries/#front-matter-summary">https://gohugo.io | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -220,14 +200,9 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -248,7 +223,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://github.com/goulinkh/podcast-cli">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -257,14 +232,9 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -289,7 +259,7 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
       <div style="float:left; max-width:80%"><a
           href="https://apps.apple.com/app/data-jar/id1453273600">https://apps.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div></p>
@@ -305,14 +275,9 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -333,7 +298,7 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
       <div style="float:left; max-width:80%"><a
           href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">https://podcasts.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -376,14 +341,9 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -408,7 +368,7 @@ should be selected and how the query is formed.</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">https://www.elastic.co | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -486,14 +446,9 @@ should be selected and how the query is formed.</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -517,7 +472,7 @@ should be selected and how the query is formed.</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.npr.org/2019/08/02/747660923/shopify-tobias-l-tke">https://choice.npr.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -536,7 +491,7 @@ should be selected and how the query is formed.</div>
             <guid>https://preslav.me/microblog/201906081458/</guid>
             <description> Q: Aesthetically, what do you think about the design of the new grater?
 A: It has been optimized for softer cheeses 😂
-   @media (max-width: 640px) { .embed-image { min-width: 100%; } }   329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with NoEmbed    </description>
+    329: Mac Pro Day — Accidental Tech Podcast — Overcast  Our live show from WWDC 2019! https://overcast.fm |  Created with Linqable    </description>
             <content type="html"><![CDATA[<blockquote>
 <p>Q: Aesthetically, what do you think about the design of the new grater?</p>
 
@@ -552,14 +507,9 @@ A: It has been optimized for softer cheeses 😂
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -580,7 +530,7 @@ A: It has been optimized for softer cheeses 😂
       <div style="float:left; max-width:80%"><a
           href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

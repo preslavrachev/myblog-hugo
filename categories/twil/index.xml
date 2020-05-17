@@ -28,14 +28,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -56,7 +51,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@awilkinson/howard-stern-is-getting-ripped-off-1b721cc2f3f2">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -74,14 +69,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -107,7 +97,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://apps.apple.com/us/app/autosleep-track-sleep-on-watch/id1164801111">https://apps.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -121,14 +111,9 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -149,7 +134,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://flowapp.info/">https://flowapp.info | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -165,14 +150,9 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -193,7 +173,7 @@ Ask your &#34;free&#34; sleep app if they can say the sam…</div>
       <div style="float:left; max-width:80%"><a
           href="https://gohugo.io/content-management/summaries/#front-matter-summary">https://gohugo.io | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

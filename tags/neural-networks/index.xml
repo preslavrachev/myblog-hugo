@@ -28,14 +28,9 @@ This result has implications. If this research does turn out to be the way forwa
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -56,7 +51,7 @@ This result has implications. If this research does turn out to be the way forwa
       <div style="float:left; max-width:80%"><a
           href="https://arstechnica.com/science/2017/03/plastic-synapses-offer-hardware-alternative-to-neural-networks/">https://arstechnica.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

@@ -67,14 +67,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -97,7 +92,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/52283963-the-mom-test">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -124,14 +119,9 @@ They say you shouldn&#39;t ask your mom wh...</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -152,7 +142,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/35051753-developer-hegemony">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -168,7 +158,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
             <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
  Excerpt From Programming Phoenix by Chris McCord
 Buy on Amazon
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
+ Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”</p>
 </blockquote>
@@ -184,14 +174,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -212,7 +197,7 @@ Buy on Amazon
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/26871792-programming-phoenix">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -227,7 +212,7 @@ Buy on Amazon
             <guid>https://preslav.me/microblog/201909021700/</guid>
             <description>A quote from &amp;ldquo;The Mom Test&amp;rdquo; by Rob Fitzpatrick
  It’s not anyone else’s responsibility to show us the truth. It’s our responsibility to find it.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Mom Test  The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&amp;#39;t ask your mom wh... https://www.goodreads.com |  Created with NoEmbed    </description>
+  The Mom Test  The Mom Test is a quick, practical guide that will save you time, money, and heartbreak. They say you shouldn&amp;#39;t ask your mom wh... https://www.goodreads.com |  Created with Linqable    </description>
             <content type="html"><![CDATA[<p>A quote from <a href="https://amzn.to/2ZTznQp">&ldquo;The Mom Test&rdquo;</a> by Rob Fitzpatrick</p>
 
 <blockquote>
@@ -239,14 +224,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -269,7 +249,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/47883410">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -295,14 +275,9 @@ They say you shouldn&#39;t ask your mom wh...</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -323,7 +298,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/17333428-without-their-permission">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -338,7 +313,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
             <guid>https://preslav.me/microblog/201906251911/</guid>
             <description>A quote from the book &amp;ldquo;Adults in the Room&amp;rdquo; by Yanis Varoufakis
  That which feels to many like a conspiracy of the powerful is simply the emergent property of any network of super black boxes.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the .</description>
+  Adults in the Room  What happens when you take on the establishment? In this blistering, personal account, world-famous economist Yanis Varoufakis blows the ... https://www.goodreads.com |  Created with Linqable    </description>
             <content type="html"><![CDATA[<p>A quote from the book <a href="https://amzn.to/2FxKWoX"><em>&ldquo;Adults in the Room&rdquo;</em></a> by Yanis Varoufakis</p>
 
 <blockquote>
@@ -350,14 +325,9 @@ They say you shouldn&#39;t ask your mom wh...</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -378,7 +348,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/34673467-adults-in-the-room">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -393,7 +363,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
             <guid>https://preslav.me/microblog/201906231845/</guid>
             <description>A quote from &amp;ldquo;The Three-Body Problem&amp;rdquo;:
  &amp;ldquo;The universe is a hollow sphere floating in the middle of sea of fire. There are numerous tiny holes in the surface of the sphere, as well as a large one. The tiny ones are the stars, and the large one is the sun.&amp;rdquo;
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   The Three-Body Problem (Remembrance of Earth’s Past #1)  The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
+  The Three-Body Problem (Remembrance of Earth’s Past #1)  The Three-Body Problem is the first chance for English-speaking readers to experience this multiple award winning phenomenon from China&amp;#39;s.</description>
             <content type="html"><![CDATA[<p>A quote from <a href="https://amzn.to/2X2gFJu"><em>&ldquo;The Three-Body Problem&rdquo;</em></a>:</p>
 
 <blockquote>
@@ -405,14 +375,9 @@ They say you shouldn&#39;t ask your mom wh...</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -433,7 +398,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/20518872-the-three-body-problem">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -459,14 +424,9 @@ They say you shouldn&#39;t ask your mom wh...</div>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -487,7 +447,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/17333428-without-their-permission">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -503,7 +463,7 @@ They say you shouldn&#39;t ask your mom wh...</div>
             <description>Opportunities are whispers, not foghorns.
 If we can&amp;rsquo;t hear their soft rhythms - if we are to busy rushing about, waiting for thunderclaps of revelation, inspiration, and certainty - or if we can spot them but can&amp;rsquo;t nurture them into real advantages, then we might as well be blind to them.
  From the book &amp;ldquo;Nikola Tesla: Imagination and the Man That Invented the 20th Century&amp;rdquo;
-@media (max-width: 640px) { .</description>
+ Nikola Tesla  If you want to learn about one of history’s most fascinating minds and uncover some of his secrets of imagination—secrets that enabled hi.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>Opportunities are whispers, not foghorns.</p>
 
@@ -517,14 +477,9 @@ If we can&amp;rsquo;t hear their soft rhythms - if we are to busy rushing about,
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -545,7 +500,7 @@ If we can&amp;rsquo;t hear their soft rhythms - if we are to busy rushing about,
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/17835351-nikola-tesla">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

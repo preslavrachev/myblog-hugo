@@ -107,14 +107,9 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -135,7 +130,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -145,14 +140,9 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -173,7 +163,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <div style="float:left; max-width:80%"><a
           href="https://staythefuckhome.com/">https://staythefuckhome.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

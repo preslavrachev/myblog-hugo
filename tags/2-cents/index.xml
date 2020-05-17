@@ -34,14 +34,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -64,7 +59,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://macwright.org/2020/05/10/spa-fatigue.html">https://macwright.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -83,14 +78,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -111,7 +101,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/">https://www.theatlantic.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -274,14 +264,9 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -302,7 +287,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -312,14 +297,9 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -340,7 +320,7 @@ Judging by how much people in Munich seem to enjoy the sunny days of spring, I a
       <div style="float:left; max-width:80%"><a
           href="https://staythefuckhome.com/">https://staythefuckhome.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -529,7 +509,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
             
             <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
             <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
+ My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.com |  Created with Linqable    Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line.</description>
             <content type="html"><![CDATA[<p>This is an answer, I wrote in response to a recent blog post by <a href="https://ericasadun.com">Erica Sadun</a>:</p>
 
 
@@ -537,14 +517,9 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -565,7 +540,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
       <div style="float:left; max-width:80%"><a
           href="https://ericasadun.com/2019/11/08/my-enemy-the-minimap/">https://ericasadun.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -581,7 +556,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
             
             <guid>https://preslav.me/microblog/2019102111035/</guid>
             <description>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Dear Startup: You have no idea how much that costs.</description>
+  Dear Startup: You have no idea how much that costs.  The problem http://kyleprifogle.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>Estimates are such a loaded and dangerous endeavor for an engineer. To the point where companies mistakenly talk about estimates like its a “skill” that an engineer can learn. But the reality is that if you can make a probabalistically accurate estimate, then its likely that the task should have been automated by some other means already.</p>
 </blockquote>
@@ -591,14 +566,9 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -619,7 +589,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
       <div style="float:left; max-width:80%"><a
           href="http://kyleprifogle.com/dear-startup/">http://kyleprifogle.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -651,14 +621,9 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -679,7 +644,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Broken_windows_theory">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -715,7 +680,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
             
             <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
             <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
- @media (max-width: 640px) { .</description>
+  Ten Years of Erlang  For my ten years in the Erlang community, I decided to cover a few topics such as hype phases and how this related to Erlang, the ladder of ideas within the language and how that can impact adoption, what changed in my decade there, and what I think Erlang still has to bring to the programming community at large.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.</p>
 </blockquote>
@@ -725,14 +690,9 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -753,7 +713,7 @@ The reason why Bulgaria is so poor has nothing to do with its nature and geograp
       <div style="float:left; max-width:80%"><a
           href="https://ferd.ca/ten-years-of-erlang.html">https://ferd.ca | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -809,14 +769,9 @@ Google: Tricked ya!</description>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -837,7 +792,7 @@ Google: Tricked ya!</description>
       <div style="float:left; max-width:80%"><a
           href="https://threader.app/thread/1127280727475679232">https://threader.app | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -850,20 +805,15 @@ Google: Tricked ya!</description>
             <pubDate>Sat, 23 Mar 2019 05:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/2019/03/23/give-me-back-my-monolith/</guid>
-            <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with NoEmbed    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time.</description>
+            <description>Give me back my monolith  It feels like we’re starting to pass the peak of the hype cycle of microservices. It’s no longer multiple times a week we now see a blog … http://www.craigkerstiens.com |  Created with Linqable    Give Me Back My Monolith by Craig Kerstiens is something I have been ranting about for quite some time. It is thus good to see other people standing on the same side of the bridge:</description>
             <content type="html"><![CDATA[
 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -886,7 +836,7 @@ Google: Tricked ya!</description>
       <div style="float:left; max-width:80%"><a
           href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/">http://www.craigkerstiens.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

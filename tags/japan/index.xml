@@ -15,7 +15,7 @@
             
             <guid>https://preslav.me/microblog/201830111824/</guid>
             <description>Japanese websites don&amp;rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   Why doesn’t Japan excel in software as they did in hardware?</description>
+  Why doesn’t Japan excel in software as they did in hardware?  Ah… Finally.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>Japanese websites don&rsquo;t look like trash because the designers wanted to do this. They look this way because the Japanese audiences like this. They like the huge and distracting flashing banners. They like the overwhelming amount of text. They like what you and I might call crass and unpolished advertising masquerading as website content.</p>
 </blockquote>
@@ -25,14 +25,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -55,7 +50,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://www.quora.com/Why-doesn-t-Japan-excel-in-software-as-they-did-in-hardware">https://www.quora.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

@@ -34,14 +34,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -64,7 +59,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://macwright.org/2020/05/10/spa-fatigue.html">https://macwright.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -280,14 +275,9 @@ func (rm *SynchronizedMap) Store(key string, value interface{}) {
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -308,7 +298,7 @@ func (rm *SynchronizedMap) Store(key string, value interface{}) {
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -377,14 +367,9 @@ cc = &quot;!git code-changes&quot;
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -405,7 +390,7 @@ cc = &quot;!git code-changes&quot;
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/23627482-your-code-as-a-crime-scene">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -414,14 +399,9 @@ cc = &quot;!git code-changes&quot;
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -442,7 +422,7 @@ cc = &quot;!git code-changes&quot;
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/36517037-software-design-x-rays">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div></p>
@@ -466,14 +446,9 @@ During development, I&rsquo;d try to keep one module called <code>Demo</code>, o
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -494,7 +469,7 @@ During development, I&rsquo;d try to keep one module called <code>Demo</code>, o
       <div style="float:left; max-width:80%"><a
           href="https://blog.echobind.com/tips-and-tricks-for-iex-161d0049cfcd">https://blog.echobind.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -549,14 +524,9 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -577,7 +547,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -608,7 +578,7 @@ But why Elixir and why just now? There are a few reasons. Actually, this is not 
             <description>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”
  Excerpt From Programming Phoenix by Chris McCord
 Buy on Amazon
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
+ Programming Phoenix  Don’t accept the compromise between fast and beautiful: you can have it all.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>“You can think of any web server as a function. Each time you type a URL, think of it as a function call to some remote server. That function takes your request and generates some response. A web server is a natural problem for a functional language to solve.”</p>
 </blockquote>
@@ -624,14 +594,9 @@ Buy on Amazon
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -652,7 +617,7 @@ Buy on Amazon
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/26871792-programming-phoenix">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -752,14 +717,9 @@ puts &quot;After receive&quot;
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -782,7 +742,7 @@ puts &quot;After receive&quot;
       <div style="float:left; max-width:80%"><a
           href="https://queue.acm.org/detail.cfm?id=3197520">https://queue.acm.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -900,14 +860,9 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -928,7 +883,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       <div style="float:left; max-width:80%"><a
           href="https://github.com/rogpeppe/gohack">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -956,7 +911,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
             <guid>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</guid>
             <description>You need to explicitly set the beta version of Xcode as your default one via the command line:
 sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/  Afterwards, getting your app to run via flutter run should work as it used to before.
-Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } }   select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed.</description>
+Related Resources  select - Managing Multiple Versions Of Xcode  It&amp;#39;s not uncommon developers to have multiple versions of Xcode installed. For example, I typically have the latest beta as well as the most current http://iosdevelopertips.</description>
             <content type="html"><![CDATA[
 
 <p>You need to explicitly set the beta version of Xcode as your default one via the command line:</p>
@@ -973,14 +928,9 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1003,7 +953,7 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <div style="float:left; max-width:80%"><a
           href="http://iosdevelopertips.com/xcode/xcode-select-managing-multiple-versions-of-xcode.html">http://iosdevelopertips.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1017,7 +967,7 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
             
             <guid>https://preslav.me/2019/11/10/why-i-still-find-the-minimap-useful/</guid>
             <description>This is an answer, I wrote in response to a recent blog post by Erica Sadun:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.</description>
+ My enemy the Minimap  The minimap is one of Xcode 11’s starring features. I know many people were excited for it at its debut but after months of exposure, I now just disable it in the Adjust Editor Options menu (… https://ericasadun.com |  Created with Linqable    Many people ignore a particular use of the minimap - understanding the complexity of some portion of the code, without having to look at each line.</description>
             <content type="html"><![CDATA[<p>This is an answer, I wrote in response to a recent blog post by <a href="https://ericasadun.com">Erica Sadun</a>:</p>
 
 
@@ -1025,14 +975,9 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1053,7 +998,7 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <div style="float:left; max-width:80%"><a
           href="https://ericasadun.com/2019/11/08/my-enemy-the-minimap/">https://ericasadun.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1084,14 +1029,9 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1114,7 +1054,7 @@ Related Resources @media (max-width: 640px) { .embed-image { min-width: 100%; } 
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1256,7 +1196,7 @@ Thanks to @FlorimondManca for this discovery!</description>
             
             <guid>https://preslav.me/2019/07/10/quote-ten-years-of-erlang/</guid>
             <description>It&amp;rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&amp;rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.
- @media (max-width: 640px) { .</description>
+  Ten Years of Erlang  For my ten years in the Erlang community, I decided to cover a few topics such as hype phases and how this related to Erlang, the ladder of ideas within the language and how that can impact adoption, what changed in my decade there, and what I think Erlang still has to bring to the programming community at large.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>It&rsquo;s probably not too important, in the grand scheme of things, whether you are using a language like Erlang or not. While I do feel it&rsquo;s under-used and under-rated, the biggest benefit of it is not in running a system that uses it. The biggest benefit comes from learning about the fundamentals of solid system design, and internalizing its lessons in a practical context.</p>
 </blockquote>
@@ -1266,14 +1206,9 @@ Thanks to @FlorimondManca for this discovery!</description>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1294,7 +1229,7 @@ Thanks to @FlorimondManca for this discovery!</description>
       <div style="float:left; max-width:80%"><a
           href="https://ferd.ca/ten-years-of-erlang.html">https://ferd.ca | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1308,7 +1243,7 @@ Thanks to @FlorimondManca for this discovery!</description>
             
             <guid>https://preslav.me/microblog/201907022242/</guid>
             <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
+  An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
             <content type="html"><![CDATA[<blockquote>
 <p><em>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. -</em> <a href="https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9"><em>Mark Miller</em></a></p>
 </blockquote>
@@ -1318,14 +1253,9 @@ Thanks to @FlorimondManca for this discovery!</description>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1348,7 +1278,7 @@ Thanks to @FlorimondManca for this discovery!</description>
       <div style="float:left; max-width:80%"><a
           href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">https://www.ardanlabs.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1366,7 +1296,7 @@ Thanks to @FlorimondManca for this discovery!</description>
             
             <guid>https://preslav.me/microblog/201906211000/</guid>
             <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
- @media (max-width: 640px) { .</description>
+  ongoing by Tim Bray · Go Creeping In  I’ve seen the inside of the Google and Amazon tech stacks.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.</p>
 </blockquote>
@@ -1376,14 +1306,9 @@ Thanks to @FlorimondManca for this discovery!</description>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1409,7 +1334,7 @@ the Internet. Except for, here and there, you find a small but steadily increasi
       <div style="float:left; max-width:80%"><a
           href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">https://www.tbray.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

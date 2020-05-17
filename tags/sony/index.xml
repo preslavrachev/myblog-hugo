@@ -28,14 +28,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -56,7 +51,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://github.com/goulinkh/podcast-cli">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -65,14 +60,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -97,7 +87,7 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
       <div style="float:left; max-width:80%"><a
           href="https://apps.apple.com/app/data-jar/id1453273600">https://apps.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div></p>
@@ -113,14 +103,9 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -141,7 +126,7 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
       <div style="float:left; max-width:80%"><a
           href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">https://podcasts.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

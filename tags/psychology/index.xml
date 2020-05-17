@@ -15,7 +15,7 @@
             
             <guid>https://preslav.me/2017/02/28/quote-three-ways-to-better-understand-your-emotions/</guid>
             <description>Here is a quote from:
-@media (max-width: 640px) { .embed-image { min-width: 100%; } }   3 Ways to Better Understand Your Emotions  Naming them is an important first step. https://hbr.org |  Created with NoEmbed     Anger and stress are two of the emotions we see most in the workplace — or at least those are the terms we use for them most frequently. Yet they are often masks for deeper feelings that we could and should describe in more nuanced and precise ways, so that we develop greater levels of emotional agility, a critical capability that enables us to interact more successfully with ourselves and the world</description>
+ 3 Ways to Better Understand Your Emotions  Naming them is an important first step. https://hbr.org |  Created with Linqable     Anger and stress are two of the emotions we see most in the workplace — or at least those are the terms we use for them most frequently. Yet they are often masks for deeper feelings that we could and should describe in more nuanced and precise ways, so that we develop greater levels of emotional agility, a critical capability that enables us to interact more successfully with ourselves and the world</description>
             <content type="html"><![CDATA[<p>Here is a quote from:</p>
 
 
@@ -23,14 +23,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -51,7 +46,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://hbr.org/2016/11/3-ways-to-better-understand-your-emotions">https://hbr.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

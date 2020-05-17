@@ -183,14 +183,9 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -211,7 +206,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       <div style="float:left; max-width:80%"><a
           href="https://github.com/rogpeppe/gohack">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -253,14 +248,9 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -283,7 +273,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -385,14 +375,9 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -413,7 +398,7 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
       <div style="float:left; max-width:80%"><a
           href="https://opencredo.com/blogs/java-go-back/">https://opencredo.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>

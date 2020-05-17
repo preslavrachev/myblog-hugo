@@ -28,14 +28,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -56,7 +51,7 @@
       <div style="float:left; max-width:80%"><a
           href="https://github.com/goulinkh/podcast-cli">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -65,14 +60,9 @@
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -97,7 +87,7 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
       <div style="float:left; max-width:80%"><a
           href="https://apps.apple.com/app/data-jar/id1453273600">https://apps.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div></p>
@@ -113,14 +103,9 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -141,7 +126,7 @@ If you have used dictionaries and lists in Shortcuts, then you’ll find that th
       <div style="float:left; max-width:80%"><a
           href="https://podcasts.apple.com/de/podcast/encore-nintendo-vs-sony-stabbed-in-the-back-1/id1335814741?i=1000464454091&amp;amp;l=en">https://podcasts.apple.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -373,14 +358,9 @@ func (rm *SynchronizedMap) Store(key string, value interface{}) {
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -401,7 +381,7 @@ func (rm *SynchronizedMap) Store(key string, value interface{}) {
       <div style="float:left; max-width:80%"><a
           href="https://www.goodreads.com/book/show/38732242-elixir-in-action">https://www.goodreads.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -585,14 +565,9 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -613,7 +588,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       <div style="float:left; max-width:80%"><a
           href="https://github.com/rogpeppe/gohack">https://github.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -655,14 +630,9 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -685,7 +655,7 @@ One big disadvantage of modules is that one can’t really edit them.</descripti
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -787,14 +757,9 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -815,7 +780,7 @@ Learning Go won’t teach you any exciting new computer science concepts, or int
       <div style="float:left; max-width:80%"><a
           href="https://opencredo.com/blogs/java-go-back/">https://opencredo.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -895,14 +860,9 @@ struct { b int32 c string d string a bool }  Why is that? Well, think of memory 
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -928,7 +888,7 @@ require basic knowledge of the C programming language.</div>
       <div style="float:left; max-width:80%"><a
           href="http://www.catb.org/esr/structure-packing/">http://www.catb.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -972,14 +932,9 @@ On Alpine, this can be done using the default package installer:</description>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1000,7 +955,7 @@ On Alpine, this can be done using the default package installer:</description>
       <div style="float:left; max-width:80%"><a
           href="https://stackoverflow.com/questions/52969195/docker-container-running-golang-http-client-getting-error-certificate-signed-by">https://stackoverflow.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1010,14 +965,9 @@ On Alpine, this can be done using the default package installer:</description>
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1038,7 +988,7 @@ On Alpine, this can be done using the default package installer:</description>
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1153,14 +1103,9 @@ func main() {
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1183,7 +1128,7 @@ func main() {
       <div style="float:left; max-width:80%"><a
           href="https://en.wikipedia.org/wiki/Make_%28software%29">https://en.wikipedia.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1192,14 +1137,9 @@ func main() {
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1220,7 +1160,7 @@ func main() {
       <div style="float:left; max-width:80%"><a
           href="https://blog.alexellis.io/inject-build-time-vars-golang/">https://blog.alexellis.io | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1229,14 +1169,9 @@ func main() {
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1257,7 +1192,7 @@ func main() {
       <div style="float:left; max-width:80%"><a
           href="https://goreleaser.com/">https://goreleaser.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div></p>
@@ -1384,7 +1319,7 @@ In this post, I want to demonstrate the use of functional constructs for impleme
             
             <guid>https://preslav.me/microblog/201907022242/</guid>
             <description>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. - Mark Miller
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
+  An Open Letter To The Go Team About Try  “Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn.</description>
             <content type="html"><![CDATA[<blockquote>
 <p><em>“Once a language gets complex enough, programming in it is more like carving out a subset from an infinite sea of features, most of which we’ll never learn. Once a language feels infinite, the costs of adding further features to it are no longer apparent”. -</em> <a href="https://medium.com/@erights/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9"><em>Mark Miller</em></a></p>
 </blockquote>
@@ -1394,14 +1329,9 @@ In this post, I want to demonstrate the use of functional constructs for impleme
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1424,7 +1354,7 @@ In this post, I want to demonstrate the use of functional constructs for impleme
       <div style="float:left; max-width:80%"><a
           href="https://www.ardanlabs.com/blog/2019/07/an-open-letter-to-the-go-team-about-try.html">https://www.ardanlabs.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1442,7 +1372,7 @@ In this post, I want to demonstrate the use of functional constructs for impleme
             
             <guid>https://preslav.me/microblog/201906211000/</guid>
             <description>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.
- @media (max-width: 640px) { .</description>
+  ongoing by Tim Bray · Go Creeping In  I’ve seen the inside of the Google and Amazon tech stacks.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>It’s amazing — amazing I say — how little generics are missed. To date, Go remains the small, simple language that fogies like me can remember Java being. I suppose that can’t last, but for now, I can pop open almost any .go file and if I can’t understand it pretty quick, the chances are very high that the problem is in the code not me.</p>
 </blockquote>
@@ -1452,14 +1382,9 @@ In this post, I want to demonstrate the use of functional constructs for impleme
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1485,7 +1410,7 @@ the Internet. Except for, here and there, you find a small but steadily increasi
       <div style="float:left; max-width:80%"><a
           href="https://www.tbray.org/ongoing/When/201x/2019/06/12/Go-Creeping-In">https://www.tbray.org | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1498,7 +1423,7 @@ the Internet. Except for, here and there, you find a small but steadily increasi
             <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-            <description>@media (max-width: 640px) { .embed-image { min-width: 100%; } }   NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with NoEmbed    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however?</description>
+            <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with Linqable    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
             <content type="html"><![CDATA[
 
 
@@ -1506,14 +1431,9 @@ the Internet. Except for, here and there, you find a small but steadily increasi
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1534,7 +1454,7 @@ the Internet. Except for, here and there, you find a small but steadily increasi
       <div style="float:left; max-width:80%"><a
           href="https://noembed.preslav.me">https://noembed.preslav.me | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
@@ -1661,7 +1581,7 @@ the Internet. Except for, here and there, you find a small but steadily increasi
             
             <guid>https://preslav.me/microblog/201905011824/</guid>
             <description>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.
- @media (max-width: 640px) { .embed-image { min-width: 100%; } }   My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium  For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a https://medium.</description>
+  My Key Learnings after 30,000 LOC in Rust - Dotan Nahum - Medium  For me, Rust takes a stroll over the memory lane above and picks and drives home the best experiences from all those languages — which is a https://medium.</description>
             <content type="html"><![CDATA[<blockquote>
 <p>I felt that Go strikes the balance of robust systems programming and great performance with almost zero investment, and great developer experience. Some of that old 90’s feel, and a lot of that modern fantastic development practices.</p>
 </blockquote>
@@ -1671,14 +1591,9 @@ the Internet. Except for, here and there, you find a small but steadily increasi
 
 
 
-<style scoped>
-  @media (max-width: 640px) {
-    .embed-image {
-      min-width: 100%;
-    }
-  }
-</style>
-<div
+
+
+<div class="embed"
   style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
 
   
@@ -1699,7 +1614,7 @@ the Internet. Except for, here and there, you find a small but steadily increasi
       <div style="float:left; max-width:80%"><a
           href="https://medium.com/@jondot/my-key-learnings-after-30-000-loc-in-rust-a553e6403c19">https://medium.com | </a></div>
       <div style="float: right">Created with <a
-          href="https://noembed.preslav.me/">NoEmbed</a></div>
+          href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
 </div>
