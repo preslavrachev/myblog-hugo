@@ -1,5 +1,5 @@
 {{ $url := .Get 0 | htmlEscape }}
-{{ $dataJ := printf "https://noembed.preslav.me/embed?url=%s" $url | getJSON }}
+{{ $dataJ := printf "https://noembed.preslav.me/embed?ref=preslav.me&url=%s" $url | getJSON }}
 {{ $defaultThumb := "https://source.unsplash.com/200x200/?nature,water" }}
 
 
