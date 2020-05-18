@@ -5,8 +5,99 @@
         <description>Recent content in Tips on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 01 Mar 2020 17:50:14 +0100</lastBuildDate>
+        <lastBuildDate>Sun, 17 May 2020 22:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Auth0 Struggles: Access A Signed-Up User&#39;s App Metadata </title>
+            <link>https://preslav.me/2020/05/17/auth0-struggles-access-a-signed-up-user-s-app-metadata/</link>
+            <pubDate>Sun, 17 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/05/17/auth0-struggles-access-a-signed-up-user-s-app-metadata/</guid>
+            <description>For quite some time, I have been fighting with Auth0 to get the app metadata I am storing for each user. It wasn&amp;rsquo;t easy, which is why I decided to document my steps.</description>
+            <content type="html"><![CDATA[
+
+<p>For quite some time, I have been fighting with <a href="https://auth0.com/">Auth0</a> to get the app metadata I am storing for each user. For those new to Auth0, app metadata is a convenience object that allows the storing of read-only data for each user (e.g. API keys, which plan they are on, progress within application, etc).</p>
+
+
+
+
+
+
+
+
+<div class="embed"
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.auth0.com/website/homepage/tc/twitter-card-en.png); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://auth0.com">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Auth0: Identity is Complex. Deal with it.</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Rapidly integrate authentication and authorization for web, mobile, and legacy applications so you can focus on your core business.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://auth0.com">https://auth0.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://linqable.pro/">Linqable</a></div>
+    </div>
+  </div>
+</div>
+
+<p>After successfully managing to integrate Auth0 in my current project, I realized that the user profile information available after a user signs up/in, does not contain the app metadata I need. These metadata are only available in <a href="https://auth0.com/docs/users/guides/manage-users-using-the-management-api">Auth0&rsquo;s Management API</a>, i.e. only available with client ID/Secret credentials (and rightly so).</p>
+
+<h1 id="obtain-a-management-api-access-token">Obtain a Management API access token</h1>
+
+<pre><code class="language-bash">curl --request POST \
+  --url https://[YOUR_TENANT].eu.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  -- data '{&quot;client_id&quot;: &quot;YOUR_CLIENT_ID&quot;, &quot;client_secret&quot;: &quot;YOUR_CLIENT_SECRET&quot;, audience: &quot;YOUR_AUDIENCE&quot;, &quot;grant_type&quot;:&quot;client_credentials&quot;}'
+</code></pre>
+
+<p>Audience will likely look like this: <code>https://[YOUR_TENANT].[ZONE, e.g. eu].auth0.com/api/v2</code></p>
+
+<p>if everything is successful, you will receive a response from Auth0, containing an access token:</p>
+
+<pre><code class="language-json">{
+	&quot;access_token&quot;: &quot;abcd1234&quot;,
+	&quot;token_type&quot;: &quot;Bearer&quot;
+} 
+</code></pre>
+
+<p>This is the point to make a pause and say that you might instead get various errors. One very common is this:</p>
+
+<pre><code>Client is not authorized to access \&quot;https://[YOUR_TENANT].eu.auth0.com/api/v2/\&quot;
+</code></pre>
+
+<p>In simple words, this means that your Auth0 application might not have been attached to the Auth0 Management API. To do so, go to <code>APIs &gt; Auth0 Management API &gt; Machine to Machine Applications</code> and see if your application is in the list (add if not), and if the &ldquo;Authorized&rdquo; toggle has been turned on.</p>
+
+<p>While you are there, expand the item of your application in this list, and select the grants that you want to give it. My advice is to be on the safe side and choose the minimal number of grants you need. In my case, this would be <code>read:users</code> only.</p>
+
+<p><img src="/images/2020/05/auth0-permissions.png" alt="" /></p>
+
+<p>If you don&rsquo;t do so, you might end up getting another error, namely:</p>
+
+<pre><code>Client has not been granted scopes: read:users
+</code></pre>
+
+<h1 id="obtaining-the-app-metadata">Obtaining the app metadata</h1>
+
+<p>Once we have obtained our access token, <a href="https://auth0.com/docs/api/management/v2#!/Users/get_users_by_id">getting the app metadata</a> out of the available user information is easy:</p>
+
+<pre><code class="language-bash">curl -H &quot;Authorization: Bearer abcd1234&quot; [https://[YOUR_TENANT].eu.auth0.com/api/v2/users/1234](https://prs.eu.auth0.com/api/v2/users/1234)
+</code></pre>
+
+<p>For reference, <a href="https://auth0.com/docs/api/management/v2#!/Users/get_users_by_id">check out the full Management API Docs</a>.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Use the Git History to Identify Pain Points in Any Project</title>
