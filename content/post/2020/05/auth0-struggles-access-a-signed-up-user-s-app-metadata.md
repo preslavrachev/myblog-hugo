@@ -1,7 +1,7 @@
 +++
 author = "Preslav Rachev"
 categories = []
-date = ""
+date = 2020-05-17T22:00:00Z
 description = ""
 draft = true
 feature_image = ""
