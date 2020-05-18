@@ -26,7 +26,7 @@ curl --request POST \
   -- data '{"client_id": "YOUR_CLIENT_ID", "client_secret": "YOUR_CLIENT_SECRET", audience: "YOUR_AUDIENCE", "grant_type":"client_credentials"}'
 ```
 
-Audience will likely look like this: `https://[YOUR_TENANT].eu.auth0.com/api/v2`
+Audience will likely look like this: `https://[YOUR_TENANT].[ZONE, e.g. eu].auth0.com/api/v2`
 
 if everything is successful, you will receive a response from Auth0, containing an access token:
 
