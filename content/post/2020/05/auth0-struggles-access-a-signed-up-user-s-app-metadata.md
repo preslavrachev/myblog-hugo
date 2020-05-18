@@ -6,7 +6,7 @@ description = ""
 feature_image = "/images/2020/05/jon-moore-bbavss4zqca-unsplash.jpg"
 slug = ""
 summary = ""
-tags = ["Auth0", "Tips", "Programming"]
+tags = ["Tips", "Programming", "API", "Auth0"]
 title = "Auth0 Struggles: Access A Signed-Up User's App Metadata "
 toc = false
 
