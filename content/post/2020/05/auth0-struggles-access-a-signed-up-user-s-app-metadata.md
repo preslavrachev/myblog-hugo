@@ -2,10 +2,10 @@
 author = "Preslav Rachev"
 categories = []
 date = 2020-05-17T22:00:00Z
-description = ""
+description = "For quite some time, I have been fighting with Auth0 to get the app metadata I am storing for each user. It wasn't easy, which is why I decided to document my steps."
 feature_image = "/images/2020/05/jon-moore-bbavss4zqca-unsplash.jpg"
 slug = ""
-summary = ""
+summary = "For quite some time, I have been fighting with Auth0 to get the app metadata I am storing for each user. It wasn't easy, which is why I decided to document my steps."
 tags = ["Tips", "Programming", "API", "Auth0"]
 title = "Auth0 Struggles: Access A Signed-Up User's App Metadata "
 toc = false
