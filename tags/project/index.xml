@@ -66,7 +66,7 @@
       href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        More like this query | Elasticsearch Reference [7.4]</div>
+        More like this query | Elasticsearch Reference [7.7]</div>
     </a>
     <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
       The More Like This Query finds documents that are &#34;like&#34; a given
@@ -181,7 +181,7 @@ if err != nil {
             <pubDate>Thu, 20 Jun 2019 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/2019/06/20/introducing-noembed/</guid>
-            <description>NoEmbed: Create rich URL embeds, even when sites don&amp;#39;t support oEmbed.  NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share https://noembed.preslav.me |  Created with Linqable    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
+            <description>Linqable: ⚡️ fast and engaging link previews  Linqable turns URLs into beautiful and engaging previews. Using a combination of smart extraction techniques, it finds and extracts as much information about the provided URL as possible. https://noembed.preslav.me |  Created with Linqable    A picture is worth a thousand words. Everyone knows that. How about, a preview is worth a thousand links, however? If you have ever written a Medium article, more than certainly, you have tried adding links to videos or other Web pages.</description>
             <content type="html"><![CDATA[
 
 
@@ -196,7 +196,7 @@ if err != nil {
 
   
   <div class="embed-image"
-    style="flex:1; background: url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80); background-size:cover; background-position:center; min-height: 120px">
+    style="flex:1; background: url(https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80); background-size:cover; background-position:center; min-height: 120px">
   </div>
   
 
@@ -204,10 +204,10 @@ if err != nil {
       href="https://noembed.preslav.me">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        NoEmbed: Create rich URL embeds, even when sites don&#39;t support oEmbed.</div>
+        Linqable: ⚡️ fast and engaging link previews</div>
     </a>
     <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      NoEmbed uses performant and state-of-the-art technology to extract website information and present it in a format easy to embed and share</div>
+      Linqable turns URLs into beautiful and engaging previews. Using a combination of smart extraction techniques, it finds and extracts as much information about the provided URL as possible.</div>
     <div class="embed-meta" style="font-size:60%">
       <div style="float:left; max-width:80%"><a
           href="https://noembed.preslav.me">https://noembed.preslav.me | </a></div>
