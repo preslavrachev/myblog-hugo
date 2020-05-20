@@ -29,3 +29,5 @@ To paraphrase Seth Godin again, if you drop a tiny amount of ink into a small en
 One can feel the investor push behind all this. Notion won't be the first, and surely won't be the last company shot goes the growth-for-growth's-sake path. It's a bullet-proof way to getting even more and more investor money, and eventually, getting bought by someone big out of FOMO. It's certainly a viable business model nowadays.
 
 I'm just not sure I like it.
+
+{{<oembed "https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html">}}
