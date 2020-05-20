@@ -5,8 +5,103 @@
         <description>Recent content in Posts on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 17 May 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 19 May 2020 22:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/post/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>On Notion Going the Growth Path. Not Sure I Like It</title>
+            <link>https://preslav.me/2020/05/19/on-notion-going-the-growth-path.not-sure-i-like-it/</link>
+            <pubDate>Tue, 19 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2020/05/19/on-notion-going-the-growth-path.not-sure-i-like-it/</guid>
+            <description>Diluting the market proposition might push loyal customers away. Though, who cares about paying customers anyway?</description>
+            <content type="html"><![CDATA[
+
+<p>In his brilliant book <a href="https://amzn.to/2TktniU">&ldquo;This is Marketing&rdquo;</a>, author Seth Godin goes a long way explaining the importance of &ldquo;finding your minimal viable audience&rdquo;. A few people that one&rsquo;s product or service can introduce a significant change for. The only ones that deserve one&rsquo;s focus and attention.</p>
+
+<p>This morning, I woke up to the news that Notion is going to drop the only restriction that distinguished its free from its paid plan. There will no longer be a limit of 1000 items in the free plan, essentially, opening up the gates to a swath of new users, who&rsquo;d stay on the free plan forever.</p>
+
+
+
+
+
+
+
+
+<div class="embed"
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://cdn.vox-cdn.com/thumbor/WPv4CnkymQu3FasH1pKERKljWio=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/12744713/akrales_180824_2908_0071.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.theverge.com/2020/5/19/21261811/note-taking-app-notion-free-plan-personal-use-unlimited-blocks">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Notion just removed the biggest limit on its free plan</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      There’s never been a better time to check out the collaborative note-taking app. You can now create unlimited notes for free.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.theverge.com/2020/5/19/21261811/note-taking-app-notion-free-plan-personal-use-unlimited-blocks">https://www.theverge.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://linqable.pro/">Linqable</a></div>
+    </div>
+  </div>
+</div>
+
+<p>While such announcements are usually accepted as a positive thing, I am very sceptical about my future using Notion. Making the basic functionality free for unlimited use will bring unnecessary technical and managerial burden, with little return on the profit margin. Previously, the free version&rsquo;s limitation was some sort of hook that turned users into paying customers. Now, free users won&rsquo;t have skin in the game anymore.</p>
+
+<h1 id="you-can-t-appeal-to-everyone">You can&rsquo;t appeal to everyone</h1>
+
+<p>To paraphrase Seth Godin again, if you drop a tiny amount of ink into a small enough water pond, you will get it to change its color. Drop the same amount of ink in the ocean, and you will see no difference. The same applies when trying to appeal to your paying customers the same way as you do for your free users. Ultimately, it will dilute your market proposition so much that your paying customers won&rsquo;t feel a compelling need to stay on the paid plan anymore. Perhaps, many might switch to a competitor who makes them feel as if they are a part of the minimal viable audience that Seth Godin talks about.</p>
+
+<h1 id="who-cares-about-paying-customers-anyway">Who cares about paying customers anyway?</h1>
+
+<p>One can feel the investor push behind all this. Notion won&rsquo;t be the first, and surely won&rsquo;t be the last company shot goes the growth-for-growth&rsquo;s-sake path. It&rsquo;s a bullet-proof way to getting even more and more investor money, and eventually, getting bought by someone big out of FOMO. It&rsquo;s certainly a viable business model nowadays.</p>
+
+<p>I&rsquo;m just not sure I like it.</p>
+
+<hr />
+
+
+
+
+
+
+
+
+<div class="embed"
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://static01.nyt.com/images/2020/03/06/business/00notion1/00notion1-facebookJumbo.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Notion, Maker of Collaboration Software, Raises $50 Million</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      While many start-ups grapple with the fallout from the pandemic, this San Francisco company raised more cash to survive.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html">https://www.nytimes.com | </a></div>
+      <div style="float: right">Created with <a
+          href="https://linqable.pro/">Linqable</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
         
         <item>
             <title>Auth0 Struggles: Access A Signed-Up User&#39;s App Metadata </title>

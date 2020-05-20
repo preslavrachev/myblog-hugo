@@ -5,8 +5,38 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 17 May 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 19 May 2020 22:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>2 Cents</title>
+            <link>https://preslav.me/tags/2-cents/</link>
+            <pubDate>Tue, 19 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/2-cents/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Notion</title>
+            <link>https://preslav.me/tags/notion/</link>
+            <pubDate>Tue, 19 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/notion/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Startups</title>
+            <link>https://preslav.me/tags/startups/</link>
+            <pubDate>Tue, 19 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/startups/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>API</title>
@@ -74,16 +104,6 @@
             <pubDate>Fri, 15 May 2020 08:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/startup/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>2 Cents</title>
-            <link>https://preslav.me/tags/2-cents/</link>
-            <pubDate>Mon, 11 May 2020 10:28:44 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/2-cents/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -739,16 +759,6 @@
         </item>
         
         <item>
-            <title>Startups</title>
-            <link>https://preslav.me/tags/startups/</link>
-            <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/startups/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
             <title>Uber</title>
             <link>https://preslav.me/tags/uber/</link>
             <pubDate>Sun, 22 Sep 2019 10:20:00 +0000</pubDate>
@@ -949,21 +959,21 @@
         </item>
         
         <item>
-            <title>Vacation</title>
-            <link>https://preslav.me/tags/vacation/</link>
+            <title> Wedding</title>
+            <link>https://preslav.me/tags/wedding/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/vacation/</guid>
+            <guid>https://preslav.me/tags/wedding/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
-            <title>Wedding</title>
-            <link>https://preslav.me/tags/wedding/</link>
+            <title>Vacation</title>
+            <link>https://preslav.me/tags/vacation/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/wedding/</guid>
+            <guid>https://preslav.me/tags/vacation/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
