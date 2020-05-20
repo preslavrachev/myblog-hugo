@@ -3,7 +3,7 @@ author = "Preslav Rachev"
 categories = []
 date = 2020-05-19T22:00:00Z
 description = "Diluting the market proposition might push loyal customers away. Though, who cares about paying customers anyway?"
-feature_image = ""
+feature_image = "https://images.unsplash.com/photo-1562380156-9a99cd92484c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80"
 slug = ""
 summary = "Diluting the market proposition might push loyal customers away. Though, who cares about paying customers anyway?"
 tags = ["2 Cents", "Startups", "Notion"]
