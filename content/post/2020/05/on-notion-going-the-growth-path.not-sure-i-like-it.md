@@ -6,7 +6,7 @@ description = "Diluting the market proposition might push loyal customers away. 
 feature_image = ""
 slug = ""
 summary = "Diluting the market proposition might push loyal customers away. Though, who cares about paying customers anyway?"
-tags = []
+tags = ["2 Cents", "Startups", "Notion"]
 title = "On Notion Going the Growth Path. Not Sure I Like It"
 toc = false
 
