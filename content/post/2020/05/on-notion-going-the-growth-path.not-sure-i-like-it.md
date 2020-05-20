@@ -11,6 +11,7 @@ title = "On Notion Going the Growth Path. Not Sure I Like It"
 toc = false
 
 +++
+
 In his brilliant book ["This is Marketing"](https://amzn.to/2TktniU), author Seth Godin goes a long way explaining the importance of "finding your minimal viable audience". A few people that one's product or service can introduce a significant change for. The only ones that deserve one's focus and attention.
 
 This morning, I woke up to the news that Notion is going to drop the only restriction that distinguished its free from its paid plan. There will no longer be a limit of 1000 items in the free plan, essentially, opening up the gates to a swath of new users, who'd stay on the free plan forever.
@@ -25,10 +26,10 @@ To paraphrase Seth Godin again, if you drop a tiny amount of ink into a small en
 
 # Who cares about paying customers anyway?
 
-One can feel the investor push behind all this. Notion won't be the first, and surely won't be the last company shot goes the growth-for-growth's-sake path. It's a bullet-proof way to getting even more and more investor money, and eventually, getting bought by someone big out of FOMO. It's certainly a viable business model nowadays.
+One can feel the investor push behind all this. Notion won't be the first, and surely won't be the last company that goes the growth-for-growth's-sake path. It's a bulletproof way to getting even more and more investor money, and eventually, getting bought by someone big out of FOMO. It's certainly a viable business model nowadays.
 
 I'm just not sure I like it.
 
-***
+---
 
 {{<oembed "https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html">}}
