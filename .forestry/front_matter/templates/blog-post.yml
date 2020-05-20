@@ -9,6 +9,11 @@ fields:
 - type: text
   name: title
   label: Title
+- name: feature_image
+  type: text
+  config:
+    required: false
+  label: Feature Image URL
 - name: summary
   type: textarea
   default: ''
@@ -18,11 +23,6 @@ fields:
     schema:
       format: markdown
   label: Summary
-- name: feature_image
-  type: file
-  config:
-    maxSize: 
-  label: Feature Image
 - type: list
   name: categories
   label: categories
