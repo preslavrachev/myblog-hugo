@@ -3,7 +3,6 @@ author = "Preslav Rachev"
 categories = []
 date = 2020-05-19T22:00:00Z
 description = "Diluting the market proposition might push loyal customers away. Though, who cares about paying customers anyway?"
-draft = true
 feature_image = ""
 slug = ""
 summary = "Diluting the market proposition might push loyal customers away. Though, who cares about paying customers anyway?"
@@ -30,4 +29,5 @@ One can feel the investor push behind all this. Notion won't be the first, and s
 
 I'm just not sure I like it.
 
+---
 {{<oembed "https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html">}}
