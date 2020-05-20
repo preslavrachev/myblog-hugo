@@ -9,6 +9,11 @@ fields:
 - type: text
   name: title
   label: Title
+- name: feature_image
+  type: text
+  config:
+    required: false
+  label: Feature Image URL
 - name: summary
   type: textarea
   default: ''
@@ -18,11 +23,6 @@ fields:
     schema:
       format: markdown
   label: Summary
-- name: feature_image
-  type: file
-  config:
-    maxSize: 
-  label: Feature Image
 - type: list
   name: categories
   label: categories
@@ -67,3 +67,4 @@ pages:
 - content/post/2020/04/this-week-i-learned-1.md
 - content/post/2020/04/this-week-i-learned.md
 - content/post/2020/05/auth0-struggles-access-a-signed-up-user-s-app-metadata.md
+- content/post/2020/05/on-notion-going-the-growth-path.not-sure-i-like-it.md
