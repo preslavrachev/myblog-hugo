@@ -1,5 +1,5 @@
 ---
-title: "The Simplest Way to Keep a Go App Up and Running"
+title: "A Simple Way to Keep a Go App Up and Running"
 date: 2020-05-24T10:28:44+01:00
 draft: false
 summary: "Poor man’s Kubernetes"
