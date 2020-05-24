@@ -5,8 +5,68 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 19 May 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 24 May 2020 10:28:44 +0100</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Bash</title>
+            <link>https://preslav.me/tags/bash/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/bash/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>DevOps</title>
+            <link>https://preslav.me/tags/devops/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/devops/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Go</title>
+            <link>https://preslav.me/tags/go/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/go/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Golang</title>
+            <link>https://preslav.me/tags/golang/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/golang/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Programming</title>
+            <link>https://preslav.me/tags/programming/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/programming/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Tips</title>
+            <link>https://preslav.me/tags/tips/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/tags/tips/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>2 Cents</title>
@@ -54,26 +114,6 @@
             <pubDate>Sun, 17 May 2020 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/auth0/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Programming</title>
-            <link>https://preslav.me/tags/programming/</link>
-            <pubDate>Sun, 17 May 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/programming/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Tips</title>
-            <link>https://preslav.me/tags/tips/</link>
-            <pubDate>Sun, 17 May 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/tips/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -189,7 +229,7 @@
         </item>
         
         <item>
-            <title>Podcast</title>
+            <title>podcast</title>
             <link>https://preslav.me/tags/podcast/</link>
             <pubDate>Mon, 20 Apr 2020 22:00:00 +0000</pubDate>
             
@@ -224,16 +264,6 @@
             <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/firefox/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Golang</title>
-            <link>https://preslav.me/tags/golang/</link>
-            <pubDate>Sat, 18 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/golang/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -454,16 +484,6 @@
             <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
             
             <guid>https://preslav.me/tags/crystal/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Go</title>
-            <link>https://preslav.me/tags/go/</link>
-            <pubDate>Sun, 26 Jan 2020 08:35:04 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/go/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -959,21 +979,21 @@
         </item>
         
         <item>
-            <title>Vacation</title>
-            <link>https://preslav.me/tags/vacation/</link>
+            <title> Wedding</title>
+            <link>https://preslav.me/tags/wedding/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/vacation/</guid>
+            <guid>https://preslav.me/tags/wedding/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
-            <title>Wedding</title>
-            <link>https://preslav.me/tags/wedding/</link>
+            <title>Vacation</title>
+            <link>https://preslav.me/tags/vacation/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/wedding/</guid>
+            <guid>https://preslav.me/tags/vacation/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -1414,16 +1434,6 @@
             <pubDate>Tue, 28 Feb 2017 11:01:46 +0200</pubDate>
             
             <guid>https://preslav.me/tags/psychology/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>DevOps</title>
-            <link>https://preslav.me/tags/devops/</link>
-            <pubDate>Fri, 03 Feb 2017 05:29:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/devops/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>

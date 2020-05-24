@@ -5,8 +5,37 @@
         <description>Recent content in Golang on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 18 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 24 May 2020 10:28:44 +0100</lastBuildDate>
         <atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>The Simplest Way to Keep a Go App Up and Running</title>
+            <link>https://preslav.me/2020/05/24/the-simplest-way-to-keep-a-go-app-up-and-running/</link>
+            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
+            
+            <guid>https://preslav.me/2020/05/24/the-simplest-way-to-keep-a-go-app-up-and-running/</guid>
+            <description>Poor man’s Kubernetes</description>
+            <content type="html"><![CDATA[<p>I am a lazy programmer, experimenting with new ideas all the time. For these, running and deploying tiny Go apps as single executables is the closest way to see something in action. Yet, quickly written Go apps often panic, and crash altogether. While I am a strong defender of making sure that all possible errors are checked, real software is bound to eventually crash, no matter what. In such situations, the fastest solution is usually a simple restart.</p>
+
+<p><a href="https://www.freedesktop.org/wiki/Software/systemd/">Systemd</a>, <a href="https://www.docker.com/">Docker</a>, <a href="https://kubernetes.io/">Kubernetes</a> - all took process supervision to a new level. If you are working on production-level software, chances are you already have some infrastructure layer in place that will take care of this. On the other hand, setting up tons of infrastructure is the last thing you want to think about, when working on your quickly made side project. This is where the following 5-line Bash script comes in place:</p>
+
+<pre><code class="language-bash">#!/bin/sh
+
+while true; do
+    .myapp
+done
+
+# call this file run.sh and use nohup to start it
+# nohup ./run.sh &amp;
+</code></pre>
+
+<p>That’s it. Instead of running your app directly, you can use <code>nohup</code> to run it through the Bash script: <code>nohup run.sh &amp;</code>.</p>
+
+<hr />
+
+<p>NOTE: While fairly easy to set up, this is by no means a safe way to take care of process restarts. It is also not an excuse to avoid thorough error checking. It will help you see your app quickly, but as soon as it starts getting serious traffic, you need to consider setting up the proper infrastructure. I can <a href="https://preslav.me/contact/">help</a> with that.</p>
+]]></content>
+        </item>
         
         <item>
             <title>This Week I Learned</title>
