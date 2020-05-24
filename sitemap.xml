@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/2020/05/24/the-simplest-way-to-keep-a-go-app-up-and-running/</loc>
+    <lastmod>2020-05-24T10:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/tags/bash/</loc>
     <lastmod>2020-05-24T10:28:44+01:00</lastmod>
   </url>
@@ -39,11 +44,6 @@
   
   <url>
     <loc>https://preslav.me/tags/</loc>
-    <lastmod>2020-05-24T10:28:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/2020/05/24/the-simplest-way-to-keep-a-go-app-up-and-running/</loc>
     <lastmod>2020-05-24T10:28:44+01:00</lastmod>
   </url>
   
@@ -628,12 +628,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/running/</loc>
+    <loc>https://preslav.me/tags/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/running/</loc>
+    <loc>https://preslav.me/categories/running/</loc>
     <lastmod>2019-10-12T22:00:00+00:00</lastmod>
   </url>
   
@@ -1263,12 +1263,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/beer/</loc>
+    <loc>https://preslav.me/categories/beer/</loc>
     <lastmod>2019-03-22T14:01:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/beer/</loc>
+    <loc>https://preslav.me/tags/beer/</loc>
     <lastmod>2019-03-22T14:01:47+00:00</lastmod>
   </url>
   
@@ -1498,12 +1498,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/categories/react-native/</loc>
+    <loc>https://preslav.me/tags/react-native/</loc>
     <lastmod>2017-03-26T05:25:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/react-native/</loc>
+    <loc>https://preslav.me/categories/react-native/</loc>
     <lastmod>2017-03-26T05:25:00+00:00</lastmod>
   </url>
   
