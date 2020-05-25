@@ -24,6 +24,8 @@ DEBUG=True
 
 **NOTE**: _Dotenv_ files **must be ignored** from version control for exactly the same reason mentioned at the beginning of this post: exposing sensitive information as part of the project is bad. These files are only used to quickly set up or change an environment when needed.
 
+{{<share>}}
+
 ## Using a dotenv file in our app
 
 How do we get our Python app to read a `.env` file? [python-dotenv](https://pypi.org/project/python-dotenv/) is a great Python package that does exactly that. It will search for a `.env` as part of the project, and if it finds one, will expose the variables in it to the app. All you need to do, is `pip install python-dotenv` and add the following couple of lines at the start of your project:
