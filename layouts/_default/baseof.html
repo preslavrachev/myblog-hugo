@@ -22,6 +22,7 @@
     {{ $prismStyles := slice (resources.Get "css/prism.css") (resources.Get "css/cookieconsent.min.css") (resources.Get "css/styles.css") | resources.Concat "site.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" />
     <link rel="stylesheet" href="{{ $prismStyles.Permalink }}" />
+    <link rel="me" href="https://twitter.com/preslavrachev">
 
     {{ range $val := $.Site.Params.customCSS }}
         {{ if gt (len $val) 0 }}
