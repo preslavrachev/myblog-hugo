@@ -1,7 +1,7 @@
 +++
 author = "Preslav Rachev"
 categories = ["Quote"]
-date = 2020-05-15T22:00:00Z
+date = 2020-05-17T19:00:00Z
 description = "It's almost impossible now to find a blog that's not on a focused theme because that's what search engines focus on and how websites profit. But you want the opposite, a blog that never tried to focus or even thought about it."
 draft = true
 feature_image = ""
