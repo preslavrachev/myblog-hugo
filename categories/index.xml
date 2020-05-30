@@ -5,8 +5,28 @@
         <description>Recent content in Categories on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 20 Apr 2020 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 29 May 2020 22:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/categories/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Podcast</title>
+            <link>https://preslav.me/categories/podcast/</link>
+            <pubDate>Fri, 29 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/categories/podcast/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Quote</title>
+            <link>https://preslav.me/categories/quote/</link>
+            <pubDate>Sun, 17 May 2020 19:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/categories/quote/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>TWIL</title>
@@ -24,16 +44,6 @@
             <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/categories/book/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Quote</title>
-            <link>https://preslav.me/categories/quote/</link>
-            <pubDate>Wed, 15 Apr 2020 16:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/categories/quote/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
