@@ -3,8 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/</loc>
+    <lastmod>2020-05-29T22:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/collections/</loc>
     <lastmod>2020-05-29T22:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
   </url>
   
   <url>
@@ -24,11 +31,6 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-05-29T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/</loc>
     <lastmod>2020-05-29T22:00:00+00:00</lastmod>
   </url>
   
@@ -898,12 +900,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/vacation/</loc>
+    <loc>https://preslav.me/tags/wedding/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/wedding/</loc>
+    <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
