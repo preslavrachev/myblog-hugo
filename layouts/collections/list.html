@@ -1,0 +1,29 @@
+{{ define "body_class" }} tag-template {{ end }}
+
+{{ define "main" }}
+
+{{.Scratch.Set "background" .Params.feature_image}}
+<header class="site-header">
+    {{- partial "site-header.html" $ -}}
+
+    {{- partial "header-background.html" $ -}}
+    <div class="inner site-header-content">
+        <h1 class="site-title"> {{.Title}} </h1>
+        <h2 class="site-description">
+            {{ .Content }}
+        </h2>
+    </div>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
+            {{ range $index, $element := .Pages }}
+            {{- partial "post-card-collection.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+            {{ end }}
+        </div>
+    </div>
+</main>
+
+{{ end }}
