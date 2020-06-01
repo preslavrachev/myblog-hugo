@@ -29,22 +29,22 @@ googleAnalytics = "UA-131031623-1"
   [[menu.main]]
     identifier = "about"
     name       = "About Me"
-    url        = "/about/"
+    url        = "/about"
     weight = 1
   [[menu.main]]
     identifier = "projects"
     name       = "My Projects"
-    url        = "/projects/"
+    url        = "/projects"
     weight = 20
   [[menu.main]]
     identifier = "collections"
     name       = "My Collections"
-    url        = "/collections/"
+    url        = "/collections"
     weight = 30
   [[menu.main]]
     identifier = "contact"
     name       = "Contact"
-    url        = "/contact/"
+    url        = "/contact"
     weight = 40
 
 [taxonomies]
