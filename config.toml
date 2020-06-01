@@ -15,7 +15,7 @@ googleAnalytics = "UA-131031623-1"
   #facebook = "https://facebook.com"
   twitter = "https://twitter.com/preslavrachev"
   github = "https://github.com/preslavrachev"
-  description = "I am a software engineer building his own stuff. This is my home on the Internet."
+  description = "I am a software engineer, turning entrepreneur. This is my home on the Internet."
   mainSections = ["post"]
 
   # Metadata mostly used in document's head
