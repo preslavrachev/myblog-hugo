@@ -8,4 +8,4 @@ keywords=["podcasts", "books", "quotes", "articles", "blogs", "media", "internet
     changefreq = "daily"
 +++
 
-Ever since I was a small child, I have been fascinated with collecting and preserving the treasure of knowledge. This is just a small portion of everything I have encountered online.
+My name is [Preslav](/about), and I am a software engineer, turning entrepreneur. This is my regular home on the Internet. You can also follow me on [Twitter](https://twitter.com/preslavrachev), [GitHub](https://github.com/preslavrachev), or [Telegram](https://t.me/preslavrachev). Share feedback and discuss my writings on [Reddit](https://www.reddit.com/r/preslav_me/).
