@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>My Collections (Beta) on Random Bits of Wisdom</title>
+        <link>https://preslav.me/collections/</link>
+        <description>Recent content in My Collections (Beta) on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 29 May 2020 22:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/collections/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>My Favorite Podcasts</title>
+            <link>https://preslav.me/collections/podcasts/</link>
+            <pubDate>Fri, 29 May 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/collections/podcasts/</guid>
+            <description>I first discovered podcasts in 2004. Long before anyone thought podcasts would become so popular, I would manually search and download each episode on my MP3 player. 15 years later, my passion for listening is as strong as it was back in those years.</description>
+            <content type="html"><![CDATA[<p>I first discovered podcasts in 2004. Long before anyone thought podcasts would become so popular, I would manually search and download each episode on my MP3 player. 15 years later, my passion for listening is as strong as it was back in those years. Over time, I have developed a large selection of great audio content, which I would love to share with you.</p>
+
+<p>You are also welcome to subscribe to <a href="https://podmix.substack.com/">The Mixtape</a> - thematically curated podcast stories.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
