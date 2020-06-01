@@ -1,0 +1,43 @@
+{{ $featureImage := (.context.Param "feature_image")}}
+{{ if not $featureImage }}
+{{ $featureImage = index (findRE "background: url\\((.*)\\)" .context.Content) 0 }}
+{{ if $featureImage}}
+{{ $featureImage = index (findRE "http[a-zA-z0-9/:_.=*,-]*" $featureImage) 0 }}
+{{end}}
+{{ end }}
+
+<article class="post-card post
+{{ if not $featureImage }} no-image
+{{ else }}
+{{ if (eq (mod .index 6) 0) }} post-card-large {{ end }}
+{{ end }} ">
+
+    {{ if $featureImage }}
+    <a class="post-card-image-link" href="{{ .context.Permalink }}">
+        <img class="post-card-image" src="{{ $featureImage }}"
+            alt="{{ .context.Title }}" />
+    </a>
+    {{ end }}
+
+    <div class="post-card-content">
+
+
+        <a class="post-card-content-link" href="{{ .context.Permalink }}">
+
+            <header class="post-card-header">
+                {{ with .context.Params.tags }}
+                {{ $primaryTag := (index . 0) }}
+                <div class="post-card-primary-tag">{{ $primaryTag }}</div>
+                {{ end }}
+
+                <h2 class="post-card-title">{{ .context.Title }}</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                <p>{{ .context.Summary }}</p>
+            </section>
+
+        </a>
+    </div>
+
+</article>
