@@ -3,11 +3,11 @@ author = "Preslav Rachev"
 categories = []
 date = 2020-06-07T05:00:00Z
 description = "Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand."
-draft = true
 feature_image = "https://images.unsplash.com/photo-1580894897591-ff1e18c89183?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80"
+hide_feature_image = true
 slug = ""
 summary = "Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand."
-tags = ["Python", "Programming"]
+tags = ["Python", "Flask", "Programming"]
 title = "On-Demand Request Logging in Flask"
 toc = false
 
