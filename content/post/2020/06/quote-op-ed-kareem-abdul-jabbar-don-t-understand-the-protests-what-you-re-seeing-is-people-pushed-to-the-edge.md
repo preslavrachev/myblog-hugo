@@ -1,7 +1,7 @@
 +++
 author = ""
 categories = []
-date = ""
+date = 2020-06-01T22:00:00Z
 description = "What you should see when you see black protesters in the age of Trump and coronavirus is people pushed to the edge, not because they want bars and nail salons open, but because they want to live. To breathe."
 feature_image = ""
 hide_feature_image = false
