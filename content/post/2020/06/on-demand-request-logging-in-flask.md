@@ -90,3 +90,39 @@ def layer1(name: str):
 def layer2(name: str):
     return name.upper()
 ```
+
+And this is one possible implementation of a tracing decorator:
+
+```python
+class Tracer:
+    def __init__(self) -> None:
+        self.current_trace_id = None
+
+    def trace(self, f):
+        @wraps(f)
+        def wrapper(*args, **kwargs):
+            trace_id = kwargs.pop("trace_id", None)
+            if trace_id:
+                if self.current_trace_id:
+                    # Do you really want to raise an error?
+                    # Perhaps, logging the concurrent access and silently moving on is better.
+                    raise Exception("Concurrent tracing requests are not allowed!")
+
+                # "open" a new request
+                self.current_trace_id = trace_id
+                print(f"Tracing ID: {self.current_trace_id} - function call: {__name__}.{f.__name__} - Arguments: {args}")
+                res = f(*args, **kwargs)
+
+                # "close" the request, by simply clearing its state
+                self.current_trace_id = None
+                return res
+            elif self.current_trace_id:
+                print(f"Tracing ID: {self.current_trace_id} - function call: {__name__}.{f.__name__} - Arguments: {args}")
+                return f(*args, **kwargs)
+            else:
+                return f(*args, **kwargs)
+
+        return wrapper
+```
+
+p
