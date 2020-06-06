@@ -14,6 +14,9 @@ fields:
   config:
     required: false
   label: Feature Image URL
+- name: hide_feature_image
+  type: boolean
+  label: Hide Feature Image
 - name: summary
   type: textarea
   default: ''
@@ -41,9 +44,6 @@ fields:
 - name: toc
   type: boolean
   label: Table of Contents
-- name: hide_feature_image
-  type: boolean
-  label: Hide Feature Image
 pages:
 - content/microblog/201906251911.md
 - content/post/2018/dependency-injection-in-python.md
