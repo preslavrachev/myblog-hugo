@@ -5,8 +5,18 @@
         <description>Recent content in Python on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 26 Oct 2019 22:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jun 2020 05:00:00 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>On-Demand Request Logging in Flask</title>
+            <link></link>
+            <pubDate>Sun, 07 Jun 2020 05:00:00 +0000</pubDate>
+            
+            <guid></guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>Any Code Style You like as Long It&#39;s Black</title>

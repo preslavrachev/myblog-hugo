@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Flask on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/flask/</link>
+        <description>Recent content in Flask on Random Bits of Wisdom</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 07 Jun 2020 05:00:00 +0000</lastBuildDate>
+        <atom:link href="https://preslav.me/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>On-Demand Request Logging in Flask</title>
+            <link></link>
+            <pubDate>Sun, 07 Jun 2020 05:00:00 +0000</pubDate>
+            
+            <guid></guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+    </channel>
+</rss>
