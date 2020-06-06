@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="author" content="Preslav Rachev">
-    <meta name="description" content="&amp;ldquo;Rabbit Hole&amp;rdquo; is a podcast series about the adverse effects of online media." />
-    <meta name="keywords" content="programming, golang, python, elixir, Podcast, YouTube" />
+    <meta name="description" content="Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand." />
+    <meta name="keywords" content="programming, golang, python, elixir, Programming, Python, Flask" />
     <meta name="robots" content="noodp" />
     <meta name="theme-color" content="" />
-    <link rel="canonical" href="https://preslav.me/2020/05/29/podcast-rabbit-hole/" />
+    <link rel="canonical" href="https://preslav.me/2020/06/05/on-demand-request-logging-in-flask/" />
 
     
     
-    <title>Podcast: Rabbit Hole · Random Bits of Wisdom</title>
+    <title>On-Demand Request Logging in Flask · Random Bits of Wisdom</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,38 +26,33 @@
 
     
 
-    <meta itemprop="name" content="Podcast: Rabbit Hole">
-<meta itemprop="description" content="&#34;Rabbit Hole&#34; is a podcast series about the adverse effects of online media.">
+    <meta itemprop="name" content="On-Demand Request Logging in Flask">
+<meta itemprop="description" content="Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand.">
 
 
-<meta itemprop="datePublished" content="2020-05-29T22:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-05-29T22:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="123">
+<meta itemprop="datePublished" content="2020-06-05T23:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-05T23:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="991">
 
 
 
-<meta itemprop="keywords" content="Podcast,YouTube," />
+<meta itemprop="keywords" content="Programming,Python,Flask," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Podcast: Rabbit Hole"/>
-<meta name="twitter:description" content="&#34;Rabbit Hole&#34; is a podcast series about the adverse effects of online media."/>
+<meta name="twitter:title" content="On-Demand Request Logging in Flask"/>
+<meta name="twitter:description" content="Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand."/>
 
-    <meta property="og:title" content="Podcast: Rabbit Hole" />
-<meta property="og:description" content="&#34;Rabbit Hole&#34; is a podcast series about the adverse effects of online media." />
+    <meta property="og:title" content="On-Demand Request Logging in Flask" />
+<meta property="og:description" content="Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/2020/05/29/podcast-rabbit-hole/" />
-<meta property="article:published_time" content="2020-05-29T22:00:00+00:00" />
-<meta property="article:modified_time" content="2020-05-29T22:00:00+00:00" />
+<meta property="og:url" content="https://preslav.me/2020/06/05/on-demand-request-logging-in-flask/" />
+<meta property="article:published_time" content="2020-06-05T23:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-05T23:00:00+00:00" />
 
     
     
-        
-        
-            
-        
     
-    
-    <meta name="twitter:image" content="https://content.production.cdn.art19.com/images/57/67/5e/8f/57675e8f-f6d2-41cd-b7b0-f5f5a6be5cbc/d4fcb1c4fc5adf1d206fb1cd63b801eb3440f9c96f62f28f8faff9a3b6be45a48997118f3a86f4e2aed375b343f6692804dda311b471f3c770d09aeecc0709bc.jpeg">
-    <meta property="og:image" content="https://content.production.cdn.art19.com/images/57/67/5e/8f/57675e8f-f6d2-41cd-b7b0-f5f5a6be5cbc/d4fcb1c4fc5adf1d206fb1cd63b801eb3440f9c96f62f28f8faff9a3b6be45a48997118f3a86f4e2aed375b343f6692804dda311b471f3c770d09aeecc0709bc.jpeg">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1580894897591-ff1e18c89183?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1580894897591-ff1e18c89183?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80">
     
 
     
@@ -108,11 +103,11 @@
                 
                 <section class="post-full-tags">
                     <a
-                        href="/tags/podcast">Podcast</a>
+                        href="/tags/programming">Programming</a>
                 </section>
                 
 
-                <h1 class="post-full-title">Podcast: Rabbit Hole</h1>
+                <h1 class="post-full-title">On-Demand Request Logging in Flask</h1>
 
                 
 
@@ -139,12 +134,12 @@
                             
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date"
-                                    datetime="2020-105-05">29 May 2020</time>
+                                    datetime="2020-116-06">5 June 2020</time>
                             </div>
                             <div class="byline-meta-content">
                                 <span class="byline-reading-time"
                                     style="font-size: 1rem">
-                                    1 min read</span>
+                                    5 min read</span>
                             </div>
                         </section>
 
@@ -152,7 +147,7 @@
                     <div class="byline-meta-content">
                         
                         <a class="resp-sharing-button__link"
-                            href="https://twitter.com/intent/tweet/?text=Podcast%3a%20Rabbit%20Hole&amp;url=https%3a%2f%2fpreslav.me%2f2020%2f05%2f29%2fpodcast-rabbit-hole%2f&amp;via=preslavrachev"
+                            href="https://twitter.com/intent/tweet/?text=On-Demand%20Request%20Logging%20in%20Flask&amp;url=https%3a%2f%2fpreslav.me%2f2020%2f06%2f05%2fon-demand-request-logging-in-flask%2f&amp;via=preslavrachev"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
@@ -169,7 +164,7 @@
                         </a>
                         
                         <a class="resp-sharing-button__link"
-                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2f2020%2f05%2f29%2fpodcast-rabbit-hole%2f"
+                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2f2020%2f06%2f05%2fon-demand-request-logging-in-flask%2f"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
@@ -193,9 +188,127 @@
 
             <section class="post-full-content">
                 <div class="post-content">
-                    <p><a href="https://art19.com/shows/rabbit-hole">&ldquo;Rabbit Hole&rdquo;</a> is a podcast series about the adverse effects of online media and technology. Those are hard to notice at first. Yet, algorithms dictate much of what we watch, listen or read about nowadays. Algorithms, designed with a single goal in mind- to maximize engagement. Algorithms, which, whether intentionally or unintentionally, create echo chambers around hot topics, evoking deeply hidden desires and radical thoughts.</p>
+                    
 
-<p>I can totally recommend this podcast. I will just say, though. Always take everything you&rsquo;re presented, with a grain of salt. Including &ldquo;Rabbit Hole&rdquo;, or my blog for that matter.</p>
+<p>Printing out just the right amount of production logs is an art that sometimes borders the realm of Dark Magic. From my experience building software, most developers either log too much, or don’t log anything at all. Not enough information can make bug hunting more difficult. On the other hand, too many log traces hamper code readability and don’t necessarily make one’s duties easier.</p>
+
+<p>In reality, what everyone wants, are <strong>logs on demand</strong>. Most programming environments already partially take care of this, by logging errors separately. Yet, not always will a wrong behaviour lead to an error. Plus, an error log would rarely contain the particular execution context that led to the error.</p>
+
+<p>It would be great, if one were able to manually turn on logging, and only in certain cases. In the context of a Web applications, <em>certain cases</em> == <em>certain requests</em>. For the standard Flask-like Python Web app, this is actually very easy to achieve.</p>
+
+<h1 id="basic-request-tracing">Basic Request Tracing</h1>
+
+<p>I will use Flask, because it is the easiest to demonstrate. The idea should be relatively easy to reuse with other frameworks though.</p>
+
+<p>Let’s say, we want to write a log every time our Flask API gets called with a certain URL parameter (let’s call it <code>trace_id</code>). The simplest thing one can do, is add a <code>@before_request</code> interceptor:</p>
+
+<pre><code class="language-python">app = Flask(__name__)
+
+@app.before_request
+def request_tracer():
+    if &quot;trace_id&quot; in request.args:
+        # DO something, like log the request args, body, etc
+	      # Make sure to include the trace_id as well, so you can
+        # search for it in the logs
+</code></pre>
+
+<p>This function will be called before each request. If you now add <code>trace_id=[RANDOM_ID_THAT_YOU_CAN_TRACE]</code> to a request that you want to test manually, or one used by another service, you should be able to easily search for the <code>RANDOM_ID_THAT_YOU_CAN_TRACE</code> in the logs. The best part is, turning it on an off is a matter of using/not using the URL param.</p>
+
+<h1 id="a-slightly-more-advanced-request-tracer">A slightly more advanced Request Tracer</h1>
+
+<p>Of course, the example above is quite naive. It won’t be of much use to anyone, since most errors occur deeper in the call chain. Let’s take the following example:</p>
+
+<pre><code class="language-python">app = Flask(__name__)
+
+@app.route(&quot;/&quot;)
+def index():
+    name = request.args.get(&quot;name&quot;)
+		name = layer1(name)
+    return f&quot;Hello, {name}&quot;
+
+def layer1(name: str):
+    return layer2(name)
+
+def layer2(name: str):
+    return name.upper()
+</code></pre>
+
+<p>Our API handler calls another function, which returns the result from yet another. A typical production application is way more complex, having loops and conditional logic all over the place. The problem with nested call chains is that to get the conditional tracing all the way through, one would need to add this to every function.</p>
+
+<pre><code class="language-python">if &quot;trace_id&quot; in request.args:
+	# log trace_id, inputs and outputs
+</code></pre>
+
+<p>This is very impractical, and would make the code less readable.</p>
+
+<h2 id="custom-tracing-decorator">Custom tracing decorator</h2>
+
+<p>The least obtrusive option I could think of, is creating a custom decorator. We won’t go without modifying our code, but having a decorator on top of each function won’t mess with the readability of the code directly. This is how our tiny app from above would look like:</p>
+
+<pre><code class="language-python">app = Flask(__name__)
+
+tracer = Tracer()
+
+@app.route(&quot;/&quot;)
+def index():
+    name = request.args.get(&quot;name&quot;)
+		# pass the tracer_id to the first function in your call chain
+		name = layer1(name, trace_id=request.args.get('trace_id'))
+    return f&quot;Hello, {name}&quot;
+
+@tracer.trace
+def layer1(name: str):
+    return layer2(name)
+
+@tracer.trace
+def layer2(name: str):
+    return name.upper()
+</code></pre>
+
+<p>And this is one possible implementation of a tracing decorator:</p>
+
+<pre><code class="language-python">class Tracer:
+    def __init__(self) -&gt; None:
+        self.current_trace_id = None
+
+    def trace(self, f):
+        @wraps(f)
+        def wrapper(*args, **kwargs):
+            trace_id = kwargs.pop(&quot;trace_id&quot;, None)
+            if trace_id:
+                if self.current_trace_id:
+                    # Do you really want to raise an error?
+                    # Perhaps, logging the concurrent access and silently moving on is better.
+                    raise Exception(&quot;Concurrent tracing requests are not allowed!&quot;)
+
+                # &quot;open&quot; a new request
+                self.current_trace_id = trace_id
+                print(f&quot;Tracing ID: {self.current_trace_id} - function call: {__name__}.{f.__name__} - Arguments: {args}&quot;)
+                res = f(*args, **kwargs)
+
+                # &quot;close&quot; the request, by simply clearing its state
+                self.current_trace_id = None
+                return res
+            elif self.current_trace_id:
+                print(f&quot;Tracing ID: {self.current_trace_id} - function call: {__name__}.{f.__name__} - Arguments: {args}&quot;)
+                return f(*args, **kwargs)
+            else:
+                return f(*args, **kwargs)
+
+        return wrapper
+</code></pre>
+
+<p>Keep in mind the obvious limitation of my approach. The <code>tracer</code> instance is global. Storing state in global variables is usually a bad idea, but in some situations, you just don’t have any other choice.</p>
+
+<p>In WSGI applications, global scope usually means <em>global per process</em>. Traditionally, a WSGI server would spawn a certain number of Python processes, and juggle incoming requests between them. A single request would run end-to-end as part of a single process. If this is the case, then our tiny decorator would do perfectly fine, due to process isolation. When threads or <code>async-await</code> come to play, scoping the decorator to the particular request at hand will become important.</p>
+
+<p>In the case of Flask, one may make use of its <a href="https://flask.palletsprojects.com/en/1.1.x/reqcontext/">Request Scope</a>, which would ensure that a concurrent request won&rsquo;t overwrite the <code>trace_id</code> value of a currently running one. Of course, using a library-specific construct will make code more difficult to test. It will also require modifications to the decorator, in case you switch your Web framework of choice (luckily, most frameworks have the same concept of request scope built in).</p>
+
+<p>At the end, it doesn&rsquo;t matter that much. One of the spirits of Python is writing simple code that gets most of the job done, rather than obsessing about making things uber-generic. If my approach doesn&rsquo;t work for your case, it is easy enough to adapt.</p>
+
+<h1 id="the-inspiration">The Inspiration</h1>
+
+<p>My inspiration came not from the Python community, but by Elixir&rsquo;s Phoenix framework. In its latest version Phoenix comes with an out-of-the-box <a href="https://hexdocs.pm/phoenix_live_dashboard/Phoenix.LiveDashboard.html">LiveDashboard</a>, which is extremely helpful in running an Elixir application in production. Among the many cool features, the dashboard features a Request Logger that pretty much does what I described above.</p>
 
 
 
@@ -209,21 +322,21 @@
 
   
   <div class="embed-image"
-    style="flex:1; background: url(https://content.production.cdn.art19.com/images/57/67/5e/8f/57675e8f-f6d2-41cd-b7b0-f5f5a6be5cbc/d4fcb1c4fc5adf1d206fb1cd63b801eb3440f9c96f62f28f8faff9a3b6be45a48997118f3a86f4e2aed375b343f6692804dda311b471f3c770d09aeecc0709bc.jpeg); background-size:cover; background-position:center; min-height: 120px">
+    style="flex:1; background: url(https://nts.strzibny.name/img/elixir.png); background-size:cover; background-position:center; min-height: 120px">
   </div>
   
 
   <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://art19.com/shows/rabbit-hole">
+      href="https://nts.strzibny.name/phoenix-livedashboard-request-logger/">
       <div class="title"
         style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Rabbit Hole</div>
+        Phoenix 1.5 LiveDashboard’s Request Logger</div>
     </a>
     <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      What is the internet doing to us? The Times tech columnist Kevin Roose discovers what happens when our lives move online.</div>
+      Phoenix 1.5-rc.0 is out and so I fired up a new app to see what’s LiveDashboard is all about. Something that stood up for me is the Request Logger.</div>
     <div class="embed-meta" style="font-size:60%">
       <div style="float:left; max-width:80%"><a
-          href="https://art19.com/shows/rabbit-hole">https://art19.com | </a></div>
+          href="https://nts.strzibny.name/phoenix-livedashboard-request-logger/">https://nts.strzibny.name | </a></div>
       <div style="float: right">Created with <a
           href="https://linqable.pro/">Linqable</a></div>
     </div>
@@ -266,7 +379,7 @@
     
     <article class="read-next-card">
         <header class="read-next-card-header">
-            <h3><span>More in</span> <a href="/tags/podcast">Podcast</a></h3>
+            <h3><span>More in</span> <a href="/tags/programming">Programming</a></h3>
         </header>
         <div class="read-next-card-content">
             <ul>
@@ -278,38 +391,45 @@
 
     
     
+        
+    
 
 
 <article class="post-card post
- no-image
+
+
  ">
 
+        
+            <a class="post-card-image-link" href="https://preslav.me/2020/05/29/podcast-rabbit-hole/">
+                <img class="post-card-image"src="https://content.production.cdn.art19.com/images/57/67/5e/8f/57675e8f-f6d2-41cd-b7b0-f5f5a6be5cbc/d4fcb1c4fc5adf1d206fb1cd63b801eb3440f9c96f62f28f8faff9a3b6be45a48997118f3a86f4e2aed375b343f6692804dda311b471f3c770d09aeecc0709bc.jpeg" alt="Podcast: Rabbit Hole"/>
+            </a>
         
     
         <div class="post-card-content">
             
     
-            <a class="post-card-content-link" href="https://preslav.me/2020/05/24/the-simplest-way-to-keep-a-go-app-up-and-running/">
+            <a class="post-card-content-link" href="https://preslav.me/2020/05/29/podcast-rabbit-hole/">
     
                 <header class="post-card-header">
                     
                         
-                        <div class="post-card-primary-tag">Programming</div>
+                        <div class="post-card-primary-tag">Podcast</div>
                     
 
-                    <h2 class="post-card-title">A Simple Way to Keep a Go App Up and Running</h2>
+                    <h2 class="post-card-title">Podcast: Rabbit Hole</h2>
                 </header>
     
                 <section class="post-card-excerpt">
-                    <p>Poor man’s Kubernetes</p>
+                    <p>&ldquo;Rabbit Hole&rdquo; is a podcast series about the adverse effects of online media.</p>
                 </section>
     
             </a>
 
             <footer class="post-card-meta">
                     <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2020-105-05">24 May 2020</time>
-                            <span class="bull">&bull;</span> 2 min read</span>
+                        <span class="post-card-byline-date"><time datetime="2020-105-05">29 May 2020</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
                     </div>
                 </footer>
     
@@ -319,50 +439,6 @@
     
 
             
-
-
-<article class="post-card post
-
-
- ">
-
-        
-            <a class="post-card-image-link" href="https://preslav.me/2020/06/05/on-demand-request-logging-in-flask/">
-                <img class="post-card-image"src="https://images.unsplash.com/photo-1580894897591-ff1e18c89183?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80" alt="On-Demand Request Logging in Flask"/>
-            </a>
-        
-    
-        <div class="post-card-content">
-            
-    
-            <a class="post-card-content-link" href="https://preslav.me/2020/06/05/on-demand-request-logging-in-flask/">
-    
-                <header class="post-card-header">
-                    
-                        
-                        <div class="post-card-primary-tag">Programming</div>
-                    
-
-                    <h2 class="post-card-title">On-Demand Request Logging in Flask</h2>
-                </header>
-    
-                <section class="post-card-excerpt">
-                    <p>Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand.</p>
-                </section>
-    
-            </a>
-
-            <footer class="post-card-meta">
-                    <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2020-116-06">5 June 2020</time>
-                            <span class="bull">&bull;</span> 5 min read</span>
-                    </div>
-                </footer>
-    
-        </div>
-
-</article>
-    
         </div>
     </div>
 </aside>

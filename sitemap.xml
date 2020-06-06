@@ -4,28 +4,38 @@
   
   <url>
     <loc>https://preslav.me/tags/flask/</loc>
-    <lastmod>2020-06-07T05:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2020-06-07T05:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/python/</loc>
-    <lastmod>2020-06-07T05:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/</loc>
-    <lastmod>2020-06-07T05:00:00+00:00</lastmod>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-05-29T22:00:00+00:00</lastmod>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/2020/06/05/on-demand-request-logging-in-flask/</loc>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/post/</loc>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/programming/</loc>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/python/</loc>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/</loc>
+    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -46,11 +56,6 @@
   
   <url>
     <loc>https://preslav.me/2020/05/29/podcast-rabbit-hole/</loc>
-    <lastmod>2020-05-29T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/post/</loc>
     <lastmod>2020-05-29T22:00:00+00:00</lastmod>
   </url>
   
