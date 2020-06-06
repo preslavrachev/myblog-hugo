@@ -20,4 +20,4 @@ This is a quote from an op-ed essay by Kareem Abdul-Jabbar, published in the LA 
 >
 > What you should see when you see black protesters in the age of Trump and coronavirus is people pushed to the edge, not because they want bars and nail salons open, but because they want to live. To breathe.
 
-{{oembed "https://www.latimes.com/opinion/story/2020-05-30/dont-understand-the-protests-what-youre-seeing-is-people-pushed-to-the-edge"}}
+{{<oembed "https://www.latimes.com/opinion/story/2020-05-30/dont-understand-the-protests-what-youre-seeing-is-people-pushed-to-the-edge">}}
