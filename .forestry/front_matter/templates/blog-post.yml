@@ -41,6 +41,9 @@ fields:
 - name: toc
   type: boolean
   label: Table of Contents
+- name: hide_feature_image
+  type: boolean
+  label: Hide Feature Image
 pages:
 - content/microblog/201906251911.md
 - content/post/2018/dependency-injection-in-python.md
