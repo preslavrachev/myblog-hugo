@@ -3,13 +3,12 @@ author = ""
 categories = []
 date = ""
 description = "What you should see when you see black protesters in the age of Trump and coronavirus is people pushed to the edge, not because they want bars and nail salons open, but because they want to live. To breathe."
-draft = true
 feature_image = ""
 hide_feature_image = false
 slug = ""
 summary = "What you should see when you see black protesters in the age of Trump and coronavirus is people pushed to the edge, not because they want bars and nail salons open, but because they want to live. To breathe."
 tags = ["Quote", "Racism", "Black Lives Matter"]
-title = "Op-Ed: Kareem Abdul-Jabbar: Don’t understand the protests? What you’re seeing is people pushed to the edge"
+title = "Don’t understand the protests? What you’re seeing is people pushed to the edge"
 toc = false
 
 +++
