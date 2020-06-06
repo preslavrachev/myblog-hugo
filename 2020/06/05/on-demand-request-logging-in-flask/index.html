@@ -208,7 +208,7 @@
 def request_tracer():
     if &quot;trace_id&quot; in request.args:
         # DO something, like log the request args, body, etc
-	      # Make sure to include the trace_id as well, so you can
+	    # Make sure to include the trace_id as well, so you can
         # search for it in the logs
 </code></pre>
 
@@ -223,7 +223,7 @@ def request_tracer():
 @app.route(&quot;/&quot;)
 def index():
     name = request.args.get(&quot;name&quot;)
-		name = layer1(name)
+	name = layer1(name)
     return f&quot;Hello, {name}&quot;
 
 def layer1(name: str):
@@ -252,8 +252,8 @@ tracer = Tracer()
 @app.route(&quot;/&quot;)
 def index():
     name = request.args.get(&quot;name&quot;)
-		# pass the tracer_id to the first function in your call chain
-		name = layer1(name, trace_id=request.args.get('trace_id'))
+	# pass the tracer_id to the first function in your call chain
+	name = layer1(name, trace_id=request.args.get('trace_id'))
     return f&quot;Hello, {name}&quot;
 
 @tracer.trace
