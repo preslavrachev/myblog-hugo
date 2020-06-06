@@ -34,3 +34,59 @@ def request_tracer():
 	      # Make sure to include the trace_id as well, so you can
         # search for it in the logs
 ```
+
+This function will be called before each request. If you now add `trace_id=[RANDOM_ID_THAT_YOU_CAN_TRACE]` to a request that you want to test manually, or one used by another service, you should be able to easily search for the `RANDOM_ID_THAT_YOU_CAN_TRACE` in the logs. The best part is, turning it on an off is a matter of using/not using the URL param.
+
+# A slightly more advanced Request Tracer
+
+Of course, the example above is quite naive. It won’t be of much use to anyone, since most errors occur deeper in the call chain. Let’s take the following example:
+
+```python
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    name = request.args.get("name")
+		name = layer1(name)
+    return f"Hello, {name}"
+
+def layer1(name: str):
+    return layer2(name)
+
+def layer2(name: str):
+    return name.upper()
+```
+
+Our API handler calls another function, which returns the result from yet another. A typical production application is way more complex, having loops and conditional logic all over the place. The problem with nested call chains is that to get the conditional tracing all the way through, one would need to add this to every function.
+
+```python
+if "trace_id" in request.args:
+	# log trace_id, inputs and outputs
+```
+
+This is very impractical, and would make the code less readable.
+
+## Custom tracing decorator
+
+The least obtrusive option I could think of, is creating a custom decorator. We won’t go without modifying our code, but having a decorator on top of each function won’t mess with the readability of the code directly. This is how our tiny app from above would look like:
+
+```python
+app = Flask(__name__)
+
+tracer = Tracer()
+
+@app.route("/")
+def index():
+    name = request.args.get("name")
+		# pass the tracer_id to the first function in your call chain
+		name = layer1(name, trace_id=request.args.get('trace_id'))
+    return f"Hello, {name}"
+
+@tracer.trace
+def layer1(name: str):
+    return layer2(name)
+
+@tracer.trace
+def layer2(name: str):
+    return name.upper()
+```
