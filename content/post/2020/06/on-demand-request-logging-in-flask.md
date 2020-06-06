@@ -1,13 +1,13 @@
 +++
 author = "Preslav Rachev"
 categories = []
-date = ""
-description = ""
+date = 2001-07-07T05:00:00Z
+description = "Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand."
 draft = true
-feature_image = ""
+feature_image = "https://images.unsplash.com/photo-1580894897591-ff1e18c89183?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80"
 slug = ""
-summary = ""
-tags = []
+summary = "Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand."
+tags = ["Python", "Programming"]
 title = "On-Demand Request Logging in Flask"
 toc = false
 
@@ -125,4 +125,16 @@ class Tracer:
         return wrapper
 ```
 
-p
+Keep in mind the obvious limitation of my approach. The `tracer` instance is global. Storing state in global variables is usually a bad idea, but in some situations, you just don’t have any other choice.
+
+In WSGI applications, global scope usually means _global per process_. Traditionally, a WSGI server would spawn a certain number of Python processes, and juggle incoming requests between them. A single request would run end-to-end as part of a single process. If this is the case, then our tiny decorator would do perfectly fine, due to process isolation. When threads or `async-await` come to play, scoping the decorator to the particular request at hand will become important.
+
+In the case of Flask, one may make use of its [Request Scope](https://flask.palletsprojects.com/en/1.1.x/reqcontext/), which would ensure that a concurrent request won't overwrite the `trace_id` value of a currently running one. Of course, using a library-specific construct will make code more difficult to test. It will also require modifications to the decorator, in case you switch your Web framework of choice (luckily, most frameworks have the same concept of request scope built in).
+
+At the end, it doesn't matter that much. One of the spirits of Python is writing simple code that gets most of the job done, rather than obsessing about making things uber-generic. If my approach doesn't work for your case, it is easy enough to adapt.
+
+# The Inspiration
+
+My inspiration came not from the Python community, but by Elixir's Phoenix framework. In its latest version Phoenix comes with an out-of-the-box [LiveDashboard](https://hexdocs.pm/phoenix_live_dashboard/Phoenix.LiveDashboard.html), which is extremely helpful in running an Elixir application in production. Among the many cool features, the dashboard features a Request Logger that pretty much does what I described above.
+
+{{<oembed "https://nts.strzibny.name/phoenix-livedashboard-request-logger/">}}
