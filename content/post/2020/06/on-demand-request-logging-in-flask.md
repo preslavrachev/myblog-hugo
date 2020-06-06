@@ -7,7 +7,7 @@ feature_image = "https://images.unsplash.com/photo-1580894897591-ff1e18c89183?ix
 hide_feature_image = true
 slug = ""
 summary = "Not logging enough is as equally bad, as logging too much. What developers need is a turn-key way to log requests on demand."
-tags = ["Python", "Flask", "Programming"]
+tags = ["Programming", "Python", "Flask"]
 title = "On-Demand Request Logging in Flask"
 toc = false
 
