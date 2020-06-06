@@ -31,7 +31,7 @@ app = Flask(__name__)
 def request_tracer():
     if "trace_id" in request.args:
         # DO something, like log the request args, body, etc
-	      # Make sure to include the trace_id as well, so you can
+	    # Make sure to include the trace_id as well, so you can
         # search for it in the logs
 ```
 
@@ -47,7 +47,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     name = request.args.get("name")
-		name = layer1(name)
+	name = layer1(name)
     return f"Hello, {name}"
 
 def layer1(name: str):
@@ -78,8 +78,8 @@ tracer = Tracer()
 @app.route("/")
 def index():
     name = request.args.get("name")
-		# pass the tracer_id to the first function in your call chain
-		name = layer1(name, trace_id=request.args.get('trace_id'))
+	# pass the tracer_id to the first function in your call chain
+	name = layer1(name, trace_id=request.args.get('trace_id'))
     return f"Hello, {name}"
 
 @tracer.trace
