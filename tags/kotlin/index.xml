@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Kotlin on Random Bits of Wisdom</title>
+        <title>kotlin on Random Bits of Wisdom</title>
         <link>https://preslav.me/tags/kotlin/</link>
-        <description>Recent content in Kotlin on Random Bits of Wisdom</description>
+        <description>Recent content in kotlin on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Fri, 02 Aug 2019 22:00:00 +0000</lastBuildDate>
@@ -10,10 +10,10 @@
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/201908031736/</link>
+            <link>https://preslav.me/scratchpad/201908031736/</link>
             <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/201908031736/</guid>
+            <guid>https://preslav.me/scratchpad/201908031736/</guid>
             <description>My first attempt to try out compiling a Micronaut app to a native GraalVM image ended up with a disastrous &amp;ldquo;Out of Memory&amp;rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&amp;rsquo;s what I got:
 I am fully aware that the hoops that the GraalVM compile has to go through are simply phenomenal, and I have heard many good words about the level of performance that apps are able to reach this way.</description>
             <content type="html"><![CDATA[<p>My first attempt to try out compiling a <a href="https://guides.micronaut.io/micronaut-creating-first-graal-app/guide/index.html">Micronaut</a> app to a native <a href="https://www.graalvm.org/">GraalVM</a> image ended up with a disastrous &ldquo;Out of Memory&rdquo;. After more than ten minutes of a spinning fan (on a 4-core machine with 16GB RAM) that&rsquo;s what I got:</p>

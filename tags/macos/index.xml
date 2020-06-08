@@ -64,10 +64,10 @@
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/201907241129/</link>
+            <link>https://preslav.me/scratchpad/201907241129/</link>
             <pubDate>Wed, 24 Jul 2019 09:29:54 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/201907241129/</guid>
+            <guid>https://preslav.me/scratchpad/201907241129/</guid>
             <description>Apple is becoming a macOS gatekeeper too.
  For the past 35 years, any Mac developer who wanted to ship an update directly to customers could do so by recompiling a binary and distributing it. When macOS 10.15 ships this fall, the status quo will change. Mac developers must register with Apple and sign their products. They must submit their binaries to Apple for notarization. And most significantly of all, they must agree to the terms of Apple’s App Store developer contracts, even if they don’t distribute their apps through the App Store.</description>
             <content type="html"><![CDATA[<p>Apple is becoming a macOS gatekeeper too.</p>

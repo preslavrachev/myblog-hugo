@@ -70,10 +70,10 @@ should be selected and how the query is formed.</div>
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/260920191020/</link>
+            <link>https://preslav.me/scratchpad/260920191020/</link>
             <pubDate>Thu, 26 Sep 2019 10:20:00 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/260920191020/</guid>
+            <guid>https://preslav.me/scratchpad/260920191020/</guid>
             <description>Despite being a video-focused platform, people are increasingly coming to YouTube to look for podcasts. A recent survey of Canadian adults found that 43 percent of people “went to YouTube for podcasts in the past year.” That put YouTube ahead of Apple Podcasts (34 percent) and Spotify (23 percent).
 Some of the top podcasts on YouTube are pulling in millions of views every few days or weeks. Top shows, like Ethan and Hila Klein’s H3 Podcast or Joe Rogan’s Joe Rogan Experience, have dedicated audiences who use YouTube notifications as an RSS feed, letting them know when a new episode is available to watch.</description>
             <content type="html"><![CDATA[<blockquote>
@@ -203,10 +203,10 @@ if err != nil {
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/201905100746/</link>
+            <link>https://preslav.me/scratchpad/201905100746/</link>
             <pubDate>Fri, 10 May 2019 05:46:31 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/201905100746/</guid>
+            <guid>https://preslav.me/scratchpad/201905100746/</guid>
             <description>Google will soon introduce searching for podcast episodes as part of its search results. This much was said during the keynote of this year&amp;rsquo;s Google I/O. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</description>
             <content type="html"><![CDATA[<p>Google will <a href="https://techcrunch.com/2019/05/07/google-search-will-offer-better-news-coverage-and-soon-support-for-podcast-search/">soon introduce searching for podcast episodes</a> as part of its search results. This much was said during the keynote of this year&rsquo;s <a href="https://events.google.com/io/">Google I/O</a>. At first, I thought that this might put down my efforts to build a podcast search engine myself, but then i thought it through. The fact that Google recognizes the importance of podcasts is not only not a motivation killer, but also a serious reassurance about their importance.</p>
 

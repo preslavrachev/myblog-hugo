@@ -382,10 +382,10 @@ c := l.Load(bytes)
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/260920191021/</link>
+            <link>https://preslav.me/scratchpad/260920191021/</link>
             <pubDate>Thu, 26 Sep 2019 11:20:00 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/260920191021/</guid>
+            <guid>https://preslav.me/scratchpad/260920191021/</guid>
             <description>Chiefly, Go sacrifices expressiveness for uniformity.
 The general principle is to favour the transparent and ready-to-hand over the remote and opaque, the concrete and literal over the abstract and magical. It’s like speaking a language without metaphors.
 Learning Go won’t teach you any exciting new computer science concepts, or introduce you to a whole new paradigm of software development (for that, try Idris). But it will give you a better understanding of the breadth and variety of the design space for programming languages, at a time when mainstream languages generally seem to be converging (Kotlin is rather like Swift, is rather like Typescript, etc).</description>

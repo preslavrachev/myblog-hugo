@@ -547,10 +547,10 @@ require basic knowledge of the C programming language.</div>
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/201908171824/</link>
+            <link>https://preslav.me/scratchpad/201908171824/</link>
             <pubDate>Sat, 17 Aug 2019 16:24:45 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/201908171824/</guid>
+            <guid>https://preslav.me/scratchpad/201908171824/</guid>
             <description>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a vue.config.js file:
 module.exports = { devServer: { proxy: { &amp;quot;/&amp;quot;: { target: &amp;quot;https://remote-server.com&amp;quot;, changeOrigin: true } } } };  When calling yarn serve, I get the following message flashing in the developer console:</description>
             <content type="html"><![CDATA[<p>All of my Vue.js apps are being developed by proxying API calls to a remote server. This is why one of the first things I do with a new Vue.js app is to st up a <code>vue.config.js</code> file:</p>
@@ -726,10 +726,10 @@ On Alpine, this can be done using the default package installer:</description>
         
         <item>
             <title></title>
-            <link>https://preslav.me/microblog/201907101824/</link>
+            <link>https://preslav.me/scratchpad/201907101824/</link>
             <pubDate>Wed, 10 Jul 2019 16:24:12 +0000</pubDate>
             
-            <guid>https://preslav.me/microblog/201907101824/</guid>
+            <guid>https://preslav.me/scratchpad/201907101824/</guid>
             <description>#TIL about the breakpoint() function in #Python 3.7 It starts a pdb session when the statement gets reached.
 This is quite neat and might save me one or two print statements 😉
 Thanks to @FlorimondManca for this discovery!</description>
