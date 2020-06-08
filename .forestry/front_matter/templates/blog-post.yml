@@ -14,6 +14,9 @@ fields:
   config:
     required: false
   label: Feature Image URL
+- name: hide_feature_image
+  type: boolean
+  label: Hide Feature Image
 - name: summary
   type: textarea
   default: ''
@@ -70,3 +73,5 @@ pages:
 - content/post/2020/05/if-i-could-bring-one-thing-back-to-the-internet-it-would-be-blogs.md
 - content/post/2020/05/on-notion-going-the-growth-path.not-sure-i-like-it.md
 - content/post/2020/05/podcast-rabbit-hole.md
+- content/post/2020/06/on-demand-request-logging-in-flask.md
+- content/post/2020/06/quote-op-ed-kareem-abdul-jabbar-don-t-understand-the-protests-what-you-re-seeing-is-people-pushed-to-the-edge.md
