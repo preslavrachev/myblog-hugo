@@ -1,8 +1,9 @@
 +++
 date = 2020-06-09T05:06:29Z
-draft = true
+show_title = true
 slug = "fell-into-the-same-rookie-python-trap"
 tags = ["Python", "Programming"]
+title = "I fell into the same rookie Python trap again ..."
 
 +++
 Yesterday, I was busy writing a data migration script in Python. Nothing fancy, just a glorified `for-loop`that transforms one document (dict) into another, and writes it back. Let’s assume that `language`exists only in a few particular documents. It was later replaced by a list, called `languages`. All the old documents have both, newer have only `languages`.
