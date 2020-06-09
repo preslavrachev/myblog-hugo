@@ -23,6 +23,18 @@ fields:
     time_format: 
     display_utc: 
   default: now
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  showOnly:
+    field: show_title
+    value: true
+- name: show_title
+  type: boolean
+  label: Show Title
+  hidden: true
 pages:
 - content/post/sofia-s-trams.md
 - content/scratchpad/fell-into-the-same-rookie-python-trap.md
