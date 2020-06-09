@@ -25,3 +25,4 @@ fields:
   default: now
 pages:
 - content/post/sofia-s-trams.md
+- content/scratchpad/fell-into-the-same-rookie-python-trap.md
