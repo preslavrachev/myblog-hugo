@@ -5,8 +5,39 @@
         <description>Recent content in Python on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 05 Jun 2020 23:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jun 2020 05:06:29 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>I fell into the same rookie Python trap again ...</title>
+            <link>https://preslav.me/scratchpad/fell-into-the-same-rookie-python-trap/</link>
+            <pubDate>Tue, 09 Jun 2020 05:06:29 +0000</pubDate>
+            
+            <guid>https://preslav.me/scratchpad/fell-into-the-same-rookie-python-trap/</guid>
+            <description>Yesterday, I was busy writing a data migration script in Python. Nothing fancy, just a glorified for-loopthat transforms one document (dict) into another, and writes it back. Let’s assume that languageexists only in a few particular documents. It was later replaced by a list, called languages. All the old documents have both, newer have only languages.
+One of the lines deserves particular attention:
+# add languages, if present, or wrap the single language value in a list # &#39;languages&#39; might not be present everywhere, but in those case, &#39;language&#39; must be new_doc[&amp;quot;languages&amp;quot;] = old_doc.</description>
+            <content type="html"><![CDATA[<p>Yesterday, I was busy writing a data migration script in Python. Nothing fancy, just a glorified <code>for-loop</code>that transforms one document (dict) into another, and writes it back. Let’s assume that <code>language</code>exists only in a few particular documents. It was later replaced by a list, called <code>languages</code>. All the old documents have both, newer have only <code>languages</code>.</p>
+
+<p>One of the lines deserves particular attention:</p>
+
+<pre><code class="language-python"># add languages, if present, or wrap the single language value in a list
+# 'languages' might not be present everywhere, but in those case, 'language' must be
+new_doc[&quot;languages&quot;] = old_doc.get(&quot;languages&quot;, [old_doc[&quot;language&quot;]])
+</code></pre>
+
+<p>Anyone, who has spent more than a month writing Python, will immediately see the issue here. And yet, I let it slip in my hastiness to get the script done.</p>
+
+<p>Where is the problem?</p>
+
+<p>The line above would fail for all of the documents, which have only <code>languages</code> present. It would do so, because the second argument is evaluated immediately, rather than only in case the first condition fails. In retrospect, this should have been obvious, but it took me some time until I figured it out.</p>
+
+<p>What I ultimately settled with:</p>
+
+<pre><code class="language-python">new_dict[&quot;languages&quot;] = old_doc[&quot;languages&quot;] if &quot;languages&quot; in old_doc else old_doc[&quot;language&quot;]
+</code></pre>
+]]></content>
+        </item>
         
         <item>
             <title>On-Demand Request Logging in Flask</title>

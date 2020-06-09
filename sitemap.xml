@@ -3,14 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://preslav.me/scratchpad/fell-into-the-same-rookie-python-trap/</loc>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-06-08T05:35:04+00:00</lastmod>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
     <changefreq>daily</changefreq>
   </url>
   
   <url>
+    <loc>https://preslav.me/tags/programming/</loc>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/python/</loc>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://preslav.me/scratchpad/</loc>
-    <lastmod>2020-06-08T05:35:04+00:00</lastmod>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/</loc>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
   </url>
   
   <url>
@@ -30,21 +50,6 @@
   
   <url>
     <loc>https://preslav.me/post/</loc>
-    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/python/</loc>
-    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/</loc>
     <lastmod>2020-06-05T23:00:00+00:00</lastmod>
   </url>
   

@@ -5,23 +5,13 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 05 Jun 2020 23:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jun 2020 05:06:29 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
-        
-        <item>
-            <title>Flask</title>
-            <link>https://preslav.me/tags/flask/</link>
-            <pubDate>Fri, 05 Jun 2020 23:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/flask/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
         
         <item>
             <title>Programming</title>
             <link>https://preslav.me/tags/programming/</link>
-            <pubDate>Fri, 05 Jun 2020 23:00:00 +0000</pubDate>
+            <pubDate>Tue, 09 Jun 2020 05:06:29 +0000</pubDate>
             
             <guid>https://preslav.me/tags/programming/</guid>
             <description></description>
@@ -31,9 +21,19 @@
         <item>
             <title>Python</title>
             <link>https://preslav.me/tags/python/</link>
-            <pubDate>Fri, 05 Jun 2020 23:00:00 +0000</pubDate>
+            <pubDate>Tue, 09 Jun 2020 05:06:29 +0000</pubDate>
             
             <guid>https://preslav.me/tags/python/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Flask</title>
+            <link>https://preslav.me/tags/flask/</link>
+            <pubDate>Fri, 05 Jun 2020 23:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/flask/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
