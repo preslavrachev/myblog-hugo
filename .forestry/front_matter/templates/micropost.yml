@@ -34,7 +34,7 @@ fields:
 - name: show_title
   type: boolean
   label: Show Title
-  hidden: true
+  hidden: false
 pages:
 - content/post/sofia-s-trams.md
 - content/scratchpad/fell-into-the-same-rookie-python-trap.md
