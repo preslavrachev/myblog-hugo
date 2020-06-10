@@ -5,7 +5,7 @@ show_title = true
 slug = "20200610-xcode-for-ipad"
 summary = "It's not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. "
 tags = ["Apple", "Xcode", "iPad", "WWDC"]
-title = "Xcode on the iPad? Likely this year?"
+title = "Can we expect Xcode on the iPad this year?"
 
 +++
 I decided to stir the waters a bit and ask the reader community:
