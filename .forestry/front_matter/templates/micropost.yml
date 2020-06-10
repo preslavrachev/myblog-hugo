@@ -35,6 +35,17 @@ fields:
   type: boolean
   label: Show Title
   hidden: false
+- name: summary
+  type: text
+  config:
+    required: false
+  label: Summary
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
 pages:
 - content/post/sofia-s-trams.md
+- content/scratchpad/20200610-xcode-for-ipad.md
 - content/scratchpad/fell-into-the-same-rookie-python-trap.md
