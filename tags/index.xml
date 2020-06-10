@@ -5,8 +5,48 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 09 Jun 2020 05:06:29 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 10 Jun 2020 13:08:59 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Apple</title>
+            <link>https://preslav.me/tags/apple/</link>
+            <pubDate>Wed, 10 Jun 2020 13:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/apple/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>iPad</title>
+            <link>https://preslav.me/tags/ipad/</link>
+            <pubDate>Wed, 10 Jun 2020 13:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/ipad/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>WWDC</title>
+            <link>https://preslav.me/tags/wwdc/</link>
+            <pubDate>Wed, 10 Jun 2020 13:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/wwdc/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Xcode</title>
+            <link>https://preslav.me/tags/xcode/</link>
+            <pubDate>Wed, 10 Jun 2020 13:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/xcode/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>Programming</title>
@@ -369,16 +409,6 @@
         </item>
         
         <item>
-            <title>Apple</title>
-            <link>https://preslav.me/tags/apple/</link>
-            <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/apple/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
             <title>macOS</title>
             <link>https://preslav.me/tags/macos/</link>
             <pubDate>Wed, 01 Apr 2020 22:00:00 +0000</pubDate>
@@ -624,16 +654,6 @@
             <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/flutter/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Xcode</title>
-            <link>https://preslav.me/tags/xcode/</link>
-            <pubDate>Mon, 11 Nov 2019 07:00:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/xcode/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -1019,21 +1039,21 @@
         </item>
         
         <item>
-            <title>Vacation</title>
-            <link>https://preslav.me/tags/vacation/</link>
+            <title> Wedding</title>
+            <link>https://preslav.me/tags/wedding/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/vacation/</guid>
+            <guid>https://preslav.me/tags/wedding/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
-            <title>Wedding</title>
-            <link>https://preslav.me/tags/wedding/</link>
+            <title>Vacation</title>
+            <link>https://preslav.me/tags/vacation/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
-            <guid>https://preslav.me/tags/wedding/</guid>
+            <guid>https://preslav.me/tags/vacation/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -1104,16 +1124,6 @@
             <pubDate>Tue, 11 Jun 2019 10:12:58 +0100</pubDate>
             
             <guid>https://preslav.me/tags/writing/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>WWDC</title>
-            <link>https://preslav.me/tags/wwdc/</link>
-            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/wwdc/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>

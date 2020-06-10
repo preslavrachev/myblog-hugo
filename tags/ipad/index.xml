@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>WWDC on Random Bits of Wisdom</title>
-        <link>https://preslav.me/tags/wwdc/</link>
-        <description>Recent content in WWDC on Random Bits of Wisdom</description>
+        <title>iPad on Random Bits of Wisdom</title>
+        <link>https://preslav.me/tags/ipad/</link>
+        <description>Recent content in iPad on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Wed, 10 Jun 2020 13:08:59 +0000</lastBuildDate>
-        <atom:link href="https://preslav.me/tags/wwdc/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://preslav.me/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Can we expect Xcode on the iPad this year?</title>
@@ -63,62 +63,6 @@
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m not gonna say that Final Cut is coming to iPad... <br><br>But XCode is present on iOS / iPad OS 14. 👀<br><br>The implications there are HUGE.<br><br>Opens the door for “Pro” applications to come to iPad.<br><br>I mentioned this last week on a live stream, but figured it was worth the tweet 🤷🏼‍♂️</p>&mdash; Jon Prosser (@jon_prosser) <a href="https://twitter.com/jon_prosser/status/1252187152831692800?ref_src=twsrc%5Etfw">April 20, 2020</a></blockquote>
 
-]]></content>
-        </item>
-        
-        <item>
-            <title></title>
-            <link>https://preslav.me/scratchpad/201906081458/</link>
-            <pubDate>Sat, 08 Jun 2019 12:56:03 +0000</pubDate>
-            
-            <guid>https://preslav.me/scratchpad/201906081458/</guid>
-            <description> Q: Aesthetically, what do you think about the design of the new grater?
-A: It has been optimized for softer cheeses 😂
-       https://overcast.fm |  Created with Linqable    </description>
-            <content type="html"><![CDATA[<blockquote>
-<p>Q: Aesthetically, what do you think about the design of the new grater?</p>
-
-<p>A: It has been optimized for softer cheeses 😂</p>
-</blockquote>
-
-<article class="center">
-    <iframe width="100%" height="100%" frameborder="0" src="https://overcast.fm/podcasts/episode_card/1261197307846866?t=699"></iframe>
-</article>
-
-
-
-
-
-
-
-
-<div class="embed"
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
-
-  
-
-  <div class="embed-image"
-    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
-  </div>
-
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://overcast.fm/&#43;R7DWGGoNI/11:39">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        </div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      </div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://overcast.fm/&#43;R7DWGGoNI/11:39">https://overcast.fm | </a></div>
-      <div style="float: right">Created with <a
-          href="https://linqable.pro/">Linqable</a></div>
-    </div>
-  </div>
-</div>
 ]]></content>
         </item>
         

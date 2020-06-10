@@ -5,8 +5,66 @@
         <description>Recent content in Scratchpads on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 09 Jun 2020 05:06:29 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 10 Jun 2020 13:08:59 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/scratchpad/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Can we expect Xcode on the iPad this year?</title>
+            <link>https://preslav.me/scratchpad/20200610-xcode-for-ipad/</link>
+            <pubDate>Wed, 10 Jun 2020 13:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/scratchpad/20200610-xcode-for-ipad/</guid>
+            <description>It&amp;rsquo;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling.</description>
+            <content type="html"><![CDATA[<p>I decided to stir the waters a bit and ask the reader community:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A fully-featured Xcode running on the iPad for the upcoming iOS release. What are the odds? <a href="https://twitter.com/hashtag/WWDC20?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC20</a> <a href="https://twitter.com/hashtag/WWDC2020?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC2020</a></p>&mdash; Preslav Rachev (@preslavrachev) <a href="https://twitter.com/preslavrachev/status/1270597991850807302?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote>
+
+
+<p>What do you think? how likely is it? Answer the poll, or drop me a line below.</p>
+
+<hr />
+
+<p>It&rsquo;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Certain things have been possible for years, and I already wrote a lengthy post performing data-science-like tasks on an iPad, back in 2018:</p>
+
+
+
+
+
+
+
+
+<div class="embed"
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+  <div class="embed-image"
+    style="flex:1; background: url(https://preslav.me/images/avatar.jpg); background-size:cover; background-position:center; min-height: 120px">
+  </div>
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://preslav.me/2018/08/12/data-science-on-your-ipad/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Data Science on Your iPad</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://preslav.me/2018/08/12/data-science-on-your-ipad/">https://preslav.me | </a></div>
+      <div style="float: right">Created with <a
+          href="https://linqable.pro/">Linqable</a></div>
+    </div>
+  </div>
+</div>
+
+<p>Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. Yes, as much as I dread it, I am speaking about Xcode coming to iPadOS. There have been rumours about this going on for years, but the feeling is really strong that it will be announced on this year&rsquo;s WWDC in a few days:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m not gonna say that Final Cut is coming to iPad... <br><br>But XCode is present on iOS / iPad OS 14. 👀<br><br>The implications there are HUGE.<br><br>Opens the door for “Pro” applications to come to iPad.<br><br>I mentioned this last week on a live stream, but figured it was worth the tweet 🤷🏼‍♂️</p>&mdash; Jon Prosser (@jon_prosser) <a href="https://twitter.com/jon_prosser/status/1252187152831692800?ref_src=twsrc%5Etfw">April 20, 2020</a></blockquote>
+
+]]></content>
+        </item>
         
         <item>
             <title>I fell into the same rookie Python trap again ...</title>

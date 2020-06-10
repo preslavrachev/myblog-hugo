@@ -3,14 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://preslav.me/scratchpad/fell-into-the-same-rookie-python-trap/</loc>
-    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
+    <loc>https://preslav.me/tags/apple/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/scratchpad/20200610-xcode-for-ipad/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/ipad/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
     <changefreq>daily</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/scratchpad/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/wwdc/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/xcode/</loc>
+    <lastmod>2020-06-10T13:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/scratchpad/fell-into-the-same-rookie-python-trap/</loc>
+    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
   </url>
   
   <url>
@@ -20,16 +55,6 @@
   
   <url>
     <loc>https://preslav.me/tags/python/</loc>
-    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/scratchpad/</loc>
-    <lastmod>2020-06-09T05:06:29+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/</loc>
     <lastmod>2020-06-09T05:06:29+00:00</lastmod>
   </url>
   
@@ -330,11 +355,6 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/apple/</loc>
-    <lastmod>2020-04-01T22:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/tags/macos/</loc>
     <lastmod>2020-04-01T22:00:00+00:00</lastmod>
   </url>
@@ -546,11 +566,6 @@
   
   <url>
     <loc>https://preslav.me/2019/11/11/get-flutter-to-work-with-beta-xcode/</loc>
-    <lastmod>2019-11-11T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/xcode/</loc>
     <lastmod>2019-11-11T07:00:00+00:00</lastmod>
   </url>
   
@@ -935,12 +950,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/vacation/</loc>
+    <loc>https://preslav.me/tags/wedding/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/wedding/</loc>
+    <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
@@ -1026,11 +1041,6 @@
   
   <url>
     <loc>https://preslav.me/scratchpad/201906081458/</loc>
-    <lastmod>2019-06-08T12:56:03+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/wwdc/</loc>
     <lastmod>2019-06-08T12:56:03+00:00</lastmod>
   </url>
   
