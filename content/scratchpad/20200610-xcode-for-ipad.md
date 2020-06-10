@@ -1,10 +1,11 @@
 +++
 date = 2020-06-10T13:08:59Z
-draft = true
-show_title = false
+description = "It's not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. "
+show_title = true
 slug = "20200610-xcode-for-ipad"
+summary = "It's not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. "
 tags = ["Apple", "Xcode", "iPad"]
-title = ""
+title = "Xcode on the iPad? Likely this year?"
 
 +++
 {{<tweet "1270597991850807302">}}
