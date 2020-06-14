@@ -1039,21 +1039,21 @@
         </item>
         
         <item>
-            <title> Wedding</title>
-            <link>https://preslav.me/tags/wedding/</link>
-            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/wedding/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
             <title>Vacation</title>
             <link>https://preslav.me/tags/vacation/</link>
             <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/vacation/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Wedding</title>
+            <link>https://preslav.me/tags/wedding/</link>
+            <pubDate>Mon, 01 Jul 2019 11:24:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/wedding/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -1424,6 +1424,16 @@
             <pubDate>Sun, 22 Apr 2018 04:14:00 +0000</pubDate>
             
             <guid>https://preslav.me/tags/jupyter-notebook/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Machine Learning</title>
+            <link>https://preslav.me/tags/machine-learning/</link>
+            <pubDate>Fri, 09 Mar 2018 07:10:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/machine-learning/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>

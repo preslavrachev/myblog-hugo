@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="author" content="Preslav Rachev">
-    <meta name="description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&amp;rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?" />
-    <meta name="keywords" content="programming, golang, python, elixir, Python, Pandas" />
+    <meta name="description" content="Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%." />
+    <meta name="keywords" content="programming, golang, python, elixir, Machine Learning, Data Science, Programming" />
     <meta name="robots" content="noodp" />
     <meta name="theme-color" content="" />
-    <link rel="canonical" href="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/" />
+    <link rel="canonical" href="https://preslav.me/2018/03/09/what-is-overfitting/" />
 
     
     
-    <title>Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum · Random Bits of Wisdom</title>
+    <title>What is Overfitting? · Random Bits of Wisdom</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,30 +26,27 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
 
     
 
-    <meta itemprop="name" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum">
-<meta itemprop="description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?">
+    <meta itemprop="name" content="What is Overfitting?">
+<meta itemprop="description" content="Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%.">
 
 
-<meta itemprop="datePublished" content="2018-02-16T06:58:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-02-16T06:58:00&#43;00:00" />
-<meta itemprop="wordCount" content="222">
+<meta itemprop="datePublished" content="2018-03-09T07:10:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-03-09T07:10:00&#43;00:00" />
+<meta itemprop="wordCount" content="142">
 
 
 
-<meta itemprop="keywords" content="Python,Pandas," />
+<meta itemprop="keywords" content="Machine Learning,Data Science,Programming," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum"/>
-<meta name="twitter:description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?"/>
+<meta name="twitter:title" content="What is Overfitting?"/>
+<meta name="twitter:description" content="Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%."/>
 
-    <meta property="og:title" content="Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum" />
-<meta property="og:description" content="Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
-sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#39;EmployeeName&#39;]  which is absolutely valid, but is it the only option?" />
+    <meta property="og:title" content="What is Overfitting?" />
+<meta property="og:description" content="Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/" />
-<meta property="article:published_time" content="2018-02-16T06:58:00+00:00" />
-<meta property="article:modified_time" content="2018-02-16T06:58:00+00:00" />
+<meta property="og:url" content="https://preslav.me/2018/03/09/what-is-overfitting/" />
+<meta property="article:published_time" content="2018-03-09T07:10:00+00:00" />
+<meta property="article:modified_time" content="2018-03-09T07:10:00+00:00" />
 
     
     
@@ -110,11 +106,11 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
                 
                 <section class="post-full-tags">
                     <a
-                        href="/tags/python">Python</a>
+                        href="/tags/machine-learning">Machine Learning</a>
                 </section>
                 
 
-                <h1 class="post-full-title">Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</h1>
+                <h1 class="post-full-title">What is Overfitting?</h1>
 
                 
 
@@ -141,12 +137,12 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
                             
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date"
-                                    datetime="2018-62-02">16 February 2018</time>
+                                    datetime="2018-73-03">9 March 2018</time>
                             </div>
                             <div class="byline-meta-content">
                                 <span class="byline-reading-time"
                                     style="font-size: 1rem">
-                                    2 min read</span>
+                                    1 min read</span>
                             </div>
                         </section>
 
@@ -154,7 +150,7 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
                     <div class="byline-meta-content">
                         
                         <a class="resp-sharing-button__link"
-                            href="https://twitter.com/intent/tweet/?text=Pandas%3a%20Finding%20a%20Row%20Where%20One%20of%20Its%20Values%20Is%20at%20a%20Minimum%2fMaximum&amp;url=https%3a%2f%2fpreslav.me%2f2018%2f02%2f16%2fpandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum%2f&amp;via=preslavrachev"
+                            href="https://twitter.com/intent/tweet/?text=What%20is%20Overfitting%3f&amp;url=https%3a%2f%2fpreslav.me%2f2018%2f03%2f09%2fwhat-is-overfitting%2f&amp;via=preslavrachev"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
@@ -171,7 +167,7 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
                         </a>
                         
                         <a class="resp-sharing-button__link"
-                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2f2018%2f02%2f16%2fpandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum%2f"
+                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2f2018%2f03%2f09%2fwhat-is-overfitting%2f"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
@@ -195,29 +191,9 @@ sal[sal[&#39;TotalPayBenefits&#39;] == sal[&#39;TotalPayBenefits&#39;].max()][&#
 
             <section class="post-full-content">
                 <div class="post-content">
-                    <p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the <a href="https://www.kaggle.com/kaggle/sf-salaries">SF Salaries dataset from Kaggle</a>. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:</p>
+                    <p>Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%.</p>
 
-<pre><code class="language-python">sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']
-</code></pre>
-
-<p>which is absolutely valid, but is it the only option? I could imagine that that in a large dataset, there would be quite a lot of comparison involved, plus the creation of a whole new data series (the filter condition). Is there perhaps a more performant one? How about trying out <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.idxmax.html">idmax()</a> (or, for those coming from NumPy, <a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.argmax.html">argmax()</a>, both do the same). By given a column, the function will return the index of the data frame, where it is at its highest.</p>
-
-<pre><code class="language-python">sal.loc[sal['TotalPayBenefits'].idxmax()]['EmployeeName']
-
-sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
-</code></pre>
-
-<p>I did a quick performance check, and indeed, idmax/argmax turn out twice as fast:</p>
-
-<pre><code class="language-bash"># the original filter condition
-815 µs ± 11.5 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-
-# idmax()
-402 µs ± 7.61 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-
-# argmax
-404 µs ± 8.81 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-</code></pre>
+<p>Now, take a new test on the same subject, with different questions. Chances are, you are most likely to score closer to 70% again than nail the test perfectly from the first take. This is a prime example of overfitting - you learned the specifics of one set of questions, but this will contribute little in understanding the subject matter, especially with topics you have not encountered before.</p>
 
                 </div>
             </section>
@@ -255,7 +231,7 @@ sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
     
     <article class="read-next-card">
         <header class="read-next-card-header">
-            <h3><span>More in</span> <a href="/tags/python">Python</a></h3>
+            <h3><span>More in</span> <a href="/tags/machine-learning">Machine Learning</a></h3>
         </header>
         <div class="read-next-card-content">
             <ul>
@@ -264,58 +240,6 @@ sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
         </div>
     </article>
 
-
-    
-    
-        
-    
-
-
-<article class="post-card post
-
-
- ">
-
-        
-            <a class="post-card-image-link" href="https://preslav.me/2018/01/06/quote-plastic-synapses/">
-                <img class="post-card-image"src="https://cdn.arstechnica.net/wp-content/uploads/2017/03/synapse-760x380.jpg" alt="[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks"/>
-            </a>
-        
-    
-        <div class="post-card-content">
-            
-    
-            <a class="post-card-content-link" href="https://preslav.me/2018/01/06/quote-plastic-synapses/">
-    
-                <header class="post-card-header">
-                    
-                        
-                        <div class="post-card-primary-tag">Quote</div>
-                    
-
-                    <h2 class="post-card-title">[QUOTE]: Plastic Synapses Offer Hardware Alternative to Neural Networks</h2>
-                </header>
-    
-                <section class="post-card-excerpt">
-                    <p>via Plastic synapses offer hardware alternative to neural networks | ArsTechnica
- A synapse—the connection between two neurons—consumes at most 100 femtoJoules per event. Once you realize that the entire human body is about the equivalent of an 120W light bulb, you can see that the efficiency of the brain is just astounding. [&hellip;] This result has implications. If this research does turn out to be the way forward, neural networks will not operate faster than our own brains.</p>
-                </section>
-    
-            </a>
-
-            <footer class="post-card-meta">
-                    <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2018-11-01">6 January 2018</time>
-                            <span class="bull">&bull;</span> 1 min read</span>
-                    </div>
-                </footer>
-    
-        </div>
-
-</article>
-    
-
-            
 
     
     
@@ -330,27 +254,79 @@ sal.loc[sal['TotalPayBenefits'].argmax()]['EmployeeName']
         <div class="post-card-content">
             
     
-            <a class="post-card-content-link" href="https://preslav.me/2018/03/09/what-is-overfitting/">
+            <a class="post-card-content-link" href="https://preslav.me/2018/02/16/pandas-finding-a-row-where-one-of-its-values-is-at-a-minimum-maximum/">
     
                 <header class="post-card-header">
                     
                         
-                        <div class="post-card-primary-tag">Machine Learning</div>
+                        <div class="post-card-primary-tag">Python</div>
                     
 
-                    <h2 class="post-card-title">What is Overfitting?</h2>
+                    <h2 class="post-card-title">Pandas: Finding a Row Where One of Its Values Is at a Minimum/Maximum</h2>
                 </header>
     
                 <section class="post-card-excerpt">
-                    <p>Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%.</p>
+                    <p>Often, we will want to get to get a specific row, which marks the minimum or maximum of one of its columns. Let&rsquo;s suppose we have the SF Salaries dataset from Kaggle. We want to find the employee name, with the largest total pay benefits. The experience with writing NumPy/Pandas filter conditions will quickly let us produce the following version:
+sal[sal['TotalPayBenefits'] == sal['TotalPayBenefits'].max()]['EmployeeName']  which is absolutely valid, but is it the only option?</p>
                 </section>
     
             </a>
 
             <footer class="post-card-meta">
                     <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2018-73-03">9 March 2018</time>
-                            <span class="bull">&bull;</span> 1 min read</span>
+                        <span class="post-card-byline-date"><time datetime="2018-62-02">16 February 2018</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+
+    
+    
+        
+    
+
+
+<article class="post-card post
+
+
+ ">
+
+        
+            <a class="post-card-image-link" href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">
+                <img class="post-card-image"src="https://www.labnol.org/files/twitter.png" alt="How to Use Twitter More Efficiently with These Hidden Search Features"/>
+            </a>
+        
+    
+        <div class="post-card-content">
+            
+    
+            <a class="post-card-content-link" href="https://preslav.me/2018/04/02/how-to-use-twitter-more-efficiently-with-these-hidden-search-features/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Social Media</div>
+                    
+
+                    <h2 class="post-card-title">How to Use Twitter More Efficiently with These Hidden Search Features</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>Twitter can be a mess sometimes. If you follow tons of people, it’s easy to get lost in the torrent of constant updates. This was one of the reasons why Twitter decided to move away from the purely chronological timeline a couple of years ago. In a move that almost ditched the diehard Twitter fans in favor of the mainstream, predominantly passive content consumers, the company started pushing more and more in favour of algorithmically adjusted timelines, much like Facebook does it.</p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <div class="post-card-byline-content">
+                        <span class="post-card-byline-date"><time datetime="2018-44-04">2 April 2018</time>
+                            <span class="bull">&bull;</span> 6 min read</span>
                     </div>
                 </footer>
     

@@ -2591,6 +2591,19 @@ imp.reload(some_module)
         </item>
         
         <item>
+            <title>What is Overfitting?</title>
+            <link>https://preslav.me/2018/03/09/what-is-overfitting/</link>
+            <pubDate>Fri, 09 Mar 2018 07:10:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/2018/03/09/what-is-overfitting/</guid>
+            <description>Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%.</description>
+            <content type="html"><![CDATA[<p>Imagine taking a multiple-choice exam. Let’s say you got 70% of the answers correct the first time. After the exam, you study the questions you got wrong and memorize the right answers. While the memory is still fresh, you take the same exam again. This time, you got much higher - say 95% questions answered correctly. You repeat the same procedure again and again, and on the 4th attempt, you score the maximum 100%.</p>
+
+<p>Now, take a new test on the same subject, with different questions. Chances are, you are most likely to score closer to 70% again than nail the test perfectly from the first take. This is a prime example of overfitting - you learned the specifics of one set of questions, but this will contribute little in understanding the subject matter, especially with topics you have not encountered before.</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Debugging Network Calls in React Native Using the Chrome Debugger</title>
             <link>https://preslav.me/2017/03/26/debugging-network-calls-in-react-native-using-the-chrome-debugger/</link>
             <pubDate>Sun, 26 Mar 2017 05:25:00 +0000</pubDate>
