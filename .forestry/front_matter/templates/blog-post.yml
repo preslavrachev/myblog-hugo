@@ -45,7 +45,6 @@ fields:
   type: boolean
   label: Table of Contents
 pages:
-- content/microblog/201906251911.md
 - content/post/2018/dependency-injection-in-python.md
 - content/post/2018/how-to-use-twitter-more-efficiently-with-these-hidden-search-features.md
 - content/post/2018/i-made-a-mastodon-account-and-i-like-it.md
