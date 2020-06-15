@@ -11,3 +11,4 @@ Here are a few self-hosted Google Analytics alternatives that I know of. What el
 {{<oembed "https://goaccess.io/">}}
 {{<oembed "https://count.ly/">}}
 {{<oembed "https://posthog.com/">}}
+{{<oembed "https://kindmetrics.io/">}}
