@@ -10,10 +10,12 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/microblog
-  label: Microblog
+  path: content/scratchpad
+  label: Scratchpad
   create: all
   match: "**/*"
+  templates:
+  - micropost
 - type: directory
   path: content/post
   label: Post
