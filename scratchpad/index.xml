@@ -300,6 +300,40 @@ new_doc[&quot;languages&quot;] = old_doc.get(&quot;languages&quot;, [old_doc[&qu
           href="https://linqable.pro/">Linqable</a></div>
     </div>
   </div>
+</div>
+
+
+
+
+
+
+
+<div class="embed"
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://kindmetrics.io/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Kindmetrics</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Incredible privacy-focused website analytics Kindmetrics is a strictly privacy-focused, lightweight alternative to Google Analytics. It is the most privacy-focused analytics out there, and it is also straightforward to use with its one-page dashboard. Try now See Demo</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://kindmetrics.io/">https://kindmetrics.io | </a></div>
+      <div style="float: right">Created with <a
+          href="https://linqable.pro/">Linqable</a></div>
+    </div>
+  </div>
 </div></p>
 ]]></content>
         </item>
