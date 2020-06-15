@@ -42,9 +42,9 @@ googleAnalytics = "UA-131031623-1"
     url        = "/collections/"
     weight = 30
   [[menu.main]]
-    identifier = "contact"
-    name       = "Contact"
-    url        = "/contact/"
+    identifier = "scratchpad"
+    name       = "Scratchpad"
+    url        = "/scratchpad/"
     weight = 40
 
 [taxonomies]
