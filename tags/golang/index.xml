@@ -5,8 +5,45 @@
         <description>Recent content in Golang on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 24 May 2020 10:28:44 +0100</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jun 2020 07:08:59 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Go: Copy a Reader Into a Writer</title>
+            <link>https://preslav.me/scratchpad/2020/golang-copy-reader-writer/</link>
+            <pubDate>Tue, 16 Jun 2020 07:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/scratchpad/2020/golang-copy-reader-writer/</guid>
+            <description>Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?</description>
+            <content type="html"><![CDATA[<p>Something so simple, and yet, so easy to forget right when you need it. How does one read from a <code>Reader</code> and write to a <code>Writer</code> at the same time?</p>
+
+<p><code>io.Copy</code> to the rescue. I can best demonstrate it with a small HTTP server, where the contents of a JSON is being written directly into the HTTP response:</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;net/http&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	log.Panic(http.ListenAndServe(&quot;:8080&quot;, http.HandlerFunc(handle)))
+}
+
+func handle(w http.ResponseWriter, r *http.Request) {
+	fp, err := os.Open(&quot;store.json&quot;)
+	defer fp.Close()
+	if err != nil {
+		log.Printf(&quot;ERR: %s&quot;, err)
+	}
+
+	io.Copy(w, fp)
+}
+</code></pre>
+]]></content>
+        </item>
         
         <item>
             <title>A Simple Way to Keep a Go App Up and Running</title>

@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="author" content="">
-    <meta name="description" content="It&amp;rsquo;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling." />
-    <meta name="keywords" content="programming, golang, python, elixir, Apple, Xcode, iPad, WWDC" />
+    <meta name="author" content="Preslav Rachev">
+    <meta name="description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?" />
+    <meta name="keywords" content="programming, golang, python, elixir, Programming, Go, Golang, Tips" />
     <meta name="robots" content="noodp" />
     <meta name="theme-color" content="" />
-    <link rel="canonical" href="https://preslav.me/scratchpad/20200610-xcode-for-ipad/" />
+    <link rel="canonical" href="https://preslav.me/scratchpad/2020/golang-copy-reader-writer/" />
 
     
     
-    <title>Can we expect Xcode on the iPad this year? · Random Bits of Wisdom</title>
+    <title>Go: Copy a Reader Into a Writer · Random Bits of Wisdom</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,38 +26,36 @@
 
     
 
-    <meta itemprop="name" content="Can we expect Xcode on the iPad this year?">
-<meta itemprop="description" content="It&#39;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. ">
+    <meta itemprop="name" content="Go: Copy a Reader Into a Writer">
+<meta itemprop="description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?">
 
 
-<meta itemprop="datePublished" content="2020-06-10T13:08:59&#43;00:00" />
-<meta itemprop="dateModified" content="2020-06-10T13:08:59&#43;00:00" />
-<meta itemprop="wordCount" content="312">
+<meta itemprop="datePublished" content="2020-06-16T07:08:59&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-16T07:08:59&#43;00:00" />
+<meta itemprop="wordCount" content="97">
 
 
 
-<meta itemprop="keywords" content="Apple,Xcode,iPad,WWDC," />
+<meta itemprop="keywords" content="Programming,Go,Golang,Tips," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Can we expect Xcode on the iPad this year?"/>
-<meta name="twitter:description" content="It&#39;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. "/>
+<meta name="twitter:title" content="Go: Copy a Reader Into a Writer"/>
+<meta name="twitter:description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?"/>
 
-    <meta property="og:title" content="Can we expect Xcode on the iPad this year?" />
-<meta property="og:description" content="It&#39;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. " />
+    <meta property="og:title" content="Go: Copy a Reader Into a Writer" />
+<meta property="og:description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/scratchpad/20200610-xcode-for-ipad/" />
-<meta property="article:published_time" content="2020-06-10T13:08:59+00:00" />
-<meta property="article:modified_time" content="2020-06-10T13:08:59+00:00" />
+<meta property="og:url" content="https://preslav.me/scratchpad/2020/golang-copy-reader-writer/" />
+<meta property="article:published_time" content="2020-06-16T07:08:59+00:00" />
+<meta property="article:modified_time" content="2020-06-16T07:08:59+00:00" />
 
     
     
         
         
-            
-        
     
     
-    <meta name="twitter:image" content="https://preslav.me/images/avatar.jpg">
-    <meta property="og:image" content="https://preslav.me/images/avatar.jpg">
+    <meta name="twitter:image" content="/images/avatar.jpg">
+    <meta property="og:image" content="/images/avatar.jpg">
     
 
     
@@ -108,29 +106,43 @@
                 
                 <section class="post-full-tags">
                     <a
-                        href="/tags/apple">Apple</a>
+                        href="/tags/programming">Programming</a>
                 </section>
                 
 
-                <h1 class="post-full-title">Can we expect Xcode on the iPad this year?</h1>
+                <h1 class="post-full-title">Go: Copy a Reader Into a Writer</h1>
 
                 
 
                 <div class="post-full-byline">
                     <section class="post-full-byline-content">
 
-                        
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>Preslav Rachev</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
 
                         <section class="post-full-byline-meta">
                             
+                            <h4 class="author-name">Preslav Rachev</h4>
+                            
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date"
-                                    datetime="2020-16-06">10 June 2020</time>
+                                    datetime="2020-76-06">16 June 2020</time>
                             </div>
                             <div class="byline-meta-content">
                                 <span class="byline-reading-time"
                                     style="font-size: 1rem">
-                                    2 min read</span>
+                                    1 min read</span>
                             </div>
                         </section>
 
@@ -138,7 +150,7 @@
                     <div class="byline-meta-content">
                         
                         <a class="resp-sharing-button__link"
-                            href="https://twitter.com/intent/tweet/?text=Can%20we%20expect%20Xcode%20on%20the%20iPad%20this%20year%3f&amp;url=https%3a%2f%2fpreslav.me%2fscratchpad%2f20200610-xcode-for-ipad%2f&amp;via=preslavrachev"
+                            href="https://twitter.com/intent/tweet/?text=Go%3a%20Copy%20a%20Reader%20Into%20a%20Writer&amp;url=https%3a%2f%2fpreslav.me%2fscratchpad%2f2020%2fgolang-copy-reader-writer%2f&amp;via=preslavrachev"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
@@ -155,7 +167,7 @@
                         </a>
                         
                         <a class="resp-sharing-button__link"
-                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2fscratchpad%2f20200610-xcode-for-ipad%2f"
+                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2fscratchpad%2f2020%2fgolang-copy-reader-writer%2f"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
@@ -179,54 +191,33 @@
 
             <section class="post-full-content">
                 <div class="post-content">
-                    <p>I decided to stir the waters a bit and ask the reader community:</p>
+                    <p>Something so simple, and yet, so easy to forget right when you need it. How does one read from a <code>Reader</code> and write to a <code>Writer</code> at the same time?</p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A fully-featured Xcode running on the iPad for the upcoming iOS release. What are the odds? <a href="https://twitter.com/hashtag/WWDC20?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC20</a> <a href="https://twitter.com/hashtag/WWDC2020?src=hash&amp;ref_src=twsrc%5Etfw">#WWDC2020</a></p>&mdash; Preslav Rachev (@preslavrachev) <a href="https://twitter.com/preslavrachev/status/1270597991850807302?ref_src=twsrc%5Etfw">June 10, 2020</a></blockquote>
+<p><code>io.Copy</code> to the rescue. I can best demonstrate it with a small HTTP server, where the contents of a JSON is being written directly into the HTTP response:</p>
 
+<pre><code class="language-go">package main
 
-<p>What do you think? how likely is it? Answer the poll, or drop me a line below.</p>
+import (
+	&quot;io&quot;
+	&quot;log&quot;
+	&quot;net/http&quot;
+	&quot;os&quot;
+)
 
-<hr />
+func main() {
+	log.Panic(http.ListenAndServe(&quot;:8080&quot;, http.HandlerFunc(handle)))
+}
 
-<p>It&rsquo;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Certain things have been possible for years, and I already wrote a lengthy post performing data-science-like tasks on an iPad, back in 2018:</p>
+func handle(w http.ResponseWriter, r *http.Request) {
+	fp, err := os.Open(&quot;store.json&quot;)
+	defer fp.Close()
+	if err != nil {
+		log.Printf(&quot;ERR: %s&quot;, err)
+	}
 
-
-
-
-
-
-
-
-<div class="embed"
-  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
-
-  
-  <div class="embed-image"
-    style="flex:1; background: url(https://preslav.me/images/avatar.jpg); background-size:cover; background-position:center; min-height: 120px">
-  </div>
-  
-
-  <div class="embed-content" style="flex:3; padding: 1rem;"><a
-      href="https://preslav.me/2018/08/12/data-science-on-your-ipad/">
-      <div class="title"
-        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
-        Data Science on Your iPad</div>
-    </a>
-    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
-      This article is a follow-up transcription to a talk I recently gave at a local Munich machine learning meetup. Unlike my previous talk, this time I wanted to convey the idea of using an iPad for actively running data science experiments, as opposed to passively consuming information. I illustrated my point with a few example iOS applications I personally use on a daily basis, which I hope would be good starting points to get the audience interested in the idea.</div>
-    <div class="embed-meta" style="font-size:60%">
-      <div style="float:left; max-width:80%"><a
-          href="https://preslav.me/2018/08/12/data-science-on-your-ipad/">https://preslav.me | </a></div>
-      <div style="float: right">Created with <a
-          href="https://linqable.pro/">Linqable</a></div>
-    </div>
-  </div>
-</div>
-
-<p>Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling. Yes, as much as I dread it, I am speaking about Xcode coming to iPadOS. There have been rumours about this going on for years, but the feeling is really strong that it will be announced on this year&rsquo;s WWDC in a few days:</p>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m not gonna say that Final Cut is coming to iPad... <br><br>But XCode is present on iOS / iPad OS 14. 👀<br><br>The implications there are HUGE.<br><br>Opens the door for “Pro” applications to come to iPad.<br><br>I mentioned this last week on a live stream, but figured it was worth the tweet 🤷🏼‍♂️</p>&mdash; Jon Prosser (@jon_prosser) <a href="https://twitter.com/jon_prosser/status/1252187152831692800?ref_src=twsrc%5Etfw">April 20, 2020</a></blockquote>
-
+	io.Copy(w, fp)
+}
+</code></pre>
 
                 </div>
             </section>
@@ -264,7 +255,7 @@
     
     <article class="read-next-card">
         <header class="read-next-card-header">
-            <h3><span>More in</span> <a href="/tags/apple">Apple</a></h3>
+            <h3><span>More in</span> <a href="/tags/programming">Programming</a></h3>
         </header>
         <div class="read-next-card-content">
             <ul>
@@ -276,40 +267,45 @@
 
     
     
+        
+    
 
 
 <article class="post-card post
- no-image
+
+
  ">
 
+        
+            <a class="post-card-image-link" href="https://preslav.me/scratchpad/20200610-xcode-for-ipad/">
+                <img class="post-card-image"src="https://preslav.me/images/avatar.jpg" alt="Can we expect Xcode on the iPad this year?"/>
+            </a>
         
     
         <div class="post-card-content">
             
     
-            <a class="post-card-content-link" href="https://preslav.me/scratchpad/fell-into-the-same-rookie-python-trap/">
+            <a class="post-card-content-link" href="https://preslav.me/scratchpad/20200610-xcode-for-ipad/">
     
                 <header class="post-card-header">
                     
                         
-                        <div class="post-card-primary-tag">Python</div>
+                        <div class="post-card-primary-tag">Apple</div>
                     
 
-                    <h2 class="post-card-title">I fell into the same rookie Python trap again ...</h2>
+                    <h2 class="post-card-title">Can we expect Xcode on the iPad this year?</h2>
                 </header>
     
                 <section class="post-card-excerpt">
-                    <p>Yesterday, I was busy writing a data migration script in Python. Nothing fancy, just a glorified for-loopthat transforms one document (dict) into another, and writes it back. Let’s assume that languageexists only in a few particular documents. It was later replaced by a list, called languages. All the old documents have both, newer have only languages.
-One of the lines deserves particular attention:
-# add languages, if present, or wrap the single language value in a list # 'languages' might not be present everywhere, but in those case, 'language' must be new_doc[&quot;languages&quot;] = old_doc.</p>
+                    <p>It&rsquo;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling.</p>
                 </section>
     
             </a>
 
             <footer class="post-card-meta">
                     <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2020-56-06">9 June 2020</time>
-                            <span class="bull">&bull;</span> 1 min read</span>
+                        <span class="post-card-byline-date"><time datetime="2020-16-06">10 June 2020</time>
+                            <span class="bull">&bull;</span> 2 min read</span>
                     </div>
                 </footer>
     
@@ -319,48 +315,6 @@ One of the lines deserves particular attention:
     
 
             
-
-    
-    
-
-
-<article class="post-card post
- no-image
- ">
-
-        
-    
-        <div class="post-card-content">
-            
-    
-            <a class="post-card-content-link" href="https://preslav.me/scratchpad/2020/golang-copy-reader-writer/">
-    
-                <header class="post-card-header">
-                    
-                        
-                        <div class="post-card-primary-tag">Programming</div>
-                    
-
-                    <h2 class="post-card-title">Go: Copy a Reader Into a Writer</h2>
-                </header>
-    
-                <section class="post-card-excerpt">
-                    <p>Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?</p>
-                </section>
-    
-            </a>
-
-            <footer class="post-card-meta">
-                    <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2020-76-06">16 June 2020</time>
-                            <span class="bull">&bull;</span> 1 min read</span>
-                    </div>
-                </footer>
-    
-        </div>
-
-</article>
-    
         </div>
     </div>
 </aside>

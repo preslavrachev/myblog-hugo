@@ -5,8 +5,48 @@
         <description>Recent content in Tags on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 10 Jun 2020 13:08:59 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jun 2020 07:08:59 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Go</title>
+            <link>https://preslav.me/tags/go/</link>
+            <pubDate>Tue, 16 Jun 2020 07:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/go/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Golang</title>
+            <link>https://preslav.me/tags/golang/</link>
+            <pubDate>Tue, 16 Jun 2020 07:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/golang/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Programming</title>
+            <link>https://preslav.me/tags/programming/</link>
+            <pubDate>Tue, 16 Jun 2020 07:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/programming/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Tips</title>
+            <link>https://preslav.me/tags/tips/</link>
+            <pubDate>Tue, 16 Jun 2020 07:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/tags/tips/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
         
         <item>
             <title>Apple</title>
@@ -44,16 +84,6 @@
             <pubDate>Wed, 10 Jun 2020 13:08:59 +0000</pubDate>
             
             <guid>https://preslav.me/tags/xcode/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Programming</title>
-            <link>https://preslav.me/tags/programming/</link>
-            <pubDate>Tue, 09 Jun 2020 05:06:29 +0000</pubDate>
-            
-            <guid>https://preslav.me/tags/programming/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
@@ -144,36 +174,6 @@
             <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
             
             <guid>https://preslav.me/tags/devops/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Go</title>
-            <link>https://preslav.me/tags/go/</link>
-            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/go/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Golang</title>
-            <link>https://preslav.me/tags/golang/</link>
-            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/golang/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Tips</title>
-            <link>https://preslav.me/tags/tips/</link>
-            <pubDate>Sun, 24 May 2020 10:28:44 +0100</pubDate>
-            
-            <guid>https://preslav.me/tags/tips/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
