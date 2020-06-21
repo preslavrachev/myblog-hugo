@@ -168,3 +168,7 @@ div.label {
   background-color: #2795e9;
   border-color: #2795e9;
 }
+
+#disqus_thread iframe[src*="ads-iframe"] {
+  display: none
+}
