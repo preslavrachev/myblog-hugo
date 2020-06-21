@@ -3,38 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://preslav.me/tags/go/</loc>
-    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+    <loc>https://preslav.me/tags/2-cents/</loc>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/scratchpad/2020/golang-copy-reader-writer/</loc>
-    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+    <loc>https://preslav.me/tags/generics/</loc>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/tags/go/</loc>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/golang/</loc>
-    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/scratchpad/2020/musings-go-generics/</loc>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/</loc>
-    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
     <changefreq>daily</changefreq>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/programming/</loc>
-    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/scratchpad/</loc>
-    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://preslav.me/tags/</loc>
+    <lastmod>2020-06-20T07:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/scratchpad/2020/golang-copy-reader-writer/</loc>
     <lastmod>2020-06-16T07:08:59+00:00</lastmod>
   </url>
   
@@ -157,11 +172,6 @@
   <url>
     <loc>https://preslav.me/tags/devops/</loc>
     <lastmod>2020-05-24T10:28:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/tags/2-cents/</loc>
-    <lastmod>2020-05-19T22:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -955,12 +965,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/wedding/</loc>
+    <loc>https://preslav.me/tags/vacation/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/vacation/</loc>
+    <loc>https://preslav.me/tags/wedding/</loc>
     <lastmod>2019-07-01T11:24:00+00:00</lastmod>
   </url>
   

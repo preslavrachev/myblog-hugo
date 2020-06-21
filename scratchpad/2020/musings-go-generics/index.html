@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="author" content="Preslav Rachev">
-    <meta name="description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?" />
-    <meta name="keywords" content="programming, golang, python, elixir, Programming, Go, Golang, Tips" />
+    <meta name="description" content="This isn&amp;rsquo;t yet another interpretation on the latest Go generics proposal, because I haven&amp;rsquo;t fully read it through." />
+    <meta name="keywords" content="programming, golang, python, elixir, Programming, Go, Golang, Generics, 2 Cents" />
     <meta name="robots" content="noodp" />
     <meta name="theme-color" content="" />
-    <link rel="canonical" href="https://preslav.me/scratchpad/2020/golang-copy-reader-writer/" />
+    <link rel="canonical" href="https://preslav.me/scratchpad/2020/musings-go-generics/" />
 
     
     
-    <title>Go: Copy a Reader Into a Writer · Random Bits of Wisdom</title>
+    <title>Musings on Go and Generics ... · Random Bits of Wisdom</title>
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,27 +26,27 @@
 
     
 
-    <meta itemprop="name" content="Go: Copy a Reader Into a Writer">
-<meta itemprop="description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?">
+    <meta itemprop="name" content="Musings on Go and Generics ...">
+<meta itemprop="description" content="This isn&#39;t yet another interpretation on the latest Go generics proposal, because I haven&#39;t fully read it through.">
 
 
-<meta itemprop="datePublished" content="2020-06-16T07:08:59&#43;00:00" />
-<meta itemprop="dateModified" content="2020-06-16T07:08:59&#43;00:00" />
-<meta itemprop="wordCount" content="97">
+<meta itemprop="datePublished" content="2020-06-20T07:08:59&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-20T07:08:59&#43;00:00" />
+<meta itemprop="wordCount" content="443">
 
 
 
-<meta itemprop="keywords" content="Programming,Go,Golang,Tips," />
+<meta itemprop="keywords" content="Programming,Go,Golang,Generics,2 Cents," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Go: Copy a Reader Into a Writer"/>
-<meta name="twitter:description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?"/>
+<meta name="twitter:title" content="Musings on Go and Generics ..."/>
+<meta name="twitter:description" content="This isn&#39;t yet another interpretation on the latest Go generics proposal, because I haven&#39;t fully read it through."/>
 
-    <meta property="og:title" content="Go: Copy a Reader Into a Writer" />
-<meta property="og:description" content="Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?" />
+    <meta property="og:title" content="Musings on Go and Generics ..." />
+<meta property="og:description" content="This isn&#39;t yet another interpretation on the latest Go generics proposal, because I haven&#39;t fully read it through." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://preslav.me/scratchpad/2020/golang-copy-reader-writer/" />
-<meta property="article:published_time" content="2020-06-16T07:08:59+00:00" />
-<meta property="article:modified_time" content="2020-06-16T07:08:59+00:00" />
+<meta property="og:url" content="https://preslav.me/scratchpad/2020/musings-go-generics/" />
+<meta property="article:published_time" content="2020-06-20T07:08:59+00:00" />
+<meta property="article:modified_time" content="2020-06-20T07:08:59+00:00" />
 
     
     
@@ -110,7 +110,7 @@
                 </section>
                 
 
-                <h1 class="post-full-title">Go: Copy a Reader Into a Writer</h1>
+                <h1 class="post-full-title">Musings on Go and Generics ...</h1>
 
                 
 
@@ -137,12 +137,12 @@
                             
                             <div class="byline-meta-content">
                                 <time class="byline-meta-date"
-                                    datetime="2020-76-06">16 June 2020</time>
+                                    datetime="2020-76-06">20 June 2020</time>
                             </div>
                             <div class="byline-meta-content">
                                 <span class="byline-reading-time"
                                     style="font-size: 1rem">
-                                    1 min read</span>
+                                    3 min read</span>
                             </div>
                         </section>
 
@@ -150,7 +150,7 @@
                     <div class="byline-meta-content">
                         
                         <a class="resp-sharing-button__link"
-                            href="https://twitter.com/intent/tweet/?text=Go%3a%20Copy%20a%20Reader%20Into%20a%20Writer&amp;url=https%3a%2f%2fpreslav.me%2fscratchpad%2f2020%2fgolang-copy-reader-writer%2f&amp;via=preslavrachev"
+                            href="https://twitter.com/intent/tweet/?text=Musings%20on%20Go%20and%20Generics%20...&amp;url=https%3a%2f%2fpreslav.me%2fscratchpad%2f2020%2fmusings-go-generics%2f&amp;via=preslavrachev"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
@@ -167,7 +167,7 @@
                         </a>
                         
                         <a class="resp-sharing-button__link"
-                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2fscratchpad%2f2020%2fgolang-copy-reader-writer%2f"
+                            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpreslav.me%2fscratchpad%2f2020%2fmusings-go-generics%2f"
                             target="_blank" rel="noopener" aria-label="">
                             <div
                                 class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
@@ -191,33 +191,23 @@
 
             <section class="post-full-content">
                 <div class="post-content">
-                    <p>Something so simple, and yet, so easy to forget right when you need it. How does one read from a <code>Reader</code> and write to a <code>Writer</code> at the same time?</p>
+                    <p>I feel like I am the only person in the Go programming community these days, who hasn&rsquo;t expressed an opinion about the <a href="https://blog.golang.org/generics-next-step">latest generics proposal</a>. I wish, I could say that the reason was just a lack of time. Yet, what I really wanted was for the hype to die down a little, so that I could spend some unbiased time with the generics-enabled <a href="https://go2goplay.golang.org/">playground</a> and see for myself, whether I like the proposal or not.</p>
 
-<p><code>io.Copy</code> to the rescue. I can best demonstrate it with a small HTTP server, where the contents of a JSON is being written directly into the HTTP response:</p>
+<p>When I was still doing Java full-time, generics were the sort of thing that I would get for granted, and I would not question their use. They were just there, and everyone was using them, so I just went with the flow. From experience, they have worked well while trying to convince the compiler that what you are trying to do is right. Yet trying to decipher the author&rsquo;s intention by just reading generic code has always been awful.</p>
 
-<pre><code class="language-go">package main
+<p>Upon entering Go, programming without them felt like some sort of barbaric masochism at first. Al this type checking at all times &hellip; ugh. Then, I realized that if the kind of problems I was trying to solve could usually be approached in a simpler manner than I thought. Not every piece of code needs to be battle-tested and ready to be used in every situation imaginable. Sometimes, all you need is code that solves your particular problem, and one that is easy to decipher later on.</p>
 
-import (
-	&quot;io&quot;
-	&quot;log&quot;
-	&quot;net/http&quot;
-	&quot;os&quot;
-)
+<p>Which brings me to the particular proposal. From the little I saw, it seems to be simple to comprehend for language newcomers, because it essentially essentially expands upon the concept of interfaces. Yet, the few examples of code I saw were also difficult enough to read (all those brackets) that I am quite doubtful that I would use it, and I certainly don&rsquo;t want to be the one having to read it and debug it. I fear that every new language feature becomes a sort of a golden hammer, which gets thrown at every problem, and I certainly don&rsquo;t want that to happen with generics. Utility libraries can certainly benefit from those, but I&rsquo;d try not to us them a lot in application code.</p>
 
-func main() {
-	log.Panic(http.ListenAndServe(&quot;:8080&quot;, http.HandlerFunc(handle)))
-}
+<p>Anyway, this became quite a lengthy post for someone who&rsquo;s had a very vague look. I can&rsquo;t imagine what would come out, once I have actually read the entire proposal through.</p>
 
-func handle(w http.ResponseWriter, r *http.Request) {
-	fp, err := os.Open(&quot;store.json&quot;)
-	defer fp.Close()
-	if err != nil {
-		log.Printf(&quot;ERR: %s&quot;, err)
-	}
+<p>A few articles on the topic that are on my to-read list:</p>
 
-	io.Copy(w, fp)
-}
-</code></pre>
+<ul>
+<li><a href="https://rakyll.org/generics-proposal/">Early notes on the generics proposal · Go, the unwritten parts</a></li>
+<li><a href="https://pmihaylov.com/go-generics-draft-design/">A Concise Guide to the Latest Go Generics Draft Design | Preslav Mihaylov</a></li>
+<li><a href="https://mdlayher.com/blog/go-generics-draft-design-building-a-hashtable/">Go generics draft design: building a hashtable · Matt Layher</a></li>
+</ul>
 
                 </div>
             </section>
@@ -264,57 +254,6 @@ func handle(w http.ResponseWriter, r *http.Request) {
 
     
     
-        
-    
-
-
-<article class="post-card post
-
-
- ">
-
-        
-            <a class="post-card-image-link" href="https://preslav.me/scratchpad/20200610-xcode-for-ipad/">
-                <img class="post-card-image"src="https://preslav.me/images/avatar.jpg" alt="Can we expect Xcode on the iPad this year?"/>
-            </a>
-        
-    
-        <div class="post-card-content">
-            
-    
-            <a class="post-card-content-link" href="https://preslav.me/scratchpad/20200610-xcode-for-ipad/">
-    
-                <header class="post-card-header">
-                    
-                        
-                        <div class="post-card-primary-tag">Apple</div>
-                    
-
-                    <h2 class="post-card-title">Can we expect Xcode on the iPad this year?</h2>
-                </header>
-    
-                <section class="post-card-excerpt">
-                    <p>It&rsquo;s not a secret that I have been strong on the iPad becoming a real developer device in the near future. Yet, one thing is still missing in the grand scheme of things, and that is, first-party developer tooling.</p>
-                </section>
-    
-            </a>
-
-            <footer class="post-card-meta">
-                    <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2020-16-06">10 June 2020</time>
-                            <span class="bull">&bull;</span> 2 min read</span>
-                    </div>
-                </footer>
-    
-        </div>
-
-</article>
-    
-
-            
-
-    
-    
 
 
 <article class="post-card post
@@ -326,7 +265,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
         <div class="post-card-content">
             
     
-            <a class="post-card-content-link" href="https://preslav.me/scratchpad/2020/musings-go-generics/">
+            <a class="post-card-content-link" href="https://preslav.me/scratchpad/2020/golang-copy-reader-writer/">
     
                 <header class="post-card-header">
                     
@@ -334,19 +273,19 @@ func handle(w http.ResponseWriter, r *http.Request) {
                         <div class="post-card-primary-tag">Programming</div>
                     
 
-                    <h2 class="post-card-title">Musings on Go and Generics ...</h2>
+                    <h2 class="post-card-title">Go: Copy a Reader Into a Writer</h2>
                 </header>
     
                 <section class="post-card-excerpt">
-                    <p>This isn&rsquo;t yet another interpretation on the latest Go generics proposal, because I haven&rsquo;t fully read it through.</p>
+                    <p>Something so simple, and yet, so easy to forget right when you need it. How does one read from a Reader and write to a Writer at the same time?</p>
                 </section>
     
             </a>
 
             <footer class="post-card-meta">
                     <div class="post-card-byline-content">
-                        <span class="post-card-byline-date"><time datetime="2020-76-06">20 June 2020</time>
-                            <span class="bull">&bull;</span> 3 min read</span>
+                        <span class="post-card-byline-date"><time datetime="2020-76-06">16 June 2020</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
                     </div>
                 </footer>
     
@@ -354,6 +293,8 @@ func handle(w http.ResponseWriter, r *http.Request) {
 
 </article>
     
+
+            
         </div>
     </div>
 </aside>

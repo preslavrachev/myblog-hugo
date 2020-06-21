@@ -5,8 +5,35 @@
         <description>Recent content in Go on Random Bits of Wisdom</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 16 Jun 2020 07:08:59 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 20 Jun 2020 07:08:59 +0000</lastBuildDate>
         <atom:link href="https://preslav.me/tags/go/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Musings on Go and Generics ...</title>
+            <link>https://preslav.me/scratchpad/2020/musings-go-generics/</link>
+            <pubDate>Sat, 20 Jun 2020 07:08:59 +0000</pubDate>
+            
+            <guid>https://preslav.me/scratchpad/2020/musings-go-generics/</guid>
+            <description>This isn&amp;rsquo;t yet another interpretation on the latest Go generics proposal, because I haven&amp;rsquo;t fully read it through.</description>
+            <content type="html"><![CDATA[<p>I feel like I am the only person in the Go programming community these days, who hasn&rsquo;t expressed an opinion about the <a href="https://blog.golang.org/generics-next-step">latest generics proposal</a>. I wish, I could say that the reason was just a lack of time. Yet, what I really wanted was for the hype to die down a little, so that I could spend some unbiased time with the generics-enabled <a href="https://go2goplay.golang.org/">playground</a> and see for myself, whether I like the proposal or not.</p>
+
+<p>When I was still doing Java full-time, generics were the sort of thing that I would get for granted, and I would not question their use. They were just there, and everyone was using them, so I just went with the flow. From experience, they have worked well while trying to convince the compiler that what you are trying to do is right. Yet trying to decipher the author&rsquo;s intention by just reading generic code has always been awful.</p>
+
+<p>Upon entering Go, programming without them felt like some sort of barbaric masochism at first. Al this type checking at all times &hellip; ugh. Then, I realized that if the kind of problems I was trying to solve could usually be approached in a simpler manner than I thought. Not every piece of code needs to be battle-tested and ready to be used in every situation imaginable. Sometimes, all you need is code that solves your particular problem, and one that is easy to decipher later on.</p>
+
+<p>Which brings me to the particular proposal. From the little I saw, it seems to be simple to comprehend for language newcomers, because it essentially essentially expands upon the concept of interfaces. Yet, the few examples of code I saw were also difficult enough to read (all those brackets) that I am quite doubtful that I would use it, and I certainly don&rsquo;t want to be the one having to read it and debug it. I fear that every new language feature becomes a sort of a golden hammer, which gets thrown at every problem, and I certainly don&rsquo;t want that to happen with generics. Utility libraries can certainly benefit from those, but I&rsquo;d try not to us them a lot in application code.</p>
+
+<p>Anyway, this became quite a lengthy post for someone who&rsquo;s had a very vague look. I can&rsquo;t imagine what would come out, once I have actually read the entire proposal through.</p>
+
+<p>A few articles on the topic that are on my to-read list:</p>
+
+<ul>
+<li><a href="https://rakyll.org/generics-proposal/">Early notes on the generics proposal · Go, the unwritten parts</a></li>
+<li><a href="https://pmihaylov.com/go-generics-draft-design/">A Concise Guide to the Latest Go Generics Draft Design | Preslav Mihaylov</a></li>
+<li><a href="https://mdlayher.com/blog/go-generics-draft-design-building-a-hashtable/">Go generics draft design: building a hashtable · Matt Layher</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Go: Copy a Reader Into a Writer</title>
