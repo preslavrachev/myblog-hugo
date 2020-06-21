@@ -10,6 +10,7 @@ footnoteReturnLinkContents = "^"
 
 theme = "casper3"
 googleAnalytics = "UA-131031623-1"
+disqusShortname = "preslav"
 
 [params]
   #facebook = "https://facebook.com"
