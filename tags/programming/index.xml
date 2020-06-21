@@ -10,10 +10,10 @@
         
         <item>
             <title>Musings on Go and Generics ...</title>
-            <link>https://preslav.me/scratchpad/2020/musings-go-generics/</link>
+            <link>https://preslav.me/2020/06/20/musings-go-generics/</link>
             <pubDate>Sat, 20 Jun 2020 07:08:59 +0000</pubDate>
             
-            <guid>https://preslav.me/scratchpad/2020/musings-go-generics/</guid>
+            <guid>https://preslav.me/2020/06/20/musings-go-generics/</guid>
             <description>This isn&amp;rsquo;t yet another interpretation on the latest Go generics proposal, because I haven&amp;rsquo;t fully read it through.</description>
             <content type="html"><![CDATA[<p>I feel like I am the only person in the Go programming community these days, who hasn&rsquo;t expressed an opinion about the <a href="https://blog.golang.org/generics-next-step">latest generics proposal</a>. I wish, I could say that the reason was just a lack of time. Yet, what I really wanted was for the hype to die down a little, so that I could spend some unbiased time with the generics-enabled <a href="https://go2goplay.golang.org/">playground</a> and see for myself, whether I like the proposal or not.</p>
 

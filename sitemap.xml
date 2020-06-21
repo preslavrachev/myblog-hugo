@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/scratchpad/2020/musings-go-generics/</loc>
+    <loc>https://preslav.me/2020/06/20/musings-go-generics/</loc>
     <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
@@ -34,12 +34,12 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/tags/programming/</loc>
+    <loc>https://preslav.me/post/</loc>
     <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://preslav.me/scratchpad/</loc>
+    <loc>https://preslav.me/tags/programming/</loc>
     <lastmod>2020-06-20T07:08:59+00:00</lastmod>
   </url>
   
@@ -50,6 +50,11 @@
   
   <url>
     <loc>https://preslav.me/scratchpad/2020/golang-copy-reader-writer/</loc>
+    <lastmod>2020-06-16T07:08:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/scratchpad/</loc>
     <lastmod>2020-06-16T07:08:59+00:00</lastmod>
   </url>
   
@@ -105,11 +110,6 @@
   
   <url>
     <loc>https://preslav.me/2020/06/05/on-demand-request-logging-in-flask/</loc>
-    <lastmod>2020-06-05T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://preslav.me/post/</loc>
     <lastmod>2020-06-05T23:00:00+00:00</lastmod>
   </url>
   

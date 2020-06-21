@@ -9,21 +9,21 @@
         <atom:link href="https://preslav.me/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Scratchpads</title>
-            <link>https://preslav.me/scratchpad/</link>
+            <title>Posts</title>
+            <link>https://preslav.me/post/</link>
             <pubDate>Sat, 20 Jun 2020 07:08:59 +0000</pubDate>
             
-            <guid>https://preslav.me/scratchpad/</guid>
+            <guid>https://preslav.me/post/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
         
         <item>
-            <title>Posts</title>
-            <link>https://preslav.me/post/</link>
-            <pubDate>Fri, 05 Jun 2020 23:00:00 +0000</pubDate>
+            <title>Scratchpads</title>
+            <link>https://preslav.me/scratchpad/</link>
+            <pubDate>Tue, 16 Jun 2020 07:08:59 +0000</pubDate>
             
-            <guid>https://preslav.me/post/</guid>
+            <guid>https://preslav.me/scratchpad/</guid>
             <description></description>
             <content type="html"><![CDATA[]]></content>
         </item>
