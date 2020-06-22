@@ -7,7 +7,7 @@ feature_image = ""
 slug = ""
 summary = "\"Rabbit Hole\" is a podcast series about the adverse effects of online media."
 tags = ["Podcast", "YouTube"]
-title = "Podcast: Rabbit Hole"
+title = "Rabbit Hole"
 toc = false
 
 +++
