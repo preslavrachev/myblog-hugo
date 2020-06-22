@@ -134,12 +134,6 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/collections/</loc>
-    <lastmod>2020-05-29T22:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-  </url>
-  
-  <url>
     <loc>https://preslav.me/collections/podcasts/</loc>
     <lastmod>2020-05-29T22:00:00+00:00</lastmod>
   </url>
@@ -150,7 +144,7 @@
   </url>
   
   <url>
-    <loc>https://preslav.me/2020/05/29/podcast-rabbit-hole/</loc>
+    <loc>https://preslav.me/collections/podcasts/podcast-rabbit-hole/</loc>
     <lastmod>2020-05-29T22:00:00+00:00</lastmod>
   </url>
   
@@ -282,6 +276,11 @@
   <url>
     <loc>https://preslav.me/2020/05/02/planks-and-reading/</loc>
     <lastmod>2020-05-02T22:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/collections/podcasts/talk-python-to-me/</loc>
+    <lastmod>2020-04-29T22:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1520,6 +1519,11 @@
   
   <url>
     <loc>https://preslav.me/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://preslav.me/collections/</loc>
+    <changefreq>daily</changefreq>
   </url>
   
   <url>

@@ -204,6 +204,54 @@ def layer2(name: str):
         </item>
         
         <item>
+            <title>Talk Python to Me</title>
+            <link>https://preslav.me/collections/podcasts/talk-python-to-me/</link>
+            <pubDate>Wed, 29 Apr 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/collections/podcasts/talk-python-to-me/</guid>
+            <description>Talk Python To Me is a podcast for developers who are passionate about Python. Learn about the language and related technologies.</description>
+            <content type="html"><![CDATA[<p><a href="https://talkpython.fm/">&ldquo;Talk Python to Me&rdquo;</a> is a must-listen for the every programmer. Regardless of whether you have something to do with Python or not, each episode is so interesting that you&rsquo;d wished you did. I was still in Enterprise Java world, when I started listen to TPTM. It opened up a parallel universe worth exploring. Especially, when it comes to data science, machine learning, and other data-related topics. Host Michael Kennedy is a well-versed person, always asking the right questions, which makes each interview that more engaging.</p>
+
+<p>An absolute must-listen!</p>
+
+
+
+
+
+
+
+
+<div class="embed"
+  style="display:flex; flex-wrap: wrap; border: 1px solid #d4d4d4; width:100%; margin-bottom: 1rem">
+
+  
+
+  <div class="embed-image"
+    style="flex: 1 1 0%; background: rgba(0, 0, 0, 0) linear-gradient(#eaeaea 0%, #73747b 100%) repeat scroll 0% 0%; min-height: 120px;">
+  </div>
+
+  
+
+  <div class="embed-content" style="flex:3; padding: 1rem;"><a
+      href="https://talkpython.fm/">
+      <div class="title"
+        style="font-weight: 800; margin-bottom: 1rem; font-size:120%">
+        Talk Python To Me Podcast</div>
+    </a>
+    <div class="embed-description" style="margin-bottom:1rem; font-size:80%">
+      Talk Python To Me is a podcast for developers who are passionate about Python. Learn about the language and related technologies.</div>
+    <div class="embed-meta" style="font-size:60%">
+      <div style="float:left; max-width:80%"><a
+          href="https://talkpython.fm/">https://talkpython.fm | </a></div>
+      <div style="float: right">Created with <a
+          href="https://linqable.pro/">Linqable</a></div>
+    </div>
+  </div>
+</div>
+]]></content>
+        </item>
+        
+        <item>
             <title>Any Code Style You like as Long It&#39;s Black</title>
             <link>https://preslav.me/2019/10/26/any-code-style-you-like-as-long-as-it-is-black/</link>
             <pubDate>Sat, 26 Oct 2019 22:00:00 +0000</pubDate>
