@@ -8,6 +8,17 @@
         <atom:link href="https://preslav.me/collections/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Quotes</title>
+            <link>https://preslav.me/collections/quotes/</link>
+            <pubDate>Mon, 01 Jun 2020 22:00:00 +0000</pubDate>
+            
+            <guid>https://preslav.me/collections/quotes/</guid>
+            <description>My favorite quotes from various books and articles on the Internet</description>
+            <content type="html"><![CDATA[<p>My favorite quotes from various books and articles on the Internet</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>My Favorite Podcasts</title>
             <link>https://preslav.me/collections/podcasts/</link>
             <pubDate>Fri, 29 May 2020 22:00:00 +0000</pubDate>
