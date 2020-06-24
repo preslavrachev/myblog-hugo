@@ -4,7 +4,7 @@ date: 2020-05-11T10:28:44+01:00
 draft: false
 summary: "What if everyone's wrong?"
 summary: "What if everyone's wrong?"
-tags: ["Quote", "Programming", "2 Cents", "Javascript", "React"]
+tags: ["macwright.org"]
 feature_image: "https://images.unsplash.com/photo-1569748130764-3fed0c102c59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80"
 hide_feature_image: true
 ---

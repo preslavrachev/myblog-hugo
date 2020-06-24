@@ -3,11 +3,11 @@ author = ""
 categories = []
 date = 2020-06-01T22:00:00Z
 description = "What you should see when you see black protesters in the age of Trump and coronavirus is people pushed to the edge, not because they want bars and nail salons open, but because they want to live. To breathe."
-feature_image = ""
-hide_feature_image = false
+feature_image = "https://ca-times.brightspotcdn.com/dims4/default/c697b7a/2147483647/strip/true/crop/5431x3621+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F87%2F58%2Ff2fa4a4140279f9e5a0a5886fb8e%2Fminneapolis-police-death-protest-chicago-19083.jpg"
+hide_feature_image = true
 slug = ""
 summary = "What you should see when you see black protesters in the age of Trump and coronavirus is people pushed to the edge, not because they want bars and nail salons open, but because they want to live. To breathe."
-tags = ["Quote", "Racism", "Black Lives Matter"]
+tags = ["theatlantic.com"]
 title = "Don’t understand the protests? What you’re seeing is people pushed to the edge"
 toc = false
 
