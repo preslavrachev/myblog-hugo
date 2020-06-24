@@ -6,7 +6,7 @@ description = "It's almost impossible now to find a blog that's not on a focused
 feature_image = ""
 slug = ""
 summary = "When you search for blogs now on you see things like 'Top 100 Blogs.' 'How to Make a Successful Blog.' 'Most Powerful 50 Blogs.' But what you really want is 10,000 unsuccessful blogs. Web search now suggests ideas for your blogs to get views, shares, indexed, but what you really want is no ideas. It's almost impossible now to find a blog that's not on a focused theme because that's what search engines focus on and how websites profit. But you want the opposite, a blog that never tried to focus or even thought about it."
-tags = ["Quote", "Blogging", "2 Cents"]
+tags=["tttthis.com"]
 title = "If I could bring one thing back to the internet it would be blogs"
 toc = false
 

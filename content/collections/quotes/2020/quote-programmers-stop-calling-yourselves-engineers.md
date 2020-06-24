@@ -2,7 +2,7 @@
 cover = ""
 date = 2020-04-20T22:00:00Z
 summary = "It undermines a long tradition of designing and building infrastructure in the public interest."
-tags = ["Quote", "2 Cents", "Dev Culture"]
+tags = ["theatlantic.com"]
 title = "Programmers: Stop Calling Yourselves Engineers"
 toc = false
 
